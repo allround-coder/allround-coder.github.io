@@ -12,7 +12,7 @@ category: CSS
 ---
 
 - 12345678
-- 1234
+- 12345678
 
 <Image width="846" height="190"  alt="html2canvas image download" src="/assets/How-to-capture-an-element-with-html2canvas-and-download-an-image/2.gif" />
 
