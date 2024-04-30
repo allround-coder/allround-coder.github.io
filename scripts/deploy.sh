@@ -8,6 +8,7 @@ yarn build
 
 # navigate into the build output directory
 cd out
+touch .nojekyll
 
 # gh-pages clone
 git clone -b gh-pages https://github.com/allround-coder/allround-coder.github.io/
