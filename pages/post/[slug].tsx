@@ -40,6 +40,8 @@ export default function Post({ post, content }: Props) {
     return <ErrorPage statusCode={404} />;
   }
 
+  console.log(post);
+
   return (
     <>
       {router.isFallback ? (
@@ -50,8 +52,27 @@ export default function Post({ post, content }: Props) {
           <Header></Header>
           <main className={cx("container")}>
             <div className={cx("inner")}>
+              <h1 className={cx("post_title")}>{post.title}</h1>
               <div className={cx("meta")}>
-                <span className={cx("date")}>{`Posted On ${moment(post.date).format("MMM D")}`}</span>
+                <div className={cx("profile_wrap")}>
+                  <div className={cx("profile_image_wrap")}>
+                    <Image
+                      src={"/assets/profile.jpg"}
+                      className={cx("profile")}
+                      alt={post.title}
+                      width={44}
+                      height={44}
+                    />
+                  </div>
+                  <div className={cx("textarea")}>
+                    <span className={cx("writer")}>Allround Coder</span>
+                    <span className={cx("info")}>
+                      <span className={cx("date")}>{`Posted On ${moment(post.date).format("MMM D, YYYY")}`}</span>
+                      <span className={cx("reading_time")}>{post.readingTime} min read</span>
+                    </span>
+                  </div>
+                </div>
+
                 <Image
                   width={"50"}
                   height={"50"}
@@ -60,18 +81,9 @@ export default function Post({ post, content }: Props) {
                   alt=""
                 />
               </div>
-              <h1 className={cx("post_title")}>{post.title}</h1>
-              <ul className={cx("tag_area")}>
-                {post.tag.map((text, i) => (
-                  <Link key={i} href={`/tags/${text}`} className={cx("tag")}>
-                    #{text}
-                  </Link>
-                ))}
-                <li></li>
-              </ul>
+
               <article className={cx("post_content")}>
                 {/* <div dangerouslySetInnerHTML={{ __html: md.render(post.content) }}></div> */}
-
                 <MDXRemote {...content} components={components} />
               </article>
             </div>
@@ -114,9 +126,21 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const [post] = await getPosts({
+  const [post]: any = await getPosts({
     file: params.slug,
-    fields: ["title", "description", "date", "slug", "author", "content", "ogImage", "coverImage", "date", "tag"],
+    fields: [
+      "title",
+      "description",
+      "date",
+      "slug",
+      "author",
+      "content",
+      "ogImage",
+      "coverImage",
+      "date",
+      "tag",
+      "readingTime",
+    ],
   });
 
   const content = await serialize(post.content, {
@@ -138,7 +162,7 @@ export async function getStaticProps({ params }: Params) {
 export async function getStaticPaths() {
   const posts = await getPosts({ fields: ["slug"] });
   let paths = [];
-  console.log(posts);
+  // console.log(posts);
 
   for (let i in posts) {
     const post = posts[i];

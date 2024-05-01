@@ -56,6 +56,7 @@ type Params = {
 };
 
 export async function getStaticProps(props: any) {
+  console.log(props);
   const allPosts = await getPosts({
     fields: ["title", "date", "slug", "author", "coverImage", "description", "ogImage", "tag", "readingTime"],
   });
