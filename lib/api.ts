@@ -103,7 +103,7 @@ export async function getPosts({ tag, file = "**", fields = [], count, page }: g
       lastPageGroup = PER_PAGE_SIZE;
     }
 
-    const start = +page * PAGE_SIZE;
+    const start = (+page - 1) * PAGE_SIZE;
     const end = start + PAGE_SIZE;
     const currentPostList = posts.slice(start, end);
     return { posts: currentPostList, page, totalPageCount, totalPageGroupCount, lastPageGroup, currentPageGroup };

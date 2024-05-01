@@ -55,7 +55,7 @@ export const PostList = ({ postList }: PostListProps) => {
           const fromNow = moment(post.date, "YYYYMMDD-HH:mm:ss").fromNow();
           const date = String(fromNow).includes("hours") ? fromNow : moment(post.date).format("MMM D, YYYY");
           return (
-            <Link className={cx("post_item")} href={`/post/${post.slug}`} aria-label={post.title}>
+            <Link className={cx("post_item")} href={`/post/${post.slug}`} aria-label={post.title} key={i}>
               <div className={cx("thumbnail_wrap")}>
                 <Image src={post.coverImage} className={cx("thumbnail")} alt={post.title} width={100} height={100} />
               </div>

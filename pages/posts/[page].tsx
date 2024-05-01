@@ -38,7 +38,7 @@ export default function Post({
   const router = useRouter();
 
   const [currentPageGroupS, setCurrentPageGroupS] = useState(currentPageGroup);
-  const [lastPageGroupS, setLastPageGroupS] = useState(currentPageGroup);
+  const [lastPageGroupS, setLastPageGroupS] = useState(lastPageGroup);
 
   const onClickPageGroup = (nextPageGroup: number) => {
     nextPageGroup = nextPageGroup < 0 ? 0 : nextPageGroup;
@@ -46,12 +46,18 @@ export default function Post({
   };
 
   useEffect(() => {
-    if (currentPageGroupS === totalPageGroupCount) {
+    console.log(currentPageGroupS, totalPageGroupCount);
+    if (currentPageGroupS + 1 === totalPageGroupCount) {
       setLastPageGroupS(Math.ceil(totalPageCount) % PER_PAGE_SIZE);
     } else {
       setLastPageGroupS(PER_PAGE_SIZE);
     }
   }, [currentPageGroupS]);
+
+  useEffect(() => {
+    // console.log(Math.ceil(totalPageCount) % PER_PAGE_SIZE);
+    // console.log(lastPageGroupS);
+  }, [lastPageGroupS]);
 
   return (
     <>
@@ -87,7 +93,7 @@ export default function Post({
                     </Link>
                   );
                 })}
-                {currentPageGroupS < totalPageGroupCount && (
+                {currentPageGroupS + 1 < totalPageGroupCount && (
                   <button
                     type="button"
                     className={cx("page_button", "-prev")}
@@ -112,7 +118,6 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  console.log(params);
   const res: any = await getPosts({
     fields: [
       "title",
@@ -137,14 +142,13 @@ export async function getStaticProps({ params }: Params) {
 
 export async function getStaticPaths() {
   const posts: any = await getPosts({ fields: ["slug"] });
-  console.log(posts.length);
   const totalPageCount = Math.ceil(posts.length / PAGE_SIZE);
   let paths = [];
 
   for (let i = 0; i < totalPageCount; i++) {
     paths.push({
       params: {
-        page: String(i),
+        page: String(i + 1),
       },
     });
   }
