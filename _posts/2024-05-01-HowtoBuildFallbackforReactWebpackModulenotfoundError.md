@@ -1,15 +1,14 @@
 ---
-title: "React Webpack에 대한 Fallback 구축 방법: 모듈을 찾을 수 없는 오류"
+title: "React Webpack에 대한 Fallback 구축 방법 - 모듈을 찾을 수 없는 오류"
 description: ""
 coverImage: "/assets/img/2024-05-01-HowtoBuildFallbackforReactWebpackModulenotfoundError_0.png"
 date: 2024-05-01 17:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-01-HowtoBuildFallbackforReactWebpackModulenotfoundError_0.png
 tag: Tech
 originalTitle: "How to Build Fallback for React Webpack: Module not found Error"
 link: "https://medium.com/@dpericich/how-to-build-fallback-for-react-webpack-module-not-found-error-de2438a8697c"
 ---
-
 
 <img src="/assets/img/2024-05-01-HowtoBuildFallbackforReactWebpackModulenotfoundError_0.png" />
 
@@ -30,6 +29,7 @@ link: "https://medium.com/@dpericich/how-to-build-fallback-for-react-webpack-mod
 ## Webpack이란?
 
 UI / UX에 대한 중요한 디자인 고려 사항 중 하나는 속도입니다. 사용자들은 페이지의 구조나 자산이로드되기를 기다리고 싶어하지 않습니다. 첫 콘텐츠 렌더링 시간을 줄이고, 네트워크 트래픽을 감소시키고 사용자 경험을 향상시킬 수 있는 모든 방법을 고려해야 합니다. 이를 돕기 위해 우리는 webpack을 사용합니다.
+
 ```
 
 <div class="content-ad"></div>
@@ -88,15 +88,18 @@ ECMAScript 버전은 HTML5와 CSS3처럼 작동하여, 새로운 버전에서는
 우리는 path-browserify를 npm install할 수 있지만, 이것은 첫 번째 단계만 해결합니다. 앱을 작동시키기 위해서는 webpack에게 path 대신 path-browserify를 찾도록 해야 합니다. webpack.config.js 파일로 이동할 수 있습니다:
 
 ```
-/node_modules/react_scripts/config/webpack.config.js 
-```
+
+/node_modules/react_scripts/config/webpack.config.js
+
+````
 
 이 파일은 로컬 서버를 react 스크립트 명령(npm start dev)으로 시작할 때 webpack 설정을 다룹니다. 우리는 이전 의존성인 path를 새 의존성인 path-browserify로 매핑하고자 합니다. 이 매핑에 대한 예외 처리 또는 catch 문을 사용하고 있으므로 이를 명확히 해주어야 합니다.
 
-만약 파일에서 "fallback: {"을 검색하면, 모듈에 대한 여러 예외 매핑을 넣을 수 있는 해시를 찾을 수 있습니다. 에러 문구에서 코드를 복사하여 다음과 같이 해시에 넣어주세요:``` 
+만약 파일에서 "fallback: {"을 검색하면, 모듈에 대한 여러 예외 매핑을 넣을 수 있는 해시를 찾을 수 있습니다. 에러 문구에서 코드를 복사하여 다음과 같이 해시에 넣어주세요:```
 
 <div class="content-ad"></div>
 
 ![이미지](/assets/img/2024-05-01-HowtoBuildFallbackforReactWebpackModulenotfoundError_3.png)
 
 서버를 재시작해야 할 수도 있지만, 종속성을 설치하고 폴백 경로를 추가하면 오류가 해결될 것입니다!
+````

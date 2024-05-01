@@ -1,19 +1,19 @@
 ---
-title: "리액트 라우터: 쉽게 앱을 탐험하세요"
+title: "리액트 라우터 - 쉽게 앱을 탐험하세요"
 description: ""
 coverImage: "/assets/img/2024-05-01-ReactRouterNavigateYourAppswithEase_0.png"
 date: 2024-05-01 17:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-01-ReactRouterNavigateYourAppswithEase_0.png
 tag: Tech
 originalTitle: "React Router: Navigate Your Apps with Ease"
 link: "https://medium.com/@bijweniki/react-router-navigate-your-apps-with-ease-74c17836c91e"
 ---
 
-
 React Router는 React 애플리케이션을 위한 강력한 라우팅 라이브러리입니다. URL을 기반으로 다른 컴포넌트를 렌더링하고 탐색을 처리하는 것을 통해 전체 페이지 새로 고침이 필요하지 않도록 해줍니다. 간단히 말해, React Router는 사용자 인터페이스가 URL 변경에 동적으로 업데이트되어 사용자에게 더 부드럽고 원활한 브라우징 경험을 제공하는 단일 페이지 애플리케이션(SPA)을 만드는 데 도움을 줍니다.
 
 React Router를 사용하는 장점:
+
 - 클라이언트 측 라우팅: 페이지 전체를 새로 고치지 않고 뷰 간의 부드럽고 빠른 전환이 가능하여 좀 더 원활한 사용자 경험을 제공합니다.
 - 선언적 라우팅: React 컴포넌트 내에서 라우트를 쉽게 정의하고 관리할 수 있습니다.
 - 동적 라우팅: React Router는 동적 라우팅을 지원하여 개발자가 URL 매개변수를 사용하여 라우트를 생성하고 URL에 따라 동적 콘텐츠를 렌더링할 수 있습니다. 이를 통해 React를 사용하여 동적이고 데이터로 구동되는 사용자 인터페이스를 구축할 수 있습니다.
@@ -27,7 +27,7 @@ React Router를 사용하는 방법은 어떻게 할까요?
 - 설치: 먼저 npm 또는 yarn을 사용하여 React Router를 설치하세요:
 
 ```js
-npm install react-router-dom 
+npm install react-router-dom
 또는
 yarn add react-router-dom
 ```
@@ -39,7 +39,7 @@ yarn add react-router-dom
 <div class="content-ad"></div>
 
 ```js
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 ```
 
 리액트 앱에서 주요 구성 요소인 보통 App이 모든 것을 제어합니다. 그러나 React Router를 추가하면 Router 구성 요소가 새로운 주인이 됩니다. 이는 네비게이션에 대한 마스터 컨트롤러와 같습니다. Router를 가장 높은 부모로 만들면 모든 구성 요소가 라우팅 슈퍼파워에 액세스할 수 있습니다. 이렇게 하면 다른 페이지 간에 쉽게 이동하고 라우트 정보에 액세스할 수 있습니다. 요약하면 최상위 부모로 Router를 사용하면 앱의 모든 구성 요소가 React Router의 혜택을 누릴 수 있습니다.
@@ -59,7 +59,7 @@ ReactDOM.render(
 3. 네비게이션에 링크 사용하기: React 애플리케이션에서 React Router를 사용하여 네비게이션을 위해 `Link` 컴포넌트를 사용하려면, React Router에서 Link를 import하십시오.
 
 ```js
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 ```
 
 React Router의 `Link` 컴포넌트는 애플리케이션의 서로 다른 경로 간에 링크를 생성하는 데 사용됩니다. 이는 전통적인 HTML `a` 태그와 유사하지만, React Router를 사용하는 React 애플리케이션 내에서 사용하도록 특별히 디자인되었습니다.
@@ -77,7 +77,8 @@ React Router의 `Link` 컴포넌트는 애플리케이션의 서로 다른 경�
 `Link`를 클릭하면 React Router가 네비게이션 이벤트를 가로채고 전체 페이지 새로고침 없이 브라우저의 URL을 업데이트합니다. 이를 통해 React 애플리케이션 내에서 부드러운 클라이언트 측 네비게이션이 가능해집니다.
 
 라우트 매개변수와 동적 라우트
-```
+
+````
 
 <div class="content-ad"></div>
 
@@ -87,7 +88,7 @@ React Router의 `Link` 컴포넌트는 애플리케이션의 서로 다른 경�
 
 ```js
 <Route path="/posts/:postId" component={PostDetail} />
-```
+````
 
 이 라우트에서 :postId는 블로그 게시물의 고유 식별자를 나타내는 라우트 매개변수입니다. 사용자가 /posts/123과 같은 URL로 이동할 때, React Router는 postId 매개변수로 값 123을 캡처합니다. 이 매개변수는 그런 다음 PostDetail 컴포넌트 내에서 액세스하여 해당 블로그 게시물 콘텐츠를 가져와 표시할 수 있습니다.
 
@@ -104,7 +105,7 @@ React Router의 `Link` 컴포넌트는 애플리케이션의 서로 다른 경�
 <div class="content-ad"></div>
 
 ```js
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 
 const ComponentName = () => {
   const { parameterName } = useParams();

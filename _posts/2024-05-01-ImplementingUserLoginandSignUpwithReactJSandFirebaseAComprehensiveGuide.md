@@ -1,15 +1,14 @@
 ---
-title: "ReactJS와 Firebase를 사용하여 사용자 로그인 및 가입 구현하기: 포괄적인 안내"
+title: "ReactJS와 Firebase를 사용하여 사용자 로그인 및 가입 구현하기 - 포괄적인 안내"
 description: ""
 coverImage: "/assets/img/2024-05-01-ImplementingUserLoginandSignUpwithReactJSandFirebaseAComprehensiveGuide_0.png"
 date: 2024-05-01 17:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-01-ImplementingUserLoginandSignUpwithReactJSandFirebaseAComprehensiveGuide_0.png
 tag: Tech
 originalTitle: "Implementing User Login and SignUp with ReactJS and Firebase: A Comprehensive Guide"
 link: "https://medium.com/@Rushabh_/implementing-user-login-and-signup-with-reactjs-and-firebase-a-comprehensive-guide-7300bd33cb01"
 ---
-
 
 <img src="/assets/img/2024-05-01-ImplementingUserLoginandSignUpwithReactJSandFirebaseAComprehensiveGuide_0.png" />
 
@@ -131,7 +130,7 @@ const firebaseConfig = {
   projectId: "여러분의-프로젝트ID",
   storageBucket: "여러분의-저장소버킷",
   messagingSenderId: "여러분의-메시징발신자ID",
-  appId: "여러분의-앱ID"
+  appId: "여러분의-앱ID",
 };
 
 // Firebase 초기화
@@ -167,9 +166,7 @@ export function UserAuthContextProvider({ children }) {
   const [user, setUser] = useState({});
 
   return (
-    <userAuthContext.Provider
-      value={{ user, logIn, signUp, logOut, googleSignIn }}
-    >
+    <userAuthContext.Provider value={{ user, logIn, signUp, logOut, googleSignIn }}>
       {children}
     </userAuthContext.Provider>
   );
@@ -177,7 +174,8 @@ export function UserAuthContextProvider({ children }) {
 ```
 
 3. App을 Provider로 감싸기: (App.js)
-```
+
+````
 
 <div class="content-ad"></div>
 
@@ -185,14 +183,15 @@ export function UserAuthContextProvider({ children }) {
 <UserAuthContextProvider>
            내 앱
 </UserAuthContextProvider>
-```
+````
 
 컨텍스트 프로바이더는 여러 컴포넌트에서 필요로 하는 데이터가 있고 props를 수동으로 전달하는 것을 원치 않을 때 유용합니다. 데이터 공유를 간소화하고 코드베이스를 유지보수 가능하고 확장 가능하게 만듭니다. 그러나 컨텍스트를 과도하게 사용하면 복잡하고 관리하기 어려운 코드로 이어질 수 있습니다.
 
 # 4. Firebase 함수 만들기:
 
 이제 LogIn, SignUp, LogOut 및 googleSignIn 함수를 만들겠습니다. 여기서는 firebase.js 파일에서 만든 Auth 인스턴스를 사용할 것입니다.
-```
+
+````
 
 <div class="content-ad"></div>
 
@@ -210,14 +209,15 @@ export function UserAuthContextProvider({ children }) {
     const googleAuthProvider = new GoogleAuthProvider();
     return signInWithPopup(auth, googleAuthProvider);
   }
-```
+````
 
 onAuthStateChanged:
 
 파이어베이스에서 onAuthStateChanged는 Firebase 인증 모듈에서 제공하는 메소드입니다. 이는 사용자의 인증 상태를 실시간으로 모니터링할 수 있는 리스너 함수입니다. 이 함수는 사용자 세션을 관리하고 응용 프로그램에서 관련 인증 로직을 처리하는 데 특히 유용합니다.
 
 onAuthStateChanged 함수는 Firebase 인증 시스템에 옵저버를 등록하고 사용자의 인증 상태 변경을 듣습니다. 사용자가 로그인하거나 로그아웃하거나 인증 토큰이 만료될 때와 같이 사용자의 인증 상태가 변경될 때마다 콜백 함수를 트리거합니다.
-```
+
+````
 
 <div class="content-ad"></div>
 
@@ -232,7 +232,7 @@ onAuthStateChanged 함수는 Firebase 인증 시스템에 옵저버를 등록하
       unsubscribe();
     };
   }, []);
-```
+````
 
 # 5. 사용자 가입 작업중:
 
@@ -297,23 +297,19 @@ const Signup = () => {
 <div class="content-ad"></div>
 
 ```js
-<GoogleButton
-            className="g-btn"
-            type="dark"
-            onClick={handleGoogleSignIn}
-          />
+<GoogleButton className="g-btn" type="dark" onClick={handleGoogleSignIn} />
 ```
 
 ```js
-  const handleGoogleSignIn = async (e) => {
-    e.preventDefault();
-    try {
-      await googleSignIn();
-      navigate("/home");
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
+const handleGoogleSignIn = async (e) => {
+  e.preventDefault();
+  try {
+    await googleSignIn();
+    navigate("/home");
+  } catch (error) {
+    console.log(error.message);
+  }
+};
 ```
 
 # 7. 보호된 라우트:
@@ -329,14 +325,14 @@ ReactJS 애플리케이션에서 보호된 경로를 구현하는 방법에 대�
 App.js에서 `Home /`을 보호된 경로로 설정할 거에요,
 
 ```js
-           <Route
-                path="/home"
-                element={
-                  <ProtectedRoute>
-                    <Home />
-                  </ProtectedRoute>
-                }
-              />
+<Route
+  path="/home"
+  element={
+    <ProtectedRoute>
+      <Home />
+    </ProtectedRoute>
+  }
+/>
 ```
 
 <div class="content-ad"></div>

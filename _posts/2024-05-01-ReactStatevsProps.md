@@ -1,15 +1,14 @@
 ---
-title: "리액트: "State vs Props""
+title: "리액트 - State vs Props"
 description: ""
 coverImage: "/assets/img/2024-05-01-ReactStatevsProps_0.png"
 date: 2024-05-01 18:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-01-ReactStatevsProps_0.png
 tag: Tech
 originalTitle: "React: “State vs Props”"
 link: "https://medium.com/javascript-in-plain-english/react-state-vs-props-3066a1766463"
 ---
-
 
 ![React State vs Props](/assets/img/2024-05-01-ReactStatevsProps_0.png)
 
@@ -22,19 +21,19 @@ State는 컴포넌트의 내부 데이터 저장소로, 현재 상태나 상황�
 <div class="content-ad"></div>
 
 ```js
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Counter extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
     };
   }
 
   incrementCount = () => {
     this.setState({ count: this.state.count + 1 });
-  }
+  };
 
   render() {
     return (
@@ -56,11 +55,11 @@ Props는 속성을 의미하는 단어의 축약형으로, 부모 컴포넌트�
 <div class="content-ad"></div>
 
 ```js
-import React from 'react';
+import React from "react";
 
 const Greeting = (props) => {
   return <h1>Hello, {props.name}!</h1>;
-}
+};
 
 const App = () => {
   return (
@@ -69,7 +68,7 @@ const App = () => {
       <Greeting name="Bob" />
     </div>
   );
-}
+};
 ```
 
 이 예제에서 Greeting 컴포넌트는 부모 컴포넌트인 App으로부터 name prop을 전달받습니다. App 컴포넌트는 두 개의 Greeting 인스턴스를 렌더링하며 props로 다른 name 값을 전달합니다. Greeting 컴포넌트는 그 후에 받은 name을 h1 요소에 표시합니다.
@@ -81,16 +80,16 @@ const App = () => {
 <div class="content-ad"></div>
 
 ```js
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class ParentComponent extends Component {
   state = {
-    message: 'Hello, World!'
+    message: "Hello, World!",
   };
 
   updateMessage = () => {
-    this.setState({ message: 'Hello, React!' });
-  }
+    this.setState({ message: "Hello, React!" });
+  };
 
   render() {
     return (
@@ -104,7 +103,7 @@ class ParentComponent extends Component {
 
 const ChildComponent = (props) => {
   return <h1>{props.message}</h1>;
-}
+};
 ```
 
 이 예시에서 ParentComponent는 초기에 'Hello, World!'로 설정된 message라는 상태 속성을 가지고 있습니다. 이 메시지 상태는 ChildComponent로 프롭으로 전달되며, 해당 메시지를 h1 요소에서 표시합니다.
@@ -118,16 +117,16 @@ const ChildComponent = (props) => {
 props가 컴포넌트 트리 아래로 흘러가는 동안, 자식 컴포넌트가 부모에게 다시 통신해야 할 때가 있습니다. 이때 콜백 함수가 필요합니다. 부모 컴포넌트는 자식 컴포넌트에게 콜백 함수를 prop으로 전달하여 자식이 콜백을 호출하고 데이터를 부모에게 다시 전달할 수 있습니다.
 
 ```js
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class ParentComponent extends Component {
   state = {
-    childMessage: ''
+    childMessage: "",
   };
 
   handleChildMessage = (message) => {
     this.setState({ childMessage: message });
-  }
+  };
 
   render() {
     return (
@@ -141,16 +140,16 @@ class ParentComponent extends Component {
 
 class ChildComponent extends Component {
   state = {
-    message: ''
+    message: "",
   };
 
   handleInputChange = (event) => {
     this.setState({ message: event.target.value });
-  }
+  };
 
   sendMessageToParent = () => {
     this.props.onMessageReceived(this.state.message);
-  }
+  };
 
   render() {
     return (
@@ -175,38 +174,38 @@ ChildComponent에는 입력 필드와 버튼이 있습니다. 사용자가 입�
 일부 경우에는 여러 컴포넌트가 동일한 상태를 공유하고 업데이트해야 할 수 있습니다. 이런 경우에는 공유 상태를 가장 가까운 공통 조상 컴포넌트로 끌어올려서 필요한 컴포넌트로 props로 전달하는 것이 권장됩니다.
 
 ```js
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class TemperatureApp extends Component {
   state = {
     temperature: 20,
-    scale: 'celsius'
+    scale: "celsius",
   };
 
   handleTemperatureChange = (temperature) => {
     this.setState({ temperature });
-  }
+  };
 
   handleScaleChange = (scale) => {
     this.setState({ scale });
-  }
+  };
 
   render() {
     const { temperature, scale } = this.state;
     return (
       <div>
         <TemperatureInput
-          temperature={scale === 'celsius' ? temperature : (temperature * 9 / 5) + 32}
+          temperature={scale === "celsius" ? temperature : (temperature * 9) / 5 + 32}
           scale="celsius"
           onTemperatureChange={this.handleTemperatureChange}
         />
         <TemperatureInput
-          temperature={scale === 'fahrenheit' ? temperature : (temperature - 32) * 5 / 9}
+          temperature={scale === "fahrenheit" ? temperature : ((temperature - 32) * 5) / 9}
           scale="fahrenheit"
           onTemperatureChange={this.handleTemperatureChange}
         />
-        <button onClick={() => this.handleScaleChange('celsius')}>Celsius</button>
-        <button onClick={() => this.handleScaleChange('fahrenheit')}>Fahrenheit</button>
+        <button onClick={() => this.handleScaleChange("celsius")}>Celsius</button>
+        <button onClick={() => this.handleScaleChange("fahrenheit")}>Fahrenheit</button>
       </div>
     );
   }
@@ -215,18 +214,15 @@ class TemperatureApp extends Component {
 class TemperatureInput extends Component {
   handleChange = (event) => {
     this.props.onTemperatureChange(parseFloat(event.target.value));
-  }
+  };
 
   render() {
     const { temperature, scale } = this.props;
 
     return (
       <fieldset>
-        <legend>Enter temperature in {scale === 'celsius' ? 'Celsius' : 'Fahrenheit'}:</legend>
-        <input
-         value={temperature}
-         onChange={this.handleChange}
-         />
+        <legend>Enter temperature in {scale === "celsius" ? "Celsius" : "Fahrenheit"}:</legend>
+        <input value={temperature} onChange={this.handleChange} />
       </fieldset>
     );
   }
