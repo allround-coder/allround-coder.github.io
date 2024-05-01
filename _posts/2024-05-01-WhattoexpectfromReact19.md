@@ -1,14 +1,16 @@
 ---
 title: "리액트 19에서 기대할 수 있는 것들"
-description: ""
+description:
+coverImage: "/assets/img/WhattoexpectfromReact19_0.png"
 date: 2024-05-01 16:21
-sidebarDepth: 0
-tag: Tech
-thumbnail: 
+author:
+  name: Allround Coder
+ogImage:
+  url: "/assets/img/WhattoexpectfromReact19_0.png"
+tag: sitemap
 originalTitle: "What to expect from React 19"
 link: "https://medium.com/@onix_react/what-to-expect-from-react-19-e033899f919f"
 ---
-
 
 <img src="/assets/img/WhattoexpectfromReact19_0.png" />
 
@@ -35,9 +37,9 @@ function UpdateName({}) {
       if (error) {
         setError(error);
         return;
-      } 
+      }
       redirect("/path");
-    })
+    });
   };
 
   return (
@@ -61,22 +63,21 @@ function UpdateName({}) {
 ```js
 // <form> 액션과 useActionState 사용
 function ChangeName({ name, setName }) {
-  const [error, submitAction, isPending] = useActionState(
-    async (previousState, formData) => {
-      const error = await updateName(formData.get("name"));
-      if (error) {
-        return error;
-      }
-      redirect("/path");
-      return null;
-    },
-    null,
-  );
+  const [error, submitAction, isPending] = useActionState(async (previousState, formData) => {
+    const error = await updateName(formData.get("name"));
+    if (error) {
+      return error;
+    }
+    redirect("/path");
+    return null;
+  }, null);
 
   return (
     <form action={submitAction}>
       <input type="text" name="name" />
-      <button type="submit" disabled={isPending}>업데이트</button>
+      <button type="submit" disabled={isPending}>
+        업데이트
+      </button>
       {error && <p>{error}</p>}
     </form>
   );
@@ -88,10 +89,10 @@ function ChangeName({ name, setName }) {
 useOptimistic 훅을 사용하면 실제 데이터 변이가 백그라운드에서 발생하는 동안 UI에서 변경 사항을 즉시 표시할 수 있습니다. 이 훅은 임시 UI 상태를 관리하며 오류 발생 시 원래 상태로 복원합니다.
 
 ```js
-function ChangeName({currentName, onUpdateName}) {
+function ChangeName({ currentName, onUpdateName }) {
   const [optimisticName, setOptimisticName] = useOptimistic(currentName);
 
-  const submitAction = async formData => {
+  const submitAction = async (formData) => {
     const newName = formData.get("name");
     setOptimisticName(newName);
     const updatedName = await updateName(newName);
@@ -103,11 +104,7 @@ function ChangeName({currentName, onUpdateName}) {
       <p>당신의 이름은: {optimisticName}</p>
       <p>
         <label>이름 변경:</label>
-        <input
-          type="text"
-          name="name"
-          disabled={currentName !== optimisticName}
-        />
+        <input type="text" name="name" disabled={currentName !== optimisticName} />
       </p>
     </form>
   );
@@ -121,11 +118,11 @@ function ChangeName({currentName, onUpdateName}) {
 useFormStatus 훅을 이용하면 양식 제출 상태에 직접 액세스할 수 있어 prop 전달 없이 제출 상태를 반영해야 하는 컴포넌트를 디자인하는 데 이상적입니다.
 
 ```js
-import {useFormStatus} from 'react-dom';
+import { useFormStatus } from "react-dom";
 
 function DesignButton() {
-  const {pending} = useFormStatus();
-  return <button type="submit" disabled={pending} />
+  const { pending } = useFormStatus();
+  return <button type="submit" disabled={pending} />;
 }
 ```
 
@@ -138,22 +135,22 @@ function DesignButton() {
 React 19의 이러한 개선 사항은 생산성과 효율성을 향상시키기 위해 설계되었으며, 개발자들이 동적이고 사용자 친화적인 애플리케이션을 더 많이 만들도록 도와줍니다. 자세한 문서 및 추가 예제를 보려면 React 공식 문서를 방문해주세요.
 
 ```js
-import {use} from 'react';
+import { use } from "react";
 
-function Comments({commentsPromise}) {
+function Comments({ commentsPromise }) {
   // `use`는 프로미스가 해결될 때까지 일시 중단됩니다.
   const comments = use(commentsPromise);
-  return comments.map(comment => <p key={comment.id}>{comment}</p>);
+  return comments.map((comment) => <p key={comment.id}>{comment}</p>);
 }
 
-function Page({commentsPromise}) {
+function Page({ commentsPromise }) {
   // Comments에서 `use`가 일시 중단되면
   // 이 Suspense 경계가 표시됩니다.
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Comments commentsPromise={commentsPromise} />
     </Suspense>
-  )
+  );
 }
 ```
 
@@ -188,12 +185,12 @@ React 19에서 서버 구성 요소를 직접 React에 통합하는 것은 여�
 React 19부터는 함수 컴포넌트에서 ref를 프롭으로 접근할 수 있습니다:
 
 ```js
-function MyInput({placeholder, ref}) {
-  return <input placeholder={placeholder} ref={ref} />
+function MyInput({ placeholder, ref }) {
+  return <input placeholder={placeholder} ref={ref} />;
 }
 
 //...
-<MyInput ref={ref} />
+<MyInput ref={ref} />;
 ```
 
 새로운 함수 컴포넌트는 더 이상 forwardRef가 필요하지 않으며, 기존 컴포넌트를 자동으로 업데이트해주는 codemod가 제공될 예정입니다. 향후 버전에서는 forwardRef가 사라질 예정입니다.
@@ -211,14 +208,10 @@ React 19에서는 `Context.Provider` 대신 Provider로 렌더링할 수 있습�
 <div class="content-ad"></div>
 
 ```js
-const ThemeContext = createContext('');
+const ThemeContext = createContext("");
 
-function App({children}) {
-  return (
-    <ThemeContext value="dark">
-      {children}
-    </ThemeContext>
-  );  
+function App({ children }) {
+  return <ThemeContext value="dark">{children}</ThemeContext>;
 }
 ```
 
@@ -252,14 +245,12 @@ React 19에서 useDeferredValue에 initialValue 옵션이 추가되었습니다.
 <div class="content-ad"></div>
 
 ```jsx
-function Search({deferredValue}) {
+function Search({ deferredValue }) {
   // 초기 렌더링 시에 값은 ''로 설정됩니다.
   // 그 후에 deferredValue로 재 렌더링이 예약됩니다.
-  const value = useDeferredValue(deferredValue, '');
-  
-  return (
-    <Results query={value} />
-  );
+  const value = useDeferredValue(deferredValue, "");
+
+  return <Results query={value} />;
 }
 ```
 
