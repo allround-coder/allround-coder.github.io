@@ -1,15 +1,14 @@
 ---
 title: "장치 방향 이벤트를 활용한 애니메이션"
 description: ""
-coverImage: "/assets/img/2024-05-01-AnimationwithDeviceOrientationevent_0.png"
+coverImage: "/assets/img/2024-05-01-AnimationwithDeviceOrientationevent_1.png"
 date: 2024-05-01 17:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-01-AnimationwithDeviceOrientationevent_0.png
 tag: Tech
 originalTitle: "Animation with DeviceOrientation event"
 link: "https://medium.com/javascript-in-plain-english/animation-with-deviceorientation-event-dc27209af0b7"
 ---
-
 
 이 기사는 이 기사의 계속입니다- `메시징 애플리케이션을위한 그라데이션 배경
 
@@ -46,7 +45,7 @@ window.addEventListener("click", function() {…})
 비슷한 작업을 할 것입니다. 클릭 대신 deviceorientation을 사용할 것입니다.
 
 ```js
-window.addEventListener('deviceorientation', handleDeviceOrientation);
+window.addEventListener("deviceorientation", handleDeviceOrientation);
 ```
 
 handleDeviceOrientation 메서드 내에서는 아래와 같이 작성할 수 있습니다:
@@ -55,7 +54,7 @@ JSXELEMENT에 대해서는 색상 속성을 적용한 요소에 ref 속성을 �
 
 <div class="content-ad"></div>
 
-이것에 대해서는 '베타'만 사용하여 `background-position-y`를 업데이트했습니다. '베타'는 X축을 중심으로 회전하는 데 사용됩니다. 
+이것에 대해서는 '베타'만 사용하여 `background-position-y`를 업데이트했습니다. '베타'는 X축을 중심으로 회전하는 데 사용됩니다.
 
 해결책으로는 여기서 Oleksii Trehkleb가 한 것과 거의 동일하게 useDeviceOrientation.ts를 사용할 것입니다. 그래서 Oleksii Trekhleb에게 예의를 표한다는 점을 밝히고 싶습니다.
 
