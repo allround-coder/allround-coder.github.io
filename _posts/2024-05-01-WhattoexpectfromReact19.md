@@ -3,8 +3,6 @@ title: "리액트 19에서 기대할 수 있는 것들"
 description:
 coverImage: "/assets/img/WhattoexpectfromReact19_0.png"
 date: 2024-05-01 16:21
-author:
-  name: Allround Coder
 ogImage:
   url: "/assets/img/WhattoexpectfromReact19_0.png"
 tag: sitemap

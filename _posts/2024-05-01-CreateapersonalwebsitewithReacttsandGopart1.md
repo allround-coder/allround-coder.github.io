@@ -3,16 +3,12 @@ title: "React.ts와 Go로 개인 웹사이트 만들기: 파트 1"
 description: ""
 coverImage: ""
 date: 2024-05-01 16:49
-author: 
-  name: undefined
-ogImage: 
-  url: 
-sidebarDepth: 0
+ogImage:
+  url:
 tag: Tech
 originalTitle: "Create a personal website with React.ts and Go: part 1"
 link: "https://medium.com/@axellmartinezdev/create-a-personal-website-with-react-ts-and-go-part-1-42a883005c14"
 ---
-
 
 # 개요:
 
@@ -50,7 +46,7 @@ cd personalwebsitemedium
 npm install
 ```
 
-시작하기 전에 해야 할 마지막 작업은 tailwind를 설치하는 것입니다. 이 도구는 컴포넌트 스타일링 프로세스를 간소화할 것입니다. 프로젝트의 루트 폴더에서 다음 명령을 실행하세요.``` 
+시작하기 전에 해야 할 마지막 작업은 tailwind를 설치하는 것입니다. 이 도구는 컴포넌트 스타일링 프로세스를 간소화할 것입니다. 프로젝트의 루트 폴더에서 다음 명령을 실행하세요.```
 
 <div class="content-ad"></div>
 

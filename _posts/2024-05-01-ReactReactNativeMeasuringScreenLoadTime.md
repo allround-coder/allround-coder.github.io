@@ -1,17 +1,14 @@
 ---
 title: "리액트, 리액트 네이티브: 화면 로드 시간 측정하기"
 description: ""
-coverImage: ""
+coverImage: "/assets/img/React-ReactNativeMeasuringScreenLoadTime_0.png"
 date: 2024-05-01 16:51
-author: 
-  name: undefined
-ogImage: 
-  url: 
+ogImage:
+  url: "/assets/img/React-ReactNativeMeasuringScreenLoadTime_0.png"
 tag: Tech
 originalTitle: "React , React Native: Measuring Screen Load Time"
 link: "https://medium.com/@i-ads/performance-measuring-screen-load-time-0c3322b2a2a4"
 ---
-
 
 ## React 및 React Native 앱을 위한 커스텀 성능 모니터링을 쉽게 만드는 방법
 

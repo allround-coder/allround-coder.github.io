@@ -24,6 +24,7 @@
 .thumbnail_wrap {
   flex-shrink: 0;
   width: 300px;
+  aspect-ratio: 3/2;
 }
 
 .thumbnail {
@@ -115,6 +116,9 @@
 
     content: "";
   }
+  & + .reaction_text {
+    margin-left: 10px;
+  }
 
   &.hide {
     display: none;
@@ -159,7 +163,6 @@
 .reaction_text {
   display: flex;
   align-items: center;
-  margin-left: 15px;
 }
 
 .comment {
