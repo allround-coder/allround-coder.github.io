@@ -64,7 +64,9 @@ export function getPostByFile(file: string, fields: string[] = []) {
     }
 
     if (field === "tag") {
-      items[field] = [...data[field].split(", ")];
+      if (data[field]) {
+        items[field] = [...data[field].split(", ")];
+      }
       return;
     }
 

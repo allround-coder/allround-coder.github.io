@@ -65,7 +65,7 @@ export default function Post({ post, content }: Props) {
                     />
                   </div>
                   <div className={cx("textarea")}>
-                    <span className={cx("writer")}>Allround Coder</span>
+                    <span className={cx("writer")}>Blocktong</span>
                     <span className={cx("info")}>
                       <span className={cx("date")}>{`Posted On ${moment(post.date).format("MMM D, YYYY")}`}</span>
                       <span className={cx("reading_time")}>{post.readingTime} min read</span>
@@ -77,7 +77,7 @@ export default function Post({ post, content }: Props) {
                   width={"50"}
                   height={"50"}
                   className={cx("view_badge")}
-                  src={`https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fcozy-world.vercel.app${router.asPath}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false`}
+                  src={`https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fblocktong.github.io${router.asPath}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=views&edge_flat=false`}
                   alt=""
                 />
               </div>

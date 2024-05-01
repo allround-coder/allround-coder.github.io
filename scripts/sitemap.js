@@ -3,7 +3,7 @@ const globby = require("globby");
 const path = require("path");
 const prettier = require("prettier");
 
-const YOUR_AWESOME_DOMAIN = "https://cozy-coder.com";
+const YOUR_AWESOME_DOMAIN = "https://blocktong.github.io/";
 
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
 
