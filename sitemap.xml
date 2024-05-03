@@ -1,185 +1,572 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cozy-coder.com/posts</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/tags</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/posts/Blog</loc>
-  </url>
-  <url>
-    <loc>https://cozy-coder.com/posts/CSS</loc>
-  </url>
-  <url>
-    <loc>https://cozy-coder.com/posts/Html</loc>
-  </url>
-  <url>
-    <loc>https://cozy-coder.com/posts/Nextjs</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/01-iphone-calculator</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/02-snake-game</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/03-apple-pay</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/04-dino-game</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/05-whack-a-mole</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/06-cat-matching-game</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/07-tetris-game</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/08-flappy-bird</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/09-instagram-signin</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/10-2048-game</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/11-pong-game</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/13-othello-game</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/14-space-simulation</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/15-apple-watch</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/16-tictactoe</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/17-weather-app</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/18-missile-game</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/19-magic-keyboard</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/20-poop-game</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/21-music-player</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/22-chatgpt</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/23-wordgame</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/24-minesweeper</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/25-notion-kanban-board</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/26-painter-app</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/27-animated-signup</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/28-google-search</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/29-netflix-landing</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/30-watermelon-game</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/projects/31-bookmark-app</loc>
-  </url>
-
-  <url>
-    <loc>https://cozy-coder.com/posts/CSS/2023-08-23-how-to-css-blur</loc>
-  </url>
-
-  <url>
     <loc
-      >https://cozy-coder.com/posts/CSS/How-to-capture-an-element-with-html2canvas-and-download-an-image</loc
+      >https://allround-coder.github.io/posts/2024-05-01-10FigmaPluginstoConvertDesignsintoHTMLandCSSCode</loc
     >
   </url>
 
   <url>
     <loc
-      >https://cozy-coder.com/posts/Html/2023-08-23-Easiest-way-to-create-modifiable-elements</loc
+      >https://allround-coder.github.io/posts/2024-05-01-30HTMLTagstoknow</loc
     >
   </url>
 
   <url>
     <loc
-      >https://cozy-coder.com/posts/Nextjs/Building-a-Blog-with-Nextjs-A-Step-by-Step-Guide</loc
+      >https://allround-coder.github.io/posts/2024-05-01-50HTMLCSSandJavaScriptProjectsWithSourceCode</loc
     >
   </url>
 
   <url>
     <loc
-      >https://cozy-coder.com/posts/Blog/How-to-add-adsense-in-nextjs-blog</loc
+      >https://allround-coder.github.io/posts/2024-05-01-8CoolHTMLEffectstoCreateanAwesomeWebsite</loc
     >
   </url>
 
   <url>
     <loc
-      >https://cozy-coder.com/posts/Blog/How-to-generate-sitemap-in-nextjs</loc
+      >https://allround-coder.github.io/posts/2024-05-01-8Must-HaveCheatSheetsforWebDevelopersEdition1</loc
     >
   </url>
 
   <url>
-    <loc>https://cozy-coder.com/posts/Blog/How-to-use-markdown-it</loc>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-APIstoUseforCreatingReactApp</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://allround-coder.github.io/posts/2024-05-01-AUDIOART</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-Atalefrom30yearsofHTML</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-AvoidcachetrapwhenservingAngularapp</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-BetterJSDOMBuildingWithDOM-JONPart3TheStateObject</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-BuildingABetterJavaScriptDOMBuilderPart2ExtendingSystemObjects</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-BuildingReal-TimeApplicationswithSocketioReactjsNodejsandExpressjsAComprehensiveGuide</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-BuildingaTodoListAppwithReact-NativeAStep-by-StepGuide</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-BuildingaWebScraperforThreeCommonUseCases</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-BuildinganAnimatedRocketLoaderUsingHTMLandCSS</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-ConvertHTMLtoPDFinPythonStep-by-StepGuide</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-DebuggingReactNativeAppsTopToolsandStrategies</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-Disablingtextboxeswhyitsabadideaandwhattodoinstead</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-DownloadPDFfromAPIinReactUsingAxiosandblobs</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-ElevatingPowerBIReportswithHTMLCSSJoiningForces</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-ExploringtheVersatilityofJavaScriptFromDesktoptoMobileApplications</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-FrontendWeeklyDigest3591521April2024</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-FrontendWeeklyDigest3602228April2024</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-GettingStartedwithReduxSagaTutorial</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-HTMLAttributesThatEveryWebDeveloperShouldKnow</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://allround-coder.github.io/posts/2024-05-01-HooksinReacts</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-HowtoBuildFallbackforReactWebpackModulenotfoundError</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-HowtoConnectHTMLwithJSONUsingJavaScriptABeginnersGuide</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-HowtoDebugNodejsApplicationsUsingthedebuggerStatementEasiestWay</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-HowtoSkipReactuseEffectonInitialRender</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-HowtoWriteActualAPIMiddlewareforNextjs</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-Howtoachievecross-domainlocalStorage</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-HowtoaddJWTAuthenticationtoNextJSApps</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-Howtodesignaccessibleformsin10steps</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-ICodedWordleInASingleHTMLFileForMyFlight</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-ImplementingUserLoginandSignUpwithReactJSandFirebaseAComprehensiveGuide</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-InaccessiblenativeHTMLselectmultiple</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-IntegratingFaceIOusingHTMXandExpressJS</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-MasteringHTMXAPracticalApproachtoStreamlinedFrontendDevelopment</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-Maybeitstimetoletthefloatinglabelsdie</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-NevereverdisablebuttonsWhynot</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-PersonalBlogwithHTMXGoPart1GolangTemplatingSetup</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-PlayingwiththeGamePadAPI</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-PoweringFlaskwithWebsockets</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-React19BetaReleasedWhatYouNeedtoKnow</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-ReactRouterNavigateYourAppswithEase</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-ReactStatevsProps</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-ReactTestingLibraries</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-ReproducibleNxWorkspacewithHugeNxsConventions</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-SeamlessIntegrationofLaravelBreezeAPIScaffoldingwithReactApplications</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-SeparatingBusinessLogicfromUIComponentsinReact18</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-StartingwithHTML</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-StreamliningErrorHandlinginNodejswithGlobalErrorEventHandlers</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-SuperchargeYourReactStateManagementlikeaSeniorDevUnlockingthePowerofZustandandReactQuery</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-SuperchargeyourReactFormswithReactHookFormZodandMUIAPowerfulTrio</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-TheHTMLPingAPossiblyForgottenAttribute</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-Thearia-descriptionattributeandwhyyoushouldavoidusingit</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-Top8ReactChartLibrariesforDataVisualizationin2024</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-TopReactBoilerplates2024completeresearch</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-UnearthingHiddenGemsLesser-KnownHTMLTags</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-UnleashingthePotentialofReactJSNextJSChapter04MasteringReactJSX</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-UnveilingHiddenTreasuresLesser-KnownCSSPropertiesandTechniques</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-UsingLocalStoragewithNextjsABeginnersGuide</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-Vue3rspack003TheArtofComponentizationCompositionAPIandCommonProblemSolvingIdeas</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-01-ZustandvsReduxAComprehensiveComparisoninStateManagement</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-30DaysFrontenddevelopmentchallenge</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-AComprehensiveGuidetoHTMLforBeginners</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-AMAZINGSCROLLEFFECTSINSIMPLECSS</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-AreyouusingSVGfaviconsyetAguideformodernbrowsers</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-BuildingaCustomInputComponentwithFormValidationinAngular</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-BuildingaTotoroToggleSwitchUsingHTMLandCSS</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-BuildinganAnimatedJumpingTotoroUsingHTMLandCSS</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-CSSCascadeLayersThebestguidetothenewCSSfeature</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-ContainerizedanHTMLWebsiteusingDockeronProductionEnvironmentDockerCaseStudy</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-CreatingaTextareawithdynamicheightusingReactandTypescript</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-EffortlessPageRoutingUsingHTMX</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-HTMLINJECTIONPayloadList</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-HTMLIlliteracyPart2of2StylingAndFailwindStupid</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-HowToCreateaCircleThatFollowstheCursorinCSS</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-HowtoimplementmultiplefileuploadsinReact</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-IntroductiontoCSSSyntax</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-ModalswithHTMLdialogelementinJavaScriptandReact</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-NavigatingtoRecordDetailPagesinSalesforceLightningWebComponentsLWC</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-ReactJSonClickgetsexecutedwhenrenderedorloadedwithoutaclick</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-RecreatingBaseballScoreboardsoutofPlainOldHTMLandCSS</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-ReplacetheApacheDefaultWebPageWithSampleHTMLFileInsideContainerDockerAssignment5</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-RunningHTMLFileswithServeinLocalhostAStep-By-StepGuide</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-SVGVsCanvasAComparison</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-SendingHTMLEmailTemplateswithImagesusingNodejsandNodemailer</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-SorryImNotDigginHTMX</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-SuperchargeYourWebsiteSimpleSEOTricksUsingHTML</loc
+    >
+  </url>
+
+  <url>
+    <loc>https://allround-coder.github.io/posts/2024-05-02-TheHTMLdivider</loc>
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-UncaughtTypeErrorCannotsetpropertiesofnullsettinginnerHTMLSolutions</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-UnderstandingCSSLinkErrorsandHowtoFixThem</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-UsingWebViewinJetpackCompose</loc
+    >
+  </url>
+
+  <url>
+    <loc
+      >https://allround-coder.github.io/posts/2024-05-02-WebWorkersInterviewQuestions</loc
+    >
   </url>
 </urlset>
