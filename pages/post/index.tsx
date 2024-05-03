@@ -18,7 +18,7 @@ type Props = {
 
 export default function Post({ posts }: Props) {
   const router = useRouter();
-  const title = `Blocktong | Post`;
+  const title = `allround-coder | Post`;
   // if (!router.isFallback && !project?.slug) {
   //   return <ErrorPage statusCode={404} />;
   // }

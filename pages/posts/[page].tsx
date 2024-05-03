@@ -24,8 +24,8 @@ type Props = {
 
 export const PAGE_SIZE = 10;
 export const PER_PAGE_SIZE = 20;
-export const PAGE_KEY = "__BLOCKTONG_CURRENT_PAGE__";
-export const PAGEGROUP_KEY = "__BLOCKTONG_CURRENT_PAGE_GROUP__";
+export const PAGE_KEY = "__allround-coder_CURRENT_PAGE__";
+export const PAGEGROUP_KEY = "__allround-coder_CURRENT_PAGE_GROUP__";
 
 export default function Post({
   posts,

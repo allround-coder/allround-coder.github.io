@@ -76,7 +76,7 @@ export const PostList = ({ postList }: PostListProps) => {
                       height={20}
                     />
                   </div>
-                  <span className={cx("writer")}>Blocktong</span>
+                  <span className={cx("writer")}>Allround Coder</span>
                 </div>
                 <strong className={cx("title")}>{post.title}</strong>
                 {/* <p className={cx("description")}>{post.description}</p> */}

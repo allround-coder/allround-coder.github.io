@@ -1,5 +1,5 @@
 ---
-title: "초보자를 위한 HTML 완벽 가이드"
+title: "초보 퍼블리셔를 위한 HTML 완벽 가이드"
 description: ""
 coverImage: "/assets/img/2024-05-02-AComprehensiveGuidetoHTMLforBeginners_0.png"
 date: 2024-05-02 00:58
