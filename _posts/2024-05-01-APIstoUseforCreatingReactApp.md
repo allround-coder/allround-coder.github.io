@@ -1,5 +1,5 @@
 ---
-title: "리액트 앱을 만들 때 사용할 API들"
+title: "리액트 앱을 만들 때 유용한 공짜 API들"
 description: ""
 coverImage: "/assets/img/2024-05-01-APIstoUseforCreatingReactApp_0.png"
 date: 2024-05-01 17:53

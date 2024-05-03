@@ -1,5 +1,5 @@
 ---
-title: "SVG와 캔버스: 비교분석"
+title: "개발자가 알아둬야할 SVG와 캔버스 비교 정리"
 description: ""
 coverImage: "/assets/img/2024-05-02-SVGVsCanvasAComparison_0.png"
 date: 2024-05-02 00:10
@@ -11,7 +11,7 @@ link: "https://medium.com/stackanatomy/svg-vs-canvas-a-comparison-1b58e6c84326"
 ---
 
 
-```markdown
+
 ![SVG vs Canvas](/assets/img/2024-05-02-SVGVsCanvasAComparison_0.png)
 
 웹 그래픽 및 이미지를 표시하는 데 가장 널리 사용되는 두 가지 기술은 SVG와 Canvas입니다. 이 둘 모두 매력적인 웹 경험을 만들기 위한 웹 표준입니다. SVG는 해상도에 독립적이며 모양, 선 및 텍스트로 구성되어 있어 화질을 잃지 않고 확대 또는 축소할 수 있습니다. SVG 그래픽 및 이미지는 상호작용, 데이터 주도형 및 맞춤형 애플리케이션에 이상적입니다. 반면에 비트맵은 해상도 의존적인 래스터 그래픽 API인 Canvas에 이미지 데이터를 저장하는 데 사용됩니다. 웹 페이지에 모양과 이미지를 그리는 것은 흔한 실천법이며, 상호작용 게임, 애니메이션 및 시각화를 만들기 쉽습니다.
@@ -19,7 +19,6 @@ link: "https://medium.com/stackanatomy/svg-vs-canvas-a-comparison-1b58e6c84326"
 # SVG와 Canvas란 무엇인가요?
 
 대부분의 최신 브라우저는 XML 기반의 벡터 그래픽 형식인 SVG를 지원합니다. 픽셀화 없이 크기를 조절할 수 있는 간단한 그래픽 및 다이어그램을 만드는 데 효과적입니다. 또한 JavaScript를 사용하여 SVG를 통해 상호작용 그래픽을 생성할 수 있습니다. SVG는 XML 표준에 의존하는 2차원 벡터 이미지 형식입니다. 웹 디자인 및 개발에서 로고, 다이어그램 및 아이콘과 같은 벡터 그래픽을 만들거나 관리하기 위해 자주 사용됩니다. 기존의 JPEG, PNG 및 GIF와 같은 래스터 이미지와는 달리 SVG 이미지는 화질을 희생하지 않고 비율을 변경할 수 있어 웹사이트와 다양한 해상도를 가진 기기에서 이미지를 표시하는 데 더 나은 선택입니다. 또한 SVG 이미지는 압축되어 있어 래스터 이미지보다 빠르게 로드됩니다.
-```
 
 <div class="content-ad"></div>
 
@@ -185,7 +184,6 @@ SVG를 통해 다양한 모양을 만들 수 있습니다. 모양을 만드는 �
 - 윤곽선 너비를 설정하려면 스타일에 stroke-width 속성을 추가하면 됩니다.
 
 # CSS 클래스
-```
 
 <div class="content-ad"></div>
 

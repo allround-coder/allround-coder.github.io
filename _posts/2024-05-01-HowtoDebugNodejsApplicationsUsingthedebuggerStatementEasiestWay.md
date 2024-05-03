@@ -1,5 +1,5 @@
 ---
-title: "Node.js 애플리케이션을 디버깅하는 방법 - debugger 문 사용하기: 가장 쉬운 방법"
+title: "Node.js 애플리케이션을 디버깅하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-HowtoDebugNodejsApplicationsUsingthedebuggerStatementEasiestWay_0.png"
 date: 2024-05-01 17:44

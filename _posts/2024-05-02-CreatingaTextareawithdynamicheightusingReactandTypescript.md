@@ -1,5 +1,5 @@
 ---
-title: "React와 TypeScript를 사용하여 동적 높이를 가진 Textarea 만들기"
+title: "React와 TypeScript를 사용하여 높이가 변하는 Textarea 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-02-CreatingaTextareawithdynamicheightusingReactandTypescript_0.png"
 date: 2024-05-02 00:27
@@ -11,7 +11,6 @@ link: "https://medium.com/@oherterich/creating-a-textarea-with-dynamic-height-us
 ---
 
 
-```markdown
 <img src="/assets/img/2024-05-02-CreatingaTextareawithdynamicheightusingReactandTypescript_0.png" />
 
 # 소개
@@ -19,7 +18,6 @@ link: "https://medium.com/@oherterich/creating-a-textarea-with-dynamic-height-us
 이 글에서는 내용에 따라 자동으로 커지고 작아지는 `textarea`를 만드는 방법을 보여드리겠습니다. 이 솔루션은 React Hook으로 추출하여 여러 구성 요소 및 프로젝트에서 쉽게 재사용할 수 있습니다.
 
 <img src="https://miro.medium.com/v2/resize:fit:744/1*y6pw2_PMeE8fLGdxRgOEyA.gif" />
-```
 
 <div class="content-ad"></div>
 

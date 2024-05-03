@@ -1,5 +1,5 @@
 ---
-title: "웹 워커 | 인터뷰 질문"
+title: "웹 워커 관련 프론트엔드 면접 질문"
 description: ""
 coverImage: "/assets/img/2024-05-02-WebWorkersInterviewQuestions_0.png"
 date: 2024-05-02 00:08

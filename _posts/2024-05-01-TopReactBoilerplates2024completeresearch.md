@@ -1,5 +1,5 @@
 ---
-title: "2024년 최고의 React 보일러플레이트: 철저한 연구"
+title: "2024년 최고의 React 보일러플레이트 소개"
 description: ""
 coverImage: "/assets/img/2024-05-01-TopReactBoilerplates2024completeresearch_0.png"
 date: 2024-05-01 17:59
@@ -11,7 +11,7 @@ link: "https://medium.com/javascript-in-plain-english/top-react-boilerplates-202
 ---
 
 
-```markdown
+
 ![React](/assets/img/2024-05-01-TopReactBoilerplates2024completeresearch_0.png)
 
 # 웹 프레임워크 선택 문제
@@ -19,7 +19,6 @@ link: "https://medium.com/javascript-in-plain-english/top-react-boilerplates-202
 요즘 React는 시대를 앞서가는 인터페이스 프레임워크 중 하나로 자리매김했습니다. 2023년 설문조사에 따르면 전 세계 개발자 중 40.58%가 React.js를 사용하고 있어 가장 인기 있는 웹 프레임워크 중 하나로 떠올랐습니다. Facebook에서 개발된 React.js는 PayPal, Uber, Instagram, Airbnb와 같은 주요 기업들이 사용하여 사용자 인터페이스를 강화하고 있습니다. 확실히 React는 생산성, 구성 요소 기반 아키텍처 및 선언적 구문의 조합으로, 널리 사용되고 강력한 커뮤니티 지원을 받고 있습니다. 이는 개발자들이 이전보다 더 많은 프로젝트를 React로 구축하고 있다는 것을 의미합니다.
 
 React 라이브러리는 의견을 가지지 않는 설계로, '맨 처음에' 정의되고 구성 요소를 관리하는 핵심 기능 이외에는 실제로 거의 어떤 추가 기능도 포함하지 않습니다. 따라서 프로퍼티 전달, 구성 요소 분해, React 응용 프로그램 파일 구조화, 전체 응용 프로그램 규모 확장 및 기타 세부 사항에 대한 최상의 방법을 알지 못하는 경우 쉽게 혼동할 수 있습니다. 이러한 함정은 내장 함수 및 구성 요소를 포함하여 개발 프로세스를 최적화하고 개발자가 초기 설정 및 구성 처리에 시간을 허비하는 대신 응용 프로그램 로직을 구축하는 데 집중할 수 있도록 하는 보일러플레이트를 사용하여 피할 수 있습니다. 다시 말해, 응용 프로그램 개발을 시작하는 표준화된 기점 역할을 합니다. GitHub에서 'react-boilerplate'을 검색하면 현재 44.8k 저장소가 나옵니다. 개발용으로 선택할 템플릿을 결정할 때, 자신의 응용 프로그램에 해당하고 확장성과 향후 유지 관리에 좋은 것을 선택하는 문제가 생깁니다.
-```
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "ReactJS와 Firebase를 사용하여 사용자 로그인 및 가입 구현하기 - 포괄적인 안내"
+title: "ReactJS와 Firebase를 사용하여 사용자 로그인 및 가입 구현하기(2024년)"
 description: ""
 coverImage: "/assets/img/2024-05-01-ImplementingUserLoginandSignUpwithReactJSandFirebaseAComprehensiveGuide_0.png"
 date: 2024-05-01 17:51
@@ -175,7 +175,6 @@ export function UserAuthContextProvider({ children }) {
 
 3. App을 Provider로 감싸기: (App.js)
 
-````
 
 <div class="content-ad"></div>
 
@@ -191,7 +190,6 @@ export function UserAuthContextProvider({ children }) {
 
 이제 LogIn, SignUp, LogOut 및 googleSignIn 함수를 만들겠습니다. 여기서는 firebase.js 파일에서 만든 Auth 인스턴스를 사용할 것입니다.
 
-````
 
 <div class="content-ad"></div>
 
@@ -217,7 +215,6 @@ onAuthStateChanged:
 
 onAuthStateChanged 함수는 Firebase 인증 시스템에 옵저버를 등록하고 사용자의 인증 상태 변경을 듣습니다. 사용자가 로그인하거나 로그아웃하거나 인증 토큰이 만료될 때와 같이 사용자의 인증 상태가 변경될 때마다 콜백 함수를 트리거합니다.
 
-````
 
 <div class="content-ad"></div>
 

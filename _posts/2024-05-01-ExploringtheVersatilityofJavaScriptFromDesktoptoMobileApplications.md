@@ -1,5 +1,5 @@
 ---
-title: "JavaScript 다양성 탐색: 데스크탑에서 모바일 애플리케이션으로"
+title: "JavaScript로 데스크탑에서 모바일 애플리케이션 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-ExploringtheVersatilityofJavaScriptFromDesktoptoMobileApplications_0.png"
 date: 2024-05-01 18:11

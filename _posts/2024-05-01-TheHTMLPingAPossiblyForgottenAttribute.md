@@ -1,5 +1,5 @@
 ---
-title: "HTML Ping: 잊혀져 가는 속성"
+title: "HTML Ping 이제는 사용하지 않아야하는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-01-TheHTMLPingAPossiblyForgottenAttribute_0.png"
 date: 2024-05-01 22:50

@@ -1,5 +1,5 @@
 ---
-title: "아마도 뜨는 레이블을 그만두는 것이 좋을 때입니다"
+title: "프롤팅 레이블을 더이상 사용해서는 안되는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-01-Maybeitstimetoletthefloatinglabelsdie_0.png"
 date: 2024-05-01 22:35
@@ -44,7 +44,7 @@ link: "https://medium.com/user-experience-design-1/maybe-its-time-to-let-the-flo
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="https://miro.medium.com/v2/resize:fit:1400/0*AJWNecCc9kGWUY74.gif" />
 
 주로 JavaScript로 처리하지만 Chris Coyier의 CSS로 된 예제와 같이 CSS만을 사용한 버전도 있습니다. 텍스트가 아래로 이동하거나 왼쪽으로 이동하는 등 다양한 변형이 있습니다. Bootstrap과 같은 구현체는 라벨을 입력란 경계 내부에 유지합니다.
@@ -52,7 +52,6 @@ link: "https://medium.com/user-experience-design-1/maybe-its-time-to-let-the-flo
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*yw6AdTOOnTkIV8H15LM8sg.gif" />
 
 이를 "플로팅 인필드 라벨"이라고 합니다. 하지만 이 글의 주제를 고려하면 그것은 별 차이가 없는 구별이라고 할 수 있습니다.
-```
 
 <div class="content-ad"></div>
 

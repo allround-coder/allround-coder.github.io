@@ -1,5 +1,5 @@
 ---
-title: "개인 블로그를 HTMX + Go로 만들기 Part 1 — Golang 템플릿 설정"
+title: "개인 블로그를 HTMX + Go로 만들기1 - Golang 템플릿 설정"
 description: ""
 coverImage: "/assets/img/2024-05-01-PersonalBlogwithHTMXGoPart1GolangTemplatingSetup_0.png"
 date: 2024-05-01 23:15
@@ -91,7 +91,6 @@ func newTemplate(templates *template.Template) echo.Renderer {
 이제 간단한 echo 서버를 만들어 봅시다:
 
 ```js
-...
 func main() {
     e := echo.New()
     
@@ -110,7 +109,6 @@ func main() {
 
     e.Logger.Fatal(e.Start(":4040"))
 }
-...
 ```
 
 이 echo 서버는 포트 :4040에서 실행되며 public 디렉토리에 위치한 .html 파일을 렌더링합니다. 그리고 /hello라는 새로운 엔드포인트를 생성하여 index를 제공할 것입니다. 실행해 보면 아마도 이렇게 될 것입니다:
@@ -124,10 +122,8 @@ func main() {
 이제 템플릿에 동적 값들을 전달할 수 있는지 확인해봐야 해요. 결국 템플릿의 목적이죠. 먼저 index.html 코드를 약간 수정해야 해요:
 
 ```js
-...
 <p>Hello, World!</p>
 <p>Greetings, {.Name}!</p>
-...
 ```
 
 다시 한 번 중괄호를 두 개 사용했네요. 이 예제에서는 html 파일로 Name이라는 값을 전달하려고 합니다. 그러면 서버도 조금 수정해야겠죠?
@@ -135,14 +131,12 @@ func main() {
 <div class="content-ad"></div>
 
 ```js
-...
 e.GET("/hello", func(e echo.Context) error {
     res := map[string]interface{}{
         "Name": "Wyndham",
     }
     return c.Render(http.StatusOK, "index", res)
 })
-...
 ```
 
 이렇게 하면 렌더러가 res의 값을 루트 값으로 취하고 Name 키를 가진 자식 값을 찾습니다. 그럼 다음과 같이 결과를 렌더링해야 합니다:
@@ -150,7 +144,6 @@ e.GET("/hello", func(e echo.Context) error {
 <img src="/assets/img/2024-05-01-PersonalBlogwithHTMXGoPart1GolangTemplatingSetup_1.png" />
 
 # 중첩 템플릿 및 템플릿 간 값 전달하기
-```
 
 <div class="content-ad"></div>
 
@@ -172,11 +165,9 @@ e.GET("/hello", func(e echo.Context) error {
 그런 다음 index.html을 약간 수정해야 합니다. 먼저 인사 문구를 삭제한 다음 다음을 추가하십시오:
 
 ```js
-...
 <p>Hello, World!</p>
 <!-- 이 줄 삭제 <p>Greetings, {.Name}!</p> -->
 {template "name_card" .}
-...
 ```
 
 <div class="content-ad"></div>
@@ -184,7 +175,6 @@ e.GET("/hello", func(e echo.Context) error {
 그러면 우리는 다시 한번 서버를 수정해야 합니다:
 
 ```js
-...
 e.GET("/hello", func(e echo.Context) error {
     res := map[string]interface{}{
         "Name": "Wyndham",
@@ -193,12 +183,11 @@ e.GET("/hello", func(e echo.Context) error {
     }
     return c.Render(http.StatusOK, "index", res)
 })
-...
 ```
 
 이제 여기서 맞다면, 이렇게 개인 정보를 렌더링할 수 있어야 합니다. 여기서 로직은, Name, Phone, Email을 포함한 3쌍의 키-값을 가진 인터페이스 맵을 전달한다는 것입니다.
 
-그리고 우리는 중괄호를 사용하여 name_card에서 해당 값을 액세스합니다. 그러나 name_card 템플릿이 값을 받도록 하려면 index.html 내에서 {template "name_card" .}의 내부에서 추가 . 를 통해 res 값을 전달해야 합니다.
+그리고 우리는 중괄호를 사용하여 name_card에서 해당 값을 액세스합니다. 그러나 name_card 템플릿이 값을 받도록 하려면 index.html 내에서 template "name_card" .의 내부에서 추가 . 를 통해 res 값을 전달해야 합니다.
 
 <div class="content-ad"></div>
 
@@ -224,14 +213,12 @@ e.GET("/hello", func(e echo.Context) error {
 위 코드를 통해 HTMX를 CDN을 통해 추가할 거예요. 이제 사용자 정보를 직접 공개하지 않도록 index.html을 다시 수정해야 해요:
 
 ```js
-...
 <p>Hello, World!</p>
 <!-- 이 줄을 삭제하세요 {template "name_card" .} -->
 <div id="user-info">
     <p>{.Name}</p>
     <button hx-get="/get-info" hx-target="#user-info" hx-swap="innerHTML">정보 공개</button>
 </div>
-...
 ```
 
 <div class="content-ad"></div>

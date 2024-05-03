@@ -1,5 +1,5 @@
 ---
-title: "NextJS 앱에 JWT 인증 추가하는 방법"
+title: "NextJS 앱에 JWT 인증 추가하는 방법(2024년 최신)"
 description: ""
 coverImage: "/assets/img/2024-05-01-HowtoaddJWTAuthenticationtoNextJSApps_0.png"
 date: 2024-05-01 17:56

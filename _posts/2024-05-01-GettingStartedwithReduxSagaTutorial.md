@@ -1,5 +1,5 @@
 ---
-title: "리덕스 사가 튜토리얼 시작하기"
+title: "리덕스 사가 사용하는 방법(기초)"
 description: ""
 coverImage: "/assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_0.png"
 date: 2024-05-01 17:33
@@ -186,7 +186,7 @@ useSelector()는 뷰를 다시 렌더링하도록 강제하지만, 선택기 결
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Redux Saga](/assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_2.png)
 
 # Redux Saga:
@@ -194,7 +194,6 @@ useSelector()는 뷰를 다시 렌더링하도록 강제하지만, 선택기 결
 가장 쉽게 설명하는 방법은 redux-saga는 비즈니스 로직을 프론트엔드로부터 분리한다는 것입니다. Saga는 이벤트 기반 솔루션이라고 언급할 수 있으며, 이벤트를 발생시키고 해당 이벤트에 대해 실행되어야 하는 로직을 처리합니다.
 
 Redux-saga가 어떻게 작동하는지 이해하려면 redux-saga의 개념을 이해한 후에 명확해질 수 있는 다양한 플로우 다이어그램을 찾을 수 있습니다. 여기에 하나의 다이어그램이 있습니다. 전반적인 아이디어를 얻을 수 있습니다.
-```
 
 <div class="content-ad"></div>
 
@@ -857,15 +856,12 @@ retrivedData.users.map((user) => (
 
 위의 코드는 검색한 데이터를 출력할 것입니다. 이를 확인하는 가장 좋은 방법은 앱을 실행하는 것입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_10.png)
-```
 
 한 번 실행하면, 우리 프로그램이 모든 세 가지 액션을 계속 지켜보고 있음을 볼 수 있고 사용자가 세 가지 액션 중 아무 것이라도 취할 수 있습니다. 먼저 Users API 액션을 취해 봅시다.
 
-```markdown
 ![이미지](/assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_11.png)
-```
 
 <div class="content-ad"></div>
 
@@ -1012,7 +1008,7 @@ createSelector의 문서를 보면 3개의 매개변수를 받는다는 것을 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_14.png" />
 
 우리가 한 코드에는 입력 셀렉터로 사용할 수 있는 세 개의 데이터 객체가 있습니다. 입력 셀렉터란 선택하려는 데이터를 의미합니다. resultFunc는 원하는 방식으로 데이터를 잘라내고 반환할 수 있는 함수입니다. 여러 입력 셀렉터가 있을 수 있다는 점에 유의하세요 (곧 보게 될 것입니다). 이는 해당 데이터의 선택기를 만들어 데이터를 혼합하고 일치시킬 수 있다는 것을 의미합니다.
@@ -1020,7 +1016,6 @@ createSelector의 문서를 보면 3개의 매개변수를 받는다는 것을 �
 우리의 목표는 사용자가 게시물을 선택할 때 선택한 게시물, 해당 댓글 및 저자 정보를 가져와야 한다는 것입니다. 이를 위해 사용자가 선택해야 하는데, 이는 사용자가 ACTION을 취해야 한다는 의미입니다.
 
 그래서 actions.js에 다음 액션을 추가해주세요:
-```
 
 <div class="content-ad"></div>
 

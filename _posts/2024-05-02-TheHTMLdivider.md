@@ -1,5 +1,5 @@
 ---
-title: "HTML | 구분자"
+title: "HTML | 구분자 정리"
 description: ""
 coverImage: "/assets/img/2024-05-02-TheHTMLdivider_0.png"
 date: 2024-05-02 00:37
@@ -72,7 +72,7 @@ Inkscape(오픈 소스 벡터 편집 도구)에서 삼각형을 곡선 구분선
 
 Inkscape의 XML 편집기(편집 - XML 편집기)를 살펴보면 다음과 같은 마크업이 나타납니다.
 
-```사람
+```html
 <svg
   viewBox="0 0 100 100"
   style="width: 100%; height: 120px;position: relative;display: block;"

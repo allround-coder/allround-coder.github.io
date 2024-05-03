@@ -1,5 +1,5 @@
 ---
-title: "Vue3 + Vite 003 컴포넌트화의 기술 (구성 API) 및 일반적인 문제 해결 아이디어"
+title: "Vue3 + Vite 컴포넌트화 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-Vue3rspack003TheArtofComponentizationCompositionAPIandCommonProblemSolvingIdeas_0.png"
 date: 2024-05-01 18:06
@@ -106,7 +106,6 @@ export default {
 어려움 : 대규모 어플리케이션에서는 종종 다층 중첩된 컴포넌트 간의 통신 요구사항이 발생합니다. 직접 props와 emit을 사용하면 "props를 계층적으로 전달하는" 및 "이벤트를 계층적으로 발생시키는" 문제가 발생할 수 있습니다.
 
 해결책 : 이러한 번거로운 계층별 전달을 피하기 위해 Vue 3의 provide 및 inject API를 사용하여 컴포넌트 간 수준의 통신을 할 수 있습니다.
-```
 
 <div class="content-ad"></div>
 
@@ -216,7 +215,6 @@ export default {
 어려움: 비동기 컴포넌트를 사용할 때 컴포넌트 로딩 지연이나 실패와 같은 문제가 발생할 수 있어 사용자 경험에 영향을 줄 수 있습니다.
 
 해결책: 로딩 상태 힌트 및 오류 처리 매커니즘을 제공할 수 있습니다. 예를 들어, Suspense 컴포넌트를 사용하여 비동기 컴포넌트를 감쌀 수 있고 대체 콘텐츠(대체 콘텐츠)를 제공할 수 있습니다.
-```
 
 <div class="content-ad"></div>
 

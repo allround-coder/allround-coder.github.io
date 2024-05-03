@@ -134,7 +134,6 @@ export async function getStaticProps({ params }: Params) {
     ],
     page: params.page,
   });
-  console.log(res);
   return {
     props: res,
   };

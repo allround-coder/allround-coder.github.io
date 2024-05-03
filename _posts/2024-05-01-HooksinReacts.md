@@ -1,5 +1,5 @@
 ---
-title: "리액트에서의 훅(Hooks)"
+title: "리액트에서의 훅(Hooks)을 제대로 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-HooksinReacts_0.png"
 date: 2024-05-01 18:08

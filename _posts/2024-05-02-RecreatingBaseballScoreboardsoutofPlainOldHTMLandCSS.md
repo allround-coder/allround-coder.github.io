@@ -1,5 +1,5 @@
 ---
-title: "평범한 HTML과 CSS로 야구 스코어보드 다시 만들기"
+title: "평범한 HTML과 CSS로 야구 스코어보드 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-02-RecreatingBaseballScoreboardsoutofPlainOldHTMLandCSS_0.png"
 date: 2024-05-02 00:25

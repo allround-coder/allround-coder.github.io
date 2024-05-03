@@ -1,5 +1,5 @@
 ---
-title: "플라스크(Flask)에 웹소켓(Websockets)을 적용해 보세요!"
+title: "플라스크(Flask)에 웹소켓(Websockets) 적용하기"
 description: ""
 coverImage: "/assets/img/2024-05-01-PoweringFlaskwithWebsockets_0.png"
 date: 2024-05-01 22:54
@@ -173,7 +173,6 @@ WantedBy=multi-user.target
 위의 Flask 응용 프로그램 디렉토리 구조에서 "templates" 폴더와 "base.html" 파일을 생성했습니다. 이 파일은 브라우저를 http://`서버-IP`/home으로 가리킬 때 렌더링됩니다.
 
 이는 서버가 보낸 핑 결과를 보는 데 사용되는 응용 프로그램에 의해 제공되는 페이지입니다.
-```
 
 <div class="content-ad"></div>
 

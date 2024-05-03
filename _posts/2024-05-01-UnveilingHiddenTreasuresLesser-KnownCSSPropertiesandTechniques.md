@@ -1,5 +1,5 @@
 ---
-title: "숨겨진 보물 발견하기: 잘 알려지지 않은 CSS 속성과 기술들"
+title: "시니어 개발자도 모르는 CSS 속성과 기술들"
 description: ""
 coverImage: "/assets/img/2024-05-01-UnveilingHiddenTreasuresLesser-KnownCSSPropertiesandTechniques_0.png"
 date: 2024-05-01 23:05
@@ -39,7 +39,6 @@ div {
 
 <div class="content-ad"></div>
 
-```markdown
 ![Scroll Snap Example](https://miro.medium.com/v2/resize:fit:1212/1*_S39ZNCxYi2eOIh66HTmKg.gif)
 
 3. scroll-snap-type와 scroll-snap-align: 부드러운 스크롤링 제어
@@ -129,7 +128,7 @@ p {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*4MPGEuRjtxEsaUJ-FEgOhQ.gif)
 
 9. content-visibility: 렌더링 성능 향상
@@ -141,11 +140,10 @@ ul {
   content-visibility: auto;
 }
 ``` 
-```
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*C2Q223zce9QYqesknQHaNQ.gif)
 
 10. aspect-ratio: Preserving Aspect Ratios
@@ -157,12 +155,10 @@ div {
   aspect-ratio: 16 / 9;
 }
 ``` 
-```
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![CSS](https://miro.medium.com/v2/resize:fit:1400/1*FTxfXRBfT7sTlZHRG3oolQ.gif)
 
 CSS는 웹 디자이너와 개발자들에게 다양한 가능성을 제공하는 다재다능한 언어입니다. 여기서 강조된 잘 알려지지 않은 속성과 기술을 탐험함으로써, 여러분의 프로젝트에서 창의성, 효율성, 그리고 성능의 새로운 차원을 개척할 수 있습니다. 이 숨겨진 보석들을 받아들이고, 여러분의 디자인이 새로운 우아함과 기능성으로 번성하는 것을 지켜보세요.
-```

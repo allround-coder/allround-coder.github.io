@@ -1,5 +1,5 @@
 ---
-title: "Salesforce Lightning Web Components (LWC)에서 레코드 상세 페이지로 이동하는 방법"
+title: "(LWC)에서 레코드 상세 페이지로 이동하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-02-NavigatingtoRecordDetailPagesinSalesforceLightningWebComponentsLWC_0.png"
 date: 2024-05-02 00:52

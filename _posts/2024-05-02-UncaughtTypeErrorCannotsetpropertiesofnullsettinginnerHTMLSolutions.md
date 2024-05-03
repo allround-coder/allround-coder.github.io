@@ -1,5 +1,5 @@
 ---
-title: "구문 오류: null의 속성을 설정할 수 없습니다 ('inner HTML') 해결방안"
+title: "Uncaught TypeError: Cannot set properties of null (setting ‘inner HTML’) 해결방법"
 description: ""
 coverImage: "/assets/img/2024-05-02-UncaughtTypeErrorCannotsetpropertiesofnullsettinginnerHTMLSolutions_0.png"
 date: 2024-05-02 00:26

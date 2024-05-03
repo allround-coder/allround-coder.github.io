@@ -1,5 +1,5 @@
 ---
-title: "React Native 앱 디버깅: 최고의 도구와 전략"
+title: "React Native 앱 디버깅하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-DebuggingReactNativeAppsTopToolsandStrategies_0.png"
 date: 2024-05-01 18:14

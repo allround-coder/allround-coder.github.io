@@ -1,5 +1,5 @@
 ---
-title: "접근이 어려운 네이티브 HTML: <select multiple>"
+title: "HTML에서 접근성을 준수하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-InaccessiblenativeHTMLselectmultiple_0.png"
 date: 2024-05-01 23:07
@@ -61,7 +61,7 @@ link: "https://medium.com/user-experience-design-1/inaccessible-native-html-sele
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](https://miro.medium.com/v2/resize:fit:804/1*JuD893iR1NkC9p47BgPVXw.gif)
 
 비연속 항목을 선택하려면 하나의 옵션을 선택하고 Ctrl 키를 누른 채로 다음 옵션을 클릭한 후 필요한 만큼 반복하세요:
@@ -69,7 +69,6 @@ link: "https://medium.com/user-experience-design-1/inaccessible-native-html-sele
 ![이미지](https://miro.medium.com/v2/resize:fit:804/1*9RnOj1NxOyKCm34LmTE36g.gif)
 
 ## 키보드만으로 여러 항목 선택
-```
 
 <div class="content-ad"></div>
 
@@ -95,7 +94,7 @@ https://jsfiddle.net/6azcb2hu/
 
 아직 보조 기술에 대해 언급하지 않았네요.
 
-## 보조 기술이 있는 <select multiple> 컨트롤
+## 보조 기술이 있는 select multiple 컨트롤
 
 그렇다면 보조 기술(AT)을 사용할 때는 어떨까요? 앞서 설명한 것처럼 비-AT 사용자가 겪는 제약 사항과 동일한 제한 사항이 있습니다. 또한 이전에 선택한 옵션을 기억해야 합니다.
 
@@ -180,7 +179,6 @@ W3C 내부의 커뮤니티 그룹인 OpenUI가 있습니다. "HTML, CSS, JS 및 
 옵션 2: (매우 주의해서) 써드 파티 라이브러리 사용하기
 
 많은 옵션이 있거나 이를 그룹화된 체크박스로 표시하는 것이 적절하지 않은 경우, 써드 파티 라이브러리를 사용해야 할 수 있습니다.
-```
 
 <div class="content-ad"></div>
 

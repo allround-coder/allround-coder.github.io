@@ -251,7 +251,6 @@ function checkStatus() {
 
 <div class="content-ad"></div>
 
-```markdown
 ![게임패드 API로 놀아보기](/assets/img/2024-05-01-PlayingwiththeGamePadAPI_3.png)
 
 코드로 번역하면 다음과 같을 것입니다:
@@ -277,7 +276,6 @@ if (gamepads[0].axes[1] == 1.0) {
 ```
 
 ## 민감도 임계값
-```
 
 <div class="content-ad"></div>
 

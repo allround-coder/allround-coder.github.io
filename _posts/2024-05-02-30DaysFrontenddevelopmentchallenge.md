@@ -1,5 +1,5 @@
 ---
-title: "30일 도전! 프론트엔드 개발하기"
+title: "프론트엔드 개발자로 30일만에 거듭나는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-02-30DaysFrontenddevelopmentchallenge_0.png"
 date: 2024-05-02 00:28

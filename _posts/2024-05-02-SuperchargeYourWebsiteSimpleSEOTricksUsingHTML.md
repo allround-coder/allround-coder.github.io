@@ -1,5 +1,5 @@
 ---
-title: "당신의 웹사이트를 강화하세요! HTML을 이용한 간단한 SEO 요령들"
+title: "간단한 HTML로 SEO 점수를 올리는 방법들"
 description: ""
 coverImage: "/assets/img/2024-05-02-SuperchargeYourWebsiteSimpleSEOTricksUsingHTML_0.png"
 date: 2024-05-02 00:30

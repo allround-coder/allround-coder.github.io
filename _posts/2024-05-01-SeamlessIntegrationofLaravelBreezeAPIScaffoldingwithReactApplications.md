@@ -1,5 +1,5 @@
 ---
-title: "라라벨 Breeze API 스캐폴딩을 리액트 애플리케이션과 원활하게 통합하기"
+title: "Laravel Breeze API 스캐폴딩을 리액트 애플리케이션과 통합하기"
 description: ""
 coverImage: "/assets/img/2024-05-01-SeamlessIntegrationofLaravelBreezeAPIScaffoldingwithReactApplications_0.png"
 date: 2024-05-01 17:28

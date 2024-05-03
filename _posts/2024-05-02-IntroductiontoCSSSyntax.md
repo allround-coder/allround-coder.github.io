@@ -1,5 +1,5 @@
 ---
-title: "CSS 구문 소개"
+title: "CSS 기초 문법 정리"
 description: ""
 coverImage: "/assets/img/2024-05-02-IntroductiontoCSSSyntax_0.png"
 date: 2024-05-02 00:01

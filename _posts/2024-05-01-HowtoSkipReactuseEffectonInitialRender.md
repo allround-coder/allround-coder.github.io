@@ -75,8 +75,7 @@ React 변수를 가져와서 useRef 변수를 초기화하고, useState로 쿼�
 
 아래는 Markdown 형식으로 표현한 내용입니다.
 
-```markdown
+
 ![How to Skip React useEffect on Initial Render](/assets/img/2024-05-01-HowtoSkipReactuseEffectonInitialRender_5.png)
 
 이러한 방법으로 중앙 useRef 변수로 모든 로직을 관리할 수 있어요. 이 작은 수정으로 함수 컴포넌트를 지저분하게 만들지 않으면서도 많은 useEffect를 관리할 수 있어요.
-```

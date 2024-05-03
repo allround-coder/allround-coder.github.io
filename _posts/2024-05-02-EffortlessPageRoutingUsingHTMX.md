@@ -1,5 +1,5 @@
 ---
-title: "제목: HTMX를 활용한 쉬운 페이지 라우팅"
+title: "HTMX를 활용해 쉬운 페이지 라우팅하기"
 description: ""
 coverImage: "/assets/img/2024-05-02-EffortlessPageRoutingUsingHTMX_0.png"
 date: 2024-05-02 00:04
@@ -11,7 +11,6 @@ link: "https://medium.com/@paulallies/htmx-page-navigation-07b54742d251"
 ---
 
 
-```markdown
 ![이미지](/assets/img/2024-05-02-EffortlessPageRoutingUsingHTMX_0.png)
 
 리액트는 종종 웹 애플리케이션에 지나치게 많은 요소를 포함하고 있을 수 있으며, HTMX와 함께 웹 서버만 사용하여 상호 작용 애플리케이션을 만드는 것이 동등한 결과를 얻을 수 있는 경우가 있습니다.
@@ -19,7 +18,6 @@ link: "https://medium.com/@paulallies/htmx-page-navigation-07b54742d251"
 이 블로그 포스트에서는 HTMX를 활용하여 상호 작용이 가능하고 화면 깜빡임이 없는 페이지 이동을 작성하는 방법을 설명하겠습니다:
 
 ## 서버 설정
-```
 
 <div class="content-ad"></div>
 
@@ -164,7 +162,6 @@ sidenav 템플릿 컴포넌트를 partials로 리팩터링하여 레이아웃에
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*yPvQ3Jj47osdFfxsoMXqSg.gif" />
 
 HTMX라는 가벼운 JavaScript 라이브러리를 사용하여 이 문제를 해결해야 합니다. 이 라이브러리는 보다 더 순조롭고 상호작용적인 사용자 네비게이션 경험을 크게 향상시킬 수 있습니다. HTMX는 더 다양한 응용 프로그램에서 사용할 수 있지만, 현재 목적에 맞게 더 원활한 네비게이션을 달성하기 위해 그 능력을 활용하는 데 중점을 둘 것입니다.
-```
 
 <div class="content-ad"></div>
 

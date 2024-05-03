@@ -1,5 +1,5 @@
 ---
-title: "50개 이상의 HTML, CSS 및 JavaScript 프로젝트 소스 코드와 함께"
+title: "HTML, CSS 및 JavaScript 프로젝트 50개(소스 코드 있음)"
 description: ""
 coverImage: "/assets/img/2024-05-01-50HTMLCSSandJavaScriptProjectsWithSourceCode_0.png"
 date: 2024-05-01 23:31
@@ -21,7 +21,7 @@ HTML, CSS 및 Javascript 50개 이상의 프로젝트 목록은 웹 개발 분�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-01-50HTMLCSSandJavaScriptProjectsWithSourceCode_1.png)
 
 MP4
@@ -29,7 +29,6 @@ MP4
 HTML, CSS, 및 JavaScript를 사용하는 완전한 초보자를 위한 50가지 이상의 웹 개발 프로젝트 소스 코드를 받으세요.
 
 이 기사에서는 초보자부터 중간 수준까지 다루는 HTML CSS 및 Javascript를 사용한 프로젝트와 소스 코드를 포함하였습니다.
-```
 
 <div class="content-ad"></div>
 
@@ -841,7 +840,7 @@ Responsive: 네
 
 <div class="content-ad"></div>
 
-```markdown
+
 언어: Html, CSS, Javascript
 
 프로젝트 코드 다운로드: [여기를 클릭하세요](Click Here)
@@ -849,7 +848,6 @@ Responsive: 네
 프로젝트 데모:
 
 ![프로젝트 데모](/assets/img/2024-05-01-50HTMLCSSandJavaScriptProjectsWithSourceCode_45.png)
-```
 
 <div class="content-ad"></div>
 

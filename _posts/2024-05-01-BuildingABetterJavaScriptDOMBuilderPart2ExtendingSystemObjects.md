@@ -1,5 +1,5 @@
 ---
-title: "자바스크립트 DOM 빌더를 개선하는 방법: 파트 2 시스템 객체 확장하기"
+title: "시스템 객체 확장으로 자바스크립트 DOM 빌더를 개선하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-BuildingABetterJavaScriptDOMBuilderPart2ExtendingSystemObjects_0.png"
 date: 2024-05-01 23:02
@@ -65,7 +65,7 @@ Object.definePropert[ies | y]는 우리의 친구입니다... 그리고 JavaScri
 
 # Object.definepropert[ies|y] 개선하기
 
-이 함수들을 좋아하지만, 문법에는 약간 번잡한 부분이 있어 불필요하게 장황하게 느끼게 할 수 있습니다. 이전 기사에서처럼 “타입”을 가로채서 요소의 “타입”을 확인하여 일반 객체를 전달하면 defineProperty과 같이 동작하지만, 다른 값 유형은 자동으로 가장 일반적으로 사용하는 기술인 객체 { value }에 래핑하게 할 수 있습니다.
+이 함수들을 좋아하지만, 문법에는 약간 번잡한 부분이 있어 불필요하게 장황하게 느끼게 할 수 있습니다. 이전 기사에서처럼 “타입”을 가로채서 요소의 “타입”을 확인하여 일반 객체를 전달하면 defineProperty과 같이 동작하지만, 다른 값 유형은 자동으로 가장 일반적으로 사용하는 기술인 객체 `{` value `}`에 래핑하게 할 수 있습니다.
 
 이를 돕기 위해 - 특히 일반 Object를 후손으로부터 격리하기 위해 - 나만의 Object.__type 루틴을 추가합니다. JavaScript에서 가장 큰 고통 중 하나는 범용 “데이터 유형” 객체를 다른 객체와 구분하는 간편한 메커니즘이 없다는 것입니다. 일부 후손은 typeof == "Object"를 반환하고 이는 원하는 바가 아닐 수 있습니다... 그리고 배열 같은 것들이 instanceof와 같은 것을 사용해야 할 수 있습니다.
 
@@ -108,7 +108,7 @@ toString 메서드에는 실제 Object 클래스 이름이 포함되어 있어�
 
 다행히도 모든 것이 window의 하위 요소이므로 window[value]를 사용하여 모든 이름을 배열에서 대상으로 할 수 있습니다. 매번 일일이 선언할 필요 없이 또는 [name, Object]와 같이 어리석고 무의미한 객체를 만들 필요가 없습니다.
 
-자바스크립트를 잘 몰라도 되는 분들을 위해, { value }는 { "value": value }와 기능적으로 동일합니다. 객체 선언에서 변수를 그냥 넣으면 변수의 이름이 속성의 이름이 됩니다.
+자바스크립트를 잘 몰라도 되는 분들을 위해,  value는 `{` "value": value `}`와 기능적으로 동일합니다. 객체 선언에서 변수를 그냥 넣으면 변수의 이름이 속성의 이름이 됩니다.
 
 <div class="content-ad"></div>
 
@@ -411,10 +411,9 @@ __setAttr: function (attr) {
 
 "쉬운" `Object.assign` 대신 손수 속성 객체를 반복해서 순회하는 방법을 사용합니다. 이렇게 하면 정의를 후킹하고, 데이터셋과 스타일을 올바르게 처리할 수 있습니다. 대부분의 속성에는 `setAttribute`를 사용하는 것이 좋지만, 그것은 값들을 문자열로만 설정할 수 있습니다. 배열, 함수 및 객체 기능을 트랩할 수 있어서 이벤트 등을 설정할 수 있게 합니다.
 
-참고로, DOM-JON에서는 className 대신 { "class": "myClassName" }를 사용해야 합니다. 여러분! className을 수동으로 "class"로 이름을 변경하여 두 가지 방법으로 사용할 수 있도록 할지 고민 중입니다. DSS "dot" 구분 기호를 사용하여 클래스를 설정하는 것이 시간을 들이는 가치가 있는 것일까요?
+참고로, DOM-JON에서는 className 대신 `{` "class": "myClassName" `}`를 사용해야 합니다. 여러분! className을 수동으로 "class"로 이름을 변경하여 두 가지 방법으로 사용할 수 있도록 할지 고민 중입니다. DSS "dot" 구분 기호를 사용하여 클래스를 설정하는 것이 시간을 들이는 가치가 있는 것일까요?
 
 Element에 이 모든 것을 설정한 후에는 새로운 개선된 `__make`을 사용할 수 있게 됩니다. 이것을 모듈의 일부로 내보내거나 전역 범위에 넣는 것보다는, 저는 문서 객체에 이것을 넣을 것입니다!
-```
 
 <div class="content-ad"></div>
 
@@ -540,7 +539,6 @@ document.getElementById("test").__attach(
 전체 DOM-JON 코드베이스를 외부 {}에 넣어 scope isolation을 만들었음을 볼 수 있습니다. 오랜 시간 동안 JS의 let/const가 쓸모 없다고 생각했는데, 그것들을 사용하면 이전에 IIFE에 낭비했던 것들을 대체할 수 있다는 것을 깨달았습니다. 자주 캐시를 비운 첫 로드에서 클라이언트 사이드 파일 수를 나누는 모듈을 사용하지 않아도 됩니다. 이 방법을 사용하면 별도의 스크립트를 연결하여 배포 시 파일 수를 줄일 수 있습니다.
 
 # 새로운 Object 메소드 요약
-```
 
 <div class="content-ad"></div>
 
@@ -557,22 +555,20 @@ Document.__make를 호출하여 Element를 생성한 다음, 새 Element의 __ma
 
 <div class="content-ad"></div>
 
-```markdown
+
 method Element.prototype.__setAttr(obj)  
 요소에 속성:값 쌍의 일반 객체를 할당합니다. 일부 속성은 __define으로 생성되도록 가로챕니다. 스타일 및 데이터세트와 같은 객체 하위 속성은 정규화되어 작동합니다. 함수, 배열 및 기타 객체는 this[key] = value로 할당되고, 다른 모든 값 유형은 this.setAttribute(key, value)로 할당됩니다.
 
 또한 시스템 객체에 대한 많은 유용한 추가 기능들이 있습니다.
 
 method Object.prototype.__define(name, value)  
-Object.defineProperty와 유사하지만 일반 객체를 { value }로 할당하며 "this"를 반환하고 전달된 값이 아닙니다.
+Object.defineProperty와 유사하지만 일반 객체를 `{` value `}`로 할당하며 "this"를 반환하고 전달된 값이 아닙니다.
 
 method Object.prototype.__defineProps(...props)  
 __define이 defineProperty와 유사하다면, __defineProps는 defineProperties와 유사합니다. 가장 큰 차이점은 여러 다른 이름/속성 쌍의 객체를 수락할 수 있으며 첫 번째 전달된 인수 대신 "this"를 반환한다는 것입니다.
-```
 
 <div class="content-ad"></div>
 
-```markdown
 정적 메서드 Object.__defineMulti(targets, ...props)
 여러 대상에 속성을 할당합니다. 대상은 키 배열이어야하며, 그 다음 ...props의 각 객체와 일치해야합니다.
 
@@ -583,7 +579,6 @@ getter 및/또는 propertyObject.prototype.__type
 단일 "유형"을 반환합니다. 마치 통일된 "typeof" 및 "instanceof"처럼 다루기가 훨씬 덜 복잡한 것처럼. 대부분의 객체에 대해 이것은 처음 호출시 getter이지만 절대 수정할 수없는 열거 불가 속성으로 재정의됩니다. 일부 일반 객체 유형도 해당 속성으로 시작됩니다.
 
 이것이 "공개적으로 보이는" 속성과 메서드입니다. 전역 변수나 전역 함수가 필요하지 않습니다.
-```
 
 <div class="content-ad"></div>
 

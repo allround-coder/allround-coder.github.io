@@ -1,5 +1,5 @@
 ---
-title: "로컬 스토리지와 Next.js 사용하기: 초보자를 위한 안내"
+title: "Next.js에서 로컬 스토리지 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-UsingLocalStoragewithNextjsABeginnersGuide_0.png"
 date: 2024-05-01 18:10

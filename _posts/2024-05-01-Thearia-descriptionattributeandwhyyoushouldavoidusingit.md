@@ -84,9 +84,8 @@ aria-describedby 속성은 DOM에서 다른 요소(또는 요소들)를 참조�
 
 아래처럼 렌더링됩니다:
 
-```markdown
+
 ![내용](/assets/img/2024-05-01-Thearia-descriptionattributeandwhyyoushouldavoidusingit_1.png)
-```
 
 AT는 다음과 같이 읽을 것입니다:
 
@@ -131,7 +130,6 @@ aria-description="최소 2자"/>
 <img src="/assets/img/2024-05-01-Thearia-descriptionattributeandwhyyoushouldavoidusingit_3.png" />
 
 그리고 이전과 마찬가지로 AT는 다음과 같이 읽을 것입니다:
-```
 
 <div class="content-ad"></div>
 

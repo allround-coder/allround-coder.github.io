@@ -1,5 +1,5 @@
 ---
-title: "React 테스팅 라이브러리들"
+title: "React 테스팅 라이브러리들 정리"
 description: ""
 coverImage: "/assets/img/2024-05-01-ReactTestingLibraries_0.png"
 date: 2024-05-01 18:17

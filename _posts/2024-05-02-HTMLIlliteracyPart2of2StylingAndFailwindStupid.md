@@ -1,5 +1,5 @@
 ---
-title: "HTML 문맹 (2부작) 스타일링과 실패 윈드 스튜피드"
+title: "HTML 문맹 스타일링과 실패 윈드 스튜피드"
 description: ""
 coverImage: "/assets/img/2024-05-02-HTMLIlliteracyPart2of2StylingAndFailwindStupid_0.png"
 date: 2024-05-02 00:31
@@ -552,7 +552,7 @@ h1 {
 
 라이트/다크 토글은 원본 이미지가 너무 얇아 거의 보이지 않고 접근성 최소 기준을 완전히 미달했기 때문에 font-awesome에서 SVG를 빌렸습니다. 나는 이를 CSS에 인라인으로 넣어 그 불필요한 쓰레기들이 경쟁할 기회를 줬지만, 실제로는 웹폰트를 사용할 것입니다.
 
-```
+```css
 테두리없이 색상을 투명하게 한 버튼을 만듭니다.
 .toggleLightDark {
   display:block;
@@ -576,7 +576,7 @@ SVG에 이미 색상을 직접 넣을 수도 있지만 CSS에서 SVG를 사용�
 
 다음으로 UI 일관성을 위해 공통 요소를 스타일링합니다.
 
-```js
+```css
 h2 {
   font-size:clamp(1.25rem, 6vw, 2rem);
   line-height:1.2;
@@ -602,7 +602,7 @@ p {
 
 <div class="content-ad"></div>
 
-```js
+```css
 .articleSummaries {
   margin-top: 2rem;
 }
@@ -655,7 +655,7 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
 
 그런데 호버 상태는 앵커 가상 상태 내에서 동일한 인접 형제 선택자를 사용합니다.
 
-```js
+```css
 .articleSummaries > a:focus header h3,
 .articleSummaries > a:hover header h3,
 .articleSummaries > a:focus header ~ *,
@@ -670,7 +670,7 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
 
 <div class="content-ad"></div>
 
-```js
+```css
 .articleSummaries p {
   margin:0;
   padding:0 1rem 1rem;
@@ -681,7 +681,7 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
 
 미디어 쿼리는 코드 작성 순서와 다르게 나와 있습니다. 보통 소스에서 작은 것부터 큰 것 순서대로 나열하는 편이지만, 우리는 먼저 가장 작은 것을 살펴보겠습니다:
 
-```js
+```css
 @media (max-width:30rem) {
   #fauxBody > footer {
     display:block;
@@ -697,7 +697,7 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
 
 그것은 단순히 왼쪽/오른쪽 동작을 제거하여 메뉴를 멍청하게 중앙에 위치시키는 것 뿐이에요. 졸려요.
 
-```js
+```css
 @media (max-width:35rem) {
   header > a:first-child {
     flex-grow:1;
@@ -763,7 +763,7 @@ DIV 자체는 메뉴 프레임이며, 여기에서는 margin:auto를 사용하�
 
 마지막 쿼리:
 
-```js
+```css
 @media (max-width:40rem) {
   .articleSummaries article > header {
     display:block;
@@ -924,7 +924,7 @@ DOM에서 라이트/다크 토글을 만들고 버튼의 클릭 이벤트를 연
 
 미리 종료 여부를 테스트하고, 대상이 .modal이거나 #mainMenu인 경우에만 실행되는 것에 주목해주세요. "닫기"라는 겉만 번지르르한 기능은 페이지 해시를 #으로 설정하여 대상이 아니게 만드는 것 이상의 것이 아닙니다.
 
-이런 것을 구현하려고 사람들이 미친듯이 얽힌 과정에 항상 놀라곤 합니다. 이런 걸 시각적 개념을 스크린을 사용하지 않는 사용자에게 전달하려는 아리아-롤 또는 `dialog` 같은 헛소리란 말입니다. 적절한 의미 있는 마크업과 해시 기반의 페이지 내 탐색이 있다면, 모달이라는 것이 window.alert나 window.confirm과 같은 것이 아닐 때 사용자에게 "대화"인 것을 전달해야 한다는 아이디어는 100% 허튼 소리입니다. 더 이상 끌어내지 않겠습니다! 해무! 잉걸 조개! 말조아!```
+이런 것을 구현하려고 사람들이 미친듯이 얽힌 과정에 항상 놀라곤 합니다. 이런 걸 시각적 개념을 스크린을 사용하지 않는 사용자에게 전달하려는 아리아-롤 또는 `dialog` 같은 헛소리란 말입니다. 적절한 의미 있는 마크업과 해시 기반의 페이지 내 탐색이 있다면, 모달이라는 것이 window.alert나 window.confirm과 같은 것이 아닐 때 사용자에게 "대화"인 것을 전달해야 한다는 아이디어는 100% 허튼 소리입니다. 더 이상 끌어내지 않겠습니다! 
 
 <div class="content-ad"></div>
 

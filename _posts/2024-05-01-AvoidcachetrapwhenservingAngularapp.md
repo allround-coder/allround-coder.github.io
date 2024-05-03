@@ -1,5 +1,5 @@
 ---
-title: "앵귤러 앱을 제공할 때 캐시 함정을 피하는 방법"
+title: "앵귤러로 웹사이트 만들 때 캐시 함정을 피하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-AvoidcachetrapwhenservingAngularapp_0.png"
 date: 2024-05-01 23:52

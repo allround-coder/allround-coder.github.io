@@ -19,9 +19,8 @@ link: "https://medium.com/@psychomong/html-injection-payload-list-735e69f522ca"
 아스타 타커
 HTML 주입 또는 주입 관련 질문에 대해, 바로 코드만 제공해 드릴게요. 이것을 시도해서 혜택을 얻어보세요..... 
 
-```markdown
+
 ![HTML INJECTION Payload List](/assets/img/2024-05-02-HTMLINJECTIONPayloadList_0.png)
-```
 
 <div class="content-ad"></div>
 

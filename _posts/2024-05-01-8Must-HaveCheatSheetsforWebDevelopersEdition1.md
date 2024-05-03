@@ -1,5 +1,5 @@
 ---
-title: "프론트엔드 개발자를 위한 필수 치트 시트 8가지 📝: 에디션 1"
+title: "프론트엔드 개발자를 위한 필수 치트 8가지"
 description: ""
 coverImage: "/assets/img/2024-05-01-8Must-HaveCheatSheetsforWebDevelopersEdition1_0.png"
 date: 2024-05-01 23:57
@@ -31,7 +31,6 @@ HTML Cheat Sheet는 HTML 요소, 속성 및 구문에 대한 포괄적인 개요
 
 <div class="content-ad"></div>
 
-```markdown
 ![CSS Cheat Sheet](/assets/img/2024-05-01-8Must-HaveCheatSheetsforWebDevelopersEdition1_2.png)
 
 CSS Cheat Sheet은 CSS 선택자, 속성 및 값에 대한 go-to 참조 자료입니다. 텍스트 스타일링, 요소 위치 지정 또는 반응형 레이아웃 생성 등을 할 때, 이 치트 시트는 명확한 설명과 CSS 규칙 및 기술의 예제로 유용합니다.
@@ -39,7 +38,6 @@ CSS Cheat Sheet은 CSS 선택자, 속성 및 값에 대한 go-to 참조 자료�
 3. JavaScript Cheat Sheet
 
 ![JavaScript Cheat Sheet](/assets/img/2024-05-01-8Must-HaveCheatSheetsforWebDevelopersEdition1_3.png)
-```
 
 <div class="content-ad"></div>
 
@@ -63,7 +61,7 @@ Git Cheat Sheet은 소프트웨어 개발 프로젝트에서 버전 관리 및 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![jQuery Cheat Sheet](/assets/img/2024-05-01-8Must-HaveCheatSheetsforWebDevelopersEdition1_6.png)
 
 jQuery Cheat Sheet은 DOM 조작과 이벤트 처리를 위한 인기 있는 JavaScript 라이브러리에 대한 안내서입니다. 요소 선택 및 CSS 조작, 애니메이션 및 AJAX 요청 처리부터 웹 프로젝트에서 상호작용 및 기능성을 향상하는 데 필요한 jQuery 메소드와 구문을 다룬다.
@@ -71,7 +69,6 @@ jQuery Cheat Sheet은 DOM 조작과 이벤트 처리를 위한 인기 있는 Jav
 7. React Cheat Sheet
 
 ![React Cheat Sheet](/assets/img/2024-05-01-8Must-HaveCheatSheetsforWebDevelopersEdition1_7.png)
-```
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "텍스트 상자 비활성화: 왜 그것은 좋지 않은 아이디어이며 그 대신에 무엇을 해야 하는지"
+title: "텍스트 상자 비활성화를 하면 안되는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-01-Disablingtextboxeswhyitsabadideaandwhattodoinstead_0.png"
 date: 2024-05-01 23:24
@@ -86,7 +86,7 @@ link: "https://medium.com/user-experience-design-1/disabling-text-boxes-why-its-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-01-Disablingtextboxeswhyitsabadideaandwhattodoinstead_1.png)
 
 이제, 처음으로 생각할 수 있는 것은 이것이 텍스트 상자의 배경과 텍스트의 색상 간의 색 대비 비율을 통해 접근성을 위반할 수 있다는 것일 겁니다.
@@ -94,7 +94,6 @@ link: "https://medium.com/user-experience-design-1/disabling-text-boxes-why-its-
 그러나 이는 WCAG 레벨 AA 요구 사항을 충족합니다. 성공 기준 1.4.3 대비(최소)에 정해져 있지만, 성공 기준 1.4.6 대비(향상)에서는 미달합니다.
 
 이는 항상 그랬던 것은 아닙니다. 다양한 브라우저의 비활성 제어와 여러 UI 라이브러리에서는 더 어두운 배경 색상을 가지고 있어 분명히 레벨 AA를 위반했습니다.
-```
 
 <div class="content-ad"></div>
 
@@ -354,7 +353,6 @@ So, 어떻게 컨트롤이 읽기 전용인지 알릴까요? 먼저, 다음과 �
 
 <div class="content-ad"></div>
 
-```
 ![이미지](/assets/img/2024-05-01-Disablingtextboxeswhyitsabadideaandwhattodoinstead_4.png)
 
 참고: 화면 판독기를 사용하는 경우 레이블에 "읽기 전용" 텍스트를 넣었지만 이것은 aria-hidden="true" 속성을 가진 `span` 요소 내부에 있습니다. 왜냐하면 화면 판독기가 포커스를 받을 때 텍스트 "읽기 전용"을 이미 알려주기 때문에 레이블에 그것을 반복할 필요가 없기 때문입니다.
@@ -362,7 +360,6 @@ So, 어떻게 컨트롤이 읽기 전용인지 알릴까요? 먼저, 다음과 �
 텍스트 상자가 읽기 전용인 이유에 대해 전달하세요
 
 사용성과 접근성은 종종 겹치고, 이것은 분명 그중 하나입니다. 텍스트 상자가 읽기 전용인 경우, 왜인지 설명하는 페이지의 어디에서나 설명이 있는지 확인할 수 있나요?
-```
 
 <div class="content-ad"></div>
 

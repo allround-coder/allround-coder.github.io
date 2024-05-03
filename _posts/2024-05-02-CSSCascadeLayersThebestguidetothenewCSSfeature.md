@@ -1,5 +1,5 @@
 ---
-title: "CSS 캐스케이드 레이어: 새로운 CSS 기능에 대한 최고 가이드"
+title: "CSS 캐스케이드 레이어: 새로운 CSS 기능에 대한 가이드(2024년)"
 description: ""
 coverImage: "/assets/img/2024-05-02-CSSCascadeLayersThebestguidetothenewCSSfeature_0.png"
 date: 2024-05-02 00:05
@@ -84,9 +84,7 @@ CSS
 
 레이어 외에 있는 모든 스타일 규칙은 익명 레이어로 묶이고 이 익명 레이어는 모든 정의된 레이어보다 높은 우선순위를 갖습니다. 예를 들어 아래와 같이 구성할 수 있습니다. 
 
-```js
-@layer base, utilities;
-
+```css
 @layer utilities {
   .alert {
     background-color: brown;
@@ -119,13 +117,13 @@ CSS
 
 익명 캐스케이드 레이어는 레이어를 만들되 이름을 할당하지 않음으로써 만들 수 있습니다:
 
-\`\`\`js
+```js
 @layer {
   p {
     margin-block: 1rem;
   }
 }
-\`\`\`
+```
 
 <div class="content-ad"></div>
 
@@ -169,7 +167,6 @@ CSS
 @layer와 이 기능의 브라우저 호환성이 매우 뛰어나며 요즘에는 널리 사용됩니다.
 
 ![이미지](/assets/img/2024-05-02-CSSCascadeLayersThebestguidetothenewCSSfeature_4.png)
-```
 
 <div class="content-ad"></div>
 

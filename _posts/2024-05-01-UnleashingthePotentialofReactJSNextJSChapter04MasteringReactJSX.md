@@ -1,5 +1,5 @@
 ---
-title: "ReactJS, NextJS의 잠재력 발휘하기: 04장 React JSX 마스터하기"
+title: "ReactJS, NextJS 제대로 알고 쓰자 - React JSX 마스터하기"
 description: ""
 coverImage: "/assets/img/2024-05-01-UnleashingthePotentialofReactJSNextJSChapter04MasteringReactJSX_0.png"
 date: 2024-05-01 18:03

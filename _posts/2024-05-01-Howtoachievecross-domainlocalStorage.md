@@ -1,5 +1,5 @@
 ---
-title: "크로스 도메인 로컬스토리지 구현하기"
+title: "크로스 도메인에서 로컬스토리지 구현하기"
 description: ""
 coverImage: "/assets/img/2024-05-01-Howtoachievecross-domainlocalStorage_0.png"
 date: 2024-05-01 23:55
@@ -11,7 +11,7 @@ link: "https://medium.com/@adiachituve/how-to-achieve-cross-domain-localstorage-
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-01-Howtoachievecross-domainlocalStorage_0.png)
 
 LocalStorage는 웹에 데이터를 저장하는 한 가지 방법입니다. 이는 클라이언트 컴퓨터 브라우저에 저장됩니다.
@@ -19,7 +19,6 @@ LocalStorage는 웹에 데이터를 저장하는 한 가지 방법입니다. 이
 데이터는 도메인별로 저장되며, 동일한 도메인을 가진 페이지만이 데이터에 액세스하고 수정할 수 있습니다. 다른 도메인의 페이지는 서로의 데이터에 액세스할 수 없습니다. 이는 브라우저 저장소 보안 문제이며, 사실 도메인 및 서브도메인 간에 LocalStorage/SessionStorage/IndexedDB를 공유할 수 없습니다. 이는 "동일 출처 정책"의 일부입니다.
 
 # 왜 localStorage를 공유해야 할까요?
-```
 
 <div class="content-ad"></div>
 

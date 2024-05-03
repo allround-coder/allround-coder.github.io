@@ -11,7 +11,6 @@ link: "https://medium.com/@withaarzoo/building-an-animated-jumping-totoro-using-
 ---
 
 
-```markdown
 ![이미지](https://miro.medium.com/v2/resize:fit:1200/1*DQhfTbm3hP_-igEhkhk4Hw.gif)
 
 스튜디오 지브리의 매력을 웹 개발 여정에 더해볼준비가 되셨나요? 오늘의 프로젝트에서는 사랑받는 영화 "이웃의 토토로"의 상징적 캐릭터에서 영감을 받아 애니메이션된 점프하는 토토로를 만들어볼 것입니다. 이 프로젝트는 #100DaysOfCode 챌린지 22일차의 일환으로, HTML, CSS 및 소량의 애니메이션 마법으로 프론트엔드 개발을 탐험하는 과정입니다. 시작해봅시다!
@@ -19,7 +18,6 @@ link: "https://medium.com/@withaarzoo/building-an-animated-jumping-totoro-using-
 # 단계 1: 프로젝트 설정하기
 
 시작하기 전에, 제공된 링크에서 전체 소스 코드를 다운로드했는지 확인해주세요: 소스 코드 다운로드. 다운로드가 완료되면, 새 프로젝트 디렉토리를 생성하고 소스 코드 파일을 추출하세요.
-```
 
 <div class="content-ad"></div>
 

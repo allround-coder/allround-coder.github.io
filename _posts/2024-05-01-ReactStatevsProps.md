@@ -1,5 +1,5 @@
 ---
-title: "리액트 - State vs Props"
+title: "리액트 - State vs Props 둘의 차이점을 이해하자"
 description: ""
 coverImage: "/assets/img/2024-05-01-ReactStatevsProps_0.png"
 date: 2024-05-01 18:21

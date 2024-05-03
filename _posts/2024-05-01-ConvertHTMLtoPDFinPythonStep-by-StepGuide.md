@@ -1,5 +1,5 @@
 ---
-title: "파이썬에서 HTML을 PDF로 변환하는 방법: 단계별 가이드"
+title: "파이썬에서 HTML을 PDF로 변환하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-ConvertHTMLtoPDFinPythonStep-by-StepGuide_0.png"
 date: 2024-05-01 23:45
@@ -100,7 +100,6 @@ Windows:
 - 기본적으로 wkhtmltopdf는 C:\Program Files\wkhtmltopdf 경로에 설치됩니다.
 - 명령 프롬프트에서 어디서든 명령을 실행할 수 있도록 하기 위해 환경 변수 설정에서 시스템의 PATH 변수에 bin 폴더를 추가해야 합니다.
 - 예를 들어, PATH 변수에 C:\Program Files\wkhtmltopdf\bin을 추가해주세요.
-```
 
 <div class="content-ad"></div>
 
@@ -197,7 +196,6 @@ pdfkit.from_file(['file1.html', 'file2.html'], 'test.pdf')
 생성된 PDF 내에 각 HTML 파일은 별도의 페이지로 변환됩니다.
 
 추가로 도움이 될 만한 정보:
-```
 
 <div class="content-ad"></div>
 

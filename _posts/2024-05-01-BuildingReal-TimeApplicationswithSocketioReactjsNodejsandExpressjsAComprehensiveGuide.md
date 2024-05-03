@@ -1,5 +1,5 @@
 ---
-title: "Socket.io, React.js, Node.js 및 Express.js를 사용한 실시간 애플리케이션 구축: 포괄적인 안내"
+title: "Socket.io, React.js, Node.js 및 Express.js를 사용한 실시간 애플리케이션 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-01-BuildingReal-TimeApplicationswithSocketioReactjsNodejsandExpressjsAComprehensiveGuide_0.png"
 date: 2024-05-01 17:48
@@ -196,7 +196,6 @@ server.listen(4000, () => {
 ```
 
 최종 결과는 다음과 같습니다.
-```
 
 <div class="content-ad"></div>
 

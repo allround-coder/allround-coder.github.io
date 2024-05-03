@@ -1,5 +1,5 @@
 ---
-title: "아직 SVG 파비콘을 사용하고 있지 않으신가요? 최신 브라우저를 위한 가이드."
+title: "이제는 SVG 파비콘을 써야할 시대, PNG 파비콘은 쓰지 마세요"
 description: ""
 coverImage: "/assets/img/2024-05-02-AreyouusingSVGfaviconsyetAguideformodernbrowsers_0.png"
 date: 2024-05-02 00:29

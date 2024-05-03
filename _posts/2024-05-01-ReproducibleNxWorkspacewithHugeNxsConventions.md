@@ -39,7 +39,7 @@ link: "https://medium.com/javascript-in-plain-english/reproducible-nx-workspace-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-01-ReproducibleNxWorkspacewithHugeNxsConventions_1.png](/assets/img/2024-05-01-ReproducibleNxWorkspacewithHugeNxsConventions_1.png)
 
 HugeNx의 Conventions 파일에 대상 워크스페이스에 관한 모든 정보가 들어 있다면, 새로운 워크스페이스를 처음부터 생성하거나 기존 워크스페이스를 유지할 수 있습니다.
@@ -47,7 +47,6 @@ HugeNx의 Conventions 파일에 대상 워크스페이스에 관한 모든 정�
 ## 프로젝트 유형
 
 저는 통합하고자 하는 첫 번째 주요 규칙은 Nx 프로젝트 유형 개념입니다.
-```
 
 <div class="content-ad"></div>
 

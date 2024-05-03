@@ -33,7 +33,7 @@ link: "https://medium.com/@withaarzoo/building-a-totoro-toggle-switch-using-html
 
 텍스트 에디터를 열고 새 HTML 파일을 만들어보세요. 파일 이름을 index.html로 지정해 볼까요? 기본 HTML 구조를 설정하는 것부터 시작해봅시다.
 
-```js
+```html
 <!DOCTYPE html>
 <html lang="en">
 

@@ -1,5 +1,5 @@
 ---
-title: "React-Native로 할 일 목록 앱 만들기: 단계별 안내"
+title: "React-Native로 투두 앱 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-BuildingaTodoListAppwithReact-NativeAStep-by-StepGuide_0.png"
 date: 2024-05-01 18:04
@@ -139,7 +139,6 @@ export default function TodoList() {
 - 작업 삭제 함수: deleteTask 함수는 주어진 ID를 가진 작업을 tasks 상태에서 제거합니다.
 - 작업 완료 토글 함수: toggleCompleted 함수는 주어진 ID를 가진 작업의 완료 상태를 토글합니다. map 메서드를 사용하여 대상 작업의 완료 상태가 뒤바뀐 새로운 작업 배열을 생성합니다.
 - TodoList 컴포넌트 렌더링: TodoList 컴포넌트는 map 메서드를 사용하여 작업 목록을 렌더링하며, 각 작업을 TodoItem 컴포넌트에 전달합니다. 또한 새 작업을 입력하는 TextInput과 addTask 함수를 트리거하는 Button을 포함합니다.
-```
 
 <div class="content-ad"></div>
 
@@ -171,7 +170,6 @@ export default function TodoItem({ task, deleteTask, toggleCompleted }) {
 - CheckBox: CheckBox 컴포넌트는 작업의 완료 상태를 나타냅니다. 그 값은 작업의 완료 상태에 따라 결정되며, onValueChange는 체크박스와 상호작용할 때 toggleCompleted 함수를 호출합니다.
 - 스타일이 적용된 Text: Text 컴포넌트는 작업 텍스트를 표시합니다. 작업이 완료되었을 경우 라인 스타일을 줄 긋게 만드는 스타일이 적용됩니다.
 - 삭제 버튼: Button 컴포넌트는 "X" 레이블이 있는 삭제 버튼을 제공합니다. 버튼을 누르면 deleteTask 함수가 호출됩니다.
-```
 
 <div class="content-ad"></div>
 

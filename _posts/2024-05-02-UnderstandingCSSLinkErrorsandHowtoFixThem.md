@@ -1,5 +1,5 @@
 ---
-title: "CSS 링크 오류 이해하기 및 해결 방법 알아보기"
+title: "CSS Link Errors 이해 및 해결 방법 알아보기"
 description: ""
 coverImage: "/assets/img/2024-05-02-UnderstandingCSSLinkErrorsandHowtoFixThem_0.png"
 date: 2024-05-02 00:51

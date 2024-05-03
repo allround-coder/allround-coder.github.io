@@ -1,5 +1,5 @@
 ---
-title: "Zustand vs. Redux: 상태 관리에서의 포괄적인 비교"
+title: "Zustand vs. Redux: 상태 관리 어떤 것을 사용해야할까? 비교 정리"
 description: ""
 coverImage: "/assets/img/2024-05-01-ZustandvsReduxAComprehensiveComparisoninStateManagement_0.png"
 date: 2024-05-01 18:02

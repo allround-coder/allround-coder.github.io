@@ -1,5 +1,5 @@
 ---
-title: "I agree! CSS로 간단한 스크롤 효과를 만들어보자! 🤯"
+title: "CSS로 간단한 스크롤 효과를 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-02-AMAZINGSCROLLEFFECTSINSIMPLECSS_0.png"
 date: 2024-05-02 00:49

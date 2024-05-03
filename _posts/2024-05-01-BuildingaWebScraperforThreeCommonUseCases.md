@@ -1,5 +1,5 @@
 ---
-title: "세 가지 일반적인 사용 사례를 위한 웹 스크래퍼 구축하기"
+title: "실무에 적용하면 퇴근시간 단축하는 웹 스크래퍼 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-01-BuildingaWebScraperforThreeCommonUseCases_0.png"
 date: 2024-05-01 23:48
@@ -290,7 +290,6 @@ url = urljoin(base_url, next_page)
 # 결론
 
 이 기사에서는 실행 가능한 코드로 웹 스크래핑의 세 가지 사용 사례를 소개했습니다. 이러한 사용 사례들은 쉽게 확장하여 웹사이트의 HTML 코드가 가지고 있는 추가 속성을 포함시킬 수 있습니다. 독자들이 자세히 살펴보면 됩니다!
-```
 
 <div class="content-ad"></div>
 

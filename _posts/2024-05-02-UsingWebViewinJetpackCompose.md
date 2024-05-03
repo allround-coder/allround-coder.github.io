@@ -70,11 +70,10 @@ fun WebView(){
 # WebViewClient
 
 특정 URL을 가로채야 할 때는 어떻게 할까요? View와 유사하게 WebViewClient를 사용자 정의하고 shouldOverrideUrlLoading 메서드를 재정의하면 됩니다.
-```
 
 <div class="content-ad"></div>
 
-```kotlin
+```java
 @Composable
 fun WebView(){
   
@@ -109,7 +108,7 @@ class CustomWebViewClient: WebViewClient(){
 
 더불어, 특정 웹 이벤트를 수신하기 위해 WebChromeClient를 사용자 정의할 수 있습니다:
 
-```kotlin
+```java
 @Composable
 fun WebView(){
   

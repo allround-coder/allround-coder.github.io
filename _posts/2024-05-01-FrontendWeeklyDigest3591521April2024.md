@@ -1,5 +1,5 @@
 ---
-title: "프론트엔드 주간 다이제스트 #359 (2024년 4월 15일-21일)"
+title: "프론트엔드 주간 뉴스(2024년 4월 15일-21일)"
 description: ""
 coverImage: "/assets/img/2024-05-01-FrontendWeeklyDigest3591521April2024_0.png"
 date: 2024-05-01 22:49

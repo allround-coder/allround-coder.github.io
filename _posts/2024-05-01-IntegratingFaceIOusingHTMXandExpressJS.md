@@ -1,5 +1,5 @@
 ---
-title: "얼굴 인식 기능을 HTMX와 Express.JS를 이용해 통합하기"
+title: "HTMX와 Express.JS를 이용해 얼굴 인식 기능 추가하기"
 description: ""
 coverImage: "/assets/img/2024-05-01-IntegratingFaceIOusingHTMXandExpressJS_0.png"
 date: 2024-05-01 23:54

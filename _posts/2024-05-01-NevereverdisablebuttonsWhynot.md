@@ -1,5 +1,5 @@
 ---
-title: "버튼을 절대 비활성화하지 마세요 — 왜 그럴까요?"
+title: "접근성을 위해 버튼을 절대 비활성화면 안되는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-01-NevereverdisablebuttonsWhynot_0.png"
 date: 2024-05-01 23:13

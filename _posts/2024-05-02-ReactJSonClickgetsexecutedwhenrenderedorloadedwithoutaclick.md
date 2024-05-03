@@ -1,5 +1,5 @@
 ---
-title: "ReactJS: 클릭하지 않아도 렌더링되거나 로드될 때 onClick이 실행됩니다"
+title: "ReactJS: 클릭하지 않아도 렌더링되거나 로드될 때 onClick이 실행되는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-02-ReactJSonClickgetsexecutedwhenrenderedorloadedwithoutaclick_0.png"
 date: 2024-05-02 00:26

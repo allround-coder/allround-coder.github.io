@@ -1,5 +1,5 @@
 ---
-title: "리액트 라우터 - 쉽게 앱을 탐험하세요"
+title: "리액트 라우터 기초 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-01-ReactRouterNavigateYourAppswithEase_0.png"
 date: 2024-05-01 17:47
@@ -78,7 +78,6 @@ React Router의 `Link` 컴포넌트는 애플리케이션의 서로 다른 경�
 
 라우트 매개변수와 동적 라우트
 
-````
 
 <div class="content-ad"></div>
 

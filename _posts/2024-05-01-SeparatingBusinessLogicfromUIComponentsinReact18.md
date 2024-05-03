@@ -1,5 +1,5 @@
 ---
-title: "리액트 18에서 비즈니스 로직 🧠과 UI 컴포넌트 🔡를 분리하기"
+title: "리액트 18에서 비즈니스 로직과 UI 컴포넌트를 분리하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-SeparatingBusinessLogicfromUIComponentsinReact18_0.png"
 date: 2024-05-01 18:15
@@ -11,7 +11,7 @@ link: "https://medium.com/design-bootcamp/separating-%EF%B8%8F-business-logic-fr
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-01-SeparatingBusinessLogicfromUIComponentsinReact18_0.png)
 
 # 소개
@@ -19,7 +19,6 @@ link: "https://medium.com/design-bootcamp/separating-%EF%B8%8F-business-logic-fr
 React는 사용자 인터페이스를 만들기 위한 인기있는 JavaScript 라이브러리이며, 최근 버전에서 상당한 개선을 거쳤습니다. React 18을 통해 개발자들은 이제 비즈니스 로직을 UI 구성 요소에서 효과적으로 분리하는 더 강력한 도구를 갖게 되었습니다. 이 글에서는 비즈니스 로직과 UI 구성 요소를 분리하는 장점을 탐구하고, React 18의 새로운 기능을 사용하여 이를 어떻게 달성할 수 있는지 보여줄 것입니다.
 
 # 목차
-```
 
 <div class="content-ad"></div>
 
@@ -217,7 +216,6 @@ export function useTimer(initialTime = 0) {
 ## 3. 전역 상태 관리를 위한 컨텍스트
 
 여러 컴포넌트 간에 공유해야 하는 상태 관리를 위해 React 18의 Context API를 활용할 수 있습니다. 비즈니스 로직에 대한 컨텍스트를 생성함으로써 어떤 컴포넌트에서든 해당 상태와 액션에 접근할 수 있습니다.
-```
 
 <div class="content-ad"></div>
 

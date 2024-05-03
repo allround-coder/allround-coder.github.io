@@ -1,5 +1,5 @@
 ---
-title: "30년 동안의 HTML 이야기"
+title: "개발자 대부분은 모르는 HTML 이야기"
 description: ""
 coverImage: "/assets/img/2024-05-01-Atalefrom30yearsofHTML_0.png"
 date: 2024-05-01 23:42

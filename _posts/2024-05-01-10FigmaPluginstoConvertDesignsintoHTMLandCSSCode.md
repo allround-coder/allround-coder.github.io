@@ -1,5 +1,5 @@
 ---
-title: "Figma 디자인을 HTML과 CSS 코드로 변환하는 10 가지 플러그인"
+title: "Figma 디자인을 HTML과 CSS로 변환하는 플러그인 10가지"
 description: ""
 coverImage: "/assets/img/2024-05-01-10FigmaPluginstoConvertDesignsintoHTMLandCSSCode_0.png"
 date: 2024-05-01 23:51
@@ -31,7 +31,7 @@ Figma 및 그 플러그인들은 전체 제품을 처음부터 수동 코드로 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Anima](https://miro.medium.com/v2/resize:fit:1400/0*jCye8_4bx0e-doVR.gif)
 
 애니마(Anima)는 다른 유명한 도구로, 반응형 디자인을 통해 사용자 경험을 향상시키는 데 알려져 있습니다. 이 도구는 모든 요소를 서로 다른 화면 크기에 맞춰 유지함으로써 애플리케이션이 매력적이고 매력적으로 보이도록합니다. 사용자가 애플리케이션에 액세스할 때 화면 크기가 어떻게 되든 웹사이트가 일정하게 유지됩니다. 또한 Anima는 Figma 내에서 상호작용 및 애니메이션을 직접 결정하도록 하면서 모든 디자인에 대한 자동 HTML 및 CSS 코드를 생성합니다.
@@ -39,7 +39,6 @@ Figma 및 그 플러그인들은 전체 제품을 처음부터 수동 코드로 
 3. Framer Web
 
 ![Framer Web](/assets/img/2024-05-01-10FigmaPluginstoConvertDesignsintoHTMLandCSSCode_0.png)
-```
 
 <div class="content-ad"></div>
 
@@ -63,7 +62,7 @@ Figma를 HTML로 변환하여 개발 과정을 가속화할 수 있습니다. �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/0*vdRtH-uxMhPYHYXX.gif)
 
 Koncept은 디자인을 코드로 변환하는 프로세스를 넘어서는 포괄적인 디자인 및 프로토타이핑 플랫폼입니다. 깔끔하고 조직적인 HTML 및 CSS 코드 조각을 생성하여 개발 프로세스에서 직접 구현할 수 있는 기본 기능 외에도 플랫폼 내에서 애니메이션 및 상호작용을 정의할 수 있습니다.
@@ -71,7 +70,6 @@ Koncept은 디자인을 코드로 변환하는 프로세스를 넘어서는 포�
 7. Auto-Layout to HTML
 
 ![image](/assets/img/2024-05-01-10FigmaPluginstoConvertDesignsintoHTMLandCSSCode_3.png)
-```
 
 <div class="content-ad"></div>
 

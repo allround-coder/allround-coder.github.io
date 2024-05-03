@@ -1,5 +1,5 @@
 ---
-title: "파워 BI 보고서에 HTML, CSS를 활용하여 강력함 더하기: 힘을 합쳐보세요! 💪"
+title: "Power BI 보고서에 HTML, CSS를 활용하기"
 description: ""
 coverImage: "/assets/img/2024-05-01-ElevatingPowerBIReportswithHTMLCSSJoiningForces_0.png"
 date: 2024-05-01 22:51
@@ -89,7 +89,6 @@ HTML의 기본 이해가 내 프로그래밍 여정 전체에 많은 도움이 �
 ## 2. 모양 생성하기
 
 HTML과 CSS는 Power BI 보고서 내에서 직접 사용자 지정 모양을 생성하는 강력한 도구 상자를 제공합니다.
-```
 
 <div class="content-ad"></div>
 
@@ -110,7 +109,7 @@ Oval Set Up = "<head>
 .oval {
   height: 18px;
   width: 48px;
-  background-color: {BACKGROUND_COLOR} ;
+  background-color: BACKGROUND_COLOR ;
   border-radius: 25px;
   display: flex;
   align-items: center;
@@ -121,7 +120,7 @@ Oval Set Up = "<head>
 </style>
 <body>
 <div class=""oval"">
-    <span>&nbsp;{TEXT}</span>
+    <span>&nbsp;TEXT</span>
 </div>
 </body>
 "
@@ -133,21 +132,20 @@ Oval Set Up = "<head>
 - CSS 스타일링 (oval 클래스):
 
   - height: 18px; 및 width: 48px;는 원형의 크기를 설정합니다.
-  - background-color: {BACKGROUND_COLOR};는 원형의 채우기 색상을 지정하는데, {BACKGROUND_COLOR}는 색상 값을 나타내는 플레이스홀더입니다.
+  - background-color: BACKGROUND_COLOR;는 원형의 채우기 색상을 지정하는데, BACKGROUND_COLOR는 색상 값을 나타내는 플레이스홀더입니다.
   - border-radius: 25px;는 원형의 모양을 둥근 타원형으로 정의하며, 코너가 얼마나 둥글게 보여야 하는지를 결정합니다.
   - display: flex; align-items: center; justify-content: center;는 원형 내의 텍스트(또는 콘텐츠)를 세로 및 가로 중앙 정렬합니다.
-  - color: {FONT_COLOR};는 원형 내 텍스트의 색상을 설정하는데, {FONT_COLOR}는 텍스트 색상을 위한 플레이스홀더입니다.
+  - color: FONT_COLOR;는 원형 내 텍스트의 색상을 설정하는데, FONT_COLOR는 텍스트 색상을 위한 플레이스홀더입니다.
   - font-size: 10px;은 원형 내의 텍스트 크기를 지정합니다.
-```
 
 <div class="content-ad"></div>
 
 3. HTML 본문과 콘텐츠:
 
 - `body`에는 "oval" 클래스가 적용된 `div` 요소가 포함되어 있으며, 이 div에 이전에 정의한 CSS 스타일이 적용됩니다.
-- 이 div 내에 `span` 요소가 있고, {TEXT}라는 텍스트를 내부에 표시하고자 하는 플레이스홀더가 들어 있습니다. &nbsp; (간격을 유지하는 고정 간격 문자)는 텍스트가 원 안에서 올바르게 간격을 유지하도록 합니다.
+- 이 div 내에 `span` 요소가 있고, TEXT라는 텍스트를 내부에 표시하고자 하는 플레이스홀더가 들어 있습니다. &nbsp; (간격을 유지하는 고정 간격 문자)는 텍스트가 원 안에서 올바르게 간격을 유지하도록 합니다.
 
-다음 조치는 첫 번째 타원 모양(지난 학기의 차이를 보여줌)을 표시하기 위해 {플레이스홀더}를 DAX에 정의된 값으로 대체하고, 해당 값을 HTML/CSS 코드로 대체하는 것을 보여줍니다:
+다음 조치는 첫 번째 타원 모양(지난 학기의 차이를 보여줌)을 표시하기 위해 플레이스홀더를 DAX에 정의된 값으로 대체하고, 해당 값을 HTML/CSS 코드로 대체하는 것을 보여줍니다:
 
 <img src="/assets/img/2024-05-01-ElevatingPowerBIReportswithHTMLCSSJoiningForces_4.png" />
 
@@ -193,6 +191,7 @@ RETURN IF([지난 학기평균 점수] <> 빈칸(), _Shape)
 
 지난 학기에 이루어지는 측정 항목은 다음과 같습니다:
 
+```bash
 - _변동 계산: 이 측정 값은 FORMAT(ABS([지난 학기 평균 점수 % 변동]), "0.0%")을 사용하여, 지난 학기 평균 점수의 절대 백분율 변동을 계산합니다.
 - 배경 색상 설정: 평균 점수 변동이 음수(하락)인지 양수(상승)인지에 따라 배경 색상을 결정합니다. 변동이 음수인 경우, 연한 빨간색 ([Color Light Red])을 사용하고, 양수인 경우, 연한 초록색 ([Color Light Green])을 사용합니다.
 - 글꼴 색상 선택: 배경 색상과 마찬가지로 점수 변동에 따라 글꼴 색상을 선택합니다. 어두운 빨간색 ([Color Red])은 감소를 나타내고, 녹색 ([Color Green])은 증가를 나타냅니다.
@@ -223,7 +222,7 @@ RETURN IF([지난 학기평균 점수] <> 빈칸(), _Shape)
     <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
     <link rel=""stylesheet"" href=""https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css""/>
 </head>
-<i style=""color:{COLOR}"" class=""{ICON_CODE} {SIZE}"">
+<i style=""color:COLOR"" class=""ICON_CODE SIZE"">
 </i>
 &nbsp;"
 ```
@@ -232,12 +231,12 @@ RETURN IF([지난 학기평균 점수] <> 빈칸(), _Shape)
 
 - 반응형 디자인 설정: 'head' 섹션의 'meta' 태그는 화면 너비와 콘텐츠의 크기를 조절하여 다양한 디바이스에서 올바르게 표시될 수 있도록 하기 위해 뷰포트를 설정합니다. 이는 데스크톱, 태블릿 또는 스마트폰에서 아이콘을 볼 때 잘 보일 것을 의미합니다.
 - Font Awesome 아이콘 접근: 'link' 태그는 CDN (콘텐츠 전송 네트워크)에서 Font Awesome 스타일시트를 가져옵니다. 이 스타일시트는 모든 Font Awesome 아이콘에 대한 스타일을 제공하여, 해당하는 특정 클래스 이름을 사용하여 보고서에서 사용할 수 있게 합니다.
-- 아이콘 표시 및 사용자 지정: 'i' 태그를 사용하여 HTML 콘텐츠에 아이콘을 삽입합니다. 'class' 속성은 {ICON_CODE} (Font Awesome의 특정 클래스 이름의 플레이스홀더)와 {SIZE}(크기를 나타내는 플레이스홀더, 크기 조절 메타데이터를 사용하며, 예를 들어 'fa-lg'는 큰 크기입니다)를 사용하여 표시할 아이콘을 지정합니다. 'style' 속성은 원하는 색상 코드로 대체될 {COLOR}를 사용하여 아이콘의 색상을 설정하는 데 사용됩니다.
+- 아이콘 표시 및 사용자 지정: 'i' 태그를 사용하여 HTML 콘텐츠에 아이콘을 삽입합니다. 'class' 속성은 ICON_CODE (Font Awesome의 특정 클래스 이름의 플레이스홀더)와 SIZE(크기를 나타내는 플레이스홀더, 크기 조절 메타데이터를 사용하며, 예를 들어 'fa-lg'는 큰 크기입니다)를 사용하여 표시할 아이콘을 지정합니다. 'style' 속성은 원하는 색상 코드로 대체될 COLOR를 사용하여 아이콘의 색상을 설정하는 데 사용됩니다.
 - 공간 관리: 끝에 있는 '&nbsp;'(간격을 유지하는 비중단 공백) 문자는 아이콘 뒤에 텍스트나 다른 요소가 따라오는 경우 적절한 간격을 유지하기 위해 사용됩니다. 이는 보고서에서 아이콘 다음에 텍스트나 다른 요소가 있을 경우 올바른 간격을 유지하는 데 유용합니다.
 
 <div class="content-ad"></div>
 
-실제 값으로 {COLOR}, {ICON_CODE}, 및 {SIZE} 자리 표시자를 대체함으로써, 이 방법을 사용하면 커스텀 아이콘을 Power BI 보고서에 동적으로 삽입할 수 있습니다.
+실제 값으로 COLOR, ICON_CODE, 및 SIZE 자리 표시자를 대체함으로써, 이 방법을 사용하면 커스텀 아이콘을 Power BI 보고서에 동적으로 삽입할 수 있습니다.
 
 그런 다음, Green Arrow Up과 같은 측정 항목에서 플레이스홀더 값을 대체하여 화살표 아이콘을 만듭니다:
 
@@ -251,13 +250,13 @@ SUBSTITUTE(
         SUBSTITUTE(
             SUBSTITUTE(
                 [Icon Font awesome icon set up],
-                "{ICON_CODE}",
+                "ICON_CODE",
                 "fa-solid fa-arrow-trend-up"
                 ), 
-            "{SIZE}", 
+            "SIZE", 
             "fa-md"
         ),
-        "{COLOR}",
+        "COLOR",
         [Color Green]
     )
 ```
@@ -266,10 +265,10 @@ SUBSTITUTE(
 
 아이콘 녹색 화살표 측정치가 이루어내는 것은 다음과 같습니다:
 
-- 기본 템플릿: [아이콘 폰트 어썸 아이콘 설정]으로 시작합니다. 이는 HTML 코드를 포함한 구조화된 미리 정의된 템플릿으로 구성되어 있습니다. 이 템플릿에는 아이콘의 코드({ICON_CODE}), 크기({SIZE}), 색상({COLOR})을 포함할 수 있는 장소 표시자가 있습니다.
-- 첫 번째 치환 — {ICON_CODE}: 첫 번째 SUBSTITUTE 함수는 {ICON_CODE} 플레이스홀더를 "fa-solid fa-arrow-trend-up"으로 대체합니다. 이는 폰트 어썸 라이브러리에서 솔리드한 상승 화살표 아이콘의 사용을 지정합니다. 이 아이콘은 일반적으로 증가한 KPI 또는 지표에서 시각적으로 긍정적인 성장 또는 개선을 나타내는 데 사용됩니다.
-- 두 번째 치환 — {SIZE}: 다음 SUBSTITUTE 함수는 {SIZE} 플레이스홀더를 "fa-md"로 대체하여 아이콘의 크기를 중간으로 설정합니다. Font Awesome는 다양한 크기 클래스(fa-xs, fa-sm, fa-md, fa-lg, fa-xl, fa-2x부터 fa-10x)를 사용하여 아이콘을 손쉽게 크기 조절할 수 있도록 합니다. fa-md를 선택함으로써 아이콘이 너무 작거나 너무 크지 않게 조절하여 사용되는 맥락 내에서 시각적으로 균형을 맞추게 됩니다.
-- 세 번째 치환 — {COLOR}: 마지막 SUBSTITUTE 함수는 {COLOR} 플레이스홀더를 [초록색]로 대체합니다. 이 측정치의 이 부분은 아이콘의 색상을 사용자 정의하며, 사전 정의된 변수나 측정치 [초록색]을 사용하여 사용할 정확한 녹색 쉐이드를 지정합니다. 녹색은 긍정적 성과와 관련되어 있어 상승하는 화살표 아이콘에 적합한 선택으로 여겨집니다.
+- 기본 템플릿: [아이콘 폰트 어썸 아이콘 설정]으로 시작합니다. 이는 HTML 코드를 포함한 구조화된 미리 정의된 템플릿으로 구성되어 있습니다. 이 템플릿에는 아이콘의 코드(ICON_CODE), 크기(SIZE), 색상(COLOR)을 포함할 수 있는 장소 표시자가 있습니다.
+- 첫 번째 치환 — ICON_CODE: 첫 번째 SUBSTITUTE 함수는 ICON_CODE 플레이스홀더를 "fa-solid fa-arrow-trend-up"으로 대체합니다. 이는 폰트 어썸 라이브러리에서 솔리드한 상승 화살표 아이콘의 사용을 지정합니다. 이 아이콘은 일반적으로 증가한 KPI 또는 지표에서 시각적으로 긍정적인 성장 또는 개선을 나타내는 데 사용됩니다.
+- 두 번째 치환 — SIZE: 다음 SUBSTITUTE 함수는 SIZE 플레이스홀더를 "fa-md"로 대체하여 아이콘의 크기를 중간으로 설정합니다. Font Awesome는 다양한 크기 클래스(fa-xs, fa-sm, fa-md, fa-lg, fa-xl, fa-2x부터 fa-10x)를 사용하여 아이콘을 손쉽게 크기 조절할 수 있도록 합니다. fa-md를 선택함으로써 아이콘이 너무 작거나 너무 크지 않게 조절하여 사용되는 맥락 내에서 시각적으로 균형을 맞추게 됩니다.
+- 세 번째 치환 — COLOR: 마지막 SUBSTITUTE 함수는 COLOR 플레이스홀더를 [초록색]로 대체합니다. 이 측정치의 이 부분은 아이콘의 색상을 사용자 정의하며, 사전 정의된 변수나 측정치 [초록색]을 사용하여 사용할 정확한 녹색 쉐이드를 지정합니다. 녹색은 긍정적 성과와 관련되어 있어 상승하는 화살표 아이콘에 적합한 선택으로 여겨집니다.
 
 파워 BI 보고서에서 만들어진 다른 모든 아이콘의 DAX 측정치를 확인하려면 이 기사의 끝에 제공된 PBIX 파일을 다운로드하여 사용할 수 있습니다. 이들은 _Constants/HTML Set Up 측정치 폴더 아래에서 모두 확인할 수 있습니다.
 

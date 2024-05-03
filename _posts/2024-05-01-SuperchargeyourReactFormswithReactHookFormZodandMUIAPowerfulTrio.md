@@ -1,5 +1,5 @@
 ---
-title: "슈퍼파워 React Form을 만들어보세요! React Hook Form과 Zod, 그리고 MUI가 만들어내는 강력한 트리오!"
+title: "React Hook Form과 Zod, MUI로 React Form 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-01-SuperchargeyourReactFormswithReactHookFormZodandMUIAPowerfulTrio_0.png"
 date: 2024-05-01 17:57
@@ -93,7 +93,6 @@ const userSchema = z.object({
 ```
 
 폼 데이터의 유형을 정의하고 useForm 훅을 사용하여 입력 상태를 관리하세요.
-```
 
 <div class="content-ad"></div>
 
@@ -185,14 +184,15 @@ React Hook Form과 Material-UI 컴포넌트, MUI 폼 컨트롤을 사용하여 �
 ```
 
 위의 코드에서 무슨 일이 벌어지고 있는지 설명드리겠습니다.
-```
 
 <div class="content-ad"></div>
 
+```bash
 - defaultValue={defaultValues.phoneNumber}: 여기서는 입력 필드의 기본값을 저장된 값으로 설정합니다.
 - {...register("phoneNumber")}: 이 줄은 React Hook Form과 입력 필드를 등록하여 폼 데이터의 "phoneNumber" 필드와 연결합니다. 이를 통해 React Hook Form을 사용하여 폼 유효성 검사 및 데이터 처리를 활성화할 수 있습니다.
 - error={!!errors.phoneNumber}: 이 속성은 입력 필드에 대한 오류 상태를 표시할지 여부를 결정합니다. 만약 폼 데이터의 "phoneNumber" 필드에 오류가 있으면 오류 상태를 트리거합니다.
 - helperText={errors.phoneNumber?.message}: 여기서 "phoneNumber" 필드와 관련된 오류 메시지를 표시합니다. 오류가 없으면 이 속성은 비어 있지만, 폼 유효성 검사 중 오류가 발생하면 사용자에게 오류 메시지를 표시하여 안내합니다.
+```
 
 사용자에게 피드백을 제공하고 유효성 검사 오류를 조건적으로 표시하는 데 touchedFields 객체를 사용할 수 있습니다.
 

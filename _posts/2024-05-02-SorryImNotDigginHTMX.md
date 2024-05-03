@@ -1,17 +1,15 @@
 ---
-title: "죄송해요, HTMX에 대해서 그렇게 큰 관심이 없어요"
+title: "HTMX가 개발자들에게 인기 없는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-02-SorryImNotDigginHTMX_0.png"
 date: 2024-05-02 00:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-02-SorryImNotDigginHTMX_0.png
 tag: Tech
 originalTitle: "Sorry, I’m Not Diggin’ HTMX"
 link: "https://medium.com/@kentondejong/sorry-im-not-diggin-htmx-cc28df862910"
 ---
 
-
-```markdown
 ![image](/assets/img/2024-05-02-SorryImNotDigginHTMX_0.png)
 
 언제나 새로 나오는 기술에 대해 비판적이라고 해도 되겠죠. 그래서 HTMX에 대해 처음 들었을 때부터 팬이 아니었어요.
@@ -19,7 +17,11 @@ link: "https://medium.com/@kentondejong/sorry-im-not-diggin-htmx-cc28df862910"
 HTMX는 "자바스크립트 대신 HTML에서 직접 현대적인 브라우저 기능에 액세스할 수 있도록 하는 라이브러리"라고 설명되어 있는데, HTMX를 사용하는 첫 번째 단계는 자바스크립트 라이브러리를 포함해야 한다는 거잖아요:
 
 ```js
-<script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+<script
+  src="https://unpkg.com/htmx.org@1.9.10"
+  integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+  crossorigin="anonymous"
+></script>
 ```
 
 <div class="content-ad"></div>
@@ -38,7 +40,7 @@ HTMX는 "자바스크립트 대신 HTML에서 직접 현대적인 브라우저 �
 
 일단, HTMX에 대해서 더 알려주는 몇 가지 핵심 "모티베이션" 포인트가 있으며, 이들 중 어느 것도 나에게는 정말 이해하기 어렵습니다.
 
-## 1. <a>와 <form>만이 HTTP 요청을 보낼 수 있는 이유는 무엇인가요?
+## 1. `<a>`와 `<form>`만이 HTTP 요청을 보낼 수 있는 이유는 무엇인가요?
 
 사실 아닙니다. `img` 태그도 마찬가지이며, `audio`, `video`, `iframe`, `embed`, `frame`과 `link`, `script`와 같은 미디어 태그도 HTTP 요청을 보낼 수 있습니다.
 
@@ -69,7 +71,7 @@ HTMX는 "자바스크립트 대신 HTML에서 직접 현대적인 브라우저 �
 하지만, 이 같은 기능은 예전부터 있었어. 2006년에 출시된 jQuery 1.0은 바로 이것을 수행하는 load() 메소드를 가지고 있었어:
 
 ```js
-$( "#result" ).load( "ajax/test.html #container" );
+$("#result").load("ajax/test.html #container");
 ```
 
 이와 같은 기능은 바닐라 JavaScript로도 아주 쉽게 할 수 있지:
@@ -80,14 +82,14 @@ $( "#result" ).load( "ajax/test.html #container" );
 let resultElement = document.getElementById("result");
 
 fetch("ajax/test.html")
-  .then(response => response.text())
-  .then(html => {
+  .then((response) => response.text())
+  .then((html) => {
     let tempElement = document.createElement("div");
     tempElement.innerHTML = html;
     let containerContent = tempElement.querySelector("#container").innerHTML;
     resultElement.innerHTML = containerContent;
   })
-  .catch(error => console.error('콘텐츠를 불러오는 중 오류가 발생했습니다:', error));
+  .catch((error) => console.error("콘텐츠를 불러오는 중 오류가 발생했습니다:", error));
 ```
 
 ![링크](https://miro.medium.com/v2/resize:fit:960/1*5bwk8lXsMpJK7xyn-LJ1-A.gif)
@@ -95,7 +97,6 @@ fetch("ajax/test.html")
 # HTMX가 테이블에 무엇을 가져다주나요?
 
 그들의 동기에는 동의하지 않지만, 그들이 자바스크립트를 사용하고 있다는 점에서 그들이 자바스크립트 없는 시스템을 운영하고 있다고 주장하는 것에도 동의하지 않습니다. 그럼에도 불구하고 HTMX가 제게 어떻게 생활을 편하게 해줄 수 있을지 알고 싶었습니다. 이론에는 동의할 수 없을지라도 실제로는 맘에 들 수도 있지 않을까요?
-```  
 
 <div class="content-ad"></div>
 

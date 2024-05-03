@@ -1,5 +1,5 @@
 ---
-title: "DOM-JON으로 더 나은 JS DOM 구축하기 - 파트 3: State 객체"
+title: "DOM-JON으로 더 나은 JS DOM 구축하기"
 description: ""
 coverImage: "/assets/img/2024-05-01-BetterJSDOMBuildingWithDOM-JONPart3TheStateObject_0.png"
 date: 2024-05-01 22:39
@@ -161,7 +161,6 @@ spectres["note Jacen Syndulla"] = "이 레코드의 값이 '-'에서 '7'로 변�
 이쁜 표가 이렇게 생겼습니다:
 
 <img src="/assets/img/2024-05-01-BetterJSDOMBuildingWithDOM-JONPart3TheStateObject_0.png" />
-```
 
 <div class="content-ad"></div>
 
@@ -218,7 +217,6 @@ clockUpdate 함수는 시간을 가져와서 "hours"를 분리하고, "hours"와
 값을 state에 연결하고, state가 시계로의 변환을 처리합니다. 이 점이 좋은 점은 논리와 외관을 구분할 수 있으므로 논리를 건드리지 않고 외관을 계속 변경할 수 있다는 것입니다.
 
 이것을 생각해보세요. 고려해보세요:
-```
 
 <div class="content-ad"></div>
 
@@ -234,7 +232,6 @@ clockUpdate 함수는 시간을 가져와서 "hours"를 분리하고, "hours"와
 참고로, setInterval 대신 requestAnimationFrame을 사용하는 이유는 setInterval이 종종 초를 "건너뛰기" 때문에 부드러운 애니메이션이 되게 하고 싶기 때문이에요. "실제 세계"에서는 아마 CSS를 사용해서 애니메이션을 구현할 텐데, 상태 속성이 어떻게 작동하는지 보여주고 싶어서 이렇게 했어요.
 
 # 구현
-```
 
 <div class="content-ad"></div>
 
@@ -719,7 +716,7 @@ myElement.style.setProperty("--rotateHand", "20deg"); // 동작함
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
    __make : function(selector, ...args) {
 
@@ -737,7 +734,6 @@ myElement.style.setProperty("--rotateHand", "20deg"); // 동작함
 ## Element.prototype.__setAttr
 
 elementData.eachAttr를 사용하여 속성과 속성을 설정합니다.
-```
 
 <div class="content-ad"></div>
 
@@ -805,7 +801,6 @@ StateRender = class {
   } // StateRender.queUpdate
 
 }, // StateRender
-```
 ```
 
 <div class="content-ad"></div>
@@ -890,7 +885,6 @@ __type을 정의해서 (계산 비용이 많이 드는) Object.prototype.__type 
 전달된 데이터가 일반 객체인 경우, 값을 및 필터를 추출합니다. 일반 객체가 아니라면 값이어야 합니다. 이렇게 하면 "값"만 또는 정보 객체를 전달할 수 있습니다. set/getFilters도 인수로 전달할 수 있는 기능을 추가해야 할까요?
 
 안타깝게도 객체 구조 분해는 새로운 var/let/const로만 작동하며 기존 변수에서는 작동하지 않습니다. 따라서 이를 억지로 처리해야 합니다. 그렇지 않으면 VAR를 사용하는 것으로 돌아가야 합니다. 아니, 지금 VAR를 사용할지도 모르겠네요.
-```
 
 <div class="content-ad"></div>
 
@@ -983,13 +977,13 @@ store = {
 <div class="content-ad"></div>
 
 저장소(store)에서 State에 대한 참조와 getter/setter 이름 state을 전달해 드립니다. 이는 이벤트 처리에 도움이 될 수 있습니다. 경우에 따라 “this” 범위를 잃을 때입니다. 그리고 기억하세요:
-
+```js
 { name }
-
+```
 는 다음과 동일한 기능을 합니다:
-
+```js
 { "name": name }
-
+```
 <div class="content-ad"></div>
 
 많은 JS 프로그래머들이 이것을 모르다는 점에 놀랐어요.
@@ -1260,7 +1254,9 @@ DSS(구분자 선택자 문자열)는 CSS와 유사한 식별자를 사용하여
 
 <div class="content-ad"></div>
 
+```bash
 일반 객체 — 대부분의 키는 setAttribute를 사용하여 할당되지만 __makeParent, __makePlace, __stateName 등과 같은 특별한 값은 가로챕니다. 또한 해당 객체에서 { style : { property : value } }와 같은 것을 제대로 작동하도록 구문 분석하여 Element.style.setProperty를 통해 할당됩니다. 현재 datalist는 Object.assign(Element.datalist)을 사용하여 설정됩니다. 이것이 잘 작동하는지 확인하고 강제로 적용해야 할지 여부를 확인해야 합니다. 또한 함수 값이 element[name]을 통해 할당되므로 이벤트 핸들러와 같은 것을 onvent(예: onlick 또는 onsubmit)과 같이 연결할 수 있도록 주의를 기울여야 합니다.
+```
 
 함수 — 해당 함수는 현재 Element(this)에 전달되어 실행되며 결과는 문서에 추가됩니다.
 
@@ -1323,7 +1319,6 @@ const clearButtonDomJon = [
 ];
 
 document.body__attach(clearButtonDomJon);
-```
 ```
 
 <div class="content-ad"></div>

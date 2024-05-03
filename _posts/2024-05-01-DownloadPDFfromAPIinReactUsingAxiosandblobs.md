@@ -1,5 +1,5 @@
 ---
-title: "리액트에서 API를 이용하여 PDF 다운로드하기 (Axios와 blobs 사용하기)"
+title: "리액트에서 API를 이용하여 PDF 다운로드하기 (Axios, blobs)"
 description: ""
 coverImage: "/assets/img/2024-05-01-DownloadPDFfromAPIinReactUsingAxiosandblobs_0.png"
 date: 2024-05-01 17:30
@@ -95,9 +95,7 @@ import axios from 'axios';
 
 API 요청을 하려면 axios.get() 메서드를 사용할 수 있어요. 파일을 blob 객체로 받기 위해 responseType 옵션을 ‘blob’으로 설정해주세요. 예시를 보여드릴게요:
 
-```markdown
 ![Download PDF](/assets/img/2024-05-01-DownloadPDFfromAPIinReactUsingAxiosandblobs_5.png)
-```
 
 위의 코드 스니펫에서는 downloadPDF라는 비동기 함수를 만들어 GET 요청을 ‘https://ExampleAPI.com/getFile`로 보내고 responseType을 ‘blob’로 지정해요. 응답은 then 블록에서 접근할 수 있고, 파일 데이터를 적절히 처리할 수 있어요. 오류가 발생하면 catch 블록에서 잡을 수 있어요.
 

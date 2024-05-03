@@ -1,5 +1,5 @@
 ---
-title: "🎀 React 19 Beta 릴리스: 필요한 정보들을 알아보세요"
+title: "React 19 Beta 릴리스, 새로운 기능 소개 및 정리"
 description: ""
 coverImage: "/assets/img/2024-05-01-React19BetaReleasedWhatYouNeedtoKnow_0.png"
 date: 2024-05-01 17:45
@@ -154,7 +154,7 @@ const [error, submitAction, isPending] = useActionState(async (previousState, ne
 
 `useActionState` 함수는 함수(액션)를 인수로 받아 감싼 액션을 호출합니다. 이는 액션이 조합되기 때문에 작동합니다. 감싼 액션이 호출되면 `useActionState`는 액션의 마지막 결과를 데이터로 반환하고 액션의 보류 상태를 보류로 반환합니다.
 
-# React DOM: <form> 액션
+# React DOM: form 액션
 
 React 19의 새로운 `form` 기능에 액션도 통합되어 있습니다. `form`, `input`, 그리고 `button` 엘리먼트의 액션과 formAction 프롭으로 함수를 전달하여 액션과 함께 자동으로 폼을 제출할 수 있습니다:
 

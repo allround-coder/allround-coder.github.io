@@ -1,5 +1,5 @@
 ---
-title: "슈퍼 시니어 개발자처럼 React 상태 관리를 강화하세요: Zustand와 React Query의 힘을 발휘하기"
+title: "대기업에서 React 상태 관리를 하는 방법,(Zustand와 React Query)"
 description: ""
 coverImage: "/assets/img/2024-05-01-SuperchargeYourReactStateManagementlikeaSeniorDevUnlockingthePowerofZustandandReactQuery_0.png"
 date: 2024-05-01 18:13

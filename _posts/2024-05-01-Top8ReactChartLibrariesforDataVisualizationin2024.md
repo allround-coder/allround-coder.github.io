@@ -1,5 +1,5 @@
 ---
-title: "2024년을 위한 데이터 시각화를 위한 최고의 React 차트 라이브러리 8선 🔥🏆"
+title: "데이터 시각화를 위한 최고의 React 차트 라이브러리 8가지🔥(2024년 최신)"
 description: ""
 coverImage: "/assets/img/2024-05-01-Top8ReactChartLibrariesforDataVisualizationin2024_0.png"
 date: 2024-05-01 18:18
@@ -80,7 +80,6 @@ https://react-chartjs-2.js.org/
 
 <div class="content-ad"></div>
 
-```
 ![이미지](/assets/img/2024-05-01-Top8ReactChartLibrariesforDataVisualizationin2024_3.png)
 
 # Victory
@@ -88,7 +87,6 @@ https://react-chartjs-2.js.org/
 Victory는 동적인 React 차트 라이브러리로, 데이터 시각화를 매끄럽고 시각적으로 멋지게 만드는 다양한 기능을 제공하여 눈에 띕니다. 🌐
 
 ## 주요 기능:
-```
 
 <div class="content-ad"></div>
 
@@ -125,7 +123,7 @@ https://airbnb.io/visx/
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![React Chart Libraries](/assets/img/2024-05-01-Top8ReactChartLibrariesforDataVisualizationin2024_5.png)
 
 # Nivo
@@ -133,7 +131,6 @@ https://airbnb.io/visx/
 Nivo는 웹 애플리케이션에서 데이터 시각화에 우아함과 기능성을 더해주는 포괄적인 React 차트 라이브러리입니다. 🌐 React와 D3로 개발된 Nivo는 간결성과 다양성으로 눈에 띄며, 개발자가 효율적이고 미적으로 매력적인 해결책을 찾는 데 최적의 선택지입니다.
 
 ## Nivo 주요 기능:
-```
 
 <div class="content-ad"></div>
 

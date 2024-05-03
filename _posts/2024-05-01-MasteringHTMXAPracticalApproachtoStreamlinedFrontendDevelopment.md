@@ -1,5 +1,5 @@
 ---
-title: "마스터링 HTMX: 엄선된 프론트엔드 개발을 위한 실용적 접근"
+title: "HTMX: 최신 프론트엔드 개발을 위해 반드시 필요한 것"
 description: ""
 coverImage: "/assets/img/2024-05-01-MasteringHTMXAPracticalApproachtoStreamlinedFrontendDevelopment_0.png"
 date: 2024-05-01 23:00

@@ -1,5 +1,5 @@
 ---
-title: "로컬호스트에서 Serve로 HTML 파일 실행하기: 단계별 안내"
+title: "로컬호스트에서 Serve로 HTML 파일 실행하기"
 description: ""
 coverImage: "/assets/img/2024-05-02-RunningHTMLFileswithServeinLocalhostAStep-By-StepGuide_0.png"
 date: 2024-05-02 00:50

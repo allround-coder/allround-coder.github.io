@@ -1,5 +1,5 @@
 ---
-title: "리액트에서 여러 파일 업로드를 구현하는 방법!"
+title: "리액트에서 여러 파일 업로드를 구현하기(코드 있음)"
 description: ""
 coverImage: "/assets/img/2024-05-02-HowtoimplementmultiplefileuploadsinReact_0.png"
 date: 2024-05-02 00:23
@@ -49,7 +49,7 @@ create-react-app multiple-file-upload
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-02-HowtoimplementmultiplefileuploadsinReact_1.png)
 
 그러나 여러분만의 스타일과 파일 표시 방식을 가진 버튼을 가지는 것이 좋습니다. 따라서 입력란에 display: none 속성을 추가하고 레이블을 사용하여 레이블을 입력란과 바인딩하여 그 기능을 복제할 수 있도록 하세요.
@@ -61,7 +61,6 @@ create-react-app multiple-file-upload
 ```
 
 이 레이블 내에서 원하는 내용을 표시할 수 있습니다. 이 경우에는 간단한 버튼을 사용했습니다. 제가 버튼 대신 a를 사용하고 bootstrap 클래스를 적용했음을 유의하세요.
-```
 
 <div class="content-ad"></div>
 
@@ -196,7 +195,7 @@ return true;
 
 forEach 대신에 some을 사용한 이유는 선택한 파일의 수가 제한을 초과할 경우 사용자가 파일을 업로드하는 것을 허용하고 싶지 않기 때문입니다. 이를 위해 반복문을 이 시점에서 중단해야 했습니다. forEach 루프를 중단하는 것은 거의 불가능하기 때문에 some 메서드를 사용했습니다.
 
-some() 메서드는 배열의 요소 중 일정 조건을 충족하는지 확인하는 데 사용됩니다. 만약 요소가 조건을 충족하면 true를 반환하고 루프를 중단합니다. 따라서 루프를 중단하기 위해 함수에서 true를 반환했습니다.```
+some() 메서드는 배열의 요소 중 일정 조건을 충족하는지 확인하는 데 사용됩니다. 만약 요소가 조건을 충족하면 true를 반환하고 루프를 중단합니다. 따라서 루프를 중단하기 위해 함수에서 true를 반환했습니다.
 
 <div class="content-ad"></div>
 
@@ -208,11 +207,10 @@ some() 메서드는 배열의 요소 중 일정 조건을 충족하는지 확인
 if (!limitExceeded) setUploadedFiles(uploaded)
 ```
 
-한도에 도달하면 버튼을 비활성화하려면 입력 필드에 disabled = {fileLimit}를 설정하고 버튼에 disabled 클래스를 추가하세요.
+한도에 도달하면 버튼을 비활성화하려면 입력 필드에 disabled = fileLimit를 설정하고 버튼에 disabled 클래스를 추가하세요.
 
 <div class="content-ad"></div>
 
-```jsx
 ```js
 <a className={`btn btn-primary ${!fileLimit ? '' : 'disabled' } `}>
     업로드 파일

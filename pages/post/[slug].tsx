@@ -40,7 +40,6 @@ export default function Post({ post, content }: Props) {
     return <ErrorPage statusCode={404} />;
   }
 
-  console.log(post);
 
   return (
     <>

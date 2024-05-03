@@ -1,5 +1,5 @@
 ---
-title: "프로덕션 환경에서 Docker를 사용하여 HTML 웹사이트를 컨테이너화하는 방법- Docker 사례 연구"
+title: "프로덕션 환경에서 Docker를 사용하여 HTML 웹사이트를 컨테이너화하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-02-ContainerizedanHTMLWebsiteusingDockeronProductionEnvironmentDockerCaseStudy_0.png"
 date: 2024-05-02 00:16
@@ -80,7 +80,7 @@ c. 설명: 사례 연구용 보안 그룹
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-02-ContainerizedanHTMLWebsiteusingDockeronProductionEnvironmentDockerCaseStudy_7.png)
 
 단계 7: "인스턴스 시작"을 클릭합니다.
@@ -88,7 +88,6 @@ c. 설명: 사례 연구용 보안 그룹
 ![이미지](/assets/img/2024-05-02-ContainerizedanHTMLWebsiteusingDockeronProductionEnvironmentDockerCaseStudy_8.png)
 
 단계 8: "하이퍼링크"를 클릭하여 "인스턴스"를 확인하세요.
-```
 
 <div class="content-ad"></div>
 

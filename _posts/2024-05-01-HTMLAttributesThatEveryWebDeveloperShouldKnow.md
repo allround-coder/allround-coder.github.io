@@ -1,5 +1,5 @@
 ---
-title: "웹 개발자가 알아야 할 HTML 속성들"
+title: "웹 개발자가 알아야하는 필수 HTML 속성들"
 description: ""
 coverImage: "/assets/img/2024-05-01-HTMLAttributesThatEveryWebDeveloperShouldKnow_0.png"
 date: 2024-05-01 22:58
@@ -45,7 +45,6 @@ div[popover] {
 ![팝오버 예시 이미지](https://miro.medium.com/v2/resize:fit:1148/1*KbjdZQW2A-7pzrBMGSDNXA.gif)
 
 MDN 설명에 따라 네이티브 팝오버에 애니메이션을 추가할 수 있습니다. 또한, 팝오버 API의 JavaScript 메소드를 사용하여 CSS 스타일링된 툴팁을 만들 수 있습니다. 팝오버 웹 API는 아직 새로운 브라우저 기능이므로 제품에서 사용하기 전에 시간이 필요할 수 있습니다.
-```  
 
 <div class="content-ad"></div>
 
@@ -193,11 +192,10 @@ inputmode="numeric"
 ```
 
 이제 모바일에서 숫자 키보드 레이아웃을 확인할 수 있습니다. 아래 미리보기를 참고하세요:
-``` 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-01-HTMLAttributesThatEveryWebDeveloperShouldKnow_2.png)
 
 # loading 속성을 이용한 브라우저 레벨 이미지 지연 로딩
@@ -205,7 +203,6 @@ inputmode="numeric"
 웹 개발자들은 페이지 로딩 시간을 개선하여 SEO (검색 엔진 최적화) 점수를 높이고 사용자 상호 작용을 향상시키려고 노력합니다. 이미지의 지연 로딩은 특정 이미지를 렌더링할 때 해당 이미지를로드하여 초기 페이지 로딩 시간을 줄이는 잘 알려진 전략입니다. 이미지의 지연 로딩은 Intersection Observer API 또는 전통적인 스크롤 이벤트를 사용하여 자체 구현하거나 서드파티 라이브러리를 사용하여 가능합니다.
 
 img 태그의 loading 속성을 사용하면 JavaScript 코드없이 또는 서드파티 라이브러리를 사용하지 않고 브라우저 레벨의 이미지 지연 로딩을 활성화할 수 있습니다.
-```
 
 <div class="content-ad"></div>
 

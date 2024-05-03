@@ -1,5 +1,5 @@
 ---
-title: "도커 과제 5 - 컨테이너 내부에 샘플 HTML 파일로 Apache 기본 웹 페이지 교체하기"
+title: "도커 컨테이너 내부에 샘플 HTML 파일로 Apache 기본 웹 페이지 교체하기"
 description: ""
 coverImage: "/assets/img/2024-05-02-ReplacetheApacheDefaultWebPageWithSampleHTMLFileInsideContainerDockerAssignment5_0.png"
 date: 2024-05-02 00:54

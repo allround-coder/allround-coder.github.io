@@ -92,7 +92,7 @@ HTML 문서는 브라우저에 렌더링할 내용을 알려주는 요소로 구
 
 <div class="content-ad"></div>
 
-```markdown
+
 **body**: 웹페이지에서 보이는 내용을 포함합니다.
 
 # HTML 요소의 구조
@@ -100,7 +100,6 @@ HTML 문서는 브라우저에 렌더링할 내용을 알려주는 요소로 구
 ![HTML 요소 구조](/assets/img/2024-05-02-AComprehensiveGuidetoHTMLforBeginners_1.png)
 
 다양한 HTML 요소는 웹 브라우저에 정보를 전달하는 데 도움이 됩니다. 위 다이어그램에서 HTML 요소는 태그(시작 태그와 종료 태그)로 지정됨을 볼 수 있습니다. *몇몇 요소는 종료 태그가 필요하지 않을 수도 있습니다.
-```
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "10단계에서 알아보는 접근성 있는 폼 디자인 방법"
+title: "접근성 준수하는 폼을 디자인하는 10가지 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-Howtodesignaccessibleformsin10steps_0.png"
 date: 2024-05-01 22:33

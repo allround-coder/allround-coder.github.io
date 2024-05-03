@@ -1,5 +1,5 @@
 ---
-title: "멋진 HTML 효과 8가지로 멋진 웹사이트 만들기"
+title: "웹사이트 만들 때 알아두면 유용한 HTML 효과 8가지"
 description: ""
 coverImage: "/assets/img/2024-05-01-8CoolHTMLEffectstoCreateanAwesomeWebsite_0.png"
 date: 2024-05-01 23:58
@@ -103,7 +103,6 @@ Input:
 ```md
 ```js
 <span style="background-color: #004aad> highlighted text.</span>
-```
 ```
 
 ## 4. 텍스트에 배경 이미지 추가

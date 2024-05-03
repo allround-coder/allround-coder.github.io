@@ -1,5 +1,5 @@
 ---
-title: "HTML과 JSON을 JavaScript를 사용하여 연결하는 방법: 초보자를 위한 안내"
+title: "JavaScript를 사용하여 HTML과 JSON을 연결하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-01-HowtoConnectHTMLwithJSONUsingJavaScriptABeginnersGuide_0.png"
 date: 2024-05-01 23:21

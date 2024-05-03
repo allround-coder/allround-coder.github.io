@@ -1,5 +1,5 @@
 ---
-title: "Angular에서 폼 유효성을 갖춘 사용자 정의 입력 구성 요소 만들기"
+title: "Angular에서 폼 유효성을 갖춘 인풋 요소 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-02-BuildingaCustomInputComponentwithFormValidationinAngular_0.png"
 date: 2024-05-02 00:18

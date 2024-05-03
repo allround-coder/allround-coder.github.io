@@ -1,5 +1,5 @@
 ---
-title: "숨겨진 보석 찾기: 잘 알려지지 않은 HTML 태그들"
+title: "알아두면 쓸모있는 잘 알려지지 않은 HTML 태그들"
 description: ""
 coverImage: "/assets/img/2024-05-01-UnearthingHiddenGemsLesser-KnownHTMLTags_0.png"
 date: 2024-05-01 23:47
@@ -108,7 +108,7 @@ link: "https://medium.com/dev-genius/unearthing-hidden-gems-lesser-known-html-ta
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 <progress value="50" max="100">50%</progress>
 ```
