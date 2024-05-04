@@ -3,7 +3,7 @@ const globby = require("globby");
 const path = require("path");
 const prettier = require("prettier");
 
-const YOUR_AWESOME_DOMAIN = "https://allround-coder.github.io/";
+const YOUR_AWESOME_DOMAIN = "https://allround-coder.github.io";
 
 const formatted = (sitemap) => prettier.format(sitemap, { parser: "html" });
 
@@ -34,7 +34,7 @@ const pagesSitemapGenerator = async () => {
 
       return `
       <url>
-        <loc>${YOUR_AWESOME_DOMAIN}${routePath}</loc>
+        <loc>${YOUR_AWESOME_DOMAIN}/${routePath}</loc>
       </url>
     `;
     })
@@ -52,14 +52,14 @@ const postsSitemapGenerator = async () => {
   return posts
     .map((page) => {
       const path = page
-        .replace("_posts", "posts")
+        .replace("_posts", "post")
         .replace(".md", "")
         .replace(/\/index/g, "");
       let routePath = path === "index" ? "" : path;
 
       return `
     <url>
-      <loc>${YOUR_AWESOME_DOMAIN}${routePath}</loc>
+      <loc>${YOUR_AWESOME_DOMAIN}/${routePath}</loc>
     </url>
   `;
     })
@@ -72,6 +72,9 @@ const postsSitemapGenerator = async () => {
   const generatedSitemap = `
     <?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>${YOUR_AWESOME_DOMAIN}</loc>
+    </url>
   		${await postsSitemapGenerator()}
     </urlset>
   `;

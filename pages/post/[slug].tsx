@@ -40,7 +40,6 @@ export default function Post({ post, content }: Props) {
     return <ErrorPage statusCode={404} />;
   }
 
-
   return (
     <>
       {router.isFallback ? (
@@ -159,7 +158,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getPosts({ fields: ["slug"] });
+  const posts: any = await getPosts({ fields: ["slug"] });
   let paths = [];
   // console.log(posts);
 

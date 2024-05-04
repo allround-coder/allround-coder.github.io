@@ -3,19 +3,18 @@ title: "HTML 문맹 스타일링과 실패 윈드 스튜피드"
 description: ""
 coverImage: "/assets/img/2024-05-02-HTMLIlliteracyPart2of2StylingAndFailwindStupid_0.png"
 date: 2024-05-02 00:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-02-HTMLIlliteracyPart2of2StylingAndFailwindStupid_0.png
 tag: Tech
 originalTitle: "HTML Illiteracy (Part 2 of 2) Styling And Failwind Stupid"
 link: "https://medium.com/codex/html-illiteracy-part-2-of-2-styling-and-failwind-stupid-f4867d13595a"
 ---
 
-
 <img src="/assets/img/2024-05-02-HTMLIlliteracyPart2of2StylingAndFailwindStupid_0.png" />
 
 우선, 제가 처음부터 시작했던 템플릿의 마무리된 모습을 보여드릴게요. CSS의 어떻게/무엇을/왜 나누기 전에 숫자와 방법론에 대해 이야기하고 싶어요.
 
-여기서 찾을 수 있어요: 
+여기서 찾을 수 있어요:
 https://cutcodedown.com/for_others/medium_articles/failwindUI/shotlight/shotlight.html
 
 내 모든 예제와 마찬가지로 디렉토리는 쉽게 탐색할 수 있도록 잠금이 해제되어 있어요:
@@ -71,7 +70,7 @@ Failwind와 그들이 사용한 것들이 “더 쉬운” 접근 방식이라�
 
 <div class="content-ad"></div>
 
-아마도, 진짜로 아마도 "페이지로드는 악이다"라는 생각을 하지 않고 더 높은 성능을 가진 사이트를 만들 수 있을 거에요. 더 깔끔하고 명확하며 작업하기 쉬운 마크업을 사용해볼 수 있어요. 아마도 모든 문제에 대한 해답은 모든 것에 더 많은 코드를 던져야 한다는 괴물들과 사기꾼들의 말에 속아들지 않게 될지도 모르겠네요. 기억해요: 
+아마도, 진짜로 아마도 "페이지로드는 악이다"라는 생각을 하지 않고 더 높은 성능을 가진 사이트를 만들 수 있을 거에요. 더 깔끔하고 명확하며 작업하기 쉬운 마크업을 사용해볼 수 있어요. 아마도 모든 문제에 대한 해답은 모든 것에 더 많은 코드를 던져야 한다는 괴물들과 사기꾼들의 말에 속아들지 않게 될지도 모르겠네요. 기억해요:
 
 # SPA에게 무정한가요?
 
@@ -299,7 +298,7 @@ body {
 
 다음으로, 다크 모드를 위해 간단한 클래스를 사용하여 이를 재정의하겠어요:
 
-```js
+````js
 body.dark {
   --bodyBg:#333;
   --borderColor:#444;
@@ -361,7 +360,7 @@ body, button, input, table, textarea, select {
  line-height:1.5;
  font-family:inherit;
 }
-```
+````
 
 그리고 일반적인 값을 몇 가지 설정해 주죠.
 
@@ -428,7 +427,7 @@ main {
 
 <div class="content-ad"></div>
 
-해당 내용은 Markdown 형식입니다. 아래는 원문의 번역입니다. 
+해당 내용은 Markdown 형식입니다. 아래는 원문의 번역입니다.
 
 헤더:
 
@@ -553,20 +552,18 @@ h1 {
 라이트/다크 토글은 원본 이미지가 너무 얇아 거의 보이지 않고 접근성 최소 기준을 완전히 미달했기 때문에 font-awesome에서 SVG를 빌렸습니다. 나는 이를 CSS에 인라인으로 넣어 그 불필요한 쓰레기들이 경쟁할 기회를 줬지만, 실제로는 웹폰트를 사용할 것입니다.
 
 ```css
-테두리없이 색상을 투명하게 한 버튼을 만듭니다.
-.toggleLightDark {
-  display:block;
-  width:3rem;
-  height:2.5rem;
-  border:0;
-  background-color:transparent;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z'/%3E%3C/svg%3E");
+테두리없이 색상을 투명하게 한 버튼을 만듭니다. .toggleLightDark {
+  display: block;
+  width: 3rem;
+  height: 2.5rem;
+  border: 0;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z'/%3E%3C/svg%3E");
 }
 
-어두운 모드일 때 이미지 바꾸기
-.dark .toggleLightDark {
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z'/%3E%3C/svg%3E");
-  filter:invert(1);
+어두운 모드일 때 이미지 바꾸기 .dark .toggleLightDark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z'/%3E%3C/svg%3E");
+  filter: invert(1);
 }
 ```
 
@@ -578,21 +575,22 @@ SVG에 이미 색상을 직접 넣을 수도 있지만 CSS에서 SVG를 사용�
 
 ```css
 h2 {
-  font-size:clamp(1.25rem, 6vw, 2rem);
-  line-height:1.2;
-  max-width:32rem;
+  font-size: clamp(1.25rem, 6vw, 2rem);
+  line-height: 1.2;
+  max-width: 32rem;
 }
 
 h2 > span {
-  display:inline-block;
+  display: inline-block;
 }
 
-h3, p {
-  max-width:40rem;
+h3,
+p {
+  max-width: 40rem;
 }
 
 p {
-  margin:1rem 0;
+  margin: 1rem 0;
 }
 ```
 
@@ -649,7 +647,6 @@ p {
 다시 말하지만, 그 곳에서 특별히 기록할 내용은 없어요.
 
 H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 line-height를 사용하여 수직 정렬되어 있어요. 맨 끝에서는 HEADER의 형제 태그마다 TIME 요소의 너비만큼 들여쓰기가 되어, 제목과 맞춰져 있어요.
-```
 
 <div class="content-ad"></div>
 
@@ -660,7 +657,7 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
 .articleSummaries > a:hover header h3,
 .articleSummaries > a:focus header ~ *,
 .articleSummaries > a:hover header ~ * {
-  background:var(--sectionFocusBg);
+  background: var(--sectionFocusBg);
 }
 ```
 
@@ -672,8 +669,8 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
 
 ```css
 .articleSummaries p {
-  margin:0;
-  padding:0 1rem 1rem;
+  margin: 0;
+  padding: 0 1rem 1rem;
 }
 ```
 
@@ -682,13 +679,13 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
 미디어 쿼리는 코드 작성 순서와 다르게 나와 있습니다. 보통 소스에서 작은 것부터 큰 것 순서대로 나열하는 편이지만, 우리는 먼저 가장 작은 것을 살펴보겠습니다:
 
 ```css
-@media (max-width:30rem) {
+@media (max-width: 30rem) {
   #fauxBody > footer {
-    display:block;
-    text-align:center;
+    display: block;
+    text-align: center;
   }
   #fauxBody > footer ul {
-    justify-content:center;
+    justify-content: center;
   }
 } /* max-width:30rem */
 ```
@@ -698,15 +695,15 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
 그것은 단순히 왼쪽/오른쪽 동작을 제거하여 메뉴를 멍청하게 중앙에 위치시키는 것 뿐이에요. 졸려요.
 
 ```css
-@media (max-width:35rem) {
+@media (max-width: 35rem) {
   header > a:first-child {
-    flex-grow:1;
+    flex-grow: 1;
   }
   a[href="#mainMenu"] {
-    display:block;
-    width:2.25rem;
-    height:2rem;
-    background:linear-gradient(
+    display: block;
+    width: 2.25rem;
+    height: 2rem;
+    background: linear-gradient(
       to bottom,
       var(--linkColor) 0%,
       var(--linkColor) 18%,
@@ -722,24 +719,24 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
   }
   #mainMenu,
   #mainMenu > a {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
   }
   #mainMenu {
-    position:fixed;
-    top:0;
-    left:-200vw;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:auto;
-    opacity:0;
-    transition:left 0s 0.5s, opacity 0.5s;
+    position: fixed;
+    top: 0;
+    left: -200vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    opacity: 0;
+    transition: left 0s 0.5s, opacity 0.5s;
   }
   #mainMenu:target {
-    left:0;
-    opacity:1;
-    transition:opacity 0.5s;
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.5s;
   }
   // 나머지 내용은 생략합니다.
 } /* max-width:35rem */
@@ -764,25 +761,25 @@ DIV 자체는 메뉴 프레임이며, 여기에서는 margin:auto를 사용하�
 마지막 쿼리:
 
 ```css
-@media (max-width:40rem) {
+@media (max-width: 40rem) {
   .articleSummaries article > header {
-    display:block;
+    display: block;
   }
   .articleSummaries article h3 {
-    width:auto;
+    width: auto;
   }
   .articleSummaries article > header time {
-    display:block;
-    width:auto;
-    padding:0 1rem 1rem;
-    margin-top:-1rem;
+    display: block;
+    width: auto;
+    padding: 0 1rem 1rem;
+    margin-top: -1rem;
   }
   .articleSummaries article > header ~ * {
-    margin-left:0;
+    margin-left: 0;
   }
   .articleSummaries > a:focus article,
   .articleSummaries > a:hover article {
-    background:var(--sectionFocusBg);
+    background: var(--sectionFocusBg);
   }
 } /* max-width:40rem */
 ```
@@ -840,14 +837,11 @@ https://cutcodedown.com/for_others/medium_articles/failwindUI/shotlight/scripts/
 그런 다음 innerHTML 대신 DOM 요소를 생성하는 도우미 함수를 추가합니다.
 
 ```js
-  const make = (tagName, attr = {}, ...append) => {
-    let e = Object.assign(
-      document.createElement(tagName),
-      attr
-    );
-    if (append) e.append(...append);
-    return e;
-  }
+const make = (tagName, attr = {}, ...append) => {
+  let e = Object.assign(document.createElement(tagName), attr);
+  if (append) e.append(...append);
+  return e;
+};
 ```
 
 <div class="content-ad"></div>
@@ -857,7 +851,7 @@ https://cutcodedown.com/for_others/medium_articles/failwindUI/shotlight/scripts/
 ```js
   document.getElementById("top").appendChild(
     make(
-      "button", 
+      "button",
       {
         className : "toggleLightDark",
         onclick : (e) => {
@@ -870,7 +864,7 @@ https://cutcodedown.com/for_others/medium_articles/failwindUI/shotlight/scripts/
       make("span", {}, "Toggle Light/Dark Mode")
     )
   );
-  
+
 } // Light / Dark Mode
 ```
 
@@ -881,16 +875,13 @@ DOM에서 라이트/다크 토글을 만들고 버튼의 클릭 이벤트를 연
 <div class="content-ad"></div>
 
 ```js
-  document.getElementById("top").__make(
-    "button_button.toggleLightDark", 
-    {
-      onclick : (e) => document.__cookie.set(
-        "darkMode",
-        document.body.classList.toggle("dark") ? "on" : ""
-      )
+document.getElementById("top").__make(
+  "button_button.toggleLightDark",
+  {
+    onclick: (e) => document.__cookie.set("darkMode", document.body.classList.toggle("dark") ? "on" : ""),
   },
-  [ "span", "Toggle Light/Dark Mode" ]
- );
+  ["span", "Toggle Light/Dark Mode"]
+);
 ```
 
 간단한 라이트/다크 모드 전환을 만드는 데 무거운 코드들을 보게되면서 정말 헛수고인 것 같아요. 어떤 사람들은 모든 문제에 대한 대답이 마크업에 더 많은 클래스를 추가하는 것인가봐요.
@@ -902,21 +893,15 @@ DOM에서 라이트/다크 토글을 만들고 버튼의 클릭 이벤트를 연
 <div class="content-ad"></div>
 
 ```js
-{ // Modal Helpers
+{
+  // Modal Helpers
 
   /* 기억하세요, 키를 누르는 것만으로는 이스케이프 키가 반환되지 않습니다! */
   document.addEventListener("keydown", (e) => {
-    if (
-      (e.key !== "Escape") ||
-      (location.hash.length < 2)
-    ) return;
+    if (e.key !== "Escape" || location.hash.length < 2) return;
     const target = document.getElementById(location.hash.substr(1));
-    if (target && (
-      target.classList.contains("modal") ||
-      (target.id == "mainMenu")
-    ) ) location.hash="";
-  } );
-  
+    if (target && (target.classList.contains("modal") || target.id == "mainMenu")) location.hash = "";
+  });
 } // Modal Helpers
 ```
 
@@ -924,7 +909,7 @@ DOM에서 라이트/다크 토글을 만들고 버튼의 클릭 이벤트를 연
 
 미리 종료 여부를 테스트하고, 대상이 .modal이거나 #mainMenu인 경우에만 실행되는 것에 주목해주세요. "닫기"라는 겉만 번지르르한 기능은 페이지 해시를 #으로 설정하여 대상이 아니게 만드는 것 이상의 것이 아닙니다.
 
-이런 것을 구현하려고 사람들이 미친듯이 얽힌 과정에 항상 놀라곤 합니다. 이런 걸 시각적 개념을 스크린을 사용하지 않는 사용자에게 전달하려는 아리아-롤 또는 `dialog` 같은 헛소리란 말입니다. 적절한 의미 있는 마크업과 해시 기반의 페이지 내 탐색이 있다면, 모달이라는 것이 window.alert나 window.confirm과 같은 것이 아닐 때 사용자에게 "대화"인 것을 전달해야 한다는 아이디어는 100% 허튼 소리입니다. 더 이상 끌어내지 않겠습니다! 
+이런 것을 구현하려고 사람들이 미친듯이 얽힌 과정에 항상 놀라곤 합니다. 이런 걸 시각적 개념을 스크린을 사용하지 않는 사용자에게 전달하려는 아리아-롤 또는 `dialog` 같은 헛소리란 말입니다. 적절한 의미 있는 마크업과 해시 기반의 페이지 내 탐색이 있다면, 모달이라는 것이 window.alert나 window.confirm과 같은 것이 아닐 때 사용자에게 "대화"인 것을 전달해야 한다는 아이디어는 100% 허튼 소리입니다. 더 이상 끌어내지 않겠습니다!
 
 <div class="content-ad"></div>
 
@@ -938,7 +923,7 @@ DOM에서 라이트/다크 토글을 만들고 버튼의 클릭 이벤트를 연
 
 <div class="content-ad"></div>
 
-그래서 그들은 마크업의 2배에서 10배까지, 그만한 만큼 더 또는 그 이상의 CSS, 수십 킬로 바이트의 작업을 수행하는 JS를 가지고 끝나게 되며, 모든 것을 더 어렵게 만들게 되는데, 왜일까요? "와아와아, 아이 비스 투 스튜피드 투 유스 더 익스턴얼 스타일쉿?" 
+그래서 그들은 마크업의 2배에서 10배까지, 그만한 만큼 더 또는 그 이상의 CSS, 수십 킬로 바이트의 작업을 수행하는 JS를 가지고 끝나게 되며, 모든 것을 더 어렵게 만들게 되는데, 왜일까요? "와아와아, 아이 비스 투 스튜피드 투 유스 더 익스턴얼 스타일쉿?"
 
 # 한 걸음 더 나가기
 

@@ -3,13 +3,12 @@ title: "리덕스 사가 사용하는 방법(기초)"
 description: ""
 coverImage: "/assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_0.png"
 date: 2024-05-01 17:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_0.png
 tag: Tech
 originalTitle: "Getting Started with Redux Saga Tutorial"
 link: "https://medium.com/@ibjects/getting-started-with-redux-saga-tutorial-740954fc9e49"
 ---
-
 
 ## 리덕스 기초를 제공하는 새가 튜토리얼입니다. 기초부터 고급 수준까지의 예제를 통해 리덕스 사가를 배워보세요. 리덕스 사가 개념을 활용하여 블로그 앱을 만들어보세요.
 
@@ -75,8 +74,8 @@ npx create-react-app redux-saga-tutorial
 우리는 const SOME_ACTION_NAME = `domain/eventName`과 같이 액션 문자열을 만들고, 데이터를 전달할 수 있는 함수인 액션 크리에이터를 생성합니다. 보통, 액션 크리에이터에는 두 가지가 있습니다. 첫 번째는 우리가 만든 변수를 전달할 수 있는 액션의 이름인 type이고, 두 번째는 데이터를 보내는 payload입니다. payload라는 이름은 아무것이나 될 수 있습니다.
 
 ```js
-function someActionCreator(text) { 
-   return { type: SOME_ACTION_NAME, payload: text }
+function someActionCreator(text) {
+  return { type: SOME_ACTION_NAME, payload: text };
 }
 ```
 
@@ -84,7 +83,7 @@ function someActionCreator(text) {
 
 ```js
 function updateProfile(text) {
-    return { type: NAME_UPDATED, payload: text }
+  return { type: NAME_UPDATED, payload: text };
 }
 ```
 
@@ -99,12 +98,14 @@ Reducer는 두 가지를 받는 함수에요:
 - 액션 객체 (기본적으로 액션 생성자)
 
 ```js
-const initialState = { name: '' }
+const initialState = { name: "" };
 function myReducer(state = initialState, action) {
-    switch(action.type) {
-     case NAME_UPDATED: return {...state, name: action.payload};
-     default: return state;
-    }
+  switch (action.type) {
+    case NAME_UPDATED:
+      return { ...state, name: action.payload };
+    default:
+      return state;
+  }
 }
 ```
 
@@ -124,15 +125,15 @@ Redux 레이어 안에 우리 앱을 래핑하는 방법을 빠르게 살펴볼�
 ```js
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-import { myReducer } from '../reducers';
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { myReducer } from "../reducers";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 // const rootReducer = combineReducers({myFirstReducer}); //in case you have more than one reducer. Don't forget to import it from @reduxjs/toolkit
 const store = configureStore({ reducer: myReducer });
 root.render(
   <React.StrictMode>
-     <Provider store={store}>
-        <App />
-     </Provider>
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 ```
@@ -140,7 +141,7 @@ root.render(
 위의 코드에서는 하나의 reducer와 하나의 액션을 갖는 스토어 내에 전체 `App /`을 감쌌습니다. 이제 앱에서 디스패치가 발생하면 Provider가 해당 디스패치를 캐치하고 스토어에 전달합니다. 그런 다음 스토어는 리듀서로 이동하여 함수를 실행합니다.
 
 디스패치:
-어떻게 액션을 트리거할까요? 현재 액션은 한 파일에 있고 리듀서는 다른 파일에 있습니다. Redux가 리듀서로 이동하고 올바른 작업을 수행하도록 액션이 트리거되어야 합니다. 이때 디스패치(dispatch)가 필요합니다. `react-redux`에서 import { useDispatch }를 사용하여 가져올 수 있고, 다음과 같이 변수를 만들어서 액션의 디스패처로 사용할 수 있습니다: const dispatch = useDispatch();. 버튼이 있고 그 버튼의 onPress에서 dispatch({ type: NAME_UPDATED, payload: input.text }); 같은 작업을 할 수 있지만, 앞서 updateProfile와 같은 액션 생성자를 만든 경우 다음과 같이 호출할 수 있습니다:
+어떻게 액션을 트리거할까요? 현재 액션은 한 파일에 있고 리듀서는 다른 파일에 있습니다. Redux가 리듀서로 이동하고 올바른 작업을 수행하도록 액션이 트리거되어야 합니다. 이때 디스패치(dispatch)가 필요합니다. `react-redux`에서 import useDispatch를 사용하여 가져올 수 있고, 다음과 같이 변수를 만들어서 액션의 디스패처로 사용할 수 있습니다: const dispatch = useDispatch();. 버튼이 있고 그 버튼의 onPress에서 dispatch(type: NAME_UPDATED, payload: input.text); 같은 작업을 할 수 있지만, 앞서 updateProfile와 같은 액션 생성자를 만든 경우 다음과 같이 호출할 수 있습니다:
 
 ```js
 import { useDispatch } from 'react-redux';
@@ -162,13 +163,11 @@ function example() {
 선택기를 사용하면 리덕스 스토어에서 데이터를 추출할 수 있습니다. useDispatch와 마찬가지로 선택기에도 useSelector라는 훅이 있습니다.
 
 ```js
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 function example() {
-    const mySelector = useSelector((store) => store);
-    return (
-        <Text>{mySelector.name}</Text>
-    )
-};
+  const mySelector = useSelector((store) => store);
+  return <Text>{mySelector.name}</Text>;
+}
 ```
 
 useSelector()는 뷰를 다시 렌더링하도록 강제하지만, 선택기 결과가 마지막 결과와 다른 것처럼 보일 때에만 다시 렌더링을 수행합니다. 전체 스토어를 반환하며, 초기 상태에 있는 것들에 접근할 수 있지만 업데이트된 값을 얻을 수 있습니다.
@@ -180,12 +179,11 @@ useSelector()는 뷰를 다시 렌더링하도록 강제하지만, 선택기 결
 
 위의 코드 예제에서는 App.js에서 액션을 디스패치했으며(useDispatch), App.js에서 이를 소비하고 있습니다(useSelector). 앱은 단순히 값을 업데이트하여 보이는 것을 빠르게 확인할 수 있습니다.
 
-이것은 리덕스가 어떻게 작동하는지에 대한 매우 간단한 예시입니다. 동일한 개념을 사용하여 다른 작업들을 구축할 수 있습니다. 예를 들어, API 데이터를 상태로 로드하는 경우에는 name 대신에 다른 이름을 사용할 수 있습니다. 예를 들어 allProductsData 또는 allUser 등이 될 것입니다. 그리고 이것은 문자열(string) 유형이 아니라 객체 {} 또는 배열 [] 또는 객체들의 배열 [{},{}] 또는 그 외의 것들이 될 것입니다. 따라서 다음과 같은 경우에는 액션을 생성하고 리듀서에서 처리할 수 있습니다. API 호출의 경우, 이 튜토리얼에서 이전에 작성한 파이어베이스 예시를 참조할 수 있습니다.
+이것은 리덕스가 어떻게 작동하는지에 대한 매우 간단한 예시입니다. 동일한 개념을 사용하여 다른 작업들을 구축할 수 있습니다. 예를 들어, API 데이터를 상태로 로드하는 경우에는 name 대신에 다른 이름을 사용할 수 있습니다. 예를 들어 allProductsData 또는 allUser 등이 될 것입니다. 그리고 이것은 문자열(string) 유형이 아니라 객체 또는 배열 [] 또는 객체들의 배열 또는 그 외의 것들이 될 것입니다. 따라서 다음과 같은 경우에는 액션을 생성하고 리듀서에서 처리할 수 있습니다. API 호출의 경우, 이 튜토리얼에서 이전에 작성한 파이어베이스 예시를 참조할 수 있습니다.
 
 이 내용이 유익하게 느끼는 분들을 위해, 새 페이지를 추가해보고 해당 페이지로 이동하여 선택기(selector)만 호출해보세요. 그러면 값이 업데이트된 것을 확인할 수 있습니다.
 
 <div class="content-ad"></div>
-
 
 ![Redux Saga](/assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_2.png)
 
@@ -224,7 +222,7 @@ Redux-saga가 어떻게 작동하는지 이해하려면 redux-saga의 개념을 
 // ... 다른 imports
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-import createSagaMiddleware from '@redux-saga/core';
+import createSagaMiddleware from "@redux-saga/core";
 import { myReducer } from "./reducers";
 import App from "./App";
 const rootElement = document.getElementById("root");
@@ -233,11 +231,11 @@ const sagaMiddleware = createSagaMiddleware();
 const store = configureStore({ reducer: myReducer, middleware: [sagaMiddleware] });
 // TODO: 곧 여기서 saga를 실행해야 합니다
 root.render(
-<StrictMode>
-  <Provider store={store}>
-    <App />
-  </Provider>
-</StrictMode>
+  <StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </StrictMode>
 );
 ```
 
@@ -254,9 +252,9 @@ root.render(
 이 세 가지 작업을 actions.js에 추가해볼까요?
 
 ```js
-export const GET_USERS_FETCH = 'GET_USERS_FETCH';
-export const GET_USERS_SUCCESS = 'GET_USERS_SUCCESS'; // API 호출을 성공적으로 완료할 때 호출될 거에요
-export const GET_USERS_FAILURE = 'GET_USERS_FAILURE'; // API 호출을 실패로 완료할 때 호출될 거에요
+export const GET_USERS_FETCH = "GET_USERS_FETCH";
+export const GET_USERS_SUCCESS = "GET_USERS_SUCCESS"; // API 호출을 성공적으로 완료할 때 호출될 거에요
+export const GET_USERS_FAILURE = "GET_USERS_FAILURE"; // API 호출을 실패로 완료할 때 호출될 거에요
 ```
 
 액션을 생성할 때 대부분의 경우 액션 크리에이터도 함께 만듭니다. 여기서는 GET_USERS_FETCH에 대한 액션 크리에이터만 필요할 거에요. dispatch와 함께 호출될 것이기 때문에 useDispatch가 인자로 객체를 가져야 하며, saga 이펙트를 사용할 때 문자열을 전달할 수 있어서 그에 대한 액션 크리에이터가 필요하지 않을 거에요. 그러니까 actionCreators.js에 해당 액션 크리에이터를 만들어봅시다.
@@ -266,7 +264,7 @@ export const GET_USERS_FAILURE = 'GET_USERS_FAILURE'; // API 호출을 실패로
 ```js
 import { GET_USERS_FETCH } from "./actions";
 export function takeGetUserFetchAction() {
-    return { type: GET_USERS_FETCH };
+  return { type: GET_USERS_FETCH };
 }
 ```
 
@@ -275,20 +273,22 @@ export function takeGetUserFetchAction() {
 이제 sagas.js라는 새 파일을 만들고 세 부분으로 이 파일을 만들어 보겠습니다:
 
 PART 1 — sagas를 사용하여 API를 호출하는 것이 목표이므로 먼저 API를 호출하고 응답을 반환하는 일반 함수를 추가합니다.
-```
 
 <div class="content-ad"></div>
 
 ```js
-import axios from 'axios';
+import axios from "axios";
 function userFetch() {
-// 만약에 axios를 사용하고 싶지 않은 경우
-//return.fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json());
-return axios.get('https://jsonplaceholder.typicode.com/users').then((res) => {
-return res.data;
-}).catch((err) => {
-throw err
-})
+  // 만약에 axios를 사용하고 싶지 않은 경우
+  //return.fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json());
+  return axios
+    .get("https://jsonplaceholder.typicode.com/users")
+    .then((res) => {
+      return res.data;
+    })
+    .catch((err) => {
+      throw err;
+    });
 }
 ```
 
@@ -302,13 +302,13 @@ import { GET_USERS_SUCCESS, GET_USERS_FAILURE } from "./actions";
 // ... axios와 같은 다른 import
 // ... userFetch 함수와 같은 다른 코드
 function* getUsersFetch() {
-try {
-    const users = yield call(userFetch); 
+  try {
+    const users = yield call(userFetch);
     //yield는 다음 줄로 넘어가기 전에 이 호출이 완료되기를 기다릴 것입니다.
     yield put({ type: GET_USERS_SUCCESS, users });
-} catch (error) {
+  } catch (error) {
     yield put({ type: GET_USERS_FAILURE, error });
-}
+  }
 }
 ```
 
@@ -319,15 +319,15 @@ try {
 제 3부 — Redux 프레임워크에서는 액션이 중요한 역할을 합니다. 각각이 다른 목적을 가진 앱에서 실행되는 고유한 프로세스입니다. 따라서 채워야 할 액션이 하나 남았는데, 바로 GET_USERS_FETCH입니다. 이 액션을 디스패치할 때마다 getUsersFetch를 호출할 것입니다.
 
 ```js
-import { call, put, take } from 'redux-saga/effects';
-import { GET_USERS_FETCH } from './actions'
+import { call, put, take } from "redux-saga/effects";
+import { GET_USERS_FETCH } from "./actions";
 // ... axios, actions 등의 다른 import들
 // ... userFetch, getUsersFetch 함수 등의 다른 코드
 function* mySaga() {
- while (true) {
-   yield take(GET_USERS_FETCH);
-   yield call(getUsersFetch);
- }
+  while (true) {
+    yield take(GET_USERS_FETCH);
+    yield call(getUsersFetch);
+  }
 }
 export default mySaga;
 ```
@@ -363,7 +363,7 @@ export default myReducer;
 sage를 백그라운드에서 계속 실행되는 서비스로 생각해보세요. 사용자가 취한 동작의 수를 넣으면 적절히 처리하여 성공 또는 실패를 반환합니다. 기다렸다가 현재 것을 해결한 다음 다음 동작을 수행합니다. 그러므로 루트 파일에서 실행할 필요가 있습니다. index.js를 열고 다음 한 줄의 코드(사실상 2줄)를 추가하세요:
 
 ```js
-import mySaga from './sagas';
+import mySaga from "./sagas";
 // ... 모든 다른 import 및 코드 위에
 sagaMiddleware.run(mySaga);
 // ... 루트에 render(...와 같은 다른 코드
@@ -386,14 +386,10 @@ function App() {
   return (
     <div className="App">
       <h1>Users</h1>
-      <button onClick={() => myDispatch(takeGetUserFetchAction())}>
-        Call API
-      </button>
+      <button onClick={() => myDispatch(takeGetUserFetchAction())}>Call API</button>
       <hr />
       <div>
-        {retrivedData?.users && retrivedData.users.map((user) => (
-          <div key={user.id}>{user.name}</div>
-        ))}
+        {retrivedData?.users && retrivedData.users.map((user) => <div key={user.id}>{user.name}</div>)}
         {retrivedData?.error && <p>{retrivedData.error.message}</p>}
       </div>
     </div>
@@ -423,9 +419,9 @@ useSelector에서 전체 상태를 반환할 수도 있었지만, 관심 있는 
 
 ```js
 import { createAction } from "@reduxjs/toolkit";
-export const GET_USERS_FETCH = createAction('GET_USERS_FETCH');
-export const GET_USERS_SUCCESS = createAction('GET_USERS_SUCCESS');
-export const GET_USERS_FAILURE = createAction('GET_USERS_FAILURE');
+export const GET_USERS_FETCH = createAction("GET_USERS_FETCH");
+export const GET_USERS_SUCCESS = createAction("GET_USERS_SUCCESS");
+export const GET_USERS_FAILURE = createAction("GET_USERS_FAILURE");
 ```
 
 이것은 각각에 대한 action과 action 생성자를 만들었기 때문에, 많은 시간을 절약할 수 있고 actions를 생성하고 사용하는 복잡성을 줄일 수 있어요. 또한, 디스패치(dispatch), 선택자(selector), 또는 리듀서(reducer)에 전달할 때 문자열(action) 또는 객체(action 생성자)가 어디로 갈지 걱정할 필요가 없어요. 이를 전달하면 createAction이 대신 책임지고 필요한 대로 사용되고 자동으로 반환할 거라는 거죠.
@@ -443,11 +439,14 @@ import { createReducer } from "@reduxjs/toolkit";
 import { GET_USERS_FAILURE, GET_USERS_SUCCESS } from "./actions";
 const initialState = {};
 const myReducer = createReducer(initialState, (builder) => {
-builder.addCase(GET_USERS_SUCCESS, (state, action) => {
-    state.users = action.users;
-}).addCase(GET_USERS_FAILURE, (state, action) => {
-    state.error = action.error;
-}).addDefaultCase(() => {});
+  builder
+    .addCase(GET_USERS_SUCCESS, (state, action) => {
+      state.users = action.users;
+    })
+    .addCase(GET_USERS_FAILURE, (state, action) => {
+      state.error = action.error;
+    })
+    .addDefaultCase(() => {});
 });
 export default myReducer;
 ```
@@ -460,10 +459,10 @@ export default myReducer;
 
 ```js
 // ... 다른 import들
-import { GET_USERS_FETCH } from './actions';
+import { GET_USERS_FETCH } from "./actions";
 // ... 다른 코드
-<button onClick={() => dispatch(GET_USERS_FETCH())}>API 호출</button>
-``` 
+<button onClick={() => dispatch(GET_USERS_FETCH())}>API 호출</button>;
+```
 
 GET_USERS_FETCH는 createAction을 사용하여 생성되었기 때문에 액션 생성자가 자동으로 생성되어 있으므로 GET_USERS_FETCH()와 같이 호출할 수 있고, 이렇게 하면 액션이 트리거되어요. 사가에 변경 사항이 없었기 때문에 액션이 캐치될 것이며, 나머지 플로우도 그에 따라 작동할 거에요. 우리의 리듀서도 예상대로 작동할 거에요.
 
@@ -474,11 +473,11 @@ GET_USERS_FETCH는 createAction을 사용하여 생성되었기 때문에 액션
 우리가 예전 예제를 확장해서 일을 더 쉽게 만들기로 했으니, 사가를 사용하는 앱에서 널리 사용되는 또 다른 것을 다루는 것이 좋겠죠. 아래에는 이 세 가지에 대한 간단한 설명이 있고, 그 후에 우리가 만드는 앱에서 이들을 사용하는 방법을 살펴볼 거에요.
 
 - take
-yield take(pattern)의 결과는 디스패치된 액션 객체입니다. 이는 미들웨어 (saga)에게 특정 액션이 저장소에서 취해질 때까지 기다리라고 알려줍니다. take는 한 번만 액션을 취하기 때문에 버튼을 클릭할 때마다 작업을 하려면 while(true) {...} 안에 넣어야 합니다. 또는 use case에 따라 takeEvery나 takeLatest를 사용할 수도 있어요.
+  yield take(pattern)의 결과는 디스패치된 액션 객체입니다. 이는 미들웨어 (saga)에게 특정 액션이 저장소에서 취해질 때까지 기다리라고 알려줍니다. take는 한 번만 액션을 취하기 때문에 버튼을 클릭할 때마다 작업을 하려면 while(true) ... 안에 넣어야 합니다. 또는 use case에 따라 takeEvery나 takeLatest를 사용할 수도 있어요.
 - takeEvery
-GET_USERS_FETCH 액션을 동시에 호출하도록 가능하게 합니다. 주어진 순간에 우리는 아직 종료되지 않은 하나 이상의 이전 GET_USERS_FETCH 작업이 있을 때, 새로운 GET_USERS_FETCH 작업을 시작할 수 있습니다. GET_USERS_FETCH 액션을 실행하면 이를 버튼에서 디스패치합니다. takeEvery는 동시 작업을 처리할 수 있게 해줍니다. 위의 예에서 GET_USERS_FETCH 액션이 디스패치되면, 이전 GET_USERS_FETCH가 아직 종료되지 않은 상태여도(예를 들어, 사용자가 빠르게 두 번 연속 'API 호출' 버튼을 클릭한다면, 두 번째 클릭에서는 fetchUser가 아직 종료되지 않았더라도 GET_USERS_FETCH 액션이 디스패치됩니다)
+  GET_USERS_FETCH 액션을 동시에 호출하도록 가능하게 합니다. 주어진 순간에 우리는 아직 종료되지 않은 하나 이상의 이전 GET_USERS_FETCH 작업이 있을 때, 새로운 GET_USERS_FETCH 작업을 시작할 수 있습니다. GET_USERS_FETCH 액션을 실행하면 이를 버튼에서 디스패치합니다. takeEvery는 동시 작업을 처리할 수 있게 해줍니다. 위의 예에서 GET_USERS_FETCH 액션이 디스패치되면, 이전 GET_USERS_FETCH가 아직 종료되지 않은 상태여도(예를 들어, 사용자가 빠르게 두 번 연속 'API 호출' 버튼을 클릭한다면, 두 번째 클릭에서는 fetchUser가 아직 종료되지 않았더라도 GET_USERS_FETCH 액션이 디스패치됩니다)
 - takeLatest
-한 번에 하나의 GET_USERS_FETCH 작업만 활성화될 수 있습니다. 또한, 가장 최근에 시작된 작업이 될 것입니다. 이전 작업이 계속 진행 중일 때 새로운 GET_USERS_FETCH 작업이 시작된다면, 이전 작업은 즉시 중단됩니다. takeEvery와는 반대로, takeLatest는 동일하게 실행 중인 작업을 중지하고 새 작업을 시작합니다. 각 액션이 저장소에 디스패치될 때마다. 액션이 패턴과 일치하면 takeLatest가 백그라운드에서 새로운 saga 작업을 시작합니다. 이전에 시작된 saga 작업이 있었다면(실제 액션이 디스패치되기 전의 마지막 액션에서 시작된 경우), 그 작업이 계속 실행 중이었다면, 해당 작업은 취소될 것입니다.
+  한 번에 하나의 GET_USERS_FETCH 작업만 활성화될 수 있습니다. 또한, 가장 최근에 시작된 작업이 될 것입니다. 이전 작업이 계속 진행 중일 때 새로운 GET_USERS_FETCH 작업이 시작된다면, 이전 작업은 즉시 중단됩니다. takeEvery와는 반대로, takeLatest는 동일하게 실행 중인 작업을 중지하고 새 작업을 시작합니다. 각 액션이 저장소에 디스패치될 때마다. 액션이 패턴과 일치하면 takeLatest가 백그라운드에서 새로운 saga 작업을 시작합니다. 이전에 시작된 saga 작업이 있었다면(실제 액션이 디스패치되기 전의 마지막 액션에서 시작된 경우), 그 작업이 계속 실행 중이었다면, 해당 작업은 취소될 것입니다.
 
 take, takeEvery, takeLatest의 실제 예제를 보려면 이를 시도해 보세요:
 
@@ -498,7 +497,8 @@ function* mySaga() {
 따라서 기본적으로 이전에 작성한 앱을 변환한 것입니다. 이번에는 간단하게 만드는 데 집중했습니다. createAction, createReducer, takeEvery 등의 사용법을 배웠습니다.
 
 지금까지 한 모든 변경 내용이 반영된 코드는 다음과 같습니다:
-```  
+
+````
 
 <div class="content-ad"></div>
 
@@ -561,7 +561,7 @@ export const GET_POSTS_FETCH = createAction("GET_POSTS_FETCH");
 export const GET_POSTS_SUCCESS = createAction("GET_POSTS_SUCCESS");
 export const GENERAL_FAILURE = createAction("GENERAL_FAILURE");
 export const EXIT_APP = createAction("EXIT_APP");
-```
+````
 
 대부분의 생성된 액션은 어떤 작용을 하는지 명확하지만, EXIT_APP은 사용할 효과를 보여주기 위해 추가한 액션입니다. 사용자가 화면을 떠날 때 또는 뒤로 돌아갈 때를 생각해보면, 사가를 깨끗하게 정리하기 위해 exit 함수를 호출합니다. API를 호출하고 결과를 가져오고자 할 때는 Post fetch를 사용합니다. API 호출 시 오류가 발생한 경우 General failure을 사용하고, 데이터를 성공적으로 가져온 경우에는 success가 트리거됩니다.
 
@@ -570,12 +570,15 @@ export const EXIT_APP = createAction("EXIT_APP");
 ```js
 // PART 1
 function getPosts() {
-console.log("Now calling getPosts API")
-return axios.get('https://jsonplaceholder.typicode.com/posts').then((res) => {
-   return res.data;
-}).catch((err) => {
-   throw err
-})
+  console.log("Now calling getPosts API");
+  return axios
+    .get("https://jsonplaceholder.typicode.com/posts")
+    .then((res) => {
+      return res.data;
+    })
+    .catch((err) => {
+      throw err;
+    });
 }
 ```
 
@@ -613,7 +616,7 @@ console.log("getPosts action error finished...");
 자, 이제 우리는 방금 생성한 getPostsSaga를 호출할 메인 Saga가 필요합니다. 그러니 이렇게 만들어 봅시다:
 
 ```js
-import { call, put, take, fork, cancel } from 'redux-saga/effects';
+import { call, put, take, fork, cancel } from "redux-saga/effects";
 // PART 3
 export default function* mySaga() {
   const posts = yield fork(getPostsSaga);
@@ -645,15 +648,18 @@ getPostsSaga의 첫 줄이 take 이펙트인데, 이는 GET_POSTS_FETCH 액션�
 
 ```js
 import { createReducer } from "@reduxjs/toolkit";
-import { GET_POSTS_SUCCESS, GENERAL_FAILURE } from './actions';
+import { GET_POSTS_SUCCESS, GENERAL_FAILURE } from "./actions";
 const initialState = {};
 const myFirstReducer = createReducer(initialState, (builder) => {
-  builder.addCase(GET_POSTS_SUCCESS, (state, action) => {
-    state.posts = action.posts
-  }).addCase(GENERAL_FAILURE, (state, action) => {
-    state.error = action.error
-  }).addDefaultCase(() => {})
-})
+  builder
+    .addCase(GET_POSTS_SUCCESS, (state, action) => {
+      state.posts = action.posts;
+    })
+    .addCase(GENERAL_FAILURE, (state, action) => {
+      state.error = action.error;
+    })
+    .addDefaultCase(() => {});
+});
 export default myFirstReducer;
 ```
 
@@ -662,9 +668,13 @@ export default myFirstReducer;
 마지막으로, 이 작업을 시험할 화면인 App.js에서 열어서 다음을 추가하세요:
 
 ```js
-{/* ...다른 코드... */}
-<button onClick={() => myDispatch(GET_POSTS_FETCH())}> 포스트 API </button>
-{/* ...다른 코드... */}
+{
+  /* ...다른 코드... */
+}
+<button onClick={() => myDispatch(GET_POSTS_FETCH())}> 포스트 API </button>;
+{
+  /* ...다른 코드... */
+}
 ```
 
 <div class="content-ad"></div>
@@ -724,28 +734,23 @@ export const GENERAL_FAILURE = createAction("GENERAL_FAILURE");
 
 ```js
 import { createReducer } from "@reduxjs/toolkit";
-import {
-GET_USERS_SUCCESS,
-GET_POSTS_SUCCESS,
-GET_COMMENTS_SUCCESS,
-GENERAL_FAILURE
-} from "./actions";
+import { GET_USERS_SUCCESS, GET_POSTS_SUCCESS, GET_COMMENTS_SUCCESS, GENERAL_FAILURE } from "./actions";
 const initialState = {};
 const myReducer = createReducer(initialState, (builder) => {
-builder
-.addCase(GET_POSTS_SUCCESS, (state, action) => {
-state.posts = action.posts;
-})
-.addCase(GET_COMMENTS_SUCCESS, (state, action) => {
-state.comments = action.comments;
-})
-.addCase(GET_USERS_SUCCESS, (state, action) => {
-state.users = action.users;
-})
-.addCase(GENERAL_FAILURE, (state, action) => {
-state.error = action.error;
-})
-.addDefaultCase(() => {});
+  builder
+    .addCase(GET_POSTS_SUCCESS, (state, action) => {
+      state.posts = action.posts;
+    })
+    .addCase(GET_COMMENTS_SUCCESS, (state, action) => {
+      state.comments = action.comments;
+    })
+    .addCase(GET_USERS_SUCCESS, (state, action) => {
+      state.users = action.users;
+    })
+    .addCase(GENERAL_FAILURE, (state, action) => {
+      state.error = action.error;
+    })
+    .addDefaultCase(() => {});
 });
 export default myReducer;
 ```
@@ -754,20 +759,26 @@ export default myReducer;
 
 ```js
 function getComments() {
-console.log("Now calling getComments API");
-return axios.get("https://jsonplaceholder.typicode.com/comments").then((res) => {
-    return res.data;
-}).catch((err) => {
-    throw err;
-})
+  console.log("Now calling getComments API");
+  return axios
+    .get("https://jsonplaceholder.typicode.com/comments")
+    .then((res) => {
+      return res.data;
+    })
+    .catch((err) => {
+      throw err;
+    });
 }
 function getUsers() {
-console.log("Now calling getUsers API");
-return axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
-   return res.data;
-}).catch((err) => {
-   throw err;
-})
+  console.log("Now calling getUsers API");
+  return axios
+    .get("https://jsonplaceholder.typicode.com/users")
+    .then((res) => {
+      return res.data;
+    })
+    .catch((err) => {
+      throw err;
+    });
 }
 ```
 
@@ -784,21 +795,17 @@ console.log 함수를 제거하면 매우 간단합니다. take 때문에 이 �
 <div class="content-ad"></div>
 
 ```js
-import { call, cancel, fork, put, take, all } from 'redux-saga/effects';
+import { call, cancel, fork, put, take, all } from "redux-saga/effects";
 //... other code
 export default function* mySaga() {
-const posts = yield fork(getPostsSaga);
-const comments = yield fork(getCommentsSaga);
-const users = yield fork(getUsersSaga);
-console.log("이제 사용자의 조치를 기다리고 있습니다...");
-yield take(EXIT_APP); // 조치가 취해질 때까지 대기
-console.log("앱을 종료합니다...");
-yield all([
-cancel(posts),
-cancel(comments),
-cancel(users),
-]);
-console.log("종료가 완료되었습니다...");
+  const posts = yield fork(getPostsSaga);
+  const comments = yield fork(getCommentsSaga);
+  const users = yield fork(getUsersSaga);
+  console.log("이제 사용자의 조치를 기다리고 있습니다...");
+  yield take(EXIT_APP); // 조치가 취해질 때까지 대기
+  console.log("앱을 종료합니다...");
+  yield all([cancel(posts), cancel(comments), cancel(users)]);
+  console.log("종료가 완료되었습니다...");
 }
 ```
 
@@ -856,7 +863,6 @@ retrivedData.users.map((user) => (
 
 위의 코드는 검색한 데이터를 출력할 것입니다. 이를 확인하는 가장 좋은 방법은 앱을 실행하는 것입니다.
 
-
 ![이미지](/assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_10.png)
 
 한 번 실행하면, 우리 프로그램이 모든 세 가지 액션을 계속 지켜보고 있음을 볼 수 있고 사용자가 세 가지 액션 중 아무 것이라도 취할 수 있습니다. 먼저 Users API 액션을 취해 봅시다.
@@ -908,14 +914,14 @@ yarn add reselect *OR* npm i reselect
 import { useEffect } from "react";
 //... 기타 imports
 function App() {
-   const myDispatch = useDispatch();
-   useEffect(() => {
-      // 시작 시 모든 데이터 가져오기. 데이터를 슬라이스하고 표시하기 위해 selector를 사용할 것입니다.
-      myDispatch(GET_POSTS_FETCH());
-      myDispatch(GET_COMMENTS_FETCH());
-      myDispatch(GET_USERS_FETCH());
-   }, [myDispatch]);
-   //... 기타 코드
+  const myDispatch = useDispatch();
+  useEffect(() => {
+    // 시작 시 모든 데이터 가져오기. 데이터를 슬라이스하고 표시하기 위해 selector를 사용할 것입니다.
+    myDispatch(GET_POSTS_FETCH());
+    myDispatch(GET_COMMENTS_FETCH());
+    myDispatch(GET_USERS_FETCH());
+  }, [myDispatch]);
+  //... 기타 코드
 }
 ```
 
@@ -931,29 +937,38 @@ import axios from "axios";
 
 export async function getPosts() {
   console.log("getPosts API를 호출 중입니다.");
-  return await axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
-    return res.data;
-  }).catch((err) => {
-    return err;
-  });
+  return await axios
+    .get("https://jsonplaceholder.typicode.com/posts")
+    .then((res) => {
+      return res.data;
+    })
+    .catch((err) => {
+      return err;
+    });
 }
 
 export async function getComments() {
   console.log("getComments API를 호출 중입니다.");
-  return await axios.get("https://jsonplaceholder.typicode.com/comments").then((res) => {
-    return res.data;
-  }).catch((err) => {
-    return err;
-  });
+  return await axios
+    .get("https://jsonplaceholder.typicode.com/comments")
+    .then((res) => {
+      return res.data;
+    })
+    .catch((err) => {
+      return err;
+    });
 }
 
 export async function getUsers() {
   console.log("getUsers API를 호출 중입니다.");
-  return await axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
-    return res.data;
-  }).catch((err) => {
-    throw err;
-  });
+  return await axios
+    .get("https://jsonplaceholder.typicode.com/users")
+    .then((res) => {
+      return res.data;
+    })
+    .catch((err) => {
+      throw err;
+    });
 }
 ```
 
@@ -990,7 +1005,8 @@ return (
 <img src="/assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_13.png" />
 
 그래서, 우리의 로직이 작동합니다. 이러한 변경만으로 우리가 위에서 논의한 총 4가지 중 처음 두 가지를 완료했습니다.
-```
+
+````
 
 <div class="content-ad"></div>
 
@@ -1000,14 +1016,13 @@ return (
 export const allPosts = (state) => state.myReducer.posts;
 const allComments = (state) => state.myReducer.comments;
 const allUsers = (state) => state.myReducer.users;
-```
+````
 
 위 코드에서는 가져온 전역 상태에서 allPosts를 간단히 내보냈습니다. 그것이 목록에 모든 게시물을 표시하는 데 필요한 유일한 것이기 때문에 내보내야 하는 것입니다. 다른 두 allComments 및 allUsers는 단순히 모든 데이터를 가져오기 위해 존재하며 다음으로 필요한 선택자를 만들 것입니다.
 
 createSelector의 문서를 보면 3개의 매개변수를 받는다는 것을 알 수 있지만 아래에서보면 필요한 것은 첫 두 가지입니다.
 
 <div class="content-ad"></div>
-
 
 <img src="/assets/img/2024-05-01-GettingStartedwithReduxSagaTutorial_14.png" />
 
@@ -1023,20 +1038,20 @@ createSelector의 문서를 보면 3개의 매개변수를 받는다는 것을 �
 //... 다른 작업들
 // post를 매개변수로 받는 액션
 export const SELECTED_POST = createAction("SELECTED_POST", (post) => {
-return {
-   payload: {
-       selectedPost: post
-   }
-};
+  return {
+    payload: {
+      selectedPost: post,
+    },
+  };
 });
 ```
 
-우리는 이번에 createAction을 사용하여 매개변수를 받는 액션을 처음 만들었습니다. 이것은 이 액션을 전달할 때 우리가 post 객체를 전달할 것을 의미합니다. 그리고 저는 { payload: { selectedPost: post } }; (원하는 대로 구조화할 수 있습니다).
+우리는 이번에 createAction을 사용하여 매개변수를 받는 액션을 처음 만들었습니다. 이것은 이 액션을 전달할 때 우리가 post 객체를 전달할 것을 의미합니다. 그리고 저는 payload: selectedPost: post; (원하는 대로 구조화할 수 있습니다).
 
 이 post 객체를 전역 상태에 저장해서 selector 및 다른 곳에서 액세스할 수 있도록 하려고 합니다. 따라서 reducers.js 파일로 이동하여 createReducer에 이 케이스를 추가해 보겠습니다.
 
 ```js
-//... 다른 임포트들 
+//... 다른 임포트들
 import {
 GET_USERS_SUCCESS,
 GET_POSTS_SUCCESS,
@@ -1059,15 +1074,13 @@ state.selectedPost = action.payload.selectedPost;
 import { createSelector } from "reselect";
 //...other code
 export const selectedPost = (state) => state.myReducer.selectedPost;
-export const getCommentsForPost = createSelector(
-allComments, selectedPost,
-(c, p) => {
-if (c && p) {
-   const filteredComments = c.filter((comment) => {
+export const getCommentsForPost = createSelector(allComments, selectedPost, (c, p) => {
+  if (c && p) {
+    const filteredComments = c.filter((comment) => {
       return comment.postId === p.id;
-   });
-   return filteredComments;
-};
+    });
+    return filteredComments;
+  }
 });
 ```
 
@@ -1096,19 +1109,8 @@ const author = u.find((user) => {
 ```js
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  GET_POSTS_FETCH,
-  GET_COMMENTS_FETCH,
-  GET_USERS_FETCH,
-  SELECTED_POST,
-  EXIT_APP
-} from "./actions";
-import {
-  allPosts,
-  selectedPost,
-  getCommentsForPost,
-  getAuthorForPost
-} from "./selectors";
+import { GET_POSTS_FETCH, GET_COMMENTS_FETCH, GET_USERS_FETCH, SELECTED_POST, EXIT_APP } from "./actions";
+import { allPosts, selectedPost, getCommentsForPost, getAuthorForPost } from "./selectors";
 //... other code function App() {...
 const retrivedPosts = useSelector(allPosts);
 const selPost = useSelector(selectedPost);
@@ -1117,7 +1119,7 @@ const selPostAuthor = useSelector(getAuthorForPost);
 // 이 useState는 게시물 선택에 따라 UI를 숨기거나 보여주기 위한 것입니다.
 const [selectedPostModeOn, setSelectedPostModeOn] = useState(false);
 function postSelected(selectedPost) {
-    myDispatch(SELECTED_POST(selectedPost));
+  myDispatch(SELECTED_POST(selectedPost));
 }
 //... More code
 ```
@@ -1221,7 +1223,7 @@ onClick={() => {
 
 <div class="content-ad"></div>
 
-- 블로그 앱을 확장해 보세요 (해당 코드 샌드박스에 가서 포크하세요) 그리고 작성자: ...를 클릭하면 사용자 프로필 (모든 사용자 데이터)과 해당 사용자가 작성한 게시물이 표시되도록 확장하세요. UI를 사용자의 소셜 미디어 프로필처럼 보이도록 만들어보세요.  
+- 블로그 앱을 확장해 보세요 (해당 코드 샌드박스에 가서 포크하세요) 그리고 작성자: ...를 클릭하면 사용자 프로필 (모든 사용자 데이터)과 해당 사용자가 작성한 게시물이 표시되도록 확장하세요. UI를 사용자의 소셜 미디어 프로필처럼 보이도록 만들어보세요.
 - 이 글은 읽어보세요. https://redux-saga.js.org/docs/advanced/RacingEffects/ 그리고 기사에 제시된 일부 효과를 사용하여 블로그를 확장할 수 있는지 확인해보세요.
 
 이게 도움이 되었다면 공유하고 👏🏻 버튼을 눌러서 다른 사람들도 찾을 수 있게 도와주세요. 오타를 발견하거나 잘못된 점이 있다면 강조하여 알려주시고, 크레딧과 함께 업데이트하겠습니다. 난감하거나 도움이 필요하다면 댓글 남겨주세요. 최선을 다해 도와드리겠습니다.

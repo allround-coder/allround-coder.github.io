@@ -88,7 +88,11 @@ export default function Post({
 
                 {Array.from({ length: lastPageGroupS }, (_, i) => {
                   return (
-                    <Link className={cx("link")} href={`/posts/${PER_PAGE_SIZE * currentPageGroupS + (i + 1)}`}>
+                    <Link
+                      key={i}
+                      className={cx("link", { "-active": i + 1 === +page })}
+                      href={`/posts/${PER_PAGE_SIZE * currentPageGroupS + (i + 1)}`}
+                    >
                       {PER_PAGE_SIZE * currentPageGroupS + (i + 1)}
                     </Link>
                   );
@@ -135,7 +139,7 @@ export async function getStaticProps({ params }: Params) {
     page: params.page,
   });
   return {
-    props: res,
+    props: { ...res, page: params.page },
   };
 }
 

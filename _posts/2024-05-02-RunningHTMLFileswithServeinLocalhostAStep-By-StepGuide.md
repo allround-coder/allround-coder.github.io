@@ -1,15 +1,14 @@
 ---
 title: "로컬호스트에서 Serve로 HTML 파일 실행하기"
 description: ""
-coverImage: "/assets/img/2024-05-02-RunningHTMLFileswithServeinLocalhostAStep-By-StepGuide_0.png"
+coverImage:
 date: 2024-05-02 00:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-02-RunningHTMLFileswithServeinLocalhostAStep-By-StepGuide_0.png
 tag: Tech
 originalTitle: "Running HTML Files with Serve in Localhost: A Step-By-Step Guide"
 link: "https://medium.com/@vasist.96/running-html-files-with-serve-in-localhost-a-step-by-step-guide-e554c2da9eb0"
 ---
-
 
 웹 개발은 화려한 웹 사이트를 만들 수 있도록 다양한 도구와 프레임워크를 제공하는 역동적인 분야입니다. HTML은 온라인에서 볼 수 있는 콘텐츠에 구조를 제공하여 모든 웹 페이지의 기본입니다. 많은 개발자들에게는 시작점이 되곤 합니다. 초보 웹 개발자들이 가장 많이 마주치는 장애물 중 하나는 HTML 파일을 로컬에서 실행하는 방법을 배우는 것입니다. 이 글은 간단하지만 효과적인 serve 패키지를 사용하여 로컬호스트에서 HTML 파일을 제공하는 프로세스를 안내합니다.
 
@@ -48,7 +47,7 @@ npm install -g serve
 HTML 파일이 있는 디렉토리로 이동해주세요. 이 작업은 cd (디렉터리 변경) 명령어를 사용하여 디렉토리 경로를 입력하면 됩니다. 예를 들면:
 
 ```js
-cd /당신의/디렉토리/경로
+cd / 당신의 / 디렉토리 / 경로;
 ```
 
 # 단계 3: Serve 명령어 실행하기
@@ -58,7 +57,7 @@ cd /당신의/디렉토리/경로
 이제 프로젝트를 실행해보는 시간입니다. 터미널에 다음 명령어를 입력해주세요:
 
 ```js
-serve
+serve;
 ```
 
 이 명령어는 현재 디렉토리에서 정적 서버를 시작하며, 이제 해당 서버에 로컬로 접근할 수 있습니다.

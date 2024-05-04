@@ -1,15 +1,14 @@
 ---
 title: "Uncaught TypeError: Cannot set properties of null (setting ‘inner HTML’) 해결방법"
 description: ""
-coverImage: "/assets/img/2024-05-02-UncaughtTypeErrorCannotsetpropertiesofnullsettinginnerHTMLSolutions_0.png"
+coverImage: ""
 date: 2024-05-02 00:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-02-UncaughtTypeErrorCannotsetpropertiesofnullsettinginnerHTMLSolutions_0.png
 tag: Tech
 originalTitle: "Uncaught TypeError: Cannot set properties of null (setting ‘inner HTML’) Solutions"
 link: "https://medium.com/@madhav201singh/uncaught-typeerror-cannot-set-properties-of-null-setting-inner-html-solutions-41726496d355"
 ---
-
 
 # "Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')" 오류 수정하기
 
@@ -39,9 +38,9 @@ JavaScript 코드를 실행하기 전에 요소가 로드되지 않은 상태에
 
 <!-- JavaScript 코드 -->
 <script>
-// 이 스크립트가 HTML 구조 내 요소 이후에 위치하도록 하십시오
-var element = document.getElementById("myElement");
-element.innerHTML = "새로운 내용";
+  // 이 스크립트가 HTML 구조 내 요소 이후에 위치하도록 하십시오
+  var element = document.getElementById("myElement");
+  element.innerHTML = "새로운 내용";
 </script>
 ```
 
@@ -57,14 +56,14 @@ element.innerHTML = "새로운 내용";
 
 <!-- JavaScript 코드 -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     var element = document.getElementById("myElement");
     if (element) {
-        element.innerHTML = "새로운 내용";
+      element.innerHTML = "새로운 내용";
     } else {
-        console.log("요소를 찾을 수 없습니다.");
+      console.log("요소를 찾을 수 없습니다.");
     }
-});
+  });
 </script>
 ```
 
