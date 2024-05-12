@@ -20,7 +20,7 @@ cd out
 git clone -b gh-pages https://github.com/allround-coder/allround-coder.github.io/
 cp -rf allround-coder.github.io/.git ./.git
 git config user.name "allround-coder"
-git config user.email "13akstjq.blog24@gmail.com"
+git config user.email "13akstjq.blog25@gmail.com"
 rm -rf allround-coder.github.io
 
 touch .nojekyll
