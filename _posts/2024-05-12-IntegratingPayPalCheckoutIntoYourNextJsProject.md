@@ -100,18 +100,6 @@ const PaymentForm: React.FC<PaymentFormProps> = ({ onSuccess }) => {
 ```
 
 
-
-안녕하세요! 아래는 Markdown 형식으로 표 태그를 변경한 코드입니다.
-
-```markdown
-| 머릿말 1 | 머릿말 2 | 머릿말 3 |
-|---------|---------|---------|
-| 내용 1  | 내용 2  | 내용 3  |
-| 내용 4  | 내용 5  | 내용 6  |
-```
-
-
-
 이제, handlePaymentSubmit이란 이름의 함수를 만들어서 결제 양식 제출을 처리하는 함수를 만들겠습니다. 이 함수는 POST 요청을 사용하여 api/paypal로 결제 양식을 제출하려 합니다. 성공하면 Payment-Page로 이동합니다. 실패하면 오류 메시지를 표시합니다:
 
 ```js

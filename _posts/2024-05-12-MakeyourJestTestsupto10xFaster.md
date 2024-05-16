@@ -11,7 +11,7 @@ link: "https://medium.com/dev-genius/make-your-jest-tests-upto-10x-faster-d751b3
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-MakeyourJestTestsupto10xFaster_0.png)
 
 중규모 리액트 프로젝트의 단위 테스트를 기다리는 데 30분이나 걸리는 것은 짜증납니다. 속도에 집중하기 위해 이를 개선하기 위한 몇 가지 조치를 취하기로 결정했습니다.
@@ -19,9 +19,6 @@ link: "https://medium.com/dev-genius/make-your-jest-tests-upto-10x-faster-d751b3
 우리가 모두 하는 대로, 우리는 구글에서 jest 성능을 향상시키기 위한 다양한 방법을 찾기 시작했습니다. 이 기사에는 우리가 가진 모든 관측치와 결과가 나열되어 있습니다. 이는 여러분의 구성에서 작동할 수도 있고, 그렇지 않을 수도 있습니다. 하지만, 이 기사를 살펴보고 각 방법을 시도하여 차이가 있는지 확인하는 것을 권장합니다.
 
 모든 최적화의 황금 규칙은 측정하는 것입니다. 네, 현재 상황을 측정해야 합니다. 우리가 추적해야 하는 모든 측정 항목이 여기에 나열되어 있습니다.
-```
-
-
 
 - 전체 test suite 실행 시간.
 - 시간과 함께 상위 10개 느린 suite.

@@ -413,6 +413,4 @@ learnbit-react.custom-mui-lib/actions/slider
 
 
 
-```markdown
 ![Customize Material UI Components and Theme: A Modern Approach](/assets/img/2024-05-12-CustomizeMaterialUIComponentsandThemeAModernApproach_5.png)
-```

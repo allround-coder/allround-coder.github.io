@@ -135,7 +135,7 @@ const stream = await getStreamingCompletion({ userPrompt: userPrompt });
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-Real-timestreamingAskbotwithReactExpressChatGPT_0.png)
 
 ## Express API로부터의 스트리밍 응답
@@ -143,7 +143,6 @@ const stream = await getStreamingCompletion({ userPrompt: userPrompt });
 Express에는 응답을 스트림으로 반환하는 API가 이미 준비되어 있습니다.
 
 아래는 Express 서버의 전체 코드입니다:
-```
 
 
 

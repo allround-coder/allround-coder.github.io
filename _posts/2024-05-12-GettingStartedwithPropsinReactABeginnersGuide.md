@@ -23,9 +23,8 @@ Props는 React에서 특별한 키워드로, 속성을 나타냅니다. 주로 �
 
 Props를 전달하려면 HTML 요소와 마찬가지로 컴포넌트에 속성을 추가해야 합니다. 아래에 예를 통해 한 가지 컴포넌트를 만들고 그에게 props를 전달하는 예제가 있습니다.
 
-```Markdown
+
 <Button label=”Click me!” />
-```
 
 이 예제에서 우리의 컴포넌트는 `Button`이며, 'label'이라는 prop을 전달하여 레이블을 지정했습니다.
 
@@ -49,7 +48,7 @@ function Button(props) {
 
 Props를 사용하면 컴포넌트를 동적으로 만들 수 있어요. 컴포넌트의 동작과 모습은 전달된 데이터를 기반으로 한 Props를 통해 사용자 정의할 수 있어요. 아래 예시를 통해 `Button` 컴포넌트로 서로 다른 레이블을 전달하여 다른 버튼을 만들 수 있어요:
 
-```markdown
+```html
 <Button label="Save" />
 <Button label="Edit" />
 <Button label="Delete" />

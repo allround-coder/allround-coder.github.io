@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/the-past-and-present-of-browser-architect
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-05-12-ThePastandPresentofBrowserArchitecture_0.png" />
 
 브라우저 아키텍처는 단일 프로세스 브라우저에서 멀티 프로세스 브라우저로의 전환을 거쳤습니다. 안정성, 부드러움, 보안을 강조하며, 프로세스는 렌더링, GPU, 네트워크 및 플러그인으로 분해되어 아키텍처의 청결성이 향상되었습니다. 브라우저 아키텍처를 검토하려면 페이지를 열고, 페이지 렌더링 프로세스, 브라우저 플러그인 메커니즘을 더 잘 이해해야 합니다. 특히 Manifest V1에서 Manifest V3로의 전환을 중심으로 Chrome 확장 프로그램 버전 타임라인을 정리함으로써 브라우저의 진화 과정을 비교적 포괄적으로 이해할 수 있습니다.
@@ -19,7 +19,6 @@ link: "https://medium.com/gitconnected/the-past-and-present-of-browser-architect
 # 1. 브라우저 아키텍처의 진화
 
 2007년 이전에 전형적인 브라우저 아키텍쳐는 이러했습니다:
-```
 
 
 

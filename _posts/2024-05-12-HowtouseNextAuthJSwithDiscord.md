@@ -333,7 +333,6 @@ async signIn({ account }) {
 
 
 
-```markdown
 ![Screenshot](/assets/img/2024-05-12-HowtouseNextAuthJSwithDiscord_4.png)
 
 결국 LoginUsingDiscord 구성 요소 내에 로그아웃 버튼을 추가했어요. signOut() 함수를 사용했어요. 이 함수는 매개변수 없이 작동합니다. 왜냐하면 하나의 서비스만 활성 세션을 가질 수 있거든요. 여기에 코드가 있어요.
@@ -346,7 +345,6 @@ async signIn({ account }) {
 ```
 
 # 결론
-```
 
 
 

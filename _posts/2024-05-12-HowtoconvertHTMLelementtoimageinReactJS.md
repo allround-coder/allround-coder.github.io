@@ -11,7 +11,7 @@ link: "https://medium.com/how-to-react/how-to-convert-html-element-to-image-in-r
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-05-12-HowtoconvertHTMLelementtoimageinReactJS_0.png" />
 
 HTML을 이미지로 변환하는 것은 웹 응용 프로그램에서 유용한 기능일 수 있습니다. React에서 이 작업을 수행하는 여러 가지 방법이 있지만, 가장 일반적인 방법 중 하나는 서드파티 라이브러리를 사용하는 것입니다. 이 글에서는 React에서 html-to-image 모듈을 사용하여 HTML을 이미지로 변환하는 방법을 살펴보겠습니다.
@@ -19,7 +19,6 @@ HTML을 이미지로 변환하는 것은 웹 응용 프로그램에서 유용한
 # 요구 사항
 
 - html-to-image
-```
 
 
 

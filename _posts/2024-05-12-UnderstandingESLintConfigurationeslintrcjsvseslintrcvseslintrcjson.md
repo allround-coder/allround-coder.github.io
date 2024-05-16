@@ -31,7 +31,7 @@ ESLint은 JavaScript 생태계에서 중심 도구로 작용하여 개발자가 
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-UnderstandingESLintConfigurationeslintrcjsvseslintrcvseslintrcjson_1.png)
 
 # .eslintrc.json 이해하기
@@ -39,7 +39,6 @@ ESLint은 JavaScript 생태계에서 중심 도구로 작용하여 개발자가 
 .eslintrc.json은 .eslintrc와 유사하게 ESLint 구성을 JSON 형식으로 제공합니다. 파일 이름 규칙이 다르지만 동일한 목적을 제공합니다. 두 형식 모두 대부분의 프로젝트에서 간편하게 사용할 수 있도록 간결하고 사용이 간편합니다.
 
 ![이미지](/assets/img/2024-05-12-UnderstandingESLintConfigurationeslintrcjsvseslintrcvseslintrcjson_2.png)
-```
 
 
 

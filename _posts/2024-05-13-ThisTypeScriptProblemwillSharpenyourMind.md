@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/this-typescript-problem-will-challenge-yo
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-13-ThisTypeScriptProblemwillSharpenyourMind_0.png)
 
 TypeScript는 데이터를 강화하고 깨끗한 코드를 개발할 수 있게 해 주는 환상적인 도구입니다.
@@ -19,7 +19,6 @@ TypeScript는 데이터를 강화하고 깨끗한 코드를 개발할 수 있게
 오늘은 Mapped Types의 사용을 통해 현실적인 문제를 해결해 보겠습니다.
 
 그럼, 더 이상 미루지 말고 지금 바로 시작해 보겠습니다!
-```
 
 
 
@@ -131,7 +130,7 @@ type Result2 = CountryCodesFromCurrency<"NIO">
 ```
 
 # 추천 기사
-```
+
 
 
 

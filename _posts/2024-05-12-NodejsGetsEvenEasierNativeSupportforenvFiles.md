@@ -11,7 +11,7 @@ link: "https://medium.com/@eztechupdates/node-js-gets-even-easier-native-support
 ---
 
 
-```markdown
+
 ![Node.js Gets Even Easier Native Support for env Files](/assets/img/2024-05-12-NodejsGetsEvenEasierNativeSupportforenvFiles_0.png)
 
 Node.js 작업을 한다면 환경 변수 사용법에 익숙할 것입니다. 다양한 환경(개발, 테스트, 프로덕션)에서 설정을 관리하거나 민감한 데이터를 저장하는 데 사용되는 것으로 추측됩니다.
@@ -20,7 +20,6 @@ Node.js 작업을 한다면 환경 변수 사용법에 익숙할 것입니다. �
 하지만 Node.js v20.6.0부터 상황이 바뀌었습니다! 지금은.env 파일이 네이티브로 지원됩니다.
 
 왜 중요한 이유인가요
-```
 
 
 

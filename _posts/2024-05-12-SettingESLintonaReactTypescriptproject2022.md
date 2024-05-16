@@ -155,7 +155,7 @@ ESLint 출력:
 
 
 
-```markdown
+```bash
 npx eslint src/* --fix
 ```
 

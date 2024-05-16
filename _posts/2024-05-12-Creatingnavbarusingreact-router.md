@@ -41,7 +41,6 @@ link: "https://medium.com/@swati.sharma_216/creating-navbar-using-react-router-6
 
 
 
-````markdown
 ![이미지](/assets/img/2024-05-12-Creatingnavbarusingreact-router_1.png)
 
 ### 단계 4
@@ -66,7 +65,6 @@ root.render(
 );
 reportWebVitals();
 ```
-````
 
 
 

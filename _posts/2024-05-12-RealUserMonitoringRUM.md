@@ -34,14 +34,13 @@ link: "https://medium.com/@anilvermaspeaks/real-user-monitoring-rum-aa96d5858788
 
 
 
-```markdown
+
 ![Monitoring solutions such as New Relic come with built-in dashboards. We can also build our own custom dashboards based on the metrics that matters most to us.
 other tools — AppDynamics Browser RUM, Retrace, Datadog](/assets/img/2024-05-12-RealUserMonitoringRUM_3.png)
 
 ## How real user monitoring works
 
 Real user monitoring works by injecting code into an application to capture metrics while the application is in use. Client side applications are monitored by injecting Javascript code.
-```
 
 
 

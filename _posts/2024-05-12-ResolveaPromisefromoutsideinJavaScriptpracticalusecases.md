@@ -11,7 +11,7 @@ link: "https://medium.com/coding-beauty/javascript-resolve-promise-from-outside-
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-12-ResolveaPromisefromoutsideinJavaScriptpracticalusecases_0.png)
 
 It's one of those cool things you can do in JavaScript that's immensely powerful in the real world.
@@ -19,7 +19,6 @@ It's one of those cool things you can do in JavaScript that's immensely powerful
 # Powerful practical use cases
 
 ## Action (A) waiting for another (B)
-```
 
 
 

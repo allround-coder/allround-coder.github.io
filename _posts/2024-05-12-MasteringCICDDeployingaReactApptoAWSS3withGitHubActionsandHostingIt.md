@@ -93,7 +93,7 @@ AWS S3와 GitHub Actions의 강력함을 느껴보세요. 이 포괄적인 가�
 
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-12-MasteringCICDDeployingaReactApptoAWSS3withGitHubActionsandHostingIt_10.png)
 
 ![Image](/assets/img/2024-05-12-MasteringCICDDeployingaReactApptoAWSS3withGitHubActionsandHostingIt_11.png)
@@ -101,7 +101,6 @@ AWS S3와 GitHub Actions의 강력함을 느껴보세요. 이 포괄적인 가�
 After creating this, you can see like this
 
 ![Image](/assets/img/2024-05-12-MasteringCICDDeployingaReactApptoAWSS3withGitHubActionsandHostingIt_12.png)
-```
 
 
 
@@ -185,7 +184,6 @@ GitHub에서 업로드된 파일을 여기서 볼 수 있습니다.
 
 
 
-```markdown
 ![Main image](/assets/img/2024-05-12-MasteringCICDDeployingaReactApptoAWSS3withGitHubActionsandHostingIt_17.png)
 
 이제 정적 웹사이트 호스팅 섹션에 링크가 보입니다. 새 탭에서 열어보세요.
@@ -193,7 +191,6 @@ GitHub에서 업로드된 파일을 여기서 볼 수 있습니다.
 ![Image 18](/assets/img/2024-05-12-MasteringCICDDeployingaReactApptoAWSS3withGitHubActionsandHostingIt_18.png)
 
 ![Image 19](/assets/img/2024-05-12-MasteringCICDDeployingaReactApptoAWSS3withGitHubActionsandHostingIt_19.png)
-```
 
 
 

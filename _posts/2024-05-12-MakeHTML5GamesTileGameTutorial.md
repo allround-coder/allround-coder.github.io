@@ -103,7 +103,7 @@ new Circle(50, series(pink, blue, yellow))
 
 
 
-```markdown
+
 ![Tutorial Step 8](/assets/img/2024-05-12-MakeHTML5GamesTileGameTutorial_8.png)
 
 각 항목을 누를 때마다 빨간색으로 변경해 봅시다. ZIM이 구축된 CreateJS는 JavaScript의 addEventListener()와 비슷한 on() 메소드를 제공하는데, 짧고 간결하며 mousedown 이벤트를 캡처할 수 있습니다. 'e'는 이벤트 객체로서 우리에게 목표물인 이벤트를 일으킨 객체와 같은 추가 정보를 제공합니다. 변화가 갱신되도록 stage update()를 사용합니다. 자동으로 업데이트하지 않아 배터리 소모를 줄입니다.
@@ -116,7 +116,6 @@ pods.on("mousedown", e=>{
 ```
 
 ![Tutorial Step 9](/assets/img/2024-05-12-MakeHTML5GamesTileGameTutorial_9.png)
-```
 
 
 
@@ -707,7 +706,7 @@ const bottom = new Tile([mute, find, timer], 3, 1, 80, 0, true)
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-MakeHTML5GamesTileGameTutorial_20.png)
 
 각 레벨을 찾기 위한 'eternals'의 수를 업데이트해야 합니다. HANDLE LEVELS 섹션에 다음 라인을 추가해주세요:
@@ -719,7 +718,6 @@ find.text = "FIND " + stable;
 ```
 
 ## Sound
-```
 
 
 
@@ -906,11 +904,8 @@ const levels = [[4,5],[5,7]];
 이 튜토리얼에서는 로고와 커스텀 폰트, 리더보드, 오디오 스프라이트와 음소거 버튼을 포함한 완전한 타일/패턴 게임을 만들기 위해 시간을 들였습니다. 또한, 레벨, 리워드 이밋터 및 스프라이트 텍스처 애트라스를 포함하였습니다.
 
 우리는 ZIM을 사용하여 여러 가지 타일형 게임을 만들었습니다. 게임 및 ZIM 예제에 대해 ZIM 배너 페이지를 살펴보세요.
-```
 
 
-
-```markdown
 ![이미지](/assets/img/2024-05-12-MakeHTML5GamesTileGameTutorial_23.png)
 
 ![이미지](/assets/img/2024-05-12-MakeHTML5GamesTileGameTutorial_24.png)
@@ -918,7 +913,6 @@ const levels = [[4,5],[5,7]];
 ZIM의 Learn Apps 섹션에는 많은 종류의 타일 게임을 사용하는 e러닝 게임이 있습니다. 메모리 게임과 스크램블 퍼즐과 같은 게임들이 있습니다.
 
 ![이미지](/assets/img/2024-05-12-MakeHTML5GamesTileGameTutorial_25.png)
-```
 
 
 

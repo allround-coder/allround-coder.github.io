@@ -78,20 +78,17 @@ my-project/
 
 Windows:
 
-```markdown
+
 ```js
 python -m venv venv
 .\venv\Scripts\activate
 ```
-```
 
 macOS/Linux:
 
-```markdown
 ```js
 python3 -m venv venv
 source venv/bin/activate
-```
 ```
 
 
@@ -218,7 +215,7 @@ frontend/main.jsx:```
 
 
 
-```markdown
+
 ```js
 import React from "react";
 import ReactDOM from "react-dom/client";

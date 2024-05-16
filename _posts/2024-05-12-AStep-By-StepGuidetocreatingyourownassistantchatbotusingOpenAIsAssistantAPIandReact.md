@@ -3,13 +3,12 @@ title: "오픈에이아이의 Assistant API와 React를 사용하여 나만의 �
 description: ""
 coverImage: "/assets/img/2024-05-12-AStep-By-StepGuidetocreatingyourownassistantchatbotusingOpenAIsAssistantAPIandReact_0.png"
 date: 2024-05-12 20:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-12-AStep-By-StepGuidetocreatingyourownassistantchatbotusingOpenAIsAssistantAPIandReact_0.png
 tag: Tech
 originalTitle: "A Step-By-Step Guide to creating your own assistant chatbot using OpenAI’s Assistant API and React"
 link: "https://medium.com/@JeffyJeff/a-step-by-step-guide-to-creating-your-own-assistant-chatbot-using-openais-assistant-api-and-react-655391215c3a"
 ---
-
 
 ## 어시스턴트 API의 힘 이해하기
 
@@ -19,8 +18,6 @@ link: "https://medium.com/@JeffyJeff/a-step-by-step-guide-to-creating-your-own-a
 
 고속으로 발전하는 기술 세계에서 OpenAI는 인공 지능 분야에서 선두주자로 등장했습니다. 그들의 최신 작품인 어시스턴트 API는 이미 다양한 산업을 혁신하고 있습니다.
 
-
-
 자신만의 개인 비서를 가지고 싶었던 적이 있나요? 더 이상 찾을 필요가 없어요! OpenAI의 어시스턴트 API는 AI의 기능을 활용하고 이를 프로젝트에 원활하게 통합할 수 있는 강력한 도구입니다. 이 API를 활용하여 개발자들은 사용자와 동적 대화를 나누며 관련 정보와 맞춤 경험을 제공할 수 있는 지능형 챗봇을 만들 수 있습니다.
 
 이 글을 더 깊이 이해하면, 새로운 Assistant API를 사용하여 완전히 기능적인 챗봇을 구현하는 방법을 알아볼 것입니다. 이 챗봇은 아이스 하키 전문가로서 특정 지침을 줄 것입니다. 🏒
@@ -28,8 +25,6 @@ link: "https://medium.com/@JeffyJeff/a-step-by-step-guide-to-creating-your-own-a
 시작해 봅시다! 👏👏👏👏
 
 ## 단계 1: 개발 환경 설정
-
-
 
 새로운 리액트 프로젝트를 만들고 필요한 라이브러리와 의존성을 설치하는 것은 어떤 리액트 개발을 시작하는 핵심 단계입니다. 몇 가지 간단한 단계를 따르면 프로젝트를 신속하게 시작할 수 있습니다.
 
@@ -43,21 +38,17 @@ npm install -g create-react-app
 
 4. 다음 명령어를 실행하여 새로운 리액트 앱을 만듭니다 (여기서 “my-app”은 앱의 이름입니다)
 
-
-
-```markdown
-npx create-react-app my-app --template typescript 
+```bash
+npx create-react-app my-app --template typescript
 ```
 
 5. 해당 명령어를 실행하여 새 앱 디렉토리로 이동합니다.
 
-```markdown
+```bash
 cd my-app
 ```
 
 6. Material-UI 및 그 종속성을 설치합니다.
-
-
 
 ```js
 npm install @mui/material @emotion/react @emotion/styled
@@ -71,9 +62,6 @@ npm start
 
 이것으로 설정이 완료되었습니다! 이제 새로운 React 앱이 http://localhost:3000 에서 작동해야 합니다. 코드 편집기에서 앱을 열고 필요한 대로 코드를 사용자 정의할 수 있습니다.```
 
-
-
-```markdown
 # 단계 2: React 앱 챗봇 컴포넌트 생성
 
 채팅 인터페이스를 위한 컴포넌트를 생성하세요. 각 메시지 컴포넌트를 렌더링하는 Chat 컴포넌트를 만들 수 있습니다.
@@ -101,9 +89,6 @@ const Message: React.FC<MessageProps> = ({ text, isUser }) => {
 
 export default Message;
 ```
-```
-
-
 
 /src/components/Chat.tsx
 
@@ -157,8 +142,6 @@ export default Chat;
 
 Chat 컴포넌트를 사용하도록 src/App.tsx를 수정하세요.
 
-
-
 /src/App.tsx
 
 ```javascript
@@ -187,9 +170,7 @@ export default App;
 
 ```javascript
 npm start
-```  
-
-
+```
 
 # 단계 4: OpenAI 어시스턴트 API로 시작하기
 
@@ -198,8 +179,6 @@ npm start
 ⚠️ 진행하기 전에 API 키를 생성해야 합니다!
 
 ⚠️ OpenAI는 SPA 웹 앱과 같은 클라이언트 사이드 환경에서 API 키를 노출하는 것을 권장하지 않습니다. 요청은 항상 API 키를 안전하게 보관할 수 있는 자체 백엔드 서버를 통해 라우팅해야 합니다. 그러나 간편함을 위해, 우리는 단순하게 유지하고 프론트엔드 개발에 집중할 것입니다.
-
-
 
 OpenAI에서 API 키를 얻으려면 다음 단계를 따르세요:
 
@@ -211,8 +190,6 @@ OpenAI에서 API 키를 얻으려면 다음 단계를 따르세요:
 API 키를 획득했다면, OpenAI API에 요청을 인증하는 데 사용할 수 있습니다. 이에 대한 자세한 정보는 OpenAI API 설명서에서 찾을 수 있습니다.
 
 ## OpenAI Assistant API의 주요 구성 요소:
-
-
 
 - 쓰레드: 쓰레드는 Assistant API에서 대화의 기초입니다. 사용자와 어시스턴트 간에 교환된 메시지의 시퀀스를 나타냅니다. 쓰레드는 지속적일 수 있으며, 나중에 사용할 수 있도록 저장하고 검색할 수 있습니다.
 - 메시지: 메시지는 쓰레드 내에서의 개별 통신 단위입니다. 사용자 또는 어시스턴트가 보낼 수 있습니다. 메시지에는 텍스트, 코드, 이미지 또는 다른 파일이 포함될 수 있습니다.
@@ -229,8 +206,6 @@ API 키를 획득했다면, OpenAI API에 요청을 인증하는 데 사용할 �
 
 1. OpenAI Node.js 라이브러리 설치하기:
 
-
-
 먼저 Node Package Manager (npm)을 사용하여 openai 패키지를 설치해주세요.
 
 ```js
@@ -241,10 +216,8 @@ npm install openai
 
 루트 디렉토리에 .env 파일을 생성하여 OpenAI API 키를 안전하게 저장하세요. 다음 줄을 .env 파일에 추가해 주세요. YOUR_API_KEY를 실제 OpenAI API 키로 대체해주세요:
 
-
-
 ```js
-REACT_APP_OPENAI_API_KEY=당신의_API_KEY
+REACT_APP_OPENAI_API_KEY = 당신의_API_KEY;
 ```
 
 3. 필요한 라이브러리를 가져옵니다:
@@ -255,8 +228,6 @@ REACT_APP_OPENAI_API_KEY=당신의_API_KEY
 import OpenAI from "openai";
 ```
 
-
-
 4. OpenAI 클라이언트를 초기화하세요:
 
 OpenAI 클래스를 사용하여 API 키를 이용해 OpenAI 클라이언트를 초기화하세요:
@@ -264,13 +235,11 @@ OpenAI 클래스를 사용하여 API 키를 이용해 OpenAI 클라이언트를 
 ```js
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-  dangerouslyAllowBrowser: true
+  dangerouslyAllowBrowser: true,
 });
 ```
 
 다음 단계에서 OpenAI Assistant API를 기존 코드에 통합할 때 이러한 단계를 다시 요약하겠습니다.
-
-
 
 # 단계 5: React 앱에 OpenAI API 통합하기
 
@@ -279,8 +248,6 @@ const openai = new OpenAI({
 다음과 같은 MessageDto 클래스를 가지고 Models 폴더를 생성하세요:
 
 /src/models/MessageDto.ts
-
-
 
 ```js
 export class MessageDto {
@@ -300,7 +267,7 @@ Message.tsx 파일을 수정해주세요:
 
 ```js
 // src/components/Message.tsx
-import React from 'react';
+import React from "react";
 import { MessageDto } from "../models/MessageDto";
 
 interface MessageProps {
@@ -331,8 +298,6 @@ const Message: React.FC<MessageProps> = ({ message }) => {
 
 export default Message;
 ```
-
-
 
 마침내 새로운 Chat.tsx 파일을 구현해주세요:
 
@@ -482,8 +447,6 @@ export default Chat;
 
 React 앱을 다음 명령어로 실행해보세요:
 
-
-
 ```js
 npm start
 ```
@@ -493,8 +456,6 @@ npm start
 이제 prompt를 사용하여 새로 만든 어시스턴트와 상호 작용할 준비가 되었습니다. 응답은 짧은 지연 후 화면에 표시됩니다. 아래와 같이 표시됩니다:
 
 Prompt:
-
-
 
 ```js
 누가 사람들에게 요리를 가르치는 데 가장 적합한 이가 되었습니까?
@@ -516,8 +477,6 @@ Prompt:
 
 🛠️ 제 개인 GitHub 계정에서 완전한 솔루션 코드를 확인하실 수 있습니다. 여기를 클릭해주세요.```
 
-
-
 # 결론
 
 OpenAI의 Assistant API 도입으로 보조 인력의 접근성이 새로운 차원으로 발전했습니다. 이제 누구나 챗봇과 AI 보조 인력의 힘과 편의성을 누릴 수 있습니다.
@@ -525,8 +484,6 @@ OpenAI의 Assistant API 도입으로 보조 인력의 접근성이 새로운 차
 Assistant API는 개발자들이 AI 기반 보조 인력의 잠재력을 활용할 수 있는 손쉬운 방법을 제공합니다.
 
 결론적으로, OpenAI의 Assistant API를 통한 보조 인력의 접근성은 개인 및 기업이 AI 기술의 힘을 활용할 수 있게 합니다. 우리 손끝에 챗봇이 있음으로써 생산성을 향상하고 고객 경험을 향상하며 다양한 산업에서 새로운 기회를 극대화할 수 있습니다.
-
-
 
 지금까지였어요. 만약 이 이야기를 좋아하셨다면, 팔로우하고 박수를 부탁드려요. 👏👏
 

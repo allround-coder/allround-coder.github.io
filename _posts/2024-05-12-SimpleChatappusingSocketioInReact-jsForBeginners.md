@@ -49,7 +49,7 @@ npm init -y
 
 
 
-```markdown
+
 socket.io 라이브러리 설치하기
 
 ```js
@@ -90,7 +90,6 @@ const PORT = process.env.PORT || 4000;
 server.listen(PORT, () => {
     console.log(`서버가 포트 ${PORT}에서 실행 중입니다.`);
 });
-```
 ```
 
 

@@ -62,7 +62,7 @@ React 네이티브 및 React 네이티브 페이퍼 라이브러리를 함께 �
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-BuildforScaleUseaDesignSysteminyourReactNativeappPart3DevelopyourCustomThemeIntroduction_1.png)
 
 # 단계 2: 타이포그래피 정의하기
@@ -70,7 +70,6 @@ React 네이티브 및 React 네이티브 페이퍼 라이브러리를 함께 �
 ## React Native Paper V3의 폰트 유형
 
 Fonts 객체를 갖기 위해 MD3Typescale을 사용하기 위해 React Native Paper V3를 사용할 것입니다.
-```
 
 
 

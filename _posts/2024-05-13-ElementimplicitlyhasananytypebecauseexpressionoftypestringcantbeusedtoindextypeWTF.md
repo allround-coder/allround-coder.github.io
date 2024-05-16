@@ -109,7 +109,7 @@ function getTotalGemsCount(gemCollection: GemCollection): number {
 
 
 
-```markdown
+
 ![Issue Screenshot](/assets/img/2024-05-13-ElementimplicitlyhasananytypebecauseexpressionoftypestringcantbeusedtoindextypeWTF_1.png)
 
 이 문제는, 예상했던 것과는 다르게, 타입 검사기가 gemCollection 입력이 GemCollection 인터페이스에서 지정된 속성을 최소한 가지고 있다는 것을 보장한다는 것입니다. 그러나 이는 추가 속성이 없음을 보장하지는 않습니다.
@@ -123,7 +123,6 @@ function getTotalGemsCount(gemCollection: GemCollection): number {
     + gemCollection.redCount
     + gemCollection.yellowCount;
 }
-```
 ```
 
 
@@ -165,7 +164,7 @@ function getGemsCollection(httpClient: SuperHttpClient, userId: number): GemColl
 
 
 
-```md
+```js
 인터페이스 HttpClient {
   get: (query: string) => unknown;
 }

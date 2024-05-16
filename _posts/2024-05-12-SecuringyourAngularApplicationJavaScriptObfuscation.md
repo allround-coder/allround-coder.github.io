@@ -286,7 +286,7 @@ Angular CLI 옵션을 사용하여 애플리케이션을 빌드하면 됩니다:
 
 
 
-```markdown
+
 ```js
 ng build
 ```
@@ -296,7 +296,6 @@ ng build
 <img src="/assets/img/2024-05-12-SecuringyourAngularApplicationJavaScriptObfuscation_1.png" />
 
 # JavaScript 난독화기에서 제공하는 옵션:
-```
 
 
 

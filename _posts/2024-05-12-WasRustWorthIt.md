@@ -11,7 +11,6 @@ link: "https://medium.com/@jsoverson/was-rust-worth-it-f43d171fb1b3"
 ---
 
 
-```markdown
 ![2024-05-12-WasRustWorthIt_0](/assets/img/2024-05-12-WasRustWorthIt_0.png)
 
 몇 년 전에 나는 모든 것을 내려놓고 WebAssembly에 100% 집중하기로 결심했습니다. 그 당시에 Rust는 WebAssembly로 컴파일하는 데 가장 좋은 지원을 제공했으며, 가장 기능이 풍부한 WebAssembly 런타임은 Rust 기반입니다. Rust가 메뉴에서 최상의 선택이었습니다. 나는 그 호기심이 어디에서 나왔는지 알기 위해 들어갔습니다.
@@ -19,7 +18,6 @@ link: "https://medium.com/@jsoverson/was-rust-worth-it-f43d171fb1b3"
 그 이후로 나는(다른 멋진 사람들과 함께) WebAssembly를 핵심 모듈 시스템으로 사용하는 응용 프레임워크 및 런타임인 Wick를 만들었습니다.
 
 ![2024-05-12-WasRustWorthIt_1](/assets/img/2024-05-12-WasRustWorthIt_1.png)
-```
 
 
 
@@ -113,7 +111,7 @@ Rust의 풍부한 유형 시스템은 축복이자 저주입니다. Rust 유형�
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-WasRustWorthIt_3.png)
 
 첫 번째로 작성할 때 일일히 제네릭을 모두 정의해야 합니다. 처음에 쓸 때는 지루하지만 리팩토링할 때는 작은 변경도 연쇄적인 문제로 이어질 수 있습니다.
@@ -121,7 +119,6 @@ Rust의 풍부한 유형 시스템은 축복이자 저주입니다. Rust 유형�
 ![이미지](/assets/img/2024-05-12-WasRustWorthIt_4.png)
 
 하나의 작업을 진행하기 전에 14개의 다른 정의를 조정해야 한다면 빠른 진전을 이루기 어려울 것입니다.
-```
 
 
 

@@ -11,7 +11,7 @@ link: "https://medium.com/javascript-in-plain-english/partial-selection-of-a-dom
 ---
 
 
-```markdown
+
 ![DOM 트리의 일부 선택에 관한 인터뷰 질문](/assets/img/2024-05-12-PartialselectionofaDOMtreeAninterviewquestion_0.png)
 
 웹 페이지의 일부를 선택하는 문제는 상당히 실용적이며, 웹 레이아웃과 DOM 트리 간의 변환과 관련이 있어 시각적으로 흥미로운 문제입니다.
@@ -19,7 +19,6 @@ link: "https://medium.com/javascript-in-plain-english/partial-selection-of-a-dom
 이 문제는 웹 페이지의 일부를 선택하고 선택한 요소들을 모두 파악하여 화면에 표시된 순서대로 하나씩 나열하라는 내용입니다.
 
 이 유형의 문제를 해본 적이 없다면, 그 순간에는 압도적일 수 있습니다. 그러므로 이 글에서는 이에 대해 천천히 공부해보려 합니다.
-```
 
 
 

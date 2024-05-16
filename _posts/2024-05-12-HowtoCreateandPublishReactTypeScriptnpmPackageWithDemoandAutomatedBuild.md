@@ -243,7 +243,7 @@ prettier 설정이 완료되었습니다! 이제 yarn lint를 실행하여 포�
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-HowtoCreateandPublishReactTypeScriptnpmPackageWithDemoandAutomatedBuild_5.png)
 
 이제 yarn lint를 실행한 후에는 오류가 없어야 합니다. src/components/App.tsx 및 src/index.ts 파일을 확인해보세요. 변경되었습니다.
@@ -257,7 +257,6 @@ package.json의 scripts 섹션:
   "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
 }
 ``` 
-```
 
 
 
@@ -708,7 +707,7 @@ NODE_AUTH_TOKEN: ${ secrets.NPM_TOKEN }
 
 아래는 Markdown 형식으로 변경된 내용입니다.
 
-```markdown
+
 ![이미지1](/assets/img/2024-05-12-HowtoCreateandPublishReactTypeScriptnpmPackageWithDemoandAutomatedBuild_18.png)
 
 새 토큰을 생성하십시오:
@@ -716,7 +715,6 @@ NODE_AUTH_TOKEN: ${ secrets.NPM_TOKEN }
 ![이미지2](/assets/img/2024-05-12-HowtoCreateandPublishReactTypeScriptnpmPackageWithDemoandAutomatedBuild_19.png)
 
 이름을 입력하고 유형을 선택하라는 메시지가 표시됩니다. Automation은 github-actions에 적합합니다.
-```
 
 
 
@@ -879,13 +877,12 @@ git에서 master 브랜치로 전환하고 README.md 파일을 열어주세요.
 
 테이블 태그를 마크다운 형식으로 변경해주세요:
 
-```markdown
+
 For the description file, we are using markdown.
 
 In README.md, I have added a short description of the package, link to demo-page, and a usage section.
 
 At the beginning of the readme file, I have small cute icons. This is [shields.io](https://shields.io/). It is very convenient to have them. I’ve added just a couple as an example, you can use as many as you want.
-```
 
 
 
@@ -911,15 +908,12 @@ package.json에서 버전을 변경하고, 커밋하고 파일을 레포지토�
 
 현재 버전을 지정하는 태그를 추가하세요. 릴리스 시 자동으로 생성됩니다. 릴리스 제목과 설명을 인쇄하고 릴리스를 발행하려면 클릭하십시오.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-HowtoCreateandPublishReactTypeScriptnpmPackageWithDemoandAutomatedBuild_27.png)
-```
 
 이제 탭 "Actions"를 열고 빌드가 성공적으로 완료되었는지 확인하세요.
 
-```markdown
 ![이미지](/assets/img/2024-05-12-HowtoCreateandPublishReactTypeScriptnpmPackageWithDemoandAutomatedBuild_28.png)
-```
 
 
 

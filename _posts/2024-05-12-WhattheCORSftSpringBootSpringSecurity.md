@@ -33,15 +33,12 @@ link: "https://medium.com/@rajendraprasadpadma/what-the-cors-ft-spring-boot-spri
 
 그 다음 콘솔에서 이것을 보았어요
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_3.png)
-```
 
 그리고 '개발자 콘솔'의 네트워크 탭으로 들어가서 더 자세히 파헤치려고 했더니, 두 개의 요청이 남아 있는 것을 보았어요
 
-```markdown
 ![이미지](/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_4.png)
-```
 
 
 
@@ -98,7 +95,7 @@ fetch에 대한 액세스가 CORS 정책에 의해 차단되었습니다. ‘htt
 
 
 
-```markdown
+
 <img src="/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_8.png" />
 
 이제 원래 질문은 무엇일까요? 사전검사(preflight)가 허용된 출처를 확인하고 "http://localhost:3000"을 허용된 출처로 허용하는 방법은 무엇일까요?
@@ -106,7 +103,6 @@ fetch에 대한 액세스가 CORS 정책에 의해 차단되었습니다. ‘htt
 Spring Boot은 @CrossOrigin 어노테이션을 통해 간단한 해결책을 제공합니다. 컨트롤러 클래스 상단에 이렇게 간단히 넣어보세요.
 
 <img src="/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_9.png" />
-``` 
 
 
 
@@ -160,7 +156,6 @@ Phase II — 스프링 시큐리티를 사용하여 내 요청에 기본 인증 
 
 
 
-```markdown
 <img src="/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_13.png" />
 
 나는 닌자인 나로써, pom.xml에 Spring Security 스타터 종속성을 추가하고 메이븐 종속성을 업데이트하고 서버를 시작했어. 서버를 다시 시작하면, Spring Security가 응용 프로그램에 '사용자'라는 기본 사용자 이름과 Spring Security가 무작위로 생성하는 해시된 비밀번호로 인증 레이어를 추가해.
@@ -168,11 +163,8 @@ Phase II — 스프링 시큐리티를 사용하여 내 요청에 기본 인증 
 이제, 리액트 애플리케이션에서 동일한 포스트 요청을 보냈어.
 
 그리고 다시 한 번, 무서운 CORS 예외가 발생했어.
-```
 
 
-
-```markdown
 ![2024-05-12-WhattheCORSftSpringBootSpringSecurity_14](/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_14.png)
 
 네트워크에 들어가서 문제를 더 디버깅했습니다.
@@ -180,7 +172,6 @@ Phase II — 스프링 시큐리티를 사용하여 내 요청에 기본 인증 
 post 요청이 하나만 있었고 프리플라이트 요청은 없었습니다. post 요청에 대한 응답에는 'Access-Control-Allow-Origin'이 설정되어 있지 않았습니다. 또한 'WWW-Authenticate:Basic realm=”Realm”' 헤더를 확인했습니다.
 
 ![2024-05-12-WhattheCORSftSpringBootSpringSecurity_15](/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_15.png)
-```
 
 
 
@@ -213,9 +204,8 @@ Fetch를 사용하므로 React에서 POST 호출을 할 때 보내는 매개변�
 
 리액트에서 btoa라는 함수를 사용할 수 있습니다. 사용자 이름과 비밀번호를 이 함수에 전달하면 btoa(user:harambe)처럼 보일 것입니다. btoa 메소드는 base64 인코딩된 문자열을 반환합니다. 그래서 결과물은 다음과 같이 보일 것입니다:
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_16.png)
-```
 
 
 

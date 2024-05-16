@@ -103,7 +103,6 @@ React 어플리케이션이 성장함에 따라 초기에는 모든 로직을 �
 
 테이블 태그를 Markdown 형식으로 변경해 보세요.
 
-```markdown
 Setup your mock server
 
 - Install JSON Server
@@ -113,7 +112,6 @@ npm install -g json-server
 ```
 
 2. Create a Mock Data File payment-methods.json
-```
 
 
 
@@ -398,7 +396,7 @@ useEffect(() => {
 
 
 
-```markdown
+
 ![ModularizingReactApplication](/assets/img/2024-05-12-ModularizingReactApplication_7.png)
 
 변경을 하기 전에 현재 코드 구조를 간단히 살펴봅시다. 코드를 구조화해서 각 부분을 폴더로 구분하는 것을 선호합니다. 이렇게 하면 규모가 커져도 쉽게 탐색할 수 있어요.
@@ -417,7 +415,6 @@ src
 ```
 
 우리 앱에서 App.tsx는 주 진입점으로 작동합니다. 이 파일에는 Payment 컴포넌트가 포함되어 있는데, 이 컴포넌트는 다양한 결제 옵션을 표시하기 위해 PaymentMethods를 활용합니다. usePaymentMethods 훅은 원격 서비스에서 데이터를 가져와 PaymentMethod 객체로 변환합니다. PaymentMethod 객체는 레이블과 기본 옵션 여부를 저장합니다.
-```
 
 
 

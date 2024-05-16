@@ -11,7 +11,7 @@ link: "https://medium.com/@sarathadhithya/optimizing-api-requests-with-axios-int
 ---
 
 
-```markdown
+
 ![Alt text](/assets/img/2024-05-12-OptimizingAPIRequestswithAxiosInterceptorsandAdvancedErrorHandling_0.png)
 
 프로젝트에서 API 통신의 참된 잠재력을 발휘해 보세요! 다재다능한 HTTP 클라이언트인 Axios를 살펴보고, 인터셉터와 견고한 에러 처리로 요청 관리를 어떻게 높일 수 있는지 알아보세요.
@@ -19,7 +19,6 @@ link: "https://medium.com/@sarathadhithya/optimizing-api-requests-with-axios-int
 Axios와 기본 Fetch API는 JavaScript에서 HTTP 요청을 하는 도구이지만, 주요 차이점이 있습니다. Axios가 인기 있는 이유와 Fetch API와의 차이점을 강조한 비교입니다:
 
 ## 1. 사용 편의성 및 구문:
-```
 
 
 

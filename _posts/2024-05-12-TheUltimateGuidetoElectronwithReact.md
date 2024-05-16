@@ -55,7 +55,7 @@ public 폴더 아래에 main.js라는 파일을 생성해주세요.
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-TheUltimateGuidetoElectronwithReact_1.png)
 
 다음 코드를 main.js 파일에 복사하세요. 나중에 이 코드가 무엇을 하는지 돌아와서 설명하겠습니다.
@@ -63,7 +63,6 @@ public 폴더 아래에 main.js라는 파일을 생성해주세요.
 이제 package.json 파일을 엽니다.
 
 다음과 같이 main.js 파일을 가리키는 경로를 가진 main 엔트리를 추가하세요.
-```
 
 
 
@@ -212,9 +211,7 @@ const windowOne = new BrowserWindow({width:400,height:400})
 
 마지막에 표시된 img 요소를 Markdown 형식으로 바꿔주시면 다음과 같이 됩니다.
 
-```markdown
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*KtAHl31wk38Tf89ksEFdrA.gif)
-```
 
 
 
@@ -313,7 +310,7 @@ removeMenu() 함수를 호출하거나 setMenu() 함수를 사용하여 Menu를 
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-TheUltimateGuidetoElectronwithReact_5.png)
 
 ## React 컴포넌트에서 BrowserWindow 열기
@@ -321,11 +318,9 @@ removeMenu() 함수를 호출하거나 setMenu() 함수를 사용하여 Menu를 
 해당 컴포넌트에는 클릭 시 BrowserWindow를 열어주는 버튼이 있습니다.
 
 다음은 그 모습입니다.
-```
 
 
 
-```markdown
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*rtOf3JpMRYHlptZCN7g4bg.gif)
 
 # Electron에서 React 컴포넌트에서 대화 상자를 열려면?
@@ -333,7 +328,6 @@ removeMenu() 함수를 호출하거나 setMenu() 함수를 사용하여 Menu를 
 세 가지 주요 다이얼로그에 대해 설명합니다. React 컴포넌트에서 각각의 버튼 클릭으로 각각을 트리거할 것입니다.
 
 ## showErrorBox()
-```
 
 
 
@@ -368,17 +362,12 @@ export default App
 - filePaths: Array — 선택된 파일 경로의 배열입니다.
 
 
-
-테이블 태그를 마크다운 형식으로 변경해보세요.
-
-```markdown
 | Title | Message | Filters |
 | --- | --- | --- |
 | 'Title' | 'Message' | Images: jpg, png, gif |
 | | | Movies: mkv, avi, mp4 |
 | | | Custom File Type: as |
 | | | All Files: * |
-```
 
 이렇게 생겼어요.
 

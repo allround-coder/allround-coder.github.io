@@ -29,15 +29,6 @@ JavaScript에서 함수는 다른 변수와 마찬가지로 다룰 수 있습니
 
 sumFunctionFactory()라는 함수를 구현하여 숫자를 더하는 다른 함수를 반환하는 함수를 만들어 보겠습니다. 그런 다음 이 함수를 사용하여 function1과 function2라는 두 가지 함수를 만들어 보겠습니다.
 
-
-
-**테이블 태그를 Markdown 형식으로 변경해주세요.**
-
-```markdown
-| function1 | function2 |
-|-----------|-----------|
-```
-
 위에서 function1과 function2 함수는 동일한 코드 소스를 공유하지만 별도의 함수 객체이며 서로 다른 인스턴스를 가리키기 때문에 그들을 비교하면 false가 나옵니다. 이것이 JavaScript가 동작하는 방식입니다.
 
 # 2. useCallback() 훅

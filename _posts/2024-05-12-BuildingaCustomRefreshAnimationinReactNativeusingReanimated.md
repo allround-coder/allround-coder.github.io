@@ -593,7 +593,7 @@ const DribbbleShots: React.FC<DribbbleShotsProps & ViewProps> = () => {
 
 
 
-```markdown
+
 ![Loading animation](https://miro.medium.com/v2/resize:fit:1400/1*OVJMKGr9f4IJG3Ou7KTUjA.gif)
 
 이제 '새로 고침 중...'이라는 단어를 단순히 기록하는 대신 상태 값을 사용하여 UI를 업데이트하고 새로 고침이 진행 중임을 나타내겠습니다:
@@ -744,7 +744,7 @@ const refreshIconStyles = useAnimatedStyle(() => {
 
 
 
-```markdown
+
 ![Animated GIF](https://miro.medium.com/v2/resize:fit:1400/1*Fb1kzeeAhQVNEf5TTAZlrg.gif)
 
 ![Animated GIF](https://miro.medium.com/v2/resize:fit:1400/1*YU3TndEWRtBaNcjXf-JZVg.gif)
@@ -752,7 +752,6 @@ const refreshIconStyles = useAnimatedStyle(() => {
 ![Animated GIF](https://miro.medium.com/v2/resize:fit:1400/1*sMa1sfIYa6Zsl8Co0bCsEQ.gif)
 
 ![Animated GIF](https://miro.medium.com/v2/resize:fit:1400/1*N5X0Kbuz7jHxclWzBv-glw.gif)
-```
 
 
 

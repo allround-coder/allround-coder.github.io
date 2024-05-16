@@ -51,7 +51,7 @@ link: "https://medium.com/@danangfirmino26/the-data-scrapers-toolkit-essential-t
 
 
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:960/0*LjUSDEg8no_fYQ64.gif)
 
 # 3. 웹 스크래핑 기술
@@ -59,7 +59,6 @@ link: "https://medium.com/@danangfirmino26/the-data-scrapers-toolkit-essential-t
 ![image](/assets/img/2024-05-12-TheDataScrapersToolkitEssentialToolsandStrategies_1.png)
 
 일반적으로 웹 스크래핑에는 두 가지 방법이 있습니다:
-```
 
 
 
@@ -396,8 +395,6 @@ $ node scrap.js
 출력 결과는 다음과 같을 것입니다.
 
 
-
-```markdown
 | 모델명          | 가격                              |
 |----------------|-------------------------------|
 | VITESSA 2.00   | Rp 9,820,000, Rp 9,820,000   |
@@ -416,7 +413,6 @@ $ node scrap.js
 | GAVRIIL       | Rp 16,620,000, Rp 16,620,000 |
 | E-GAVRIIL     | Rp 48,280,000, Rp 48,280,000 |
 | EPSILON T6    | Rp 45,350,000, Rp 45,350,000 |
-```
 
 여기에 전체 코드가 있습니다:
 

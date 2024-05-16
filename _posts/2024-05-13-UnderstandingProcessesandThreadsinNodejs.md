@@ -11,7 +11,7 @@ link: "https://medium.com/@danish512/understanding-processes-and-threads-in-node
 ---
 
 
-```markdown
+
 ![Understanding Processes and Threads in Node.js](/assets/img/2024-05-13-UnderstandingProcessesandThreadsinNodejs_0.png)
 
 Node.js는 주로 단일 쓰레드 이벤트 루프 모델에서 작동합니다. 이는 코드가 한 번에 한 가지 작업만 수행할 수 있다는 것을 의미합니다. 그러나 Node.js는 또한 libuv와 같은 라이브러리를 통해 파일 읽기와 같은 I/O 작업과 같은 특정 작업을 백그라운드 쓰레드로 제공합니다. 이러한 백그라운드 쓰레드는 파일 I/O, 네트워크 요청 및 DNS 조회와 같은 작업을 처리하여 주 쓰레드가 다른 이벤트를 계속 처리할 수 있도록 합니다.
@@ -19,7 +19,6 @@ Node.js는 주로 단일 쓰레드 이벤트 루프 모델에서 작동합니다
 # 프로세스
 
 프로세스는 운영 체제에서 실행 중인 프로그램입니다. 각 프로세스는 자체 메모리를 가지며 다른 실행 중인 프로그램의 메모리에 접근할 수 없습니다. 무한 루프가 있는 노드 프로그램을 만들어 실행했을 때 종료되지 않도록 만들어 봅시다.
-```
 
 
 

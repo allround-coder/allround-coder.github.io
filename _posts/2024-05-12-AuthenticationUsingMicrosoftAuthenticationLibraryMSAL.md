@@ -3,13 +3,12 @@ title: "Microsoft Authentication Library MSAL을 사용한 인증"
 description: ""
 coverImage: "/assets/img/2024-05-12-AuthenticationUsingMicrosoftAuthenticationLibraryMSAL_0.png"
 date: 2024-05-12 21:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-12-AuthenticationUsingMicrosoftAuthenticationLibraryMSAL_0.png
 tag: Tech
 originalTitle: "Authentication Using Microsoft Authentication Library (MSAL)"
 link: "https://medium.com/edstem/authentication-using-microsoft-authentication-library-msal-51e8644b28d0"
 ---
-
 
 <img src="/assets/img/2024-05-12-AuthenticationUsingMicrosoftAuthenticationLibraryMSAL_0.png" />
 
@@ -18,8 +17,6 @@ link: "https://medium.com/edstem/authentication-using-microsoft-authentication-l
 인증 및 안전한 액세스 제공은 모든 웹 애플리케이션의 중요한 부분입니다. 우리는 직접 구축하거나 Microsoft 인증 라이브러리(MSAL)와 같은 타사 서비스를 사용할 수 있습니다. 이렇게 함으로써 개발 작업과 리소스를 절약할 뿐만 아니라 신뢰할 수 있고 효율적이며 검증된 솔루션을 제공받을 수 있습니다. MSAL은 웹 애플리케이션이나 Rest API에 안전한 액세스를 제공합니다. JavaScript, Java, Python과 같은 다양한 응용 프로그램 아키텍처 및 플랫폼을 지원합니다. 구성 파일 및 일부 코드를 사용하여 MSAL을 통합할 수 있기 때문에 OAuth 라이브러리를 사용할 필요가 없습니다. 애플리케이션은 Microsoft 개인 계정이나 클라우드에 설정된 사용자로 로그인할 수 있습니다. Microsoft의 데이터 보안 및 확장성에 대한 신뢰성이 추가로 제공됩니다.
 
 그러니 바로 시작하여 구현에 필요한 단계를 살펴보겠습니다. 이는 다음과 같습니다.
-
-
 
 - Microsoft Azure 플랫폼에 애플리케이션 등록
 - Auth 구성 파일 구성
@@ -34,8 +31,6 @@ link: "https://medium.com/edstem/authentication-using-microsoft-authentication-l
 
 ![Microsoft Azure Platform](/assets/img/2024-05-12-AuthenticationUsingMicrosoftAuthenticationLibraryMSAL_1.png)
 
-
-
 ![이미지](/assets/img/2024-05-12-AuthenticationUsingMicrosoftAuthenticationLibraryMSAL_2.png)
 
 인증 구성 파일을 설정하는 동안 테넌트 ID가 필요합니다.
@@ -43,8 +38,6 @@ link: "https://medium.com/edstem/authentication-using-microsoft-authentication-l
 애플리케이션 이름 및 리디렉션 URI를 입력할 수 있습니다. 리디렉션 URI는 성공적인 인증 이후 MSAL이 리디렉션해야 하는 애플리케이션의 홈페이지 또는 페이지입니다.
 
 ![이미지](/assets/img/2024-05-12-AuthenticationUsingMicrosoftAuthenticationLibraryMSAL_3.png)
-
-
 
 [Register] 버튼을 클릭하면 애플리케이션에 대한 Application Id를 받을 수 있습니다.
 
@@ -54,36 +47,32 @@ link: "https://medium.com/edstem/authentication-using-microsoft-authentication-l
 
 # 2. Auth 구성 파일
 
-
-
 src 폴더 안에 애플리케이션에 필요한 authConfig 파일을 추가할 수 있습니다. 이 파일에는 Msal 인스턴스 생성 시 전달될 구성이 포함되어 있습니다. 일반적인 authConfig 파일은 아래와 같이 나타날 것입니다.
 
 ```js
 // Code snippet 1 – src/authConfig.js
 export const msalConfig = {
-    auth: {
-        clientId: '어플리케이션 ID',
-        authority: 'https://login.microsoftonline.com/테넌트 ID',
-        redirectUri: 'https://dev-example-app.com/',
-    },
-    cache: {
-        cacheLocation: 'sessionStorage', // 캐시가 저장될 위치를 구성합니다.
-        storeAuthStateInCookie: false, // IE11이나 Edge에서 문제가 있는 경우 "true"로 설정하세요.
-    }
+  auth: {
+    clientId: "어플리케이션 ID",
+    authority: "https://login.microsoftonline.com/테넌트 ID",
+    redirectUri: "https://dev-example-app.com/",
+  },
+  cache: {
+    cacheLocation: "sessionStorage", // 캐시가 저장될 위치를 구성합니다.
+    storeAuthStateInCookie: false, // IE11이나 Edge에서 문제가 있는 경우 "true"로 설정하세요.
+  },
 };
 /** 여기에 추가한 스코프는 사용자 로그인 시 동의를 받습니다.
  * 기본적으로 MSAL.js는 OIDC 스코프 (openid, profile, email)를 로그인 요청에 추가합니다.
  */
 export const loginRequest = {
-    scopes: ['User.Read']
+  scopes: ["User.Read"],
 };
 ```
 
 # 3. 애플리케이션에 MSAL 코드 추가
 
 @azure/msal-browser와 @azure/msal-react 패키지를 설치해야 합니다.
-
-
 
 ```js
 // 코드 조각 2 - 터미널
@@ -94,24 +83,25 @@ npm i @azure/msal-browser @azure/msal-react
 
 ```js
 // 코드 조각 3 - src/index.js
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
 import { PublicClientApplication } from "@azure/msal-browser";
 import { MsalProvider } from "@azure/msal-react";
 import { msalConfig } from "./authConfig";
-import App from './App';
- 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 const msalInstance = new PublicClientApplication(msalConfig);
- 
+
 root.render(
-<MsalProvider instance={msalInstance}>
-   <App />
-</MsalProvider>
+  <MsalProvider instance={msalInstance}>
+    <App />
+  </MsalProvider>
 );
 ```
 
 # 4. 로그인 컴포넌트
-``` 
+
+````
 
 
 
@@ -130,35 +120,35 @@ const SignIn = () => {
   return (
     <SignInContainer>
       <SignInPageComponents />
-      <SignInButton onClick={() => handleLogin()}> 
-         Microsoft 계정으로 로그인            
+      <SignInButton onClick={() => handleLogin()}>
+         Microsoft 계정으로 로그인
       </SignInButton>
-    </SignInContainer>      
+    </SignInContainer>
   );
 }
 export default SignIn;
-```
+````
 
 만약 로그인이 팝업으로 되는 경우, Msal 인스턴스는 loginPopup 함수를 사용합니다.
 
 ```js
 // 코드 스니펫 5 - src/components/SignIn.js
-instance.loginPopup(loginRequest).catch((e) => {console.log(e)});
+instance.loginPopup(loginRequest).catch((e) => {
+  console.log(e);
+});
 ```
-
-
 
 비슷하게, Sign-Out은 logoutRedirect 또는 logoutPopup 함수로 처리할 수 있습니다.
 
 ```js
-// 코드 스니펫 6 - src/components/SignOut.js 
+// 코드 스니펫 6 - src/components/SignOut.js
 instance.logoutRedirect({
   postLogoutRedirectUri: "/",
 });
 ```
 
 ```js
-// 코드 스니펫 7 - src/components/SignOut.js 
+// 코드 스니펫 7 - src/components/SignOut.js
 instance.logoutPopup({
   postLogoutRedirectUri: "/",
   mainWindowRedirectUri: "/",
@@ -167,42 +157,42 @@ instance.logoutPopup({
 
 # 5. 애플리케이션과 Sign-In 페이지 통합하기
 
-
-
 Sign-In 버튼을 클릭한 후에 MSAL이 사용자를 인증합니다. 애플리케이션은 useIsAuthenticated 함수를 사용하여 인증이 성공했는지 확인할 수 있습니다. 또한, useMsal 함수는 instance, inProgress, accounts 세 개의 객체를 반환합니다. accounts 객체에는 인증된 사용자의 세부 정보가 포함되어 있습니다.
 
 ```js
 // 코드 스니펫 8 - src/App.js
-import { useMsal, useIsAuthenticated } from '@azure/msal-react';
-import Header from './components/header';
-import SignIn from './components/signin';
-import Home from './pages/home';
+import { useMsal, useIsAuthenticated } from "@azure/msal-react";
+import Header from "./components/header";
+import SignIn from "./components/signin";
+import Home from "./pages/home";
 
 const App = () => {
-    const isAuthenticated = useIsAuthenticated();
-    const { accounts } = useMsal();
-    useEffect(() => {
-        if (accounts.length > 0) {
-            sessionStorage.setItem('user-details', JSON.stringify({
-                name: accounts.length > 0 && accounts[0].name,
-                email: accounts.length > 0 && accounts[0].username
-            }));
-        }
-    }, [accounts]);
-    return (
-        <div>
-            { isAuthenticated ? (
-                <>
-                    <Header
-                        name={accounts.length > 0 && accounts[0].name}
-                        email={accounts.length > 0 && accounts[0].username}
-                    />
-                    <Home />
-                </> ) : ( <SignIn /> )
-            }
-        </div>
-    );
-}
+  const isAuthenticated = useIsAuthenticated();
+  const { accounts } = useMsal();
+  useEffect(() => {
+    if (accounts.length > 0) {
+      sessionStorage.setItem(
+        "user-details",
+        JSON.stringify({
+          name: accounts.length > 0 && accounts[0].name,
+          email: accounts.length > 0 && accounts[0].username,
+        })
+      );
+    }
+  }, [accounts]);
+  return (
+    <div>
+      {isAuthenticated ? (
+        <>
+          <Header name={accounts.length > 0 && accounts[0].name} email={accounts.length > 0 && accounts[0].username} />
+          <Home />
+        </>
+      ) : (
+        <SignIn />
+      )}
+    </div>
+  );
+};
 export default App;
 ```
 
@@ -223,13 +213,11 @@ return (
           <Home />
       </AuthenticatedTemplate>
       <UnauthenticatedTemplate>
-          <SignIn /> 
-      </UnauthenticatedTemplate>       
+          <SignIn />
+      </UnauthenticatedTemplate>
     </div>
 );
 ```
-
-
 
 또한 인증 중에 로더를 표시하는 inProgress를 사용할 수도 있습니다.
 
@@ -237,14 +225,12 @@ return (
 // 코드 스니펫 10 - src/components/AnyComponent.js
 
 const { inProgress } = useMsal();
-return inProgress ? <Loader /> : <Component/>;
+return inProgress ? <Loader /> : <Component />;
 ```
 
 다음 이미지는 애플리케이션의 실행을 보여줍니다.
 
 ![애플리케이션 실행 이미지](/assets/img/2024-05-12-AuthenticationUsingMicrosoftAuthenticationLibraryMSAL_5.png)
-
-
 
 <img src="/assets/img/2024-05-12-AuthenticationUsingMicrosoftAuthenticationLibraryMSAL_6.png" />
 
@@ -252,11 +238,9 @@ return inProgress ? <Loader /> : <Component/>;
 
 # 6. Accessing protected Rest APIs
 
-응용 프로그램은 acquireToken* 메소드 중 하나를 사용하여 보호된 Rest API에도 액세스할 수 있습니다.
+응용 프로그램은 acquireToken 메소드 중 하나를 사용하여 보호된 Rest API에도 액세스할 수 있습니다.
 
-
-
-```markdown
+```js
 // Code snippet 11  - src/components/AnyComponent.js
 import { InteractionRequiredAuthError, InteractionStatus} from "@azure/msal-browser";
 import { useMsal } from "@azure/msal-react";
@@ -278,7 +262,7 @@ const AnyComponent = () => {
         })
         .catch((error) => {
           if (error instanceof InteractionRequiredAuthError) {
-            instance.acquireTokenRedirect(accessTokenRequest); 
+            instance.acquireTokenRedirect(accessTokenRequest);
             // OR  instance.acquireTokenPopup(accessTokenRequest)
           }
         });
@@ -292,7 +276,7 @@ export default AnyComponent;
 API 엔드포인트는 액세스 토큰을 Bearer Token으로 전달하여 호출됩니다.
 
 ```js
-// Code snippet 12 
+// Code snippet 12
 const callApi = async (accessToken) => {
   try {
     return await axios.method(endPoint, {
@@ -304,6 +288,7 @@ const callApi = async (accessToken) => {
 ```
 
 # 결론
+
 ```
 
 
@@ -313,3 +298,4 @@ const callApi = async (accessToken) => {
 이 기사가 유익하게 느껴졌고 필요에 따라 프로젝트에 활용할 수 있기를 바랍니다. 읽어 주셔서 감사합니다!
 
 Edstem 웹사이트에서 더 많은 통찰력 있는 블로그와 실용적인 안내서를 살펴보세요. 저희 팀은 복잡한 응용 프로그램 개발을 전문으로 하는 젊고 뛰어난 열정적인 소프트웨어 엔지니어로 구성되어 있습니다. Agile 소프트웨어 개발, 고급 DevOps 실천법, 인공지능 기능을 활용하여 소프트웨어 프로젝트를 가속화하고 혁신적인 솔루션을 제공합니다.
+```

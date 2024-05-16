@@ -141,7 +141,7 @@ export default defineConfig({
 
 
 
-```markdown
+
 For remote-b, we can amend the `vite.config.js` file as follows:
 
 ```js
@@ -176,7 +176,6 @@ export default defineConfig({
 To make the same modification for remote-b's project, you should edit the `vite.config.js` file. The only difference is the name of the federation. Make sure to change it accordingly.
 
 Next, navigate to the `package.json` file and define a separate port for each remote project. Remember, only one project can run on each port.
-```
 
 
 

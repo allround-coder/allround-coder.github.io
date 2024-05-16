@@ -97,9 +97,7 @@ Cal 컴포넌트는 calLink라는 속성과 함께 사용됩니다. 이 속성�
 
 당신의 웹사이트는 다음과 같이 보일 것입니다:
 
-```markdown
 ![Image](/assets/img/2024-05-12-IntegratingCalcomIntoYourWebsiteUsingReactAStep-by-StepGuide_2.png)
-```
 
 # Method 1과 Method 2 사이의 차이는 무엇인가요?
 
@@ -115,6 +113,5 @@ React 애플리케이션에 Cal.com을 통합한 후에는 모든 것이 올바�
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-12-IntegratingCalcomIntoYourWebsiteUsingReactAStep-by-StepGuide_3.png)
-```

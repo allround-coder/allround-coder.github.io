@@ -107,7 +107,6 @@ Redux 스토어를 생성하기 전에 slice를 정의해야 합니다. slice는
 
 
 
-```markdown
 ![GettingStartedWithReduxReactTypescriptElectronusingVite_5](/assets/img/2024-05-12-GettingStartedWithReduxReactTypescriptElectronusingVite_5.png)
 
 다음 코드를 `counterSlice.ts` 파일에 추가하세요.
@@ -144,7 +143,6 @@ export default counterSlice.reducer
 ```
 
 코드를 분석해 봅시다.
-```  
 
 
 

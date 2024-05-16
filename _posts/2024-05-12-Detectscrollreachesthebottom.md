@@ -33,7 +33,7 @@ link: "https://medium.com/@alan.nguyen2050/detect-scroll-reaches-the-bottom-acb3
 
 
 
-```markdown
+
 ![이미지](https://miro.medium.com/v2/resize:fit:1200/1*Qocsql64DWbgFLXBqug2SA.gif)
 
 윈도우 높이를 500px로 조정하면 다음과 같이 됩니다:
@@ -41,7 +41,6 @@ link: "https://medium.com/@alan.nguyen2050/detect-scroll-reaches-the-bottom-acb3
 ![이미지](/assets/img/2024-05-12-Detectscrollreachesthebottom_1.png)
 
 innerHeight는 빨간색 상자 영역이고, outerHeight에는 주소 표시줄과 탭 표시줄이 포함됩니다.
-```
 
 
 

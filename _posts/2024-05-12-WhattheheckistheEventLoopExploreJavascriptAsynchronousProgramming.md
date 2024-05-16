@@ -11,7 +11,7 @@ link: "https://medium.com/angular-simplified/what-the-heck-is-the-event-loop-exp
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-WhattheheckistheEventLoopExploreJavascriptAsynchronousProgramming_0.png)
 
 자바스크립트는 본질적으로 싱글 스레드입니다. 그렇다면 프라미스와 비동기 메서드를 어떻게 처리할까요? 그것들을 어떻게 병렬로 실행할까요? 답은 명확하지 않을 수 있습니다. 자바스크립트 비동기 프로그래밍을 탐구해봅시다...
@@ -19,7 +19,6 @@ link: "https://medium.com/angular-simplified/what-the-heck-is-the-event-loop-exp
 # 정교하고 효율적인 아키텍처
 
 자바스크립트는 이벤트 루프, 태스크 큐 및 마이크로태스크 큐를 결합하여 싱글 스레드 언어가 비동기 작업을 수행할 수 있도록 정교하고 효율적인 아키텍처를 갖추고 있습니다.
-```
 
 
 

@@ -27,12 +27,6 @@ link: "https://medium.com/@omkarbhavare2406/optimizing-web-performance-tree-shak
 
 지금 코드로 더 잘 이해해 봅시다 🤩
 
-```markdown
-Operators.js
-```
-
-
-
 ```js
 export function add(num1, num2){
   return num1 + num2;

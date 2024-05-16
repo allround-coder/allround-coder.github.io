@@ -21,7 +21,7 @@ LocalStorage/SessionStorage에 저장된 항목은 JavaScript에서 읽을 수 �
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-NextJSAuthenticationFlowStoreJWTInCookie_0.png)
 
 ![이미지](/assets/img/2024-05-12-NextJSAuthenticationFlowStoreJWTInCookie_1.png)
@@ -29,7 +29,6 @@ LocalStorage/SessionStorage에 저장된 항목은 JavaScript에서 읽을 수 �
 # 로그인
 
 ## NextJS
-```
 
 
 

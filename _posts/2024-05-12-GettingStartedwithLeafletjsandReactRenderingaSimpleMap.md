@@ -123,20 +123,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 ```
 
-
-
-아래는 제가 작성한 마크다운 형식의 테이블입니다.
-
-```markdown
 | Name      | Age | Location |
 |-----------|-----|----------|
 | John      | 25  | New York |
 | Emily     | 28  | Paris    |
 | Matthew   | 23  | London   |
-```
-
-위의 표는 마크다운 형식의 데이터로 이루어져 있습니다. 해당 형식을 사용하여 데이터를 구조화하고 표현할 수 있습니다. 해당 형식을 사용할 때는 각 열의 데이터를 파이프(|)로 구분하여 입력하고, 각 열의 데이터 개수에 맞게 행 데이터를 작성하면 됩니다. 이렇게 하면 깔끔하게 표 형식으로 데이터를 표시할 수 있습니다.
-
 
 
 지도 만들기 및 타일 레이어 추가하기
@@ -285,7 +276,7 @@ export default SimpleMap;
 
 
 
-```markdown
+
 MapContainer center='[위도, 경도]' zoom='13' ref='mapRef' style='높이: “100vh”, 너비: “100vw”'
 
 MapContainer의 높이와 너비를 설정하지 않으면 지도가 렌더링되지 않습니다.

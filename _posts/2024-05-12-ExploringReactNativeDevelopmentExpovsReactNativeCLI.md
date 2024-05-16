@@ -11,7 +11,7 @@ link: "https://medium.com/stackademic/exploring-react-native-development-expo-vs
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-05-12-ExploringReactNativeDevelopmentExpovsReactNativeCLI_0.png" />
 
 React Native로 모바일 애플리케이션을 개발하면 Expo와 React Native CLI라는 두 가지 주요 선택지가 제공됩니다. 각 접근 방식에는 고유한 장단점이 있습니다. 이 블로그 포스트에서는 Expo와 React Native CLI의 중요한 차이점을 탐색하여 프로젝트 요구 사항에 따라 정보에 근거해 결정을 내릴 수 있도록 도와드릴 것입니다.
@@ -19,7 +19,6 @@ React Native로 모바일 애플리케이션을 개발하면 Expo와 React Nativ
 # Expo 이해하기
 
 # 장점:
-```
 
 
 
