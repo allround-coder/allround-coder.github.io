@@ -108,7 +108,7 @@ Styled Components를 사용하면 가능성이 무한합니다. 전통적인 CSS
 ## - Styled Components in Action: Building Common UI Elements (with Illustrations)
 
 핵심 개념을 이해했으니, Styled Components를 사용하여 다양한 UI 요소를 스타일링하는 방법을 살펴보겠습니다.
-```
+
 
 
 
@@ -256,7 +256,7 @@ const MyComponent = () => {
 - Styled System 통합: 통합 스타일링 접근을 위해 Styled Components와 같은 인기 있는 스타일링 시스템(Bootstrap 또는 Material-UI)을 활용할 수 있습니다.
 
 # Styled Components 이상: 대안 탐색하기
-```
+
 
 
 

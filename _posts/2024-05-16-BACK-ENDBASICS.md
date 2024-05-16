@@ -377,12 +377,12 @@ http://localhost:3000/docs
 
 
 
-```
+
 ![Image 6](/assets/img/2024-05-16-BACK-ENDBASICS_6.png)
 ![Image 7](/assets/img/2024-05-16-BACK-ENDBASICS_7.png)
 ![Image 8](/assets/img/2024-05-16-BACK-ENDBASICS_8.png)
 ![Image 9](/assets/img/2024-05-16-BACK-ENDBASICS_9.png)
-```  
+  
 
 
 
@@ -420,7 +420,7 @@ cat <PUBLIC_KEY_PATH>
 ```
 
 일반적으로 키는 .ssh 디렉토리에 위치합니다. 설정이 완료되면 `git clone REPOSITORY_SSH_URL` 명령어를 사용하여 리포지토리를 복제할 수 있습니다. 
-```
+
 
 
 
@@ -500,7 +500,7 @@ AWS EC2 인스턴스에서 실행 중인 서버에 액세스하려면 인스턴�
 사용 방법 섹션에 있는 http://localhost:3000을 http://`EC2_PUBLIC_IPV4`:3000으로 변경하세요.
 
 ## AWS 배포의 다음 단계
-```
+
 
 
 

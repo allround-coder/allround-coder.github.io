@@ -129,7 +129,7 @@ add.js를 실행하여 소스 코드에서 파일을 추가한 후, 객체 저�
 ![이미지](/assets/img/2024-05-14-ImplementaSimpleVersionControlwithJavaScripttoUnderstandGitBetter_2.png)
 
 # 변경사항을 커밋하세요!
-```
+
 
 
 

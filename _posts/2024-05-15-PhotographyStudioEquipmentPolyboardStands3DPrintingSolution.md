@@ -29,7 +29,7 @@ link: "https://medium.com/@xiaobo_fu/photography-studio-equipment-polyboard-stan
 
 
 
-```markdown
+
 ![image1](/assets/img/2024-05-15-PhotographyStudioEquipmentPolyboardStands3DPrintingSolution_1.png)
 
 여기서 나는 첫 번째 디자인 과제를 만났어. 내가 소유한 프린터는 프루사 미니인데, 그 프린터가 인쇄할 수 있는 최대 크기는 18x18x18cm이야. 그건 50cm보다 훨씬 작아. 그래서 디자인을 세 부분으로 나눠서 만들기로 했어. 그리고 그 부분들을 목재 공작에서 빌린 도비테일 조인트라는 조인 기술로 결합하기로 계획했지.
@@ -37,7 +37,7 @@ link: "https://medium.com/@xiaobo_fu/photography-studio-equipment-polyboard-stan
 ![image2](/assets/img/2024-05-15-PhotographyStudioEquipmentPolyboardStands3DPrintingSolution_2.png)
 
 이점은 부품을 함께 유지하기 위해 추가 너트나 볼트가 필요 없다는 거야. 단순히 두 다리 부분을 중앙의 메인 부분에 넣으면 돼.
-```
+
 
 
 

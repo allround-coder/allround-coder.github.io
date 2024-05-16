@@ -124,6 +124,7 @@ React 파일 참조: .cshtml 파일에서 React 종속성 및 컴파일된 bundl
 
 ```jsx
 <div id="root"></div>
+```
 
 ## Scripts
 ```html
@@ -137,7 +138,7 @@ React 파일 참조: .cshtml 파일에서 React 종속성 및 컴파일된 bundl
 # 결과:
 
 MVC 애플리케이션 실행...완료!
-```
+
 
 
 

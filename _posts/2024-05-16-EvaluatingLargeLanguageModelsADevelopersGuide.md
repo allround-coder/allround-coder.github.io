@@ -122,7 +122,7 @@ UPTRAIN_API_KEY = getpass.getpass('Uptrain API Key: ')
 ```
 
 Import necessary modules
-```
+
 
 
 

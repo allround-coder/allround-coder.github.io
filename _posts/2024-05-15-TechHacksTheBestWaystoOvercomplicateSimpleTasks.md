@@ -21,7 +21,7 @@ link: "https://medium.com/@TheOstrichNetwork/tech-hacks-the-best-ways-to-overcom
 
 
 
-```markdown
+
 ![image1](/assets/img/2024-05-15-TechHacksTheBestWaystoOvercomplicateSimpleTasks_1.png)
 
 DIY Home Automation: When Flipping a Switch is Just Too Much Work
@@ -29,7 +29,7 @@ DIY Home Automation: When Flipping a Switch is Just Too Much Work
 Welcome to the world of DIY home automation, where every mundane task is transformed into a high-tech adventure. Who needs to flip a light switch when you can program your entire home from your smartphone? Set your blinds to open with the sunrise, your coffee to brew at the sound of your alarm, and your thermostat to adjust based on your mood swings. But beware: one wrong command and you might end up with the lights flickering like a disco and your smart speaker playing ‘The Chicken Dance’ on loop. It’s the future we always dreamed of, with a side of minor chaos.
 
 ![image2](/assets/img/2024-05-15-TechHacksTheBestWaystoOvercomplicateSimpleTasks_2.png)
-```
+
 
 
 
@@ -53,7 +53,7 @@ Welcome to the world of DIY home automation, where every mundane task is transfo
 
 
 
-```markdown
+
 ![Pet Tech: Because Your Dog Needs a Fitness Tracker](/assets/img/2024-05-15-TechHacksTheBestWaystoOvercomplicateSimpleTasks_5.png)
 
 개를 위한 기술: 당신의 개가 운동량 추적을 필요로 하는 이유
@@ -61,7 +61,7 @@ Welcome to the world of DIY home automation, where every mundane task is transfo
 당신의 개가 비밀리에 소파감자인지 궁금했던 적이 있나요? 반려동물 기술 덕분에 이제는 발바닥친구의 활동량, 식습관, 심지어 수면 패턴까지 추적할 수 있습니다. 스마트 칼라로 강아지를 장식하면 모든 걸그룹을 기록하고, 만일 피도가 매일 운동 목표를 달성하지 못했을 경우 알림을 받게 됩니다. 자동 급식기와 급수기는 늦게까지 늦근데도 반려동물이 굶주리지 않도록 보장합니다. 기술에 민감한 반려인을 위한 완벽한 솔루션이죠. 단지 칼라가 '산책하러 더 나가자'는 소리를 내면 개가 당신을 쳐다보고 있다는 사실에 놀라지 마세요.
 
 ![image](/assets/img/2024-05-15-TechHacksTheBestWaystoOvercomplicateSimpleTasks_6.png)
-```
+
 
 
 

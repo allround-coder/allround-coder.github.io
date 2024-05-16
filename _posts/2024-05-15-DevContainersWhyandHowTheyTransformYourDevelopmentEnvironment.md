@@ -86,7 +86,7 @@ Visual Studio Code의 Dev Containers 확장 기능을 사용하면 개발 컨테
 # 개발 컨테이너 사용
 
 개발 컨테이너를 사용하려면 먼저 Dev Containers 확장을 설치해야 합니다.
-```
+
 
 
 

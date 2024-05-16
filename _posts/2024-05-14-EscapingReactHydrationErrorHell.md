@@ -89,7 +89,7 @@ const BreakpointVaryingCTA = ({ showModel }) => {
 서버 측에서 미디어 쿼리 후크는 폭이 768px 미만이 아니기 때문에 false로 평가됩니다. 사실, 서버 측에서는 뷰포트 개념이 전혀 없습니다!
 
 클라이언트 측에서 데스크톱에서는 후크가 false로 해결되고 하이드레이션 매치를 얻을 수 있어 운이 좋습니다.
-```
+
 
 
 
@@ -144,7 +144,7 @@ const BreakpointVaryingCTA = ({ showModel }) => {
 
 
 
-```markdown
+```
 ![이미지](/assets/img/2024-05-14-EscapingReactHydrationErrorHell_2.png)
 
 브라우저에 따라 이러한 부적절한 요소가 수화 전에 DOM에서 제거될 수 있으며, React가 수화하려고 할 때 불일치가 발생할 수 있습니다.

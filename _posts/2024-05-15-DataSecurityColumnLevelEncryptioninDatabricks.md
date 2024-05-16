@@ -72,7 +72,7 @@ INSERT INTO tbl_Person VALUES(104, "Souvik Roy", "456789012345");
 SELECT * FROM tbl_person;
 ```
 
-Output -```  
+Output -
 
 
 
@@ -131,7 +131,7 @@ def encrypt_data(data, key):
 ## 단계 7: 델타 테이블의 암호화된 PII 데이터를 복호화하는 UDF 생성
 
 델타 테이블의 열 "Person_Adhar_No"에서 이미 암호화된 PII 데이터를 받아 들이는 다른 UDF를 만들어 보겠습니다. 그리고 생성된 "암호화 키"도 받아들입니다. 그런 다음, 이 UDF는 이미 암호화된 데이터를 복호화하기 위해 라이브러리 "Fernet"의 "decrypt ()" 함수를 호출할 것입니다.
-```
+
 
 
 

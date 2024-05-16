@@ -11,7 +11,7 @@ link: "https://medium.com/javascript-in-plain-english/simple-trick-to-make-your-
 ---
 
 
-```markdown
+```
 ![Simple Trick To Make Your Angular Routes Semi-Typed](/assets/img/2024-05-14-SimpleTrickToMakeYourAngularRoutesSemiTyped_0.png)
 
 링크나 버튼 요소의 [routerLink] 지시문이 하드 코딩된 값을 입력받는 프로젝트를 많이 본 적이 있습니다. 예를 들어:
@@ -21,7 +21,7 @@ link: "https://medium.com/javascript-in-plain-english/simple-trick-to-make-your-
 ```
 
 만약 언젠가 movie를 film으로, edit을 update로 변경하고 싶을 때 링크가 깨지는 경우가 발생할 수 있습니다. 그래서 저는 이에 대한 일종의 방어선으로 작동하는 작은 꼼수를 고안해보았습니다.
-```
+
 
 
 

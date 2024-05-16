@@ -109,7 +109,7 @@ git init
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-PushingYourFirstReactApptoGitHubAStep-by-StepGuide_7.png)
 
 GitHub의 원격 저장소 링크는 저장소 페이지에서 "Code" 버튼을 클릭하여 찾을 수 있습니다. 적절한 프로토콜을 선택(우리의 경우 HTTPS), URL을 클립보드에 복사하고, VS 코드 터미널에서 다음 명령을 실행합니다.
@@ -119,7 +119,7 @@ git remote add origin https://github.com/your-username/your-repo.git
 ```
 
 변경 내용을 스테이징하고 커밋하세요:
-```
+
 
 
 
@@ -143,4 +143,3 @@ git push -u origin main
 와우! 이렇게 하면 로컬 React 파일이 GitHub에 업로드되어 원격 저장소에서 액세스할 수 있습니다.
 
 ![이미지](/assets/img/2024-05-14-PushingYourFirstReactApptoGitHubAStep-by-StepGuide_8.png)
-```

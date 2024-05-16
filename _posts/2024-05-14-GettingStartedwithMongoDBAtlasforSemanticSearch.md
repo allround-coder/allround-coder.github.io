@@ -121,7 +121,7 @@ MongoDB Atlas Vector Search는 다음을 제공합니다:
 
 Markdown 형식으로 테이블 태그를 바꿔 주세요:
 
-```markdown
+
 ![이미지 1](/assets/img/2024-05-14-GettingStartedwithMongoDBAtlasforSemanticSearch_5.png)
 
 두 번째 컬렉션을 만들기 위해 데이터베이스 vector_search를 선택하거나 호버한 후, 플러스(+) 아이콘을 클릭하세요.
@@ -129,7 +129,7 @@ Markdown 형식으로 테이블 태그를 바꿔 주세요:
 ![이미지 2](/assets/img/2024-05-14-GettingStartedwithMongoDBAtlasforSemanticSearch_6.png)
 
 다음으로 vector_search 데이터베이스 내에 queries 컬렉션을 생성하세요:
-```
+
 
 
 

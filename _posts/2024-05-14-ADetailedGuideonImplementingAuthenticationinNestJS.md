@@ -143,7 +143,7 @@ export class UserEntity {
 
 
 
-```markdown
+
 ## 6. 인증 모듈 구현
 
 이 NestJS 모듈인 AuthModule은 컨트롤러, 서비스 및 가드를 포함한 인증 관련 컴포넌트를 캡슐화하고 조직화하기 위해 설계되었습니다. 전반적으로, AuthModule은 코드 조직화를 촉진하고 재사용성을 촉진하며 인증 관련 컴포넌트를 관리하는 중앙 모듈로 작용합니다. 가드, 서비스의 사용 및 JwtModule 및 TypeOrmModule과 같은 외부 모듈의 구성은 NestJS에서 모듈화되고 확장 가능한 애플리케이션 아키텍처에 가장 적합한 방법을 따릅니다.
@@ -351,7 +351,7 @@ export class UsersModule {}
 - providers 배열: UsersService를 providers 배열에 포함합니다. 이는 UsersService가 모듈 전반에 걸쳐 injectable하게 만듭니다.
 
 2. exports 배열: UsersService를 exports 배열에 추가합니다. 즉, UsersModule을 import하는 다른 모듈에서 UsersService를 사용할 수 있습니다.
-```  
+  
 
 
 
@@ -397,7 +397,7 @@ UsersService는 사용자 관련 작업에 대한 로직을 캡슐화하여 사�
 ## Swagger에 따라 모든 것이 잘 설정되었습니다 😜:
 
 <img src="/assets/img/2024-05-14-ADetailedGuideonImplementingAuthenticationinNestJS_1.png" />
-```
+
 
 
 

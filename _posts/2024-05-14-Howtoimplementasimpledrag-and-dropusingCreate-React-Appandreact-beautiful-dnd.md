@@ -56,7 +56,7 @@ react-beautiful-dnd가 무엇인지 모른다면 괜찮아요. Atlassian 팀에�
 그리고 App.css 파일에서 다음을 수행할 거예요:
 
 ![이미지](/assets/img/2024-05-14-Howtoimplementasimpledrag-and-dropusingCreate-React-Appandreact-beautiful-dnd_4.png)
-```
+
 
 
 
@@ -83,7 +83,7 @@ background: green;
 <img src="/assets/img/2024-05-14-Howtoimplementasimpledrag-and-dropusingCreate-React-Appandreact-beautiful-dnd_5.png" />
 
 좋아요, 쉬운 부분이죠? 그런데, Droppable 구성 요소에도 droppableId라는 속성이 필요합니다. 왜 그런지 궁금할 수 있습니다. HTML 페이지 전체에는 1개 이상의 놓을 수있는 영역이 있을 수 있으며 react-beautiful-dnd는 무슨일이든 요소를 놓는 지점을 식별해야 합니다. 그래서 id를 추가해 보겠습니다. 이는 문자열이면 무엇이든 상관없습니다. 저는 "boxes"라고 부를 것입니다.
-```
+
 
 
 

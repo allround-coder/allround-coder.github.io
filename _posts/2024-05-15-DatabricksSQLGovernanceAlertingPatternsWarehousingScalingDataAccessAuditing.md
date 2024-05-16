@@ -13,13 +13,13 @@ link: "https://medium.com/dbsql-sme-engineering/databricks-sql-governance-alerti
 
 아래와 같이 Markdown 형식으로 표 태그를 변경해주세요.
 
-```markdown
+
 | Tag | Description |
 | --- | ----------- |
 | <html> | Defines an HTML document |
 | <body> | Defines the body of the HTML document |
 | <h1> | Defines a large heading |
-```
+
 
 
 
@@ -164,11 +164,11 @@ order by
 ## 데이터 적재 및 경보 파이프라인 설정
 
 데이터를 적재하고 웨어하우스 관리자에게 사이즈를 재구성해야 할 때를 알려주는 경보를 활성화하는 Databricks 워크플로우를 설정할 수 있습니다. 이를 위해 먼저 위의 쿼리들 각각에 대한 두 개의 경보를 설정할 수 있습니다. 여기 예시에서는 임계값을 0보다 큰 고유한 웨어하우스로 설정하여, 디스크 스파일이나 대기 시간 초과가 발생할 때마다 경보가 트리거됩니다.
-```
 
 
 
-```markdown
+
+
 ![Databricks SQL Governance Alerting Patterns Warehousing Scaling Data Access Auditing 1](/assets/img/2024-05-15-DatabricksSQLGovernanceAlertingPatternsWarehousingScalingDataAccessAuditing_1.png)
 
 ![Databricks SQL Governance Alerting Patterns Warehousing Scaling Data Access Auditing 2](/assets/img/2024-05-15-DatabricksSQLGovernanceAlertingPatternsWarehousingScalingDataAccessAuditing_2.png)
@@ -176,7 +176,7 @@ order by
 쿼리 임계값(디스크로 스파일되는 크기 및 대기 시간)과 경고 임계값은 성능이 느린 쿼리에 대한 허용 수준에 따라 조정할 수 있습니다. 또한 쿼리 스파일 비율이나 쿼리 스파일 빈도에 따라 경고도 트리거할 수 있으며, 이는 데이터 웨어하우스를 확장하거나 쿼리 자체의 문제를 식별할 필요가 있음을 더 잘 나타낼 수 있습니다. 이러한 경고가 설정되면 먼저 쿼리 이력 API 데이터 처리 노트북을 실행하고 이러한 경고를 새로 고침하는 워크플로우를 생성할 수 있습니다. 워크플로에 경고를 추가하려면 "작업 추가" 버튼을 클릭한 후 SQL - 경고 옵션을 선택합니다. 이전 단계에서 생성한 경고를 선택하여 최종 워크플로 작업 다이어그램을 얻을 수 있습니다.
 
 이 워크플로는 데이터 웨어하우스의 성능 허용 수준에 따라 매 시간 또는 매일 실행되도록 예약할 수 있습니다. 쿼리 이력 시스템 테이블이 공개 미리보기로 제공되면 데이터 처리를 제거하고 이러한 경고를 DBSQL에서 직접 실행하도록 트리거할 수 있습니다!
-```
+
 
 
 
@@ -244,7 +244,7 @@ WHERE
 이 쿼리를 매 시간 실행하고 결과 레코드가 반환되면 데이터의 행 수를 선택하여 반환된 값이 0보다 크면 경고를 설정할 수 있습니다.
 
 <img src="/assets/img/2024-05-15-DatabricksSQLGovernanceAlertingPatternsWarehousingScalingDataAccessAuditing_3.png" />
-```
+
 
 
 

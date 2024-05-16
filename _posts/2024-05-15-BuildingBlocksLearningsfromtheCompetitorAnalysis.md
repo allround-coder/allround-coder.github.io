@@ -41,7 +41,7 @@ https://achinthaisuru444.medium.com/a-deep-dive-into-mobile-sdks-for-app-native-
 
 
 
-```markdown
+
 ![Architecture](/assets/img/2024-05-15-BuildingBlocksLearningsfromtheCompetitorAnalysis_1.png)
 
 우리는 위 다이어그램에 표시된대로 총 모바일 SDK 아키텍처를 설계했습니다. 이 아키텍처를 통해 안드로이드와 iOS에서 앱 네이티브 인증 로직을 구현하고 이를 크로스 플랫폼 기술에서 재사용함으로써 개발 프로세스를 간소화할 수 있습니다.
@@ -49,7 +49,7 @@ https://achinthaisuru444.medium.com/a-deep-dive-into-mobile-sdks-for-app-native-
 ## 저장소 아키텍처
 
 대부분의 경쟁사는 SDK를 독립된 저장소에서 개발하는 반면, 우리는 모든 모바일 SDK에 대해 단일 저장소를 사용하기로 결정했습니다. 이 결정은 네이티브 및 크로스 플랫폼 SDK 간 변경 사항의 전파를 용이하게 하기 위해 내려졌습니다. 우리가 예상하는 한 가지 도전 과제는 다양한 SDK를 다른 플랫폼 (예: 안드로이드는 Maven Central 및 Flutter는 pub.dev로)에 발행해야 한다는 점입니다. 우리는 이 도전 과제를 각 기술에 대해 별도의 GitHub actions를 실행하여 해결할 계획입니다.
-```
+
 
 
 

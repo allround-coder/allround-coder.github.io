@@ -11,7 +11,7 @@ link: "https://medium.com/@sajjadjavadi/creating-stunning-hover-effects-in-react
 ---
 
 
-```markdown
+
 ![Card Hover Effect](https://miro.medium.com/v2/resize:fit:1200/1*Cm18EAy6mzdv8N4iOpm1mA.gif)
 
 이 글에서는 React를 사용하여 매혹적인 카드 호버 효과를 구현하는 방법을 살펴봅니다. 커서를 따라 움직이는 동적 라이트 효과를 추가하는 과정부터 사용자 경험을 몰입적이고 시각적으로 매력적으로 만드는 것까지 다룰 것입니다. 마우스 이벤트 처리부터 부드러운 애니메이션 및 성능 최적화까지, 웹 프로젝트를 높이는 눈에 띄는 카드 상호작용을 만드는 데 필요한 모든 것을 다룰 것입니다.
@@ -27,7 +27,7 @@ function CardWithAnimationComponent({children}: { children: ReactNode }) {
     );
 }
 ```   
-```  
+  
 
 
 
@@ -98,7 +98,7 @@ function CardWithAnimationComponent({children}: { children: ReactNode }) {
 
 
 
-```markdown
+
 ![이미지](https://miro.medium.com/v2/resize:fit:1200/1*Q9mUuviNZgZdAB_iUsmfkg.gif)
 
 마우스 커서를 따라 이동하는 빛이 있지만 2 가지 문제가 있습니다. 먼저, 빛이 커서의 중심이 아니며 둘째로 마우스가 div 영역을 벗어나면 빛이 사라지지 않습니다.
@@ -106,7 +106,7 @@ function CardWithAnimationComponent({children}: { children: ReactNode }) {
 ## 빛의 위치 수정하기
 
 이 문제를 해결하기 위한 아이디어 중 하나는:
-```  
+  
 
 
 
@@ -205,8 +205,7 @@ function CardWithAnimationComponent({children}: { children: ReactNode }) {
 
 
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1200/1*Fu0K11BdC_r-j1gLHidQfA.gif)
 
 ❤️ 이 기사를 읽어 주셔서 감사합니다. 여러분의 생각을 듣고 싶습니다. 저에 대해 더 알고 싶으시면 제 웹사이트를 방문해주세요:
-```

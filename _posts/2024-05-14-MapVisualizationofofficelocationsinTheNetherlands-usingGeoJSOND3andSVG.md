@@ -81,7 +81,7 @@ SVG 모양을 렌더링할 때 적절한 스타일 클래스 할당하기:
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-MapVisualizationofofficelocationsinTheNetherlands-usingGeoJSOND3andSVG_7.png)
 
 생성된 지도는 다음과 같이 보입니다:
@@ -89,7 +89,7 @@ SVG 모양을 렌더링할 때 적절한 스타일 클래스 할당하기:
 ![이미지](/assets/img/2024-05-14-MapVisualizationofofficelocationsinTheNetherlands-usingGeoJSOND3andSVG_8.png)
 
 모든 도시 지역이 강조되어 있습니다. 각각에는 호버 텍스트에 해당하는 이름이 있습니다. 그리고 도시 지역도 마찬가지로 선택할 수 있습니다:
-```
+
 
 
 
@@ -103,7 +103,7 @@ SVG 모양을 렌더링할 때 적절한 스타일 클래스 할당하기:
 
 
 
-```markdown
+
 ![사무실 위치 지도 시각화](/assets/img/2024-05-14-MapVisualizationofofficelocationsinTheNetherlands-usingGeoJSOND3andSVG_10.png)
 
 생성된 지도:
@@ -111,7 +111,7 @@ SVG 모양을 렌더링할 때 적절한 스타일 클래스 할당하기:
 ![사무실 위치 지도 시각화](/assets/img/2024-05-14-MapVisualizationofofficelocationsinTheNetherlands-usingGeoJSOND3andSVG_11.png)
 
 네덜란드 지리에 익숙하신 분들은 이 도시 원들이 실제 도시가 위치한 곳에 모두 있는 것이 아니라는 점을 알 수 있을 것입니다. 분명히, 도시 영역을 경계 지정하는 직사각형의 중심이 항상 실제 도시 중심과 같은 곳에 있는 것이 아닙니다.
-```
+
 
 
 

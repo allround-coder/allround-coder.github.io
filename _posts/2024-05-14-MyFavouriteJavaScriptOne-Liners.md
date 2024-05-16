@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/my-favourite-javascript-one-liners-0e11f7
 ---
 
 
-```markdown
+
 ![My Favourite JavaScript One-Liners](/assets/img/2024-05-14-MyFavouriteJavaScriptOne-Liners_0.png)
 
 오늘은 다양한 코딩 과제에서 많은 도움을 받은 가장 유용하고 간단한 JavaScript 원 라이너를 여러분과 공유하고 싶어요.
@@ -19,7 +19,7 @@ link: "https://medium.com/gitconnected/my-favourite-javascript-one-liners-0e11f7
 다음의 속임수를 사용함으로써 복잡한 함수를 프로그래밍하는 데 많은 작업을 줄일 수 있어요.
 
 그러니 이제 말이 더 필요 없죠! 함께 시작해봐요!
-```
+
 
 
 
@@ -93,7 +93,7 @@ copyToClipboard(textToCopy);
 - copyToClipboard 함수는 임시 텍스트영역 요소를 생성하여 해당 값으로 설정하고, 문서 바디에 추가한 뒤 해당 내용을 선택하고, 복사 명령을 실행하여 마지막으로 DOM에서 텍스트영역 요소를 제거합니다.
 - "안녕하세요, 세상!"을 복사할 텍스트로 교체해주세요.
 
-```markdown
+```
 console.table
 ```
 

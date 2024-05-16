@@ -11,7 +11,7 @@ link: "https://medium.com/@EladyDev/my-first-project-a-failure-9a8109d5b880"
 ---
 
 
-```markdown
+
 ![My First Project](/assets/img/2024-05-15-MyfirstprojectAfailure_0.png)
 
 As a Junior Software Engineer, this was my first project. Throughout the process, I made several mistakes but also gained a great deal of knowledge. For my future self and for anyone who might be interested in learning from others' mistakes, I am listing those blunders and lessons here on my blog.
@@ -24,7 +24,7 @@ As a Junior Software Engineer, this was my first project. Throughout the process
 - The trickiest technical problem
 - What I have discovered
 - Conclude
-```
+
 
 
 
@@ -40,7 +40,7 @@ Kura는 사람들과 기관 사이의 거리를 좁히려는 시도를 하는 �
 
 
 
-```markdown
+
 ![My First Project: A Failure](/assets/img/2024-05-15-MyfirstprojectAfailure_1.png)
 
 간단합니다. 프론트 엔드에서 플라스크 API 엔드포인트를 가져오며, API는 데이터베이스와 상호 작용하여 요청에 응답합니다.
@@ -56,7 +56,7 @@ Tailwind를 사용하여 다양한 화면에서 앱을 쉽게 스타일링할 �
 ```javascript
 md:w-[90vw]
 ```
-```
+
 
 
 
@@ -133,7 +133,7 @@ const poll = {title, description,
 ![결과](https://miro.medium.com/v2/resize:fit:1400/1*HzGlErv-hjWXWkf95sOWFA.gif)
 
 나쁘지 않네요
-```
+
 
 
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@enestalayy/data-fetching-with-nuxt-3-ede89fb0509f"
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-05-14-DataFetchingwithNuxt3_0.png)
 
 Table of Contents
@@ -24,7 +24,7 @@ Table of Contents
 - 캐싱 및 재검색
 
 # 소개
-```
+
 
 
 

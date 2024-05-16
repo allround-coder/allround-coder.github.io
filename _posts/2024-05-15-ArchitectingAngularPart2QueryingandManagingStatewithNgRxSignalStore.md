@@ -80,7 +80,7 @@ export const TodosStore = signalStore(
 데이터와 오류 속성은 로드될 때까지 기본적으로 정의되지 않기 때문에 초기 상태는 로딩 플래그만으로 설정할 수 있습니다. 그런 다음, 상태를 연결하여 상점을 설정합니다. 이것은 이전에 설명한 메커니즘을 사용하여 원하는 대로 변경할 수 있는 가장 기본적인 구현입니다.
 
 ...하지만 다르게 보일 수도 있습니다.
-```
+
 
 
 
@@ -154,7 +154,7 @@ export const TodosStore = signalStore(
 더불어 RxJs의 강력함을 활용하기 위해 rxMethod를 사용할 것입니다. loadAll 함수를 호출하면 void 타입의 스트림이 생성됩니다. 그런 다음 스트림에 탭하여 우리가 만든 함수를 통해 상태를 로딩으로 설정할 수 있습니다. 이를 통해 스피너 등을 표시할 수 있습니다. 요청으로 스트림을 전환하고 마지막으로 @ngrx/operators 패키지의 tapResponse 연산자를 활용할 것입니다. 여기서 next에는 상태의 데이터 필드에 Todos를 설정하고, 요청이 실패한 경우에는 오류를 설정하고, 스트림이 완료되면 로딩을 false로 설정할 수 있습니다.
 
 ## Entity Management makes a comeback
-```
+
 
 
 
@@ -320,7 +320,7 @@ export class TodoDialogComponent {
 요약하면 CRUD 기능을 커플 컴포넌트에서 구현했습니다. 초기에 OnInit 후크를 통해 데이터를로드하는 목록이 있습니다. 이 목록에는 한 열에서 다른 열로 항목을 이동할 때 저장소 업데이트를 호출하는 드래그 앤 드롭 기능이 있습니다. 게다가, ID가 있는지 여부에 따라 업데이트 또는 추가 메서드를 호출하는 재사용 가능한 대화 상자가 있습니다.
 
 <img src="/assets/img/2024-05-15-ArchitectingAngularPart2QueryingandManagingStatewithNgRxSignalStore_1.png" />
-```
+
 
 
 

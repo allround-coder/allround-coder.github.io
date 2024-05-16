@@ -88,7 +88,7 @@ motherPromise
 
 
 
-```markdown
+
 ![Promise States](/assets/img/2024-05-14-TheHowandWhyofPromisesinJavaScript_3.png)
 
 여기서 [[PromiseState]]는 Promise 객체의 상태를 나타냅니다. Promise는 다음 중 하나의 상태를 가질 수 있습니다:
@@ -96,7 +96,7 @@ motherPromise
 a. pending-: Promise 객체가 생성될 때의 초기 상태입니다. Promise 객체의 해결 또는 거부에 의해 변경될 것을 기다리고 있습니다.
 
 b. fulfilled-: Promise가 해결되었음을 나타내는 상태이거나 비동기 작업이 성공했음을 의미합니다.
-```
+
 
 
 
@@ -420,7 +420,7 @@ const promise1 = new Promise((resolve,reject) => {
 
 이건 중요한 사례야. 코드 1에서, then() 내부의 Handler 함수가 오류를 "throw" 했어. 이는 핸들러 메서드에서 무언가가 실패했기 때문에 then()에서 반환된 프로미스가 오류로 거부된 것을 의미해. 그러나 코드 2에서는 아무 문제가 없어. 핸들러 메서드에서 새 Error 객체가 반환되었을 뿐이라서 then()에서 반환된 프로미스가 이행되고 이제 그 [[PromiseResult]]에는 Error 객체가 포함돼.
 
-```
+
 
 [마지막] 예시 5:
 
@@ -520,7 +520,7 @@ promise.then()
 
 
 
-```md
+md
 ![](/assets/img/2024-05-14-TheHowandWhyofPromisesinJavaScript_15.png)
 
 동일한 Promise 객체에 여러 핸들러를 연결하고 싶은 이유를 묻는다면? 동일한 비동기 작업의 결과에 여러 부분이 의존할 때 이 작업이 수행됩니다.
@@ -563,7 +563,7 @@ motherPromise.catch((resolveValue) =>
 Error: 우유가 너무 끓어서 따라서 엎어진 우유를 씁니다
 */
 ```
-```
+
 
 
 
@@ -577,7 +577,7 @@ Error: 우유가 너무 끓어서 따라서 엎어진 우유를 씁니다
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-TheHowandWhyofPromisesinJavaScript_16.png)
 
 Promises로 시작한 사람들이 가장 헷갈리는 것 중 하나에요. 일반적인 오해는 then()/catch()/finally()이 비동기적으로 실행된다는 것, 즉 프로미스가 해결되거나 거부될 때만 실행된다는 것입니다. 하지만 실제로는 그렇지 않아요. 실제로 이들은 현재 프로미스가 해결되거나 거부될 때까지 기다리지 않고 JS 해석기에 의해 동기적으로 실행됩니다. 그 결과 then()/catch()/finally() 메소드는 "pending" 상태의 프로미스를 반환하게 됩니다. 참고: 이 상태는 후속 핸들러 메소드의 반환 값에 따라 나중에 변경될 수 있어요. 실제로는 핸들러 메소드(onFulfillment(), onRejection() 및 onFinally())가 비동기적으로 실행되며, then()/catch()/finally() 메소드에 의해 현재 프로미스 인스턴스의 상태에 따라 실행될 예정입니다. 아래에서 확인할 수 있어요:
@@ -619,7 +619,7 @@ function boilMilk(resolve, reject) {
 ```
 
 ![이미지](/assets/img/2024-05-14-TheHowandWhyofPromisesinJavaScript_17.png)
-```
+
 
 
 
@@ -718,7 +718,7 @@ Promise.resolve('해결됨:')
 
 
 
-```markdown
+
 ![이미지1](/assets/img/2024-05-14-TheHowandWhyofPromisesinJavaScript_21.png)
 
 ![이미지2](/assets/img/2024-05-14-TheHowandWhyofPromisesinJavaScript_22.png)
@@ -726,11 +726,11 @@ Promise.resolve('해결됨:')
 이렇게 하는 이유는 코드 2에서 반환된 거부된 하위 프로미스가 연쇄적으로 처리기인 onRejection() 핸들러에 의해 처리되지만, 코드 1에서는 그렇지 않기 때문입니다.
 
 # 섹션 9: 몇 가지 까다로운 코드 스니펫의 출력 예측
-```
 
 
 
-```markdown
+
+
 ![이미지](/assets/img/2024-05-14-TheHowandWhyofPromisesinJavaScript_23.png)
 
 이 섹션의 제목은 이 기사의 첫 번째 섹션이었다면 더 적절했을 것 같습니다. 지금까지 프로미스에 대해 충분히 익숙할 텐데 말이죠. 하지만 여전히 살펴봐야 할 복잡한 경우들이 있을 수 있다고 생각합니다. 그래서 이제 시작해 볼게요-:
@@ -747,7 +747,7 @@ Promise.resolve('해결됨:')
 
 (()=>console.log("월요일-> "))();
 ```
-```
+
 
 
 
@@ -777,12 +777,12 @@ letsResolveThisOutside("나 죽었나?");
 
 Markdown 형식의 표입니다:
 
-```
+
 | Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
 | Paragraph | Text |
-```
+
 
 이것은 두 가지 이유 때문입니다. 첫 번째로, "var" 변수가 전역 공간에 정의되어 있고 Executor 함수 내부가 아닌 곳에 있기 때문에 코드 어디에서든 접근이 가능합니다 (심지어 Promise 클래스 내부에서도). 두 번째로, JS가 동기적 언어이므로 onFulfillment() 핸들러가 이미 실행이 예약되어 있었기 때문에, 우리가 마지막으로 letsResolveThisOutside() 메서드를 호출했을 때 Promise가 해결되고 Callback 핸들러가 호출되었습니다.
 
@@ -906,7 +906,7 @@ roomCleaningPromise.catch(function goLaundryAfterNoCleaning(errorValue) {// catc
 
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-14-TheHowandWhyofPromisesinJavaScript_26.png)
 
 로그에 추가로 Uncaught Rejected Promise 오류가 표시되고 이미 섹션 7에서 왜 이러한 오류가 발생하는지, 이 문제에 대한 해결책을 이미 알고 있습니다. 이 문제를 빠르게 해결해 봅시다:
@@ -957,7 +957,7 @@ roomCleaningPromise.catch(function goLaundryAfterNoCleaning(errorValue) {// catc
 ```
 
 이 코드는 완벽하게 작동하지만 전문적이지 않은 방식으로 작성된 코드입니다. .catch(()=`''')를 보고 목적을 알기 어려울 것입니다. 따라서 이 작업을 더 나은 방법으로 해결하고 전문적인 모듈식 코드를 작성하는 것이 좋습니다. 같은 해결책을 생각했을 것으로 기대합니다:
-```
+
 
 
 
@@ -1015,7 +1015,7 @@ roomCleaningPromise
 # 섹션 10: 프로미스가 어떻게 구현되는지 이해하기 위해 사용자 정의 프로미스 만들기.
 
 <img src="/assets/img/2024-05-14-TheHowandWhyofPromisesinJavaScript_27.png" />
-```
+
 
 
 

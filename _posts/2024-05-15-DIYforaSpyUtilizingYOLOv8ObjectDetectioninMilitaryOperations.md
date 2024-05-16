@@ -117,18 +117,18 @@ results = model.train()
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-15-DIYforaSpyUtilizingYOLOv8ObjectDetectioninMilitaryOperations_10.png)
-```
+
 
 번역:
 이미지 태그를 Markdown 형식으로 변경해주세요.
 
 작업이 완료되었으면, Google Colab 스크립트에서 일반적으로 하는 것처럼 YOLOv8 모델 훈련 프로세스를 시작할 수 있습니다.
 
-```markdown
+
 ![image](/assets/img/2024-05-15-DIYforaSpyUtilizingYOLOv8ObjectDetectioninMilitaryOperations_11.png)
-```
+
 
 해당 큰 데이터 세트에 대한 훈련 프로세스는 대략 3-4시간이 소요될 것입니다. 그러나 진행 상황은 Google Colab 목록에서만 확인하는 것이 적합하지 않을 수 있기 때문에 YOLOv8 모델 웹페이지의 특별 진행률 표시줄을 사용하여 모니터링할 수 있습니다.
 

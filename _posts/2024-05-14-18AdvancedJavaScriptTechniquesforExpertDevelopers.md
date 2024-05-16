@@ -11,7 +11,7 @@ link: "https://medium.com/javascript-in-plain-english/18-advanced-javascript-tec
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-05-14-18AdvancedJavaScriptTechniquesforExpertDevelopers_0.png" />
 
 # 브라우저
@@ -19,11 +19,10 @@ link: "https://medium.com/javascript-in-plain-english/18-advanced-javascript-tec
 # 전체 화면 달성하기 🖥️
 
 현재 화면을 전체 화면으로 표시해야 할 때
+
+
+
 ```
-
-
-
-```markdown
 # 전체 화면으로 변환하기 ✨
 
 ```js
@@ -104,7 +103,7 @@ window.print()
 
 
 
-```markdown
+```
 ```js
 window.onbeforeunload = function(){
     return 'haorooms 블로그를 나가시겠습니까? 🚪🤔';
@@ -231,11 +230,11 @@ document.addEventListener(
 # 로컬 이미지 미리보기 🌄
 
 클라이언트로부터 이미지를 받았지만 즉시 서버에 업로드할 수 없고 미리보기해야 하는 경우
+
+
+
+
 ```
-
-
-
-```markdown
 <!-- 이미지 업로드 및 미리보기 📸 -->
 <div class="test">
     <input type="file" name="" id="">

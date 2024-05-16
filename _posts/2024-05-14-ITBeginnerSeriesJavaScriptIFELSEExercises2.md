@@ -287,7 +287,7 @@ Good afternoon!
 ```
 
 ## Exercise #9 — BMI Calculator
-```
+
 
 
 

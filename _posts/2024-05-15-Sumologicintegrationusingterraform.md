@@ -52,7 +52,7 @@ Sumologic 대시보드에서 모니터를 만드는 "Create a Monitor"를 클릭
 
 
 
-```markdown
+
 ![Sumologic Integration using Terraform - Screenshot 4](/assets/img/2024-05-15-Sumologicintegrationusingterraform_4.png)
 
 ```js
@@ -87,11 +87,11 @@ trigger_condition {
    }
 }
 ``` 
-```
 
 
 
-```markdown
+
+
 ![image](/assets/img/2024-05-15-Sumologicintegrationusingterraform_6.png)
 
 ```js
@@ -106,7 +106,7 @@ resource "sumologic_monitor" "any_name" {
 ![image](/assets/img/2024-05-15-Sumologicintegrationusingterraform_7.png)
 
 통지를 위해 Slack, Webhook, Email 등과 같은 다양한 connection_type을 설정할 수 있습니다. sumologic 대시보드에 이미 있는 연결에 connection_id를 지정하거나 사용자 정의 연결을 만들고 알림 페이로드를 생성할 수 있습니다.
-```
+
 
 
 

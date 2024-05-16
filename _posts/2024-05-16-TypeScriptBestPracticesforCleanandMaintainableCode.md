@@ -62,7 +62,7 @@ strictNullChecks를 활성화하면 TypeScript는 컴파일 시간에 input이 n
 1. Type Annotations과 Interfaces: TypeScript의 가장 큰 강점은 정적 타입 시스템에 있습니다. 타입 주석과 인터페이스를 활용하여 코드를 문서화하는 동시에 개발자와 도구에게 소중한 지원을 제공할 수 있습니다. 복잡한 데이터 구조에 대해 명확한 인터페이스를 정의하고 함수 매개변수와 반환 타입에 대해 타입 주석을 사용하여 명확성과 유지보수성을 보장하세요.
 
 2. "any" 타입 사용 지양: TypeScript는 타입을 모르거나 동적인 상황에서 any 타입을 제공하나 최소화하는 것이 좋습니다. any 타입은 사실상 타입 검사를 건너뛰는 것이므로 TypeScript의 주요 장점 중 하나를 약화시킵니다. 대신 변수와 함수를 명시적으로 타입 지정하고 TypeScript의 타입 시스템의 전체 장점을 활용하세요.
-```
+
 
 
 
@@ -145,7 +145,7 @@ console.log(`${user2.name} lives in ${user2City}, ${user2Country}`); // 출력: 
 6. 유틸리티 타입: TypeScript는 다른 타입을 조작하는 데 사용할 수 있는 일련의 유틸리티 타입을 제공합니다. 일반적으로 사용되는 유틸리티 타입에는 Partial, Pick, Omit, Record, Exclude, Extract, NonNullable 등이 있습니다.
 
 간단한 User 타입을 사용하여 유틸리티 타입을 사용하는 예제를 만들어보고 일부 유틸리티 타입을 시연해보겠습니다:
-```
+
 
 
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@decodementor/tailwindcss-library-you-should-know-and-
 ---
 
 
-```markdown
+
 ![TailwindCSS Libraries](/assets/img/2024-05-15-TailwindCSSlibrariesyoushouldknowanduse_0.png)
 
 Tailwindcss는 유틸리티 우선 CSS 프레임워크입니다. 핵심 원칙은 작고 단일 목적의 CSS 클래스 모음을 제공하여 웹 요소에 원하는 스타일을 달성할 수 있는 유틸리티 도구 같은 것입니다.
@@ -19,7 +19,7 @@ Tailwindcss는 유틸리티 우선 CSS 프레임워크입니다. 핵심 원칙�
 Tailwindcss는 2017년 Tailwind Labs의 CEO인 Adam Wathan과 일부 기여자들에 의해 만들어졌습니다. 이 프레임워크는 HTML을 떠나지 않고도 개발자가 현대적인 웹 애플리케이션을 구축하는 데 도움을 주도록 설계되었습니다. Tailwindcss는 기존의 프레임워크보다 디자인 프로세스에 대한 유연성과 제어를 더 많이 제공합니다. 미리 구축된 구성 요소로 제한받지 않고 개발자들이 원활한 작업 흐름을 갖게 되도록 합니다. 그 유연성과 쉬운 통합 덕분에 Tailwindcss는 매우 인기 있는 CSS 프레임워크가 되었으며 React, Next, Vue와 같은 대부분의 프론트엔드 프레임워크에서 선호하는 선택이 되었습니다.
 
 TailwindCSS 위에 구축된 많은 타사 구성 요소 라이브러리가 있습니다. 이러한 라이브러리는 Tailwind의 유틸리티 클래스로 이미 스타일이 적용된 버튼, 내비게이션 바, 모달 창 등과 같은 미리 구축된 구성 요소를 제공합니다. 이 기사에서는 Tailwind CSS를 통해 빠른 개발과 프로젝트 간 일관된 디자인을 활용할 수 있는 최고의 5가지 tailwindcss 라이브러리를 소개하겠습니다.
-```
+
 
 
 

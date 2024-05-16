@@ -649,7 +649,7 @@ p {
 
 
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1260/1*_KW7zAxitBpOe3HrAqHHfw.gif)
 
 ![image](/assets/img/2024-05-14-GettingStartedwithLexicalRichTextEditorforReact_8.png)
@@ -663,7 +663,7 @@ p {
 X<sub>Sub</sub>
 X<sup>Super</sup>
 <mark><strong><em><ins><u><strike><sub>All of them</sub></strike></u></ins></em></strong></mark>
-```
+
 
 
 

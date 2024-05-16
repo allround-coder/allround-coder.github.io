@@ -11,7 +11,7 @@ link: "https://medium.com/@essaadani.yo/improve-your-application-performance-nod
 ---
 
 
-```markdown
+
 ![사진](/assets/img/2024-05-14-ImproveyourapplicationperformanceNodeJsandRedis_0.png)
 
 데이터베이스에서 데이터를 가져올 때마다 서버에 요청이 들어올 때마다 대기하는 것에 지쳤나요? 연결을 열고 쿼리를 실행하는 것은 애플리케이션의 속도를 늦출 수 있습니다. 그러나 만약 그 모든 것을 우회할 수 있는 방법이 있다면 어떨까요?
@@ -19,7 +19,7 @@ link: "https://medium.com/@essaadani.yo/improve-your-application-performance-nod
 캐싱이 바로 그 방법입니다.
 
 캐싱을 사용하면 자주 액세스하는 데이터를 임시 저장소에 저장하여 가져오는 데 걸리는 시간을 현저히 줄일 수 있습니다. 그리고 Redis는 Node.js 애플리케이션의 완벽한 동반자인 고속인 메모리 데이터 저장소입니다.
-```
+
 
 
 

@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/chrome-console-utilities-that-every-devel
 ---
 
 
-```
+
 ![ChromeConsoleUtilities](/assets/img/2024-05-14-ChromeConsoleUtilitiesThatEveryDeveloperShouldKnow_0.png)
 
 모든 표준 웹 브라우저는 일반적으로 개발자가 웹 앱을 디버깅할 수 있는 도구를 제공합니다. 예를 들어 대부분의 브라우저에는 내장된 JavaScript 디버거, DOM 트리 인스펙터, 네트워크 모니터 및 네트워크 속도 시뮬레이터가 있습니다. 인기 있는 Google Chrome 브라우저는 생산성 중심의 웹 앱 디버깅 기능을 제공하는 잘 알려진 DevTools 툴킷을 제공합니다. DevTools 프로토콜 덕분에 네이티브 웹 앱 디버깅 외에도 Chrome에서 TypeScript, Deno, Node.js 및 React Native 앱을 디버깅할 수 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/gitconnected/chrome-console-utilities-that-every-devel
 웹 앱 디버깅 프로세스는 주로 브라우저 콘솔, 디버거 인터페이스 및 DOM 인스펙터를 사용합니다. 웹 개발자들은 보통 브라우저 콘솔을 사용하여 디버깅과 실험적인 목적을 위해 빠른 코드 조각을 실행하고 디버깅 관련 로그 값을 확인합니다. Chrome은 GNU/Linux 터미널에서 개발자 생산성을 높이는 Bash 해석기와 같은 여러 생산성 중심 단축키를 제공하여 콘솔에서 코드 조각을 효율적으로 작성하는 데 도움을 줍니다. 이러한 Chrome 콘솔 유틸리티 단축키를 사용하여 웹 애플리케이션 디버깅 관련 작업(예: 인스펙터에서 선택된 DOM 요소 가져오기)을 빠르게 처리할 수 있습니다. 이러한 콘솔 유틸리티는 브라우저 콘솔에서만 작동하므로 웹 앱 소스 파일에서 이름 충돌을 걱정할 필요가 없습니다.
 
 이 기사에서는 Chrome에서 사용할 수 있는 여러 콘솔 유틸리티를 설명하여 웹 애플리케이션을 더 빠르게 디버깅할 수 있도록 도와드리겠습니다. 디버깅 활동 중에 번거롭고 긴 코드 입력이 필요한 마우스 클릭이나 입력을 피하고 Chrome 콘솔에서 이러한 빠른 단축키를 사용하세요.
-```
+
 
 
 
@@ -84,7 +84,7 @@ const doc = {
 
 
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*kDCuc9qJcb5Af0z8nH0FOQ.gif)
 
 "values" 함수는 특정 객체의 모든 값을 출력하는 효율적인 방법을 제공합니다:
@@ -92,7 +92,7 @@ const doc = {
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*1eIQH3rgOnfb6Po5Kgu5hQ.gif)
 
 다음 이야기는 경험 많은 웹 개발자로서 알아야 할 새로운 브라우저 API를 설명합니다:
-```
+
 
 
 

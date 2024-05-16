@@ -52,7 +52,7 @@ Databricks에서 PySpark API를 사용하여 시계열 데이터에 대한 특�
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-16-FeatureEngineeringforTime-SeriesUsingPySparkonDatabricks_3.png)
 
 ## 피처 엔지니어링 프로젝트 생성
@@ -60,7 +60,7 @@ Databricks에서 PySpark API를 사용하여 시계열 데이터에 대한 특�
 ### 1. 데이터 가져오기
 
 - 정적 데이터
-```
+
 
 
 
@@ -315,7 +315,7 @@ df2.select("Date", "Total_global_active_power", "ewma_power_w02", "ewma_power_w0
 
 
 
-```markdown
+
 ![Line Chart](/assets/img/2024-05-16-FeatureEngineeringforTime-SeriesUsingPySparkonDatabricks_12.png)
 
 - Line chart: The changes in total global active power, EWMA with alpha 0.2, and EWMA with alpha 0.8 from Jan 2008 to Mar 2008
@@ -323,7 +323,7 @@ df2.select("Date", "Total_global_active_power", "ewma_power_w02", "ewma_power_w0
 Interpretation: EWMA with alpha 0.8 sticks more closely to the original time series than EWMA with alpha 0.2.
 
 ![Line Chart](/assets/img/2024-05-16-FeatureEngineeringforTime-SeriesUsingPySparkonDatabricks_13.png)
-```
+
 
 
 

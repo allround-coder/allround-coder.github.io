@@ -184,7 +184,7 @@ mongoose.connection.once('open', () => {
 # 단계 4: GraphQL 모델 및 스키마 정의
 
 Mongoose 데이터 모델의 정의를 형식화하고 이러한 모델을 사용하여 GraphQL 스키마를 설정합니다. 예를 들어, 사용자 모델을 생성하고 이를 GraphQL 스키마에 추가합니다.
-```
+
 
 
 
@@ -230,7 +230,7 @@ const resolvers = {
 # React에서의 GraphQL 통합
 
 GraphQL 서버를 설정하면 다음으로 할 일은 해당 서버를 React 앱과 통합하는 것입니다. Apollo Client를 통해 GraphQL 서버에 쉽게 쿼리 및 뮤테이션을 수행할 수 있어 MongoDB 데이터와 동적 상호작용을 가능하게 할 수 있습니다. 이 경우에는 React에 Apollo Client를 추가하고 이 섹션에서 몇 가지 작업을 찾아보는 방법을 살펴볼 것입니다.
-```
+
 
 
 

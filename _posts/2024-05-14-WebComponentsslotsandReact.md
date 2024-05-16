@@ -11,7 +11,7 @@ link: "https://medium.com/@damiantriebl/web-components-slots-and-react-ee1dae7b0
 ---
 
 
-```markdown
+
 ![Web Components and React](/assets/img/2024-05-14-WebComponentsslotsandReact_0.png)
 
 React에서 컨텐츠는 children 속성을 통해 컴포넌트로 전달됩니다. 이 속성은 요소의 JSX 태그 내에 캡슐화된 컨텐츠를 위해 특별히 설계되었습니다. 그러나 이 방법은 더 복잡한 템플릿이나 JSX를 컴포넌트의 다른 섹션에 배치해야 하는 경우 부족할 수 있습니다. 다행히 JSX는 함수와 JSX를 모두 props를 통해 전달할 수 있기 때문에 문제없이 이를 구현할 수 있습니다.
@@ -19,7 +19,7 @@ React에서 컨텐츠는 children 속성을 통해 컴포넌트로 전달됩니�
 Web Components에서 컨텐츠 처리는 React와 약간 다릅니다. 컴포넌트가 HTML로 렌더링되기 때문에 함수나 HTML(또는 JSX)을 props를 통해 전달할 수 없습니다. 대신, SLOTS를 사용합니다. 이것들은 컴포넌트 내에서 다양한 유형의 HTML 블록을 배치할 수 있는 지정된 영역입니다. 복잡한 컴포넌트에서 적절한 구성을 위해 사용됩니다. 브라우저의 인스펙터에서 슬롯이 약간 다르게 나타날 수 있다는 점을 주목하는 것이 중요합니다.
 
 ![Web Components and React](/assets/img/2024-05-14-WebComponentsslotsandReact_1.png)
-```
+
 
 
 

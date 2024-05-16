@@ -62,7 +62,7 @@ const Example = () => {
 # 이제 범위 선택기로 사용하는 방법을 살펴봅시다
 
 범위 선택기를 만들려면 DatePicker 구성 요소를 두 번 사용하고 몇 가지 상태를 관리해야 합니다. datePicker를 범위 선택기로 설정하려면 selectsStart 및 selectsEnd를 지정하여 유형을 지정해야 합니다.
-```
+
 
 
 

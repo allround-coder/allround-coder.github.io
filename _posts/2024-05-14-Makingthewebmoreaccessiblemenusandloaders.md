@@ -349,7 +349,7 @@ link: "https://medium.com/gitconnected/making-the-web-more-accessible-menus-and-
 ```
 
 이후에는 키보드로 하위 메뉴에 접근할 수 있게 됩니다. 사용자가 Enter 키를 누르면 "openSubmenu()" 함수에서 다음 줄 때문에 자동으로 포커스가 서브메뉴의 첫 번째 항목으로 이동할 것입니다:
-```
+
 
 
 

@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/how-to-update-large-json-objects-efficien
 ---
 
 
-```markdown
+
 ![JSON Patch](/assets/img/2024-05-14-HowToUpdateLargeJSONObjectsEfficiently_0.png)
 
 JSON Patch는 JSON 문서를 변경하는 방법을 설명하는 형식으로, JSON 데이터를 수정하는 방법을 보여주는 간결한 작업 지침의 시리즈를 사용합니다. 이 작업에는 새 데이터 추가, 이전 데이터 삭제, 기존 데이터 교체 또는 데이터 이동이 포함됩니다.
@@ -19,7 +19,7 @@ JSON Patch는 JSON 문서를 변경하는 방법을 설명하는 형식으로, J
 ## JSON Patch를 사용하는 이유
 
 대규모 웹 애플리케이션에서 클라이언트는 최신 데이터를 가져오거나 수정된 데이터를 서버에 제출하기 위해 서버와 자주 통신해야 합니다. 기존 방식은 모든 업데이트마다 전체 JSON 문서를 보내는 것이며, 실제 데이터의 일부분만 변경되었더라도 전송됩니다. 이는 네트워크 트래픽 증가, 네트워크 지연 증가, 서버 및 클라이언트 부하 증가로 이어집니다.
-```
+
 
 
 

@@ -23,7 +23,7 @@ IoC(Inversion of Control)는 객체의 동작 제어가 뒤바뀌거나 객체 �
 
 아래는 [공식 줄임말(Markdown)](https://www.markdownguide.org/cheat-sheet/) 형식으로 업데이트한 내용입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-Next101IoCImplementationwithInversify_1.png)
 
 의존성 주입에 익숙하다면, IoC 디자인을 구현하는 기술 중 하나입니다.
@@ -31,7 +31,7 @@ IoC(Inversion of Control)는 객체의 동작 제어가 뒤바뀌거나 객체 �
 이 패턴은 단순히 "너가 객체를 만들지 마세요. 제가 그것을 제공할게요."라고 말합니다.
 
 ![이미지](/assets/img/2024-05-14-Next101IoCImplementationwithInversify_2.png)
-```
+
 
 
 
@@ -186,7 +186,7 @@ project
 ```
 
 그리고 이제 Inversify가 제대로 작동하고 사용할 준비가 되었습니다.
-```
+
 
 
 
@@ -415,7 +415,7 @@ project
 +-- next.config.mjs
 ```
 
-## 앱에서 사용하기```
+## 앱에서 사용하기
 
 
 

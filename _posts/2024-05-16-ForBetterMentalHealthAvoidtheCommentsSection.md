@@ -84,6 +84,5 @@ link: "https://medium.com/bouncin-and-behavin-blogs/for-better-mental-health-avo
 
 
 
-```markdown
+
 ![For Better Mental Health Avoid the Comments Section](/assets/img/2024-05-16-ForBetterMentalHealthAvoidtheCommentsSection_3.png)
-```

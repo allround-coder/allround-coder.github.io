@@ -63,7 +63,7 @@ Containers를 통해 응용 프로그램을 빠르고 일관된 방식으로 실
 
 
 
-```markdown
+
 ![Docker Image](/assets/img/2024-05-15-AnIntuitiveGuidetoDockerforDataScience_2.png)
 
 가상 머신과 컨테이너는 물리적 인프라 내에서 여러 격리된 환경을 실행할 수 있게 해주는 가상화 기술입니다. 둘 다 리소스와 비용을 최적화하기 위해 고안되었지만, 중요한 차이점이 있습니다.
@@ -71,7 +71,7 @@ Containers를 통해 응용 프로그램을 빠르고 일관된 방식으로 실
 가상 머신 내에는 각각 다른 게스트 운영 체제가 실행됩니다. 그에 비해 컨테이너는 호스트 운영 체제를 공유하여 가상 머신보다 적은 리소스를 사용합니다.
 
 컨테이너는 애플리케이션과 해당 의존성만 캡슐화하기 때문에 매우 휴대성이 뛰어나며 배포 프로세스를 더 쉽고 빠르게 만들어줍니다.
-```
+
 
 
 
@@ -95,7 +95,7 @@ Docker Hub에 이미지를 만들고 푸시하려면 Docker Hub에 계정을 만
 
 
 
-```markdown
+
 고객 이탈 예측 데이터셋을 로드합니다.
 ```Python
 churn_df = pd.read_csv('Customertravel.csv')
@@ -152,11 +152,11 @@ print(f'Test 재현율: {test_recall_score}')
 
 
 
-```markdown
+
 catboost==1.2.5
 pandas==2.2.2
 scikit-learn==1.4.2
-```
+
 
 2. Create Dockerfile
 

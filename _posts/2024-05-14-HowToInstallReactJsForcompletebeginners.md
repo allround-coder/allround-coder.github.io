@@ -11,7 +11,7 @@ link: "https://medium.com/@mark.onyango_95482/how-to-install-react-js-for-comple
 ---
 
 
-```markdown
+
 ![React installation](/assets/img/2024-05-14-HowToInstallReactJsForcompletebeginners_0.png)
 
 요즘 리액트를 배우는 데 흥미를 느끼고 있고 리액트를 시작했습니다. 이 강력한 JavaScript 프레임워크를 사용하는 첫 번째 단계는 무엇일까요? React를 설치하기 전에 먼저 Node를 설치해야 합니다. 프로세스는 node 웹 사이트를 방문하고 최신 지원 버전을 다운로드하는 것만큼 간단합니다. Node가 필요한 이유가 궁금하다면, Node.js는 서버 측에서 JavaScript를 실행할 수 있는 JavaScript 런타임 환경입니다 (나중에 이에 대한 자세한 기사를 쓸 것입니다). 그 후 명령줄로 이동하여 명령줄이 익숙하지 않은 경우를 대비해 검색할 수 있습니다. React를 설치하는 방법에는 여러 가지가 있습니다:
@@ -19,7 +19,7 @@ link: "https://medium.com/@mark.onyango_95482/how-to-install-react-js-for-comple
 a) CDN 사용 (가장 쉬운 방법)
 
 이 코드 조각을 html 코드의 head 부분에 포함하세요.
-```
+
 
 
 

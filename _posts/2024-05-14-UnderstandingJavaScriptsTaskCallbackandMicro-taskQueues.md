@@ -11,7 +11,7 @@ link: "https://medium.com/@sibingeorge2698/understanding-javascripts-task-callba
 ---
 
 
-```markdown
+```
 <img src="/assets/img/2024-05-14-UnderstandingJavaScriptsTaskCallbackandMicro-taskQueues_0.png" />
 
 JavaScript 코드 실행 방식에 대해 궁금했던 적이 있나요? 웹 브라우저 내에서 JavaScript 코드 실행은 단일 스레드로 이루어지며 비동기 작업들이 어떻게 조율되는지 흥미로운 여정을 안내합니다.

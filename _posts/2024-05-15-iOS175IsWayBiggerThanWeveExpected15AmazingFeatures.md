@@ -242,7 +242,7 @@ iOS 17.5의 코드에는 다음 내용이 포함되어 있습니다. 9to5Mac에�
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-15-iOS175IsWayBiggerThanWeveExpected15AmazingFeatures_13.png)
 
 당신의 iPhone은 Wi-Fi와 전원에 연결되어 있고 배경 앱 새로 고침이 뉴스에 대해 켜져 있을 때 새 콘텐츠를 다운로드합니다.
@@ -250,7 +250,7 @@ iOS 17.5의 코드에는 다음 내용이 포함되어 있습니다. 9to5Mac에�
 다운로드 옵션 안에 들어가면 iPhone이 오프라인 상태로 유지하는 콘텐츠를 관리할 수 있습니다. 또한 '저장 공간 최적화'를 통해 iPhone이 이야기의 이미지의 작은 버전을 다운로드하도록 설정할 수도 있습니다.
 
 ![image](/assets/img/2024-05-15-iOS175IsWayBiggerThanWeveExpected15AmazingFeatures_14.png)
-```
+
 
 
 
@@ -264,7 +264,7 @@ iOS 17.5의 코드에는 다음 내용이 포함되어 있습니다. 9to5Mac에�
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-15-iOS175IsWayBiggerThanWeveExpected15AmazingFeatures_15.png)
 
 Apple Books의 '독서 목표'는 아주 새로운 기능이 아닙니다; 이미 하단에 있었죠. 그저 이제 Apple이 눈에 잘 띄고 동기부여하기 쉽도록 최상단에도 표시해 줍니다.
@@ -272,7 +272,7 @@ Apple Books의 '독서 목표'는 아주 새로운 기능이 아닙니다; 이�
 그것을 탭하면 '독서 목표' 메뉴로 이동하는데, 여기서 사용자들은 매일 특정 분량의 독서 목표를 설정하고 달성할 수 있습니다.
 
 카운터는 ebook을 읽을 때마다 분마다 증가합니다. 만약 가득 찬다면, 축하합니다, 그날의 독서 목표를 달성했습니다.
-```
+
 
 
 
@@ -326,7 +326,7 @@ iOS 17.4 이전, Apple TV+ 시리즈 에피소드를 시청하는 중에 좋아�
 
 
 
-```markdown
+
 ![Screenshot 1](/assets/img/2024-05-15-iOS175IsWayBiggerThanWeveExpected15AmazingFeatures_19.png)
 
 - If you’re on portrait mode, you’d click on the three dots menu at the bottom-right corner.
@@ -334,7 +334,7 @@ iOS 17.4 이전, Apple TV+ 시리즈 에피소드를 시청하는 중에 좋아�
 ![Screenshot 2](/assets/img/2024-05-15-iOS175IsWayBiggerThanWeveExpected15AmazingFeatures_20.png)
 
 However, this way, you could only share the current episode — but not the full show. But on iOS 17.5,
-```
+
 
 
 
@@ -369,7 +369,7 @@ iOS 17.5 RC의 코드에서 발견된 내용을 AppleInsider가 보도했습니�
 
 
 
-```markdown
+
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*x0-p_vCLKz7cGpQO3Xu4GA.gif)
 
 ## #16. 잘못된 스위치 설정 무시하기 (접근성)
@@ -377,7 +377,7 @@ iOS 17.5 RC의 코드에서 발견된 내용을 AppleInsider가 보도했습니�
 아이폰을 제어할 때 스위치를 사용 중이라면 새로운 옵션이 있습니다.
 
 이제 '설정' ⚙️ ` 접근성 🚹 ` 스위치 제어 🎛️ ` 스위치`에서 '잘못된 스위치 설정 무시'를 토글할 수 있습니다. 이렇게 하면 스위치 구성이 잘못된 경우 알림을 받지 않습니다.
-```
+
 
 
 

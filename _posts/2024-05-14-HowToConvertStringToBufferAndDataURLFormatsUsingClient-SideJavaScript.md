@@ -77,7 +77,7 @@ const convertB64ToBitArr = (b64Str) => ( Uint8Array.from(atob( (b64Str.includes(
 UTF-8 문자열 인코딩은 네이티브 브라우저에서 TextEncoder 인터페이스(반대 방향으로는 TextDecoder)로 처리할 수 있습니다:
 
 - 문자열을 ArrayBuffer 및 Base64로 인코딩된 데이터 URL로 변환하기
-```
+
 
 
 
@@ -101,6 +101,7 @@ const b64Str = convertBitArrtoB64( bitArr(inputStr) );
 console.log(b64Str);
 // 예상 결과:
 // 7ZWw7ISw7Iqk7YOJIDA=
+```
 
 - 원래 입력된 텍스트로의 역 변환
 
@@ -115,7 +116,7 @@ console.log(originalStr);
 ```
 
 ## (2) unescape + encodeURIComponent 및 decodeURIComponent + escape
-```
+
 
 
 
@@ -163,7 +164,7 @@ const originalStr = b64_to_utf8(b64Str);
 ## ASCII 문자만 사용
 
 <img src="https://miro.medium.com/v2/resize:fit:1200/1*FHtRkS1iUjaSCPGv6Pz0-A.gif" />
-```
+
 
 
 

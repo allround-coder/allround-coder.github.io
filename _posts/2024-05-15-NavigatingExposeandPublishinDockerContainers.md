@@ -11,7 +11,7 @@ link: "https://medium.com/@nikheal/navigating-expose-and-publish-in-docker-conta
 ---
 
 
-```
+
 ![2024-05-15-NavigatingExposeandPublishinDockerContainers_0](/assets/img/2024-05-15-NavigatingExposeandPublishinDockerContainers_0.png)
 
 도커는 응용 프로그램을 배포하는 방법을 혁신적으로 바꿨습니다. 소프트웨어를 컨테이너화하는 데 가벼우면서도 효율적이며 휴대 가능한 솔루션을 제공합니다. Docker 컨테이너에서 노출(expose)하고 게시(publish)하는 내용을 이해하는 것은 컨테이너와 호스트 시스템 간의 네트워크 통신을 효과적으로 관리하는 데 중요합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@nikheal/navigating-expose-and-publish-in-docker-conta
 Docker Expose이란 무엇인가요?
 
 Dockerfile에서 EXPOSE 지시문은 컨테이너가 실행 중에 어떤 네트워크 포트에서 수신 대기하는지 Docker에 알려줍니다.
-```
+
 
 
 
@@ -76,7 +76,7 @@ EXPOSE 80
 노출 :
 
 공개 :
-```  
+  
 
 
 

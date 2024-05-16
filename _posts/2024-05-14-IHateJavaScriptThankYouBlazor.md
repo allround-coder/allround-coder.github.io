@@ -11,7 +11,7 @@ link: "https://medium.com/@mabroukmahdhi/i-hate-javascript-thank-you-blazor-8904
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-05-14-IHateJavaScriptThankYouBlazor_0.png" />
 
 여러 해 동안 JavaScript는 웹 개발의 주인공으로 선전을 하면서 클라이언트 측 프로그래밍을 지배했습니다. 다양한 브라우저에서의 보급성과 웹 페이지 상호 작용에서 중요한 역할을 하는 기능으로 인해 사람들은 JavaScript를 떠날 수 없었습니다. 그러나 저와 JavaScript의 관계는 지금까지 괴로움으로 가득 찼습니다. 동적 타입의 특성부터 다양한 브라우저 간의 예측할 수 없는 동작까지, JavaScript와 함께한 여행은 디버깅과 해결책 찾기의 롤러코스터였습니다. 그런데 그 모든 것이 Blazor를 만나면서 달라졌습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@mabroukmahdhi/i-hate-javascript-thank-you-blazor-8904
 # JavaScript의 문제점
 
 저와 같은 많은 개발자들이 겪은 것처럼 JavaScript에 대한 불평은 그 언어의 독특한 점과 일관성 부족에서 비롯됩니다. 여기에는 JavaScript의 특정 문제점을 자세히 살펴보며 이 언어의 풍경에 익숙한 많은 사람들에게 공감할 수 있는 예제가 포함되어 있습니다.
-```
+
 
 
 

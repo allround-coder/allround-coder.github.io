@@ -58,13 +58,13 @@ import { getUserById } from './index.mjs';
 
 
 
-```markdown
+
 getUserById 함수에 대한 행복한 시나리오 테스트가 있습니다. 저희 함께 살펴보죠. it 함수에는 테스트의 컨텍스트인 매개변수 t를 사용하는 콜백이 포함되어 있습니다. 이 컨텍스트에는 함수를 모킹하는 데 사용할 수 있는 mock 속성이 있습니다. 이 경우에는 fetch 함수를 모킹합니다.
 
 Jest를 사용한 적이 있는 사람들에게 친숙한 mockImplementationOnce 메서드가 여기서 fetch 함수를 모킹하는 데 사용됩니다.
 
 이제 테스트 대상 함수를 호출하고 내장된 assert를 사용하여 결과를 확인할 수 있습니다.
-```
+
 
 
 
@@ -114,7 +114,7 @@ Jest를 사용한 적이 있는 사람들에게 친숙한 mockImplementationOnce
 <img src="/assets/img/2024-05-14-HowtoUsetheNewNodejsTestRunner_1.png" />
 
 # 코드 커버리지
-```
+
 
 
 

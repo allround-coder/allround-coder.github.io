@@ -21,7 +21,7 @@ API 게이트웨이는 특히 분산 아키텍처에서 여러 마이크로서�
 
 
 
-```markdown
+
 ![Express Gateway 이미지 1](/assets/img/2024-05-14-ExpressgatewayYournextAPIGatewaySolution_1.png)
 
 ![Express Gateway 이미지 2](/assets/img/2024-05-14-ExpressgatewayYournextAPIGatewaySolution_2.png)
@@ -29,7 +29,7 @@ API 게이트웨이는 특히 분산 아키텍처에서 여러 마이크로서�
 Express Gateway는 미리 정의된 라우팅 규칙에 따라 들어오는 HTTP 요청을 가로채어 적절한 마이크로 서비스 또는 API로 보내는 방식으로 작동합니다. 인증, 권한 부여, 속도 제한 및 로깅과 같은 작업을 처리하여 클라이언트와 서비스 간의 안전하고 효율적인 통신을 보장합니다. Express Gateway의 정책 시스템은 사용자 정의 및 확장성을 허용하여 개발자가 특정 요구 사항에 맞게 조정할 수 있도록 합니다. Express Gateway에서 사용 가능한 정책 목록을 확인하고 그에 맞게 구성하는 방법을 알아봅시다.
 
 이제 Express Gateway의 설치부터 시작하여 우리의 요구 사항에 맞게 구성하는 방법을 살펴봅시다.
-```
+
 
 
 

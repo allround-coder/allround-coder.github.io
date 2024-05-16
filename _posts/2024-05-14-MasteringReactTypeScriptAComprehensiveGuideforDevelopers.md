@@ -121,7 +121,7 @@ const [user, setUser] = useState<User>({} as User);
 ```
 
 ## 2.2 useCallback
-```
+
 
 
 
@@ -267,7 +267,7 @@ export default Form;
 useContext를 사용하면 컴포넌트에서 context 객체를 소비할 수 있습니다. 자동으로 타입이 유추되므로 createContext 단계에서 타입을 정의하는 것이 중요합니다.
 
 초기 값 설정이 가능하며 TypeScript가 자동으로 타입을 추론합니다.
-```  
+  
 
 
 
@@ -298,7 +298,7 @@ const ThemeContext = createContext<ThemeContextType>({} as ThemeContextType);
 ```
 
 ## 2.7 useReducer
-```
+
 
 
 
@@ -584,7 +584,7 @@ React와 TypeScript를 함께 사용할 때 이벤트를 처리하거나 참조�
 React는 이벤트 핸들러 함수 유형을 제공하여 이벤트 핸들러의 타입을 지정할 수 있습니다. 이러한 유형은 요소 유형을 매개변수로 사용할 수 있는 제네릭입니다.
 
 4.2.1 onChange 이벤트
-```
+
 
 
 

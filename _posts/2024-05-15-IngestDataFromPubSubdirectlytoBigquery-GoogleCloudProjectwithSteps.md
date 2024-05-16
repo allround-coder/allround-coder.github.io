@@ -73,7 +73,7 @@ CREATE TABLE `atlantean-site-xxxxxxx.pub_sub.temperature_data`
 
 
 
-```markdown
+
 ![Step 3](/assets/img/2024-05-15-IngestDataFromPubSubdirectlytoBigquery-GoogleCloudProjectwithSteps_3.png)
 
 Finally, let’s set up a pub/sub subscription that writes events straight to BigQuery.
@@ -81,7 +81,7 @@ Finally, let’s set up a pub/sub subscription that writes events straight to Bi
 ![Step 4](/assets/img/2024-05-15-IngestDataFromPubSubdirectlytoBigquery-GoogleCloudProjectwithSteps_4.png)
 
 ![Step 5](/assets/img/2024-05-15-IngestDataFromPubSubdirectlytoBigquery-GoogleCloudProjectwithSteps_5.png)
-```
+
 
 
 

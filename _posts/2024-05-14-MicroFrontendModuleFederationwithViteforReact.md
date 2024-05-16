@@ -232,7 +232,7 @@ declare module 'sharedComp/*' {}
 
 테이블 태그를 Markdown 형식으로 변경해보세요.
 
-```markdown
+
 Also when importing these from remote modules if you are using typescript remember to add a custom definition file for types. So here in my implementation I have added the custom.d.ts file. This file help you to get rid of the compilation error Module not found .
 
 # Lets look in to implementing a bit advance scenario
@@ -240,7 +240,7 @@ Also when importing these from remote modules if you are using typescript rememb
 Let’s add the payment component in to the story and make this a bit more complicated. Implementation for the advance scenario can be found in this branch.
 
 This adds bit of complexity as this uses two different remote modules to load home and payment pages and also added the complexity of react routing on to the host app. Also in this sample the payment page is loaded using a dynamically set URL which is pushed during the runtime through window object.
-```
+
 
 
 

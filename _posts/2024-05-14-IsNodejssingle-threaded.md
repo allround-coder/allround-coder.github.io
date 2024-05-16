@@ -11,7 +11,7 @@ link: "https://medium.com/@relja.jovicevic/is-node-js-single-threaded-c57c4f193c
 ---
 
 
-```
+
 ![Node.js](/assets/img/2024-05-14-IsNodejssingle-threaded_0.png)
 
 아마도 노드.제이에스(Node.js)는 싱글 스레드, 비동기 런타임 환경이라고 들어봤을 것입니다. 그러나 이는 완전히 사실이 아닙니다. JavaScript 환경 자체는 하나의 스레드에서 실행되지만, 노드.제이에스 아키텍처에서 Libuv라는 중요한 구성 요소가 또 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@relja.jovicevic/is-node-js-single-threaded-c57c4f193c
 ## Libuv란?
 
 Libuv는 논 블로킹 I/O 작업을 추상화하기 위해 노드.제이에스를 위해 원래 작성된 C 라이브러리입니다.
-```
+
 
 
 

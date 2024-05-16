@@ -73,7 +73,7 @@ Node.js 팀은 더 나아가서 Node.js 애플리케이션을 CPU 한계에 도�
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-EvolutionofServer-SideJavaScript_3.png)
 
 그리고 하나가 실패하면, Node.js는 다른 것을 분기하고, 사이클을 다시 시작합니다. 
@@ -83,11 +83,11 @@ Node.js는 이 모든 것을 원래부터 제공해. 필요하다면 Nginx나 PM
 Node.js를 따라온 JavaScript 런타임들은 이벤트 기반(논블로킹) 아키텍처를 디자인할 때 Node.js를 따랐지.
 
 하지만 네이티브 메커니즘 외에도, Node.js는 유틸리티, 라이브러리, 프레임워크를 위한 써드파티 패키지로 업그레이드할 수 있게 해 줬어.
-```
 
 
 
-```markdown
+
+
 ![Evolution of Server-Side JavaScript](/assets/img/2024-05-14-EvolutionofServer-SideJavaScript_4.png)
 
 # NPM
@@ -95,7 +95,7 @@ Node.js를 따라온 JavaScript 런타임들은 이벤트 기반(논블로킹) �
 Node Package Manager (NPM)은 Isaac Z. Schlueter에 의해 개발된 JavaScript 언어용 패키지 관리자입니다. NPM의 목적은 Node.js 또는 웹 앱을 다양한 서드파티 도구로 업그레이드할 수 있도록 하는 것입니다.
 
 패키지를 추가하는 것은 다음과 같이 간단합니다:
-```
+
 
 
 
@@ -109,7 +109,7 @@ Node Package Manager (NPM)은 Isaac Z. Schlueter에 의해 개발된 JavaScript 
 <img src="/assets/img/2024-05-14-EvolutionofServer-SideJavaScript_5.png" />
 
 일부 패키지는 서버 측 또는 웹 앱에만 특정되어 있고, 다른 것은 양쪽에서 작동합니다. 그리고 다양한 패키지 관리자가 있습니다:
-```
+
 
 
 

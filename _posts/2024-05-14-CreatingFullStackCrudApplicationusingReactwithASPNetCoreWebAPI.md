@@ -31,9 +31,9 @@ ASP.Net Core Web API를 사용하여 백엔드를 구축하는 것은 데이터 
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-CreatingFullStackCrudApplicationusingReactwithASPNetCoreWebAPI_0.png)
-```
+
 
 그러고 나서 이 패키지들을 모두 설치하세요,
 
@@ -42,9 +42,9 @@ ASP.Net Core Web API를 사용하여 백엔드를 구축하는 것은 데이터 
 - Microsoft.EntityFrameworkCore.Tools
 - Newtonsoft.Json
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-CreatingFullStackCrudApplicationusingReactwithASPNetCoreWebAPI_1.png)
-```
+
 
 
 
@@ -139,12 +139,12 @@ app.UseCors(policy => policy.AllowAnyHeader()
 
 테이블 태그를 Markdown 형식으로 변경하세요.
 
-```markdown
+
 | Header1 | Header2 | Header3 |
 | ------- | ------- | ------- |
 | Data1   | Data2   | Data3   |
 | Data4   | Data5   | Data6   |
-```
+
 
 이제 위의 코드를 Program.cs 파일 내 어디에 붙여넣어야 하는지 알려줄 거에요.
 

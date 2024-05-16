@@ -105,7 +105,7 @@ foreach (var ge in typedAbilityDefinition.perEnemyPlayerGameplayEffects) {
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-15-DevLogComposingMoreAbilitiesUsingUnityGAS_4.png)
 
 그리고 GE를 적용하는 능력 정의의 작은 부분은 이렇게 생겼어요:
@@ -119,7 +119,7 @@ foreach (var gameplayEffect in typedAbilityDefinition.enemyGameplayEffects) {
 ```
 
 여기서 설명할 내용은 대략 이 정도네요! 다음 능력으로 넘어가겠습니다.
-```  
+  
 
 
 
@@ -172,7 +172,7 @@ protected override IEnumerator ActivateAbility() {
 
 
 
-```markdown
+
 ![2024-05-15-DevLogComposingMoreAbilitiesUsingUnityGAS_5](/assets/img/2024-05-15-DevLogComposingMoreAbilitiesUsingUnityGAS_5.png)
 
 The actual logic is also very straightforward:
@@ -182,7 +182,7 @@ The actual logic is also very straightforward:
 - when it’s time to tick, we simply identify `RigidBody2D` instances within the pylon’s radius and apply an impulse force to them in the direction of the center of the pylon
 
 As can be seen from the screenshot above, I’ve also added fields to allow the component to pull period and force values from the owner’s attribute system. This easily facilitates upgrades that modify the parameters of this ability — for example, one upgrade may reduce the period (thereby increasing the impulse’s trigger frequency) while also reducing the force, altering the overall function of the ability.
-```
+
 
 
 

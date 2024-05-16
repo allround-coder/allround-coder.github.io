@@ -154,7 +154,7 @@ server     IN      A       192.168.3.210
 
 
 
-```markdown
+
 ![DNS server setup](/assets/img/2024-05-16-SettingupaDNSserveronLinux_1.png)
 
 이제 named 데몬을 다시 시작해야 합니다:
@@ -165,7 +165,7 @@ server     IN      A       192.168.3.210
 ```
 
 ## DNS 서비스 테스트
-```
+
 
 
 

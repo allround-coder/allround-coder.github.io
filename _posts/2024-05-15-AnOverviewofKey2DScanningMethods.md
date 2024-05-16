@@ -82,7 +82,7 @@ link: "https://medium.com/3dprintjunction/an-overview-of-key-2d-scanning-methods
 
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-15-AnOverviewofKey2DScanningMethods_3.png)
 
 The structured light scanning approach is similar to laser triangulation, but substitutes the single laser with a structured pattern of light projected onto objects. This pattern might be bars, grids, or other shapes that establish a frame of reference.
@@ -90,7 +90,7 @@ The structured light scanning approach is similar to laser triangulation, but su
 The way that these shapes deform when striking surfaces encodes detailed information about the surface itself. This allows for reconstructing the surface geometry in fine detail. Common light patterning techniques include digital light processing (DLP) projectors or laser speckle projectors if coherent laser light is preferred.
 
 Benefits:
-```
+
 
 
 

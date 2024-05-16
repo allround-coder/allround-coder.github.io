@@ -223,7 +223,7 @@ program.parse(process.argv);
 사용 가능한 Confirm 프롬프트 유형이 있습니다. 사용자에게 예/아니오 질문을 합니다.
 
 ![Building a CLI App with Node.js](/assets/img/2024-05-14-BuildingaCLIAppwithNodejsin2024_4.png)
-```
+
 
 
 
@@ -362,7 +362,7 @@ my-node-cli - help
 
 ## 라이선스
 이 프로젝트는 라이선스가 부여되었습니다...
-``` 
+ 
 
 ## 문서 자동 생성하기
 

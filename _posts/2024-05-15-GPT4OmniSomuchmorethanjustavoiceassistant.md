@@ -51,9 +51,8 @@ PS3: 이 모델은 오늘날 GPT-4 Turbo의 절반 가격에 판매되고 있는
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-15-GPT4OmniSomuchmorethanjustavoiceassistant_1.png)
 
 You can learn more about this model and see examples of its use on [OpenAI’s website](https://example.com).
 Hello GPT-4o | OpenAI
-```

@@ -23,7 +23,7 @@ link: "https://medium.com/@mr.wahib/angular-18-top-new-features-and-improvements
 
 테이블 태그를 Markdown 형식으로 변경하면 다음과 같습니다.
 
-```markdown
+
 The function can access an object with information about the URL, allowing for more dynamic redirection.
 
 ## Default Content in ng-content
@@ -31,7 +31,7 @@ The function can access an object with information about the URL, allowing for m
 Default content is now allowed within the ng-content tag. This logical extension will enable developers to include default content directly in the tag itself:
 
 ## New RedirectCommand class
-```
+
 
 
 

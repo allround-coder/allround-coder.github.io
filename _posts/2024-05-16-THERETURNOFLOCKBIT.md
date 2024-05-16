@@ -31,7 +31,7 @@ XSS 또는 Exploit과 같은 포럼에서의 LockBit 금지 및 Operation Cronos
 
 
 
-```
+
 ![이미지](/assets/img/2024-05-16-THERETURNOFLOCKBIT_1.png)
 
 모든 피해자들은 LockBit 유출 서버에 전체 데이터를 공개하기 전에 평균 29일의 협상 기간을 부여받습니다.
@@ -39,7 +39,7 @@ XSS 또는 Exploit과 같은 포럼에서의 LockBit 금지 및 Operation Cronos
 현재 피해자 목록은 200명 이상 (포스트 운영 크로노스)으로 나와 있으며 기업 랜섬웨어 시나리오에서 강력한 존재임을 나타냅니다.
 
 피해자화
-```
+
 
 
 
@@ -53,13 +53,13 @@ LockBit은 미국 정부 기관인 DSIB(District of Columbia 보험, 증권 및 
 
 
 
-```markdown
+
 ![LockBit Infrastructure Hunt](/assets/img/2024-05-16-THERETURNOFLOCKBIT_2.png)
 
 During the analysis, it was found that LockBit maintains a stable server to host large leaks on a new Onion Domain:-
 
 This leak site is running on nginx/1.25.4; which is the latest version of NGINX (ATTOW) as promised by LockBit to avoid any unpatched versions after Operation Cronos Part — 1.
-```
+
 
 
 
@@ -85,7 +85,7 @@ Location: 러시아
 LOCKBIT이 토렌트 파일 공유로 이동 중
 
 2024년 3월 9일 LockBit 운영자들은 18개의 Vanity Onion 도메인을 온라인으로 만들었으며, 약 710명의 클라이언트 목록 및 다운로드를 쉽게 할 수 있는 토렌트 파일을 게시했습니다.
-```
+
 
 
 
@@ -119,7 +119,7 @@ LockBit에 의해 Crinetics가 특정 그룹이나 계열사의 작품으로 나
 
 
 
-```markdown
+
 ![LockBit Affiliate](/assets/img/2024-05-16-THERETURNOFLOCKBIT_7.png)
 
 드디어, LockBit 제휴사는 2024년 4월 11일에 정보 파괴와 데이터 다운로드를 위한 몸값을 $7백만으로 인상하면서 이 장을 마쳤습니다.
@@ -128,7 +128,7 @@ Crinetics로 요구된 BTC 지갑은 다음과 같습니다:-
 
 BTC: bc1qdtawyte5qtxgrk6far90tpeh9atfvyqgv5rcxs
 XMR: 48XyFEbDz4117SopGgaSjAaMK2uXqvnmq7W2wFXKUFPJNdTLFUvgKyx82jcRiWXBDv9ojbijGYyqz9edtrsgZG9NMHG7Xff
-```
+
 
 
 
@@ -152,10 +152,10 @@ LockBit(또는 동맹사)가 Pronat Industries 데이터를 LockBit과 무관한
 
 
 
-```markdown
+
 BTC: bc1qjwquf4n0j6tc55wg9zymkas2ue484ddxtl70wv
 XMR: 48XyFEbDz4117SopGgaSjAaMK2uXqvnmq7W2wFXKUFPJNdTLFUvgKyx82jcRiWXBDv9ojbijGYyqz9edtrsgZG9NMHG7Xff
-```
+
 
 잘 알려진 LockBit 대상에 대한 새로운 패턴이 발견되었습니다. 이제 LockBit은 누출 기간을 5일에서 추가로 10일 늘려 누출을 지연시키고 있습니다.
 
@@ -165,7 +165,7 @@ LOCKBIT 모방자들이 주변에 있습니다.
 
 
 
-```
+
 ![LockBit Image 8](/assets/img/2024-05-16-THERETURNOFLOCKBIT_8.png)
 
 Many beginners have acquired the leaked version of LockBit and have turned it into a tool to attack various targets, hoping to strike it rich. These targets might mistake them for the real LockBit and end up paying a heavy price.
@@ -173,7 +173,7 @@ Many beginners have acquired the leaked version of LockBit and have turned it in
 ![LockBit Image 9](/assets/img/2024-05-16-THERETURNOFLOCKBIT_9.png)
 
 Here is another chat log from a fraudulent LockBit support on the Telegram platform, who demands a $500 membership fee to join a private group:
-```
+
 
 
 
@@ -268,7 +268,7 @@ LockBit 신원 공개 이후 관찰된 이벤트는 다음과 같습니다:
 
 
 
-```markdown
+
 ![LockBitTox Status Updates](/assets/img/2024-05-16-THERETURNOFLOCKBIT_20.png)
 
 LOCKBIT TOX STATUS UPDATES
@@ -279,7 +279,7 @@ Here are the important STATUS-UPDATES of LockBitSupp. Captured at different inte
 - ФБР блефует, я не Демон, мне жаль настоящего Демона))) о, и он получит пизды за мои грехи))) The FBI is bluffing, I'm not Dimon, I feel sorry for the real Dimon ))) oh and he will get pussy for my sins )))
 - Придумайте как доказать, что я не Демон? Как показать всему миру что ФБР ошиблись или специально подставили Демона? Can you figure out how to prove that I'm not a Demon? How can we show the whole world that the FBI made a mistake or deliberately framed a Demon?
 - участвуем в конкурсе, условия в блоге We participate in the competition, conditions in the blog
-```
+
 
 
 

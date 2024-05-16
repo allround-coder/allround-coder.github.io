@@ -23,10 +23,10 @@ Choreo가 뭔데요?
 
 시작하기 전에 다음 사항이 있는지 확인하세요:
 
-```
+
 - Github 계정
 - Choreo 계정(https://console.choreo.dev/로 이동하여 가입하고 조직을 생성하세요.)
-``` 
+ 
 
 앱 생성
 
@@ -68,7 +68,7 @@ export default App;
 이제 Choreo에서 빌드하고 배포해봅시다.
 
 먼저, 조직 홈페이지를 볼 수 있는 console.choreo.dev로 이동해주세요.
-```
+
 
 
 

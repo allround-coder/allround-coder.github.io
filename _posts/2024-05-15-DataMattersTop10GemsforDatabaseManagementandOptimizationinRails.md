@@ -21,7 +21,6 @@ link: "https://medium.com/@vaishnaviganeshkar15/data-matters-top-10-gems-for-dat
 
 
 
-```js
 # Memcached-Rails:
 
 - Memcached-Rails는 Memcached 서버에 연결하는 데 사용됩니다. Memcached는 데이터를 캐시하고 검섹의 배경 처리를 위한 큐를 만드는 데 사용됩니다.
@@ -106,10 +105,6 @@ gem 'rack-mini-profiler', require: false
 
 
 
-위의 코드를 한국어로 번역하면 다음과 같습니다.
-
-```ruby
-. 그런 다음 config/application.rb 파일에 다음 코드를 추가하세요:
 
 ```ruby
 require 'rack-mini-profiler'
@@ -119,7 +114,7 @@ Rack::MiniProfilerRails.initialize!(Rails.application)
 7. Database Cleaner:
 
 - Database Cleaner는 테스트 중 깨끗한 데이터베이스를 유지하는 데 필수적입니다. 이를 통해 각 테스트 후 데이터베이스 레코드를 정리함으로써 일관된 상태에서 테스트 스위트를 실행할 수 있습니다. 이를 통해 데이터 오염을 방지하고 테스트 신뢰성을 향상시킬 수 있습니다.
-```
+
 
 
 

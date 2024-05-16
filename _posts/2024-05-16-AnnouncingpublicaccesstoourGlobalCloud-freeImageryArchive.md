@@ -31,7 +31,7 @@ link: "https://medium.com/earthrisemedia/announcing-public-access-to-our-global-
 
 
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-16-AnnouncingpublicaccesstoourGlobalCloud-freeImageryArchive_1.png)
 
 ![Image 2](/assets/img/2024-05-16-AnnouncingpublicaccesstoourGlobalCloud-freeImageryArchive_2.png)
@@ -39,11 +39,11 @@ link: "https://medium.com/earthrisemedia/announcing-public-access-to-our-global-
 ![Image 3](/assets/img/2024-05-16-AnnouncingpublicaccesstoourGlobalCloud-freeImageryArchive_3.png)
 
 ![Image 4](/assets/img/2024-05-16-AnnouncingpublicaccesstoourGlobalCloud-freeImageryArchive_4.png)
-```
 
 
 
-```markdown
+
+
 ![이미지](/assets/img/2024-05-16-AnnouncingpublicaccesstoourGlobalCloud-freeImageryArchive_5.png)
 
 물론 아무 것도 완벽하지 않죠. 앞으로 몇 주 동안 실패한 지역을 재처리하고, 흐린 지역이나 눈으로 덮인 장면이 나타나는 곳을 조사할 예정입니다.
@@ -51,7 +51,7 @@ link: "https://medium.com/earthrisemedia/announcing-public-access-to-our-global-
 모든 장면 및 관련 자산은 저희 STAC 엔드포인트 및 해당 STAC 브라우저(문자열 처리에 어려움을 겪는 사용자를 위한)를 통해 찾을 수 있습니다. 일반적인 메타데이터가 제공됩니다. 또한 자산의 출처 장면(즉, 어떤 소스 장면이 기여했는지) 및 좋은 픽셀의 대략적인 비율에 대한 정보도 포함됩니다. 자산 자체는 Create Commons 4.0 라이선스에 따라 사용이 허가된 Source Cooperative를 통해 미국 서부 지역의 HTTPS 및 AWS S3를 통해 공개적으로 제공됩니다.
 
 계속해서 더 많은 정보를 제공할 예정입니다...
-```
+
 
 적극적으로 협력하기를 기대합니다! 😊
 

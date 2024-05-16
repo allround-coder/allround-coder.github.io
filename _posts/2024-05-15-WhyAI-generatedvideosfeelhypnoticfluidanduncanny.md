@@ -41,7 +41,7 @@ link: "https://medium.com/@ykulbashian/why-ai-generated-videos-feel-hypnotic-flu
 
 
 
-```markdown
+
 [![image](https://miro.medium.com/v2/resize:fit:640/1*KlbQB5xH8kI5G0FWXOWL1g.gif)](https://miro.medium.com/v2/resize:fit:640/1*KlbQB5xH8kI5G0FWXOWL1g.gif)
 
 아마도 이 현상을 이해하는 가장 좋은 방법은 다음과 같이 물어보는 것입니다: 클립은 무엇을 말하려고 하는 걸까요? 그 의도는 무엇이며, 주제는 무엇이며, 논문은 무엇일까요? 창조자가 우리가 이것을 보게 하려고 했던 이유, 특히 이것을 보게 하려고 한 이유는 무엇인가요? 어떤 비디오를 보든지, 생성의 의도나 목적을 빨리 파악할 것을 기대합니다. AI로 생성된 비디오의 경우 답을 찾기 어렵지 않을 것입니다. 왜냐하면 생성 모델이 한 번 훈련되면 모든 지정된 내용은 생성된 텍스트 프롬프트에서 나오기 때문이죠. 따라서 어떤 독특한 메시지라도 해당 비디오가 같은 모델의 다른 비디오와 비교하여 가지고 있는 것은 오로지 해당 프롬프트에서 온다는 데서 오게 됩니다. 텍스트 프롬프트는 궁극적으로 논문을 요약해야 하지만... 그렇지 않습니다. 프롬프트는 내용을 대표하지만 목적은 대변하지 못합니다.
@@ -49,7 +49,7 @@ link: "https://medium.com/@ykulbashian/why-ai-generated-videos-feel-hypnotic-flu
 내가 무엇을 말하는지 이해하려면 AI에게 제공하는 모든 프롬프트가 어디서나 나온 것은 아니라는 것을 기억해야 합니다. 작가로서 이 프롬프트를 통해 표현하려는 동기, 감정, 목표 및 의도의 역사가 있습니다. 이것들이 당신의 숨겨진 목적이며, 글자 그대로 요청하고 있는 구체적인 내용이 아닙니다. 그 백그라운드 중 어느 것도 AI로 전달되지 않습니다. AI는 모든 사실을 받지 못하므로 속여주고 있다고 할 수 있습니다.
 
 [![image](/assets/img/2024-05-15-WhyAI-generatedvideosfeelhypnoticfluidanduncanny_0.png)](/assets/img/2024-05-15-WhyAI-generatedvideosfeelhypnoticfluidanduncanny_0.png)
-```
+
 
 
 

@@ -167,21 +167,21 @@ RUN apt-get update && apt-get install -y vim
 
 
 
-```markdown
+
 # syntax = docker/dockerfile:1.3-labs
 FROM python:3.6
 RUN <<eot
 #!/usr/bin/env python
 print("hello world")
 eot
-```
+
 
 # COPY and ADD Features
 
 새로운 Dockerfile 구문에서는 COPY 및 ADD에 대한 변경 사항과 개선 사항도 더 많이 있습니다.
 
 COPY는 이제 --parents 옵션을 지원합니다:
-```
+
 
 
 
@@ -232,7 +232,7 @@ RUN ls -la /repo
 
 
 
-```Markdown
+
 docker buildx build --ssh default --progress=plain .
 - [2/3] ADD git@github.com:kelseyhightower/helloworld.git /repo
   - Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
@@ -247,7 +247,7 @@ docker buildx build --ssh default --progress=plain .
   - DONE 7.4s
 - [2/3] ADD git@github.com:kelseyhightower/helloworld.git /repo
   - DONE 0.0s
-```
+
 
 이것은 비공개 저장소에도 작동합니다.
 

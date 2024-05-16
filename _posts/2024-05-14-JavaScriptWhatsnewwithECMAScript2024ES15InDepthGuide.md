@@ -261,7 +261,7 @@ class SampleClass {
 
 
 
-```markdown
+
 Temporal.Now.instant().toString()
 
 ## 특정 시간대에서 현재 존재하는 날짜 및 시간 가져오기
@@ -269,7 +269,7 @@ Temporal.Now.instant().toString()
 Temporal.Now.zonedDateTimeISO(`Asia/Shanghai`).toString()
 
 ## ISO 형식의 현재 플레인 날짜 및 시간 가져오기
-```
+
 
 
 
@@ -428,7 +428,7 @@ processNumber(5, (result => console.log(result))); // 로그: 10 (5 + 5)
 ```
 
 ## 제한된 전역 컨텍스트 접근
-```
+
 
 
 

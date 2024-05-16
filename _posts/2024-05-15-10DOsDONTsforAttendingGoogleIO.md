@@ -51,7 +51,7 @@ IO 컨퍼런스는 크기가 크니까 많이 걷게 될 거예요.
 
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-15-10DOsDONTsforAttendingGoogleIO_4.png)
 
 It’s crucial to stay hydrated and apply sunscreen. There is not a lot of shade, and the sun can be intense (especially for people not used to it).
@@ -59,7 +59,7 @@ It’s crucial to stay hydrated and apply sunscreen. There is not a lot of shade
 ## 3 ✅ DO: look for alternatives to long lines
 
 If you see a line that is particularly long, keep walking, there is likely a shorter one ahead that nobody is using.
-```
+
 
 
 
@@ -75,7 +75,7 @@ If you see a line that is particularly long, keep walking, there is likely a sho
 
 아래 내용을 Markdown 형식으로 변환해 보세요.
 
-```markdown
+
 ![Google IO Dos and Donts 6](/assets/img/2024-05-15-10DOsDONTsforAttendingGoogleIO_6.png)
 
 ![Google IO Dos and Donts 7](/assets/img/2024-05-15-10DOsDONTsforAttendingGoogleIO_7.png)
@@ -83,7 +83,7 @@ If you see a line that is particularly long, keep walking, there is likely a sho
 ![Google IO Dos and Donts 8](/assets/img/2024-05-15-10DOsDONTsforAttendingGoogleIO_8.png)
 
 식이 제한이 있는 경우 미리 등록해 주세요. 이를 위한 특별 텐트가 마련되어 있어서 긴 음식 줄을 피하는 좋은 방법이 될 수 있습니다.
-```
+
 
 
 
@@ -127,7 +127,7 @@ If you see a line that is particularly long, keep walking, there is likely a sho
 
 
 
-```markdown
+
 ![Image1](/assets/img/2024-05-15-10DOsDONTsforAttendingGoogleIO_13.png)
 
 ![Image2](/assets/img/2024-05-15-10DOsDONTsforAttendingGoogleIO_14.png)
@@ -135,7 +135,7 @@ If you see a line that is particularly long, keep walking, there is likely a sho
 # 9 ✅ 할 일: 계획 세우고 앱 사용하기
 
 Google I/O 앱을 다운로드하고 이벤트 전과 이벤트 중에 온라인 일정을 확인하세요. 이 도구들은 일정 변경 사항을 업데이트하거나 개인 일정을 관리하며, 다른 참가자들과 연결할 수 있도록 도와줍니다. 중요한 세션에 우선적으로 참석하기 위해 도착하기 전에 이벤트 일정을 확인하세요.
-```
+
 
 
 

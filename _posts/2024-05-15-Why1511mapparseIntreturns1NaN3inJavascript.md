@@ -11,7 +11,7 @@ link: "https://medium.com/coding-beauty/parseint-strange-behavior-cdff5e1f9ff7"
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-05-15-Why1511mapparseIntreturns1NaN3inJavascript_0.png" />
 
 다음에 그가 본 것은 그를 깊이 충격을 받게 했다:
@@ -19,7 +19,7 @@ link: "https://medium.com/coding-beauty/parseint-strange-behavior-cdff5e1f9ff7"
 <img src="/assets/img/2024-05-15-Why1511mapparseIntreturns1NaN3inJavascript_1.png" />
 
 이게 어떻게 가능할까? parseInt가 고장 났나? map()에 버그가 있나요?
-```
+
 
 
 
@@ -119,15 +119,15 @@ Alex는 협업 계획을 알게 되자 거만하게 비웃었습니다.
 
 그 이유는 map() 콜백이 실제로 3개의 인수를 가져오기 때문입니다:
 
-```markdown
+
 <img src="/assets/img/2024-05-15-Why1511mapparseIntreturns1NaN3inJavascript_8.png" />
-```
+
 
 따라서 실제로 3개의 인수로 parseInt를 호출하게 됩니다:
 
-```markdown
+
 <img src="/assets/img/2024-05-15-Why1511mapparseIntreturns1NaN3inJavascript_9.png" />
-```  
+  
 
 
 

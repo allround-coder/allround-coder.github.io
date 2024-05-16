@@ -11,7 +11,7 @@ link: "https://medium.com/stackademic/automate-vpc-peering-with-terraform-cc30fe
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-15-AutomateVPCPeeringwithTerraform_0.png)
 
 AWS의 VPC 피어링은 두 개의 VPC 간에 사설 IPv4 또는 IPv6 주소를 사용하여 트래픽을 경로 설정할 수 있는 네트워킹 연결입니다.
@@ -19,7 +19,7 @@ AWS의 VPC 피어링은 두 개의 VPC 간에 사설 IPv4 또는 IPv6 주소를 
 VPC 피어링은 AWS의 네트워킹 서비스 스위트의 일부로, 클라우드에서 확장 가능하고 안전하며 고가용성 네트워크 아키텍처를 생성할 수 있는 강력한 옵션을 제공합니다.
 
 이 기사에서는 Terraform을 사용하여 VPC 피어링 연결을 생성하는 방법을 살펴보겠습니다.
-```
+
 
 
 
@@ -90,7 +90,7 @@ resource "aws_subnet" "demo-subnet-b" {
 ## 단계 3: 피어링 연결을 위한 코드 생성
 
 - 아래 코드를 main.tf 파일에 추가하세요.
-```  
+  
 
 
 
@@ -113,7 +113,7 @@ resource "aws_vpc_peering_connection_accepter" "vpc_peering_accepter" {
 ## 단계 4: 라우트 테이블 및 R을 위한 코드 만들기
 
 - 아래 코드를 main.tf 파일에 추가하세요.
-```
+
 
 
 
@@ -133,7 +133,7 @@ resource "aws_vpc_peering_connection_accepter" "vpc_peering_accepter" {
 ## 단계 5: 라우트 코드 생성
 
 - 아래 코드를 main.tf 파일에 추가합니다.
-```  
+  
 
 
 
@@ -157,7 +157,7 @@ resource "aws_route" "route2" {
 ## 단계 6: 인터넷 게이트웨이용 코드 작성하기
 
 - 아래 코드를 main.tf 파일에 추가하세요.
-```
+
 
 
 

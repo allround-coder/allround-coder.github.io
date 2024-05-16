@@ -35,7 +35,7 @@ export default function DateError() {
 <img src="/assets/img/2024-05-14-PatchingtheDateAPItoSolveClient-SideReactIssues_1.png" />
 
 # React 코어 팀의 제안하는 해결책
-```
+
 
 
 

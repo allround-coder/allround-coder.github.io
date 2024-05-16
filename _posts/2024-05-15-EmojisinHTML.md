@@ -31,7 +31,7 @@ HTML Hexadecimal Format: &#x…;
 
 
 
-```markdown
+
 ![이모티콘 예시 1](/assets/img/2024-05-15-EmojisinHTML_1.png)
 
 ## 시도해 볼 일부 이모티콘:
@@ -39,7 +39,7 @@ HTML Hexadecimal Format: &#x…;
 ![이모티콘 예시 2](/assets/img/2024-05-15-EmojisinHTML_2.png)
 
 ## 하지만 이것들은 스크린 리더를 사용하는 웹사이트 방문자에게 접근할 수 있을까요?
-```
+
 
 
 

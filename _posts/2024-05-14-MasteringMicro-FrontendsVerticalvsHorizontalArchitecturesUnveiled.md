@@ -11,7 +11,7 @@ link: "https://medium.com/stackademic/mastering-micro-frontends-vertical-vs-hori
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-MasteringMicro-FrontendsVerticalvsHorizontalArchitecturesUnveiled_0.png)
 
 마이크로 프론트엔드는 현대 웹 개발에서 강력한 아키텍처 패턴으로 등장했습니다. 이는 팀이 거대한 프론트엔드 응용 프로그램을 더 작고 관리하기 쉬운 조각으로 나눌 수 있도록 합니다. 마이크로 프론트엔드 아키텍처에서 중요한 결정 중 하나는 수직 또는 수평 구성에 관한 선택입니다. 이러한 구성은 개별 프론트엔드 모듈이 구조화되고 전체 응용 프로그램에 통합되는 방식을 결정합니다. 이 기사에서는 수직 및 수평 마이크로 프론트엔드 아키텍처 간의 차이를 탐구하고 클라이언트 측, 엣지 및 서버 측과 같은 여러 구성 전술 및 각각의 장단점 및 실제 응용 프로그램을 살펴봅니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/stackademic/mastering-micro-frontends-vertical-vs-hori
 # 수직형 마이크로 프론트엔드 아키텍처:
 
 ![이미지](/assets/img/2024-05-14-MasteringMicro-FrontendsVerticalvsHorizontalArchitecturesUnveiled_1.png)
-```
+
 
 
 

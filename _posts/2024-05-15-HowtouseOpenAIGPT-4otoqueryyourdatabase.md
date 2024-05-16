@@ -43,7 +43,7 @@ CREATE DATABASE ecom_wrenai;
 
 
 
-```markdown
+
 ```js
 lijungchi=# \c ecom_wrenai
 psql (13.1, server 13.0)
@@ -58,7 +58,7 @@ SQL 스크립트를 psql로 복사하거나 psql을 통해 SQL을 가져올 수 
 ```js
 ecom_wrenai=# \i <파일 경로>/import.sql
 ``` 
-```
+
 
 
 
@@ -84,15 +84,15 @@ Open API 키가 Full Permission(All)을 가지고 있는지 확인해주세요.
 
 OpenAI 개발자 플랫폼을 방문해주세요.
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-15-HowtouseOpenAIGPT-4otoqueryyourdatabase_5.png)
-```
+
 
 WrenAI를 위한 새로운 API 키를 전체 권한으로 생성해주세요.
 
-```markdown
+
 ![Image 2](/assets/img/2024-05-15-HowtouseOpenAIGPT-4otoqueryyourdatabase_6.png)
-```
+
 
 
 
@@ -128,7 +128,7 @@ PostgreSQL 데이터베이스 커넥터를 선택하세요.
 
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-15-HowtouseOpenAIGPT-4otoqueryyourdatabase_10.png)
 
 만약 Mac 로컬 PostgreSQL 데이터베이스를 사용하는 경우, 데이터베이스에 액세스하려면 docker.for.mac.localhost를 입력하십시오.
@@ -136,11 +136,11 @@ PostgreSQL 데이터베이스 커넥터를 선택하세요.
 ![Image](/assets/img/2024-05-15-HowtouseOpenAIGPT-4otoqueryyourdatabase_11.png)
 
 다음 단계는 시맨틱 모델과의 관계를 정의하는 것입니다. 이는 LLMs가 시맨틱 데이터 구조에 대해 더 잘 이해하도록 도울 수 있습니다.
-```
 
 
 
-```markdown
+
+
 ![이미지](/assets/img/2024-05-15-HowtouseOpenAIGPT-4otoqueryyourdatabase_12.png)
 
 ## 이제 모든 준비가 다 되었어요!
@@ -148,7 +148,7 @@ PostgreSQL 데이터베이스 커넥터를 선택하세요.
 WrenAI UI에서 모든 데이터 모델을 확인할 수 있습니다.
 
 ![이미지](/assets/img/2024-05-15-HowtouseOpenAIGPT-4otoqueryyourdatabase_13.png)
-```
+
 
 
 

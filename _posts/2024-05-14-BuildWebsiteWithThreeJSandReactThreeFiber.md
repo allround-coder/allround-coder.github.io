@@ -30,7 +30,7 @@ npm create vite@latest
 프로젝트 이름을 작성하고 ENTER를 누르세요.
 
 <img src="/assets/img/2024-05-14-BuildWebsiteWithThreeJSandReactThreeFiber_1.png" />
-```
+
 
 
 
@@ -104,7 +104,7 @@ npm run dev
 
 App.js 파일에서 다음 코드를 모두 제거해주세요:
 
-```
+```html
 <img src="/assets/img/2024-05-14-BuildWebsiteWithThreeJSandReactThreeFiber_7.png" />
 ```
 
@@ -308,7 +308,7 @@ h1 {
 # 단계 8: 이미지 추가
 
 이 프로젝트의 가장 어려운 부분입니다. 하지만 이해해 보도록 해봅시다. 여기서는 이미지를 추가하고 스크롤 시에 애니메이션을 적용해야 합니다. 이미지가 확대되고 스크롤 시 줌인되는 것을 확인했다면 이를 만들어야 합니다. 이를 작은 작업으로 나누어 보겠습니다.
-```
+
 
 
 
@@ -324,7 +324,7 @@ content라는 폴더를 생성하고, 해당 폴더에 content.js라는 파일�
 
 
 
-```Markdown
+
 ![Screenshot](/assets/img/2024-05-14-BuildWebsiteWithThreeJSandReactThreeFiber_11.png)
 
 이제 content.js 파일에 다음 코드를 추가해주세요:
@@ -344,7 +344,7 @@ export const image11 = "https://images.pexels.com/photos/10850828/pexels-photo-1
 ```
 
 저는 pixels.com에서 이미지를 사용하고 있어요.
-```
+
 
 
 

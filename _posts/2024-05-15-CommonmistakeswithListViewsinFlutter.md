@@ -46,7 +46,7 @@ SingleChildScrollView(
 출력에서 확인할 수 있듯이, 모든 항목이 동시에 초기화되어 성능 손실이 발생합니다. 이는 전체 목록이 한꺼번에 렌더링되어 보이는 부분만 렌더링되는 것이 아니기 때문에 발생합니다.
 
 그렇다면 대신 어떻게 해야 할까요? 권장하는 방법은 Slivers를 사용하는 것입니다. Slivers를 사용하면 화면에 현재 표시되는 항목만 빌드하여 더 효율적으로 렌더링할 수 있습니다. 이를 통해 대용량 목록도 부드러운 성능을 유지할 수 있습니다.
-```
+
 
 
 
@@ -84,7 +84,7 @@ CustomScrollView(
 
 
 
-```markdown
+```
 ![Screenshot 1](/assets/img/2024-05-15-CommonmistakeswithListViewsinFlutter_2.png)
 
 원하는 크기를 계산하려면 OS 텍스트 스케일에 폰트 크기를 곱하고 패딩을 추가하는 것이 좋습니다. 이것은 귀찮고 유지 관리가 어려울 수 있습니다. 더 나은 방법이 있습니다:
@@ -100,7 +100,7 @@ CustomScrollView(
 ```
 
 ![Screenshot 2](/assets/img/2024-05-15-CommonmistakeswithListViewsinFlutter_3.png)
-```
+
 
 
 

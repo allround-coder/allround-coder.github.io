@@ -65,7 +65,7 @@ eslint를 설치한 후, eslint --init을 실행하여 프로젝트에서 eslint
 <img src="/assets/img/2024-05-14-ReactComponentLibrarywithViteandDeployinNPM_3.png" />
 
 프로젝트용 모듈 유형을 선택하고 입력하세요.
-```
+
 
 
 
@@ -89,7 +89,7 @@ JSON을 선택하고 입력하세요
 
 
 
-```md
+md
 ![React Component Library with Vite and Deploy in NPM](/assets/img/2024-05-14-ReactComponentLibrarywithViteandDeployinNPM_8.png)
 
 프로젝트 루트에 .eslintc.json 파일이 생성됩니다. 이 파일에는 기본 구성이 포함되어 있습니다. 필요에 따라 규칙을 추가할 수 있습니다. 아래의 구성을 직접 사용할 수도 있습니다: .eslintc.json.
@@ -101,7 +101,7 @@ yarn add -D react-hooks eslint-plugin-simple-import-sort prettier
 
 npm install -D react-hooks eslint-plugin-simple-import-sort prettier
 ``` 
-```
+
 
 
 

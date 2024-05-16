@@ -213,9 +213,9 @@ PhotoPrism을 시작해보세요:
 
 설정이 완료되면 Docker Compose를 사용하여 PhotoPrism을 시작할 수 있어요:
 
-```
+
 docker-compose up -d
-```
+
 
 이 명령은 필요한 Docker 이미지를 가져와 PhotoPrism 서비스를 시작할 거예요.
 
@@ -304,7 +304,7 @@ Syncthing 상태 모니터링:
 
 안녕하세요! 아래는 Markdown 형식으로 테이블 태그를 변환하는 방법입니다.
 
-```markdown
+
 Automated Scripts:
 
 - Write scripts to handle periodic re-indexing in PhotoPrism or database cleanups, and set them to run at times of low activity via cron jobs on the Raspberry Pi.
@@ -312,7 +312,7 @@ Automated Scripts:
 Monitor System Health:
 
 - Use tools like htop or web-based monitoring solutions to keep an eye on the Raspberry Pi’s performance. Monitoring can help you spot issues before they affect your backups.
-``` 
+ 
 
 도움이 되었기를 바랍니다! 만약 더 도움이 필요하시면 언제든지 물어보세요.
 

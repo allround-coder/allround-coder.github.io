@@ -28,11 +28,11 @@ link: "https://medium.com/@shavaizali159/mastering-the-basics-10-essential-javas
 
 코드 예시:
 
-```markdown
+
 # 변수 선언:
 
 JavaScript
-```
+
 
 
 
@@ -479,7 +479,7 @@ debugger; // 실행을 일시 중단하고 DevTools를 엽니다
 
 코드 예시:
 
-```markdown
+
 # 모듈식 코드:
 
 
@@ -544,9 +544,9 @@ if (true) {
 
 코드 예시:
 
-```markdown
+
 # 기능 감지:
-```
+
 
 
 
@@ -600,7 +600,7 @@ JavaScript
 - Udemy 및 Coursera 강좌: JavaScript와 웹 개발 학습을 위한 온라인 강좌 및 튜토리얼
 
 # 결론
-```
+
 
 
 

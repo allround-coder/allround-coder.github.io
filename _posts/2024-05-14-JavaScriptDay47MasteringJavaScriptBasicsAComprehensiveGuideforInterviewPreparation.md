@@ -99,7 +99,7 @@ const flattenedArray = flattenArray(nestedArray);
 ```
 
 <img src="/assets/img/2024-05-14-JavaScriptDay47MasteringJavaScriptBasicsAComprehensiveGuideforInterviewPreparation_1.png" />
-```
+
 
 
 

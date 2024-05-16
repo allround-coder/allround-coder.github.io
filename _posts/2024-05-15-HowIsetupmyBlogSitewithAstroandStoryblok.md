@@ -299,7 +299,7 @@ const story = data.story;
 ```
 
 이렇게 하면 blog/로 시작하는 모든 요청은 이 파일에서 처리됩니다. 왜냐하면 이 파일이 요청 URL을 라이브러리에 있는 각 Story에서 생성된 슬러그로 매핑하기 때문입니다. Storyblok 콘텐츠 탭에서 Test Blog를 만들어 테스트해볼 수 있습니다. "New Story"로 이동하고 "Content type"을 "BlogPost"로 선택하면 됩니다. 왼쪽에는 Visual Editor라 불리는 화면이 나타나고 오른쪽에는 콘텐츠/미디어를 작성 및 관리하는 일반 편집기가 표시됩니다.
-```
+
 
 
 
@@ -313,7 +313,7 @@ Storyblok의 시각 에디터는 작가/개발자에게 즐거운 경험을 제�
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-15-HowIsetupmyBlogSitewithAstroandStoryblok_6.png)
 
 작업이 완료되었습니다. 이제 우리는 콘텐츠 편집기 플랫폼을 갖추었고, 실시간으로 변경 사항을 시각화하고 Storyblok의 에셋 라이브러리를 사용하여 미디어를 관리하며 사용자 정의 블록을 사용하여 모든 구성 요소를 사용자 정의할 수 있습니다.
@@ -321,7 +321,7 @@ Storyblok의 시각 에디터는 작가/개발자에게 즐거운 경험을 제�
 ## 소스 코드:
 
 ## 참고 자료:
-```
+
 
 
 

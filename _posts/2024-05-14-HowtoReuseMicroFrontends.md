@@ -88,7 +88,7 @@ npx @teambit/bvm install
 우선 Bit.cloud를 통해 원하는 마이크로 프론트엔드를 찾아 설치해야 합니다. 예를 들어, 얼마 전에 만든 블로그 마이크로 프론트엔드를 한 번 살펴보겠습니다. 그것은 기사를 나열하는 간단한 마이크로 프론트엔드입니다.
 
 페이지의 오른쪽 상단에는 "사용" 버튼이 있습니다. 클릭하면 다음 메뉴가 표시됩니다:
-```
+
 
 
 
@@ -159,7 +159,7 @@ bit use apps/website
 ![이미지](/assets/img/2024-05-14-HowtoReuseMicroFrontends_2.png)
 
 이제 `apps/website/website.tsx` 파일의 코드를 다음과 같이 변경하겠습니다:
-```
+
 
 
 

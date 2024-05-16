@@ -143,7 +143,7 @@ docker push core.harbor.localhost/library/apiservice:latest
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-15-GettingStartedwithHarborAStep-by-StepGuide_6.png)
 
 # 고급 기능
@@ -151,7 +151,7 @@ docker push core.harbor.localhost/library/apiservice:latest
 Harbor에는 기능을 향상시키는 몇 가지 고급 기능이 있습니다. 저는 이에 대해 자세히 다루지 않을 것입니다:
 
 - 외부 저장소 연결:
-```
+
 
 
 

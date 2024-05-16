@@ -51,13 +51,13 @@ D. 자식 메서드를 부모에서 호출
 
 
 
-```markdown
+
 ![Child Component](/assets/img/2024-05-14-ComponentCommunicationinLWC_2.png)
 
 ![Child Component](/assets/img/2024-05-14-ComponentCommunicationinLWC_3.png)
 
 ![Child Component](/assets/img/2024-05-14-ComponentCommunicationinLWC_4.png)
-```
+
 
 
 
@@ -81,7 +81,7 @@ D. 자식 메서드를 부모에서 호출
 
 
 
-```markdown
+
 ![Component Communication in LWC - Step 8](/assets/img/2024-05-14-ComponentCommunicationinLWC_8.png)
 
 ![Component Communication in LWC - Step 9](/assets/img/2024-05-14-ComponentCommunicationinLWC_9.png)
@@ -89,7 +89,7 @@ D. 자식 메서드를 부모에서 호출
 ### Result
 
 ![Component Communication in LWC - Step 10](/assets/img/2024-05-14-ComponentCommunicationinLWC_10.png)
-```
+
 
 
 
@@ -103,13 +103,13 @@ D. 자식 메서드를 부모에서 호출
 
 
 
-```markdown
+
 ![Child Component](/assets/img/2024-05-14-ComponentCommunicationinLWC_12.png)
 
 ![Child Component](/assets/img/2024-05-14-ComponentCommunicationinLWC_13.png)
 
 ![Child Component](/assets/img/2024-05-14-ComponentCommunicationinLWC_14.png)
-```
+
 
 
 
@@ -144,7 +144,7 @@ Result
 
 
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*TkpNP-vozpdAfIjKnElUeA.gif)
 
 # 자식에서 부모로 통신하기
@@ -153,7 +153,7 @@ Result
 
 이벤트란 무엇인가?
 JS와 HTML의 상호 작용은 모두 이벤트를 통해 처리됩니다. 사용자나 브라우저가 페이지를 조작하려고 할 때 해당 페이지가 로드될 때 이를 이벤트라고 합니다. 모든 이벤트는 'on' 키워드로 시작합니다.
-```
+
 
 
 
@@ -177,7 +177,7 @@ JS와 HTML의 상호 작용은 모두 이벤트를 통해 처리됩니다. 사�
 
 
 
-```markdown
+
 ![Screenshot 1](/assets/img/2024-05-14-ComponentCommunicationinLWC_21.png)
 
 ![Screenshot 2](/assets/img/2024-05-14-ComponentCommunicationinLWC_22.png)
@@ -185,7 +185,7 @@ JS와 HTML의 상호 작용은 모두 이벤트를 통해 처리됩니다. 사�
 Result
 
 ![Animation](https://miro.medium.com/v2/resize:fit:1400/1*4gUjy7HDpHBU0m-ucNilTQ.gif)
-```
+
 
 
 
@@ -257,15 +257,15 @@ export default {
 PubSubComp_A
 
 ![ComponentCommunicationinLWC_23](/assets/img/2024-05-14-ComponentCommunicationinLWC_23.png)
-```
 
 
 
-```markdown
+
+
 ![PubSubComp_B](/assets/img/2024-05-14-ComponentCommunicationinLWC_25.png)
 
 ![Image](/assets/img/2024-05-14-ComponentCommunicationinLWC_26.png)
-```
+
 
 
 

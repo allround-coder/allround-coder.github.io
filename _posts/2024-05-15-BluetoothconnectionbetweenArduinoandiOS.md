@@ -269,7 +269,7 @@ func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeriph
 연결이 성공하면 Bluetooth 모듈의 LED가 깜박이는 것이 멈추고 켜져 있어야 합니다.
 
 연결이 성공하면 자동으로 CentralManager 함수 "didConnect"로 들어가며, 이 경우에:
-```
+
 
 
 

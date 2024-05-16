@@ -68,7 +68,7 @@ React Native를 업그레이드해보세요:-
 
 ```js
 npx react-native upgrade
-```
+
 
 이 명령어를 실행하면 구성 파일, 의존성 및 다른 필요한 변경 사항을 자동으로 업데이트하여 프로젝트 파일을 최신 React Native 버전과 일치시킵니다.
 
@@ -77,7 +77,7 @@ React Native 업그레이드 도우미를 검토하려면 여기를 방문하세
 
 
 
-```markdown
+
 ![Upgrading React Native - A Comprehensive Guide to the Latest Version iOS - Step 0](/assets/img/2024-05-16-UpgradingReactNativeAComprehensiveGuidetotheLatestVersioniOS_0.png)
 
 ![Upgrading React Native - A Comprehensive Guide to the Latest Version iOS - Step 1](/assets/img/2024-05-16-UpgradingReactNativeAComprehensiveGuidetotheLatestVersioniOS_1.png)
@@ -122,7 +122,6 @@ React Native를 업그레이드한 후 앱이 충돌하는 일반적인 원인 �
 
 
 
-```markdown
 #import <React/RCTBridgeDelegate.h>
 #import <UIKit/UIKit.h>
 #import "RNAppAuthAuthorizationFlowManager.h"
@@ -133,14 +132,14 @@ React Native를 업그레이드한 후 앱이 충돌하는 일반적인 원인 �
 @property(nonatomic, weak)id<RNAppAuthAuthorizationFlowManagerDelegate>authorizationFlowManagerDelegate;
 
 @end
-```
+
 
 모든 필수 구성이 완벽하게 되어 있는지 확인하여 앱 충돌을 최소화하고 React Native 업그레이드 후에 더 부드러운 전환을 보장할 수 있습니다.
 
 중요한 점은 철저한 테스트와 세부 사항에 신경을 쓰는 것입니다. 업그레이드 프로세스 중 잠재적인 문제를 식별하고 해결하기 위해 문서, 커뮤니티 포럼 또는 관련 GitHub 저장소를 참고하여 앱 충돌 또는 다른 문제 해결 시 지원받을 수 있습니다.
 
 React Native 업그레이드는 단순한 기술 작업에 그치는 것이 아닙니다. 혁신, 최적화 및 지속적인 개선에 대한 우리의 헌신의 증명입니다. React Native의 최신 발전을 따라가면서, 더욱 빠르고 신뢰성이 높으며 기능이 풍부한 앱을 만들 수 있는 능력을 키웁니다.
-```
+
 
 
 

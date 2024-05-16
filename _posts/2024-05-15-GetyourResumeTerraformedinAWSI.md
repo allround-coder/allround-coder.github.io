@@ -218,7 +218,7 @@ resource "aws_acm_certificate_validation" "cert_validation" {
 ## 단계 4: Route 53 설정
 
 인프라스트럭처에서말했던 것처럼 DNS 관리를 위해 Route 53을 사용할 것입니다. 글의 시작에서 말했듯이 이미 도메인(나의 경우엔 antonirs.com)과 AWS에 생성된 호스팅존이 있습니다. 다음 구성(route53.tf)을 따라 호스팅존 내에 A 레코드를 작성하고, CloudFront 배포로 가리키는 별칭으로 설정합니다.
-``` 
+ 
 
 
 

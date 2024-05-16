@@ -107,7 +107,7 @@ connectedCallback(){
 - `renderedCallback()`: 이 훅은 컴포넌트의 초기 렌더링 후에 트리거됩니다. 요소와 상호 작용하는 것과 같은 렌더링된 DOM에 대한 지식이 필요한 작업에 적합합니다.
 
 주의하세요!
-```
+
 
 
 
@@ -145,7 +145,7 @@ export default class LifeCycleHookParent extends LightningElement {
 
 
 
-```markdown
+
 disconnectedCallback()
 
 - 문서에서 요소가 제거될 때 호출됩니다 (이벤트 리스너 제거, 시간 간격 제거 등).
@@ -156,7 +156,7 @@ disconnectedCallback()
 6. 오류 처리:
 
 - `errorCallback()`: 렌더링 중 오류가 발생하면 이 후크가 호출됩니다. 오류를 우아하게 처리하고 적절한 메시지를 표시할 수 있는 기회를 제공합니다.
-```
+
 
 
 

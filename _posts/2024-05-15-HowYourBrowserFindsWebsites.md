@@ -73,7 +73,7 @@ Markdown 형식으로 바꿔보세요.
 
 
 
-```markdown
+
 ![How Your Browser Finds Websites](/assets/img/2024-05-15-HowYourBrowserFindsWebsites_6.png)
 
 After this point, there might be many other requests back and forth between your browser and Google servers for other HTML, CSS, and JS files. However, you don’t need to make another request to your ISP for these, as they go directly to Google’s servers. Additionally, your browser has likely cached the IP address of google.com, so it won’t need to make an unnecessary request to your ISP next time.
@@ -81,7 +81,7 @@ After this point, there might be many other requests back and forth between your
 ## Experiment: See It in Action
 
 Want proof? Try this:
-```
+
 
 
 

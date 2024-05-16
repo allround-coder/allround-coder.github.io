@@ -113,7 +113,7 @@ void main() {
 }
 ```
 
-완성!```
+완성!
 
 
 
@@ -180,7 +180,7 @@ mattdesl에 영감을 받음
 
 
 
-```md
+md
 ![GridOfLines animation](https://miro.medium.com/v2/resize:fit:324/1*u010xIK6bJ1u3P0gbcX9SQ.gif)
 
 ```js
@@ -195,11 +195,11 @@ GridOfLines(
 ## AnimatedBWSquares and AnimatedColoredSquares
 
 Roni Kaufman의 영감을 받아 만들어졌습니다.
-```
 
 
 
-```markdown
+
+
 ![image](https://miro.medium.com/v2/resize:fit:324/1*M8eaiZY1slAFRz_C3KU0-g.gif)
 
 ```js
@@ -214,7 +214,7 @@ AnimatedBWSquares(
 ## AnimatedLines
 
 ![image](https://miro.medium.com/v2/resize:fit:324/1*zLmbd3nXmeePU0aS4Iul0w.gif)
-```
+
 
 
 

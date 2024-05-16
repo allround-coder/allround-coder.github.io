@@ -113,7 +113,7 @@ fig.figure.savefig('pings.jpg')
 이 부분은 가장 많은 노력을 필요로 했으며, Gmail 쪽에서의 설정(보안 수준이 낮은 앱 액세스 허용 및 앱 비밀번호 생성)과 Raspberry Pi 쪽에서의 설정(sendmail 설치 및 구성)이 포함되었습니다. 이러한 단계에 대한 두 가지 훌륭한 가이드는 [7, 8]에서 확인할 수 있습니다. 이 가이드를 따르면 var/logs/maillog의 로그 파일에 "My unqualified host name (raspberrypi) unknown; sleeping for retry"라는 오류가 계속 표시된다는 것에 유의하십시오. 이 오류를 해결하는 방법은 [9]에서 확인하십시오. 또한, 접근 보안 수준이 낮기 때문에 별도의 Gmail 계정을 만드는 것이 좋을 수 있습니다.
 
 설정을 완료하면 Python에서 생성된 이미지를 첨부한 이메일을 보낼 수 있습니다.
-```
+
 
 
 

@@ -81,7 +81,7 @@ logger.customLog = (message, level) => {
 ```
 
 ## 리스코프 치환 원칙 (LSP) 🧩
-```
+
 
 
 
@@ -108,7 +108,7 @@ module.exports = DatabaseAdapter;
 
 다음과 같이 변경해주실 수 있을까요?:
 
-```markdown
+
 ```js
 // IncorrectDBAdapter.js
 class MongoDBAdapter extends DatabaseAdapter {
@@ -161,7 +161,7 @@ class Auth {
 의존성의 끊임없이 변화하는 우주에서, 고수준 모듈은 구체적인 구현이 아닌 추상화를 바라봐야 합니다.
 
 예시: 이메일 서비스 📧
-```
+
 
 
 

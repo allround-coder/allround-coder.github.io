@@ -68,7 +68,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // 로더가 필
 이 기사 시리즈를 따라오고 있거나 React 프로젝트에 이미지 캐로셀을 포함하는 방법에 대해 보다 자세한 설명을 원한다면, 이 기사 계속 읽어보세요!
 
 <img src="/assets/img/2024-05-14-HowtoIntegrateaCarouselintoReactApplications_1.png" />
-```
+
 
 
 

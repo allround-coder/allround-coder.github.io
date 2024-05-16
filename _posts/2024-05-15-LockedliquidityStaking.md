@@ -11,7 +11,7 @@ link: "https://medium.com/@slasserb/stable-staking-repeg-protocol-02559caf3220"
 ---
 
 
-```markdown
+
 ![Locked Liquidity Staking](/assets/img/2024-05-15-LockedliquidityStaking_0.png)
 
 ## 소개:
@@ -19,7 +19,7 @@ link: "https://medium.com/@slasserb/stable-staking-repeg-protocol-02559caf3220"
 토큰이 소각되거나 스테이킹되면 가격이 대부분 상승합니다. 문제는 USTC 홀더들이 토큰을 소각하도록 어떻게 인센티브를 제공할지입니다. 아마도 소각의 명백하고 돌이킬 수 없는 특성을 없애면서도 생태계 전반에 이익을 주는 대안 솔루션을 찾아야 할 것입니다. LUNC와 USTC가 커뮤니티 토큰이라면, 우리는 모두가 성공할 수 있도록 공동으로 행동할 수 있는 기회가 있습니다.
 
 # 잠긴 유동성 스테이킹:
-```
+
 
 
 
@@ -31,7 +31,7 @@ USTC를 위탁/잠그면 순환 공급에서 제외됩니다. USTC 토큰은 가
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-15-LockedliquidityStaking_2.png)
 
 # USTC Staking 활성화:
@@ -39,7 +39,7 @@ USTC를 위탁/잠그면 순환 공급에서 제외됩니다. USTC 토큰은 가
 USTC 스테이킹은 프로토콜의 주요 구성 요소 중 하나이므로 구현해야 합니다. 오라클 풀 내의 USTC는 USTC 스테이커들에게 전용되어야 하므로 USTC 스테이킹은 USTC 스테이커들에게만 USTC 보상을 제공할 것입니다. 따라서 USTC는 더 이상 Lunc 스테이커들에게 보상으로 제공되지 않을 것입니다. 이것은 일시적인 조치로 USTC를 재고정하기 위한 노력입니다.
 
 ![이미지](/assets/img/2024-05-15-LockedliquidityStaking_3.png)
-```
+
 
 
 

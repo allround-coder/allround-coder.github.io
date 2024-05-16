@@ -85,7 +85,7 @@ React 19에서는 `form` 요소에 이제 action 속성이 있어서, 폼을 제
 
 
 
-```markdown
+
 ![React 19 beta is out](/assets/img/2024-05-14-React19betaisout_4.png)
 
 폼 템플릿에서 상태를 표시하고 isPending 값 사용하여 비동기 액션이 처리 중임을 사용자에게 전달할 수 있습니다.
@@ -93,7 +93,7 @@ React 19에서는 `form` 요소에 이제 action 속성이 있어서, 폼을 제
 ![React 19 beta is out](/assets/img/2024-05-14-React19betaisout_5.png)
 
 이렇게 하면, React의 이러한 새로운 변경 사항으로 인해 폼에서 비동기 전환을 다룰 때 처리 중인 상태, 오류 및 순차 요청을 수동으로 처리할 필요가 없어집니다. 대신, 이러한 값들은 useActionState() Hook에서 직접 액세스할 수 있습니다.
-```
+
 
 
 
@@ -137,7 +137,7 @@ useContext() Hook과 달리, use() 함수는 조건문과 루프 내에서 컴�
 
 
 
-```
+
 ![React19betaisout_9](/assets/img/2024-05-14-React19betaisout_9.png)
 
 use()도 Suspense와 에러 경계와 매끄럽게 통합됩니다. 프라미스를 읽기 위해서(React 문서의 서버에서 클라이언트로 데이터 스트리밍에서 더 자세히 참조).
@@ -145,7 +145,7 @@ use()도 Suspense와 에러 경계와 매끄럽게 통합됩니다. 프라미스
 # React 서버 컴포넌트
 
 React 서버 컴포넌트는 React 19에서 소개되는 새로운 기능으로, 서버에서 실행되는 상태 없는 React 컴포넌트를 만들 수 있게 해줍니다. 이러한 컴포넌트는 클라이언트 응용 프로그램이나 서버 측 렌더링 서버와 다른 환경에서 번들링되기 전에 미리 실행됩니다.
-```
+
 
 
 

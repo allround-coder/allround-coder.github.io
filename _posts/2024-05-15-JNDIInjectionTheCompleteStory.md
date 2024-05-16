@@ -102,7 +102,7 @@ public class SimpleJndiLookup {
 참고
 
 # JNDI 공격
-```
+
 
 
 
@@ -130,7 +130,7 @@ JNDI 공격은 LDAP, RMI, CORBA 및 DNS와 같은 다양한 SPI를 사용하여 
 
 
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-15-JNDIInjectionTheCompleteStory_1.png)
 
 2. LDAP
@@ -140,7 +140,7 @@ JNDI 공격은 LDAP, RMI, CORBA 및 DNS와 같은 다양한 SPI를 사용하여 
 - Disables the automatic loading of Java class definitions from remote locations for objects retrieved via LDAP services in JNDI.
 
 ![Image 2](/assets/img/2024-05-15-JNDIInjectionTheCompleteStory_2.png)
-```
+
 
 
 
@@ -200,7 +200,7 @@ java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.RMIRefServer  
 - RMI : rmi://RMIServerIP:1099/Exploit
 
 ## Exploiting JNDI in Newer JDK Versions
-```
+
 
 
 
@@ -233,7 +233,7 @@ System.setProperty("com.sun.jndi.ldap.object.trustURLCodebase", "true"); //LDAP
 
 
 
-```markdown
+
 1) 취약한 프로그램의 클래스 경로에 존재해야 합니다.
 2) ObjectFactory 인터페이스를 구현해야 합니다.
 3) getObjectInstance 메서드를 구현해야 합니다.
@@ -248,11 +248,11 @@ System.setProperty("com.sun.jndi.ldap.object.trustURLCodebase", "true"); //LDAP
 - org.apache.naming.factory.BeanFactory 클래스(Tomcat과 함께 제공됨)가 클래스 경로에 있는 경우, 기본 JRE/JDK 버전과 관계없이 RCE를 달성할 수 있습니다.
 - 이에 대한 자세한 내용은 다음 블로그에서 확인할 수 있습니다: https://www.cnblogs.com/Welk1n/p/11066397.html
 - 그러나 이는 아래 Tomcat 버전에서 수정되었습니다.
-```
 
 
 
-```markdown
+
+
 8.5.x는 8.5.79 버전 이후에 사용 가능합니다.
 9.0.x는 9.0.63 버전 이후에 사용 가능합니다.
 10.0.x는 10.0.21 버전 이후에 사용 가능합니다.
@@ -263,7 +263,7 @@ System.setProperty("com.sun.jndi.ldap.object.trustURLCodebase", "true"); //LDAP
 이 블로그를 작성하는 동안, 취약점을 실험하기 위해 여러 개의 랩을 만들었습니다. 다음은 시도해 볼 수 있는 저장소 링크입니다: Jndi-Injection-Labs
 
 다음 파트에서는 LDAP 독려가 JNDI 취약점 악용에 어떻게 사용될 수 있는지 살펴볼 것입니다.
-```
+
 
 
 

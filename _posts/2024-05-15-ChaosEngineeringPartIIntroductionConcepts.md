@@ -31,7 +31,7 @@ link: "https://medium.com/@the14dayedition/chaos-engineering-part-i-introduction
 
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-15-ChaosEngineeringPartIIntroductionConcepts_0.png)
 
 # 소프트웨어 생태계에 적용하는 방법
@@ -39,11 +39,11 @@ link: "https://medium.com/@the14dayedition/chaos-engineering-part-i-introduction
 소프트웨어는 기계에서 실행되며 리소스 제약( CPU, 메모리, 디스크)을 가지고 있으며 일정한 부하만 지탈을 수 있습니다. 노트북에서 추가로 크롬 창을 열면 팬이 큰 소음을 내며 컴퓨터 리소스가 한계에 다다랐음을 나타내는 장면을 경험할 수 있습니다.
 
 이 익숙한 시나리오는 대규모 응용 프로그램이 돌발적인 트래픽 증가 또는 리소스 활용이 발생했을 때 직면하는 도전의 미시적인 사례입니다. 개인 컴퓨터가 동시에 너무 많은 응용프로그램을 실행하여 혼란스러워질 수 있는 것처럼, 복잡한 분산 시스템도 예상치 못한 부하로 인해 붕괴되어 성능 하락, 장애 또는 완전한 중단으로 이어질 수 있습니다.
-```
 
 
 
-```markdown
+
+
 ![Chaos Engineering](/assets/img/2024-05-15-ChaosEngineeringPartIIntroductionConcepts_1.png)
 
 # 실제 사례
@@ -52,7 +52,7 @@ link: "https://medium.com/@the14dayedition/chaos-engineering-part-i-introduction
 
 - 원자력 발전소: 원자력 발전소는 비상 대응 계획과 절차를 테스트하기 위해 정기적인 훈련 및 시뮬레이션을 실시합니다. 이 연습들은 반응기 고장, 방사능 누출 또는 발전소 운영에 영향을 줄 수있는 자연재해 등의 시나리오를 시뮬레이션할 수 있습니다. 극한 조건 하에서 시스템을 테스트함으로써 원자력 발전소는 취약성을 식별하고 운영의 안전성을 보장할 수 있습니다.
 - 아마존: 아마존은 "GameDay"라는 긴 전통을 가지고 있으며, 팀은 본딩 시스템에 의도적으로 오류를 도입하여 그 견고함을 테스트합니다. 이벤트 중에 팀은 네트워크 장애, 서버 장애 등과 같은 다양한 시나리오를 시뮬레이션합니다. 이러한 실천은 아마존이 취약성을 확인하고 해결하여 서비스가 실제 장애를 견디고 높은 가용성을 유지할 수 있도록 도왔습니다.
-```
+
 
 
 

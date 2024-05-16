@@ -134,7 +134,6 @@ for epoch in range(epochs):
 
 
 
-```md
 ```js
 import torch
 
@@ -165,7 +164,7 @@ print(new_t.shape)
 print(new_t.stride())
 # [40, 8, 4, 2, 1]
 ``` 
-```
+
 
 
 
@@ -287,7 +286,7 @@ print_internal(new_t_contiguous)
 내가 만들 라이브러리 이름은 Norch입니다. PyTorch가 아닌 (NOT PyTorch)을 의미하며, 성(Nogueira)을 암시하기도 합니다. 😁
 
 첫 번째로 알아야 할 것은 PyTorch가 Python을 통해 사용되지만 내부적으로는 C/C++로 실행된다는 것입니다. 그래서 먼저 내부 C/C++ 함수를 만들 것입니다.
-```
+
 
 
 
@@ -1013,7 +1012,7 @@ x가 행렬이라는 것에 유의해야 합니다. 따라서 각 요소에 대�
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-15-RecreatingPyTorchfromScratchwithGPUSupportandAutomaticDifferentiation_12.png)
 
 각 항에 대해 연쇄 법칙을 적용하여 외부 함수를 미분하고 내부 함수를 미분한 값을 곱합니다:
@@ -1021,7 +1020,7 @@ x가 행렬이라는 것에 유의해야 합니다. 따라서 각 요소에 대�
 ![이미지](/assets/img/2024-05-15-RecreatingPyTorchfromScratchwithGPUSupportandAutomaticDifferentiation_13.png)
 
 Where:
-```
+
 
 
 
@@ -1035,7 +1034,7 @@ Where:
 
 아래는 Markdown 형식으로 변경된 내용입니다.
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-15-RecreatingPyTorchfromScratchwithGPUSupportandAutomaticDifferentiation_16.png)
 
 Substituting the values into the equation:
@@ -1043,11 +1042,11 @@ Substituting the values into the equation:
 ![Image 2](/assets/img/2024-05-15-RecreatingPyTorchfromScratchwithGPUSupportandAutomaticDifferentiation_17.png)
 
 Calculating the result, we get the same values we obtained with PyTorch:
-```
 
 
 
-```markdown
+
+
 ![image](/assets/img/2024-05-15-RecreatingPyTorchfromScratchwithGPUSupportandAutomaticDifferentiation_18.png)
 
 Now, let’s analyze what we just did:
@@ -1055,11 +1054,11 @@ Now, let’s analyze what we just did:
 Basically, we observed all the operations involved in reverse order: a summation, a power of 3, and a subtraction. Then, we applied the chain rule, calculating the derivative of each operation and recursively calculated the derivative for the next operation. So, first we need an implementation of the derivative for different math operations:
 
 For addition:
-```
 
 
 
-```markdown
+
+
 ![Image](/assets/img/2024-05-15-RecreatingPyTorchfromScratchwithGPUSupportandAutomaticDifferentiation_19.png)
 
 ```js
@@ -1076,7 +1075,7 @@ class AddBackward:
 For sin:
 
 ![Image](/assets/img/2024-05-15-RecreatingPyTorchfromScratchwithGPUSupportandAutomaticDifferentiation_20.png)
-```
+
 
 
 
@@ -1131,10 +1130,9 @@ class ElementwiseMulBackward:
 
 
 
-```markdown
+
 # norch/autograd/functions.py
 
-```SumBackward``` 클래스:
 ```python
 class SumBackward:
     def __init__(self, x):
@@ -1347,7 +1345,7 @@ class Module(ABC):
 ```
 
 예를 들어, nn.Module을 상속하여 사용자 정의 모듈을 만들거나, 이전에 생성된 모듈 중 하나인 선형 모듈을 사용하여 y = Wx + b 작업을 구현할 수 있습니다.
-```
+
 
 
 
@@ -1467,7 +1465,7 @@ class SGD(Optimizer):
 
 그리고 여기까지입니다! 이제 우리만의 딥러닝 프레임워크를 만들었어요! 🥳
 
-이제 학습을 시작해봅시다:```
+이제 학습을 시작해봅시다:
 
 
 
@@ -1547,7 +1545,7 @@ for epoch in range(epochs):
 
 성공적으로 모델이 생성되고 사용자 정의 딥러닝 프레임워크를 사용하여 훈련되었습니다!
 
-전체 코드는 여기에서 확인할 수 있습니다.```
+전체 코드는 여기에서 확인할 수 있습니다.
 
 
 

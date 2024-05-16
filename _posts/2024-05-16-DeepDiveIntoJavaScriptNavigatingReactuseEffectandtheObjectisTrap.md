@@ -11,7 +11,7 @@ link: "https://medium.com/codex/deep-dive-into-javascript-navigating-react-useef
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-16-DeepDiveIntoJavaScriptNavigatingReactuseEffectandtheObjectisTrap_0.png)
 
 React에서 side effect를 수행하고 array dependency가 수정될 때마다 다시 렌더링을 관리하기 위해 useEffect 훅을 자주 사용합니다. 그러나 이 훅에 익숙하지 않은 일부 개발자는 브라우저가 멈추는 상황이나 컴포넌트 상태를 새로고침하는 문제 등 특정 상황에서 약간 헷갈릴 수 있습니다.
@@ -49,7 +49,7 @@ function CountClick() {
 
 
 
-```markdown
+
 ![Screenshot](/assets/img/2024-05-16-DeepDiveIntoJavaScriptNavigatingReactuseEffectandtheObjectisTrap_2.png)
 
 카운터가 증가하는 것을 관찰할 수 있지만, 콘솔에서는 아무 일도 일어나지 않습니다. 여기서 useEffect의 의존성이 실제로 작용하게 됩니다.
@@ -107,7 +107,7 @@ function CountClick() {
 
 
 
-```
+
 ![Image 1](/assets/img/2024-05-16-DeepDiveIntoJavaScriptNavigatingReactuseEffectandtheObjectisTrap_3.png)
 
 우리의 코드가 무한 루프를 발생시키고 있어요. 컴포넌트가 불필요하게 계속해서 자기 자신을 다시 렌더링하며, 업데이트의 끝나지 않는 사이클을 초래하고 있죠.
@@ -115,7 +115,7 @@ function CountClick() {
 다행히도, React의 소스 코드는 오픈 소스로 제공되어 있어요. 그래서 우리는 이 효과의 구현을 쉽게 찾을 수 있어요!
 
 ![Image 2](/assets/img/2024-05-16-DeepDiveIntoJavaScriptNavigatingReactuseEffectandtheObjectisTrap_4.png)
-```
+
 
 
 

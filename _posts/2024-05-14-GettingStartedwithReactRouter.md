@@ -108,7 +108,7 @@ export default App;
 만약 Not Found Routes가 있으면 어떨까요?
 
 ![GettingStartedwithReactRouter_2](/assets/img/2024-05-14-GettingStartedwithReactRouter_2.png)
-```
+
 
 
 

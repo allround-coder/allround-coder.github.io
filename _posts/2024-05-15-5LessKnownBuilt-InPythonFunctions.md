@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/5-less-known-built-in-python-functions-70
 ---
 
 
-```markdown
+
 ![python function](/assets/img/2024-05-15-5LessKnownBuilt-InPythonFunctions_0.png)
 
 ## 1) callable(x)
@@ -27,7 +27,7 @@ hi = 1
 print(callable(hello))   # True
 print(callable(hi))      # False
 ```
-```
+
 
 
 
@@ -151,7 +151,7 @@ print(isinstance(a, Rice))    # False
 
 
 
-```markdown
+
 issubclass(class1, class2) 함수는 다음 경우에 True를 반환합니다:
 
 - class1이 class2와 동일한 경우
@@ -170,7 +170,7 @@ print(issubclass(GermanShepherd, Animal))  # True
 - Animal은 Animal이므로 issubclass(Animal, Animal)은 True를 반환합니다.
 - Dog는 Animal이므로 issubclass(Dog, Animal)은 True를 반환합니다.
 - GermanShepherd는 Dog이고 Dog는 Animal이므로 issubclass(GermanShepherd, Animal) 또한 True를 반환합니다.
-```
+
 
 
 

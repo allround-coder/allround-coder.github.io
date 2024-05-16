@@ -31,7 +31,7 @@ link: "https://medium.com/@carloscuba014/building-a-reactjs-app-with-graphql-mid
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-BuildingaReactJSAppwithGraphQLMiddlewareandNodeJS-MongoDBBackend_1.png)
 
 계정을 설정했다면 https://github.com/new에서 적어도 한 개의 저장소를 만들 수 있어야 합니다:
@@ -40,7 +40,7 @@ link: "https://medium.com/@carloscuba014/building-a-reactjs-app-with-graphql-mid
 
 이 튜토리얼에서는 ReactJS와 NodeJS를 사용할 것이며 프로젝트용 .gitignore를 만들고 싶다면 아무런 경우에나 나중에 각 앱에 추가할 것입니다!
 이 튜토리얼에서는 다음과 같이 저장소를 만들었습니다:
-```
+
 
 
 
@@ -315,7 +315,7 @@ npm i concurrently -D
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-BuildingaReactJSAppwithGraphQLMiddlewareandNodeJS-MongoDBBackend_16.png)
 
 ### 미들웨어 Vercel 통합
@@ -323,7 +323,7 @@ npm i concurrently -D
 이제 Vercel에서 다른 프로젝트를 만들 수 있어야 합니다. 동일한 저장소를 선택하고 이름을 지정하되 Root Directory에서 미들웨어 폴더를 선택하십시오. 이제 두 개의 프로젝트가 배포되어 있어야 합니다!
 
 ### 데이터베이스
-```
+
 
 
 
@@ -762,7 +762,7 @@ module.exports = vercelServer;
 ## 배포된 미들웨어를 배포된 백엔드에 연결하기
 
 미들웨어 Vercel 앱에는 이제 모든 GraphQL 관련 코드가 있지만, 백엔드의 배포된 인스턴스에 연결되지 않을 것입니다. 왜냐하면 `MIDDLEWARE_ENV` 변수가 없기 때문입니다. 미들웨어 프로젝트의 설정에서 해당 환경 변수를 추가하고, 배포된 백엔드 URL을 사용하세요. 미들웨어에서 `/test`로 요청하면 이제 백엔드에서 해당 경로로부터 데이터를 반환할 수 있어야 합니다.
-```
+
 
 
 
@@ -1108,7 +1108,7 @@ TestQuery라는 줄은 페이지 컴포넌트에서 사용하는 응답 데이�
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-BuildingaReactJSAppwithGraphQLMiddlewareandNodeJS-MongoDBBackend_38.png)
 
 ![이미지](/assets/img/2024-05-14-BuildingaReactJSAppwithGraphQLMiddlewareandNodeJS-MongoDBBackend_39.png)
@@ -1116,7 +1116,7 @@ TestQuery라는 줄은 페이지 컴포넌트에서 사용하는 응답 데이�
 프론트엔드가 준비되면 http://localhost:3000/test로 이동하면 미들웨어에서 백엔드로부터 데이터를 받은 후 TestPage의 코드를 볼 수 있습니다. 테스트 리졸버에서 추가된 텍스트를 표시합니다:
 
 ![이미지](/assets/img/2024-05-14-BuildingaReactJSAppwithGraphQLMiddlewareandNodeJS-MongoDBBackend_40.png)
-```
+
 
 
 

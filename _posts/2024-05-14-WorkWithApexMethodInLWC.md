@@ -272,7 +272,7 @@ export default class LdsWithApex extends LightningElement {
 ```
 
 결과:
-``` 
+ 
 
 
 
@@ -362,7 +362,7 @@ export default class LdsWithApex extends LightningElement {
 ```
 
 설명:
-```
+
 
 
 
@@ -401,7 +401,7 @@ export default class LdsWithApex extends LightningElement {
 
 
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/0*ty-u1bBD3a58qUzR.gif)
 
 Apex 메소드에 매개변수 값을 전달할 때, Apex 메소드의 매개변수와 일치하는 속성을 가진 객체에 값을 전달합니다.

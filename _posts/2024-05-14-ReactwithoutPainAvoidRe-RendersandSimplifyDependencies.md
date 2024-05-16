@@ -11,7 +11,7 @@ link: "https://medium.com/@lahmataja-pa4vara/react-without-pain-avoid-re-renders
 ---
 
 
-```markdown
+
 ![React without Pain: Avoid Re-Renders and Simplify Dependencies](/assets/img/2024-05-14-ReactwithoutPainAvoidRe-RendersandSimplifyDependencies_0.png)
 
 React에서 다시 렌더링을 추적하는 것은 고통스러운 과정일 수 있습니다. Fine-grain 반응성 패턴은 이 문제를 완전히 제거하는 해결책을 제공하여 React 엔지니어가 종속성을 추적하는 것을 잊고 코드 작성에 집중할 수 있게 합니다. 이 기사에서는 라이브러리 Mlyn이 종속성 관리를 간단하게 하고 React 애플리케이션에서 불필요한 다시 렌더링을 방지하는 방법을 살펴보겠습니다.
@@ -19,7 +19,7 @@ React에서 다시 렌더링을 추적하는 것은 고통스러운 과정일 �
 # 종속성 관리: 공통 문제
 
 기존의 React 애플리케이션에서 상태와 종속성을 관리하는 것은 종종 복잡하고 오류가 발생하기 쉬운 코드로 이어질 수 있습니다. 이 문제를 설명하기 위해 간단한 카운터 예제를 살펴보겠습니다.
-```
+
 
 
 

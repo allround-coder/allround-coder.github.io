@@ -11,7 +11,7 @@ link: "https://medium.com/@shreyas-malhotra/vmware-workstation-fusion-pro-now-fr
 ---
 
 
-```markdown
+
 ![VMware Workstation Pro is now available for personal use at no cost, but the integration with Broadcom is still a messy affair, to put it down mildly.](/assets/img/2024-05-15-VMwareWorkstationFusionProNowFreeforPersonalUse_0.png)
 
 To help others who may have encountered difficulties navigating Broadcom’s site to download VMware Fusion or Workstation Pro, I’ve noted down these steps for a more direct approach. Hopefully, it’ll help streamline the process for those who, like me, found themselves lost in the maze of menus hiding the download link.
@@ -27,7 +27,7 @@ To help others who may have encountered difficulties navigating Broadcom’s sit
 - Notice the dropdown for the Personal Use edition (it is the exact same binaries as the Commercial one)
 - Select 17.5.2 or 13.5.2
 - Download and install
-```
+
 
 
 

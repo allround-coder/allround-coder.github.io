@@ -44,7 +44,7 @@ link: "https://medium.com/naukri-engineering/upgrading-to-node-js-v20-unlocking-
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-15-UpgradingtoNodejsv20UnlockingtheNextLevelofPerformanceandEfficiency_2.png)
 
 예: 위 스크린샷에서 node-sass가 지원되지 않아 sass로 업그레이드했습니다.
@@ -52,7 +52,7 @@ link: "https://medium.com/naukri-engineering/upgrading-to-node-js-v20-unlocking-
 4. 모든 비공개 종속성이 Node.js v20과 호환되고 빌드할 수 있는지 확인합니다.
 
 5. Node.js v20에서 실행되도록 비공개 종속성을 업데이트합니다.
-```
+
 
 
 
@@ -91,7 +91,7 @@ i. 소비자 응용 프로그램에서 .npmrc 파일에 artifactory URL을 구�
 
 
 
-```markdown
+
 ![image 1](/assets/img/2024-05-15-UpgradingtoNodejsv20UnlockingtheNextLevelofPerformanceandEfficiency_4.png)
 
 ![image 2](/assets/img/2024-05-15-UpgradingtoNodejsv20UnlockingtheNextLevelofPerformanceandEfficiency_5.png)
@@ -102,7 +102,7 @@ ii. 올바른 Node.js 버전을 사용하도록 개발자들이 패키지를 게
 engine-strict=true
 my-packages:registry="http://localhost:8081" 
 ```
-```  ‍‍
+  ‍‍
 
 
 
@@ -185,7 +185,7 @@ my-internal-dependencies/some-dependency: 1.0.0
 만세 🎉, 모든 비공개 종속성이 npm 레지스트리에서 다른 종속성과 함께 아티펙토리에서 다운로드됩니다.
 
 # 추가 팁 💡
-```
+
 
 
 

@@ -110,7 +110,7 @@ link: "https://medium.com/3dprintjunction/a-step-by-step-guide-to-3d-laser-scann
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-15-AStep-by-StepGuideto3DLaserScanning_3.png)
 
 ## 3D 모델링
@@ -120,7 +120,7 @@ link: "https://medium.com/3dprintjunction/a-step-by-step-guide-to-3d-laser-scann
 - 폴리곤 메시 — 이 과정은 수천 개의 정점을 연결하여 물체 기하학을 나타내는 메시 표면을 구축합니다. 메시 모델은 게임, VR 등과 같은 응용 프로그램을 위해 포토리얼리스틱 렌더링을 제공합니다.
 - CAD 솔리드 — 높은 정확도의 CAD 솔리드 모델은 디자인 서피스를 포인트 클라우드에 맞게 맞추어 만들어집니다. 이는 제조/품질 분석을 위한 정확한 제품 기하학을 재현합니다.
 - 검사 보고서 — 부품 검사를 위해 '설계된 대로'와 '실제로 제작된' 차원 간의 편차가 색상 맵을 사용해 허용 오류를 나타내는 PDF 보고서로 편성될 수 있습니다.
-```
+
 
 
 

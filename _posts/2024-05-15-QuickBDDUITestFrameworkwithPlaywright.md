@@ -142,7 +142,7 @@ Feature: Basic search using google engine
 
 
 
-```markdown
+
 ```js
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
@@ -207,7 +207,7 @@ AfterStep(async function({pickle, pickleStep, gherkinDocument, result, testCaseS
 
 export { browser, page };
 ```   
-```  
+  
 
 
 
@@ -234,7 +234,7 @@ export async function addCommentToReport(this: World, comment: string) {
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-15-QuickBDDUITestFrameworkwithPlaywright_3.png)
 
 # 테스트 실행

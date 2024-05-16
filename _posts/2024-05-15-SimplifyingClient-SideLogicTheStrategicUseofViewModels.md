@@ -11,7 +11,7 @@ link: "https://medium.com/netanelbasal/simplifying-client-side-logic-the-strateg
 ---
 
 
-```markdown
+
 ![User View Model](/assets/img/2024-05-15-SimplifyingClient-SideLogicTheStrategicUseofViewModels_0.png)
 
 애플리케이션은 종종 서버에서 직접 사용 가능한 데이터 표현과는 다른 데이터 표현이 필요합니다. 예를 들어 사용자 객체에는 열거형 역할, 열거형 상태, 이름 등의 속성이 포함될 수 있습니다. 클라이언트 측 뷰에서 이러한 서버 측 모델을 직접 사용하면 종종 UI 로직 전체에 분산된 복잡한 변환을 유발합니다.

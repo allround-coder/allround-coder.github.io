@@ -71,7 +71,7 @@ Rails와 비교하면 Ramaze는 깔끔하고 가벼운 솔루션을 제공합니
 
 
 
-```markdown
+
 The Goliath project can be accessed through its Goliath GitHub repository page [8]. Goliath has a powerful feature that can organize complex asynchronous requests into linear execution communication processes. Therefore, Goliath’s asynchronous mechanism can be quickly used for streaming data, firehose API, etc. In addition, Goliath is open source, which is also an important factor in its linear development. If you are passionate about web server development in Ruby, you will definitely enjoy working in Goliath.
 
 # Hanami
@@ -79,7 +79,7 @@ The Goliath project can be accessed through its Goliath GitHub repository page [
 With its concise architecture design and main object approach, Hanami [9] is considered one of the best Ruby frameworks and is widely popular as an alternative to Rails. Hanami has been “sorted” in design and provides small files that can be used independently to create project stacks. Hanami is lightweight, consumes fewer resources, and reduces memory by 60% compared to other large Ruby frameworks.
 
 ![Best Ruby Frameworks for Web Development](/assets/img/2024-05-16-16BestRubyFrameworksforWebDevelopment2024_5.png)
-```
+
 
 
 
@@ -103,7 +103,7 @@ NYNY의 하이라이트 중 하나는 이 루비 프레임워크가 루비 개�
 
 
 
-```markdown
+
 ![NYNY applications](/assets/img/2024-05-16-16BestRubyFrameworksforWebDevelopment2024_7.png)
 
 NYNY applications can be used with Sinatra, Rails, or any other Rack-based application. The official NYNY GitHub page [14] contains all relevant information, from setup to configuring the application to running it on the server.
@@ -111,7 +111,7 @@ NYNY applications can be used with Sinatra, Rails, or any other Rack-based appli
 # Cuba
 
 Cuba [15] is a micro-framework for developing web applications in Ruby language. Rum inspired Cuba, and the official website defines Cuba as “a small but powerful Rack application mapper”, making it one of the best Ruby frameworks. If you want to start developing in Cuba, the GitHub page is a practical guide.
-```
+
 
 
 

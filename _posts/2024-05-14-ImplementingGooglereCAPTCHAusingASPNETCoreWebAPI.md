@@ -11,7 +11,7 @@ link: "https://medium.com/@meghnav274/implementing-google-recaptcha-using-asp-ne
 ---
 
 
-```markdown
+
 ![Implementing reCAPTCHA using ASP.NET Core Web API](/assets/img/2024-05-14-ImplementingGooglereCAPTCHAusingASPNETCoreWebAPI_0.png)
 
 폼을 디자인했지만 웹 사이트가 봇 공격이나 다른 자동화된 공격을 받고 백엔드로 무관한 데이터를 제출할까 걱정되나요? Google reCaptcha가 이 문제에 대한 해결책을 제공합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@meghnav274/implementing-google-recaptcha-using-asp-ne
 Google reCaptcha는 사기를 탐지하고 합법적인 사용자만 시스템에 입력하고 로그인 페이지를 사용하거나 양식을 제출하거나 결제를 하거나 페이지를 보거나 가짜 사용자를 차단하는 등의 작업을 허용하는 시스템입니다.
 
 이제 프로젝트에 reCaptcha를 구현하는 방법에 대해 이야기해보겠습니다. 프론트엔드로 HTML, CSS 및 Javascript을 사용하고 백엔드로는 ASP.NET Core Web API를 사용할 것입니다.
-```
+
 
 
 
@@ -259,7 +259,7 @@ namespace reCaptchaAPI.Controllers
 <img src="/assets/img/2024-05-14-ImplementingGooglereCAPTCHAusingASPNETCoreWebAPI_9.png" />
 
 CORS를 지정하려면:
-```
+
 
 
 
@@ -298,7 +298,7 @@ Your API Project is now completed. You can run and test it once using swagger.``
 
 
 
-```markdown
+
 [이미지](/assets/img/2024-05-14-ImplementingGooglereCAPTCHAusingASPNETCoreWebAPI_11.png)
 
 자바스크립트 (script.js) 코드는 다음과 같습니다:
@@ -332,4 +332,3 @@ function LoginButton(){
 ```
 
 이 응용 프로그램의 소스 코드를 참조해주세요:
-```

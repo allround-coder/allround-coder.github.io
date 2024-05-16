@@ -21,7 +21,7 @@ link: "https://medium.com/@aivaras.a.grauzinis/unusual-phenomena-and-phenomenal-
 
 
 
-```markdown
+
 ![2024-05-16-UnusualphenomenaandphenomenalMidjourneyimages_0.png](/assets/img/2024-05-16-UnusualphenomenaandphenomenalMidjourneyimages_0.png)
 
 해당 단어들, 흥미로운 현상들을 발견하면, 시간을 낭비하지 않고 Midjourney에서 잘 활용해요.
@@ -29,7 +29,7 @@ link: "https://medium.com/@aivaras.a.grauzinis/unusual-phenomena-and-phenomenal-
 때문에 이전부터 이미 5000개 이상의 이미지를 생성하는 클럽에 참여하게 되었고, 빠른 시간을 보내기에 항상 부족한 이유가 있어요. 하지만 그 모두가 그만한 가치가 있죠.
 
 이 글에서는 최근 발견한 15개 용어와 단어를 공유하려고 해요. 이러한 단어들과 용어들은 특정한 과학 분야나 지식 카테고리에 구애받지 않지만, 한 가지 공통점을 가지고 있어요: 절도는 훌륭한 시각적 효과와 아름다운 그림을 만들어낼 수 있어요.
-```
+
 
 
 
@@ -92,7 +92,7 @@ Conchoidal Fractures(굴곡 파열): 특정 물질이 파단될 때 형성되는
 
 
 
-```
+
 ![Image 4](/assets/img/2024-05-16-UnusualphenomenaandphenomenalMidjourneyimages_4.png)
 
 ![Image 5](/assets/img/2024-05-16-UnusualphenomenaandphenomenalMidjourneyimages_5.png)
@@ -100,7 +100,7 @@ Conchoidal Fractures(굴곡 파열): 특정 물질이 파단될 때 형성되는
 ![Image 6](/assets/img/2024-05-16-UnusualphenomenaandphenomenalMidjourneyimages_6.png)
 
 As you can see, all of these words create absolutely outstanding images.
-```
+
 
 
 

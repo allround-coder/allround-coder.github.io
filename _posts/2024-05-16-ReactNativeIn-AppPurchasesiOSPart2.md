@@ -77,7 +77,7 @@ App Store에서 지원하는 175개 국가나 지역에서 구독을 이용할 �
 
 마크다운 형식으로 표 태그를 변경해주세요.
 
-```markdown
+
 <img src="/assets/img/2024-05-16-ReactNativeIn-AppPurchasesiOSPart2_7.png" />
 
 6. App Store Localization
@@ -85,7 +85,7 @@ App Store에서 지원하는 175개 국가나 지역에서 구독을 이용할 �
 다른 지역이나 국가의 사용자를 위해 로컬화된 제품 정보를 제공하세요. 디스플레이 이름과 설명을 포함합니다.
 
 <img src="/assets/img/2024-05-16-ReactNativeIn-AppPurchasesiOSPart2_8.png" />
-```
+
 
 
 
@@ -133,17 +133,15 @@ App Store에서 지원하는 175개 국가나 지역에서 구독을 이용할 �
 
 이미지 태그를 Markdown 형식으로 변경해주세요.
 
-```md
+md
 ![이미지](/assets/img/2024-05-16-ReactNativeIn-AppPurchasesiOSPart2_13.png)
-```
+
 
 4. 가격 일정
 
 가격을 구독과 국가 요율에 기반하여 설정하세요.
 
-```md
 ![이미지](/assets/img/2024-05-16-ReactNativeIn-AppPurchasesiOSPart2_14.png)
-```
 
 
 
@@ -167,7 +165,7 @@ App Store에서 지원하는 175개 국가나 지역에서 구독을 이용할 �
 
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-16-ReactNativeIn-AppPurchasesiOSPart2_17.png)
 
 # 앱 내 구매
@@ -176,7 +174,7 @@ App Store에서 지원하는 175개 국가나 지역에서 구독을 이용할 �
 
 - 소비 가능은 사용 후 사라지고 다시 구매해야하는 항목을 구매하고 사용할 수 있는 것을 의미합니다.
 - 비소비 가능은 사용자가 한 번 구매하면 영구적으로 사용할 수 있는 것을 의미합니다.
-```
+
 
 
 
@@ -190,7 +188,7 @@ App Store에서 지원하는 175개 국가나 지역에서 구독을 이용할 �
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-16-ReactNativeIn-AppPurchasesiOSPart2_19.png)
 
 2. Family Sharing and Availability
@@ -198,7 +196,7 @@ App Store에서 지원하는 175개 국가나 지역에서 구독을 이용할 �
 For non-consumable items, you can enable Family Sharing, allowing users to share the purchase across family members’ accounts. Once enabled, this cannot be disabled.
 
 You can also choose to make your in-app purchases available in any supported country or region.
-```
+
 
 
 

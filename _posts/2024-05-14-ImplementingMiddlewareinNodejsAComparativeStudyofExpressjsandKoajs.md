@@ -11,7 +11,7 @@ link: "https://medium.com/bitsrc/implementing-middleware-in-node-js-a-comparativ
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-05-14-ImplementingMiddlewareinNodejsAComparativeStudyofExpressjsandKoajs_0.png" />
 
 ## BACK-END DEVELOPMENT
@@ -19,7 +19,7 @@ link: "https://medium.com/bitsrc/implementing-middleware-in-node-js-a-comparativ
 # Introduction
 
 <img src="/assets/img/2024-05-14-ImplementingMiddlewareinNodejsAComparativeStudyofExpressjsandKoajs_1.png" />
-```
+
 
 
 
@@ -86,7 +86,7 @@ function authorize(req, res, next) {
 ```
 
 로깅 미들웨어 — 그리고 우리는 로깅에 도달했습니다. 로깅은 애플리케이션 활동 추적과 디버깅에 중요하며, 여기 Express 미들웨어를 사용해 요청 세부 정보를 로깅할 수 있습니다.
-```
+
 
 
 
@@ -326,7 +326,7 @@ app.listen(3000, () => {
 # Express.js vs Koa.js: 두 미들웨어의 이야기
 
 <img src="/assets/img/2024-05-14-ImplementingMiddlewareinNodejsAComparativeStudyofExpressjsandKoajs_5.png" />
-```
+
 
 
 

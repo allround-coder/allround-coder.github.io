@@ -11,7 +11,7 @@ link: "https://medium.com/learning-sql/master-normalization-in-sql-38143c7760ff"
 ---
 
 
-```markdown
+
 ![이미지1](/assets/img/2024-05-15-MasterNormalizationinSQL_0.png)
 
 ![이미지2](/assets/img/2024-05-15-MasterNormalizationinSQL_1.png)
@@ -19,7 +19,7 @@ link: "https://medium.com/learning-sql/master-normalization-in-sql-38143c7760ff"
 데이터베이스 관리에서 중요한 개념인 정규화는 특히 SQL(구조화된 쿼리 언어)에서 중요합니다. 이는 데이터베이스의 효율성, 무결성 및 확장성을 보장하며, 데이터베이스의 데이터를 중복 없이 정리하고 의존성을 줄이는 프로세스입니다. SQL에서 정규화를 마스터하는 것은 효율적이고 확장 가능하며 유지보수가 용이한 데이터베이스를 생성하는 데 필수적입니다. 이 글에서는 정규화의 원칙과 기술을 자세히 살펴보고, 여러 형태와 효과적인 구현 방법에 대해 다룰 것입니다.
 
 # 정규화 이해하기:
-```
+
 
 
 
@@ -272,9 +272,9 @@ Issues with the Example:
 
 프로젝트 및 해당 프로젝트에 배정된 직원, 그리고 각 직원이 책임지는 작업에 대한 정보를 저장하는 테이블을 고려해보세요:
 
-```markdown
+
 ![테이블](/assets/img/2024-05-15-MasterNormalizationinSQL_11.png)
-```
+
 
 예제의 문제점:
 
@@ -309,13 +309,13 @@ Issues with the Example:
 
 학생, 강의 및 각 강의에서 학생들이 받은 성적에 대한 정보를 저장하는 표를 고려해 보세요:
 
-```markdown
+
 | StudentID | StudentName | CourseID | CourseName | Grade |
 |-----------|-------------|----------|------------|-------|
 | 1         | Alice       | 1        | Math       | A     |
 | 2         | Bob         | 1        | Math       | B     |
 | 1         | Alice       | 2        | Science    | B     |
-```
+
 
 예제의 문제점:
 

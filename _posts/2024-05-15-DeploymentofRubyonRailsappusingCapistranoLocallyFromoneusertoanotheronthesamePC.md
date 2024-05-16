@@ -192,7 +192,7 @@ bin/rails s
 이제 파일 구조가 다음과 같이 보일 것입니다 :
 
 ![image](/assets/img/2024-05-15-DeploymentofRubyonRailsappusingCapistranoLocallyFromoneusertoanotheronthesamePC_2.png)
-```
+
 
 
 

@@ -124,7 +124,7 @@ yarn add eslint-config-prettier eslint-plugin-prettier prettier --dev
 ```
 
 단계 6: 위 모듈을 모두 설치한 후, .eslintrc.json 파일에 몇 가지 prettier 구성을 추가해야 합니다. 따라서 extends 내부에 "plugin:prettier/recommended"라는 줄을 추가해주세요.
-```  
+  
 
 
 

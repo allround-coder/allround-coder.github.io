@@ -11,7 +11,7 @@ link: "https://medium.com/javascript-in-plain-english/avoid-these-5-mistakes-as-
 ---
 
 
-```markdown
+```
 ![Avoid These 5 Mistakes as a Web Developer](/assets/img/2024-05-14-AvoidThese5MistakesasaWebDeveloper_0.png)
 
 우리는 모두 실수를 합니다. 배우고成長하며、경험을 쌓는 가장 효율적인 방법입니다. 실수를 돌아보고 그로부터 배우면 스스로를 향상시킬 수 있습니다.

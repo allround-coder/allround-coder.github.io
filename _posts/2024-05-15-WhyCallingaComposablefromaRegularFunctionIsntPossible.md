@@ -21,7 +21,7 @@ link: "https://medium.com/proandroiddev/why-calling-a-composable-from-a-regular-
 
 
 
-```markdown
+```
 ```js
 @Composable
 fun IAmAComposable(){
@@ -34,8 +34,8 @@ fun IAmAComposable(){
 조합이 일어날 때 콤포저블 트리 내에 노드가 생성되며, 모든 구현은 콤포저블 내부에 있습니다. 이 트리를 탐색하여 UI를 렌더링합니다. 이는 UI에만 국한되지 않고, 콤포즈 런타임 및 컴파일러를 사용하여 어떠한 종류의 트리 구조에 대해서도 효율적으로 탐색할 수 있습니다. 자세한 내용은 여기를 확인하세요.
 
 하지만 여러분이 여기로 왔는데도 계속 궁금한 점은, 왜 일반 함수에서 콤포저블을 호출할 수 없는 걸까요. 그래서 이에 대한 답변을 해볼게요.
-```
-```
+
+
 
 
 

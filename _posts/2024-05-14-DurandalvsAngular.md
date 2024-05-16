@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/durandal-vs-angular-677cb4d14045"
 ---
 
 
-```markdown
+
 ![Durandal Logo](/assets/img/2024-05-14-DurandalvsAngular_0.png)
 
 알고 계신가요? Durandal을 들어보신 적이 있나요? 만일 JS 개발자 경험이 적다면 들어보지 못했을 것입니다. 10년 전에 이것은 인기 있는 싱글 페이지 앱 (SPA) 프레임워크였습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/gitconnected/durandal-vs-angular-677cb4d14045"
 당시 저는 Durandal을 사용한 중요한 프로젝트에서 1년 이상 일했습니다. 저는 그것을 좋아했어요. 작고, 유연하며 확장하기 쉬웠습니다.
 
 10년은 IT분야에서 긴 시간입니다. 지금은 Durandal이 더 이상 사용되지 않고 있습니다. 새로운 세대의 프런트 엔드 JS 프레임워크가 웹 애플리케이션의 세계를 지배하고 있습니다.
-```
+
 
 
 
@@ -139,7 +139,7 @@ Angular은 자체적인 양방향 데이터 바인딩 메커니즘을 제공하�
 ```
 
 React와 같은 다른 최신 프론트엔드 JS 프레임워크들은 이벤트를 통해 데이터 상태를 업데이트하여 성능을 향상시키는 단방향 데이터 바인딩을 활용합니다.
-```
+
 
 
 

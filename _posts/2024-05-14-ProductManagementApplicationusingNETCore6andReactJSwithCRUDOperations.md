@@ -93,7 +93,7 @@ Step 5
 리포지토리 폴더 내에 제품 리포지토리를 추가하세요.
 
 IProductRepository
-```
+
 
 
 
@@ -170,7 +170,7 @@ namespace ProductManagementAPI.Repositories
 ```
 
 단계 6
-```
+
 
 
 
@@ -464,7 +464,7 @@ export default ProductListItem;
 ```
 
 제품 서비스.
-```
+
 
 
 
@@ -518,7 +518,7 @@ export default App;
 ```
 
 5단계
-```
+
 
 
 

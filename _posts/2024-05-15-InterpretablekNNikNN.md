@@ -123,7 +123,7 @@ ikNN.graph_model(X.columns)
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-15-InterpretablekNNikNN_1.png)
 
 이 그림은 기본적으로 5개의 2D 공간을 나타내는 데이터 공간의 빠른 개요를 제공합니다. 점들은 훈련 데이터의 클래스를 보여줍니다. 배경 색상은 2D 공간의 각 영역에 대해 kNN이 한 예측을 보여줍니다.
@@ -131,7 +131,7 @@ ikNN.graph_model(X.columns)
 그래프_예측() API는 특정 행을 설명합니다. 예를 들어:
 
 ![이미지](/assets/img/2024-05-15-InterpretablekNNikNN_2.png)
-```
+
 
 
 

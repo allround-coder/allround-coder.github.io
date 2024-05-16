@@ -139,7 +139,7 @@ bit create react-hook entities/blog/model && bit create react entities/blog/ui/b
 
 
 
-```markdown
+
 <img src="/assets/img/2024-05-14-DevelopingScalableFrontendswithFeature-SlicedDesignFSD_1.png" />
 
 <img src="/assets/img/2024-05-14-DevelopingScalableFrontendswithFeature-SlicedDesignFSD_2.png" />
@@ -147,7 +147,7 @@ bit create react-hook entities/blog/model && bit create react entities/blog/ui/b
 비트(Bit)를 사용하면 spec.tsx 파일과 composition.tsx 파일을 얻을 수 있다는 것을 이미 알아채셨을 것입니다. 단일 컴포넌트에 대한 테스트 케이스를 만들어 테스트 주도 개발(Test Driven Development)로 빌드할 수 있습니다. 또한 compositions 파일을 사용하여 소비자들에게 컴포넌트가 어떻게 사용될 수 있는지 보여주기 위해 컴포넌트의 다른 출력물을 생성할 수 있습니다.
 
 그 다음, 블로그 모델과 블로그 카드 UI를 모델.ts와 blog-item.tsx 파일을 아래와 같이 업데이트하여 정의해 보겠습니다:
-```
+
 
 
 
@@ -322,7 +322,7 @@ export function Ui() {
 
 위의 텍스트를 친근한 톤으로 한국어로 번역해드리겠습니다.
 
-```markdown
+
 <img src="/assets/img/2024-05-14-DevelopingScalableFrontendswithFeature-SlicedDesignFSD_9.png" />
 
 <img src="/assets/img/2024-05-14-DevelopingScalableFrontendswithFeature-SlicedDesignFSD_10.png" />
@@ -330,7 +330,7 @@ export function Ui() {
 우리는 이렇게 페이지를 설정했어요! 자세히 알아보려면 Bit Cloud에서 확인해보세요.
 
 # 5: 앱 레이어 구축
-```
+
 
 
 

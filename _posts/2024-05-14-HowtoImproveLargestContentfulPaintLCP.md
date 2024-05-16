@@ -103,7 +103,7 @@ link: "https://medium.com/javascript-in-plain-english/how-to-improve-largest-con
 오늘날 다양한 기기에서 사용되는 세상에서는, 반응형 디자인은 LCP(Largest Contentful Paint)를 줄이는 데 중요합니다. 모바일 폰부터 대형 데스크탑 디스플레이까지 다양한 화면 크기에 맞게 웹사이트가 우아하게 적응하도록 해야 합니다.
 
 예를 들어, 전자상거래 사이트를 운영 중이라면, 제품 이미지가 작은 화면에 맞게 크기를 조정하고 적절하게 재구성되도록 확인하세요. 사용자의 장치에 따라 다른 이미지 크기를 제공하여 최적의 로드 시간을 보장하는 `srcset` 속성과 같은 반응형 이미지 기술을 사용하세요.
-```
+
 
 
 
@@ -121,7 +121,7 @@ link: "https://medium.com/javascript-in-plain-english/how-to-improve-largest-con
 LCP를 줄이기 위해 컨텐츠 전달을 최적화하는 것이 중요합니다. 중요한 리소스를 우선적으로 다운로드하려면 프리로딩(preloading) 및 프리페칭(prefetching)과 같은 리소스 힌트를 사용할 수 있습니다. 이러한 힌트를 통해 브라우저에게 어떤 리소스를 먼저 가져와야 하는지에 대한 정보를 제공합니다.
 
 예를 들어, 상호 작용 기능에 필요한 큰 JavaScript 파일이 있다면, `link rel=”preload”` 태그를 사용하여 브라우저에 가능한 빨리 로드하도록 지시할 수 있습니다.
-```
+
 
 
 
@@ -135,7 +135,7 @@ LCP를 줄이기 위해 컨텐츠 전달을 최적화하는 것이 중요합니�
 # 정기적인 성능 테스트
 
 LCP 최적화는 계속되는 과정이며, 정기적인 성능 테스트는 진행 상황을 추적하고 새로운 문제를 식별하는 데 중요합니다. Google PageSpeed Insights, Lighthouse 또는 WebPageTest와 같은 도구를 사용하여 정기적으로 LCP 점수를 평가하십시오.
-```
+
 
 
 

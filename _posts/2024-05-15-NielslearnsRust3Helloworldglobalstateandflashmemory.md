@@ -217,7 +217,7 @@ runner = "java -jar ../avrora/avrora-beta-1.7.117.jar -monitors=c-print -single 
 
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-15-NielslearnsRust3Helloworldglobalstateandflashmemory_3.png)
 
 Avrora는 Rust의 관점에서 debugbuf1이름을 찾을 수 없습니다. 아무도 해당 값을 읽지 않아서 최적화기가 완전히 제거했기 때문입니다. 우리는 C의 volatile 키워드와 동등한 것이 필요합니다.
@@ -225,7 +225,7 @@ Avrora는 Rust의 관점에서 debugbuf1이름을 찾을 수 없습니다. 아�
 다행히 Rust에는 정확히 그 역할을 하는 함수가 있습니다.
 
 참조(&mut) 대신 *mut을 사용해야 합니다. 참조가 아닌 원시 포인터가 필요합니다. 원시 포인터는 본질적으로 C 포인터이며, 이를 역참조하는 것은 안전하지 않습니다.
-```
+
 
 
 
@@ -409,9 +409,9 @@ pub fn print_ram_string(s: &str) {
 
 이미지 태그를 다음과 같이 변경하면 되지만, 이 접근 방식에 문제가 있습니다:
 
-```markdown
+
 ![이미지](/assets/img/2024-05-15-NielslearnsRust3Helloworldglobalstateandflashmemory_8.png)
-```
+
 
 Rust는 문자열을 RAM에 있는 .data 섹션에 배치했습니다. 대부분의 플랫폼에서는 이 접근 방식이 괜찮지만 AVR에서는 RAM이 매우 소귀한 자원입니다. ATmega128는 RAM이 4KB밖에 되지 않지만 플래시 메모리는 128KB나 됩니다. 코드는 플래시에서 실행되며, 데이터는 일반적으로 RAM에 저장되지만 데이터가 상수인 경우에는 플래시에 저장하는 것이 좋습니다.
 
@@ -427,7 +427,7 @@ AVR에서 플래시 메모리에서 읽어오는 것에는 작은 성능 손실�
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-15-NielslearnsRust3Helloworldglobalstateandflashmemory_10.png)
 
 이것으로 새로운 매크로 progmem!을 얻을 수 있습니다. 이 매크로는 데이터를 플래시에 배치하는 데 사용할 수 있습니다. 이 크레이트는 어셈블리를 사용하지 않고도 플래시 메모리에서 데이터를 읽을 수 있는 편리한 방법도 제공합니다. 다음과 같이 데이터를 플래시에 넣을 수 있습니다:
@@ -440,7 +440,7 @@ avrora::print_flash_string(HELLO.as_bytes().as_ptr() as u32);
 ```
 
 static HELLO는 PmString`_`이 되며, 여기서 우리는 바이트에 대한 참조인 &ProgMem`[u8; _]`을 얻을 수 있습니다. 이를 통해 원시 *const T 포인터를 얻을 수 있습니다. 그것은 주소를 포함하는 u32로 캐스트할 수 있습니다. Avrora는 널 종결된 문자열을 예상하기 때문에 \0가 문자열을 종료하는 데 필요합니다. 그렇지 않으면 첫 번째 \0을 만날 때까지 쓰레기를 출력할 것입니다.
-```
+
 
 
 

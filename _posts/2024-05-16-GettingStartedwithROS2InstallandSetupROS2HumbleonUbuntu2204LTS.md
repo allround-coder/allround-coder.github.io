@@ -187,7 +187,7 @@ ros2 run demo_nodes_py listener
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-16-GettingStartedwithROS2InstallandSetupROS2HumbleonUbuntu2204LTS_0.png)
 
 Stop both scripts using Ctrl+C.
@@ -195,7 +195,7 @@ Stop both scripts using Ctrl+C.
 ## 6. Bonus step!
 
 To automate the environment setup process and avoid sourcing the setup file manually each time, we can add the command to source the setup file in the “.bashrc” file. This way, the command will be executed automatically every time we open a new terminal or SSH session.
-```
+
 
 
 

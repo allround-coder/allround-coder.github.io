@@ -37,9 +37,9 @@ RPLIDAR 설정을 시작해 보세요:
 
 Github에서 rplidar 드라이버를 복제하세요.
 
-```
+
 https://github.com/Slamtec/sllidar_ros2.git
-```
+
 
 포트를 확인하고 활성화하세요.
 
@@ -56,7 +56,7 @@ Cartographer 구성:
 카토그래퍼는 Google에서 개발한 강력한 오픈 소스 SLAM(Simultaneous Localization and Mapping) 라이브러리입니다. 우리는 ROS2 및 Jetson Nano에서 RPLIDAR 센서와 함께 카토그래퍼를 구성할 것입니다. 이는 센서 구성을 정의하고 매개변수를 조정하며 매핑 워크플로우를 설정하는 작업을 수행합니다.
 
 매개변수 튜닝하기
-```
+
 
 
 
@@ -132,7 +132,7 @@ RPLIDAR을 실행하세요.
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-16-ROS2HumbleCartographeronNVIDIAJetsonNanowithRPLIDAR_2.png)
 
 Then launch rviz
@@ -140,15 +140,15 @@ Then launch rviz
 ![image](/assets/img/2024-05-16-ROS2HumbleCartographeronNVIDIAJetsonNanowithRPLIDAR_3.png)
 
 Enable the map in topic
-```
 
 
 
-```markdown
+
+
 ![TF Tranform](https://miro.medium.com/v2/resize:fit:1400/1*M10X6RQLyhSEk521t2-X9g.gif)
 
 Cartographer Mapping
-```
+
 
 
 

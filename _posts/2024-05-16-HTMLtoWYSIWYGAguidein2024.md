@@ -44,7 +44,7 @@ WYSIWYG(What You See Is What You Get) 편집기로의 진행은 웹 개발에서
 # 왜 HTML을 WYSIWYG로 활용해야 할까요?
 
 현대 웹 개발 영역에서 기존 HTML을 WYSIWYG(What You See Is What You Get) 형식으로 변환하는 것은 접근성, 효율성, 그리고 팀 협업에서 흥미로운 장점을 제공합니다. 이 변환이 슬기로운 선택인 이유를 더 자세히 알아봅시다:
-```
+
 
 
 
@@ -54,10 +54,10 @@ WYSIWYG 편집기가 등장하기 전에는 웹 페이지를 만드는 데 깊�
 
 Markdown
 
-```markdown
+
 # Welcome to My Website!
 This is where the magic happens.
-```
+
 
 
 

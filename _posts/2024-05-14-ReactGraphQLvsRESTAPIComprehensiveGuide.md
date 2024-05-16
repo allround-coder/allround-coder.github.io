@@ -11,7 +11,7 @@ link: "https://medium.com/dev-genius/react-graphql-vs-rest-api-comprehensive-gui
 ---
 
 
-```markdown
+
 ![그래픽](/assets/img/2024-05-14-ReactGraphQLvsRESTAPIComprehensiveGuide_0.png)
 
 GraphQL 또는 REST API를 React 기반 애플리케이션에 사용할지 결정하는 것은 매우 중요합니다. 이 결정은 앱의 성능, 확장 가능성, 데이터 처리 효율성 및 개발 수명주기에 도입되는 복잡성 수준에 심각한 영향을 미칩니다. 이 포괄적인 가이드는 두 가지의 차이점을 명확히하고 정보를 얻을 수 있는 선택을 도와줄 것으로 기대됩니다!
@@ -19,7 +19,7 @@ GraphQL 또는 REST API를 React 기반 애플리케이션에 사용할지 결�
 # REST API란 무엇인가요?
 
 REST (Representational State Transfer)는 웹 개발에 사용되는 아키텍처 스타일로, 클라이언트-서버 접근 방식을 사용합니다. 서버는 클라이언트가 요청한 리소스의 표현을 제공합니다. 리소스는 URL로 식별되며 이러한 리소스는 POST, GET, PUT, DELETE와 같은 HTTP 방식으로 표시되는 CRUD 작업을 사용하여 조작할 수 있습니다. 최근 몇 년간 REST API의 활용이 많이 증가했습니다.
-```
+
 
 
 

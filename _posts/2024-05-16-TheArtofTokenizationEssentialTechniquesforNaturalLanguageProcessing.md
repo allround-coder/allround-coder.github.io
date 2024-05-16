@@ -36,7 +36,7 @@ link: "https://medium.com/@vishitabatra/the-art-of-tokenization-essential-techni
 
 
 
-```
+
 ![word tokenization](/assets/img/2024-05-16-TheArtofTokenizationEssentialTechniquesforNaturalLanguageProcessing_1.png)
 
 2. 단어 토큰화 - 공백을 기반으로 분할된 문장 토큰화에서 문장의 기본 단위로 단어가 따로 있다고 가정합니다.
@@ -48,7 +48,7 @@ link: "https://medium.com/@vishitabatra/the-art-of-tokenization-essential-techni
 
 3. 문장 토큰화 - 마침표, 물음표 등의 구두점 및 다른 언어별 규칙을 이해하여 문장을 기준으로 텍스트를 분할합니다.
 ⚠️ 한계 - 기계 번역 등의 작업에 유용하지만 여전히 단어 수준 토큰화에 의존하며 이로 인한 한계를 물려받습니다.
-```
+
 
 
 

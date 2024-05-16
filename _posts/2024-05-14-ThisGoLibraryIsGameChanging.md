@@ -170,7 +170,7 @@ templ generate
 
 
 
-```markdown
+
 ```js
 package main
 
@@ -191,7 +191,7 @@ return components.NavBar().Render(context.Background(), c.Response())
 # 핫 리로드
 
 templ을 사용하는 Go 웹 애플리케이션에 웹 브라우저에서 액세스하려면 몇 가지 일이 발생해야 합니다:
-```
+
 
 
 

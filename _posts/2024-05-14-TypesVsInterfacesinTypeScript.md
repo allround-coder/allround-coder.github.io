@@ -11,7 +11,7 @@ link: "https://medium.com/@vikaskum660/types-vs-interfaces-in-typescript-053a3d6
 ---
 
 
-```markdown
+
 ![TypesVsInterfacesinTypeScript](/assets/img/2024-05-14-TypesVsInterfacesinTypeScript_0.png)
 
 TypeScript는 놀라운 점들이 가득하고 일부 행동은 TypeScript에만 독점되어 있습니다.
@@ -19,7 +19,7 @@ TypeScript는 놀라운 점들이 가득하고 일부 행동은 TypeScript에만
 오늘은 타입과 인터페이스의 차이점과 대부분의 경우에 타입을 사용해야 하는 이유에 대해 논의할 것입니다.
 
 더 이상 미루지 말고 바로 들어가 봅시다.
-```
+
 
 
 

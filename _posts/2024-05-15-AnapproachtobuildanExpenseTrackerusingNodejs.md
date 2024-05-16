@@ -97,7 +97,7 @@ const listExpenses = () => {
 ```
 
 C) search: searchExpenses 기능은 CLI를 통해 카테고리를 입력받고 해당 카테고리에 속한 모든 지출을 나열합니다.
-```
+
 
 
 
@@ -173,7 +173,7 @@ const getHighestExpensePerCategory = () => {
 ```
 
 G) average: getAverageExpenseByCategory 함수는 각 카테고리별로 평균 비용을 계산합니다.
-```
+
 
 
 

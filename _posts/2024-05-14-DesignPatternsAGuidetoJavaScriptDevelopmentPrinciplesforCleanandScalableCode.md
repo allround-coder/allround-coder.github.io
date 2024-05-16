@@ -655,7 +655,7 @@ class User {
 
 
 
-```markdown
+
 // Factory Pattern
 function CharacterFactory() {
   this.createCharacter = function(type) {
@@ -694,7 +694,7 @@ These examples demonstrate the power of combining different design patterns to c
 # Design Patterns를 사용할 때 피해야 할 함정
 
 ![Design Patterns](/assets/img/2024-05-14-DesignPatternsAGuidetoJavaScriptDevelopmentPrinciplesforCleanandScalableCode_4.png)
-```
+
 
 
 

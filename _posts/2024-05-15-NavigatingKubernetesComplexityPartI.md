@@ -67,7 +67,7 @@ K8s의 문제의 근본 원인은 매우 간단합니다: 복잡성! 그리고 �
 
 
 
-```markdown
+
 ![Screenshot 1](/assets/img/2024-05-15-NavigatingKubernetesComplexityPartI_3.png)
 
 This lets you propagate a previous request downstream:
@@ -75,7 +75,7 @@ This lets you propagate a previous request downstream:
 ![Screenshot 2](/assets/img/2024-05-15-NavigatingKubernetesComplexityPartI_4.png)
 
 ## Apply near caching
-```
+
 
 
 
@@ -97,7 +97,7 @@ This lets you propagate a previous request downstream:
 
 아래는 마크다운 포맷으로 변경해 드릴게요.
 
-```
+
 ![image](/assets/img/2024-05-15-NavigatingKubernetesComplexityPartI_6.png)
 
 ## 대량 요청 실행
@@ -105,7 +105,7 @@ This lets you propagate a previous request downstream:
 동일한 API를 여러 번 호출해야 할 경우, 리소스를 절약하고 네트워크 시간을 절약하기 위해 한 번에 모두 요청하세요.
 
 ## 요청 속도 제한 (HTTP 429 '요청이 너무 많음')
-```
+
 
 
 

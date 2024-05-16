@@ -289,7 +289,7 @@ go get -u github.com/cosmtrek/air
 
 
 
-```markdown
+
 # 스텝 3: Air 구성 파일 생성
 
 다음 내용으로 air.toml이라는 파일을 생성하세요:
@@ -301,7 +301,7 @@ tmp_dir = "tmp"
 build_cmd = "go build -o ./tmp/main ."
 run_cmd = "./tmp/main"
 ``` 
-```
+
 
 
 

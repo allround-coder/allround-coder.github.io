@@ -30,7 +30,7 @@ deno jupyter --unstable --install
 Deno는 fetch와 같은 웹 표준을 기본적으로 지원하므로 데이터 로딩이 간단하고 쉽습니다.
 
 ![image](/assets/img/2024-05-14-BringingModernJavaScripttotheJupyterNotebook_0.png)
-```
+
 
 
 
@@ -64,8 +64,7 @@ Rust를 알고 있다면 Deno에서 해킹해보세요. Rust를 몰라도, 나�
 
 
 
-```markdown
+
 ![Bringing Modern JavaScript to the Jupyter Notebook](/assets/img/2024-05-14-BringingModernJavaScripttotheJupyterNotebook_5.png)
 
 해피 노트북!
-```

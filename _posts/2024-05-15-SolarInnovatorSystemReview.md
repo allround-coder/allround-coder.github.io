@@ -75,7 +75,7 @@ link: "https://medium.com/@junaidwaqar/solar-innovator-system-review-6db0b10c570
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-15-SolarInnovatorSystemReview_4.png)
 
 이 장치는 매력적으로 보입니다. 아이디어도 독특하고 혁신적입니다. 우리의 계산에 따르면, 이 시스템은 120 개의 셀로 이루어져 있어서 최대 출력이 3.6에서 3.8 와트, 각 셀당 최대 전압이 0.6에서 0.8 볼트여야 합니다.
@@ -83,7 +83,7 @@ link: "https://medium.com/@junaidwaqar/solar-innovator-system-review-6db0b10c570
 그러므로 모든 것을 계산해 보면, 한 대의 태양 혁신기기는 432에서 434 와트를 발전할 수 있어야 합니다.
 
 지금 이 계산은 근사치이며, 장치의 크기와 사용 가능한 자원 및 공간에 따라 달라질 수 있습니다.
-```
+
 
 
 

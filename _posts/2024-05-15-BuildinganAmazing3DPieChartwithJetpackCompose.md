@@ -21,7 +21,7 @@ link: "https://medium.com/@kappdev/building-an-amazing-3d-pie-chart-with-jetpack
 
 
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*TMrRg9yn-gQWNzsPyCCIMg.gif)
 
 # Convex Pie Chart
@@ -29,7 +29,7 @@ link: "https://medium.com/@kappdev/building-an-amazing-3d-pie-chart-with-jetpack
 가장 흥미로운 부분에서 여정을 시작해 보죠: 조각에 적용할 볼록한 효과를 가진 Pie Chart를 만들어 봅시다.
 
 ## PieChart 데이터
-```
+
 
 
 
@@ -163,7 +163,7 @@ fun DrawScope.drawConvexArc(
 
 
 
-```markdown
+
 ![BuildinganAmazing3DPieChartwithJetpackCompose_1](/assets/img/2024-05-15-BuildinganAmazing3DPieChartwithJetpackCompose_1.png)
 
 ![BuildinganAmazing3DPieChartwithJetpackCompose_2](/assets/img/2024-05-15-BuildinganAmazing3DPieChartwithJetpackCompose_2.png)
@@ -171,7 +171,7 @@ fun DrawScope.drawConvexArc(
 ## Convex pie chart
 
 Now that we have the drawConvexArc function, we can draw the pie chart.
-```
+
 
 
 
@@ -231,7 +231,7 @@ fun ConvexPieChart(
 <img src="https://miro.medium.com/v2/resize:fit:1200/1*-yHzlxmatQyVTdfTV8h5yQ.gif" />
 
 # 파이 차트 패널
-```
+
 
 
 
@@ -331,7 +331,7 @@ fun TotalView(
 
 
 
-```markdown
+```
 ![Image](/assets/img/2024-05-15-BuildinganAmazing3DPieChartwithJetpackCompose_3.png)
 
 # Final

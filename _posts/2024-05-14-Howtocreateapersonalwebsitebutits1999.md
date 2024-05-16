@@ -21,13 +21,13 @@ link: "https://medium.com/@mihauco/how-to-create-a-personal-website-but-its-1999
 
 
 
-```markdown
+
 ![게임을 완료한 후, 그리운 옛 마음은 사라지고 자리를 차지하고 먼지를 모으는 것들을 남겼어요. 이 PC에서 웹 개발을 시도해보자는 아이디어가 갑자기 떠올랐지만, 항상 더 좋은 일이 있는 것 같아요. 그래서 이 아이디어는 뒷전으로 밀려나 시간이 지난 후, 이 글을 쓰기로 결심했어요.
 
 # 1999
 
 그때 당시 저는 10살이었고, 적어도 3년 정도의 Microsoft Windows 운영 체제 경험이 있었죠. 웹 개발 여정은 2000년 초반에 시작했을 것이라고 확신하고 있어요. 처음으로 Macromedia Dreamweaver(2005년 Adobe가 Macromedia를 인수했어요)를 사용했고, CSS 없이 테이블 기반 레이아웃과 인터넷에서 복사한 JS 코드를 사용해 눈 오는 효과와 같은 트렌디한 효과를 적용한 "프로젝트"를 했어요.
-```
+
 
 
 
@@ -100,7 +100,7 @@ JS 및 CSS 파일을 지원하지는 않지만, .js 또는 .css 확장자가 있
 
 
 
-```markdown
+
 ![Website Screenshot](/assets/img/2024-05-14-Howtocreateapersonalwebsitebutits1999_7.png)
 
 # 먼저 로직을 고민해보세요
@@ -108,11 +108,11 @@ JS 및 CSS 파일을 지원하지는 않지만, .js 또는 .css 확장자가 있
 전체 페이지를 구현하기 전에 JavaScript로 무엇을 할 수 있는지 알아보고 싶어요. 제 목표는 JS로 제어되는 탭을 만드는 거에요. 네비게이션 링크를 클릭하면 해당 탭이 표시되고 다른 탭은 숨겨져야 해요.
 
 먼저 인터넷 익스플로러에 집중했어요. 개발 도구도 JS 콘솔도 없어요. 뭔가 에러가 나오면 IE는 하단 표시줄에 경고 아이콘을 보여주는데, 그것을 더블 클릭하면 더 자세한 정보를 확인할 수 있어요 — 에러 메시지와 발생 위치가 표시돼요.
-```
 
 
 
-```markdown
+
+
 ![이미지](/assets/img/2024-05-14-Howtocreateapersonalwebsitebutits1999_8.png)
 
 나는 익숙치 않은 것이지만 여전히 상당히 도움이 되었어. 문제가 있을 때 구글링을 해보면 대부분 해결책을 찾을 수 있었어 (결과는 잊혀진 포럼에 있는 오래된 글들을 가리킴) 아니면 caniuse.com을 사용해서 해당 메소드가 사용 가능한지 알아볼 수 있었어 (해당 사이트는 IE v6 이상만 나열하지만 내 경험 상 "6-8"로 표시된 경우 IE v5에서도 작동했어).
@@ -120,7 +120,7 @@ JS 및 CSS 파일을 지원하지는 않지만, .js 또는 .css 확장자가 있
 ![이미지](/assets/img/2024-05-14-Howtocreateapersonalwebsitebutits1999_9.png)
 
 여기에는 Internet Explorer 5를 위한 PoC JavaScript 개발 중 발견한 몇 가지 사항이 있어:
-```
+
 
 
 
@@ -284,21 +284,21 @@ function tabLinkClickHandler(tab) {
 
 
 
-```markdown
+
 <DIV align="center">
   <!-- styles.css에서 너비가 480픽셀로 설정되어 있음 -->
     <DIV class="page-container">
       <DIV align="left">...</DIV>
     </DIV>
 </DIV>
-```
+
 
 CSS 플렉스박스 (그리드 시스템도 마찬가지)는 항상 사용 가능했던 것은 아니었습니다. 웹 개발을 한지 ~10년 이상이 된다면 아마도 그리드 레이아웃을 만들기 위해 개발자들이 float 속성을 사용했다는 것을 기억하실 것입니다 (Bootstrap도 그렇게 했습니다). 원래 float를 그 용도로 사용하도록 의도되지 않았지만, 개발자들이 그것을 웹사이트 레이아웃 스타일링 역사에서 상당히 중요한 위치에 부여해 왔다고 생각합니다.
 
 어쨌든, 탭 컨트롤(링크)을 정렬하기 위해 float를 사용했습니다. 여기에는 ul 및 li 태그를 사용하고 싶었지만, Netscape는 float와 목록 요소 조합을 좋아하지 않는 것 같습니다... 게다가, anchor 태그에 직접 float 스타일을 사용하면 모든 기본 앵커 스타일이 제거될 것입니다 (Netscape에 대해서 말하는 것이고, IE에서는 모두 잘 작동합니다). DIV 기반의 목록을 사용하게 되었습니다.
 
 <img src="/assets/img/2024-05-14-Howtocreateapersonalwebsitebutits1999_11.png" />
-```
+
 
 
 
@@ -355,7 +355,7 @@ setInterval(function() {...}, 100);
 
 
 
-```md
+md
 ![198.png](/assets/img/2024-05-14-Howtocreateapersonalwebsitebutits1999_16.png)
 
 함수를 먼저 정의하고, 그 후에 setInterval에 전달하는 것이 올바른 방법입니다.
@@ -368,7 +368,7 @@ setInterval(animateCatchphrase, 100);
 ```
 
 내 예상은 익스플로러가 익명 함수의 경우 메모리 관리에 문제가 있는 것 같습니다. 넷스케이프 네비게이터는 이런 문제가 없네요. 멋진 일이죠 넷스케이프, 그리핀도르에 10 포인트 들어가요.
-```
+
 
 
 
@@ -392,7 +392,7 @@ setInterval(animateCatchphrase, 100);
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-Howtocreateapersonalwebsitebutits1999_19.png)
 
 정말로 Internet Explorer에서 어떻게 끝났는지 정말로 자랑스럽다고 말해야겠어. 내가 원하는 대로 보이고 작동한다.
@@ -400,11 +400,11 @@ setInterval(animateCatchphrase, 100);
 ## 넷스케이프 네비게이터 4.51
 
 ![이미지](/assets/img/2024-05-14-Howtocreateapersonalwebsitebutits1999_20.png)
-```
 
 
 
-```markdown
+
+
 ![](/assets/img/2024-05-14-Howtocreateapersonalwebsitebutits1999_21.png)
 
 ![](/assets/img/2024-05-14-Howtocreateapersonalwebsitebutits1999_22.png)
@@ -412,7 +412,7 @@ setInterval(animateCatchphrase, 100);
 Netscape Navigator 버전에서 몇 가지 결함이 보입니다... 콘텐츠 섹션과 탭이 깨져 보이며, IE에서 달성한 것과 가능한 한 유사하게 보이도록 시간을 많이 들여 노력했지만 결국 실패했습니다... LAYERs로 모든 것을 수행했다면 성공했을지도 모르겠지만, 그것은 지나치게 복잡한 작업처럼 들립니다.
 
 # 미래로의 회귀
-```
+
 
 
 

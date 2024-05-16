@@ -11,7 +11,7 @@ link: "https://medium.com/@cybersphere/fetch-api-the-ultimate-guide-to-cors-and-
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-05-14-FetchAPITheUltimateGuidetoCORSandno-cors_0.png" />
 
 웹 애플리케이션에서 제3자 API 또는 서버에서 데이터를 가져와야 하는 경우가 있나요? 그렇다면, 요청한 데이터에 액세스하는 데 방해가 되는 Cross-Origin Resource Sharing (CORS) 오류를 만날 수도 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@cybersphere/fetch-api-the-ultimate-guide-to-cors-and-
 이 블로그 포스트에서는 Fetch API에서 CORS 및 No-CORS 모드를 사용하여 이러한 제약을 극복하고 외부 소스에서 데이터를 성공적으로 가져오는 방법을 살펴볼 것입니다.
 
 먼저, CORS가 무엇이며 왜 중요한지 이해해 봅시다.
-```
+
 
 
 

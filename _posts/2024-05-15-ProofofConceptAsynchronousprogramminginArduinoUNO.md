@@ -66,7 +66,7 @@ void loop(){
 
 
 
-```markdown
+
 #define coNext         do { _state_ = __LINE__; return 1; case __LINE__:; } while (0)
 #define coGoto(VALUE)  do { _state_ = VALUE   ; return 1;                 } while (0)
 #define coYield(VALUE) do { _state_ = VALUE   ; return 1; case VALUE:;    } while (0)
@@ -78,18 +78,18 @@ void loop(){
 #define coStop } _state_ = 0; return -1; }
 #define coSet(VALUE) _state_ = VALUE
 #define coGet _state_
-```
+
 
 참고: 매우 유용한 다른 매크로도 추가되었습니다.
 
-```markdown
+
 #define coDelay(VALUE)  do { static auto tm = millis()+VALUE; while( millis() < tm ){ coNext; } tm = millis()+VALUE; break; } while (0)
 #define coUDelay(VALUE) do { static auto tm = micros()+VALUE; while( micros() < tm ){ coNext; } tm = micros()+VALUE; break; } while (0)
 #define coWait(VALUE)   do { while( !VALUE ){ coNext; } } while(0)
-```
+
 
 이 구현의 작은 단점 중 하나는 switch 문을 사용하여 코루틴을 실행하기 때문에 코루틴 내에서 switch 문을 사용할 수 없다는 것입니다. 해당 경우는 코드를 완전히 깨뜨릴 것입니다.
-```
+
 
 
 
@@ -126,7 +126,7 @@ void loop(){
 
 
 
-```markdown
+
 int coroutine1(){
      static bool b=0;
 coStart
@@ -173,14 +173,14 @@ void loop(){
      coroutine2();
      coroutine3();
 }
-```
+
 
 ![Animation](https://miro.medium.com/v2/resize:fit:852/1*LwDRI8sOZe-EVOxAEsgLHw.gif)
 
 알아보기 쉽게 Arduino UNO에서 비동기 프로그래밍이 가능하다는 것을 확인할 수 있습니다. 시간이 부족해 이 데모에 대한 이벤트 루프를 구현하지 못했지만, loop 함수가 좋은 대체재가 됩니다. 이 글에 흥미를 느끼셨다면 제가 두 번째 파트를 작성해 이벤트 루프에 대해 설명해드릴게요. 이 프로젝트가 마음에 들었기를 바라며, 우리 다음에 또 뵙겠습니다.
 
 이 글을 마치기 전에, 제가 만든 Nodepp라는 프레임워크를 소개하고 싶어요. 이 프레임워크는 NodeJS와 매우 유사한 구문으로 Arduino에서 비동기 코드를 작성할 수 있게 해주는 C++ 프레임워크입니다. 즐겁게 이용하시기를 바랍니다.
-```
+
 
 
 

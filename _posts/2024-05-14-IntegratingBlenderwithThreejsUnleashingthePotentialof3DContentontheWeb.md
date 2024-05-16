@@ -11,7 +11,7 @@ link: "https://medium.com/@thecuriouschronicles/integrating-blender-with-three-j
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-IntegratingBlenderwithThreejsUnleashingthePotentialof3DContentontheWeb_0.png)
 
 3D 그래픽과 웹 개발 분야에서 Blender와 Three.js의 시너지는 웹을 위한 놀라운 상호작용형 경험을 만들기위한 탁월한 기회를 제공합니다. Blender는 강력한 오픈 소스 3D 모델링 및 애니메이션 소프트웨어로, Three.js는 웹 브라우저에서 3D 그래픽을 렌더링하기위한 JavaScript 라이브러리와 원활하게 통합됩니다. 이 두 도구가 결합되어 개발자와 디자이너를 위한 무한한 가능성을 열어보겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@thecuriouschronicles/integrating-blender-with-three-j
 # Blender의 파워 활용하기
 
 Blender는 복잡한 3D 모델, 애니메이션 및 장면을 정밀하고 유연하게 만드는 데 기초 역할을 합니다. 복잡한 캐릭터 디자인에서 사실적인 건축 렌더링까지, Blender는 예술가와 디자이너가 창의적인 비전을 디지털 형식으로 구현할 수 있게 돕습니다. Blender의 강력한 기능 세트에는 다음이 포함됩니다:
-```
+
 
 
 

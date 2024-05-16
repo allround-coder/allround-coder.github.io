@@ -11,7 +11,7 @@ link: "https://medium.com/data-science-at-microsoft/techniques-for-enhancing-ocr
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-15-TechniquesforenhancingOCRaccuracybyassessingimagesharpness_0.png)
 
 광학 문자 인식(OCR) 기술은 이미지에서 텍스트를 디지털화하는 방법을 혁신적으로 바꿨습니다. 그러나 OCR 시스템이 직면한 지속적인 어려움 중 하나는 흐린 이미지에서 텍스트를 정확하게 해독하는 것입니다. 흐림은 OCR 정확도를 심각하게 저하시켜 추출된 텍스트에서 해석 오류를 일으킬 수 있습니다. 이 기사에서는 OCR 애플리케이션용 이미지의 흐림 문제를 제시하고 이미지 선명도를 평가하기 위한 세 가지 기술을 탐색하여 OCR 정확도를 향상시키겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/data-science-at-microsoft/techniques-for-enhancing-ocr
 # 이미지에서의 흐림이란?
 
 이미지에서의 흐림은 모션 블러, 초점이 맞지 않은 블러 또는 낮은 이미지 해상도와 같은 다양한 요인 때문에 발생합니다. 이러한 요인은 텍스트의 세부사항과 가장자리를 왜곡시켜 OCR 시스템이 문자를 정확하게 인식하고 추출하는 것을 어렵게 만듭니다.
-```
+
 
 
 
@@ -70,15 +70,15 @@ OCR 기술을 도입하면 많은 기업이 추가 수익을 창출할 가능성
 
 다음은 라플라시안 연산자를 구현한 Python 코드입니다:
 
-```markdown
+
 ![Code](/assets/img/2024-05-15-TechniquesforenhancingOCRaccuracybyassessingimagesharpness_2.png)
-```
+
 
 이 기술을 샘플 데이터셋에 적용하면 Figure 1의 이미지가 날카로운 점수가 가장 낮지만 더 선명하게 보이고, 실제로 왜곡된 Figure 2의 이미지가 더 높은 날카로운 점수를 가지게 됨을 관찰할 수 있습니다.
 
-```markdown
+
 ![Sample Dataset](/assets/img/2024-05-15-TechniquesforenhancingOCRaccuracybyassessingimagesharpness_3.png)
-```
+
 
 
 
@@ -102,7 +102,7 @@ OCR 기술을 도입하면 많은 기업이 추가 수익을 창출할 가능성
 
 
 
-```markdown
+
 ![Sobel Operator](/assets/img/2024-05-15-TechniquesforenhancingOCRaccuracybyassessingimagesharpness_6.png)
 
 이 값은 각 픽셀에서 모든 방향으로 픽셀 강도의 변화율을 나타냅니다. 높은 값은 가장자리와 질감과 같은 빠른 강도 변화 영역을 나타내고, 낮은 값은 부드러운 영역을 나타냅니다.
@@ -110,7 +110,7 @@ OCR 기술을 도입하면 많은 기업이 추가 수익을 창출할 가능성
 그런 다음 전체 이미지에서 이러한 그래디언트 크기의 평균(평균) 값을 계산합니다. 이 평균 그래디언트 크기는 이미지의 선명도나 가장자리의 존재를 전반적으로 측정하는 지표를 제공합니다. 높은 평균 또는 합계 값은 더 날카로운 가장자리와 뚜렷한 특징을 나타냅니다.
 
 다음은 Sobel 연산자를 구현하는 Python 코드입니다:
-```
+
 
 
 
@@ -134,7 +134,7 @@ OCR 기술을 도입하면 많은 기업이 추가 수익을 창출할 가능성
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-15-TechniquesforenhancingOCRaccuracybyassessingimagesharpness_10.png)
 
 (u, v)은 주파수 도메인의 공간 주파수 좌표를 나타냅니다.
@@ -142,21 +142,21 @@ OCR 기술을 도입하면 많은 기업이 추가 수익을 창출할 가능성
 Fourier 변환의 크기 스펙트럼 |F(u, v)|은 이미지에 존재하는 공간 주파수의 분포를 나타냅니다. 높은 크기 값은 가장자리 및 질감과 같은 고주파 구성 요소에 해당하고, 낮은 값은 부드러운 영역과 같은 저주파 구성 요소에 해당합니다.
 
 고속 푸리에 변환(FFT) 방법을 사용하여 이미지 선명도를 평가할 때, 일반적으로 크기 스펙트럼을 분석하고 관련 통계량(평균과 같은)을 계산하여 이미지 전체에서 고주파 콘텐츠의 분포를 양적으로 측정합니다. 높은 통계량 값은 더 날카로운 가장자리와 뚜렷한 특징을 나타냅니다.
-```
+
 
 
 
 여기에 Fourier 변환을 구현하는 Python 코드가 있습니다:
 
-```markdown
+
 ![Python code](/assets/img/2024-05-15-TechniquesforenhancingOCRaccuracybyassessingimagesharpness_11.png)
-```
+
 
 이 기술을 샘플 데이터 집합에 적용한 결과, Figure 5의 이미지는 낮은 선명도 점수로 흐린 것으로 올바르게 식별되었으며 Figure 6의 이미지는 높은 선명도 점수로 날카로운 것으로 올바르게 식별되었습니다.
 
-```markdown
+
 ![Sample dataset application](/assets/img/2024-05-15-TechniquesforenhancingOCRaccuracybyassessingimagesharpness_12.png)
-```
+
 
 
 

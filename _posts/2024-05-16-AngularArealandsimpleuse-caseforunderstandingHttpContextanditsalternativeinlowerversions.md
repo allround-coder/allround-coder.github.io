@@ -49,7 +49,7 @@ this.trackErrorService.trackError(err)
 
 
 
-```markdown
+
 `throwError(err)
 
 trackError() 메서드는 TrackErrorService의 첫 번째 observable을 반환하는데, 이는 HttpRequest를 실행할 때 발생한 오류를 추적할 것입니다.
@@ -57,7 +57,7 @@ trackError() 메서드는 TrackErrorService의 첫 번째 observable을 반환�
 throwError() rxjs 연산자에 의해 반환된 두 번째 observable은 오류를 구성 요소나 전역 핸들러 클래스(즉, 내장 ErrorHandler 클래스를 구현한)로 다시 던질 것입니다. 이후 추가 조치를 취할 수 있습니다.
 
 만약 HTTP 오류를 추적하는 첫 번째 observable 자체에 오류가 발생하면 어떻게 될까요? 브라우저 창을 닫을 때까지 TrackErrorService의 trackError() 메서드가 무한히 호출되어 루프에 갇히게 됩니다.
-```
+
 
 
 

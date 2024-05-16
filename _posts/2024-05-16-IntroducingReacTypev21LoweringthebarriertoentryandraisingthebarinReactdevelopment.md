@@ -31,7 +31,7 @@ ReacType v21의 새로운 기능
 
 
 
-```markdown
+
 ![Introducing ReacType v2.1: Lowering the barrier to entry and raising the bar in React development](/assets/img/2024-05-16-IntroducingReacTypev21LoweringthebarriertoentryandraisingthebarinReactdevelopment_1.png)
 
 ### Revamped iframe Implementation
@@ -39,7 +39,7 @@ ReacType v21의 새로운 기능
 Understanding the need for stateful interactions with UI components, we’ve reengineered our iframe implementation. The **"Demo Render"** enhancements allow users to interact seamlessly with state-dependent components, providing a highly realistic and practical preview of component behavior in a live environment. This upgrade ensures that developers can accurately assess and refine UI/UX experiences in real time, enhancing the quality and effectiveness of final projects.
 
 **Bug Fixes and Improvements**
-```
+
 
 
 

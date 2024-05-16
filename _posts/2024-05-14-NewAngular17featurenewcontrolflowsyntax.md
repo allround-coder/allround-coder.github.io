@@ -65,7 +65,7 @@ https://github.com/gergelyszerovay/angular-17-control-flow
 @else 블록을 @if 블록 아래에 추가했습니다. 이 블록은 @if 블록의 논리 표현식이 false로 평가될 때 렌더링됩니다. 즉, isChecked() 신호의 값이 false인 경우에 해당합니다. 따라서 체크박스를 해제하면 Angular가 @else 블록의 내용을 렌더링합니다.
 
 새로운 제어 블록 구문과 관련된 중요한 사항이 하나 더 있습니다: '@', '' 및 '' 문자에 특별한 의미가 있기 때문에 템플릿의 텍스트에서 이를 대체해야 합니다. HTML 엔티티를 사용해야 합니다:
-```
+
 
 
 

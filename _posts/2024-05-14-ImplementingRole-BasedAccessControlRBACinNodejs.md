@@ -264,7 +264,7 @@ module.exports = {
 ```
 
 models/user.js:
-```
+
 
 
 
@@ -556,11 +556,11 @@ views/layout.jade:```
 
 
 
-```markdown
+
 ![Current User](/assets/img/2024-05-14-ImplementingRole-BasedAccessControlRBACinNodejs_2.png)
 
 ![Unauthorize](/assets/img/2024-05-14-ImplementingRole-BasedAccessControlRBACinNodejs_3.png)
-```
+
 
 
 

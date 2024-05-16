@@ -11,7 +11,7 @@ link: "https://medium.com/@saurabh.samirs/communication-through-lms-in-lwc-ed892
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-CommunicationThroughLMSinLWC_0.png)
 
 Salesforce의 Lightning Message Service (LMS)는 돔 계층 구조 전체에서 Lightning Web Components (LWC) 간의 통신을 가능하게 하는 강력한 기능입니다. 이것은 요소가 직계 부모-자식 관계를 필요로하지 않고 서로 통신할 수 있도록 해주므로 복잡한 애플리케이션을 구축하는 유연한 도구입니다. 이 블로그에서는 LWC 간 통신을 위해 LMS를 사용하는 방법과 구현 예시를 살펴볼 것입니다.
@@ -19,7 +19,7 @@ Salesforce의 Lightning Message Service (LMS)는 돔 계층 구조 전체에서 
 # Lightning Message Service란?
 
 Lightning Message Service (LMS)는 Salesforce가 제공하는 통신 프레임워크로, Lightning 페이지의 다른 구성 요소와 Lightning Web Components (LWC) 간에 효과적인 통신을 가능하게 합니다.
-```
+
 
 
 
@@ -72,13 +72,13 @@ LMS는 컴포넌트가 메시지(이벤트)를 발행하고 구독하여 해당 
 
 3. 아래 코드를 참고하여 .xml 파일에 `lightning message field`를 정의해주세요:
 
-```Markdown
+
 sampleMessageChannel.messageChannel-meta.xml
-```
 
 
 
-```md
+
+md
 ```js
 <!--?xml version="1.0" encoding="UTF-8"?-->
 <lightningmessagechannel xmlns="http://soap.sforce.com/2006/04/metadata">
@@ -106,7 +106,7 @@ sampleMessageChannel.messageChannel-meta.xml
 - `.messageChannel-meta.xml` 파일이 작성되면 Salesforce org에 배포하세요.
 
 ## 메시지 서비스 기능 가져오기:
-```
+
 
 
 

@@ -43,7 +43,7 @@ link: "https://medium.com/@susantomandal1998/hydration-54cb4715e4b2"
 
 
 
-```markdown
+
 <a
   class="Invalid A tag"
   href="https://www.google.com/"
@@ -58,14 +58,14 @@ link: "https://medium.com/@susantomandal1998/hydration-54cb4715e4b2"
 <p class="Invalid P tag">
   <div>Bye World</div>
 </p>
-```
+
 
 이 HTML은 아래 이미지에 나와 있는 오류를 발생시킵니다.
 
 ![2024-05-16-UnderstandingHydrationinServer-SideRenderedNuxtApplications_1.png](/assets/img/2024-05-16-UnderstandingHydrationinServer-SideRenderedNuxtApplications_1.png)
 
 이 코드에는 중첩 오류가 두 가지 있습니다:
-```
+
 
 
 

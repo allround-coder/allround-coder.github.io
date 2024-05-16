@@ -150,7 +150,7 @@ popover.hidePopover();
 
 
 
-```markdown
+```
 <img src="/assets/img/2024-05-15-BrowserBeginsSupportforPopoverAPIAQuickGuide_2.png" />
 
 ## :popover-open

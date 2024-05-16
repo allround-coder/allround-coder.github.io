@@ -139,7 +139,7 @@ function Profile() {
 ## 4. useMemo() 및 useCallback()Hooks를 사용한 Memoization
 
 Memoization은 우리의 리액트 코드를 프롭스에 업데이트가 있을 때에만 컴포넌트를 다시 렌더링하도록 하는 것을 가능하게 합니다. 이 접근 방식을 통해 개발자는 불필요한 다시 렌더링을 피하고 응용 프로그램에서의 계산 부하를 줄일 수 있습니다.
-```
+
 
 
 

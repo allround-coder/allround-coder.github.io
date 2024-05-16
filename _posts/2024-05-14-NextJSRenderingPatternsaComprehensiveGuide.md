@@ -357,7 +357,7 @@ Home 구성 요소에서 렌더링하는 동안 서버에서 여전히 Testimoni
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-14-NextJSRenderingPatternsaComprehensiveGuide_3.png)
 
 홈페이지(home.js)에서 Testimonials에 대한 의존성이 페이지(page.js)로 전환되었습니다. 페이지(page.js)는 또한 서버 컴포넌트입니다.
@@ -365,7 +365,7 @@ Home 구성 요소에서 렌더링하는 동안 서버에서 여전히 Testimoni
 # 쉽게 설명하기 🚀
 
 In Plain English 커뮤니티의 일원이 되어 주셔서 감사합니다! 떠나시기 전에:
-```
+
 
 
 

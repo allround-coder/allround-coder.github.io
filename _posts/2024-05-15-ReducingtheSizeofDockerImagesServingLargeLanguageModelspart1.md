@@ -109,7 +109,7 @@ Workspace 폴더에는 모델과 Python 스크립트가 포함되어 있으며, 
 
 usr 폴더에는 Python 코드를 실행하는 데 필요한 종속성이 포함되어 있어요. 폴더 안에 무엇이 있는지 살펴보겠습니다.
 
-```markdown
+
 - 5.3G /usr/local/lib/python3.9/dist-packages/
 - 2.9G /usr/local/lib/python3.9/dist-packages/nvidia
 - 1.6G /usr/local/lib/python3.9/dist-packages/torch
@@ -117,7 +117,7 @@ usr 폴더에는 Python 코드를 실행하는 데 필요한 종속성이 포함
 - 77M /usr/local/lib/python3.9/dist-packages/transformers
 - 53M /usr/local/lib/python3.9/dist-packages/sympy
 - ...
-```
+
 
 5.9G 중 5.3G는 Python 모듈을 위한 것입니다. 가장 큰 패키지는 다음과 같습니다:
 

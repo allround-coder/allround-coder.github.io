@@ -11,7 +11,7 @@ link: "https://medium.com/proandroiddev/injecting-composables-with-dagger-withou
 ---
 
 
-```markdown
+
 ![Injecting Composables with Dagger without losing it](/assets/img/2024-05-15-InjectingComposableswithDaggerwithoutlosingit_0.png)
 
 Everyone is using Hilt/Koin or some other fancy DI framework that just works™.
@@ -19,7 +19,7 @@ Everyone is using Hilt/Koin or some other fancy DI framework that just works™.
 In this house, we still use plain Dagger2. It’s… not going great.
 
 Consider the predicament of a composable that can only work with certain parameters:
-```
+
 
 
 
@@ -77,7 +77,7 @@ FirstScreen을 독립적으로 만들기 위해서는 주입된 종속성을 별
 
 
 
-```markdown
+
 Let’s use the classic remember keyword, then:
 
 ![image](/assets/img/2024-05-15-InjectingComposableswithDaggerwithoutlosingit_2.png)
@@ -85,7 +85,7 @@ Let’s use the classic remember keyword, then:
 ## Should someone actually do this?
 
 This approach goes against most compose guidelines. Composables should really be pure functions, fast, idempotent, and free of side effects.
-```
+
 
 
 

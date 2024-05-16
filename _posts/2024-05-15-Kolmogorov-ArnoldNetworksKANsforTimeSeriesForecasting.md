@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/kolmogorov-arnold-networks-kans-f
 ---
 
 
-```markdown
+
 ![링크](/assets/img/2024-05-15-Kolmogorov-ArnoldNetworksKANsforTimeSeriesForecasting_0.png)
 
 다층 퍼셉트론(MLP)은 딥러닝 모델의 기본적인 구조 중 하나입니다. 이는 N-BEATS, NHiTS 및 TSMixer와 같은 최신 예측 모델의 기본 구성 요소도 됩니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/kolmogorov-arnold-networks-kans-f
 2024년 4월 30일에 KAN: Kolmogorov-Arnold Network 논문이 발표되었으며, 많은 딥러닝 분야의 전문가들의 주목을 끌었습니다. 여기서 저자들은 MLP의 대안으로 콜모고로프-아놀드 네트워크 또는 KAN을 제안합니다.
 
 가중치와 고정 활성화 함수를 사용하는 대신, KAN은 스플라인으로 매개변수화 된 학습 가능한 함수를 사용합니다. 연구자들은 KAN이 MLP보다 더 적은 학습 가능한 매개변수로 더 정확할 수 있다고 제안합니다.
-```
+
 
 
 

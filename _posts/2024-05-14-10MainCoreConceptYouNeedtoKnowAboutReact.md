@@ -11,7 +11,6 @@ link: "https://medium.com/@payalpaul2436/10-main-core-concept-you-need-to-know-a
 ---
 
 
-```markdown
 <img src="/assets/img/2024-05-14-10MainCoreConceptYouNeedtoKnowAboutReact_0.png" />
 
 - React Js를 배워야 하는 이유
@@ -19,7 +18,6 @@ link: "https://medium.com/@payalpaul2436/10-main-core-concept-you-need-to-know-a
 React의 가장 중요한 개념인 JSX, 클래스 및 함수 컴포넌트, 프롭스, 상태, 라이프사이클 메서드 및 훅에 대한 굳은 이해를 갖게 될 것입니다. 이러한 아이디어들을 React의 모듈식 프로그래밍 스타일로 결합할 수 있습니다.
 
 저는 지금까지 React를 사용해왔습니다. 또한 사람들이 처음부터 배우도록 지도하는 훈련을 진행하고 있습니다. 매 훈련 세션마다 같은 개념 세트를 반복해서 설명하고 있다는 것을 알게 되었습니다. 제가 생각하기에 그 개념들은 React를 "구사하려면" 필수적입니다. 지금 학습 중이라면 이 글을 읽는 것에 관심이 있을 것입니다.
-```
 
 
 
@@ -239,7 +237,7 @@ placeholder='text' value={this.state.text} />
 상태를 업데이트하기 위해 onChange 이벤트에 changeText() 이벤트 핸들러가 할당됩니다. 상태를 업데이트하기 위해서는 내장된 setState() 메서드를 사용해야 합니다.
 
 상태 업데이트는 예약되고 컴포넌트는 다시 렌더링됩니다. setState() 호출은 React에 대기 중인 상태 변경에 대해 알리기 위해 사용되어야 합니다. 변경 사항이 적용되도록 하기 위해 사용되므로 루프가 변경 사항을 추적하지 않습니다.
-```
+
 
 
 

@@ -34,7 +34,7 @@ React Server Components (RSCs)는 React 애플리케이션의 서버 측 렌더�
 
 
 
-```markdown
+
 ![React Server Components with Next.js Best Practices and Tips](/assets/img/2024-05-14-ReactServerComponentswithNextJSBestPracticesTips_1.png)
 
 RSC와 함께 사용할 때 고려해야 할 몇 가지 최상의 실천 방안을 살펴보겠습니다.
@@ -43,7 +43,7 @@ RSC와 함께 사용할 때 고려해야 할 몇 가지 최상의 실천 방안�
 
 NextJS 13+에서는 기본적으로 트래디셔널 페이지 라우터 대신 App 라우터를 제공합니다. 이 경계를 이해하는 것은 효과적인 컴포넌트 관리에 중요합니다. App 라우터를 사용하면 우리가 생성하는 모든 컴포넌트는 클라이언트로 명시되지 않는 한 서버 컴포넌트로 간주됩니다.
 https://nextjs.org/docs/app/building-your-application/routing
-```
+
 
 
 

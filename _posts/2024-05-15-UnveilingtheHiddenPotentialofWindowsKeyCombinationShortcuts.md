@@ -101,14 +101,14 @@ Windows Mixed Reality와 데스크탑 간의 입력을 전환하는 바로 가�
 
 
 
-```markdown
+
 ![image](/assets/img/2024-05-15-UnveilingtheHiddenPotentialofWindowsKeyCombinationShortcuts_10.png)
 
 This feature makes it easier to arrange multiple apps side by side on your screen.
 
 - Windows key + X: Opens the Quick Link menu
 - Windows key + C: It will open Microsoft’s Copilot
-```
+
 
 
 
