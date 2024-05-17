@@ -61,7 +61,7 @@ link: "https://medium.com/3dprintjunction/an-introduction-to-3d-scanning-for-add
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![An Introduction to 3D Scanning for Additive Manufacturing](/assets/img/2024-05-16-AnIntroductionto3DScanningforAdditiveManufacturing_1.png)
 
 The resulting digital file enables further design work including model repair, editing, ready-to-print conversions or even parametric builds based off the captured source. This delivers extensive flexibility for your additive manufacturing methods once you have scanned your object’s mesh source data.
@@ -69,7 +69,7 @@ The resulting digital file enables further design work including model repair, e
 # Overview of 3D Scanning Techniques and Methods
 
 Various approaches and types of 3D scanning hardware have emerged leveraging common technologies adapted for real-world applications. Each method comes with its own pros and cons targeting specific uses which dictate scanner type selections.
-```
+
 
 <div class="content-ad"></div>
 

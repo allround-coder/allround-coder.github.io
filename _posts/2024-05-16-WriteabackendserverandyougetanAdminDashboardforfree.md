@@ -156,23 +156,23 @@ Node.js 버전을 설치하려면, 이 명령을 실행하여 로컬 디렉토�
 
 <div class="content-ad"></div>
 
-```markdown
+
 npm init -y
 npm install typescript ts-node -D
 npx tsc --init
 npm install @teocloud/teo
-```
+
 
 파이썬 버전을 설치하려면 venv를 추천합니다.
 
-```markdown
+
 python3.12 -m venv .venv
 source .venv/bin/activate
 pip install teo
-```
+
 
 Teo는 다른 웹 프레임워크와 마찬가지로 프로그래밍 코드로 라우트 핸들러를 작성하고 Teo의 ORM API에 접근할 수 있습니다. 이 글에서는 그를 다루지 않을 거예요.
-```
+
 
 <div class="content-ad"></div>
 

@@ -91,7 +91,7 @@ ConstrainedBox(
 <img src="/assets/img/2024-05-17-ProperlyhandlingtextscalinginFlutter_2.png" />
 
 ListView에도 동일한 사항이 적용됩니다. itemExtent를 사용하는 경우, 폰트 스케일을 고려하여 계산하거나 prototypeItem을 제공하는 것이 좋습니다. 이에 대해 자세히 설명된 내용은 이 기사에서 확인할 수 있습니다.
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -210,9 +210,9 @@ class TitleText extends StatelessWidget {
 
 큰 화면에서 일반적인 텍스트 스케일로 보기 좋을 수도 있지만, 다른 조건에서는 수직 공간을 더 많이 차지할 수 있음을 잊지 마세요. 그러나 제목(Subtitle)과 같은 곳은 항상 전체 내용을 표시할 필요가 없습니다. Text 위젯에 maxLines 값을 추가하여 원하는 줄 수로 설정할 수 있습니다.
 
-```markdown
+
 ![Properly handling text scaling in Flutter](/assets/img/2024-05-17-ProperlyhandlingtextscalinginFlutter_7.png) 
-```
+
 
 1로 설정된 maxLines로 보기 좋네요. 주요 정보는 여전히 잘 보입니다.
 

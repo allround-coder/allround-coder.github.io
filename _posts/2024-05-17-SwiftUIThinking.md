@@ -42,7 +42,7 @@ Text("Hello World!")
 ## 버튼
 
 예상했던대로, Button은 UIButton에 해당합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -64,11 +64,11 @@ Button {
 ## 이미지
 
 Image는 UIImageView와 같다고 생각하면 됩니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![시스템 이름을 사용한 이미지](Image(systemName: "house.fill")
     .resizable()
     .scaledToFit()
@@ -80,21 +80,21 @@ Image는 UIImageView와 같다고 생각하면 됩니다.
 ## TextField
 
 TextField은 UITextField와 동일합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 TextField("placeholder", text: .constant(""))
     .textFieldStyle(.roundedBorder)
-```
+
 
 ![SwiftUIThinking_4](/assets/img/2024-05-17-SwiftUIThinking_4.png)
 
 # HStack & VStack
 
 앱의 UI를 구조화할 때는 뷰를 서로 정렬하는 것이 중요합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -243,7 +243,7 @@ VStack {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-17-SwiftUIThinking_10.png)
 
 The Foreach construct offers a leaner alternative to the List component. With Foreach, you have full control over building your list UI, resulting in a simpler and more customizable approach.
@@ -251,7 +251,7 @@ The Foreach construct offers a leaner alternative to the List component. With Fo
 ## Updating UI with Observable Property
 
 SwiftUI differs from UIKit by embracing the Declarative Programming approach.
-```
+
 
 <div class="content-ad"></div>
 
@@ -318,7 +318,7 @@ SwiftUI의 핵심 원칙 중 하나는 작성 코드를 줄이고 더 많은 작
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-17-SwiftUIThinking_11.png)
   
 ## Picker
@@ -326,11 +326,11 @@ SwiftUI의 핵심 원칙 중 하나는 작성 코드를 줄이고 더 많은 작
 It is a combination of UISegmentedControl and UIPickerView.
 
 It provides various styles such as wheel, inline, segmented, and palette.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 let numbers = [1, 2, 3, 4, 5]
 @State var selection: Int = 0
@@ -348,7 +348,7 @@ Picker("Select", selection: $selection) {
 # 이미지 크기 조절
 
 SwiftUI가 처음 나온 이후, Apple은 이미지 라이브러리인 SF Symbols를 제공해 왔습니다. Image 뷰를 사용하여 이 라이브러리의 이미지에 쉽게 액세스할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -42,7 +42,7 @@ React 19에서 다음 것들도 추가되었습니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-16-ReactConf2024Reactv19RC_3.png)
 
 - 사전로드 방법. 수동으로 태그를 추가하는 것 외에도 링크 사전로드를 위한 방법들이 추가되었습니다 - preinit, preload, prefetchDNS 및 preconnect. 문서에는 preloadModule 및 preinitModule 방법도 설명되어 있지만, 이유는 불명이지만 이들은 회의에서 보여지지 않았습니다.
@@ -50,11 +50,11 @@ React 19에서 다음 것들도 추가되었습니다:
 ![Image](/assets/img/2024-05-16-ReactConf2024Reactv19RC_4.png)
 
 - 스타일 임베딩. meta 태그와 유사하게, 스타일에 대한 작업이 진행될 것입니다. 그러나 여기에 중요도 옵션이 추가되었습니다 - 이에 따라 어떤 스타일이 더 중요한지(따라서 DOM에서 더 낮게 표시될 것인지)가 결정됩니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-16-ReactConf2024Reactv19RC_5.png)
 
 이제 컴포넌트의 스타일 로딩은 서스펜스로 추적됩니다. 즉, 컴포넌트가 렌더링되는 동안에만 로더를 표시할 수있는 것이 아니라 해당 스타일이 준비되는 동안에도 표시할 수 있습니다.
@@ -62,11 +62,11 @@ React 19에서 다음 것들도 추가되었습니다:
 ![이미지](/assets/img/2024-05-16-ReactConf2024Reactv19RC_6.png)
 
 서버 컴포넌트의 등장으로 React는 서버 렌더링 책임을 더 맡게 되었으며 결과적으로 하이드레이션은 더 많은 논리와 잠재적인 문제를 가지게 되었습니다. React.js 팀은 하이드레이션 오류를 개선했습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![ReactConf2024](/assets/img/2024-05-16-ReactConf2024Reactv19RC_7.png)
 
 실제 트리 구조 작업에 중요한 변화에 대한 추가적으로, React.js에서 양식과 상호 작용 논리가 업데이트되었습니다. 먼저, react-dom에 양식 컴포넌트가 포함되었으며, 이는 요소에 대한 중요한 변경 사항을 의미합니다. 그리고 그 이야기는 “action” 속성 변경에 대한 것입니다 — 양식을 onSubmit이나 네이티브 속성을 통해 제출하는 대안으로.
@@ -74,11 +74,11 @@ React 19에서 다음 것들도 추가되었습니다:
 ![ReactConf2024](/assets/img/2024-05-16-ReactConf2024Reactv19RC_8.png)
 
 action을 추가하는 것 자체는 onSubmit과 같이 보이지만, 이벤트 대신 FormData를 즉시 가져옵니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![ReactConf2024Reactv19RC_9](/assets/img/2024-05-16-ReactConf2024Reactv19RC_9.png)
 
 또한, 폼 필드 및 버튼에 formAction prop이 추가되었습니다. 이는 동일한 방식으로 작동합니다.
@@ -86,7 +86,7 @@ action을 추가하는 것 자체는 onSubmit과 같이 보이지만, 이벤트 
 사용자가 폼 로직을 로드하기 전에도 즉시 폼 제출을 요청하면 클라이언트 액션을 사용하는 경우 제출이 연기되고 로직이 준비되자마자 수행됩니다. 서버 액션의 경우 클라이언트 js가 필요하지 않기 때문에 즉시 제출됩니다.
 
 그러나 기본 차이 외에도 폼 제출과 상호 작용에 중요한 변화가 있습니다 - 이들은 새로운 훅입니다. useOptimistic, useFormStatus 및 useActionState.
-```
+
 
 <div class="content-ad"></div>
 
@@ -120,7 +120,7 @@ Sam Selikoff 씨가 "React unpacked: A Roadmap to React 19"라는 프레젠테�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![ReactConf2024](/assets/img/2024-05-16-ReactConf2024Reactv19RC_15.png)
 
 그런 다음이 연결에 따라 필요한 종속성으로 메모이제이션을 설정하세요. 이 경우 노래가 변하지 않기 때문에 필터링된 노래(filteredSongs)는 동일해야 합니다(노래에 종속성이 있는 메모이제이션으로 처리됩니다). 그리고 setSong에 의해 노래가 변경되면 NowPlaying이 다시 렌더링되어야 합니다(song에 종속성이 있는 메모이제이션으로 처리됩니다).
@@ -128,7 +128,7 @@ Sam Selikoff 씨가 "React unpacked: A Roadmap to React 19"라는 프레젠테�
 ![ReactConf2024](/assets/img/2024-05-16-ReactConf2024Reactv19RC_16.png)
 
 "최대한 간단한 코드로 최대의 성능을 내세요."
-```
+
 
 <div class="content-ad"></div>
 
@@ -153,7 +153,7 @@ npx react-compiler-healthcheck
 다른 혁신은 Lydia Hallie에 의해 공유되었어요 — 사용 함수. 네, 실수가 아니에요 — 훅이 아니에요.
 
 <img src="/assets/img/2024-05-16-ReactConf2024Reactv19RC_17.png" />
-```
+
 
 <div class="content-ad"></div>
 

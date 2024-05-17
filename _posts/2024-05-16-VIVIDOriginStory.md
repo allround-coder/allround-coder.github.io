@@ -51,7 +51,7 @@ FloraForms의 성공적인 출시 이후, VIVID는 CyberSea의 Deus Ex Machina, 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![VIVIDOriginStory_5](/assets/img/2024-05-16-VIVIDOriginStory_5.png)
 
 아티스트와 그들의 컬렉터 사이의 동적인 연결을 유지하기 위해 Discord를 통해 제공하며, 컬렉터들에게 아티스트에 대한 이전에 없던 접근권한을 제공합니다. 이러한 가까운 상호작용은 컬렉터들이 아티스트와 깊게 상호작용할 수 있도록 하여 VIVID 컬렉션 경험의 중요한 요소로 남아 있습니다.
@@ -59,7 +59,7 @@ FloraForms의 성공적인 출시 이후, VIVID는 CyberSea의 Deus Ex Machina, 
 Discord에서 아티스트와 컬렉터들의 커뮤니티에 가입하세요.
 
 앞으로도 Shaderism, Manuel Larino 및 Dario Lanza와 같은 비전있는 아티스트들과의 미래 프로젝트를 발표하는 것에 흥분하며, 이들은 모두 VIVID의 탁월함에 대한 약속을 담고 있으며, VIVID 애호가들의 컬렉션을 풍부하게 하는 훌륭한 작품을 제공할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

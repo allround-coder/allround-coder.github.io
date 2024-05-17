@@ -49,7 +49,7 @@ Android 및 iOS 개발: 종합적으로 생각하기
 
 위 글을 Markdown 형식으로 변경하겠습니다.
 
-```
+
 We’ve divided this series into three comprehensive sections to ensure you gain a well-rounded understanding of mobile development:
 
 Section 1: Foundation
@@ -59,7 +59,7 @@ Section 1: Foundation
 - Package Management: Learn how to manage dependencies for each platform.
 
 Section 2: Building Your App
-```
+
 
 <div class="content-ad"></div>
 

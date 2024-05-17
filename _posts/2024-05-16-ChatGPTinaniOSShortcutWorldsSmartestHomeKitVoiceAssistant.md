@@ -104,7 +104,7 @@ GPT-3가 스마트 홈의 특정 부분을 제어하려고 한다는 것을 감�
 그리고 그것은 자신의 지식을 기반으로 침실을 편안한 19도로 설정했습니다!
 
 ## :: 쿼리 액션
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -203,7 +203,7 @@ API에서 응답 데이터를 받으면, JSON 응답에 중첩되어 있으므�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-16-ChatGPTinaniOSShortcutWorldsSmartestHomeKitVoiceAssistant_8.png)
 
 마침내, 답변 및 명확화 작업은 처리 없이 반환된 값을 보여줍니다:
@@ -211,7 +211,7 @@ API에서 응답 데이터를 받으면, JSON 응답에 중첩되어 있으므�
 ![이미지](/assets/img/2024-05-16-ChatGPTinaniOSShortcutWorldsSmartestHomeKitVoiceAssistant_9.png)
 
 이상입니다
-```
+
 
 <div class="content-ad"></div>
 

@@ -86,7 +86,7 @@ SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABL
 
 <div class="content-ad"></div>
 
-```markdown
+```js
 @formatDateTime(utcnow(), 'yyyyMMdd')
 @concat(item().table_schema,'.',item().table_name,'.parquet')
 ```
@@ -96,7 +96,7 @@ SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABL
 한 번 더 강조하자면, 채택된 방법론은 다루고 있는 소스 시스템의 종류에 크게 의존합니다. 이 시나리오에서는 Parquet 파일을 사용하여 데이터를 일괄 적재합니다. 그러나 형식은 CSV, XML, JSON 등 다양할 수 있습니다. 또한 적재 방법도 달라질 수 있습니다. 완전한 로드를 사용하는 대신 델타를 로드하거나 실시간 적재를 선택할 수도 있습니다.
 
 ## 최신 Parquet 파일을 Delta 테이블로 승격하기
-```
+
 
 <div class="content-ad"></div>
 

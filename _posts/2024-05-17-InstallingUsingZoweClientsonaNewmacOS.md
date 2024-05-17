@@ -43,7 +43,7 @@ eval "$(fnm env --use-on-cd --version-file-strategy=recursive)"
 fnm를 사용하여 Node.js를 설치하고 확인하세요:
 
 ![이미지](/assets/img/2024-05-17-InstallingUsingZoweClientsonaNewmacOS_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -67,7 +67,7 @@ Zowe CLI을 설치하고 데몬을 활성화하려면 npm install -g @zowe/cli�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot 1](/assets/img/2024-05-17-InstallingUsingZoweClientsonaNewmacOS_4.png)
 
 Accessing z/OS data sets (after inputting credentials multiple times and selecting “Always allow”:
@@ -75,7 +75,7 @@ Accessing z/OS data sets (after inputting credentials multiple times and selecti
 ![Screenshot 2](/assets/img/2024-05-17-InstallingUsingZoweClientsonaNewmacOS_5.png)
 
 # Summary
-```
+
 
 <div class="content-ad"></div>
 

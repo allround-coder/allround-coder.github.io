@@ -11,7 +11,7 @@ link: "https://medium.com/@hiroyukinaito.eth/draft-running-optimism-node-without
 ---
 
 
-```markdown
+
 ![Optimism node](/assets/img/2024-05-17-RunningOptimismNodewithoutDocker_0.png)
 
 Optimism 노드를 설치하는 것은 매우 간단합니다. 다른 슈퍼체인과 달리 많은 설정이 기본값으로 설정되어 있기 때문입니다.
@@ -19,7 +19,7 @@ Optimism 노드를 설치하는 것은 매우 간단합니다. 다른 슈퍼체�
 그래서 Docker 없이 스냅 동기화 모드로 Optimism 노드를 실행하는 방법을 설명하겠습니다. "Docker 없이 베이스 노드 실행하기: 파트 2"에서 파생된 글입니다.
 
 본 문서에서는 다음과 같은 설정을 하게 됩니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -194,7 +194,7 @@ P2P_PORT=30304
 OP_GETH_GCMODE=full
 OP_GETH_SYNCMODE=snap
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -336,20 +336,20 @@ if $programname == 'op-node' then ~
 
 <div class="content-ad"></div>
 
-```markdown
+
 $ sudo touch /etc/rsyslog.d/25-op-geth.conf
 $ sudo vim /etc/rsyslog.d/25-op-geth.conf
-```
+
 
 참고:
 선호하는 파일 이름으로 변경해주세요.
 
 다음 설정을 붙여넣고 저장하세요.
 
-```markdown
+
 if $programname == 'op-geth' then /var/log/op-geth.log
 if $programname == 'op-geth' then ~
-```
+
 
 <div class="content-ad"></div>
 
@@ -433,7 +433,7 @@ $ sudo systemctl status -l op-geth
 ```
 
 ## 7–3. 로그 확인하기
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -450,7 +450,7 @@ $ sudo tail -f /var/log/op-node.log
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image 1](/assets/img/2024-05-17-RunningOptimismNodewithoutDocker_1.png)
 
 Roughly within 20 hours, op-geth will complete syncing with snap mode, as shown in the following image.
@@ -458,7 +458,7 @@ Roughly within 20 hours, op-geth will complete syncing with snap mode, as shown 
 ![image 2](/assets/img/2024-05-17-RunningOptimismNodewithoutDocker_2.png)
 
 - Synced Example
-```
+
 
 <div class="content-ad"></div>
 
@@ -471,7 +471,7 @@ Roughly within 20 hours, op-geth will complete syncing with snap mode, as shown 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 $ curl -sX POST -H "Content-Type: application/json" \
 -d '{"jsonrpc": "2.0", "method": "eth_blockNumber", "params": [], "id":1}' \
@@ -489,7 +489,7 @@ http://localhost:8545/ \
 ```
 
 - 출력 예시
-```
+
 
 <div class="content-ad"></div>
 
@@ -549,12 +549,11 @@ Swap:            0B          0B          0B
 
 <div class="content-ad"></div>
 
-```markdown
+
 $ du -sh ~/data
 404G    /home/ethereum/data
-```
+
 
 # 소감
 
 옵티미즘 노드를 Docker 없이 구축해주신 여정에 대해 감사드립니다. 옵티미즘 노드 설치는 많은 단계가 필요하지만, 도커 환경보다는 더 많은 사용자 정의가 제공됩니다. 동일한 L1 노드나 다른 L2, L3 솔루션에서 실행하더라도 각 포트 설정을 유연하게 변경할 수 있습니다. 이 설정들에 대한 오류를 발견하거나 개선 제안이 있으시면 소중한 피드백 주시기를 부탁드리며, 더 나은 분산화를 위해 개선사항을 지속적으로 반영할 수 있습니다.
-```

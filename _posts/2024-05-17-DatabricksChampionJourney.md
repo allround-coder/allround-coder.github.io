@@ -43,7 +43,7 @@ B. 데이터 과학 트랙은 다음과 같은 자격 인증 요구 사항으로
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-17-DatabricksChampionJourney_2.png)
 
 3. Panel review with Databricks experts from Databricks
@@ -57,7 +57,7 @@ This step requires preparing a deck with the following contents:
 - Deep-dive into architectural areas
 - Project outlook / next steps
 - Contribution to the community (I have shared my medium.com blogs relating to Databricks topics)
-```
+
 
 <div class="content-ad"></div>
 

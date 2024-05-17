@@ -11,7 +11,7 @@ link: "https://medium.com/@kernelv5/infrastructure-as-code-c68df4a4dcb3"
 ---
 
 
-```markdown
+
 ![Infrastructure as Code 0](/assets/img/2024-05-17-InfrastructureasCode_0.png)
 
 ![Infrastructure as Code 1](/assets/img/2024-05-17-InfrastructureasCode_1.png)
@@ -19,7 +19,7 @@ link: "https://medium.com/@kernelv5/infrastructure-as-code-c68df4a4dcb3"
 # Infrastructure as Code (IaC)이란
 
 Infrastructure as Code 또는 IaC는 코드와 스크립트를 사용하여 인프라를 자동으로 프로비저닝하고 구성하는 것을 말합니다. IaC를 사용하면 환경을 생성하여 인프라 구성 요소를 자동화할 수 있으므로 필요한 시스템 및 장치를 수동으로 설정하는 대신 시스템과 장치를 설정할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -156,7 +156,7 @@ rg-mark-k8-001-dev-eas-01
 
 <div class="content-ad"></div>
 
-```
+
 ![Infrastructure as Code Image](/assets/img/2024-05-17-InfrastructureasCode_4.png)
 
 Code Sample: [tf-sample-project-demo/main.tf](https://github.com/kernelv5/tf-sample-project-demo/blob/master/main.tf)
@@ -164,7 +164,7 @@ Code Sample: [tf-sample-project-demo/main.tf](https://github.com/kernelv5/tf-sam
 Project: [tf-sample-project-demo](https://github.com/kernelv5/tf-sample-project-demo)
 
 ![Infrastructure as Code Image](/assets/img/2024-05-17-InfrastructureasCode_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -178,7 +178,7 @@ Project: [tf-sample-project-demo](https://github.com/kernelv5/tf-sample-project-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-17-InfrastructureasCode_7.png)
 
 # Auto-Generated Readme.md
@@ -186,7 +186,7 @@ Project: [tf-sample-project-demo](https://github.com/kernelv5/tf-sample-project-
 [Link to GitHub Repository with Terraform Documentation](https://github.com/kernelv5/tf-sample-project-demo)
 
 ![image](/assets/img/2024-05-17-InfrastructureasCode_8.png)
-```
+
 
 <div class="content-ad"></div>
 

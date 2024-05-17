@@ -188,7 +188,7 @@ print(response.choices[0].message.content)
 GPT-4o는 사용자 입력에 기반하여 미리 정의된 함수를 호출할 수 있어요. 외부 데이터 소스나 서비스를 통합하는 데 특히 유용합니다.
 
 <img src="https://miro.medium.com/v2/resize:fit:1200/0*YKVvRxnSDMQEWPqb.gif" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -274,6 +274,5 @@ print(function_calling())
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](https://miro.medium.com/v2/resize:fit:1400/0*e35njv6_nLGt-8QY.gif)
-```

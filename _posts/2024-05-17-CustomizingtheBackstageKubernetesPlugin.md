@@ -65,7 +65,7 @@ Kubernetes 플러그인에는 여러 모듈이 있고, 각각을 사용자 정�
 
 예를 들어, 다음 catalog-info.yaml 파일에서 kubernetes-namespace 필드에 쉼표로 구분 된 두 개의 네임 스페이스를 포함하는 것을 볼 수 있습니다. 이 두 네임 스페이스에서 파드를로드하려고합니다.
 
-```markdown
+
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -84,7 +84,7 @@ spec:
   type: 서비스
   owner: me@example.com
   lifecycle: POC
-```
+
 
 <div class="content-ad"></div>
 
@@ -309,9 +309,9 @@ spec:
 
 대시보드 안에 이렇게 테이블 태그를 변경해보세요:
 
-```markdown
+
 <img src="/assets/img/2024-05-17-CustomizingtheBackstageKubernetesPlugin_3.png" />
-```
+
 
 위 이미지에서 order-service는 spring-cloud-config-dev 네임스페이스에만 배포되어 있습니다. 그러나 이 서비스를 spring-cloud-config-prod 네임스페이스에 배포하면 거기서도 볼 수 있을 겁니다.
 

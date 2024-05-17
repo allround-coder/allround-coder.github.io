@@ -11,7 +11,7 @@ link: "https://medium.com/@pranavsanotra/aws-bedrock-cloud-based-generative-ai-2
 ---
 
 
-```markdown
+
 ![AWS Bedrock](/assets/img/2024-05-17-AWSBedrockCloud-basedGenerativeAI_0.png)
 
 Amazon Bedrock은 클라우드에서 대형 언어 모델을 활용하는 견고한 솔루션입니다! 경험 많은 개발자, 데이터 과학자 또는 Generative AI의 시작부터 Amazon Bedrock은 끝까지 Generative AI 애플리케이션을 테스트하고 구현하는 이상적인 장소가 될 수 있습니다.
@@ -23,7 +23,7 @@ Amazon Bedrock은 클라우드에서 대형 언어 모델을 활용하는 견고
 - IAM에서 새 사용자를 생성하고 "AmazonBedrockFullAccess" 정책을 연결합니다. 나중에 사용할 자격 증명이 AWS Bedrock 서비스에 액세스할 수 있도록 합니다. 자격 증명을 다운로드하고 안전하게 보관해야 합니다. 나중에 사용해야 합니다.
 
 2. AWS 콘솔에서 AWS Bedrock을 검색하고 지역을 신중하게 선택합니다. 현재 일부 대형 언어 모델은 특정 지역에서만 사용할 수 있습니다. 이 튜토리얼에서는 "us-west-2"를 선택하고 Meta의 "Llama-3-70B-Instruct" 모델에 액세스할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

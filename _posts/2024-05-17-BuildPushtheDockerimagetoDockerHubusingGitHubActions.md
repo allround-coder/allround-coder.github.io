@@ -58,7 +58,7 @@ COPY ./index.html /usr/local/apache2/htdocs/
 - 귀하의 저장소에서 자격 증명을 시크릿에 저장하세요.
 
 ![이미지](/assets/img/2024-05-17-BuildPushtheDockerimagetoDockerHubusingGitHubActions_1.png)
-```  
+  
 
 <div class="content-ad"></div>
 

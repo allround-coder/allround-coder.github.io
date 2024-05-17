@@ -64,7 +64,7 @@ df["Z"]=(df["data"]-df["data"].mean())/df["data"].std()
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![QQ Plot](/assets/img/2024-05-17-MasteringQQPlotsADataScientistsSecretWeapon_2.png)
 
 이제 Scipy 라이브러리를 사용하여 QQ 플롯을 생성해 봅시다.
@@ -75,7 +75,7 @@ plt.show()
 ```
 
 ![QQ Plot](/assets/img/2024-05-17-MasteringQQPlotsADataScientistsSecretWeapon_3.png)
-```
+
 
 <div class="content-ad"></div>
 

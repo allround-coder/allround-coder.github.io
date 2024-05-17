@@ -65,7 +65,7 @@ Mimrr 코드 문서 및 분석 기능을 활용하면 코드 변경이 정기적
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![AI-Powered Code Documentation and Analysis](/assets/img/2024-05-17-AI-PoweredCodeDocumentationandAnalysis_5.png)
 
 Step 2: Then you will be redirected to choose a repository provider. In this case, I will select GitHub as my code provider.
@@ -73,7 +73,7 @@ Step 2: Then you will be redirected to choose a repository provider. In this cas
 ![AI-Powered Code Documentation and Analysis](/assets/img/2024-05-17-AI-PoweredCodeDocumentationandAnalysis_6.png)
 
 Step 3: Next, go to your Mimrr dashboard and open the projects section to add your codebase repository by clicking the Add Project button. Once your project is added, it should look as shown below.
-```
+
 
 <div class="content-ad"></div>
 

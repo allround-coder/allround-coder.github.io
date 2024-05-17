@@ -21,7 +21,7 @@ link: "https://medium.com/@juliaeveritt09/cat-in-a-bag-567d8c5b3bda"
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![CatinaBag_1](/assets/img/2024-05-16-CatinaBag_1.png)
 
 ![CatinaBag_2](/assets/img/2024-05-16-CatinaBag_2.png)
@@ -29,7 +29,7 @@ link: "https://medium.com/@juliaeveritt09/cat-in-a-bag-567d8c5b3bda"
 Below is a video of my project in action.
 
 For future development, I think it would be cool to add more Arduino elements, such as buzzers or photoreceptors, to enhance the game with additional features. Instead of just moving a sprite on the screen, players could control sprite speed or collect power-ups. Implementing a points system would make the game more competitive, so players could strive to beat their own high scores in addition to beating the clock. Some aspects of the current game can be refined for more consistent gameplay. For example, if two wrong bags are clicked simultaneously, the Arduino might struggle to process the request to turn off two LEDs at the same time.
-```
+
 
 <div class="content-ad"></div>
 

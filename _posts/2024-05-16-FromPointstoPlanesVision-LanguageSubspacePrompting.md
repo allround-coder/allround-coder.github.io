@@ -11,7 +11,7 @@ link: "https://medium.com/@venkateshtata9/from-points-to-planes-vision-language-
 ---
 
 
-```markdown
+
 ![lecture image](/assets/img/2024-05-16-FromPointstoPlanesVision-LanguageSubspacePrompting_0.png)
 
 최근에 고급 컴퓨터 비전 수업인 Dr. 이 제가 이끄는 Dr. 송 이제의 흥미로운 게스트 강연을 듣게 되었습니다. Dr. Li는 삼성 AI의 연구 과학자로, 도메인 일반화, 연합 학습 및 PEFT 방법과 같은 인공 지능의 중요 주제를 다루었습니다. 특히, 그의 최신 연구인 "Vision-Language Sub Space Prompting"에 초점을 맞춘 프레젠테이션은 정보 전달 뿐만 아니라 유사성 검색과 같은 작업에서 진화하는 방법론을 구체화하는 데 있어서 흥미롭고 사유를 제공했습니다. 그의 통찰력에 영감을 받아, 저는 그의 최신 연구 작업에 대한 직관에 대한 생각을 이 블로그를 통해 공유할 필요성을 느꼈습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@venkateshtata9/from-points-to-planes-vision-language-
 Sub-space prompting의 복잡성에 뛰어들기 전에, 대규모 언어 모델(LLMs)과 시각-언어 모델(VLMs)의 영역에서 우리를 이 시점으로 이끌어 온 혁신의 역사를 잠깐 돌아봅시다. 여러분, 정말 대단한 여정이었습니다!
 
 LLMs의 초기 발전은 Word2Vec 및 GloVe와 같은 모델의 등장으로 시작되었고, 이 모델은 단어의 밀도 있는 벡터 표현을 생성했습니다. 이 임베딩은 단어 간 의미와 관계를 포착해, 더 정교한 모델을 위한 기초를 마련했습니다. 이는 예전 페이스북에서 누군가가 우리를 "찌르다"라는 말만 들어도 정말 즐거웠던 소셜 미디어 초기 시절과 닮았네요.
-```
+
 
 <div class="content-ad"></div>
 

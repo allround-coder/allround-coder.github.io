@@ -179,7 +179,7 @@ javac –J-agentlib:hprof=heap=sites HelloWorld.java
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 javac -J-agentlib:hprof=heap=dump HelloWorld.java
 ```
@@ -189,7 +189,7 @@ javac -J-agentlib:hprof=heap=dump HelloWorld.java
 Digma는 OTEL을 사용하여 자동으로 수집한 관측 데이터에 의존합니다. 다른 프로파일링 도구와 마찬가지로 코드가 런타임에서 어떻게 작동하는지 분석하고 문제점을 찾는 것이 목적입니다. 유일한 차이점은 Digma가 자체적으로 이러한 문제점을 계속해서 찾는다는 것입니다.
 
 몇 가지 예시를 살펴보겠습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -234,7 +234,7 @@ Digma는 코드의 확장성에 대한 통찰력을 제공하여, 응용프로�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Java Profiler](/assets/img/2024-05-17-9BestJavaProfilerstoUsein2024_6.png)
 
 예를 들어, 스케일링 문제 통찰력을 통해 개발자는 동시성 처리 및 요청 처리 시간과 관련된 성능 병목 현상을 빠르게 파악할 수 있습니다.
@@ -242,7 +242,7 @@ Digma는 코드의 확장성에 대한 통찰력을 제공하여, 응용프로�
 성능 저하 메트릭은 성능이 하락하는 부하 수준을 식별하는 데 도움이 됩니다. 이 메트릭은 이러한 트랜잭션 중에 실행된 코드 경로를 확인하여 비효율성이나 리소스 경합을 찾도록 개발자를 안내할 수 있습니다.
 
 동시성 정보는 시스템이 동시적인 프로세스나 스레드를 처리할 때 문제가 발생하는 것을 개발자에게 알립니다. 이는 응용프로그램이 병렬 처리를 처리하거나 응용프로그램이 이 수준의 동시성에서 최적으로 작동하도록 필요한 리소스가 할당되지 않는 문제를 시사할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -266,7 +266,7 @@ VisualVM은 JConsole, jstat, jinfo, jstack 및 jmap과 같은 JDK와 함께 제�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![VisualVM](/assets/img/2024-05-17-9BestJavaProfilerstoUsein2024_7.png)
 
 다음은 VisualVM을 사용하는 세 가지 방법입니다:
@@ -281,9 +281,9 @@ java -Xmx125m -Xms25m -Xmn15m -XX:PermSize=30m -XX:MaxPermSize=30m -XX:+UseSeria
 
 터미널에서 jvisualvm을 실행하여 JVM 힙 메모리 사용량을 모니터링해보세요.
 
-```
+
 jvisualvm
-```
+
 
 다음으로, Java VisualVM 프로그램이 실행됩니다. Tools > Plugins로 이동하여 Visual GC 플러그인을 다운로드하세요. (다른 플러그인들도 표시될 것입니다. 필요한 것들을 사용할 수 있습니다.)
 
@@ -354,7 +354,7 @@ IntelliJ Profiler는 CPU 및 메모리 할당 프로파일링을 위한 간편�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Java Profiler](/assets/img/2024-05-17-9BestJavaProfilerstoUsein2024_11.png)
 
 IntelliJ IDEA Ultimate에서 IntelliJ Profiler를 Java 프로세스에 쉽게 연결할 수 있어요. 스냅숏과 소스 코드 사이를 쉽게 이동할 수 있어서 매끄럽게 작업할 수 있어요. 독특한 flame graph와 같은 다른 측면을 통해 시각적으로 다양한 메소드의 효과를 평가하고 런타임 프로세스를 신속하고 효과적으로 이해할 수 있어요.
@@ -362,7 +362,7 @@ IntelliJ IDEA Ultimate에서 IntelliJ Profiler를 Java 프로세스에 쉽게 �
 # 8. Async Profiler
 
 이 Java 프로파일링 도구는 최소한의 오버헤드가 있으며 Safepoint 편견 문제를 회피할 수 있어요. HotSpot을 위한 스택 추적 및 메모리 할당 모니터링을 위한 특정 API가 포함되어 있어요. 이 프로파일러는 HotSpot JVM을 사용하는 OpenJDK 및 다른 Java 런타임과 호환되어요.
-```
+
 
 <div class="content-ad"></div>
 

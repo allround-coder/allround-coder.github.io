@@ -82,14 +82,14 @@ cargo는 Rust의 빌드 매니저이며, .NET에서는 dotnet, Scala에서는 sb
 
 행운이다! 많은 사람들이 AVR을 개발하기 위해 Rust를 사용하고 있어서, 이 동영상을 포함하여 도움이 되는 다양한 자료들이 있습니다. 이 동영상은 새 프로젝트를 설정하기 위한 cargo generate 템플릿을 소개하고 있습니다.
 
-```markdown
+
 cargo generate --git https://github.com/Rahix/avr-hal-template.git
-```
+
 
 이 명령은 우리 프로젝트를 위해 템플릿을 구성하는 상호작용적인 흐름을 시작합니다. 이 경우에는 프로젝트 이름과 대상 보드에 대해 두 가지 질문만 있습니다. 실제 보드를 사용하지는 않고 대신 시뮬레이터에서 VM을 실행할 것이기 때문에, 제가 선택한 것은 아두이노 메가 1280입니다. 
 
 ![NielslearnsRust2GettingstartedwithAVRRust_2 이미지](/assets/img/2024-05-17-NielslearnsRust2GettingstartedwithAVRRust_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -128,7 +128,7 @@ Cargo도 프로그램을 실행할 수 있지만, 현재 버전에서 시도하�
 
 <div class="content-ad"></div>
 
-```md
+md
 ![이미지](/assets/img/2024-05-17-NielslearnsRust2GettingstartedwithAVRRust_5.png)
 
 템플릿은 생성된 실행 파일을 대상 장치로 보내는 도구인 ravedude를 사용하도록 구성되어 있지만 우리는 물리적 장치가 없으므로 수정된 Avrora 시뮬레이터의 버전을 대신 사용할 것입니다.
@@ -139,7 +139,7 @@ cargo run을 실행하면 생성된 프로젝트의 capevm/.cargo/config.toml �
 [target.'cfg(target_arch = "avr")']
 runner = "ravedude mega1280 -cb 57600"
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -203,7 +203,7 @@ let valid_signature = f.sig.constness.is_none()
 이 루프는 여기서 끝없이 단일 핀을 토글하지만, 실제 보드가 없기 때문에 아직 테스트할 방법이 없습니다. 코드를 시뮬레이터에서 실행하고, Ctrl-C를 눌러 중지한 후에 Avrora가 config.toml에서 활성화한 -monitors에 따라 프로그램이 무엇을 수행했는지에 대한 정보를 출력할 것입니다:
 
 <img src="/assets/img/2024-05-17-NielslearnsRust2GettingstartedwithAVRRust_6.png" />
-```
+
 
 <div class="content-ad"></div>
 

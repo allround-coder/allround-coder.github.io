@@ -11,7 +11,7 @@ link: "https://medium.com/@njihiadavid02/tic-80-machine-learning-perceptron-lear
 ---
 
 
-```markdown
+
 ![공포를 느끼지 마세요. 그냥 AI의 일부입니다.](/assets/img/2024-05-16-TIC-80TutorialMachineLearningdonotgetscaredawaybythisItissimplyapartofAIPerceptronlearning_0.png)
 
 [페이지에 시각적인 풍미를 위해 만든 예쁜 3D 모델]
@@ -19,7 +19,7 @@ link: "https://medium.com/@njihiadavid02/tic-80-machine-learning-perceptron-lear
 신경망의 경우, 퍼셉트론 학습은 소개 알고리즘 중 가장 간단한 것 중 하나입니다.
 
 이것은 간단한 이진 분류에 사용됩니다. 이는 물건을 그룹화하는 데 사용될 수 있다는 것을 의미합니다.
-```
+
 
 <div class="content-ad"></div>
 

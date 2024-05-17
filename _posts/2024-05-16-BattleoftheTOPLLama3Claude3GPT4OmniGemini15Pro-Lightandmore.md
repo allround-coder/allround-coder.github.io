@@ -53,7 +53,7 @@ link: "https://medium.com/@daniellefranca96/battle-of-the-top-llama-3-claude-3-g
 
 아래는 테이블로 변환된 내용입니다.
 
-```markdown
+
 ![](/assets/img/2024-05-16-BattleoftheTOPLLama3Claude3GPT4OmniGemini15Pro-Lightandmore_3.png)
 
 여전히 모두 같은 범위에 있는 것 같아요.
@@ -61,7 +61,7 @@ link: "https://medium.com/@daniellefranca96/battle-of-the-top-llama-3-claude-3-g
 # 가격
 
 ![](/assets/img/2024-05-16-BattleoftheTOPLLama3Claude3GPT4OmniGemini15Pro-Lightandmore_4.png)
-```
+
 
 <div class="content-ad"></div>
 

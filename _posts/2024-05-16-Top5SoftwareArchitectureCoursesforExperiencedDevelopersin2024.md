@@ -31,7 +31,7 @@ link: "https://medium.com/javarevisited/top-5-software-architecture-courses-for-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Software Architecture Courses](/assets/img/2024-05-16-Top5SoftwareArchitectureCoursesforExperiencedDevelopersin2024_1.png)
 
 # 10 Software Architecture Every Experienced Developer Should Know
@@ -40,7 +40,7 @@ link: "https://medium.com/javarevisited/top-5-software-architecture-courses-for-
 
 - Monolithic Architecture: 전체 응용 프로그램이 단일 단위로 구축되는 전통적인 아키텍처입니다. 개발 및 배포는 간단하지만 확장은 도전적일 수 있습니다.
 - Microservices Architecture: 응용 프로그램을 느슨하게 결합된 서비스의 모음으로 구조화하는 아키텍처 스타일로, 각각이 특정 비즈니스 기능을 담당합니다. 확장성, 유연성 및 유지 관리가 쉽습니다. Microservices 아키텍처를 배우려면 이 강좌도 참고하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -144,7 +144,7 @@ Memi Lavi는 Udemy의 다른 강사로, 소프트웨어 아키텍처, 특히 Azu
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-16-Top5SoftwareArchitectureCoursesforExperiencedDevelopersin2024_4.png](/assets/img/2024-05-16-Top5SoftwareArchitectureCoursesforExperiencedDevelopersin2024_4.png)
 
 Whether you are a beginner or experienced developer, this course stands as a valuable resource in mastering Microservices Architecture, and if you like this course, you can also checkout Mavi’s other courses on Software architecture, many of them are worth watching, particularly, The Complete Guide to Becoming a Software Architect
@@ -152,7 +152,7 @@ Whether you are a beginner or experienced developer, this course stands as a val
 ## 4. The Complete Cloud Computing Software Architecture Patterns
 
 This is another Software architecture course from Michael Pogrebinsky on Udemy which is designed to teach you skills needed to architect large-scale systems using cloud computing, software architecture patterns, and modern system design principles.
-```
+
 
 <div class="content-ad"></div>
 

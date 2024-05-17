@@ -75,7 +75,7 @@ CORS 정책을 등록하고 http://localhost:4200 출처를 허용하세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 services.AddCors(options =>
 {
@@ -92,7 +92,7 @@ services.AddCors(options =>
 Auth0 계정으로 돌아가서 Applications & APIs로 이동하여 새 API를 생성하세요.
 
 API 이름과 식별자 URL(https://localhost:7202/로 포트 번호를 변경)을 입력하세요. RS256 알고리즘을 선택하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -156,13 +156,13 @@ namespace Auth0WebApi.Controllers
 
 그러면 "테이블" 태그를 Markdown 형식으로 변경해주세요.
 
-```markdown
+
 | 아이템 | 가격 |
 |---|---|
 | 사과 | 1.99 |
 | 바나나 | 0.99 |
 | 수박 | 5.99 |
-```
+
 
 <div class="content-ad"></div>
 
@@ -446,7 +446,7 @@ getWeatherForecasts() 메서드를 생성하여 날씨 예보 목록을 로드�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 getWeatherForecasts() {
   this.weatherForecastService.get().subscribe(data => {
@@ -486,7 +486,7 @@ export class AppComponent implements OnInit{
 ```
 
 ## Add JWT to the HTTP requests
-```
+
 
 <div class="content-ad"></div>
 
@@ -521,7 +521,7 @@ import { WeatherForecastService } from './weatherforecast.service';
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -554,4 +554,3 @@ export class AppModule {}
 이제 웹 API를 실행하고 Angular 애플리케이션에 로그인하세요.
 
 이제 페이지에 표시되는 날씨 예보 목록을 볼 수 있어야 합니다.
-```

@@ -11,7 +11,7 @@ link: "https://medium.com/deno-the-complete-reference/quarkus-vs-go-frameworks-h
 ---
 
 
-```markdown
+
 ![Quarkus vs Go frameworks Hello World Performance](/assets/img/2024-05-16-QuarkusvsGoframeworksHelloWorldPerformance_0.png)
 
 This is a requested article. Readers have asked for an up-to-date comparison of Quarkus (one of the fastest choices in the Java world) and popular Go frameworks like Gin, Fiber, and Echo.
@@ -19,7 +19,7 @@ This is a requested article. Readers have asked for an up-to-date comparison of 
 In this article, we will focus on the simplest "Hello World" use case. We acknowledge that a "Hello World" example is far from real-world scenarios and not the ideal use case for benchmarking. We will follow up with another article that will perform database reads (I/O-bound operations).
 
 A similar comparison with Spring Boot (powered by virtual threads) can be seen here:
-```
+
 
 <div class="content-ad"></div>
 
@@ -117,17 +117,17 @@ Echo
 
 <div class="content-ad"></div>
 
-```markdown
+
 # Results
 
 100개의 동시 연결에 대한 테스트를 진행하였으며, 총 10백만 개의 요청이 실행되었습니다.
 
 다음은 차트 형태로 표시된 결과입니다:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Quarkus vs Go frameworks - Hello World performance 1](/assets/img/2024-05-16-QuarkusvsGoframeworksHelloWorldPerformance_1.png)
 
 ![Quarkus vs Go frameworks - Hello World performance 2](/assets/img/2024-05-16-QuarkusvsGoframeworksHelloWorldPerformance_2.png)
@@ -135,11 +135,11 @@ Echo
 ![Quarkus vs Go frameworks - Hello World performance 3](/assets/img/2024-05-16-QuarkusvsGoframeworksHelloWorldPerformance_3.png)
 
 ![Quarkus vs Go frameworks - Hello World performance 4](/assets/img/2024-05-16-QuarkusvsGoframeworksHelloWorldPerformance_4.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 5](/assets/img/2024-05-16-QuarkusvsGoframeworksHelloWorldPerformance_5.png)
 
 ![Image 6](/assets/img/2024-05-16-QuarkusvsGoframeworksHelloWorldPerformance_6.png)
@@ -147,7 +147,7 @@ Echo
 ![Image 7](/assets/img/2024-05-16-QuarkusvsGoframeworksHelloWorldPerformance_7.png)
 
 ![Image 8](/assets/img/2024-05-16-QuarkusvsGoframeworksHelloWorldPerformance_8.png)
-```
+
 
 <div class="content-ad"></div>
 

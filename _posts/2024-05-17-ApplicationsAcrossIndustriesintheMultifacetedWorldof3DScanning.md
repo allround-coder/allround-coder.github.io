@@ -45,7 +45,7 @@ link: "https://medium.com/3dprintjunction/applications-across-industries-in-the-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-17-ApplicationsAcrossIndustriesintheMultifacetedWorldof3DScanning_1.png)
 
 ## 제품 디자인
@@ -53,7 +53,7 @@ link: "https://medium.com/3dprintjunction/applications-across-industries-in-the-
 3D 스캐너를 사용하면 기존 물체의 3D 데이터를 정확하게 캡처할 수 있습니다. 이를 통해 제조업체는 이러한 데이터를 활용하여 3D 모델링을 하고 디지털 프로토타입을 만들 수 있습니다. 클레이 모델 및 몰드를 스캔함으로써 여러 디자인 변형을 디지털로 테스트할 수 있습니다. 이는 비용을 절약하고 제품 개발 주기를 크게 단축시킵니다.
 
 ## 품질 통제
-```
+
 
 <div class="content-ad"></div>
 
@@ -89,7 +89,7 @@ link: "https://medium.com/3dprintjunction/applications-across-industries-in-the-
 
 아래는 Markdown 형식으로 table tag를 수정한 내용입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-ApplicationsAcrossIndustriesintheMultifacetedWorldof3DScanning_3.png)
 
 ## 문화유산 보존
@@ -97,7 +97,7 @@ link: "https://medium.com/3dprintjunction/applications-across-industries-in-the-
 많은 박물관들이 화석, 조각품, 유물 등과 같은 소중한 문화 자산의 디지털화와 보존을 위해 3D 스캐닝 기술을 활용하고 있습니다. 고정도의 3D 모델은 상호작용적인 경험을 만들어내고 매우 소중한 실제 물체들의 다루임을 최소화하면서 대중적 액세스를 넓힙니다.
 
 ## 연구
-```
+
 
 <div class="content-ad"></div>
 

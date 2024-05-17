@@ -64,7 +64,7 @@ bankchurn_df |>
 ## Step 2: 데이터 정제
 
 저는 모델의 특성으로 사용되지 않을 ‘Surname’이라는 용어를 포함하는 열을 제거할 것입니다. 또한 이진 분류를 위해 출력 변수인 Exited를 팩터 변수로 변환할 것입니다.
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -86,7 +86,7 @@ bankchurn_df_upd |>
 
 <div class="content-ad"></div>
 
-```md
+md
 ![이미지](/assets/img/2024-05-16-BuildingandEvaluatingCustomerChurnClassificationModelswithTidymodels_2.png)
 
 이제 ggpairs()를 사용하여 몇 가지 예측 변수를 조사하여 출력 변수와의 관계를 이해해 보겠습니다.
@@ -100,7 +100,7 @@ bankchurn_df_upd |>
 ```
 
 ![이미지](/assets/img/2024-05-16-BuildingandEvaluatingCustomerChurnClassificationModelswithTidymodels_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -224,7 +224,7 @@ rf_fit <-
 
 <div class="content-ad"></div>
 
-```markdown
+```js
 lr_fit |> 
   extract_fit_parsnip() |> 
   tidy() |> 
@@ -235,13 +235,12 @@ lr_fit |>
 
 Random forest를 위해, extract_fit_parsnip() 함수를 사용하여 fit를 추출할 거예요. 그런 다음 importance() 명령어를 사용하여 특성과 그들의 지표를 추출할 거예요.
 
-```markdown
+```js
 extract_fit_parsnip(rf_fit)$fit |> 
   ranger::importance() |> 
   enframe() |> 
   arrange(desc(value))
 ``` 
-```
 
 <div class="content-ad"></div>
 
@@ -285,7 +284,7 @@ rf_preds_combined <-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-16-BuildingandEvaluatingCustomerChurnClassificationModelswithTidymodels_13.png)
 
 이제 예측값을 가지고 있으니, 이 모델들의 정확도를 측정해 봅시다.
@@ -293,7 +292,7 @@ rf_preds_combined <-
 ## 단계 9: 성능 지표 이해
 
 ROC 곡선은 서로 다른 임계값에서 이진 분류 방법의 성능을 보여줍니다. 이는 실제 양성 비율(TPR)을 거짓 양성 비율(FPR)에 대해 그립니다. roc_curve() 함수를 사용하여 roc 곡선의 값을 얻을 것입니다.
-```  
+  
 
 <div class="content-ad"></div>
 

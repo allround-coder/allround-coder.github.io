@@ -156,7 +156,7 @@ vn.ask('뱃지 수가 가장 많은 상위 10 명의 사용자를 찾아주세�
 ![이미지](/assets/img/2024-05-16-ChatwithyourSQLdatabaseusingGPT4oviaVannaai_7.png)
 
 # Flask 앱 사용하기
-```  
+  
 
 <div class="content-ad"></div>
 

@@ -83,7 +83,7 @@ link: "https://medium.com/@soltrinox/securing-the-foundations-of-media-integrity
 
 미디어와 뉴스에서 제공되는 오리진, 신뢰성, 그리고 정보의 정직성을 보장하는 핵심적인 수용 — 현대 언론과 정보 전파 아키텍처의 기반적인 기둥으로 기능합니다. 현실의 질서가 디지털 조작과 거짓된 이야기를 통해 왜곡될 수 있는 시대에, 뉴스 기사에 대한 검증 가능한 계보를 수립하는 것은 공중의 신뢰와 정보화된 시민성을 유지하는 데 중요합니다. 미디어에서의 오리진 보증은 흥미로운 내용을 그 소스와 맥락에 고정시키는 진리의 수호자 역할을 효과적으로 합니다. 각 뉴스 항목의 기원과 발전을 추적할 수 있는 강력한 메커니즘을 내장함으로써 소비자들은 신뢰성을 확인할 도구를 갖출 수 있습니다. 이것은 미술이나 고고학의 출처 프로토콜과 유사하여, 유물의 기원과 역사가 그 평가된 가치와 정토성에 중요한 역할을 합니다.
 
-```markdown
+```
 ![Part2SecuringtheFoundationsofMediaIntegrity_3](/assets/img/2024-05-16-Part2SecuringtheFoundationsofMediaIntegrity_3.png)
 ```
 

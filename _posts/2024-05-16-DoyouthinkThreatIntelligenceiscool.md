@@ -11,7 +11,7 @@ link: "https://medium.com/@corneacristian/do-you-think-threat-intelligence-is-co
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-16-DoyouthinkThreatIntelligenceiscool_0.png)
 
 # 위협 인텔리전스란 무엇인가요?
@@ -19,7 +19,7 @@ link: "https://medium.com/@corneacristian/do-you-think-threat-intelligence-is-co
 요약하자면, 위협 인텔은 다양한 위협 행위자와 캠페인에 대한 정보를 수집할 수 있는 활동의 집합입니다.
 
 ## 위협 인텔리전스 활동
-```
+
 
 <div class="content-ad"></div>
 
@@ -74,7 +74,7 @@ Www-club[.]link
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-16-DoyouthinkThreatIntelligenceiscool_4.png)
 
 위협 인텔리전스의 퍼펫 마스터는 해킹 커뮤니티 내에서 자신의 페르소나의 신뢰도를 구축하고 보호하고 있어요.
@@ -82,7 +82,7 @@ Www-club[.]link
 HUMINT와 퍼펫 마스터링의 차이는 무엇인가요? — HUMINT는 외부 소스를 다루는 반면, 퍼펫 마스터는 자체 가짜 "위협 요소"를 보유하고 사이버 범죄 집단에 침투하여 정보를 수집해요.
 
 이 주제에 관한 정말 좋은 책인 “Securing Online Personas” by deadlock (온라인에서 찾을 수 있어요)를 공부할 수 있어요.
-```
+
 
 <div class="content-ad"></div>
 

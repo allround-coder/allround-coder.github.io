@@ -11,7 +11,7 @@ link: "https://medium.com/@shubhritik/javascript-promises-demystified-the-only-g
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-JavaScriptPromisesDemystifiedTheOnlyGuideYoullNeedPart1_0.png)
 
 자바스크립트를 사용하면 언젠가는 프로미스에 직면하게 될 것입니다. 프로미스는 자바스크립트에서 비동기 프로그래밍의 핵심입니다. 실시간 데이터는 모두 프로미스를 사용하여 처리됩니다. 프론트엔드 개발자든 백엔드 개발자든, 이 개념을 이해하는 것은 원활한 자바스크립트 애플리케이션을 만드는 데 중요합니다. 이 블로그 포스트에서는 프로미스에 대해 깊게 들어가보고 다른 곳을 찾아볼 필요가 없도록 이해해보겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@shubhritik/javascript-promises-demystified-the-only-g
 MDN 웹 문서에는 다음과 같이 설명되어 있습니다:
 
 '프로미스 객체는 비동기 작업의 최종 완료(또는 실패)와 그 결과 값의 대기 시간을 나타냅니다.'
-```
+
 
 <div class="content-ad"></div>
 

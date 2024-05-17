@@ -21,7 +21,7 @@ link: "https://medium.com/@gopidesaboyina/simplifying-dns-resolution-in-docker-w
 
 <div class="content-ad"></div>
 
-```markdown
+
 버전: '3'
 서비스:
   airflow:
@@ -40,4 +40,3 @@ link: "https://medium.com/@gopidesaboyina/simplifying-dns-resolution-in-docker-w
 - airflow 서비스 하위에 extra_hosts 섹션을 추가했습니다.
 
 우리는 myprivatpgsqlserver.postgres.database.azure.com 호스트명 및 해당 IP 주소 192.168.1.100을 지정하여 PostgreSQL 데이터베이스에 대한 연결에 대한 DNS 해결을 우회했습니다.
-```

@@ -162,7 +162,7 @@ visualiser.display(light_result_onc[0], label_col='ner_oncology_chunk', document
 ## 임상 보고서로부터 암 치료에 대한 환자 반응 평가하기
 
 NER 모델은 임상 노트에서 종양학적 개념을 추출할 수 있지만, 치료 반응을 이해하려면 주로 내러티브의 전체 맥락을 분석해야 합니다. 텍스트 분류 모델은 환자 파일의 전반적인 내용이 긍정적인 반응을 나타내는지, 또는 질병 진행을 시사하는지를 판단할 수 있습니다. 임상 전문가가 치료 결과에 따라 파일을 레이블링한 주석이 달린 데이터셋으로 모델을 훈련하면, 이러한 모델은 상태, 증상, 영상 소견 및 기타 중요한 요소를 기술하는 언어에서 예측적인 패턴을 학습합니다. 새로운 미레이블 파일에 적용하면, 모델은 높은 정확도로 분류할 수 있습니다. 이 자동 분류는 추가 검토를 위해 사례를 필터링하고 연구를 위한 코호트 식별을 간소화하는 데 도움이 될 수 있습니다. 그러나 높은 정확도를 달성하려면 고품질의 훈련 데이터와 이 도메인에서의 실제 언어 뉘앙스를 주의 깊게 다루어야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -186,7 +186,7 @@ sample_texts = [
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-17-ResponsetoCancerTreatment_2.png" />
 
 Spark NLP 어노테이터 MedicalBertForSequenceClassification을 사용한 텍스트 분류를 위한 파이프라인이 더욱 짧아졌어요:
@@ -224,7 +224,7 @@ result.select("text", "prediction.result", 'prediction.metadata').show(truncate 
 ```
 
 텍스트 분류 모델을 적용한 후, 샘플 임상 텍스트는 치료에 대한 응답 또는 응답이 없음을 나타내는 신뢰도 값과 함께 분류되었습니다.
-```
+
 
 <div class="content-ad"></div>
 

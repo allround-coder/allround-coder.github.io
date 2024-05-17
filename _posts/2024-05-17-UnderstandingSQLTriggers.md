@@ -123,11 +123,11 @@ END
 기존 트리거를 수정하는 것은 ALTER TRIGGER 문을 사용하는 것을 포함합니다. 이를 통해 개발자는 트리거의 논리를 업데이트할 수 있습니다.
 
 ### 예: After Insert 트리거 수정하기
-```
+
 
 <div class="content-ad"></div>
 
-```md
+md
 ```js
 ALTER TRIGGER trgAfterInsert
 ON Orders
@@ -145,7 +145,7 @@ END
 트리거를 삭제하면 데이터베이스에서 해당 트리거가 삭제되어, 미래 이벤트에 대한 응답으로 실행되지 않습니다. DROP TRIGGER 문을 사용하여 트리거를 삭제할 수 있습니다.
 
 ## 예시: After Insert 트리거 삭제
-```
+
 
 <div class="content-ad"></div>
 
@@ -270,11 +270,11 @@ END
 
 테이블 태그를 마크다운 형식으로 변경해보세요.
 
-```markdown
+
 | Header1 | Header2 |
 |---------|---------|
 | Data1   | Data2   |
-```
+
 
 <div class="content-ad"></div>
 
@@ -368,8 +368,6 @@ CREATE TABLE Employees (
 
 <div class="content-ad"></div>
 
-```plaintext
-테이블 태그를 마크다운 형식으로 변경해주세요.
 
 ```javascript
 CREATE TABLE Orders (
@@ -392,7 +390,6 @@ CREATE TABLE AuditLog (
 ```
 
 ## Customers Table
-```
 
 <div class="content-ad"></div>
 
@@ -418,7 +415,7 @@ CREATE TABLE Sales (
 ```
 
 # Creating Views
-```
+
 
 <div class="content-ad"></div>
 
@@ -448,7 +445,7 @@ CREATE INDEX idxSales_SaleAmount ON Sales(SaleAmount);
 트리거를 테스트하려면 이러한 테이블에 샘플 데이터를 삽입할 수 있습니다.
 
 ## 직원 테이블에 샘플 데이터 삽입
-```
+
 
 <div class="content-ad"></div>
 
@@ -469,11 +466,11 @@ VALUES
 ```
 
 ## 주문 테이블에 샘플 데이터 삽입
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+```js
 INSERT INTO Orders (CustomerID, OrderDate, OrderAmount)
 VALUES
 (1, '2024-05-10', 250.00),
@@ -482,7 +479,7 @@ VALUES
 
 ## Sales 테이블에 샘플 데이터 삽입
 
-```markdown
+```js
 INSERT INTO Sales (ProductID, SaleDate, SaleAmount)
 VALUES
 (1, '2024-05-10', 1500.00),
@@ -490,7 +487,6 @@ VALUES
 ```
 
 이러한 테이블을 생성하고 샘플 데이터를 삽입함으로써, 기사에서 설명한 트리거를 효과적으로 구현하고 테스트할 수 있습니다. 이 스키마는 데이터베이스 환경에서 다양한 유형의 트리거와 실제 적용에 대한 포괄적인 기초를 제공합니다.
-```
 
 <div class="content-ad"></div>
 
