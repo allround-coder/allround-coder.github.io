@@ -121,7 +121,7 @@ React Native를 업그레이드한 후 앱이 충돌하는 일반적인 원인 �
 예를 들어, OAuth 인증을 위해 RNAppAuth 라이브러리를 사용하고 있다면, AppDelegate 인터페이스에 RNAppAuthAuthorizationFlowManagerDelegate 프로토콜이 선언되어 있는지 아래와 같이 표시되어 있는지 확인하세요:
 
 
-
+```c
 #import <React/RCTBridgeDelegate.h>
 #import <UIKit/UIKit.h>
 #import "RNAppAuthAuthorizationFlowManager.h"
@@ -132,7 +132,7 @@ React Native를 업그레이드한 후 앱이 충돌하는 일반적인 원인 �
 @property(nonatomic, weak)id<RNAppAuthAuthorizationFlowManagerDelegate>authorizationFlowManagerDelegate;
 
 @end
-
+```
 
 모든 필수 구성이 완벽하게 되어 있는지 확인하여 앱 충돌을 최소화하고 React Native 업그레이드 후에 더 부드러운 전환을 보장할 수 있습니다.
 

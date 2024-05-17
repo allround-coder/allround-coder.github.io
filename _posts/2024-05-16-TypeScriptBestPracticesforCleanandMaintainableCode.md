@@ -76,7 +76,7 @@ strictNullChecks를 활성화하면 TypeScript는 컴파일 시간에 input이 n
 }
 ```
 
-4. “readonly” 사용하기: TypeScript에는 읽기 전용 속성과 변수를 만들 수 있는 readonly 수식어가 제공됩니다. 이는 초기화 후의 의도치 않은 수정을 방지합니다.
+4. "readonly" 사용하기: TypeScript에는 읽기 전용 속성과 변수를 만들 수 있는 readonly 수식어가 제공됩니다. 이는 초기화 후의 의도치 않은 수정을 방지합니다.
 간단한 사용자 프로필 정보를 관리하는 응용프로그램을 가정해보겠습니다. 사용자 프로필이 작성된 후에는 해당 속성이 수정되지 않도록 보장하고 싶습니다. TypeScript에서 readonly 속성을 사용하여 이것을 구현할 수 있습니다.
 
 ```js

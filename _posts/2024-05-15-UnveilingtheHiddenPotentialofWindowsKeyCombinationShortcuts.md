@@ -6,7 +6,7 @@ date: 2024-05-15 11:14
 ogImage: 
   url: /assets/img/2024-05-15-UnveilingtheHiddenPotentialofWindowsKeyCombinationShortcuts_0.png
 tag: Tech
-originalTitle: "Unveiling the Hidden Potential of “Windows Key” Combination Shortcuts!!"
+originalTitle: "Unveiling the Hidden Potential of 'Windows Key' Combination Shortcuts!!"
 link: "https://medium.com/@mn13/unveiling-the-hidden-potential-of-windows-key-combination-shortcuts-05fc82606752"
 ---
 

@@ -58,7 +58,7 @@ npm install boxicons --save
 
 ## 3. 유형 정의
 
-“src” 디렉토리에 “types” 폴더를 만들고 그 안에 “boxicons.d.ts”라는 파일을 생성하세요. 이 파일은 boxicons 패키지의 유형 정의를 담고 있을 것입니다. 다음 코드 스니펫을 "boxicons.d.ts" 파일에 붙여넣으세요.
+“src" 디렉토리에 “types" 폴더를 만들고 그 안에 “boxicons.d.ts"라는 파일을 생성하세요. 이 파일은 boxicons 패키지의 유형 정의를 담고 있을 것입니다. 다음 코드 스니펫을 "boxicons.d.ts" 파일에 붙여넣으세요.
 
 src/types/boxicons.d.ts
 

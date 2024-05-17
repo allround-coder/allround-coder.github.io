@@ -36,7 +36,7 @@ link: "https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern
 Safari의 경우 조금 다릅니다. mask-icon을 추가해야 합니다. SVG 형식이지만 하나의 색상으로 이루어져 있어야 하며 투명 배경에 배치되어야 합니다. 브라우저가 속성의 색상을 추가합니다.
 
 ```js
-<link rel=”mask-icon” href=”mask-icon.svg” color=”#000000">
+<link rel="mask-icon" href="mask-icon.svg" color="#000000">
 ```
 
 # 터치 아이콘

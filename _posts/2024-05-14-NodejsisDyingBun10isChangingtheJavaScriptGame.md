@@ -65,7 +65,7 @@ $ bun test
 const server = Bun.serve({
   port: 3000,
   fetch(request) {
-    return new Response(“Bun에 오신 것을 환영합니다!”);
+    return new Response(“Bun에 오신 것을 환영합니다!");
   },
 });
 

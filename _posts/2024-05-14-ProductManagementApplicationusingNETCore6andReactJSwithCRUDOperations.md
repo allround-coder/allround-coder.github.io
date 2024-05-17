@@ -311,7 +311,7 @@ app.Run();
 아래 엔터티 프레임워크 데이터베이스 마이그레이션 명령을 실행하여 데이터베이스와 테이블을 생성합니다.
 
 ```js
-add-migration “v1”
+add-migration "v1"
 update-database
 ```
 

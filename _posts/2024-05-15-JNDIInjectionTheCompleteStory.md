@@ -97,7 +97,7 @@ public class SimpleJndiLookup {
 }
 ```
 
-공격자가 개체의 이름을 제어할 수 있다면, 그들은 RMI/LDAP/CORBA 서버로 리디렉션하여 임의의 개체를 반환할 수 있습니다. 이 개체가 JNDI 네이밍 참조의 인스턴스인 경우, JNDI 클라이언트는 이에 연결된 “classFactory” 및 “classFactoryLocation” 속성을 해결하기를 시도합니다. 만약 “classFactory” 값이 대상 Java 애플리케이션에 알려지지 않은 경우, Java는 지정된 “classFactoryLocation” 위치에서 공장의 바이트코드를 Java의 URLClassLoader를 사용하여 검색합니다. 원격 또는 로컬로 참조 공장을로드 할 때, 포함된 RCE 페이로드가 실행됩니다.
+공격자가 개체의 이름을 제어할 수 있다면, 그들은 RMI/LDAP/CORBA 서버로 리디렉션하여 임의의 개체를 반환할 수 있습니다. 이 개체가 JNDI 네이밍 참조의 인스턴스인 경우, JNDI 클라이언트는 이에 연결된 "classFactory" 및 "classFactoryLocation" 속성을 해결하기를 시도합니다. 만약 "classFactory" 값이 대상 Java 애플리케이션에 알려지지 않은 경우, Java는 지정된 "classFactoryLocation" 위치에서 공장의 바이트코드를 Java의 URLClassLoader를 사용하여 검색합니다. 원격 또는 로컬로 참조 공장을로드 할 때, 포함된 RCE 페이로드가 실행됩니다.
 
 참고
 

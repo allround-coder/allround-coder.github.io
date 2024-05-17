@@ -6,7 +6,7 @@ date: 2024-05-12 22:45
 ogImage: 
   url: /assets/img/2024-05-12-HowtoexportdatatoExcelXLSXinReactjs_0.png
 tag: Tech
-originalTitle: "How to export data to Excel “XLSX” in React.js"
+originalTitle: "How to export data to Excel XLSX in React.js"
 link: "https://medium.com/@gb.usmanumar/how-to-export-data-to-excel-xlsx-in-react-js-8f3ccccba875"
 ---
 

@@ -21,7 +21,6 @@ link: "https://medium.com/flutterforce/whats-new-in-flutter-recap-google-i-o-202
 
 
 
-```markdown
 ![image](/assets/img/2024-05-16-WhatsnewinFlutterRecapGoogleIO2024_1.png)
 
 Flutter 3.22과 Dart 3.4가 출시되어 Flutter 커뮤니티에 웅장한 파도가 밀려왔습니다. 성능 향상과 플랫폼별 세련된 개선으로, 개발자들은 더 부드러운 시각적 경험, 향상된 탐색 및 확장된 수익 옵션을 기대할 수 있습니다.

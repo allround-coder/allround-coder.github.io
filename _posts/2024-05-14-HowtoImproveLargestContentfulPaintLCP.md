@@ -120,14 +120,14 @@ link: "https://medium.com/javascript-in-plain-english/how-to-improve-largest-con
 
 LCP를 줄이기 위해 컨텐츠 전달을 최적화하는 것이 중요합니다. 중요한 리소스를 우선적으로 다운로드하려면 프리로딩(preloading) 및 프리페칭(prefetching)과 같은 리소스 힌트를 사용할 수 있습니다. 이러한 힌트를 통해 브라우저에게 어떤 리소스를 먼저 가져와야 하는지에 대한 정보를 제공합니다.
 
-예를 들어, 상호 작용 기능에 필요한 큰 JavaScript 파일이 있다면, `link rel=”preload”` 태그를 사용하여 브라우저에 가능한 빨리 로드하도록 지시할 수 있습니다.
+예를 들어, 상호 작용 기능에 필요한 큰 JavaScript 파일이 있다면, `link rel="preload"` 태그를 사용하여 브라우저에 가능한 빨리 로드하도록 지시할 수 있습니다.
 
 
 
 
 ```js
 <!— JavaScript 파일을 사전로드하는 예시 →
-<link rel=”preload” href=”script.js” as=”script”>
+<link rel="preload" href="script.js" as="script">
 ```
 
 이 힌트들을 적절히 활용하십시오. 리소스를 너무 많이 사전로드하는 것은 불필요한 로드 시간으로 이어질 수 있습니다.

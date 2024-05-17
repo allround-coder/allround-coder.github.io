@@ -6,7 +6,7 @@ date: 2024-05-01 18:21
 ogImage:
   url: /assets/img/2024-05-01-ReactStatevsProps_0.png
 tag: Tech
-originalTitle: "React: “State vs Props”"
+originalTitle: "React: 'State vs Props'"
 link: "https://medium.com/javascript-in-plain-english/react-state-vs-props-3066a1766463"
 ---
 

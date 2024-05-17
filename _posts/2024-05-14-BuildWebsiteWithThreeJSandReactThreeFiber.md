@@ -139,7 +139,7 @@ export default App
 
 
 
-여기에서는 “three”로부터 세 개의 JS와 “React Three Fiber”로부터 Canvas를 가져왔습니다. 이제 모든 것을 Canvas 안에서 처리할 거에요. Canvas는 Three JS를 사용하여 3D 캔버스를 생성하기 위해 React Three Fiber에서 제공하는 구성 요소입니다.
+여기에서는 "three"로부터 세 개의 JS와 "React Three Fiber"로부터 Canvas를 가져왔습니다. 이제 모든 것을 Canvas 안에서 처리할 거에요. Canvas는 Three JS를 사용하여 3D 캔버스를 생성하기 위해 React Three Fiber에서 제공하는 구성 요소입니다.
 
 이제 Canvas에 속성을 추가해보세요 :
 

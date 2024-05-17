@@ -77,7 +77,7 @@ func main() {
 
 
 
-서비스와 메시지를 Protocol Buffers(Protobuf)를 사용하여 정의하세요. “proto” 폴더 안에 .proto 파일을 만들어주세요. 예를 들어 UserInfo.proto 파일을 만들어서 서비스와 메시지 유형을 정의해주세요:
+서비스와 메시지를 Protocol Buffers(Protobuf)를 사용하여 정의하세요. "proto" 폴더 안에 .proto 파일을 만들어주세요. 예를 들어 UserInfo.proto 파일을 만들어서 서비스와 메시지 유형을 정의해주세요:
 
 ```js
 syntax = "proto3";

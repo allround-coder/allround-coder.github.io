@@ -6,7 +6,7 @@ date: 2024-05-15 11:19
 ogImage: 
   url: /assets/img/2024-05-15-MasterNormalizationinSQL_0.png
 tag: Tech
-originalTitle: "Master “Normalization” in SQL"
+originalTitle: "Master 'Normalization' in SQL"
 link: "https://medium.com/learning-sql/master-normalization-in-sql-38143c7760ff"
 ---
 

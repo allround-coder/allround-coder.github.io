@@ -37,10 +37,10 @@ JavaScript는 오류를 처리하기 위해 예외를 던지는 데 의존하지
 
 ```js
 try {
-  const request = { name: “test”, value: 2n };
+  const request = { name: "test", value: 2n };
   const body = JSON.stringify(request);
   const response = await fetch("https://example.com", {
-    method: “POST”,
+    method: "POST",
     body,
   });
   if (!response.ok) {
@@ -76,10 +76,10 @@ JavaScript는 모릅니다; JavaScript는 신경 쓰지 않습니다. 하지만 
 두 번째로, 여기 완벽히 유효한 코드입니다:
 
 ```js
-const request = { name: “test”, value: 2n };
+const request = { name: "test", value: 2n };
 const body = JSON.stringify(request);
 const response = await fetch("https://example.com", {
-  method: “POST”,
+  method: "POST",
   body,
 });
 if (!response.ok) {
@@ -133,7 +133,7 @@ if err != nil {
 그리고 마지막으로, Rust:
 
 ```js
-let greeting_file_result = File::open(“hello.txt”);
+let greeting_file_result = File::open("hello.txt");
 let greeting_file = match greeting_file_result {
   Ok(file) => file,
   Err(error) => panic!("파일 열기에 문제 발생: {:?}", error),
@@ -307,7 +307,7 @@ if (!body.success) {
 }
 ```
 
-문제는... 우리는 그것을 할 수 없어요. 네, 그 확인을 해야 합니다. 그것을 하지 않으면 body.data가 존재하지 않을 거에요. LSP가 “Property 'data' does not exist on type 'Safe`string`’” 오류를 던져서 우리를 알릴 거에요. 그리고 그건 우리가 만든 간단한 Safe 타입 덕분이에요. 그리고 에러 메시지에도 작동해요. 우리는 !body.success를 확인하지 않으면 body.error에 액세스할 수 없어요.
+문제는... 우리는 그것을 할 수 없어요. 네, 그 확인을 해야 합니다. 그것을 하지 않으면 body.data가 존재하지 않을 거에요. LSP가 "Property 'data' does not exist on type 'Safe`string`’" 오류를 던져서 우리를 알릴 거에요. 그리고 그건 우리가 만든 간단한 Safe 타입 덕분이에요. 그리고 에러 메시지에도 작동해요. 우리는 !body.success를 확인하지 않으면 body.error에 액세스할 수 없어요.
 
 여기 TypeScript를 감사하게 생각해야 할 때예요. 그리고 이것이 적용되는 방법은 다음과 같아요:```
 
@@ -393,7 +393,7 @@ P.S. 비슷해 보이나요?
 
 
 ```js
-f, err := os.Open(“filename.ext”)
+f, err := os.Open("filename.ext")
 if err != nil {
   log.Fatal(err)
 }
@@ -401,7 +401,7 @@ if err != nil {
 ```
 
 ```js
-const response = await safe(fetch(“https://example.com"));
+const response = await safe(fetch("https://example.com"));
 if (!response.success) {
   console.error(response.error);
   return;

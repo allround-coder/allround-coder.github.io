@@ -72,11 +72,11 @@ JavaScript 코드를 실행하기 전에 요소가 로드되지 않은 상태에
 만약 대상이 되는 요소가 DOM에 존재하지 않는 경우에 대비하여 이 상황을 우아하게 처리하기 위해 추가적인 확인을 추가할 수 있습니다. `innerHTML`을 수정하기 전에 요소가 null 또는 undefined인지 확인하고 오류를 피하기 위해 적절한 조치를 취하세요.
 
 ```javascript
-var element = document.getElementById(“myElement”);
+var element = document.getElementById("myElement");
 if (element) {
-element.innerHTML = “새 콘텐츠”;
+element.innerHTML = "새 콘텐츠";
 } else {
-console.error(“DOM에서 요소를 찾을 수 없습니다.”);
+console.error("DOM에서 요소를 찾을 수 없습니다.");
 }
 ```
 

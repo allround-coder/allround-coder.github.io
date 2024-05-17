@@ -237,7 +237,7 @@ npm install eslint-import-resolver-typescript --save-dev
 }
 ```
 
-# 문제: “import/extensions”
+# 문제: "import/extensions"
 
 에러 샘플: './App'에 대한 'tsx' 파일 확장자 누락
 
@@ -286,7 +286,7 @@ npm install eslint-import-resolver-typescript --save-dev
 
 ## 해결 방법
 
-‘eslintrc.json’ 파일에서 “rules” 아래에 다음을 추가하십시오:
+‘eslintrc.json’ 파일에서 "rules" 아래에 다음을 추가하십시오:
 
 ```js
 "rules":{
@@ -326,7 +326,7 @@ npm install eslint-import-resolver-typescript --save-dev
 
 ## 모든 함수에 명시적인 반환 유형을 강제로 적용하기
 
-‘eslintrc.json’ 파일에서 “rules” 아래에 다음을 추가해주세요:
+‘eslintrc.json’ 파일에서 "rules" 아래에 다음을 추가해주세요:
 
 ```js
 "rules":{

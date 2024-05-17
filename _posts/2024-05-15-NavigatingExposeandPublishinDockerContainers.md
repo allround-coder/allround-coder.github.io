@@ -6,7 +6,7 @@ date: 2024-05-15 11:05
 ogImage: 
   url: /assets/img/2024-05-15-NavigatingExposeandPublishinDockerContainers_0.png
 tag: Tech
-originalTitle: "Navigating “Expose” and “Publish” in Docker Containers"
+originalTitle: "Navigating 'Expose' and 'Publish' in Docker Containers"
 link: "https://medium.com/@nikheal/navigating-expose-and-publish-in-docker-containers-e4c1429de8ac"
 ---
 

@@ -44,7 +44,7 @@ link: "https://medium.com/dev-genius/unearthing-hidden-gems-lesser-known-html-ta
 
 ```js
 <blockquote>
-  <p>“지식은 힘입니다.” <cite>프란시스 베이컨</cite></p>
+  <p>"지식은 힘입니다." <cite>프란시스 베이컨</cite></p>
 </blockquote>
 ```
 

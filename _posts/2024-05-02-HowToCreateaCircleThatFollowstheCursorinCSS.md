@@ -81,7 +81,7 @@ link: "https://medium.com/@jacobpatton_3644/how-to-create-a-circle-that-follows-
 
 ## 커서 위치 추적하기
 
-“mousemove” 이벤트를 사용하여 호버 박스 내에서 마우스가 움직일 때를 추적할 수 있어요. x와 y 오프셋을 얻어와 CSS 변수로 설정했어요.
+"mousemove" 이벤트를 사용하여 호버 박스 내에서 마우스가 움직일 때를 추적할 수 있어요. x와 y 오프셋을 얻어와 CSS 변수로 설정했어요.
 
 <div class="content-ad"></div>
 

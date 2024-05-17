@@ -1019,7 +1019,7 @@ roomCleaningPromise
 
 
 
-“How” Promises가 실제로 작동하는 방식과 Promises를 구현할 때 왜 그렇게 하는지에 대해 이야기하려면 Bottom-up 방식을 채택해야 합니다. 즉, 우리는 다음과 같이 기본부터 직접 Custom Promises를 만들어가면서 이러한 두 가지에 대해 배우게 됩니다:
+"How" Promises가 실제로 작동하는 방식과 Promises를 구현할 때 왜 그렇게 하는지에 대해 이야기하려면 Bottom-up 방식을 채택해야 합니다. 즉, 우리는 다음과 같이 기본부터 직접 Custom Promises를 만들어가면서 이러한 두 가지에 대해 배우게 됩니다:
 
 ```js
 class CustomPromise {

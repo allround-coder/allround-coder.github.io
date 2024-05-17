@@ -61,7 +61,7 @@ Cloud Firestore를 데이터베이스 옵션으로 사용했어요. 이는 Mongo
 
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-12-AmplifyvsFirebaseAHead-to-HeadComparisonWithMyRealProduct_4.png)
 
 - 게임에서 이미 출시된 노래를 관리합니다.
@@ -69,7 +69,6 @@ Cloud Firestore를 데이터베이스 옵션으로 사용했어요. 이는 Mongo
 ![이미지](/assets/img/2024-05-12-AmplifyvsFirebaseAHead-to-HeadComparisonWithMyRealProduct_5.png)
 
 ## 저장소
-```
 
 
 

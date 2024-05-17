@@ -23,7 +23,7 @@ link: "https://medium.com/@whoz_/a-workaround-for-your-react-native-issues-when-
 
 # 문제
 
-“채팅 앱”을 마치고 기분 좋았는데, 팔을 걷어내고 내 헤비 메탈 플레이리스트에서 고함 소리를 들으며 흥을 냈습니다. 간단한 3D 모델들은 잘 작동했지만, 이후 이를 렌더링할 수 없는 문제가 발생했어요. 이는 애니메이션이 포함된 3D .FBX 파일인 이진 파일을 렌더링할 수 없었던 것이었습니다. 찾아봐도 (그 때 chatGPT는 그리 도움이 되지 못했습니다) React Native 자체가 배열 버퍼를 지원하지 않는다는 것을 알 수 없었죠. 현재 해결되었는지는 확실하지 않습니다.
+“채팅 앱"을 마치고 기분 좋았는데, 팔을 걷어내고 내 헤비 메탈 플레이리스트에서 고함 소리를 들으며 흥을 냈습니다. 간단한 3D 모델들은 잘 작동했지만, 이후 이를 렌더링할 수 없는 문제가 발생했어요. 이는 애니메이션이 포함된 3D .FBX 파일인 이진 파일을 렌더링할 수 없었던 것이었습니다. 찾아봐도 (그 때 chatGPT는 그리 도움이 되지 못했습니다) React Native 자체가 배열 버퍼를 지원하지 않는다는 것을 알 수 없었죠. 현재 해결되었는지는 확실하지 않습니다.
 
 시간이 없어서 일반 React 앱에서 로드해보았는데, 잘 작동했어요. 핸드폰으로 웹 앱을 시작해봤을 때도 문제없이 작동했습니다. 데모 날이 다가오고 있어서 그 주에 문제를 해결해야 했어요.
 
@@ -33,9 +33,9 @@ link: "https://medium.com/@whoz_/a-workaround-for-your-react-native-issues-when-
 
 내가 가진 제한된 시간과 기술로 React Native 코어에 깊게 파보는 일은 할 수 없었어요. 그 당시에는 절망에 빠져 있었습니다.
 
-# “가끔 어둠이 너에게 빛을 비춰줄 수도 있어” — Disturbed
+# “가끔 어둠이 너에게 빛을 비춰줄 수도 있어" — Disturbed
 
-어둔 시기에 멘토가 제안했어요: “React Native 앱에 웹 앱을 넣어본다면 어떨까?”
+어둔 시기에 멘토가 제안했어요: “React Native 앱에 웹 앱을 넣어본다면 어떨까?"
 
 ![이미지](/assets/img/2024-05-12-AWorkaroundforYourReactNativeIssuesWhentheStandardBrowserReactAppWorks_0.png)
 

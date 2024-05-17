@@ -36,7 +36,7 @@ link: "https://medium.com/@JeffyJeff/a-step-by-step-guide-to-creating-your-own-a
 npm install -g create-react-app
 ```
 
-4. 다음 명령어를 실행하여 새로운 리액트 앱을 만듭니다 (여기서 “my-app”은 앱의 이름입니다)
+4. 다음 명령어를 실행하여 새로운 리액트 앱을 만듭니다 (여기서 "my-app"은 앱의 이름입니다)
 
 ```bash
 npx create-react-app my-app --template typescript

@@ -95,9 +95,8 @@ ReactTransitionGroup 버전의 기본 사용법을 확인할 수 있어요. 👀
 
 handleRemove - state.items 배열에서 인덱스에 해당하는 연락처를 제거하는 함수입니다.
 
-```markdown
+
 ![React Animations](/assets/img/2024-05-12-5WaystoanimateaReactapp_5.png)
-```
 
 # 3️. React-animations
 

@@ -277,7 +277,7 @@ export default SimpleMap;
 
 
 
-MapContainer center='[위도, 경도]' zoom='13' ref='mapRef' style='높이: “100vh”, 너비: “100vw”'
+MapContainer center='[위도, 경도]' zoom='13' ref='mapRef' style='높이: "100vh", 너비: "100vw"'
 
 MapContainer의 높이와 너비를 설정하지 않으면 지도가 렌더링되지 않습니다.
 

@@ -655,7 +655,7 @@ class User {
 
 
 
-
+```js
 // Factory Pattern
 function CharacterFactory() {
   this.createCharacter = function(type) {
@@ -688,6 +688,7 @@ function EnhancedCharacter(character, ability) {
 EnhancedCharacter.prototype.useAbility = function() {
   console.log(`Using ability: ${this.ability}`);
 }
+```
 
 These examples demonstrate the power of combining different design patterns to create a flexible and scalable solution, but remember: the key is not to force the use of patterns, it’s to identify when a pattern can improve code quality and maintainability.
 

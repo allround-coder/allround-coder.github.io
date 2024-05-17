@@ -65,9 +65,9 @@ Object.definePropert[ies | y]는 우리의 친구입니다... 그리고 JavaScri
 
 # Object.definepropert[ies|y] 개선하기
 
-이 함수들을 좋아하지만, 문법에는 약간 번잡한 부분이 있어 불필요하게 장황하게 느끼게 할 수 있습니다. 이전 기사에서처럼 “타입”을 가로채서 요소의 “타입”을 확인하여 일반 객체를 전달하면 defineProperty과 같이 동작하지만, 다른 값 유형은 자동으로 가장 일반적으로 사용하는 기술인 객체 `{` value `}`에 래핑하게 할 수 있습니다.
+이 함수들을 좋아하지만, 문법에는 약간 번잡한 부분이 있어 불필요하게 장황하게 느끼게 할 수 있습니다. 이전 기사에서처럼 "타입"을 가로채서 요소의 "타입"을 확인하여 일반 객체를 전달하면 defineProperty과 같이 동작하지만, 다른 값 유형은 자동으로 가장 일반적으로 사용하는 기술인 객체 `{` value `}`에 래핑하게 할 수 있습니다.
 
-이를 돕기 위해 - 특히 일반 Object를 후손으로부터 격리하기 위해 - 나만의 Object.__type 루틴을 추가합니다. JavaScript에서 가장 큰 고통 중 하나는 범용 “데이터 유형” 객체를 다른 객체와 구분하는 간편한 메커니즘이 없다는 것입니다. 일부 후손은 typeof == "Object"를 반환하고 이는 원하는 바가 아닐 수 있습니다... 그리고 배열 같은 것들이 instanceof와 같은 것을 사용해야 할 수 있습니다.
+이를 돕기 위해 - 특히 일반 Object를 후손으로부터 격리하기 위해 - 나만의 Object.__type 루틴을 추가합니다. JavaScript에서 가장 큰 고통 중 하나는 범용 "데이터 유형" 객체를 다른 객체와 구분하는 간편한 메커니즘이 없다는 것입니다. 일부 후손은 typeof == "Object"를 반환하고 이는 원하는 바가 아닐 수 있습니다... 그리고 배열 같은 것들이 instanceof와 같은 것을 사용해야 할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -89,7 +89,7 @@ Object.definePropert[ies | y]는 우리의 친구입니다... 그리고 JavaScri
 
 toString 메서드에는 실제 Object 클래스 이름이 포함되어 있어서 대부분 Array에는 Array라고, Node에는 Node라고, 일반 객체에는 Object라고 등등 표시될 거에요. 문자열 처리면에서 해당 값을 가져오는 것이 약간 무겁지만, Object.__type을 두 번 이상 요청하면 루틴이 두 번 호출되는 대신 define이 반환되도록 타입을 재정의할 수 있어요.
 
-그러나 “boolean”과 같은 소수의 Object에 대해 이것은 작동하지 않습니다. 이것은 명백히 Object인데도 Object.prototype에서 상속받지 않기 때문이에요. (프로토타입이 있는) Element 등 특정 하위 클래스를 알 필요가없는 다른 객체들이 있을 수 있어요. Element 인지 여부를 알고 싶은데 HTMLTableElement인지를 알아야 할 필요는 없는 것이죠.
+그러나 "boolean"과 같은 소수의 Object에 대해 이것은 작동하지 않습니다. 이것은 명백히 Object인데도 Object.prototype에서 상속받지 않기 때문이에요. (프로토타입이 있는) Element 등 특정 하위 클래스를 알 필요가없는 다른 객체들이 있을 수 있어요. Element 인지 여부를 알고 싶은데 HTMLTableElement인지를 알아야 할 필요는 없는 것이죠.
 
 <div class="content-ad"></div>
 
@@ -299,7 +299,7 @@ canAttach의 유형은 각각 다른 루틴을 사용해요. 제가 선택한 �
 
 <div class="content-ad"></div>
 
-“argument”의 종류에 따라 특별한 처리 사례가 있을 수 있습니다.
+"argument"의 종류에 따라 특별한 처리 사례가 있을 수 있습니다.
 
 ```js
     argType : {

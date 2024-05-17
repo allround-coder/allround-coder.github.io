@@ -75,8 +75,8 @@ https://github.com/gergelyszerovay/angular-17-control-flow
 
 그렇지 않으면 다음과 같은 컴파일 오류 중 하나가 발생할 수 있습니다:
 
-- [ERROR] NG5002: Incomplete block “…”. If you meant to write the @ character, you should use the “@” HTML entity instead. [plugin angular-compiler]
-- [ERROR] NG5002: Unexpected character “EOF” (Do you have an unescaped “'“ in your template? Use “'' ‘'’ ''”) to escape it.)
+- [ERROR] NG5002: Incomplete block "…". If you meant to write the @ character, you should use the "@" HTML entity instead. [plugin angular-compiler]
+- [ERROR] NG5002: Unexpected character "EOF" (Do you have an unescaped "'" in your template? Use "'' ‘'’ ''") to escape it.)
 
 # Collection의 항목을 렌더링하기 위해 @for 블록 사용
 
@@ -160,6 +160,7 @@ collection = [
 <div>
 ```
 라디오 버튼 3개를 선택했습니다.
+```js
 @switch (radioValue()) {
   @case (1) {
     <span>Case 1</span>

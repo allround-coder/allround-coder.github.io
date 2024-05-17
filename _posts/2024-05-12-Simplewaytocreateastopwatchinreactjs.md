@@ -36,7 +36,7 @@ useEffect 훅에서는 10밀리초마다 시간을 증가시키기 위해 setInt
 
 
 단계 4: 스타일 추가하기
-“src” 폴더에 “stopwatch.css”라는 새 파일을 만들어 아래의 CSS 코드를 파일 안에 추가하고, 그 후에 CSS 파일을 우리의 “Stopwatch.js” 파일에 import하세요.
+“src" 폴더에 “stopwatch.css"라는 새 파일을 만들어 아래의 CSS 코드를 파일 안에 추가하고, 그 후에 CSS 파일을 우리의 “Stopwatch.js" 파일에 import하세요.
 
 단계 5: 스톱워치 import하기
 App.js 파일에서 Stopwatch 컴포넌트를 import하고 return 문 안에 렌더링하세요.

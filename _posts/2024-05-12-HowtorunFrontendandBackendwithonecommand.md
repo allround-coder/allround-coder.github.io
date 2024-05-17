@@ -73,7 +73,7 @@ npm "concurrently"를 사용하면 여러 작업을 원활하게 관리할 수 �
 
 
 
-“Concurrently”은 개발 경험을 향상시키기 위해 추가적인 사용자 정의 및 유연성 옵션을 제공합니다. Concurrently에는 개발을 훨씬 쉽게 만드는 더 많은 기능이 있습니다.
+“Concurrently"은 개발 경험을 향상시키기 위해 추가적인 사용자 정의 및 유연성 옵션을 제공합니다. Concurrently에는 개발을 훨씬 쉽게 만드는 더 많은 기능이 있습니다.
 
 ![이미지](/assets/img/2024-05-12-HowtorunFrontendandBackendwithonecommand_2.png)
 

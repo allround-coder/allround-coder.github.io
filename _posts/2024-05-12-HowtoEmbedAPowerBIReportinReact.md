@@ -104,7 +104,7 @@ https://api.powerbi.com/v1.0/myorg/groups/$'작업영역-id'/reportsAPI로 GET �
       "isFromPbix": true,
       "isOwnedByMe": true,
       "datasetId": 다음 단계에서 필요한 데이터 세트 ID,
-      "datasetWorkspaceId": “”,
+      "datasetWorkspaceId": “",
       "users": [],
       "subscriptions": []
   }

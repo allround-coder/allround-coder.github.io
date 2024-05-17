@@ -6,7 +6,7 @@ date: 2024-05-16 03:57
 ogImage: 
   url: /assets/img/2024-05-16-TheWindowsSecurityJourneyWindowsDefenderAntivirus_0.png
 tag: Tech
-originalTitle: "The Windows Security Journey — “Windows Defender Antivirus”"
+originalTitle: "The Windows Security Journey — 'Windows Defender Antivirus'"
 link: "https://medium.com/@boutnaru/the-windows-security-journey-windows-defender-antivirus-cf0c76a6802e"
 ---
 

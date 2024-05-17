@@ -98,7 +98,7 @@ link: "https://medium.com/sigma-hq/sigmahq-rules-release-highlights-r2024-05-13-
 수준: 높음
 ```
 
-파워셸 cmdlet인 “Start-NetEventSession” 및 “New-NetFirewallRule” 사용을 다루는 새로운 규칙을 소개하였습니다. 공격자가 패킷을 캡처하거나 새 방화벽 규칙을 생성하는 데 사용할 수 있습니다.
+파워셸 cmdlet인 “Start-NetEventSession" 및 “New-NetFirewallRule" 사용을 다루는 새로운 규칙을 소개하였습니다. 공격자가 패킷을 캡처하거나 새 방화벽 규칙을 생성하는 데 사용할 수 있습니다.
 
 ```js
 제목: New-NetFirewallRule Cmdlet을 통한 새 Windows 방화벽 규칙 추가 - ScriptBlock

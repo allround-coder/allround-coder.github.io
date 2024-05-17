@@ -62,9 +62,6 @@ React.createElement을 호출하는 것을 볼 수 있습니다. 여기에는 �
 다음으로, 이전에 생성된 데이터 구조를 기반으로 JSX를 실제 DOM에 렌더링하는 간소화된 버전의 렌더 함수를 구현해보겠습니다.
 
 
-
-<table> 태그를 Markdown 형식으로 변경해주세요.
-
 ![이미지](/assets/img/2024-05-14-BuildYourOwnReactjsin400LinesofCode_4.png)
 
 온라인 구현 링크가 여기 있습니다. 현재 JSX를 한 번만 렌더링하므로 상태 업데이트를 처리하지 않습니다.

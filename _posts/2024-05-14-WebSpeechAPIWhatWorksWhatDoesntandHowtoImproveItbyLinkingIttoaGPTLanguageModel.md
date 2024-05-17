@@ -94,10 +94,10 @@ var recognition = new SpeechRecognition();
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 window.onload = function () {
-  if (typeof SpeechRecognition === “undefined”) {  // 브라우저가 음성 인식을 할 수 있는지 확인
-    console.log(“Speech api failed”);
+  if (typeof SpeechRecognition === “undefined") {  // 브라우저가 음성 인식을 할 수 있는지 확인
+    console.log(“Speech api failed");
   } else {
-    console.log(“Speech api ok”);
+    console.log(“Speech api ok");
     const recognition = new SpeechRecognition();  // 음성 인식 객체 생성
     recognition.continuous = true;                // 동작 및 속성 정의, 예를 들어 지속적인 ASR을 요청하는 경우,
     recognition.interimResults = true;            // ASR의 일부 결과 표시 (즉, 결과가 아직 최종이 아닌 경우에 발화가 계속되는 경우)
@@ -140,12 +140,12 @@ var synthesis = window.speechSynthesis;
 
 ```js
 function speakup(TextToSpeak) {
-  if (“speechSynthesis” in window) {                            //TTS가 지원되는지 확인
+  if (“speechSynthesis" in window) {                            //TTS가 지원되는지 확인
     const toSpeak = new SpeechSynthesisUtterance(TextToSpeak);  //음성 생성
-    toSpeak.lang = “en-US”;                                     //언어 설정
+    toSpeak.lang = “en-US";                                     //언어 설정
     window.speechSynthesis.speak(toSpeak);                      //음성 출력!
   } else {
-    console.log(“브라우저에서 음성 합성을 지원하지 않습니다.”);
+    console.log(“브라우저에서 음성 합성을 지원하지 않습니다.");
   }
 }
 ```
@@ -194,8 +194,8 @@ theprompt.push({
   });
 
 theprompt.push(                                      //여기서부터 예제 제공
- { role: “user”, content: “분자 크게 만들기” },
- { role: “assistant”, content: “scale(+)” }
+ { role: “user", content: “분자 크게 만들기" },
+ { role: “assistant", content: “scale(+)" }
 );
 theprompt.push(
  { role: "user", content: "확대" },

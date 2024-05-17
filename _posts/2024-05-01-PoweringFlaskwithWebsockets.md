@@ -130,7 +130,7 @@ server {
        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
        proxy_http_version 1.1;
        proxy_set_header Upgrade $http_upgrade;
-       proxy_set_header Connection “Upgrade”;
+       proxy_set_header Connection "Upgrade";
        proxy_hide_header Access-Control-Allow-Origin;
     }
 }
@@ -176,7 +176,7 @@ WantedBy=multi-user.target
 
 <div class="content-ad"></div>
 
-“base.html” 파일 안에 아래 내용을 추가해 주세요.
+"base.html" 파일 안에 아래 내용을 추가해 주세요.
 
 ```js
 <!DOCTYPE html>

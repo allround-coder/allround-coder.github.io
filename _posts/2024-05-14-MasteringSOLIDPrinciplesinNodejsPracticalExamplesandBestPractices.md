@@ -115,7 +115,7 @@ class MongoDBAdapter extends DatabaseAdapter {
   connectToMongoDB() {
     // Logic to connect specifically to MongoDB
 }
-```”
+```
 
 ## Interface Segregation Principle (ISP) 🛠️
 

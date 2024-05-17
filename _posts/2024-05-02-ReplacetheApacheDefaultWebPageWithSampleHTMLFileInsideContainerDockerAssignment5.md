@@ -241,7 +241,7 @@ cd /var/www/html/ — html 폴더 안으로 이동합니다.
 
 <div class="content-ad"></div>
 
-“HTML 디렉토리”에 있는 파일을 확인하려면 “ls”를 입력하세요.
+"HTML 디렉토리"에 있는 파일을 확인하려면 "ls"를 입력하세요.
 
 ```js
 cd /var/www/html
@@ -250,7 +250,7 @@ ls
 
 <img src="/assets/img/2024-05-02-ReplacetheApacheDefaultWebPageWithSampleHTMLFileInsideContainerDockerAssignment5_24.png" />
 
-“index.html” 파일이 “html” 디렉토리에 있는 것을 확인할 수 있을 거예요.
+"index.html" 파일이 "html" 디렉토리에 있는 것을 확인할 수 있을 거예요.
 
 <div class="content-ad"></div>
 

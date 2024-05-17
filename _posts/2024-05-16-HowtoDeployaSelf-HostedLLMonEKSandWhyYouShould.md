@@ -285,11 +285,11 @@ kubectl port-forward -n kube-prometheus-stack \
 
 
 
-3. 한 번 로그인한 후, 오른쪽 상단 막대의 “+” 아이콘을 클릭하고 “대시보드 가져오기”를 선택합니다.
+3. 한 번 로그인한 후, 오른쪽 상단 막대의 “+" 아이콘을 클릭하고 “대시보드 가져오기"를 선택합니다.
 
 ![image](/assets/img/2024-05-16-HowtoDeployaSelf-HostedLLMonEKSandWhyYouShould_7.png)
 
-4. GitHub 저장소의 루트 폴더에 있는 grafana-dashboard.json이라는 JSON 파일을 업로드하고 “가져오기”를 클릭합니다.
+4. GitHub 저장소의 루트 폴더에 있는 grafana-dashboard.json이라는 JSON 파일을 업로드하고 “가져오기"를 클릭합니다.
 
 ![image](/assets/img/2024-05-16-HowtoDeployaSelf-HostedLLMonEKSandWhyYouShould_8.png)
 

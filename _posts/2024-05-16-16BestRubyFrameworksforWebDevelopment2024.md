@@ -76,7 +76,7 @@ The Goliath project can be accessed through its Goliath GitHub repository page [
 
 # Hanami
 
-With its concise architecture design and main object approach, Hanami [9] is considered one of the best Ruby frameworks and is widely popular as an alternative to Rails. Hanami has been “sorted” in design and provides small files that can be used independently to create project stacks. Hanami is lightweight, consumes fewer resources, and reduces memory by 60% compared to other large Ruby frameworks.
+With its concise architecture design and main object approach, Hanami [9] is considered one of the best Ruby frameworks and is widely popular as an alternative to Rails. Hanami has been "sorted" in design and provides small files that can be used independently to create project stacks. Hanami is lightweight, consumes fewer resources, and reduces memory by 60% compared to other large Ruby frameworks.
 
 ![Best Ruby Frameworks for Web Development](/assets/img/2024-05-16-16BestRubyFrameworksforWebDevelopment2024_5.png)
 
@@ -110,7 +110,7 @@ NYNY applications can be used with Sinatra, Rails, or any other Rack-based appli
 
 # Cuba
 
-Cuba [15] is a micro-framework for developing web applications in Ruby language. Rum inspired Cuba, and the official website defines Cuba as “a small but powerful Rack application mapper”, making it one of the best Ruby frameworks. If you want to start developing in Cuba, the GitHub page is a practical guide.
+Cuba [15] is a micro-framework for developing web applications in Ruby language. Rum inspired Cuba, and the official website defines Cuba as "a small but powerful Rack application mapper", making it one of the best Ruby frameworks. If you want to start developing in Cuba, the GitHub page is a practical guide.
 
 
 

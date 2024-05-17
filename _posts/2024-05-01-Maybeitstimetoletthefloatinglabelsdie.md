@@ -255,7 +255,7 @@ link: "https://medium.com/user-experience-design-1/maybe-its-time-to-let-the-flo
 
 ![텍스트 상자 레이아웃](/assets/img/2024-05-01-Maybeitstimetoletthefloatinglabelsdie_5.png)
 
-“레이아웃” 제목을 보셨죠? 그것은 `h2` 제목입니다. “라벨” 부제목을 보셨죠? 그것은 `h1`이에요. 얍스!
+"레이아웃" 제목을 보셨죠? 그것은 `h2` 제목입니다. "라벨" 부제목을 보셨죠? 그것은 `h1`이에요. 얍스!
 
 <div class="content-ad"></div>
 

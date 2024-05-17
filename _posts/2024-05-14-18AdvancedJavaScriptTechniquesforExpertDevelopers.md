@@ -234,7 +234,7 @@ document.addEventListener(
 
 
 
-```
+```js
 <!-- 이미지 업로드 및 미리보기 📸 -->
 <div class="test">
     <input type="file" name="" id="">

@@ -40,11 +40,11 @@ link: "https://medium.com/devops-guides/containerized-an-html-website-using-dock
 
 <div class="content-ad"></div>
 
-단계 1: 먼저 인스턴스를 시작하겠습니다. “인스턴스 시작”을 클릭하세요.
+단계 1: 먼저 인스턴스를 시작하겠습니다. "인스턴스 시작"을 클릭하세요.
 
 ![Step 1](/assets/img/2024-05-02-ContainerizedanHTMLWebsiteusingDockeronProductionEnvironmentDockerCaseStudy_1.png)
 
-단계 2: “이름”을 “사례 연구”로 선택하세요.
+단계 2: "이름"을 "사례 연구"로 선택하세요.
 
 ![Step 2](/assets/img/2024-05-02-ContainerizedanHTMLWebsiteusingDockeronProductionEnvironmentDockerCaseStudy_2.png)
 
@@ -181,7 +181,7 @@ cd w1
 
 ![이미지](/assets/img/2024-05-02-ContainerizedanHTMLWebsiteusingDockeronProductionEnvironmentDockerCaseStudy_19.png)
 
-3단계: “project-HTML-website” 디렉토리를 "Git Hub"에서 연 다음, “Code”를 클릭하고 여기서 제공된 URL을 복사해주세요.
+3단계: "project-HTML-website" 디렉토리를 "Git Hub"에서 연 다음, "Code"를 클릭하고 여기서 제공된 URL을 복사해주세요.
 
 ```js
 https://github.com/microsoft/project-html-website.git
@@ -191,7 +191,7 @@ https://github.com/microsoft/project-html-website.git
 
 <img src="/assets/img/2024-05-02-ContainerizedanHTMLWebsiteusingDockeronProductionEnvironmentDockerCaseStudy_20.png" />
 
-Step 4: "w1" 디렉토리에서 이 “html website” 저장소를 다운로드하려면 다음 명령을 입력하세요:
+Step 4: "w1" 디렉토리에서 이 "html website" 저장소를 다운로드하려면 다음 명령을 입력하세요:
 
 ```js
 git clone https://github.com/microsoft/project-html-website.git

@@ -14,7 +14,7 @@ link: "https://medium.com/@barisdemirkap_80894/ssh-key-generator-for-macos-linux
 <img src="/assets/img/2024-05-15-SSHKeyGeneratorforMacOSLinux_0.png" />
 
 우선, 제 코딩 인생에서 좋아하는 인용구부터 시작하겠어요:
-“어떤 일을 6분 동안 수동으로 할 때 6시간을 써서 자동화를 실패하는 것이 더 나을 때가 있다.” — Zhuowei Zhang
+“어떤 일을 6분 동안 수동으로 할 때 6시간을 써서 자동화를 실패하는 것이 더 나을 때가 있다." — Zhuowei Zhang
 
 대부분의 개발자들이 SSH 키를 생성하고 연결하는 방법에 대해 문서를 참고해 왔을 겁니다. 지난 3년간 이 프로세스를 4~5번 되풀이했는데, 총 40~50분 정도 걸렸어요. 결국, 이러한 과업을 다시 찾아보지 않도록 스크립트를 작성하기로 결심했습니다. 아래에는 해당 스크립트를 공유하고 있어요. "your_remote_server_url"을(를) 실제 원격 서버 URL로 교체해 주시기 바랍니다.
 

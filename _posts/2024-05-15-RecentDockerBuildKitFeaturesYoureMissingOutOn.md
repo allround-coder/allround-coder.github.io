@@ -167,14 +167,14 @@ RUN apt-get update && apt-get install -y vim
 
 
 
-
+```bash
 # syntax = docker/dockerfile:1.3-labs
 FROM python:3.6
 RUN <<eot
 #!/usr/bin/env python
 print("hello world")
 eot
-
+```
 
 # COPY and ADD Features
 

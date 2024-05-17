@@ -11,7 +11,7 @@ link: "https://medium.com/@sagarcadet/getting-started-with-ros2-install-and-setu
 ---
 
 
-## “ROS2 시작하기” 시리즈의 제3부분
+## "ROS2 시작하기" 시리즈의 제3부분
 
 안녕하세요, 독자 여러분! "ROS2 시작하기" 시리즈에 오신 것을 환영합니다! 이 시리즈에서는 ROS 2에 대한 포괄적인 소개와 기본 개념, 실제 응용 프로그램을 안내해 드리고자 합니다. ROS(로봇 운영 시스템)를 이전에 사용해 보지 않았거나 ROS 1조차 사용해 본 적이 없거나 기본 개념을 실제로 빠르게 상기시키고 싶다면 본 시리즈를 참고해 주세요. 토론된 개념에 대한 더 깊은 이해를 위해 제공된 링크를 탐색해 보시기 바랍니다.
 
@@ -194,7 +194,7 @@ Stop both scripts using Ctrl+C.
 
 ## 6. Bonus step!
 
-To automate the environment setup process and avoid sourcing the setup file manually each time, we can add the command to source the setup file in the “.bashrc” file. This way, the command will be executed automatically every time we open a new terminal or SSH session.
+To automate the environment setup process and avoid sourcing the setup file manually each time, we can add the command to source the setup file in the ".bashrc" file. This way, the command will be executed automatically every time we open a new terminal or SSH session.
 
 
 

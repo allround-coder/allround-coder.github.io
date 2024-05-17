@@ -16,9 +16,9 @@ link: "https://medium.com/dbsql-sme-engineering/databricks-sql-governance-alerti
 
 | Tag | Description |
 | --- | ----------- |
-| <html> | Defines an HTML document |
-| <body> | Defines the body of the HTML document |
-| <h1> | Defines a large heading |
+| `<html>` | Defines an HTML document |
+| `<body>` | Defines the body of the HTML document |
+| `<h1>` | Defines a large heading |
 
 
 

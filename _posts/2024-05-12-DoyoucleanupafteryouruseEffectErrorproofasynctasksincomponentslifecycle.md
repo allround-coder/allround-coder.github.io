@@ -82,7 +82,7 @@ function App() {
 
 <img src="/assets/img/2024-05-12-DoyoucleanupafteryouruseEffectErrorproofasynctasksincomponentslifecycle_1.png" />
 
-아주 좋아요, 의도한 대로 10개의 고양이 사진을 요청했지만 잠재적인 문제가 있습니다: 데이터 가져오기가 비동기적인 것으로 인해 작업이 완료되기 전에 컴포넌트가 언마운트될 수 있습니다 (예: 경로 변경 또는 DOM에서 컴포넌트가 제거되는 경우). 그런 경우에 컴포넌트가 언마운트된 상태에서 상태를 업데이트하려고 하면 "Can’t perform a React state update on an unmounted component”와 같은 오류가 발생할 수 있습니다.
+아주 좋아요, 의도한 대로 10개의 고양이 사진을 요청했지만 잠재적인 문제가 있습니다: 데이터 가져오기가 비동기적인 것으로 인해 작업이 완료되기 전에 컴포넌트가 언마운트될 수 있습니다 (예: 경로 변경 또는 DOM에서 컴포넌트가 제거되는 경우). 그런 경우에 컴포넌트가 언마운트된 상태에서 상태를 업데이트하려고 하면 "Can’t perform a React state update on an unmounted component"와 같은 오류가 발생할 수 있습니다.
 
 useEffect 내에서 데이터를 가져올 때 주요 도전 과제는 컴포넌트의 라이프사이클을 처리하는 것입니다.
 ```

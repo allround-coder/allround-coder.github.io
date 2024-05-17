@@ -123,7 +123,7 @@ Data Source=DIVANI\SQLEXPRESS;Database=lbs;Integrated Security=True;Connect Time
 
 ```js
 builder.Services.AddDbContext<StudentDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString(“StudentDbContext”)));
+options.UseSqlServer(builder.Configuration.GetConnectionString("StudentDbContext")));
 ```
 
 웹 API에 이 권한을 허용하도록 설정하기

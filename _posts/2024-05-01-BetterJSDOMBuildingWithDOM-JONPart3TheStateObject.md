@@ -43,7 +43,7 @@ INPUT 또는 TEXTAREA 태그로 모니터를 생성하면 해당 값이 변경�
 
 <div class="content-ad"></div>
 
-“State” 객체는 전역 범위에 노출되지 않았거나 Export를 위해 설정되지 않았습니다. 대신, “document” 객체의 메서드를 호출하는 오래된 JS 관습을 따릅니다. 이 경우 document.__createState입니다. 초기 상태를 설정하기 위한 key/value 쌍을 포함하는 객체를 매개변수로 받습니다.
+"State" 객체는 전역 범위에 노출되지 않았거나 Export를 위해 설정되지 않았습니다. 대신, "document" 객체의 메서드를 호출하는 오래된 JS 관습을 따릅니다. 이 경우 document.__createState입니다. 초기 상태를 설정하기 위한 key/value 쌍을 포함하는 객체를 매개변수로 받습니다.
 
 ```js
 const spectres = document.__createState({
@@ -272,11 +272,11 @@ Bomb = class extends Error {
 }, // 폭탄
 ```
 
-"DOMJON.JS" 일부로 식별하는 오류를 “던질” 수 있는 오류입니다. 적절한 텍스트 콜백을 호출하고 원하는 인수를 전달합니다.
+"DOMJON.JS" 일부로 식별하는 오류를 "던질" 수 있는 오류입니다. 적절한 텍스트 콜백을 호출하고 원하는 인수를 전달합니다.
 
 ## 폭탄 처리 함수 (내부)
 
-값에 대해 많이 하는 “표준” 확인이 많이 있습니다. JavaScript가 마구 진행하게 두는 대신에 오류를 던지는 것이 편리합니다. 프로그램에서 할 수 있는 가장 좋은 오류 처리는 포기하고 “넌 지나갈 수 없어!!!” 라고 말하는 것이라고 저는 굳게 믿습니다. 유감스럽게도 JavaScript와 HTML은 이런 면에서 너무나 관대합니다.
+값에 대해 많이 하는 "표준" 확인이 많이 있습니다. JavaScript가 마구 진행하게 두는 대신에 오류를 던지는 것이 편리합니다. 프로그램에서 할 수 있는 가장 좋은 오류 처리는 포기하고 "넌 지나갈 수 없어!!!" 라고 말하는 것이라고 저는 굳게 믿습니다. 유감스럽게도 JavaScript와 HTML은 이런 면에서 너무나 관대합니다.
 
 <div class="content-ad"></div>
 
@@ -976,7 +976,7 @@ store = {
 
 <div class="content-ad"></div>
 
-저장소(store)에서 State에 대한 참조와 getter/setter 이름 state을 전달해 드립니다. 이는 이벤트 처리에 도움이 될 수 있습니다. 경우에 따라 “this” 범위를 잃을 때입니다. 그리고 기억하세요:
+저장소(store)에서 State에 대한 참조와 getter/setter 이름 state을 전달해 드립니다. 이는 이벤트 처리에 도움이 될 수 있습니다. 경우에 따라 "this" 범위를 잃을 때입니다. 그리고 기억하세요:
 ```js
 { name }
 ```

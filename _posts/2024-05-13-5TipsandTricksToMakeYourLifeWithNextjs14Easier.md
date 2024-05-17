@@ -39,7 +39,7 @@ export default function MyComponent() {
 
 ![Remote Image](/assets/img/2024-05-13-5TipsandTricksToMakeYourLifeWithNextjs14Easier_2.png)
 
-원격 이미지를 사용할 때는 레이아웃 변동을 방지하기 위해 블러 플레이스홀더를 제공하고 너비와 높이를 지정해야 합니다. `placeholder=”blur”` 속성을 사용하여 이미지의 완전한 버전이 로드될 때까지 이미지의 흐린 버전을 표시할 수 있습니다.
+원격 이미지를 사용할 때는 레이아웃 변동을 방지하기 위해 블러 플레이스홀더를 제공하고 너비와 높이를 지정해야 합니다. `placeholder="blur"` 속성을 사용하여 이미지의 완전한 버전이 로드될 때까지 이미지의 흐린 버전을 표시할 수 있습니다.
 
 원격 이미지의 블러 데이터 URL을 생성하려면 `sharp` 및 `placeholder` 패키지를 사용할 수 있습니다:
 

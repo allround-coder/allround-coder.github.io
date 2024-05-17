@@ -284,14 +284,14 @@ function tabLinkClickHandler(tab) {
 
 
 
-
+```js
 <DIV align="center">
   <!-- styles.css에서 너비가 480픽셀로 설정되어 있음 -->
     <DIV class="page-container">
       <DIV align="left">...</DIV>
     </DIV>
 </DIV>
-
+```
 
 CSS 플렉스박스 (그리드 시스템도 마찬가지)는 항상 사용 가능했던 것은 아니었습니다. 웹 개발을 한지 ~10년 이상이 된다면 아마도 그리드 레이아웃을 만들기 위해 개발자들이 float 속성을 사용했다는 것을 기억하실 것입니다 (Bootstrap도 그렇게 했습니다). 원래 float를 그 용도로 사용하도록 의도되지 않았지만, 개발자들이 그것을 웹사이트 레이아웃 스타일링 역사에서 상당히 중요한 위치에 부여해 왔다고 생각합니다.
 

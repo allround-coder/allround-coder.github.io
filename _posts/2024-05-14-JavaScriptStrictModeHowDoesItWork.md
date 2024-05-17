@@ -6,7 +6,7 @@ date: 2024-05-14 14:46
 ogImage: 
   url: /assets/img/2024-05-14-JavaScriptStrictModeHowDoesItWork_0.png
 tag: Tech
-originalTitle: "JavaScript—“Strict Mode” How Does It Work?"
+originalTitle: "JavaScript—'Strict Mode' How Does It Work?"
 link: "https://medium.com/javascript-in-plain-english/javascript-strict-mode-how-does-it-work-4aba8726ed6b"
 ---
 

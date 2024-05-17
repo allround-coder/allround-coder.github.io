@@ -97,7 +97,7 @@ link: "https://medium.com/user-experience-design-1/disabling-text-boxes-why-its-
 
 <div class="content-ad"></div>
 
-비록 배경이 어두운 경우라도, WCAG에는 장애가 있는 컨트롤에 대한 예외 규정이 있었습니다. “이해하기 - 성공 기준 1.4.3 대비 (최소값)” 페이지에 따르면:
+비록 배경이 어두운 경우라도, WCAG에는 장애가 있는 컨트롤에 대한 예외 규정이 있었습니다. "이해하기 - 성공 기준 1.4.3 대비 (최소값)" 페이지에 따르면:
 
 이는 규정 준수와 접근성이 같은 것은 아니라는 상황 중 하나입니다.
 

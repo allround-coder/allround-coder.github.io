@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
 
 그럼 컴포넌트에 스타일을 적용해야 해요: `View style='styles.topContainer'`.
 
-네이티브 베이스에서는 해당 컴포넌트의 속성에 간단히 추가할 수 있어요: `Box bg=”primary.600" py=”4" px=”3" borderRadius=”5" rounded=”md” width='375' maxWidth=”100%”`.
+네이티브 베이스에서는 해당 컴포넌트의 속성에 간단히 추가할 수 있어요: `Box bg="primary.600" py="4" px="3" borderRadius="5" rounded="md" width='375' maxWidth="100%"`.
 
 ## 제 의견 기반
 

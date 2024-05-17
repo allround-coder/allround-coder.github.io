@@ -6,7 +6,7 @@ date: 2024-05-12 21:49
 ogImage: 
   url: /assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_0.png
 tag: Tech
-originalTitle: "“What the CORS” ft Spring Boot , Spring Security"
+originalTitle: "What the CORS ft Spring Boot , Spring Security"
 link: "https://medium.com/@rajendraprasadpadma/what-the-cors-ft-spring-boot-spring-security-562f24d705c9"
 ---
 
@@ -79,7 +79,7 @@ fetch에 대한 액세스가 CORS 정책에 의해 차단되었습니다. ‘htt
 
 정확히 어떤 응답 헤더인가요?
 
-“access-control-allow-origin” — 여기서 허용된 출처가 명시된 헤더에요. localhost:3000이 헤더에 명시되어 있다면 우리는 업무를 진행할 수 있어요.
+"access-control-allow-origin" — 여기서 허용된 출처가 명시된 헤더에요. localhost:3000이 헤더에 명시되어 있다면 우리는 업무를 진행할 수 있어요.
 
 ![이미지](/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_6.png)
 
@@ -87,7 +87,7 @@ fetch에 대한 액세스가 CORS 정책에 의해 차단되었습니다. ‘htt
 
 이렇게 실패한 사전 플라이트 요청을 확인해 봅시다.
 
-요청 방법이 ‘OPTIONS’이고 서버에서 그 요청을 하지 못하게 하는 (403) 것으로 나왔네요. 그리고 나의 응답 헤더에는 ‘Access-Control-Allow-Origin’이라고 언급된 것이 없습니다. 결국, 서버 측에서 “OPTIONS” 요청 방법이 정의되지 않았기 때문에 사전 플라이트 요청 자체가 실패했습니다.
+요청 방법이 ‘OPTIONS’이고 서버에서 그 요청을 하지 못하게 하는 (403) 것으로 나왔네요. 그리고 나의 응답 헤더에는 ‘Access-Control-Allow-Origin’이라고 언급된 것이 없습니다. 결국, 서버 측에서 "OPTIONS" 요청 방법이 정의되지 않았기 때문에 사전 플라이트 요청 자체가 실패했습니다.
 
 ![image](/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_7.png)
 
@@ -169,7 +169,7 @@ Phase II — 스프링 시큐리티를 사용하여 내 요청에 기본 인증 
 
 네트워크에 들어가서 문제를 더 디버깅했습니다.
 
-post 요청이 하나만 있었고 프리플라이트 요청은 없었습니다. post 요청에 대한 응답에는 'Access-Control-Allow-Origin'이 설정되어 있지 않았습니다. 또한 'WWW-Authenticate:Basic realm=”Realm”' 헤더를 확인했습니다.
+post 요청이 하나만 있었고 프리플라이트 요청은 없었습니다. post 요청에 대한 응답에는 'Access-Control-Allow-Origin'이 설정되어 있지 않았습니다. 또한 'WWW-Authenticate:Basic realm="Realm"' 헤더를 확인했습니다.
 
 ![2024-05-12-WhattheCORSftSpringBootSpringSecurity_15](/assets/img/2024-05-12-WhattheCORSftSpringBootSpringSecurity_15.png)
 
@@ -193,7 +193,7 @@ post 요청이 하나만 있었고 프리플라이트 요청은 없었습니다.
 Fetch를 사용하므로 React에서 POST 호출을 할 때 보내는 매개변수에 다음 헤더 정보를 첨부해야 합니다:
 
 ```
-“Authorization”:”Basic Base64encoded(username:password)”
+"Authorization":"Basic Base64encoded(username:password)"
 ```
 
 
@@ -254,7 +254,7 @@ Fetch를 사용하므로 React에서 POST 호출을 할 때 보내는 매개변�
 
 여기서 컨트롤러를 보면 다음과 같은 설정을 추가했습니다.
 
-- origins = “http://localhost:3000” : 내 리액트 코드가 있는 곳입니다.
+- origins = "http://localhost:3000" : 내 리액트 코드가 있는 곳입니다.
 - allowCredentials = true: 인증 형식을 사용한다면 중요한 부분입니다.
 
 기본적으로 @CrossOrigin은 모든 요청 방식과 헤더를 허용합니다. 그래서 사전 통지 요청에 문제가 없을 겁니다.

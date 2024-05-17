@@ -314,7 +314,7 @@ exports = async function(changeEvent) {
 
     // Hugging Face API URL 및 키 정의
     const url = 'https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2';
-    // App Services 내의 “Values” 유틸리티에서 API 키의 값을 설정한 이름을 사용
+    // App Services 내의 "Values" 유틸리티에서 API 키의 값을 설정한 이름을 사용
     const hf_read_token = context.values.get("HF_value");
 
     try {
@@ -491,7 +491,7 @@ exports = async function(changeEvent) {
 
 검색을 실행하기 위해 쿼리 컬렉션에 단일 필드 문서를 삽입할 것입니다. 필드 이름은 "query"이고 값은 다음과 같이 우리 검색어의 텍스트입니다:
 
-' “query”: “Things that look good outwardly may not be as valuable or good.”'
+' "query": "Things that look good outwardly may not be as valuable or good."'
 
 
 

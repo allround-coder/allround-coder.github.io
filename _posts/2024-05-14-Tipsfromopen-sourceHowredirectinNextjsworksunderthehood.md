@@ -44,7 +44,7 @@ link: "https://medium.com/@ramu.narasinga_61050/tips-from-open-source-how-redire
 
 # 3. Render.ts 설명
 
-“redirect() 함수를 호출하면 NEXT_REDIRECT 오류가 발생하고 발생한 위치의 라우트 세그먼트의 렌더링을 중단합니다.” — Nextjs 문서
+“redirect() 함수를 호출하면 NEXT_REDIRECT 오류가 발생하고 발생한 위치의 라우트 세그먼트의 렌더링을 중단합니다." — Nextjs 문서
 
 redirect.ts 파일 내에서 오류를 발생시키는 코드 조각을 살펴봅시다.
 

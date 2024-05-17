@@ -92,7 +92,7 @@ Output -
 pip install cryptography
 ```
 
-## 단계 5: “cryptography” Python 라이브러리의 “Fernet” 라이브러리를 사용하여 암호화/복호화 키 생성
+## 단계 5: "cryptography" Python 라이브러리의 "Fernet" 라이브러리를 사용하여 암호화/복호화 키 생성
 
 "암호화" Python 라이브러리 내부에 있는 "Fernet"라는 라이브러리를 사용해야 합니다. 
 "Fernet" 라이브러리에는 "generate_key()", "encrypt()", "decrypt()" 등 여러 메서드가 있습니다.
@@ -114,7 +114,7 @@ k = Fernet(key)
 
 
 
-Delta Table “tbl_person”의 열인 “Person_Adhar_No”에서 PII 데이터를 받아 들이는 "encrypt_data"라는 UDF를 작성해 보겠습니다. 그리고 생성된 "암호화 키"도 받아들입니다. 그런 다음, 이 UDF는 수신된 데이터에 대해 암호화를 적용하기 위해 라이브러리 "Fernet"의 "encrypt ()" 함수를 호출할 것입니다.
+Delta Table "tbl_person"의 열인 "Person_Adhar_No"에서 PII 데이터를 받아 들이는 "encrypt_data"라는 UDF를 작성해 보겠습니다. 그리고 생성된 "암호화 키"도 받아들입니다. 그런 다음, 이 UDF는 수신된 데이터에 대해 암호화를 적용하기 위해 라이브러리 "Fernet"의 "encrypt ()" 함수를 호출할 것입니다.
 
 ```python
 def encrypt_data(data, key):

@@ -163,7 +163,7 @@ const dog: Dog = { name: "Bruno", age: 5, breed: "German Shepherd", species: "Ma
 ## 클래스와의 안전하지 않은 병합
 
 TypeScript 컴파일러는 속성 초기화를 확인하지 않기 때문에 예기치 않은 런타임 오류가 발생할 수 있습니다.
-두 인터페이스의 병합 중에```
+두 인터페이스의 병합 중에
 
 
 

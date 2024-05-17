@@ -15,11 +15,10 @@ link: "https://medium.com/stackademic/5-custom-react-hooks-every-developer-shoul
 
 ![이미지](/assets/img/2024-05-12-5CustomReactHooksEveryDeveloperShouldKnow_0.png)
 
-```markdown
+
 # useLocalStorage
 
 브라우저 스토리지 관리는 React 애플리케이션에서 흔한 요구사항입니다. useLocalStorage 훅을 사용하면 값을 localStorage와 동기화할 수 있어요. 최근 프로젝트에서 이를 어떻게 활용했는지 예시를 보여드릴게요:
-```
 
 
 

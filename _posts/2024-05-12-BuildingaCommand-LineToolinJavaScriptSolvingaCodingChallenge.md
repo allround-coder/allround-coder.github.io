@@ -34,7 +34,7 @@ link: "https://medium.com/@abdullahimv25/building-a-command-line-tool-in-javascr
 - 파일의 맨 위에 다음 해시뱅( shebang) 라인을 추가합니다: #!/usr/local/bin/node. 이 라인은 컴파일러에게 코드를 Node.js를 사용해 해석하도록 지시합니다.
 - Ctrl + O를 눌러 변경 사항을 저장한 후 Enter를 누르고 Ctrl + X를 눌러 편집기를 종료합니다.
 - chmod +x `파일이름`을 사용하여 스크립트에 실행 권한을 부여합니다.
-- bin 폴더 내부에 export PATH=”$HOME/bin:$PATH”를 입력합니다.
+- bin 폴더 내부에 export PATH="$HOME/bin:$PATH"를 입력합니다.
 - 이제이 스크립트를 실행할 때마다 Node.js 스크립트로 해석됩니다.
 
 

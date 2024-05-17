@@ -6,7 +6,7 @@ date: 2024-05-14 13:53
 ogImage: 
   url: /assets/img/2024-05-14-GoodCommitvsYourCommitHowtoWriteaPerfectGitCommitMessage_0.png
 tag: Tech
-originalTitle: "“Good Commit” vs “Your Commit”: How to Write a Perfect Git Commit Message"
+originalTitle: "'Good Commit' vs 'Your Commit': How to Write a Perfect Git Commit Message"
 link: "https://medium.com/gitconnected/good-commit-vs-your-commit-how-to-write-a-perfect-git-commit-message-6e96ab6357fa"
 ---
 
@@ -237,15 +237,15 @@ and readability."
 
 다시 말해, 만일 이 커밋이 적용된다면, 실제로 레이아웃 페이지에서 버그가 해결될 것입니다.
 
-## 규칙 7: “무엇”과 “왜”를 설명하되, “어떻게”에 대해서는 제외하세요.
+## 규칙 7: “무엇"과 “왜"를 설명하되, “어떻게"에 대해서는 제외하세요.
 
 
 
-커밋 메시지를 “무엇”과 “왜”로 제한하면 각 변경 사항에 대해 간결하면서도 정보를 제공하는 설명이 생성됩니다. 코드가 어떻게 구현되었는지 알고 싶은 개발자는 직접 코드베이스를 참조할 수 있습니다. 대신, 변경된 내용과 변경의 이유, 영향을 받은 구성 요소나 영역을 강조해주세요.
+커밋 메시지를 “무엇"과 “왜"로 제한하면 각 변경 사항에 대해 간결하면서도 정보를 제공하는 설명이 생성됩니다. 코드가 어떻게 구현되었는지 알고 싶은 개발자는 직접 코드베이스를 참조할 수 있습니다. 대신, 변경된 내용과 변경의 이유, 영향을 받은 구성 요소나 영역을 강조해주세요.
 
 ## 사례 연구: Angular의 커밋 메시지 관행
 
-Angular는 효과적인 커밋 메시지 관행의 저변적인 예로 자리 잡고 있습니다. Angular 팀은 커밋 메시지를 작성할 때 특정 접두사의 사용을 지지합니다. 이러한 접두사에는 “chore: ,” “docs: ,” “style: ,” “feat: ,” “fix: ,” “refactor: ,” 그리고 “test: .”가 포함됩니다. 이러한 접두사를 통합함으로써 커밋 이력은 각 커밋의 성격을 이해하는 데 유용한 자원이 됩니다.
+Angular는 효과적인 커밋 메시지 관행의 저변적인 예로 자리 잡고 있습니다. Angular 팀은 커밋 메시지를 작성할 때 특정 접두사의 사용을 지지합니다. 이러한 접두사에는 “chore: ," “docs: ," “style: ," “feat: ," “fix: ," “refactor: ," 그리고 “test: ."가 포함됩니다. 이러한 접두사를 통합함으로써 커밋 이력은 각 커밋의 성격을 이해하는 데 유용한 자원이 됩니다.
 
 # 팁
 

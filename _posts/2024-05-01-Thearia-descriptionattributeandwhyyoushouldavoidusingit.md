@@ -186,11 +186,11 @@ aria-description="ARIA Description">
 
 이 마크업에는 다음이 포함되어 있습니다:
 
-- `label` (“누가 처음일까요?”)
-- aria-label (“ARIA Label”)
-- 텍스트가 “Labelled By”인 요소를 참조하는 aria-labelledby 속성
-- 텍스트가 “Described By”인 요소를 참조하는 aria-describedby 속성
-- aria-description 속성 (“ARIA Description”)
+- `label` ("누가 처음일까요?")
+- aria-label ("ARIA Label")
+- 텍스트가 "Labelled By"인 요소를 참조하는 aria-labelledby 속성
+- 텍스트가 "Described By"인 요소를 참조하는 aria-describedby 속성
+- aria-description 속성 ("ARIA Description")
 
 <div class="content-ad"></div>
 

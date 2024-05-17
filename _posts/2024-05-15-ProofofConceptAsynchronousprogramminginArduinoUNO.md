@@ -66,27 +66,27 @@ void loop(){
 
 
 
-
+```js
 #define coNext         do { _state_ = __LINE__; return 1; case __LINE__:; } while (0)
 #define coGoto(VALUE)  do { _state_ = VALUE   ; return 1;                 } while (0)
 #define coYield(VALUE) do { _state_ = VALUE   ; return 1; case VALUE:;    } while (0)
+```
 
----
-
+```js
 #define coStart static int _state_ = 0; { switch(_state_) { case 0:;
 #define coEnd do { _state_ = 0; return -1; } while (0)
 #define coStop } _state_ = 0; return -1; }
 #define coSet(VALUE) _state_ = VALUE
 #define coGet _state_
-
+```
 
 참고: 매우 유용한 다른 매크로도 추가되었습니다.
 
-
+```js
 #define coDelay(VALUE)  do { static auto tm = millis()+VALUE; while( millis() < tm ){ coNext; } tm = millis()+VALUE; break; } while (0)
 #define coUDelay(VALUE) do { static auto tm = micros()+VALUE; while( micros() < tm ){ coNext; } tm = micros()+VALUE; break; } while (0)
 #define coWait(VALUE)   do { while( !VALUE ){ coNext; } } while(0)
-
+```
 
 이 구현의 작은 단점 중 하나는 switch 문을 사용하여 코루틴을 실행하기 때문에 코루틴 내에서 switch 문을 사용할 수 없다는 것입니다. 해당 경우는 코드를 완전히 깨뜨릴 것입니다.
 
@@ -126,7 +126,7 @@ void loop(){
 
 
 
-
+```js
 int coroutine1(){
      static bool b=0;
 coStart
@@ -173,7 +173,7 @@ void loop(){
      coroutine2();
      coroutine3();
 }
-
+```
 
 ![Animation](https://miro.medium.com/v2/resize:fit:852/1*LwDRI8sOZe-EVOxAEsgLHw.gif)
 

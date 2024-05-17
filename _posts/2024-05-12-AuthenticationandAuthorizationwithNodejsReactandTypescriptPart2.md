@@ -71,7 +71,7 @@ cd server && mkdir src
 
 시작 서버 폴더 구조는 아래와 같이 표시됩니다:
 
-```markdown
+```bash
 /authentication-and-authorization
   |__ /server
       |__ /src
@@ -79,7 +79,7 @@ cd server && mkdir src
 
 /server 폴더 안에 있는 터미널에서 다음 명령어를 실행하여 노드 프로젝트를 초기화하세요:
 
-```markdown
+```bash
 npm init -y
 ```
 

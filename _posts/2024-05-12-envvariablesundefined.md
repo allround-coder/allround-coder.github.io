@@ -6,7 +6,7 @@ date: 2024-05-12 22:41
 ogImage: 
   url: /assets/img/2024-05-12-envvariablesundefined_0.png
 tag: Tech
-originalTitle: ".env variables “undefined”."
+originalTitle: ".env variables 'undefined'."
 link: "https://medium.com/@zak786khan/env-variables-undefined-78cf218dae87"
 ---
 
@@ -15,7 +15,7 @@ link: "https://medium.com/@zak786khan/env-variables-undefined-78cf218dae87"
 
 저 또한 예전에 여러분과 같은 상황에 처해 있었고, 고민 끝에 제 문제에 맞는 해결책을 찾기 위해 인터넷을 뒤적였어요.
 
-우리가 설치한 패키지/모듈의 공식 문서에 기재된 케이스와 맞지 않는 기능이 있는 프로젝트를 갖고 있는 경우가 많습니다. 따라서 이 게시물은 환경 변수와 여러분의 “상황”에서 이를 작동시키는 방법에 대한 내용입니다.
+우리가 설치한 패키지/모듈의 공식 문서에 기재된 케이스와 맞지 않는 기능이 있는 프로젝트를 갖고 있는 경우가 많습니다. 따라서 이 게시물은 환경 변수와 여러분의 “상황"에서 이를 작동시키는 방법에 대한 내용입니다.
 
 환경 변수란 정확히 무엇인가요?
 
