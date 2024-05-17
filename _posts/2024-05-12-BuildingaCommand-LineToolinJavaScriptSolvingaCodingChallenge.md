@@ -1,15 +1,14 @@
 ---
-title: "JavaScript로 명령줄 도구 만들기 코딩 도전 과제 해결하기"
+title: "JavaScript로 Command-Line Tool 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-12-BuildingaCommand-LineToolinJavaScriptSolvingaCodingChallenge_0.png"
 date: 2024-05-12 23:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-12-BuildingaCommand-LineToolinJavaScriptSolvingaCodingChallenge_0.png
 tag: Tech
 originalTitle: "Building a Command-Line Tool in JavaScript: Solving a Coding Challenge"
 link: "https://medium.com/@abdullahimv25/building-a-command-line-tool-in-javascript-solving-a-coding-challenge-baf103f77120"
 ---
-
 
 <img src="/assets/img/2024-05-12-BuildingaCommand-LineToolinJavaScriptSolvingaCodingChallenge_0.png" />
 
@@ -18,8 +17,6 @@ link: "https://medium.com/@abdullahimv25/building-a-command-line-tool-in-javascr
 이 가이드에 오신 것을 환영합니다! JavaScript를 사용하여 명령줄 도구를 구축하는 코딩 챌린지에 도전하게 됩니다. 우리의 목표는 텍스트 파일을 분석하고 줄 수, 단어 수, 문자 수 등 다양한 메트릭을 제공할 수 있는 다재다능한 도구를 만드는 것입니다.
 
 여기에서 다룰 도전 과제를 찾을 수 있습니다. 이 작업에는 JavaScript (JS)을 사용하겠습니다. 이제 구현 세부 정보로 바로 들어가 봅시다.
-
-
 
 # 환경 설정하기
 
@@ -37,8 +34,6 @@ link: "https://medium.com/@abdullahimv25/building-a-command-line-tool-in-javascr
 - bin 폴더 내부에 export PATH="$HOME/bin:$PATH"를 입력합니다.
 - 이제이 스크립트를 실행할 때마다 Node.js 스크립트로 해석됩니다.
 
-
-
 # 챌린지 해결하기
 
 ## 단계 1: 파일의 바이트 수 세기
@@ -46,30 +41,28 @@ link: "https://medium.com/@abdullahimv25/building-a-command-line-tool-in-javascr
 우리의 첫 번째 작업은 파일의 바이트 수를 계산하고 터미널에서 제공된 인수가 ‘-c’인지 감지하는 함수를 만드는 것입니다. 다음은 이를 어떻게 달성할 수 있는지입니다:
 
 ```js
-const fs = require('fs');
+const fs = require("fs");
 function readFileContent(fileName) {
- if (!fs.existsSync(fileName)) {
- console.log(`파일을 찾을 수 없습니다: ${fileName}`);
- process.exit(1);
- }
- 
- fs.readFile(fileName, 'utf8', (err, data) => {
- if (err) throw err;
- const fileSizeInBytes = Buffer.byteLength(data, 'utf8');
- displayResult(fileSizeInBytes);
- });
+  if (!fs.existsSync(fileName)) {
+    console.log(`파일을 찾을 수 없습니다: ${fileName}`);
+    process.exit(1);
+  }
+
+  fs.readFile(fileName, "utf8", (err, data) => {
+    if (err) throw err;
+    const fileSizeInBytes = Buffer.byteLength(data, "utf8");
+    displayResult(fileSizeInBytes);
+  });
 }
 function displayResult(fileSizeInBytes) {
- if (commandLineOption === '-c') {
- console.log(`${fileSizeInBytes} ${fileName}`);
- }
+  if (commandLineOption === "-c") {
+    console.log(`${fileSizeInBytes} ${fileName}`);
+  }
 }
 let fileName = process.argv[2];
 const commandLineOption = process.argv[3];
 readFileContent(fileName);
 ```
-
-
 
 이 코드 스니펫에서는 fs.readFile 메서드를 사용하여 파일 내용을 읽고 Buffer.byteLength를 사용하여 파일 크기를 바이트 단위로 계산합니다. 그런 다음 명령줄 옵션이 ‘-c’와 일치하는 경우 결과를 표시합니다.
 
@@ -80,7 +73,7 @@ readFileContent(fileName);
 ```js
 function readFileContent(fileName) {
   // 이전과 동일
-  fs.readFile(fileName, 'utf8', (err, data) => {
+  fs.readFile(fileName, "utf8", (err, data) => {
     if (err) throw err;
     const { charactersCount, wordsCount, numberOfLines } = parseFile(data);
     displayResult(charactersCount, wordsCount, numberOfLines);
@@ -88,8 +81,8 @@ function readFileContent(fileName) {
 }
 function parseFile(data) {
   const charactersCount = data.length;
-  const wordsCount = data.split(' ').length;
-  const numberOfLines = data.split('\n').length;
+  const wordsCount = data.split(" ").length;
+  const numberOfLines = data.split("\n").length;
   return { charactersCount, wordsCount, numberOfLines };
 }
 function displayResult(charactersCount, wordsCount, numberOfLines) {
@@ -100,8 +93,6 @@ const commandLineOption = process.argv[3];
 readFileContent(fileName);
 ```
 
-
-
 이 수정된 코드에서는 파일 내용을 구문 분석하여 줄 수, 단어 수 및 문자 수를 계산합니다. 그런 다음 제공된 명령줄 옵션에 따라 해당 카운트를 표시합니다.
 
 ## 단계 3: 표준 입력 처리
@@ -110,29 +101,25 @@ readFileContent(fileName);
 
 ```js
 if (!process.stdin.isTTY) {
- let data = '';
- process.stdin.setEncoding('utf8');
- process.stdin.on("data", chunk => {
- data += chunk;
- });
- process.stdin.on("end", () => {
- const { charactersCount, wordsCount, numberOfLines } = parseFile(data);
- displayResult(charactersCount, wordsCount, numberOfLines);
- });
+  let data = "";
+  process.stdin.setEncoding("utf8");
+  process.stdin.on("data", (chunk) => {
+    data += chunk;
+  });
+  process.stdin.on("end", () => {
+    const { charactersCount, wordsCount, numberOfLines } = parseFile(data);
+    displayResult(charactersCount, wordsCount, numberOfLines);
+  });
 } else {
- // 이전과 동일하지만 약간 수정된 부분이 있음
+  // 이전과 동일하지만 약간 수정된 부분이 있음
 }
 ```
-
-
 
 표준 입력이 제공되는지 확인함으로써 (!process.stdin.isTTY), 우리는 적절하게 파이프로 연결된 입력을 처리할 수 있습니다.
 
 ## 결론
 
 이 안내서에서는 코딩 도전 과제를 해결하기 위해 JavaScript로 명령줄 도구를 만드는 과정을 안내했습니다. 환경 설정, 파일에서 바이트, 라인, 단어 및 문자 수를 세는 기능 구현, 그리고 표준 입력 처리까지 다루었습니다.
-
-
 
 이 튜토리얼을 따라와 주셔서 CLI 도구 구축, Node.js 파일 처리, 그리고 동적으로 명령줄 인수를 처리하는 방법에 대한 통찰력을 얻었습니다.
 

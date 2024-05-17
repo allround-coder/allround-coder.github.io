@@ -1,5 +1,5 @@
 ---
-title: "거의 모든 초보자들이 틀리는 useState 질문"
+title: "대기업 프론트엔드 단골 useState 질문"
 description: ""
 coverImage: "/assets/img/2024-05-12-AuseStateQuestionThatAlmostAllBeginnersGetWrong_0.png"
 date: 2024-05-12 20:51

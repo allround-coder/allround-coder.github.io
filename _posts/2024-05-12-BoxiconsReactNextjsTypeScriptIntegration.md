@@ -1,15 +1,14 @@
 ---
-title: "박스아이콘 - 리액트 넥스트제이에스  타입스크립트 통합"
+title: "React Nextjs에서 Boxicons 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-12-BoxiconsReactNextjsTypeScriptIntegration_0.png"
 date: 2024-05-12 19:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-12-BoxiconsReactNextjsTypeScriptIntegration_0.png
 tag: Tech
 originalTitle: "Boxicons — React Next.js + TypeScript Integration"
 link: "https://medium.com/@michaelquarcoo04/boxicons-react-next-js-typescript-integration-87216f00d594"
 ---
-
 
 <img src="/assets/img/2024-05-12-BoxiconsReactNextjsTypeScriptIntegration_0.png" />
 
@@ -18,8 +17,6 @@ link: "https://medium.com/@michaelquarcoo04/boxicons-react-next-js-typescript-in
 # Next.JS
 
 ## 1. 프로젝트 설정
-
-
 
 다음 명령어를 실행하여 Next.js 애플리케이션을 시작하세요.
 
@@ -40,8 +37,6 @@ App Router를 사용하시겠습니까? (추천) No / Yes
 구성할 import 별칭을 입력해주세요. @/*
 ```
 
-
-
 다음은 프로젝트 구조가 설정된 Next.js 애플리케이션의 시작 코드를 생성해야 합니다.
 
 ![Next.js Starter Code](/assets/img/2024-05-12-BoxiconsReactNextjsTypeScriptIntegration_1.png)
@@ -49,8 +44,6 @@ App Router를 사용하시겠습니까? (추천) No / Yes
 ## 2. 의존성 설치
 
 Boxicons 설치하기
-
-
 
 ```js
 npm install boxicons --save
@@ -61,8 +54,6 @@ npm install boxicons --save
 “src" 디렉토리에 “types" 폴더를 만들고 그 안에 “boxicons.d.ts"라는 파일을 생성하세요. 이 파일은 boxicons 패키지의 유형 정의를 담고 있을 것입니다. 다음 코드 스니펫을 "boxicons.d.ts" 파일에 붙여넣으세요.
 
 src/types/boxicons.d.ts
-
-
 
 ```js
 declare module "boxicons" {
@@ -75,8 +66,6 @@ declare module "boxicons" {
 ## 4. 스타일시트 임포트
 
 프로젝트에 boxicons 스타일시트를 추가하세요. 이는 애플리케이션의 메인 스타일시트 맨 위에 CSS import를 추가하여 수행할 수 있습니다. 기본적으로 Next.js의 "src/pages" 디렉토리에 있는 "global.css" 파일이 메인 애플리케이션 스타일시트입니다.```
-
-
 
 동일한 결과를 얻으려면 "src/pages" 디렉토리의 "layout.tsx" 파일에 헤드 태그에 링크 태그를 추가하면 됩니다.
 
@@ -97,15 +86,12 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode,
 }>) {
   return (
     <html lang="en">
       <head>
-        <link
-          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-          rel="stylesheet"
-        ></link>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"></link>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
@@ -114,8 +100,6 @@ export default function RootLayout({
 ```
 
 OR
-
-
 
 src/pages/globals.css
 
@@ -128,8 +112,6 @@ src/pages/globals.css
 ## 5. 아이콘 컴포넌트 생성
 
 애플리케이션에 다양한 "boxicons"를 가져올 수 있는 아이콘 컴포넌트를 생성하세요. 이를 위해 "src" 디렉터리에 "components"라는 폴더를 만들고 그 안에 "Icon.tsx" 파일을 만드세요.
-
-
 
 src/components/Icon.tsx
 
@@ -154,8 +136,6 @@ export default Icon;
 
 컴포넌트 디렉토리의 내용을 내보내는 "index.ts" 파일을 만듭니다. 이는 가져오기를 "깔끔하게" 유지하기 위한 것이며, 이 단계를 건너 뛰어도 괜찮습니다.
 
-
-
 src/components/index.ts
 
 ```js
@@ -167,8 +147,6 @@ export { Icon };
 ## 6. Icon 사용법
 
 프로젝트 전반에 걸쳐 사용하기 위해 components 디렉토리에서 Icon 컴포넌트를 import합니다. 아래는 예시입니다:
-
-
 
 src/pages/pages.tsx
 
@@ -195,8 +173,6 @@ export default function Home() {
 npm run dev
 ```
 
-
-
 Violaaa 🚀
 
 ![image](/assets/img/2024-05-12-BoxiconsReactNextjsTypeScriptIntegration_2.png)
@@ -205,8 +181,6 @@ Violaaa 🚀
 
 [https://github.com/Quarcoo-arc/boxicons-nextjs-ts.git](https://github.com/Quarcoo-arc/boxicons-nextjs-ts.git)
 
-
-
 # React
 
 React와 TypeScript 프로젝트에 boxicons를 통합하는 것은 Next.js와 TypeScript 프로젝트에 통합하는 것과 유사합니다. 그러나 몇 가지 차이가 있습니다. 이를 아래에서 강조했습니다.
@@ -214,8 +188,6 @@ React와 TypeScript 프로젝트에 boxicons를 통합하는 것은 Next.js와 T
 ## 1. 프로젝트 설정
 
 React 프로젝트를 설정하는 가장 쉬운 방법은 create-react-app 또는 Vite를 사용하는 것입니다. 저는 Vite를 선호합니다. 왜냐하면 이름이 시사하는 대로 빠르기 때문입니다. Vite는 "신속"을 뜻하는 프랑스어 단어이며 /vit/으로 발음합니다. 충분히 어휘적인 얘기는 여기까지 하고 아이콘들을 표시해봅시다 🚀.
-
-
 
 다음 명령어를 실행하여 Vite를 사용한 React + TypeScript 프로젝트를 시작하세요:
 
@@ -230,8 +202,6 @@ cd boxicons-react-ts
 npm install
 ```
 
-
-
 위 명령들을 실행하면 다음과 같은 폴더 구조를 갖는 프로젝트가 생성됩니다.
 
 ![폴더 구조](/assets/img/2024-05-12-BoxiconsReactNextjsTypeScriptIntegration_3.png)
@@ -240,8 +210,6 @@ npm install
 
 boxicons를 설치하세요. Next.JS 부분의 두 번째 섹션에 설명된 대로 진행하시면 됩니다.
 
-
-
 ## 3. 유형 정의
 
 React 및 Next.js에 대한 유형 정의 파일을 생성하는 방법은 동일합니다.
@@ -249,8 +217,6 @@ React 및 Next.js에 대한 유형 정의 파일을 생성하는 방법은 동�
 ## 4. 스타일시트 가져오기
 
 Next.js와 마찬가지로 React에서 boxicons 스타일시트를 가져오는 두 가지 옵션이 있습니다; head 태그 내부에 링크 태그를 사용하거나 CSS를 가져오는 것입니다. 차이점은 src/pages/layout.tsx가 아닌 프로젝트의 루트 디렉토리의 index.html 파일에 링크 태그가 추가된다는 점입니다. 또한 CSS를 가져오는 위치는 src/pages/globals.css가 아닌 React 애플리케이션의 기본 주 스타일시트인 src/index.css에 위치합니다.
-
-
 
 한 가지 더 알려드릴게요. 이 CSS import를 사용하면 오류가 발생합니다:
 
@@ -266,13 +232,9 @@ Next.js와 마찬가지로 React에서 boxicons 스타일시트를 가져오는 
 @import url("boxicons/css/boxicons.min.css");
 ```
 
-
-
 ```css
-@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
 ```
-
-
 
 ## 6. 아이콘 사용법
 
@@ -300,8 +262,6 @@ function App() {
 export default App;
 ```
 
-
-
 개발 서버를 실행해서 아이콘들을 확인해보세요.
 
 ```js
@@ -311,7 +271,5 @@ npm run dev
 ![아이콘 이미지](/assets/img/2024-05-12-BoxiconsReactNextjsTypeScriptIntegration_4.png)
 
 이 프로젝트의 소스 코드가 포함된 GitHub 저장소 링크입니다:
-
-
 
 위의 링크를 통해, React/Next.js + TypeScript 프로젝트에서 boxicons를 사용할 준비가 끝났어요. TypeScript 프로젝트에서 typings이 제공되지 않는 JavaScript 패키지를 사용하는 방법도 비슷하게 따를 수 있어요.

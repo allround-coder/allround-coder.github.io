@@ -1,5 +1,5 @@
 ---
-title: "오픈에이아이의 Assistant API와 React를 사용하여 나만의 도우미 챗봇을 만드는 단계별 안내"
+title: "OpenAI의 Assistant API와 React를 사용하여 나만의 도우미 챗봇 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-12-AStep-By-StepGuidetocreatingyourownassistantchatbotusingOpenAIsAssistantAPIandReact_0.png"
 date: 2024-05-12 20:53

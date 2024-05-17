@@ -125,11 +125,10 @@ body {
 - 버튼 클릭 이벤트 핸들러:
 — `.search` 요소의 `active` 클래스를 토글하여 검색 바의 확장/축소를 제어합니다.
 — 검색 바가 확장되면 자동으로 입력 상자로 포커스가 이동됩니다.
-```
 
 <div class="content-ad"></div>
 
-```
+```js
 const search = document.querySelector('.search')
 const btn = document.querySelector('.btn')
 const input = document.querySelector('.input')

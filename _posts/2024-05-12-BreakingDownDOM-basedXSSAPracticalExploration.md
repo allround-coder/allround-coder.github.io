@@ -1,5 +1,5 @@
 ---
-title: "DOM 기반 XSS의 깊이 파헤치기 실용적인 탐구"
+title: "DOM 기반 XSS에 대해서 알아보자"
 description: ""
 coverImage: "/assets/img/2024-05-12-BreakingDownDOM-basedXSSAPracticalExploration_0.png"
 date: 2024-05-12 23:27
@@ -27,9 +27,6 @@ getUrlParamter(`utm_source`, queryString) 함수는 utm_source 매개변수인 h
 
 ![이미지](/assets/img/2024-05-12-BreakingDownDOM-basedXSSAPracticalExploration_2.png)
 
-
-
-
 그림 3에서 utm_campaign 매개변수 값이 "closedDomains"로 설정되면, 애플리케이션은 utm_source의 값에 따라 switch case 문을 실행합니다. 일치하는 case가 없는 경우, 애플리케이션은 utm_source의 값으로 brandName() 함수를 호출합니다.
 
 ![이미지](/assets/img/2024-05-12-BreakingDownDOM-basedXSSAPracticalExploration_3.png)
@@ -37,9 +34,6 @@ getUrlParamter(`utm_source`, queryString) 함수는 utm_source 매개변수인 h
 그림 4에서 brandName 함수는 매개변수 값에 따라 .js-brandname-container 클래스를 가진 요소를 숨기거나 .js-brandname 클래스를 가진 요소의 inner HTML을 설정하는 방식으로 설계되었습니다. brandName 값이 false로 설정되면 지정된 요소를 숨기고, 그렇지 않으면 요소의 inner HTML을 제공된 brandName 값으로 설정합니다.
 
 그림 3에서 이미 알 수 있듯이, 우리는 URL 매개변수 utm_source를 통해 함수brandName(utm_source)에 전달되는 매개변수 값을 제어할 수 있으므로 이제 HTML 태그를 삽입하고 임의의 JavaScript 코드를 실행할 수 있습니다.
-
-
-
 
 프론트 엔드 개발자입니다. 위의 텍스트를 친절한 어조로 한국어로 번역해 주세요.
 

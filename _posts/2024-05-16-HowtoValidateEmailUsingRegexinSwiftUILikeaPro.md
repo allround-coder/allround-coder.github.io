@@ -11,8 +11,6 @@ link: "https://medium.com/@naufaladli0406/how-to-validate-email-using-regex-in-s
 ---
 
 
-<table> 태그를 Markdown 형식으로 변경하세요.
-
 <div class="content-ad"></div>
 
 이메일을 유효성 검사하려면 표준 형식과 일치하는 이메일을 확인하는 정규식(Regex) 패턴을 사용합니다. 유효한 이메일은 일반적으로 영숫자 조합으로 된 사용자 이름, "@gmail.com" 기호, 도메인 이름 및 도메인 확장자가 포함되어 있습니다.

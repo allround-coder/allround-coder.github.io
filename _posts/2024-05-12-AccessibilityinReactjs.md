@@ -1,15 +1,14 @@
 ---
-title: "리액트에서의 접근성"
+title: "접근성을 고려해서 리액트 웹사이트 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-12-AccessibilityinReactjs_0.png"
 date: 2024-05-12 19:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-12-AccessibilityinReactjs_0.png
 tag: Tech
 originalTitle: "Accessibility in Reactjs?"
 link: "https://medium.com/@thevinaysingh/accessibility-in-reactjs-991571d80e53"
 ---
-
 
 주요 개념 및 접근성 사용 방법
 
@@ -18,8 +17,6 @@ link: "https://medium.com/@thevinaysingh/accessibility-in-reactjs-991571d80e53"
 이는 스크린 리더, 키보드 탐색 또는 음성 제어와 같은 보조 기술을 사용하는 사람들을 포함합니다.
 
 다음은 React에서의 접근성에 대한 주요 개념을 설명합니다:
-
-
 
 ## 1. 시멘틱 HTML
 
@@ -40,8 +37,6 @@ link: "https://medium.com/@thevinaysingh/accessibility-in-reactjs-991571d80e53"
 ```
 
 ## 2. ARIA 속성
-
-
 
 - 때로는 의미 있는 HTML 만으로 충분하지 않을 수도 있습니다. 보조 기술을 위한 추가 정보를 제공하려면 ARIA (접근 가능한 리치 인터넷 애플리케이션) 속성을 사용하세요. 이미지를 설명하는 데 aria-label을 사용하거나 입력 필드에 설명을 연결하는 데 aria-describedby를 사용할 수 있습니다.
 - HTML로는 원하는 기능을 달성할 수 없는 경우에는 접근성 리치 인터넷 애플리케이션(WAI-ARIA) 역할 및 속성을 사용하세요.
@@ -67,8 +62,6 @@ function ImageWithDescription() {
 
 - 애플리케이션이 키보드를 사용하여 완전히 탐색 가능하도록 보장하세요. 이는 사용자가 버튼, 링크 및 폼 필드와 같은 초점 가능 요소를 탭할 수 있게 하는 것을 의미합니다. onFocus 및 onBlur와 같은 이벤트 핸들러를 사용하여 초점 상태를 관리하고 시각적 단서를 제공하세요.
 
-
-
 ```js
 함수 FocusableButton({ onClick }) {
   return (
@@ -93,8 +86,6 @@ function ImageWithDescription() {
 }
 ```
 
-
-
 ## 5. 초점 제어
 
 - 키보드만 사용하는 사용자가 컴포넌트에서 요소 포커스를 관리하여 애플리케이션을 탐색할 수 있게 합니다. autoFocus 속성을 사용하면 컴포넌트가 마운트될 때 특정 요소에 포커스를 주는 예입니다.
@@ -109,7 +100,9 @@ class AutoFocusTextInput extends React.Component {
     return (
       <input
         type="text"
-        ref={(input) => { this.textInput = input; }}     // ref 할당
+        ref={(input) => {
+          this.textInput = input;
+        }} // ref 할당
       />
     );
   }
@@ -117,8 +110,6 @@ class AutoFocusTextInput extends React.Component {
 ```
 
 ## 6. 테스팅 및 유효성 검사:
-
-
 
 - 리액트 애플리케이션의 접근성을 테스트하고 유효성을 검사하는 다양한 도구와 기술이 있어요. 브라우저 개발자 도구를 사용하여 접근성 트리를 확인하고 잠재적인 문제를 식별할 수 있어요. 게다가 개발 중에 접근성 검사를 자동화할 수 있는 react-axe와 같은 라이브러리를 고려해 보세요.
 - 대부분의 접근성 문제는 정적 분석 도구를 통해 발견할 수 있지만, 수동 테스트와 유효성 검사도 중요해요. 왜냐하면 접근성은 단순히 규칙 목록을 충족하는 것 이상이기 때문이에요.
@@ -128,10 +119,8 @@ class AutoFocusTextInput extends React.Component {
 이미지에 유용하고 설명적인 대체 텍스트를 항상 제공해 주세요.
 
 ```js
-<img src={logo} alt="로고 설명" />;
+<img src={logo} alt="로고 설명" />
 ```
-
-
 
 ## 8. 접근성 있는 양식 만들기
 
@@ -144,23 +133,19 @@ class AutoFocusTextInput extends React.Component {
 
 ## 9. 접근성 있는 색상과 대비
 
-
-
 - 모든 사람이 내용을 완전히 읽을 수 있도록 색상과 대비에 주의하세요. WCAG2는 특정 대비 및 텍스트 크기 가이드라인을 제공합니다.
 
 ## 10. React 프래그먼트
 
-여러 요소를 그룹화하고 DOM에 추가 노드를 만들지 않으려면 React 프래그먼트(``/`` 또는 `React.Fragment`)를 사용하세요. 이는 스크린 리더 사용자를 위해 깔끔한 문서 개요를 유지하는 데 도움이 됩니다.
+여러 요소를 그룹화하고 DOM에 추가 노드를 만들지 않으려면 React 프래그먼트(`/` 또는 `React.Fragment`)를 사용하세요. 이는 스크린 리더 사용자를 위해 깔끔한 문서 개요를 유지하는 데 도움이 됩니다.
 
 ```js
-<> 
+<>
   <ChildA />
   <ChildB />
   <ChildC />
 </>
 ```
-
-
 
 ## 11. React 접근성 린터
 
@@ -169,8 +154,6 @@ eslint-plugin-jsx-a11y와 같은 도구를 사용하면 따를 수 있는 일련
 # 몇 가지 출처
 
 React에서 접근성에 대해 시작할 수 있는 몇 가지 리소스입니다:
-
-
 
 - React 웹 접근성 문서: https://legacy.reactjs.org/docs/accessibility.html
 - MDN Web Docs — React에서의 접근성: https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_accessibility
