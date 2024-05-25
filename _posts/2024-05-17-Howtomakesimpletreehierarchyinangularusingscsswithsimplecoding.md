@@ -11,7 +11,7 @@ link: "https://medium.com/@jigaruvpc/how-to-make-simple-tree-hierarchy-in-angula
 ---
 
 
-```markdown
+
 ![Tree Hierarchy Example](/assets/img/2024-05-17-Howtomakesimpletreehierarchyinangularusingscsswithsimplecoding_0.png)
 
 한 가지 문자열 배열이 있다고 가정해봅시다. 만약 우리가 문자열 배열을 트리 구조로 그리고 싶다면, 어떻게 할 수 있을까요? 함께 살펴보겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@jigaruvpc/how-to-make-simple-tree-hierarchy-in-angula
 ![Tree Hierarchy Example](/assets/img/2024-05-17-Howtomakesimpletreehierarchyinangularusingscsswithsimplecoding_1.png)
 
 # 단계 1:
-```
+
 
 <div class="content-ad"></div>
 
@@ -124,7 +124,7 @@ SCSS 파일에 믹스인 함수를 만드세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 [ngClass]="'li-1'"
 [ngClass]="'li-2'"
 [ngClass]="'li-3'"
@@ -138,4 +138,3 @@ SCSS 파일에 믹스인 함수를 만드세요.
 코드를 실행하고 즐기세요!
 
 코딩을 즐기세요!!!
-```

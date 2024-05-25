@@ -1,5 +1,5 @@
 ---
-title: "프론트엔드 주간 다이제스트 363 2024년 5월 13일  5월 19일"
+title: "프론트엔드 주간 소식: 2024년 5월 13일  5월 19일"
 description: ""
 coverImage: "/assets/img/2024-05-20-FrontendWeeklyDigest3631319May2024_0.png"
 date: 2024-05-20 21:41

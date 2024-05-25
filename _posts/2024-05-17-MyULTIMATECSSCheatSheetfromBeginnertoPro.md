@@ -1,5 +1,5 @@
 ---
-title: "내 궁극의 CSS 치트 시트 초보부터 전문가까지"
+title: "프론트엔드 개발자를 위한 CSS 팁"
 description: ""
 coverImage: "/assets/img/2024-05-17-MyULTIMATECSSCheatSheetfromBeginnertoPro_0.png"
 date: 2024-05-17 21:18
@@ -68,13 +68,13 @@ h1 {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```css
 body {
  background-color: #f0f0f0;
  }
 ```
-```
+
 
 Property: margin
 Sets the margin properties.
@@ -87,7 +87,7 @@ Example:
 ```
 
 Property: padding
-```
+
 
 <div class="content-ad"></div>
 
@@ -175,30 +175,30 @@ body {
 속성: text-transform
 텍스트 대문자화를 제어합니다.
 예시:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 상속 고급 {
  텍스트-변환: 대문자;
  }
-```
+
 
 속성: 상자 그림자
 요소 주변에 그림자 효과 추가합니다.
 예시:
 
-```markdown
+
 .상자 {
  상자-그림자: 5px 5px 5px #888888;
  }
-```
+
 
 속성: 커서
 표시할 커서 유형을 지정합니다.
 예시:
-```
+
 
 <div class="content-ad"></div>
 
@@ -263,7 +263,7 @@ button {
 ```
 
 # 고급 레벨
-```
+
 
 <div class="content-ad"></div>
 

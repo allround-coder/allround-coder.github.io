@@ -1,5 +1,5 @@
 ---
-title: "JSX 이해하기 React를 위한 구문 확장"
+title: "React jsx를 이해하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-UnderstandingJSXTheSyntaxExtensionforReact_0.png"
 date: 2024-05-17 21:05

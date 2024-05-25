@@ -1,5 +1,5 @@
 ---
-title: "잘못된 길을 피하는 방법 React Hooks useState, useEffect 안내"
+title: "React Hooks useState, useEffect를 제대로 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-NavigatingPitfallsAGuidetoReactHooksuseStateuseEffect_0.png"
 date: 2024-05-20 23:26
@@ -61,7 +61,7 @@ return (
 ## 함수형 업데이트
 
 새 상태를 이전 상태를 사용하여 계산해야 할 경우 setState에 함수를 전달할 수 있어요. 이 함수는 이전 상태를 받고 업데이트된 값을 반환할 거예요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -332,7 +332,7 @@ return <input onChange={handleChangeName} />;
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 //잘못된 작성법
 info.name = value;
@@ -369,9 +369,9 @@ const {
     list = []
 } = 
 ```
-``` 
+ 
 
-```
+
 
 <div class="content-ad"></div>
 
@@ -469,7 +469,7 @@ useEffect(() => {
 
 <div class="content-ad"></div>
 
-```markdown
+
 Case 4️⃣: 두 개의 useEffect 업데이트가 서로에게 의존하며 무한 업데이트로 인해 화면이 흰색으로 나타납니다.
 
 ```js
@@ -495,7 +495,7 @@ useEffect(() => {
 ```
 
 문제:
-```
+
 
 <div class="content-ad"></div>
 

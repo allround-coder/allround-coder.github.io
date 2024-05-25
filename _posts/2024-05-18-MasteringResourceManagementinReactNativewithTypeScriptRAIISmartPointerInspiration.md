@@ -1,5 +1,5 @@
 ---
-title: "리액트 네이티브에서 TypeScript를 활용한 자원 관리 마스터하기 RAII, 스마트 포인터에 영감을 받아"
+title: "리액트 네이티브에서 TypeScript를 활용한 자원 관리 마스터하기 "
 description: ""
 coverImage: "/assets/img/2024-05-18-MasteringResourceManagementinReactNativewithTypeScriptRAIISmartPointerInspiration_0.png"
 date: 2024-05-18 21:46
@@ -12,7 +12,7 @@ link: "https://medium.com/@mohamed.ma872/mastering-resource-management-in-react-
 
 
 
-```markdown
+
 ![RAII Reimagined: Embracing Lifecycle Hooks](/assets/img/2024-05-18-MasteringResourceManagementinReactNativewithTypeScriptRAIISmartPointerInspiration_0.png)
 
 # RAII Reimagined: Embracing Lifecycle Hooks
@@ -37,7 +37,7 @@ function LocationTracker() {
   // ... 컴포넌트 로직
 }
 ```
-```
+
 
 <div class="content-ad"></div>
 

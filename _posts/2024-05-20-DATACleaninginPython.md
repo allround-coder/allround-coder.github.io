@@ -21,7 +21,7 @@ link: "https://medium.com/@studyjiger/data-cleaning-in-python-cd8abb81f6e4"
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-DATACleaninginPython_0.png)
 
 제가 데이터 세트를 가지고 있는데 빈 셀을 제거하고 싶어요 (제 경우 (5. 2015)) 빈 셀이 포함된 행을 제거할 수 있어요.
@@ -29,7 +29,7 @@ link: "https://medium.com/@studyjiger/data-cleaning-in-python-cd8abb81f6e4"
 ![image](/assets/img/2024-05-20-DATACleaninginPython_1.png)
 
 2. Fillna() : 빈 값을 fillna 메서드로 대체할 수 있어요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -43,7 +43,7 @@ link: "https://medium.com/@studyjiger/data-cleaning-in-python-cd8abb81f6e4"
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-20-DATACleaninginPython_4.png)
 
 ![Image 2](/assets/img/2024-05-20-DATACleaninginPython_5.png)
@@ -51,7 +51,7 @@ link: "https://medium.com/@studyjiger/data-cleaning-in-python-cd8abb81f6e4"
 3. Duplicate(): it can remove duplicate rows from our dataset
 
 ![Image 3](/assets/img/2024-05-20-DATACleaninginPython_6.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -65,6 +65,5 @@ link: "https://medium.com/@studyjiger/data-cleaning-in-python-cd8abb81f6e4"
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-05-20-DATACleaninginPython_9.png)
-```

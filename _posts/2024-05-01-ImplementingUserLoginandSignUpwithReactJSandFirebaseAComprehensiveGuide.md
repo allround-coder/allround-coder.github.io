@@ -182,7 +182,7 @@ export function UserAuthContextProvider({ children }) {
 <UserAuthContextProvider>
            내 앱
 </UserAuthContextProvider>
-````
+```
 
 컨텍스트 프로바이더는 여러 컴포넌트에서 필요로 하는 데이터가 있고 props를 수동으로 전달하는 것을 원치 않을 때 유용합니다. 데이터 공유를 간소화하고 코드베이스를 유지보수 가능하고 확장 가능하게 만듭니다. 그러나 컨텍스트를 과도하게 사용하면 복잡하고 관리하기 어려운 코드로 이어질 수 있습니다.
 
@@ -207,7 +207,7 @@ export function UserAuthContextProvider({ children }) {
     const googleAuthProvider = new GoogleAuthProvider();
     return signInWithPopup(auth, googleAuthProvider);
   }
-````
+```
 
 onAuthStateChanged:
 
@@ -229,7 +229,7 @@ onAuthStateChanged 함수는 Firebase 인증 시스템에 옵저버를 등록하
       unsubscribe();
     };
   }, []);
-````
+```
 
 # 5. 사용자 가입 작업중:
 

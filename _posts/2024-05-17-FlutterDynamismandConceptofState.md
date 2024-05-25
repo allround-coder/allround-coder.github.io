@@ -11,7 +11,7 @@ link: "https://medium.com/devtechie/flutter-dynamism-and-concept-of-state-a6d8da
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-05-17-FlutterDynamismandConceptofState_0.png" />
 
 이 기사는 플러터(Flutter)에서 상태와 상태 관리의 개념에 대해 다룹니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/devtechie/flutter-dynamism-and-concept-of-state-a6d8da
 # 상태(State)
 
 기억해 보면, 객체 지향 프로그래밍 패러다임에서 객체는 상태를 가지고 있습니다. 객체의 상태는 응용 프로그램 실행 중 특정 시간에 해당 객체의 속성(속성, 즉, 변수) 값 집합입니다. 따라서 객체의 상태는 속성 값 중 하나가 변경될 때 변화합니다. 따라서 상태는 객체에 대한 정보를 전달하는 것입니다. 객체의 수명 동안 상태는 사용자 인터페이스를 통해 해당 객체와 상호 작용하거나 응용 프로그램의 다른 객체들과 상호 작용함으로 인해 변경될 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -193,11 +193,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 아래 이미지에서 확인할 수 있듯, 프로그램의 출력 결과가 변경되지 않았습니다.
 
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*g3h8jKupmu3SVn2XH2gSRw.gif)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```dart
 import 'package:flutter/material.dart';
 ```
@@ -249,7 +249,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 위 코드의 출력은 아래 이미지에서 확인할 수 있습니다.
 
 ![image](https://miro.medium.com/v2/resize:fit:1028/1*iaVpA4GAfn6J7Ej966TsLQ.gif)
-```
+
 
 <div class="content-ad"></div>
 
@@ -263,7 +263,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Flutter Dynamic and Concept of State](/assets/img/2024-05-17-FlutterDynamismandConceptofState_2.png)
 
 # 요약
@@ -272,4 +272,3 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
 앱 상태는 본 기사의 범위를 벗어나는 서드파티 패키지가 필요합니다.
 
-```

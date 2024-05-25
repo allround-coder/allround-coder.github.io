@@ -1,5 +1,5 @@
 ---
-title: "JavaScript Promise 해석하기 필요한 유일한 가이드 - 파트 1"
+title: "JavaScript Promise 제대로 이해하고 넘어가자"
 description: ""
 coverImage: "/assets/img/2024-05-17-JavaScriptPromisesDemystifiedTheOnlyGuideYoullNeedPart1_0.png"
 date: 2024-05-17 03:20

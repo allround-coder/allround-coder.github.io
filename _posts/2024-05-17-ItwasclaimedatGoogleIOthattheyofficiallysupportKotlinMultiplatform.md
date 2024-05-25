@@ -1,5 +1,5 @@
 ---
-title: "Google IO에서 공식적으로 Kotlin Multiplatform을 지원한다고 발표되었습니다"
+title: "Google IO Kotlin Multiplatform을 지원 발표 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-17-ItwasclaimedatGoogleIOthattheyofficiallysupportKotlinMultiplatform_0.png"
 date: 2024-05-17 03:41

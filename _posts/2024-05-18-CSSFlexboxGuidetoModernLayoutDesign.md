@@ -1,5 +1,5 @@
 ---
-title: "CSS 플렉스박스 최신 레이아웃 디자인 안내"
+title: "CSS Flexbox 최신 레이아웃 디자인 안내"
 description: ""
 coverImage: "/assets/img/2024-05-18-CSSFlexboxGuidetoModernLayoutDesign_0.png"
 date: 2024-05-18 22:11

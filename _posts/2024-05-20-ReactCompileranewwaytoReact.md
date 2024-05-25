@@ -1,5 +1,5 @@
 ---
-title: "리액트 컴파일러 리액트의 새로운 방식"
+title: "리액트 컴파일러, 리액트의 새로운 방식"
 description: ""
 coverImage: "/assets/img/2024-05-20-ReactCompileranewwaytoReact_0.png"
 date: 2024-05-20 22:13
@@ -49,7 +49,7 @@ export default function Hello() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 // transpiled code (without compiler)
 export default function Hello() {
@@ -89,7 +89,7 @@ The first block is responsible for loading the memo cache, which caches the comp
 The second `if` statement is where the compiler saves our `div` in a cache. If there is a re-render and nothing in the component has changed, we get the cached component. This is how static content is handled by the compiler.
 
 Let’s look at a more advanced code snippet to see how the compiler manages states in the code.
-```
+
 
 <div class="content-ad"></div>
 
@@ -119,7 +119,7 @@ export default function Hello() {
 ```
 
 지금 변환된 코드를 가져왔습니다. 상태는 최적화 없이 변환됩니다. 이제 컴파일된 코드를 살펴봅시다.
-```
+
 
 <div class="content-ad"></div>
 

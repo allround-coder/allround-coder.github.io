@@ -1,5 +1,5 @@
 ---
-title: "RxJS Creation Operators 마스터하기 데이터 스트림의 힘을 발휘하세요"
+title: "RxJS Creation Operators 마스터하기"
 description: ""
 coverImage: "/assets/img/2024-05-18-MasteringRxJSCreationOperatorsUnlockingthePowerofDataStreams_0.png"
 date: 2024-05-18 22:03
@@ -191,7 +191,7 @@ const subscribe = source.subscribe(val => console.log(val));
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 const numbers = from(new Promise((resolve, reject) => resolve('Hello World')));
 numbers.subscribe((data) => {
@@ -380,4 +380,3 @@ observableIfYouHaveAccess.subscribe({
 요약하면, RxJS Creation Operators는 JavaScript에서 반응형 프로그래밍의 기본 구성 요소입니다. 다양한 데이터 소스에서 Observable을 생성할 수 있게 해줌으로써, 이러한 연산자는 비동기 데이터 스트림을 효율적으로 처리할 수 있도록 개발자들을 지원합니다. API에서 데이터를 가져오는 ajax, 사용자 상호 작용에 반응하는 fromEvent, interval 및 timer를 사용하여 작업을 예약하는 등, 이러한 연산자들은 반응형 애플리케이션에서 데이터 흐름을 유연하고 강력하게 관리할 수 있는 방법을 제공합니다. 이러한 생성 연산자를 숙달하는 것은 RxJS의 모든 잠재력을 발휘하고 반응형 프로그래밍을 통한 반응형, 확장 가능하고 유지보수 가능한 애플리케이션을 구축하는 데 필수적입니다. 이 연산자들을 깊이 이해하고 그 기능을 실험하며, RxJS를 활용한 반응형 프로그래밍 마스터의 길에 나아가 보세요.
 
 즐거운 코딩되세요!
-```

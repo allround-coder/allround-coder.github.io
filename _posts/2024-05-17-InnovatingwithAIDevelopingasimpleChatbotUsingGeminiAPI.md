@@ -1,5 +1,5 @@
 ---
-title: "AI 혁신 Gemini API를 활용한 간단한 챗봇 개발"
+title: "Gemini API를 활용한 간단한 챗봇 개발하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-InnovatingwithAIDevelopingasimpleChatbotUsingGeminiAPI_0.png"
 date: 2024-05-17 03:21

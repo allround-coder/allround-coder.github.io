@@ -1,5 +1,5 @@
 ---
-title: "리액트 성능 향상 "
+title: "리액트 웹사이트 성능 향상 시키는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-performanceinreact_0.png"
 date: 2024-05-18 21:42

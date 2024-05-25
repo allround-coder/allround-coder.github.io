@@ -1,5 +1,5 @@
 ---
-title: "Django 대 Nodejs Python이 웹 개발 전쟁에서 밀리고 있는가요"
+title: "Django vs Nodejs Python이 웹 개발 전쟁에서 밀리고 있다?"
 description: ""
 coverImage: "/assets/img/2024-05-18-DjangovsNodejsIsPythonLosingtheWebDevelopmentWar_0.png"
 date: 2024-05-18 21:24

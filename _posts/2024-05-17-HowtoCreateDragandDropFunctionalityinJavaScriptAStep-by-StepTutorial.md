@@ -1,5 +1,5 @@
 ---
-title: "JavaScript에서 드래그 앤 드롭 기능 만들기 단계별 튜토리얼"
+title: "JavaScript로 드래그 앤 드롭 기능 만들기(코드 있음)"
 description: ""
 coverImage: "/assets/img/2024-05-17-HowtoCreateDragandDropFunctionalityinJavaScriptAStep-by-StepTutorial_0.png"
 date: 2024-05-17 21:32

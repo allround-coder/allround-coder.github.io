@@ -104,7 +104,7 @@ link: "https://medium.com/towards-data-science/exploring-causality-in-python-dif
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-20-ExploringcausalitywithPythonDifference-in-differences_3.png" />
 
 이전/이후 비교는 다른 결과를 보여줍니다. 최저 임금을 인상한 후, 뉴져지 주의 패스트푸드 레스토랑의 평균 고용량이 증가했습니다.
@@ -112,7 +112,7 @@ link: "https://medium.com/towards-data-science/exploring-causality-in-python-dif
 유감스럽게도, 이러한 결론은 결정적이지 않습니다. 이 간단한 비교에는 많은 결함이 있습니다. 처리 전후를 비교할 때 강력한 가정 하나를 보여줍니다: 최저 임금이 인상되지 않았다면 뉴저지의 고용 수준은 변경 전과 동일하게 유지되었을 것이라는 것입니다.
 
 직관적으로, 이는 그럴듯한 시나리오로 보이지는 않습니다. 이 기간 동안 일반 경제 활동이 증가할 가능성이 있었고, 정부 프로그램이 고용을 보조할 수도 있었으며, 레스토랑 업계가 수요 증가로 큰 폭으로 경험할 수도 있었습니다. 이러한 시나리오 중 일부는 고용 수준에 영향을 미칠 수 있습니다. 간단히 선천과 후천을 비교하여 처리의 인과 관계적 영향을 확립하는 데는 보통 충분하지 않습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -173,7 +173,7 @@ link: "https://medium.com/towards-data-science/exploring-causality-in-python-dif
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot](/assets/img/2024-05-20-ExploringcausalitywithPythonDifference-in-differences_4.png)
 
 한번 이 결과를 초래한 것에 대해 고려해 보겠습니다. 뉴저지의 고용은 크게 증가하지 않았습니다. 그러나 펜실베이니아의 평균 고용률은 감소했습니다.
@@ -181,7 +181,7 @@ link: "https://medium.com/towards-data-science/exploring-causality-in-python-dif
 최저 시급이 오르지 않았다면, 뉴저지의 평균 고용은 펜실베이니아에서 관측된 추세를 따라가는 것으로 예상됩니다. 최저 시급이 오르지 않았다면, 평균 고용은 더 낮았을 것입니다.
 
 차트에서 보면, 뉴저지의 추세가 펜실베이니아에서 관측된 추세를 따르는 대역상실한 선으로 표시되어 있습니다. 대역상실한 선과 뉴저지에서 관측된 실제 값과의 차이는 2.75의 치료 효과를 나타냅니다.
-```
+
 
 <div class="content-ad"></div>
 

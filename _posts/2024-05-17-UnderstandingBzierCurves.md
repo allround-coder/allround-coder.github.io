@@ -1,5 +1,5 @@
 ---
-title: "베지에 곡선 이해하기"
+title: "css 애니메이션을 위한 베지에 곡선(Bezier Curves) 이해하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-UnderstandingBzierCurves_0.png"
 date: 2024-05-17 21:20
@@ -31,7 +31,7 @@ link: "https://medium.com/@mmrndev/understanding-b%C3%A9zier-curves-f6eaa0fa6c7d
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*j6VPAteSfVSRWswKIeQtPw.gif)
 
 You can also use as many control points as you like. The more control points you add, the greater the control you have over the final shape of your curve. As an example, the cubic-bezier function in CSS uses a bézier curve with 4 points (hence cubic) that describe the evolution of your animation.
@@ -39,7 +39,7 @@ You can also use as many control points as you like. The more control points you
 ## What’s going on?
 
 That’s great and all, but how do we get a curve from just positioning a bunch of points around?
-```
+
 
 <div class="content-ad"></div>
 
@@ -103,7 +103,7 @@ That’s great and all, but how do we get a curve from just positioning a bunch 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:480/1*jFpYqpzDRr0F6HppPpr9kA.gif)
 
 이것을 이해하는 것은 중요합니다. 왜냐하면 Bézier 곡선을 공부할 때 항상 나오는 특별한 주제인 De Casteljau 알고리즘의 설명이기 때문입니다.
@@ -111,11 +111,11 @@ That’s great and all, but how do we get a curve from just positioning a bunch 
 ## De Casteljau의 알고리즘
 
 이 알고리즘은 곡선의 각 점을 평가하기 위해 이 재귀적 정의를 사용합니다. 이는 계산을 단계별로 나누며, 첫 번째 단계에는 개별 제어점이 있고, 최종 단계에는 원하는 점이 있으며, 중간 단계에는 재귀적 정의를 통해 계산하는 모든 중간 점들이 있습니다. 어떻게 3차 곡선에서 작동하는지 살펴봅시다:
-```  
+  
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![UnderstandingBzierCurves_8](/assets/img/2024-05-17-UnderstandingBzierCurves_8.png)
 
 따라서, 레벨 0의 각 포인트가 제어 포인트 자체임을 감안할 때, 레벨 j의 임의의 점 Pi에 대해, De Casteljau 알고리즘은 해당 값이 다음과 같을 것을 알려줍니다:
@@ -123,7 +123,7 @@ That’s great and all, but how do we get a curve from just positioning a bunch 
 ![UnderstandingBzierCurves_9](/assets/img/2024-05-17-UnderstandingBzierCurves_9.png)
 
 언제나, 이것이 베지에 곡선에서 재귀 패턴을 사용하고 있다는 점을 기억해 주세요. 이는 버너스타인 다항식에서 유도되었습니다.
-```
+
 
 <div class="content-ad"></div>
 

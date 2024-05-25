@@ -1,5 +1,5 @@
 ---
-title: "2024년 최고의 React Native 드롭다운 컴포넌트 상위 4개"
+title: "2024년 최고의 React Native 드롭다운 컴포넌트 4개"
 description: ""
 coverImage: "/assets/img/2024-05-18-Top4ReactNativeDropdowncomponentsin2024_0.png"
 date: 2024-05-18 21:19

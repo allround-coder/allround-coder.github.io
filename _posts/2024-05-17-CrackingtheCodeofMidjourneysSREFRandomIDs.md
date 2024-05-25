@@ -1,5 +1,5 @@
 ---
-title: "중간여정의 SREF 랜덤 ID 코드 해석하기"
+title: "SREF 랜덤 ID 코드 해석하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-CrackingtheCodeofMidjourneysSREFRandomIDs_0.png"
 date: 2024-05-17 04:27

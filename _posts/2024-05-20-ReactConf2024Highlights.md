@@ -1,5 +1,5 @@
 ---
-title: "리액트 컨퍼런스 2024 모두 자랑하기"
+title: "리액트 컨퍼런스 2024 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-20-ReactConf2024Highlights_0.png"
 date: 2024-05-20 22:12
@@ -41,7 +41,7 @@ React Native는 새로운 아키텍처를 소개했으며 이제 베타 버전�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![](/assets/img/2024-05-20-ReactConf2024Highlights_4.png)
 
 The React Native team officially recommends using Expo for all new React Native applications. Expo provides a comprehensive set of tools and services that streamline the development process, making it easier to build, deploy, and quickly iterate on React Native apps. Explore the React Native website to learn more.
@@ -49,7 +49,7 @@ The React Native team officially recommends using Expo for all new React Native 
 # Universal React Server Components
 
 ![](/assets/img/2024-05-20-ReactConf2024Highlights_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -93,7 +93,7 @@ React Native는 TV 애플리케이션 및 공간 컴퓨팅에 대한 향상된 �
 
 <div class="content-ad"></div>
 
-```
+
 ![ReactConf2024Highlights_9](/assets/img/2024-05-20-ReactConf2024Highlights_9.png)
 
 공식 React Conf 앱은 새 React 컴파일러를 활용하여 Google Play 및 App Store에서 사용할 수 있습니다.
@@ -101,11 +101,11 @@ React Native는 TV 애플리케이션 및 공간 컴퓨팅에 대한 향상된 �
 ![ReactConf2024Highlights_10](/assets/img/2024-05-20-ReactConf2024Highlights_10.png)
 
 React Native를 위한 새 홈페이지가 론칭되었습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![ReactConf 2024 Highlights](/assets/img/2024-05-20-ReactConf2024Highlights_11.png)
 
 마이크로소프트는 Windows 시작 메뉴와 오피스 워드 데스크톱을 포함한 주요 제품들에서 React Native를 광범위하게 활용하고 있습니다. 이를 통해 크로스 플랫폼 기능을 활용하여 사용자 경험을 향상시키고 소프트웨어 스위트 전반에 걸쳐 개발을 간소화하고 있습니다.
@@ -113,7 +113,7 @@ React Native를 위한 새 홈페이지가 론칭되었습니다.
 요약하면, React Conf 2024은 다양한 업데이트와 새로운 기술로 React 및 React Native의 미래에 동적인 방향을 제시했습니다. 생방송 이벤트를 놓친 분들이나 세션을 다시 보고 싶은 분들은 녹화된 컨퍼런스를 시청하여 이 영향력 있는 이벤트에서 공유된 본질과 통찰력을 완전히 경험해보세요.
 
 제 LinkedIn에서 언제든지 연락주시기 바랍니다.
-```
+
 
 <div class="content-ad"></div>
 

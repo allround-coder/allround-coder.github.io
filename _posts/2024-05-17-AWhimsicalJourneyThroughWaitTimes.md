@@ -106,7 +106,7 @@ wiki_df.head()
 결과로 나온 Pandas 데이터프레임은 샘플된 기사 중 알파벳상으로 가장 빠른 기사(제목 기준)로 시작합니다. 이 기사는 몽골 출신인 매우 키가 큰 사람 인 Öndör Gongor에 대해 독자들에게 알려줍니다:
 
 ![image](/assets/img/2024-05-17-AWhimsicalJourneyThroughWaitTimes_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -224,7 +224,7 @@ print(popcorn_df.describe())
 
 이 코드는 다음과 같은 통계 요약이 포함된 판다 데이터프레임을 생성합니다:
 
-```
+
                       Time Delta
 count                      30000
 mean   0 days 00:05:00.060355606
@@ -234,7 +234,7 @@ min    0 days 00:03:52.588244397
 50%    0 days 00:04:59.971380399
 75%    0 days 00:05:10.239357827
 max    0 days 00:05:59.183245298
-```
+
 
 <div class="content-ad"></div>
 
@@ -360,7 +360,7 @@ wiki_df
 
 CDF 컬럼은 누적 분포 함수(Cumulative Distribution Function)를 나타내며, 가장 짧은 대기 시간에는 0.0에 가까운 값이 있고, 가장 긴 대기 시간에는 1.0이 있습니다. 다시 말해, 각 행의 순위가 분수로 나타난 것입니다. 위키피디아 데이터프레임은 이제 다음과 같습니다:
 
-```markdown
+
 | Time Delta  |  CDF  |
 |-------------|-------|
 | 0 days 00:00:10 | 0.1 |
@@ -369,7 +369,7 @@ CDF 컬럼은 누적 분포 함수(Cumulative Distribution Function)를 나타�
 | 0 days 00:02:00 | 0.7 |
 | 0 days 00:05:00 | 0.9 |
 | 0 days 00:10:00 | 1.0 |
-```
+
 
 이제 CDF(누적 분포 함수)를 대기 시간 Time Delta(x-축)에 대해 그릴 수 있습니다. 파이썬에서 다음과 같은 플로팅 코드를 사용할 수 있습니다:
 
@@ -429,7 +429,7 @@ print(f"복권 당첨 지수 중앙값은 {seconds_to_text(lotto_expon_dist.medi
 복권 당첨 지수 중앙값은 131일 22시간 32분 20초 입니다. 스케일 매개변수는 190일 8시간 21분 입니다.
 
 적합된 곡선의 중앙값은 약 132일로, 경험적인 중앙값인 133일과 근접합니다. 지수곡선을 관행적으로 스케일이라는 단일 숫자로 매개변수화하는데, 이것은 분포의 평균에 해당하지만 평균에서 중앙값을 쉽게 계산하거나 그 반대로 할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -468,7 +468,7 @@ wait_cdf("Wiki Edits", wiki_df, wiki_wait_ticks, dist=wiki_expon_dist, dist_labe
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-AWhimsicalJourneyThroughWaitTimes_12.png)
 
 이런, 이 곡선 맞추기 결과는 정말 최악이네요! 문제는 지수 분포가 "복권 당첨"과 유사한 데이터만 모델링한다는 것입니다. 구체적으로 말하면, 대기 시간이 이전 대기 시간에 관계없이 기대 대기 시간이 동일한 경우에 해당합니다. 이전 대기 시간을 무시하는 대기 시간에 대해 좌우되는 경우, 이것이 메모리리스(exponential)이라고 불립니다. 또한 연속 분포 중에서 지수 분포는 유일한 메모리리스 분포입니다.
@@ -476,7 +476,7 @@ wait_cdf("Wiki Edits", wiki_df, wiki_wait_ticks, dist=wiki_expon_dist, dist_labe
 그렇다면 분포에 메모리가 필요하다면 어떨까요? 다음으로 시도할 수 있는 가장 간단한 분포는 와이블(Weibull) 분포입니다.
 
 와이블 분포는 형태(shape)와 척도(scale) 두 매개변수로 매개화됩니다. 복권 데이터로 시작해 보죠:
-```
+
 
 <div class="content-ad"></div>
 
@@ -496,7 +496,7 @@ wait_cdf("복권 당첨", lotto_df, wiki_wait_ticks, dist=lotto_weibull_dist, di
 <img src="/assets/img/2024-05-17-AWhimsicalJourneyThroughWaitTimes_13.png" />
 
 팝콘 데이터에 위블을 적합하려고 하면 무엇이 발생하나요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -513,7 +513,7 @@ wait_cdf("Popcorn", popcorn_df, popcorn_ticks, dist=popcorn_weibull_dist, dist_l
 안전하진 않지만, 이 적합은 지수 함수의 적합보다 훨씬 낫습니다. 모양 모수의 값이 20임을 주목하세요. Weibull의 모양 모수가 1보다 큰 경우 "대기 시간이 길수록 대기 시간을 기대하는 것이 줄어든다"를 나타냅니다.
 
 마지막으로, 위키피디아 데이터에 Weibull을 시도해보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 

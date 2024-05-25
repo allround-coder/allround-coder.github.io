@@ -1,5 +1,5 @@
 ---
-title: "Dart Flutter에서의 믹스인 - 상속과 어떻게 다른가요"
+title: "Dart Flutter에서의 믹스인 사용하기"
 description: ""
 coverImage: "/assets/img/2024-05-18-MixinsinDartFlutterAndHowitisdifferentfromInheritance_0.png"
 date: 2024-05-18 22:20
@@ -168,7 +168,7 @@ void main(){
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:996/1*j5nDu39KHxe3669LfJKieg.gif)
 
 ## 3. mixin에 있는 기능:
@@ -176,13 +176,13 @@ void main(){
 mixin에서의 on 키워드:
 
 원하는 클래스의 하위 클래스에서만 사용되도록 mixin을 제한하려면 mixin 클래스를 on 키워드와 함께 선언해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
 Markdown 형식에 맞게 표 태그를 변경해주세요.
 
-```markdown
+
 mixin `mixinname` on `class_name_on_which_mixin_should_restricted`
 
 *주의: 주석에 집중*
@@ -203,11 +203,11 @@ class Product{
 ```
 
 여기서 Discount mixin은 제한되어서 Product 클래스 Type의 하위 클래스와 함께만 사용할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 // 컴파일 시간에 오류가 발생하여 텔레비전이 Product를 구현해야 함을 지정
 class Television with MixinDiscount {
@@ -230,7 +230,7 @@ class Television extends Product with MixinDiscount {
 여러 mixin 상속:
 
 하나의 함수를 포함하는 MixinA 및 MixinB를 선언해봅시다.
-```
+
 
 <div class="content-ad"></div>
 

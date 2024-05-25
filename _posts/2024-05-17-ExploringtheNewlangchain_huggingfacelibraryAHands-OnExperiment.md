@@ -1,5 +1,5 @@
 ---
-title: "새로운 langchain_huggingface 라이브러리 탐험 실습으로 배우기"
+title: "새로운 langchain_huggingface 라이브러리 만들면서 배우기"
 description: ""
 coverImage: "/assets/img/2024-05-17-ExploringtheNewlangchain_huggingfacelibraryAHands-OnExperiment_0.png"
 date: 2024-05-17 20:46
@@ -11,7 +11,6 @@ link: "https://medium.com/@shreyasshinde/exploring-the-new-langchain-huggingface
 ---
 
 
-```markdown
 <img src="/assets/img/2024-05-17-ExploringtheNewlangchain_huggingfacelibraryAHands-OnExperiment_0.png" />
 
 # 배경
@@ -19,7 +18,6 @@ link: "https://medium.com/@shreyasshinde/exploring-the-new-langchain-huggingface
 최근에 Langchain과 HuggingFace가 함께 새로운 파트너 패키지를 발표했습니다. Langchain은 이미 커뮤니티에서 유지보수되는 HuggingFace 패키지를 보유하고 있었지만, 이 새로운 버전은 HuggingFace가 Langchain의 파트너로 공식 지원하는 것입니다! Langchain은 다양한 LLM과 상호 작용하기 위한 공통 인터페이스를 제공하며, HuggingFace는 오픈 소스 모델을 포함한 호스팅된 LLM에 대한 추론 엔드포인트를 제공합니다.
 
 이 블로그에서는 HuggingFace의 오픈 소스 모델의 추론을 이 새로운 Langchain 라이브러리로 사용하는 내 경험을 공유하겠습니다.
-```
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@nandhuraj/comparing-flutters-local-databases-cb6bc770
 ---
 
 
-```markdown
+
 ![Comparison of local database options](/assets/img/2024-05-17-ComparingFluttersLocalDatabases_0.png)
 
 Flutter 앱 개발에서 로컬 데이터를 효율적으로 관리하는 것은 원활한 사용자 경험을 만들기 위해 중요합니다. 로컬 데이터베이스는 앱 내에서 데이터를 저장, 검색 및 관리하는 데 중요한 역할을 합니다. Flutter에서 로컬 데이터베이스를 구현하는 여러 옵션이 있으며, 각각의 기능, 장단점을 가지고 있습니다. 인기있는 로컬 데이터베이스 옵션인 SQLite, Hive, ObjectBox, Isar, FLor, Drift, Sembast, Couchbase Lite (CBL), Realm을 자세히 비교해보겠습니다.
@@ -19,7 +19,7 @@ Flutter 앱 개발에서 로컬 데이터를 효율적으로 관리하는 것은
 # SQLite 🗃️
 
 특징:
-```
+
 
 <div class="content-ad"></div>
 

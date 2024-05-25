@@ -424,7 +424,7 @@ for (i = 0; i < sortedCategories.categories.length; i++) {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Sorting 400 Tabs in 60 Seconds With JavaScript, Rust, and GPT-3](/assets/img/2024-05-20-Sorting400Tabsin60SecondsWithJavaScriptRustandGPT-3_4.png)
 
 루스트에 대해 설명할 필요가 없을 것 같아요. 돌 아래에 살았더라도 루스트에 대해 들어봤을 거에요. 개발 커뮤니티는 루스트를 하늘 높이 칭찬하고 있어요. C 언어의 속도를 가지고 있으면서 자바의 안전성과 AH-64 아파치 공격 헬리콥터처럼 완벽한 헬리콥터 부모 역할을 하는 빌림 시스템을 가지고 있어요.
@@ -432,7 +432,7 @@ for (i = 0; i < sortedCategories.categories.length; i++) {
 하지만 문법이 깔끔하고, 성능이 놀라우며, 매크로도 멋있고, 대부분 메모리에 엄격하지만 여전히 원시 포인터에 액세스할 수 있고 !unsafe해도 돼요.
 
 그래서 이 언어를 익히는 느낌을 받아볼까요? 좀 재미있게 해보죠.
-```
+
 
 <div class="content-ad"></div>
 
@@ -479,7 +479,7 @@ async fn axum() -> shuttle_service::ShuttleAxum {
     Ok(sync_wrapper)
 }
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -508,7 +508,7 @@ async fn axum() -> shuttle_service::ShuttleAxum {
 
 위와 같이 `table` 태그를 Markdown 형식으로 바꿀 수 있습니다.
 
-```markdown
+
 | 구조체 ReallyBigModel |
 | ---- | 
 | id: String |
@@ -527,7 +527,7 @@ impl ToJson for ReallyBigModel {
          }.toJson() 
    }
 }
-```
+
 
 조금 귀찮죠? 매일 이렇게 많은 보일러플레이트를 작성하고 싶지 않으시죠.
 
@@ -894,11 +894,11 @@ fn build_prompt(items: Vec<Item>,
 
 <div class="content-ad"></div>
 
-```markdown
+
 [의존성]
 ...
 reqwest = { version = "0.11", features = ["json"] }
-```
+
 
 여기서 우리는 오래된 좋은 빌더 패턴을 통해 HTTP 클라이언트를 구축할 수 있습니다.
 
@@ -1089,7 +1089,7 @@ match req {
 ```
 
 축하합니다! 우리는 안전하게 요청을 보내고 이 과정에서 모든 안좋은 상황과 기쁜 상황을 모두 다루었습니다. 
-```
+
 
 <div class="content-ad"></div>
 
@@ -1138,7 +1138,7 @@ With all these matches, our code is starting to look quite messy. One way to avo
 The data will pass only through the corresponding operands so we can safely map our data and errors to the proper format.
 
 We’ll use it to reduce the first set of nested matches and we’ll leave the last one as a match. Why? Because async closures still aren’t stable in Rust it seems. We’ll map all the errors into an `Err(String)` format so we can return it properly.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1185,7 +1185,7 @@ async fn sort_recursively(sorted_categories: Vec<CategoryWithItems>,
 컴파일되지 않네요.
 
 음, 한 가지 생각하지 못한 것은 비동기 재귀입니다.
-```
+
 
 <div class="content-ad"></div>
 

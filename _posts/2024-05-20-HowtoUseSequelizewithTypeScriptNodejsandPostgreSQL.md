@@ -129,7 +129,7 @@ npm install --save pg pg-hstore # Postgres
 <img src="/assets/img/2024-05-20-HowtoUseSequelizewithTypeScriptNodejsandPostgreSQL_1.png" />
 
 src/database/config 폴더의 index.ts 파일에 데이터베이스 연결을 정의하고, .env npm 모듈을 사용하여 환경 변수를 가져옵니다. 환경에 따른 로직은 필요에 따라 수정할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -181,7 +181,7 @@ export default sequelizeConnection;
 ```
 
 src/App.ts 또는 서버 응용 프로그램의 진입 파일에 assertDatabaseConnection 메서드를 만들어 데이터베이스 확인을하는 메서드를 호출하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -347,7 +347,7 @@ Enquiry.init(
 - 라우트 — 컨트롤러 및 해당 레스트 엔드포인트의 등록 방법을 등록합니다.
 - 공통 서비스 —이 서비스는 여러 데이터베이스 모델 간의 일반 작업 수행에 책임이 있습니다.
 - 이를 구성 요소 서비스에 주입하고 구성 요소 서비스에서 컨트롤러에서 해당 메서드에 액세스할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

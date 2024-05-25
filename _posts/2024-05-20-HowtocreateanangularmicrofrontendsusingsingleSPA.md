@@ -100,7 +100,7 @@ single-spa-angular@9.1.2 패키지가 설치되고 실행됩니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 ? Does your application use Angular routing? Yes
 ? What port should your project run on? 4200
@@ -111,7 +111,7 @@ single-spa-angular@9.1.2 패키지가 설치되고 실행됩니다.
 단계 -1 → 루트 디렉토리 내의 src/index.ejs 파일을 열어 앱이 호스팅된 위치를 import 맵 내에 추가합니다. 현재는 로컬 호스트이지만 앞으로는 배포된 서버 위치가 될 것입니다.
 
 ![How to create an angular micro frontend using single SPA](/assets/img/2024-05-20-HowtocreateanangularmicrofrontendsusingsingleSPA_1.png)
-```
+
 
 <div class="content-ad"></div>
 

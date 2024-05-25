@@ -11,7 +11,7 @@ link: "https://medium.com/@deathshadow/testing-website-speed-and-quality-e37622b
 ---
 
 
-```markdown
+
 ![Speed and Quality](/assets/img/2024-05-20-TestingWebsiteSpeedAndQuality_0.png)
 
 웹 사이트나 애플리케이션의 속도, 크기 및 효율성은 사용자뿐만 아니라 백엔드에서도 가장 중요한 요소 중 하나입니다. 큰, 뚱뚱하고 부풀어 올라간 코드베이스는 프레임워크 팬보이들의 반대 주장에도 불구하고 작업이 어려워지며, 초과 서버 부하를 초래합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@deathshadow/testing-website-speed-and-quality-e37622b
 접근성 및 효율성 컨설턴트로 프리랜싱을 하면서 지난 15년 동안 수많은 웹사이트를 살펴본 적이 있습니다. 이러한 웹사이트들은 매우 낮은 트래픽을 처리하기 위해 고군분투하고 있는 것으로 나타났습니다. 콘텐츠와 기능이 $10/mo VPS보다 더 필요하지 않은 매니지드 전용 호스팅 계획으로 다중 프로세서 비용이 많이 드는 것입니다.
 
 그러나 가장 끔찍한 것은 해당 사이트들이 "반드시 그렇게" 되어야 하는 무수한 엘리베이터들이다. "기업용 등급"이라고 주장하며 ("그게 실제로 무엇을 의미하는지. "바보들이기 때문에 쓰레기인가 봅니다"); "협업을 위해 필요한 코드를 십 배로 작성해야한다" 또는 "새로운 입사자를 빠르게 숙달" 시킬 필요가 있다고 주장하는 등 자신의 무능함을 덮기 위한 모든 헛소리와 함께. 내 이전 기사의 댓글을 다시 읽어보면 많은 귀찮은 변명들을 볼 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -71,7 +71,7 @@ https://spotlight.tailwindui.com/about
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![TestingWebsiteSpeedAndQuality](/assets/img/2024-05-20-TestingWebsiteSpeedAndQuality_3.png)
 
 전송 크기의 1/5이지만 파일 개수의 1/4, DOMContentReady에 도달하는 시간은 1/3로 단축되며 서브 페이지에 대한 사전 캐싱을 활용하여 SPA / CSR JavaScript의 90%가 무의미한 코드 팽창으로 소멸되는 경우가 있습니다...
@@ -79,7 +79,7 @@ https://spotlight.tailwindui.com/about
 그러나 통계와 마케팅을 진지하게 검토하는 사람들이 이 두 숫자를 매우 심각하게 받아 듭니다. 사용자가 사이트를 3초 안에 포기할 수 있다는 사실을 알기 때문입니다! 4초 이상이면 25% 이상의 탈퇴 위험이 있으며, 그 이후로매초마다 16%가 증가합니다.
 
 탈퇴란 사용자가 "이건 말아먹겠다. 다른 데 가야지!" 하는 것을 비하한 용어입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -93,7 +93,7 @@ https://spotlight.tailwindui.com/about
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Testing Website Speed and Quality](/assets/img/2024-05-20-TestingWebsiteSpeedAndQuality_4.png)
 
 브라우저는 속도 평가에 중요한 부분입니다. 자동화를 믿지 말고 실제 브라우저에서 실제 환경에서 테스트하는 것이 더 현명합니다.
@@ -101,11 +101,11 @@ https://spotlight.tailwindui.com/about
 각 브라우저 엔진은 파티에 자신만의 특별한 도구를 가져옵니다. 파이어폭스의 검은 네트워크 탭은 실제 파일 크기를 보여줍니다. 압축된 크기뿐만 아니라 실제 크기를 보여주죠. 크롬 같은 세부사항은 보여주지 않습니다!
 
 파이어폭스에서 페이지를 로드하고 문서 인스펙터를 열려면 마우스 오른쪽 버튼을 클릭하고 "검사"를 선택하거나 F12를 누르세요 — 그 안에 탭이 나타납니다. 위의 FailwindUI 템플릿을 사용하여 "네트워크" 탭으로 이동하고 캐시를 지우고 페이지를 다시 로드하세요: CTRL-F5
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-TestingWebsiteSpeedAndQuality_5.png)
 
 우리는 모든 파일에 대한 "폭포수"를 얻습니다. 기본 정렬 순서는 파일이 로드된 순서이며, 오른쪽의 그래프에서는 지연, 핸드셰이킹, 전송 시간을 보여줍니다. 두 가지 파일 크기를 얻을 수 있습니다: 실제 파일 크기 및 전송될 때의 크기. 후자의 숫자는 일반적으로 파일이 gzip 압축으로 전송된 경우 더 작을 것입니다.
@@ -113,7 +113,7 @@ https://spotlight.tailwindui.com/about
 푸터에 있는 정보도 중요합니다. DOMContentLoaded는 브라우저가 페이지 렌더링을 시작하기에 충분한 정보를 갖고 있다고 판단하는 시간이며, "로드"는 기본적으로 렌더링이 완료된 시점입니다. 자주 JavaScript의 로드 후 파일이 있을 수 있으며, 이는 Reflow를 강제할 수도 있습니다(결과적으로 불편한 동작이 발생할 수 있음) 또는 사용자가 아직 수행하지 않은 조치를 위해 로드될 수 있습니다.
 
 또한 파비콘은 항상 페이지가 "완료"된 후에 로드됨을 기억해 주세요.
-```
+
 
 <div class="content-ad"></div>
 

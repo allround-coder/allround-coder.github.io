@@ -225,7 +225,7 @@ export default Extra;
 
 Home.js
 
-````
+```
 
 
 
@@ -235,7 +235,7 @@ const Home = () => {
     return <div>홈 페이지</div>;
 };
 export default Home;
-````
+```
 
 Login.js
 
@@ -267,7 +267,7 @@ export default Login;
 
 우리는 사용자 상태 변수를 생성하고 입력 필드를 추가했습니다. 입력란에 입력된 데이터는 사용자를 위해 보관되며 로그인할 때 전달됩니다.
 
-````
+```
 
 
 
@@ -289,13 +289,13 @@ export const Navbar = () => {
         </nav>
     );
 };
-````
+```
 
 서로 다른 경로 간 이동이 간단해지도록 navbar를 추가했습니다. 프로필 링크는 로그인한 사용자를 위해 제공되지만, 아직 인증을 받지 않은 사용자에게는 로그인 링크가 표시됩니다.
 
 <img src="/assets/img/2024-05-12-AuthenticationandAuthorizationinreact_3.png" />
 
-````md
+```md
 ![Authentication and Authorization in React](/assets/img/2024-05-12-AuthenticationandAuthorizationinreact_4.png)
 
 Profile.js
@@ -323,11 +323,11 @@ const Profile = () => {
 
 export default Profile;
 ```
-````
+```
 
 We used useAuth() to access user and logout(). We added a logout button to handle logout operations and displayed the username of the user who is presently logged in.
 
-````
+```
 
 
 
@@ -339,7 +339,7 @@ const Unauthorized = () => {
  return <div>이 페이지를 보기 위한 권한이 없습니다</div>;
 };
 export default Unauthorized;
-````
+```
 
 RoutePath.js
 

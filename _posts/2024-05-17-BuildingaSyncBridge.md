@@ -1,5 +1,5 @@
 ---
-title: "동기화 브리지 구축하기"
+title: "JavaScript에서 이벤트 기반 API를 Promises로 적용하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-BuildingaSyncBridge_0.png"
 date: 2024-05-17 20:29

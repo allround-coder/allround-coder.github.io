@@ -1,5 +1,5 @@
 ---
-title: "Angular에서 의존성 주입Dependency Injection을 사용하여 브라우저 글로벌 객체에 접근하기"
+title: "Angular에서 의존성 주입 Dependency Injection을 사용하여 브라우저 글로벌 객체에 접근하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-AccessingBrowserGlobalObjectsinAngularwithDependencyInjection_0.png"
 date: 2024-05-17 21:15

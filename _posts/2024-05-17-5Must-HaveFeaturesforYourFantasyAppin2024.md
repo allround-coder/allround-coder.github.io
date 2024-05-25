@@ -1,5 +1,5 @@
 ---
-title: "2024년 판타지 앱에 반드시 필요한 5가지 기능"
+title: "판타지 앱에 반드시 필요한 5가지 기능 (2024년 최신)"
 description: ""
 coverImage: "/assets/img/2024-05-17-5Must-HaveFeaturesforYourFantasyAppin2024_0.png"
 date: 2024-05-17 03:40

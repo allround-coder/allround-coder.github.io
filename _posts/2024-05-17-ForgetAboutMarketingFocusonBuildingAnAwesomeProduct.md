@@ -1,5 +1,5 @@
 ---
-title: "마케팅은 잊고 멋진 제품을 만드는 데 집중하세요"
+title: "마케팅은 잊고 멋진 제품을 만드는 데 집중해야하는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-17-ForgetAboutMarketingFocusonBuildingAnAwesomeProduct_0.png"
 date: 2024-05-17 21:55
@@ -11,7 +11,7 @@ link: "https://medium.com/@mariusbongarts/forget-about-marketing-focus-on-buildi
 ---
 
 
-```markdown
+
 ![Forget About Marketing, Focus on Building An Awesome Product](/assets/img/2024-05-17-ForgetAboutMarketingFocusonBuildingAnAwesomeProduct_0.png)
 
 창업자 여정을 시작하신 분이라면 멋진 제품을 만들고 싶어하는데 이 인용구를 좋아하지 않을 거에요:
@@ -19,7 +19,7 @@ link: "https://medium.com/@mariusbongarts/forget-about-marketing-focus-on-buildi
 또는 이런 인용구를 좋아하지 않을 거에요:
 
 모두가 번거로운 일 없이 제품을 만들고 싶어하는 건 아니죠?
-```
+
 
 <div class="content-ad"></div>
 
@@ -66,7 +66,7 @@ link: "https://medium.com/@mariusbongarts/forget-about-marketing-focus-on-buildi
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![아이템 목록](/assets/img/2024-05-17-ForgetAboutMarketingFocusonBuildingAnAwesomeProduct_1.png)
 
 크롬 익스텐션 개발 중이에요! 재밌는 건, 자연스럽게 크롬 웹 스토어를 통해 성장해요. 좋은 리뷰는 익스텐션의 순위를 높일 뿐만 아니라 더 많은 트래픽을 유치하고 플랫폼의 SEO 점수를 향상시키죠.
@@ -74,7 +74,7 @@ link: "https://medium.com/@mariusbongarts/forget-about-marketing-focus-on-buildi
 플레이 스토어나 앱 스토어의 앱도 마찬가지에요. 그래서 이 기사는 이 플랫폼에서 앱을 개발하는 인디 개발자에게 가장 관련성이 높다고 말할 수 있어요.
 
 마케팅 노력 없이 다른 SaaS 웹사이트로 트래픽을 유치하는 것은 꽤 어려울 것이라고 봐요.
-```
+
 
 <div class="content-ad"></div>
 

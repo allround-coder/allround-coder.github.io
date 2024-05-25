@@ -1,5 +1,5 @@
 ---
-title: "앵귤러에서 let 구문을 사용한 우아한 타입 축소"
+title: "앵귤러에서 let 구문을 사용해 타입 축소하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-EleganttypenarrowingwithletsyntaxinAngular_0.png"
 date: 2024-05-20 22:15
@@ -23,13 +23,13 @@ Angular 18은 아직 릴리즈되지 않았지만, 18.1 버전에 이미 새로�
 
 현재 솔루션
 
-```markdown
+
 ```js
 <ng-container *ngIf="data$ | async as data">
   <p>{ data }</p>
 </ng-container>
 ```
-```
+
 
 ```js
 <ng-container *ngIf="{ data: data$ | async } as vm">
@@ -217,4 +217,3 @@ if (analysisState.status === "pending") {
 The `analysisState` variable now holds the result of the `analysisState()` function call. If the status is "pending," a message saying "Analysis is pending" will be logged. If the status is anything else, a message saying "Analysis completed with result: " followed by the actual result will be logged.
 
 Thank you, and have a great day! 😊
-```

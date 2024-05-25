@@ -1,5 +1,5 @@
 ---
-title: "리액트에서 다양한 비율로 화면 크기에 맞게 텍스트 크기 조정하기"
+title: "리액트에서 화면 크기에 맞게 반응형으로 텍스트 크기 조정하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-AdaptatextsizetoscreensizewithdifferentratioinReact_0.png"
 date: 2024-05-17 21:22
@@ -171,7 +171,7 @@ useEffect(() => {
 
 <div class="content-ad"></div>
 
-```markdown
+
 <div
   style={
     padding: "8vh 8vw",
@@ -182,14 +182,14 @@ useEffect(() => {
   <p style={paragraphStyle}>Detailed paragraph here.</p>
   {/* Additional paragraphs... */}
 </div>
-```
+
 
 이 솔루션을 통해 텍스트가 다양한 화면 비율에서 스케일링되며, 좋은 글꼴 크기로 조정되어 윈도우 높이 및 폭에 모두 적응합니다.
 
 # 결론
 
 텍스트 크기를 다른 화면 크기에 맞게 조정하는 것은 반응형 웹 디자인의 중요한 측면입니다. React의 useState 및 useEffect 훅을 활용하여 개발자는 화면 너비뿐만 아니라 높이에도 조절되는 텍스트를 생성할 수 있으며, 가독성과 화면 공간의 최적 활용을 보장합니다. 이 접근 방식은 다양한 장치와 화면 크기에 걸쳐 사용자 경험을 향상시킵니다.
-```
+
 
 <div class="content-ad"></div>
 

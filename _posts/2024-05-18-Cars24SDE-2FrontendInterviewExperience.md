@@ -69,7 +69,7 @@ console.log(curriedSum(1)(2)(3));   // 6, 완전한 커리
 
 <div class="content-ad"></div>
 
-```markdown
+
 ## question4 — output based question
 
 ```js
@@ -104,7 +104,7 @@ console.log("script end");
 ```
 
 question 5 — explain this keyword and how can we change it forcefully
-```
+
 
 <div class="content-ad"></div>
 
@@ -135,7 +135,7 @@ obj.myName(); // this keyword here is obj
 1. **1st question** - 온라인/오프라인 상태를 보여주는 사용자 정의 훅을 만들어 보세요. (해결 사항)
 
 2. **2nd question** - 그리드 라이트를 만들어 보세요. (Uber 인터뷰어들의 즐겨하는 문제)
-```
+
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "플러터 앱의 라이프사이클 이해하기 포괄적인 안내"
+title: "플러터 앱의 라이프사이클 이해하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-UnderstandingtheLifecycleofaFlutterAppAComprehensiveGuide_0.png"
 date: 2024-05-17 21:42
@@ -11,7 +11,7 @@ link: "https://medium.com/@wafamohameddd/understanding-the-lifecycle-of-a-flutte
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-17-UnderstandingtheLifecycleofaFlutterAppAComprehensiveGuide_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/@wafamohameddd/understanding-the-lifecycle-of-a-flutte
 모바일 앱 개발의 세계에서 앱 라이프사이클은 앱이 실행되는 동안 통과하는 다양한 상태를 의미합니다. 이러한 상태를 파악하는 것은 효율적이고 반응성이 뛰어나며 사용자 친화적인 플러터 애플리케이션을 구축하는 데 중요합니다.
 
 # 목차
-```
+
 
 <div class="content-ad"></div>
 

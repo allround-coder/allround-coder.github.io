@@ -1,5 +1,5 @@
 ---
-title: "파이썬만 활용해 경험 없이 아름다운 웹 앱을 어떻게 만들었을까요"
+title: "파이썬만 활용해 경험 없이 아름다운 웹 앱 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-HowIBuiltABeautifulWebAppPurelyinPythonwithZeroExperience_0.png"
 date: 2024-05-20 22:02
@@ -327,7 +327,7 @@ FastAPI 폼은 Pydantic 모델을 지원하지 않습니다. 대신 Form 메서�
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-20-HowIBuiltABeautifulWebAppPurelyinPythonwithZeroExperience_2.png" />
 
 # 결론
@@ -335,7 +335,7 @@ FastAPI 폼은 Pydantic 모델을 지원하지 않습니다. 대신 Form 메서�
 나는 가능한 한 철저하게 노력하여 파이썬을 사용하여 FastAPI를 이용해 웹 앱을 구축하는 데 필요한 모든 중요한 측면을 자세히 설명했다. 프론트엔드를 구축하는 동안 문제가 발생하면 언제든지 ChatGPT에 의지하고, 그것에게 프론트엔드를 만들도록 요청할 수 있다. 유용한 팁 중 하나는 Tailwind 문서에서 샘플 코드를 제공하고 앱에 통합하도록 요청하는 것이다. 튼튼한 보일러플레이트가 있으면 이를 역공학하고 원하는 대로 사용자 정의할 수 있다. 이 방식은 프로세스를 간단하게 만들며 문서 전체를 읽는 것보다 더 매력적으로 만든다.
 
 다음 주말에는 완전한 RAG 애플리케이션을 Llama3을 사용하여 구축하거나 이것에 파일 업로드 기능을 추가할 예정이다. 나는 처음부터 파일 업로드를 구현하고 처리하는 데 경험이 없기 때문에 그것이 흥미로울 것이다.
-```
+
 
 <div class="content-ad"></div>
 

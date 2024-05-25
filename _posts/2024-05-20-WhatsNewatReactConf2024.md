@@ -1,5 +1,5 @@
 ---
-title: "리액트 콘퍼런스 2024에서 새롭게 소개된 내용들"
+title: "React Conf 2024에서 새롭게 소개된 내용들"
 description: ""
 coverImage: "/assets/img/2024-05-20-WhatsNewatReactConf2024_0.png"
 date: 2024-05-20 21:45

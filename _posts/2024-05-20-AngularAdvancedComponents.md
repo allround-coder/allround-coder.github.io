@@ -1,5 +1,5 @@
 ---
-title: "Angular 고급 컴포넌트"
+title: "Angular로 컴포넌트 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-AngularAdvancedComponents_0.png"
 date: 2024-05-20 22:51
@@ -11,7 +11,7 @@ link: "https://medium.com/@fatih.akpiyal1/angular-advanced-components-33b131bae0
 ---
 
 
-```
+
 ![Screenshot](/assets/img/2024-05-20-AngularAdvancedComponents_0.png)
 
 # 안녕하세요 여러분,
@@ -19,7 +19,7 @@ link: "https://medium.com/@fatih.akpiyal1/angular-advanced-components-33b131bae0
 오늘은 우리의 작업을 더 쉽게 만들어주는 Angular의 두 가지 데코레이터, ViewChild와 ViewChildren에 대해 이야기하겠습니다.
 
 Angular의 ViewChild와 ViewChildren 데코레이터는 컴포넌트 내에서 요소에 접근하기 위해 사용되는 특별한 데코레이터입니다.
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -46,9 +46,9 @@ Angular의 ViewChild와 ViewChildren 데코레이터는 컴포넌트 내에서 �
 
 우리의 의도는 이 표시된 DOM 객체에 우리의 데코레이터를 적용하는 것이었죠, 맞나요? 네, 지금 그것을 하러 가보겠습니다.
 
-```markdown
+
 ![Angular Advanced Components](/assets/img/2024-05-20-AngularAdvancedComponents_3.png)
-```
+
 
 ViewChild 데코레이터를 사용하면 주요 컴포넌트 아래에서 원하는 값으로 표시된 DOM 객체에 개입할 수 있습니다. ElementRef 타입으로 표시된 것이기 때문에, 우리는 이 방법으로 'h' 값을 사용해 DOM 객체를 포착합니다.
 
@@ -68,7 +68,7 @@ static: true는 프로그램이 실행될 때 이 값이 필요한 DOM 객체(�
 
 아래는 Markdown 형식으로 변경되었습니다.
 
-```markdown
+
 ![Angular Advanced Components 5](/assets/img/2024-05-20-AngularAdvancedComponents_5.png)
 
 인터넷 사이트에서 양식 프로세스를 상상해보십시오. 해당 양식 작업을 수행할 의도가 없는 사용자에게 양식을로드하는 것은 비용을 증가시키고 사용자에게 느린 경험을 제공할 수 있습니다. 따라서 사이트가 열릴 때 설정해야 하는 DOM 객체에 대해서는 그 옆에 'true' 값을 반환합니다. 그러나 예제와 같은 양식 프로세스의 경우 'false' 값을 반환하는 것이 더 논리적일 것입니다.
@@ -76,7 +76,7 @@ static: true는 프로그램이 실행될 때 이 값이 필요한 DOM 객체(�
 ![Angular Advanced Components 6](/assets/img/2024-05-20-AngularAdvancedComponents_6.png)
 
 이제 이것을 이해했으니 계속해보겠습니다...
-```
+
 
 <div class="content-ad"></div>
 
@@ -110,7 +110,7 @@ ngOnInit 함수는 프로그램이 실행되기 시작할 때 호출되며, 시�
 
 <div class="content-ad"></div>
 
-```markdown
+
 특정 컴포넌트 내에서 특정 유형의 모든 요소에 액세스하는 데 사용됩니다. 다시 말해, 하나의 컴포넌트 내에서 여러 자식 컴포넌트에 액세스하려고 할 때 사용됩니다.
 
 이러한 개념을 설명한 후에는 지금 무슨 일이 일어나고 있는지 충분히 이해했을 것으로 믿습니다. :D 명확한 그림이 그려졌는지 확인하기 위해 예제를 제공하겠습니다. 그런 다음 더 이상 문제가 되지 않을 것입니다.
@@ -118,7 +118,7 @@ ngOnInit 함수는 프로그램이 실행되기 시작할 때 호출되며, 시�
 아래에서 생성한 세 개의 컴포넌트가 있다고 가정해 봅시다. 이 세 개는 모두 동일한 공급자를 가지지만 다른 값을 갖습니다. 이를 어떻게 처리할 수 있을까요? 즉시 설명해 드리겠습니다.
 
 <img src="/assets/img/2024-05-20-AngularAdvancedComponents_10.png" />
-```
+
 
 <div class="content-ad"></div>
 

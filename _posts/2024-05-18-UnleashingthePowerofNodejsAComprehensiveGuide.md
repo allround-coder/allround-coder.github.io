@@ -1,5 +1,5 @@
 ---
-title: "Nodejs의 힘을 발휘하기 포괄적인 안내"
+title: "Nodejs를 제대로 알고 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-UnleashingthePowerofNodejsAComprehensiveGuide_0.png"
 date: 2024-05-18 21:25
@@ -73,15 +73,15 @@ Node.js에 뛰어들 준비가 되셨나요? 시작하는 방법에 대한 빠�
 
 `app.js` 파일을 생성하고 아래 코드를 추가해주세요:
 
-```markdown
+
 ![Unleashing the Power of Node.js: A Comprehensive Guide](/assets/img/2024-05-18-UnleashingthePowerofNodejsAComprehensiveGuide_1.png)
-```
+
 
 터미널에서 다음 명령어를 실행하여 해당 디렉토리로 이동한 후 애플리케이션을 실행하세요: 
 
-```
+
 node app.js
-```
+
 
 <div class="content-ad"></div>
 

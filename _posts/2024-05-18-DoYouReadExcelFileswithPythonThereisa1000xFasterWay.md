@@ -1,5 +1,5 @@
 ---
-title: "파이썬으로 엑셀 파일을 읽나요 1000배 더 빠른 방법이 있어요"
+title: "아직도 파이썬으로 엑셀 파일을 읽으세요? 1000배 더 빠른 방법이 있어요"
 description: ""
 coverImage: "/assets/img/2024-05-18-DoYouReadExcelFileswithPythonThereisa1000xFasterWay_0.png"
 date: 2024-05-18 21:32
@@ -94,7 +94,7 @@ print("CSV2:", end - start)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 start = time.time()
 def loop(file_number):
@@ -110,7 +110,7 @@ print("CSV//:", end - start)
 ## Joblib을 사용한 간단한 병렬화
 
 Joblib은 병렬 처리를 위해 설계된 간단한 Python 라이브러리입니다. 리스트 내포와 유사하게 작동하지만 한 가지 중요한 차이가 있습니다. 각 반복이 별도의 스레드에서 실행된다는 것입니다. 이 접근 방식을 통해 작업을 동시에 처리할 수 있습니다. 다음은 이를 구현하는 방법입니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -128,7 +128,7 @@ df = [loop(file_number) for file_number in range(10)]
 데이터 저장 및 검색 프로세스를 더 빠르게 하려면 pickle 파일을 사용하는 것을 고려해보세요. Pickle은 Python 전용 형식으로, 객체를 직렬화하고 역직렬화하는 데 사용되며, .csv 파일보다 빠른 데이터 로드를 가능하게 합니다.
 
 그러나 pickle 파일의 중요한 단점은 사람이 읽을 수 없다는 것입니다. .csv 파일과 달리 pickle 파일을 텍스트 편집기나 스프레드시트 프로그램으로 열어 직접 내용을 볼거나 수정할 수 없습니다.
-```
+
 
 <div class="content-ad"></div>
 

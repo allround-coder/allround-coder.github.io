@@ -1,5 +1,5 @@
 ---
-title: "플러터 322에서 무슨 변화가 있을까요 상위 10가지 새로운 기능을 살펴봅시다"
+title: "플러터 3.22에 새로 추가된 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-20-WhatsnewinFlutter322letsdiscussthetop10newthings_0.png"
 date: 2024-05-20 23:13

@@ -1,5 +1,5 @@
 ---
-title: "우리가 백엔드에서 실시간 알림을 전달하는 데 Server-Sent EventsSSE를 어떻게 활용했는지"
+title: "백엔드에서 Server-Sent EventsSSE로 실시간 알림을 전달하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-HowWeUsedServer-SentEventsSSEtoDeliverReal-TimeNotificationsonOurBackend_0.png"
 date: 2024-05-20 22:16

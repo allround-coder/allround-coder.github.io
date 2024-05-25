@@ -1,5 +1,5 @@
 ---
-title: "SwiftUI를 고민해보다"
+title: "SwiftUI 간단하게 시작하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-SwiftUIThinking_0.png"
 date: 2024-05-17 03:53

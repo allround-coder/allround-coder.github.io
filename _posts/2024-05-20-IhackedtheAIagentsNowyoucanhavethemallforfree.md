@@ -75,11 +75,11 @@ Langchain Gradio component: Hugging Face Spaces에는 수천 개의 Gradio 앱�
 
 Langchain의 블로그에 따르면, 사전에 구축된 도구 중 하나가 아닌 공간을 사용하려면 쉽게 자체 도구를 만들 수 있습니다. 본 기사를 통해 프로세스가 실제로 쉬운지 여부를 직접 판단하게 될 것입니다...
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-IhackedtheAIagentsNowyoucanhavethemallforfree_3.png)
 
 # 사용자 지정 래퍼를 만들어야 합니다
-```
+
 
 <div class="content-ad"></div>
 
@@ -369,7 +369,7 @@ def _stream(
 - 끝부분에서 for 루프를 시작하고, predict 대신 submit() 메서드를 호출합니다. 차이에 대해 제2부에서 설명했습니다.
 
 이제 새로운 추가와 print에서 작은 변경을 한 Class를 다시 실행할 수 있습니다. Google Colab에서도 텍스트가 생성 중에 스트리밍되는 것을 확인할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -394,7 +394,7 @@ Streamlit을 사용하는 경우, 위의 코드는 필요하지 않습니다. It
 # 결론... 지금까지
 
 우리는 어디에서든 실행할 수 있는 AI 에이전트들의 자유 무리의 기초를 단순하게 놓았습니다. 솔직히 말해서, Gradio API 주변에 새롭게 만든 래퍼를 사용하여 Langchain 튜토리얼을 자유롭게 시도해볼 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

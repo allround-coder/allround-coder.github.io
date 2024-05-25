@@ -1,5 +1,5 @@
 ---
-title: "Node에서 안정적인 분산 시스템 구축하기"
+title: "Node에서 안정적인 분산 시스템 구축하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-BuildingReliableDistributedSystemsinNode_0.png"
 date: 2024-05-17 20:34
@@ -102,7 +102,6 @@ npx @temporalio/create@latest --sample food-delivery
 ```typescript
 apps/menu/pages/api/[trpc].ts
 
-```typescript
 import { initTRPC } from '@trpc/server'
 import { z } from 'zod'
 import { taskQueue } from 'common'
@@ -127,7 +126,7 @@ export const appRouter = t.router({
 The order function starts out validating the input, setting up the initial state, and charging the customer:
 
 packages/workflows/order.ts
-```
+
 
 <div class="content-ad"></div>
 
@@ -156,7 +155,7 @@ export async function order(productId: number): Promise<void> {
 # 주문 상태 확인
 
 다음 코드 부분은 약간의 백그라운드 지식이 필요합니다. 일반 함수는 오래 실행할 수 없으므로, 일이 발생할 때까지 대기하는 동안 리소스를 차지하고, 언젠가는 새 코드를 배포하고 이전 컨테이너가 종료되면 종료될 것입니다. 내구성 함수는 두 가지 이유로 임의의 길이로 실행할 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -303,7 +302,7 @@ export async function order(productId: number): Promise<void> {
 최종 푸시 알림 이후, 주문 함수 실행이 종료되고 Workflow Execution이 성공적으로 완료됩니다. 함수가 완료되었더라도 Temporal이 함수의 최종 상태를 저장하고 있기 때문에 여전히 쿼리를 보낼 수 있습니다. 주문이 배달된 후 1분 뒤 페이지를 새로 고치면 여전히 getStatusQuery가 작동하고 "배송됨"이 상태로 표시됩니다:
 
 ![이미지](/assets/img/2024-05-17-BuildingReliableDistributedSystemsinNode_1.png)
-```
+
 
 <div class="content-ad"></div>
 

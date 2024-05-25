@@ -1,5 +1,5 @@
 ---
-title: "프론트엔드 개발자를 위한 50가지 프로젝트 No05 블러리 로딩"
+title: "프론트엔드 개발자를 위한 50가지 프로젝트 No05 - Blurry Loading"
 description: ""
 coverImage: "/assets/img/2024-05-17-50Front-EndCombatProjectNo05BlurryLoading_0.png"
 date: 2024-05-17 21:26
@@ -21,7 +21,7 @@ link: "https://medium.com/@cendz/50-front-end-combat-project-no-05-blurry-loadin
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Blurry Loading](/assets/img/2024-05-17-50Front-EndCombatProjectNo05BlurryLoading_1.png)
 
 # 핵심 코드

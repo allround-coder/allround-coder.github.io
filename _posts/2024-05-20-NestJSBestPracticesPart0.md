@@ -1,5 +1,5 @@
 ---
-title: "NestJS의 Best Practices Part 0"
+title: "NestJS 전반적인 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-20-NestJSBestPracticesPart0_0.png"
 date: 2024-05-20 22:20

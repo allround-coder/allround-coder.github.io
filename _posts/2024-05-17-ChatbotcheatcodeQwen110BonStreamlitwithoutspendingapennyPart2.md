@@ -1,5 +1,5 @@
 ---
-title: "챗봇 치트 코드 Qwen110B로 스트림릿에서 돈을 쓰지 않고 활용하기 - 2부"
+title: "챗봇 치트 코드 Qwen110B로 스트림릿에서 돈을 쓰지 않고 활용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-ChatbotcheatcodeQwen110BonStreamlitwithoutspendingapennyPart2_0.png"
 date: 2024-05-17 03:23

@@ -1,5 +1,5 @@
 ---
-title: "나를 위한 개인 웹 페이지 만들기"
+title: "나를 위한 개인 웹 페이지 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-CreateAPersonalWebPageForMe_0.png"
 date: 2024-05-17 03:33

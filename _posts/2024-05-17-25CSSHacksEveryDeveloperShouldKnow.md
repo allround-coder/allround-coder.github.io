@@ -1,5 +1,5 @@
 ---
-title: "모든 개발자가 알아야 할 25가지 CSS 해킹 방법"
+title: "개발자라면 반드시 알아야 할 CSS 팁 25가지"
 description: ""
 coverImage: "/assets/img/2024-05-17-25CSSHacksEveryDeveloperShouldKnow_0.png"
 date: 2024-05-17 21:24
@@ -11,7 +11,7 @@ link: "https://medium.com/@amitmishraam941/25-css-hacks-every-developer-should-k
 ---
 
 
-```markdown
+
 ![CSS](/assets/img/2024-05-17-25CSSHacksEveryDeveloperShouldKnow_0.png)
 
 CSS (Cascading Style Sheets)은 웹 개발자에게 필수적인 도구로, HTML 요소를 정확하게 스타일링할 수 있게 해줍니다. 그러나 CSS를 정복하는 것은 기본을 알고 있는 것 이상의 일이 필요합니다. 여기에는 여러분의 삶을 더 쉽게 만들고 코드를 더 깔끔하게 만들 수 있는 25가지 CSS 해킹 방법이 있습니다.
@@ -19,7 +19,7 @@ CSS (Cascading Style Sheets)은 웹 개발자에게 필수적인 도구로, HTML
 ## 1. 요소를 수직 및 수평으로 가운데 정렬하기
 
 문제: 요소를 컨테이너 내에서 수직 및 수평으로 가운데 정렬하는 것.
-```
+
 
 <div class="content-ad"></div>
 

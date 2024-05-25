@@ -11,7 +11,7 @@ link: "https://medium.com/better-programming/why-flutter-on-the-desktop-cant-sur
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-18-WhyFlutterontheDesktopCantSurviveWithoutRust_0.png)
 
 Writer's note: 이 기사에서는 Tim Sneath와 많은 노력을 기울인 다른 참여자들의 노력으로 만들어진 Win32 패키지에 대해 이야기합니다. Win32 패키지는 고품질이며 Tim은 Flutter 생태계에 큰 기여자입니다. 제가 언급한 내용은 이 패키지를 비하하려는 것이 아니라 제 경험 상으로 잘 작동하는 대안에 대해 논의한 것입니다.
@@ -19,7 +19,7 @@ Writer's note: 이 기사에서는 Tim Sneath와 많은 노력을 기울인 다�
 현재 Flutter on Desktop은 애매한 상황에 있습니다. 주요 데스크톱 플랫폼(Windows, macOS, Linux 등)에서 안정적이며, 일부 채택도 이루어지고 있습니다. 이는 휴대용 앱 개발에 대한 인기가 높지만 데스크톱 앱으로의 확장은 아직 그리 인기가 없는 것 같습니다.
 
 데스크톱 플랫폼의 안정성이 이동 플랫폼에 비해 훨씬 더 새로운 것은 사실이지만, 데스크톱에서 Flutter가 이동 플랫폼과 비교했을 때 덜 개선된 다른 중요한 영역이 있습니다. 이것은 확장성과 관련이 있으며, 더 구체적으로는 Flutter가 기본 운영 체제에서 네이티브 코드를 호출하는 것이 얼마나 어려운지에 관한 것입니다. Android 또는 iOS에서는 원하는 대로 작동할 Kotlin 또는 Swift를 조합하는 것이 그리 어렵지 않습니다. 그러나 데스크톱에서는 전혀 다른 이야기입니다.
-```
+
 
 <div class="content-ad"></div>
 

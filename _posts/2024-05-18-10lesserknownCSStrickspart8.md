@@ -1,5 +1,5 @@
 ---
-title: "10가지 잘 알려지지 않은 CSS 요령 파트 8"
+title: "잘 알려지지 않은 CSS 팁 10가지"
 description: ""
 coverImage: "/assets/img/2024-05-18-10lesserknownCSStrickspart8_0.png"
 date: 2024-05-18 22:08

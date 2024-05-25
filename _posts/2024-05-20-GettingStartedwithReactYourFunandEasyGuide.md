@@ -1,5 +1,5 @@
 ---
-title: "리액트 시작하기 즐겁고 쉬운 안내서"
+title: "리액트 시작하는 개발자가 봐야하는 글"
 description: ""
 coverImage: "/assets/img/2024-05-20-GettingStartedwithReactYourFunandEasyGuide_0.png"
 date: 2024-05-20 22:08

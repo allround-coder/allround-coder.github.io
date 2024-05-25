@@ -1,5 +1,5 @@
 ---
-title: "2024년에 사용할 수 있는 최고의 자바 프로파일러 9선"
+title: "2024년에 가장 인기 있는 최고의 자바 프로파일러 9가지"
 description: ""
 coverImage: "/assets/img/2024-05-17-9BestJavaProfilerstoUsein2024_0.png"
 date: 2024-05-17 03:16

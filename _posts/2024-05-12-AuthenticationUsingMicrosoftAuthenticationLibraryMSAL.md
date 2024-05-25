@@ -101,7 +101,7 @@ root.render(
 
 # 4. 로그인 컴포넌트
 
-````
+```
 
 
 
@@ -127,7 +127,7 @@ const SignIn = () => {
   );
 }
 export default SignIn;
-````
+```
 
 만약 로그인이 팝업으로 되는 경우, Msal 인스턴스는 loginPopup 함수를 사용합니다.
 

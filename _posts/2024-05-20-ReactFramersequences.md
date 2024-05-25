@@ -1,5 +1,5 @@
 ---
-title: "리액트, 프레이머  시퀀스"
+title: "리액트, Framer 연동해서 사용하기"
 description: ""
 coverImage: "/assets/img/2024-05-20-ReactFramersequences_0.png"
 date: 2024-05-20 22:09
@@ -21,7 +21,7 @@ link: "https://medium.com/@anya./react-framer-sequences-397db9375fb4"
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](https://miro.medium.com/v2/resize:fit:1400/1*RDCcMOuV4CbcB0dhPd-sgQ.gif)
 
 2. Sequencing with useAnimate()
@@ -29,7 +29,7 @@ link: "https://medium.com/@anya./react-framer-sequences-397db9375fb4"
 ![Image 2](https://miro.medium.com/v2/resize:fit:1400/1*-vqhUfXmPoehZSW8hRd7Lg.gif)
 
 3. Sequence sequences 😄
-```
+
 
 <div class="content-ad"></div>
 
@@ -128,7 +128,7 @@ export const Card = ({ label, text }: Props) => {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*RDCcMOuV4CbcB0dhPd-sgQ.gif)
 
 부모 'CardContainer'에서 몇 줄의 코드로 자식 카드에 staggerChildren을 사용하여 지연을 둔 애니메이션을 시작할 수 있습니다.
@@ -148,7 +148,7 @@ export const CardContainer = () => {
 ```
 
 이 샌드박스에서 전체 코드를 확인하세요.
-```
+
 
 <div class="content-ad"></div>
 

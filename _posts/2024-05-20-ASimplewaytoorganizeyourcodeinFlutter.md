@@ -1,5 +1,5 @@
 ---
-title: "플러터에서 코드를 구성하는 간단한 방법"
+title: "플러터에서 코드를 작성하는 간단한 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-ASimplewaytoorganizeyourcodeinFlutter_0.png"
 date: 2024-05-20 23:16
@@ -80,7 +80,7 @@ REST API에서 뉴스 목록이 포함된 화면의 예시를 살펴보겠습니
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-05-20-ASimplewaytoorganizeyourcodeinFlutter_4.png)
 
 You can see that the first file is simple and only contains the UI part.
@@ -88,7 +88,7 @@ You can see that the first file is simple and only contains the UI part.
 ![image2](/assets/img/2024-05-20-ASimplewaytoorganizeyourcodeinFlutter_5.png)
 
 This is the controller file which is used to load the news and sort them. As you can see, the newsList is loaded with content in the `controller.dart` and used in the `screen.dart`.
-```
+
 
 <div class="content-ad"></div>
 
@@ -102,7 +102,7 @@ This is the controller file which is used to load the news and sort them. As you
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![screenshot](/assets/img/2024-05-20-ASimplewaytoorganizeyourcodeinFlutter_6.png)
 
 - 파일 — 설정 — 코드 스타일 — 파일 및 코드 템플릿
@@ -114,7 +114,7 @@ This is the controller file which is used to load the news and sort them. As you
 - 파일 이름은 $'NAME'_screen이어야 합니다
 - 확장자는 dart여야 합니다
 - 메인 파일 (screen.dart)에 대한 다음 코드 사용
-```
+
 
 <div class="content-ad"></div>
 
@@ -168,11 +168,11 @@ abstract class ${class}Controller extends State<${class}Screen> {
 ```
 
 8. 자식 템플릿 파일을 '$'NAME'_controller.dart'로 명명하고 확장자는 이전과 동일한 dart로 설정합니다.
-```  
+  
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-ASimplewaytoorganizeyourcodeinFlutter_8.png)
 
 9. 적용 및 확인을 눌러 완료합니다
@@ -181,7 +181,7 @@ abstract class ${class}Controller extends State<${class}Screen> {
 그러면 name_screen 및 name_controller 두 파일이 생성됩니다.
 
 제가 앞서 말했듯이, 이것은 제 팀이 코드를 구성하는 방식일 뿐이며 다양한 방법이 있지만, 2019년 첫 번째 Flutter 프로젝트의 엉망으로부터 잘 구성되고 유지 관리가 빠른 방식으로 나아가게 도와준 것을 잠시 공유하고 싶었습니다.
-```
+
 
 <div class="content-ad"></div>
 

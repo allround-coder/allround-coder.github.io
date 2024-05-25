@@ -1,5 +1,5 @@
 ---
-title: "플러터Flutter에서 왜 깔끔한 코드clean code를 사용해야 할까요"
+title: "Flutter에서 clean code를 작성하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-Whyshouldweusecleancodeinflutter_0.png"
 date: 2024-05-20 23:18
@@ -129,7 +129,7 @@ void _updateProfileInDatabase(User user) {
 3. 확장성
 
 프로젝트가 확장될수록, 깨끗한 코드는 코드베이스의 품질을 저하시키지 않고 새로운 기능을 추가하는 것을 더 쉽게 만듭니다.
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -266,7 +266,7 @@ String getUserName() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 // ......잘못 작성된 코드....
 
 class MyClass {
@@ -282,14 +282,14 @@ class VideoList {
 class UserAccount {
   // ...
 }
-```
+
 
 ## 결론
 
 Flutter에서 깔끔한 코드를 사용하면 코드베이스가 유지 가능하고 가독성이 높고 확장 가능하며 쉽게 디버깅할 수 있습니다. 깔끔한 코드 원칙을 준수하면 애플리케이션의 전반적인 품질을 향상시켜 미래에 코드를 작업할 때 자신과 다른 사람들이 더 쉽게 작업할 수 있게 됩니다.
 
 <img src="/assets/img/2024-05-20-Whyshouldweusecleancodeinflutter_1.png" />
-```
+
 
 <div class="content-ad"></div>
 

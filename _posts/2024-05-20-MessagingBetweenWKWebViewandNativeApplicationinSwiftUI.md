@@ -383,7 +383,7 @@ Javascript alert는 모든 웹 페이지에 대해 일반적인 기능이므로 
 
 <div class="content-ad"></div>
 
-```markdown
+
 showPanel - ContentView에서 UI 표시를 토글하는 발행된 속성입니다.
 
 panelTitle - 일반적인 UI 표시 제목입니다.
@@ -391,7 +391,7 @@ panelTitle - 일반적인 UI 표시 제목입니다.
 panelMessage - 웹 페이지에서 나오는 메시지입니다.
 
 panelType - UI 표시의 유형을 나타냅니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -454,7 +454,7 @@ SwiftUIWebView에는 alert modifier가 포함되어 있습니다. 해당 alert�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](https://miro.medium.com/v2/resize:fit:508/1*crNpOlR8VlOFpZSVQXkF-Q.gif)
 
 이것은 표준 프레젠테이션입니다. 그러나 필요에 따라 시트, 팝오버 또는 응용 프로그램에 적합한 UI로 구현할 수 있습니다.
@@ -462,7 +462,7 @@ SwiftUIWebView에는 alert modifier가 포함되어 있습니다. 해당 alert�
 ## Javascript Confirm
 
 Javascript confirm 기능은 javascript alert와 유사합니다. 표준 프레젠테이션에서 모달에는 메시지, 확인 버튼 및 취소 버튼이 포함됩니다.
-```
+
 
 <div class="content-ad"></div>
 

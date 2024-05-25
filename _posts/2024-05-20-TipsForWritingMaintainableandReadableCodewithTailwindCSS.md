@@ -1,5 +1,5 @@
 ---
-title: "Tailwind CSS로 유지보수 가능하고 가독성 좋은 코드를 작성하는 팁"
+title: "Tailwind CSS로 가독성 좋은 웹사이트 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-TipsForWritingMaintainableandReadableCodewithTailwindCSS_0.png"
 date: 2024-05-20 23:01
@@ -11,7 +11,7 @@ link: "https://medium.com/@patrickkarsh/tips-for-writing-maintainable-and-readab
 ---
 
 
-```markdown
+
 ![Tips for Writing Maintainable and Readable Code with Tailwind CSS](/assets/img/2024-05-20-TipsForWritingMaintainableandReadableCodewithTailwindCSS_0.png)
 
 웹 개발에서 깔끔하고 확장 가능한 코드베이스를 유지하는 것은 매우 중요합니다. 특히 대규모 프로젝트에서 스타일을 관리할 때는 더욱 그렇습니다. Tailwind CSS는 유용성이 우선인 CSS 프레임워크로, 애플리케이션을 효율적으로 스타일링하는 구조화된 방법을 제공합니다. 그러나 모든 도구와 마찬가지로, Tailwind의 장점을 최대로 발휘하려면 최상의 관행을 준수해야 합니다. 아래에서는 유지보수 가능하고 가독성 있는 Tailwind CSS 코드를 작성하는 핵심 전략에 대해 실용적인 예제를 통해 살펴봅니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@patrickkarsh/tips-for-writing-maintainable-and-readab
 ## 유틸리티 클래스의 일관된 순서
 
 HTML 요소에서 유틸리티 클래스의 일관된 순서를 유지하면 스타일을 쉽게 스캔하고 수정할 수 있습니다. 예를 들어, 표시 속성(display: flex, grid)으로 시작하여 위치 지정 (m, p), 그 다음에 글꼴 (text-, font-), 마지막으로 색상 및 그림자와 같은 코스메틱 스타일로 끝나는 규칙을 정의하세요.
-```
+
 
 <div class="content-ad"></div>
 

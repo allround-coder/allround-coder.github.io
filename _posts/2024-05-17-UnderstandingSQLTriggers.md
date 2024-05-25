@@ -1,5 +1,5 @@
 ---
-title: "SQL 트리거 이해하기"
+title: "SQL 트리거 이해하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-UnderstandingSQLTriggers_0.png"
 date: 2024-05-17 04:02

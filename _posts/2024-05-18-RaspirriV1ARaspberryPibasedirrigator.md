@@ -1,5 +1,5 @@
 ---
-title: "라스피리V1 라즈베리 파이 기반의 자동 급수기"
+title: "RaspirriV1로 라즈베리 파이 기반의 자동 급수기 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-18-RaspirriV1ARaspberryPibasedirrigator_0.png"
 date: 2024-05-18 21:28
@@ -82,7 +82,7 @@ link: "https://medium.com/@mariosk/raspirriv1-a-raspberry-pi-based-irrigator-6f1
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Program creation](/assets/img/2024-05-18-RaspirriV1ARaspberryPibasedirrigator_6.png)
 
 STEP-5: To create a program, select days, start time, and duration. You can change the valve name if desired and then click Save. A new schedule will be created and saved in the raspirri-server storage.
@@ -90,7 +90,7 @@ STEP-5: To create a program, select days, start time, and duration. You can chan
 ![Schedule creation](/assets/img/2024-05-18-RaspirriV1ARaspberryPibasedirrigator_7.png)
 
 # Raspberry Pi Server
-```
+
 
 <div class="content-ad"></div>
 

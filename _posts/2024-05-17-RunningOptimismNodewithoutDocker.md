@@ -1,5 +1,5 @@
 ---
-title: "도커 없이 Optimism 노드 실행하기"
+title: "도커 없이 Optimism 노드 실행하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-RunningOptimismNodewithoutDocker_0.png"
 date: 2024-05-17 03:55

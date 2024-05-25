@@ -1,5 +1,5 @@
 ---
-title: "자바를 이용한 안드로이드 개발에 대한 포괄적인 안내"
+title: "JAVA로 안드로이드 개발을 시작하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-AComprehensiveGuidetoAndroidDevelopmentwithJava_0.png"
 date: 2024-05-17 03:34

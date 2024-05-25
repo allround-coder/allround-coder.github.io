@@ -1,5 +1,5 @@
 ---
-title: "내 UI UX 디자인 여정"
+title: "웹사이트에서 UI UX 디자인을 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-MyJourneyintoUIUXDesign_0.png"
 date: 2024-05-18 22:12

@@ -1,5 +1,5 @@
 ---
-title: "Niels가 Rust 2를 배웁니다  AVR Rust 시작하기"
+title: "Rust 2 공부 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-17-NielslearnsRust2GettingstartedwithAVRRust_0.png"
 date: 2024-05-17 04:11

@@ -1,5 +1,5 @@
 ---
-title: "Google IO 해변가에서 Flutter가 솔솔 최신 발표 소식을 전하는 개발자의 시각"
+title: "Google IO, Flutter가 발표한 최신 내용들 정리"
 description: ""
 coverImage: "/assets/img/2024-05-20-FlutterSoarsatGoogleIOShorelineADeveloperstakefromtheLatestAnnouncements_0.png"
 date: 2024-05-20 23:12
@@ -11,7 +11,7 @@ link: "https://medium.com/@dilumdesilva/flutter-soars-at-google-i-o-shoreline-a-
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-FlutterSoarsatGoogleIOShorelineADeveloperstakefromtheLatestAnnouncements_0.png)
 
 위의 스냅샷이 모두의 본질을 잡아냈음에 기쁩니다. 올해 개인적으로 Google I/O에 참석할 수 있었던 것은 정말 특권이었고, 이 기사는 행사 중에 메모한 내용을 반영하고 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@dilumdesilva/flutter-soars-at-google-i-o-shoreline-a-
 Google I/O에 처음 참석한 나로서는, 개발자에게는 놀라운 경험이었으며 온라인에서만 알고 있던 사람들을 직접 만날 기회가 생기는 것은 더욱 소중한 경험입니다. "Flutter로 적응형 UI를 구축하는 방법"에 대한 Reid와 Tyler의 강연 후의 스냅샷은 행사 전반에 걸쳐 나의 흥분을 완벽하게 담아 냈습니다.
 
 ![이미지](/assets/img/2024-05-20-FlutterSoarsatGoogleIOShorelineADeveloperstakefromtheLatestAnnouncements_1.png)
-```
+
 
 <div class="content-ad"></div>
 

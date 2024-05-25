@@ -1,5 +1,5 @@
 ---
-title: "Nodejs에서 perf_hooks를 사용한 벤치마킹"
+title: "Nodejs에서 perf_hooks를 사용한 벤치마킹 점수"
 description: ""
 coverImage: "/assets/img/2024-05-17-BenchmarkinginNodejswithperf_hooks_0.png"
 date: 2024-05-17 20:33

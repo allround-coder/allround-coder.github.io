@@ -139,7 +139,7 @@ Service가 소비자로서 Ecotone의 분산 메커니즘에 연결되면 자동
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-IntegratingPHPApplicationswithEcotoneandRabbitMQ_4.png)
 
 # 이벤트 메시지 구독
@@ -147,11 +147,11 @@ Service가 소비자로서 Ecotone의 분산 메커니즘에 연결되면 자동
 분산 이벤트를 구독하는 것은 매우 간단합니다. 라우팅 키 이름과 분산 속성을 EventHandler에 제공합니다.
 
 Ecotone은 내부적으로 우리 서비스의 큐를 주어진 라우팅 키로 바인딩합니다:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-18-IntegratingPHPApplicationswithEcotoneandRabbitMQ_5.png" />
 
 모든 작업이 명령 및 이벤트를 사용하여 통신하는 데 필요한 것은, Ecotone을 사용하는 것이 매우 직관적이며 시스템의 논리 부분에 집중하려면 이것이어야 하는 방법입니다. Ecotone 분산 모듈을 설치하는 방법은 문서 페이지에서 읽을 수 있습니다.
@@ -159,7 +159,7 @@ Ecotone은 내부적으로 우리 서비스의 큐를 주어진 라우팅 키로
 이제, 분산 통신을 시작할 때 자주 논의되는 몇 가지 다른 시나리오를 살펴볼 수 있습니다.
 
 # 이벤트 비공개 유지
-```
+
 
 <div class="content-ad"></div>
 
@@ -256,7 +256,7 @@ Ecotone에서는 메시지가 클래스가 아닌 라우팅을 기반으로 전�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-IntegratingPHPApplicationswithEcotoneandRabbitMQ_9.png)
 
 In the code, it would look like this:
@@ -264,7 +264,7 @@ In the code, it would look like this:
 To solve this, we can use Ecotone's inbuilt feature to send messages over the Database:
 
 ![Image](/assets/img/2024-05-18-IntegratingPHPApplicationswithEcotoneandRabbitMQ_10.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "AI 콘텍스트 뉴로심볼릭 RAG 및 지식 그래프의 힘"
+title: "AI 콘텍스트 Neurosymbolic RAG 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-17-ContextualAINeurosymbolicRAGandthePowerofKnowledgeGraphs_0.png"
 date: 2024-05-17 04:17

@@ -1,5 +1,5 @@
 ---
-title: "2024년의 Flutter 322와 함께 사용할 수 있는 5가지 추가 패키지"
+title: "Flutter 322와 함께 사용할 수 있는 5가지 추가 패키지(2024년 최신)"
 description: ""
 coverImage: "/assets/img/2024-05-18-5extrapackagestousewithFlutter322in2024_0.png"
 date: 2024-05-18 22:17
@@ -50,7 +50,7 @@ const kGap100 = Gap(100);
 ```
 
 이렇게 하면 UI 사양이 변경되면 앱 내의 공간을 빠르게 재정비할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -64,7 +64,7 @@ const kGap100 = Gap(100);
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:776/0*SxYiRxewtRIFNa4e.gif)
 
 You can check the package [here](link).
@@ -72,7 +72,7 @@ You can check the package [here](link).
 *A simpler but now old alternative named Skeletons can be found here. This is an honorable mention as it was the first I used and still exists in at least 8 of my apps.
 
 3. toastification
-```
+
 
 <div class="content-ad"></div>
 

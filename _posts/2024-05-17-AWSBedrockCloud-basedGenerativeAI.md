@@ -1,5 +1,5 @@
 ---
-title: "AWS 기반 클라우드 기반 생성 AI"
+title: "AWS 기반 클라우드 기반 생성형 AI 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-AWSBedrockCloud-basedGenerativeAI_0.png"
 date: 2024-05-17 04:21

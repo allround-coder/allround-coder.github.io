@@ -180,7 +180,7 @@ server
 <img src="/assets/img/2024-05-18-CreateaGraphQLQueryWithaRESTEndpointAsaDataSource_1.png" />
 
 브라우저를 http://localhost:5000 에서 열어볼 때, 모든게 잘 되었다면 다음 화면을 보게 됩니다:
-```
+
 
 <div class="content-ad"></div>
 

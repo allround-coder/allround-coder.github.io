@@ -51,13 +51,13 @@ df['Dayofweek']=df['Datetime'].dt.dayofweek
 
 저는 일반적인 방법처럼 표를 Markdown 형식으로 변경할 수 있어요. 
 
-```markdown
+
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Apple    | Orange   | Banana   |
 | Car      | Book     | Tree     |
 | Sun      | Moon     | Star     |
-```
+
 
 <div class="content-ad"></div>
 
@@ -72,7 +72,7 @@ df = pd.get_dummies(df, columns=columns_to_encode)
 ![이미지](/assets/img/2024-05-18-CyclicalEncodingAnAlternativetoOne-HotEncodingforTimeSeriesFeatures_2.png)
 
 볼 수 있듯이, 많은 특성들이 생성되었습니다. 우리는 3개의 열 (시간, 월, 요일)에서 40개가 넘게 되었습니다. 시간 시리즈 특성을 인코딩해야 하는 경우 더 많은 특성을 추가하면서 점점 더 복잡해질 수 있습니다. 이러한 많은 특성을 추적하기 어려워질 수 있으며, 특히 데이터베이스에 특성을 저장하거나 특성 중요도를 시각화하려는 경우 (매우 난잡한 그래프를 원치 않는 경우)에 더 어려워질 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

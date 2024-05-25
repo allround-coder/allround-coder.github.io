@@ -1,5 +1,5 @@
 ---
-title: "자바스크립트 - 불리언, 비교"
+title: "자바스크립트 기본 지식 - 불리언, 비교"
 description: ""
 coverImage: "/assets/img/2024-05-18-JavaScriptBooleansComparisons_0.png"
 date: 2024-05-18 22:16
@@ -11,7 +11,7 @@ link: "https://medium.com/@geraldclarkaudio/javascript-booleans-comparisons-5a6a
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-18-JavaScriptBooleansComparisons_0.png)
 
 Booleans, also known as Bools, represent true and false. That's all there is to it. Article complete.
@@ -19,7 +19,7 @@ Booleans, also known as Bools, represent true and false. That's all there is to 
 Just kidding!
 
 Let's take a closer look:
-```
+
 
 <div class="content-ad"></div>
 
@@ -35,21 +35,21 @@ Let's take a closer look:
 
 우리는 코드에서 특정 조건을 평가하고 해당 조건이 true 인지 false 인지를 확인하기 위해 bools를 사용합니다. 예를 들어:
 
-```markdown
+
 ![JavaScript Booleans Comparisons](/assets/img/2024-05-18-JavaScriptBooleansComparisons_3.png)
-```
+
 
 여기서 문자열 이메일을 선언하고 includes()를 사용하여 문자열에 @ 기호가 포함되어 있는지 확인했습니다. 결과를 기록하면:
 
-```markdown
+
 ![JavaScript Booleans Comparisons](/assets/img/2024-05-18-JavaScriptBooleansComparisons_4.png)
-```
+
 
 <div class="content-ad"></div>
 
 테이블 태그를 Markdown 형식으로 변경해 보시겠어요?
 
-```markdown
+
 It prints true because the includes method returns a bool. If I feed it a character that ISN’T part of the email it will return false:
 
 ![Image 1](/assets/img/2024-05-18-JavaScriptBooleansComparisons_5.png)
@@ -57,7 +57,7 @@ It prints true because the includes method returns a bool. If I feed it a charac
 Another way to use bools is to use comparison operators.
 
 ![Image 2](/assets/img/2024-05-18-JavaScriptBooleansComparisons_6.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -91,7 +91,7 @@ Markdown 형식으로 표를 바꿔주셨어요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-JavaScriptBooleansComparisons_9.png)
 
 'gerald'은 'gerald'과 같습니다.
@@ -99,7 +99,7 @@ Markdown 형식으로 표를 바꿔주셨어요.
 'gerald'은 'Gerald'과 다릅니다. 대문자 G 때문에 다릅니다.
 
 'gerald'은 'adam'보다 큽니다. gerald이 'g'로 시작하고 adam이 'a'로 시작하기 때문입니다. JavaScript에서 알파벳 순서로 보면 더 뒤에 있는 글자가 더 큽니다.
-```
+
 
 <div class="content-ad"></div>
 

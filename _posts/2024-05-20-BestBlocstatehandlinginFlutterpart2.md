@@ -116,7 +116,7 @@ class StateStatusLayout<T> extends StatelessWidget {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:700/1*I6k_gZJ0KRZYR4KU22Okig.gif)
 
 가끔 블록 쪽에서 데이터를 페이지네이션하거나 스트리밍해야 할 때, 위젯은 반드시 모든 상황에서 업데이트되어야 합니다. 그리고 위젯에서 오류가 발생하지 않도록하기 위해 이러한 가능한 상황을 고려하기 위해 StreamBuilder를 사용합니다.
@@ -174,7 +174,7 @@ class ShowLayout extends StatelessWidget {
   }
 }
 ```
-```
+
 
 <div class="content-ad"></div>
 

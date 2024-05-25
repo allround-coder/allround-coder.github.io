@@ -1,5 +1,5 @@
 ---
-title: "웹 앱에 대한 HTML-우선 백엔드 개발이 여전히 현명한 선택인 이유"
+title: "웹사이트 만들 때 HTML-우선 백엔드 개발을 해야하는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-20-WhyHTML-FirstBackendDevelopmentisStillaSmartChoiceforWebApps_0.png"
 date: 2024-05-20 23:10
@@ -11,7 +11,7 @@ link: "https://medium.com/@cannon_circuit/why-html-first-backend-development-is-
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-20-WhyHTML-FirstBackendDevelopmentisStillaSmartChoiceforWebApps_0.png)
 
 웹 개발에서 간단함과 효과적인 기능 사이의 균형을 찾는 것이 중요합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@cannon_circuit/why-html-first-backend-development-is-
 개발자로서, 우리는 프로세스를 최적화하고 우수한 결과를 제공하는 방법을 계속해서 찾고 있습니다.
 
 HTML을 우선으로 한 백엔드 개발은 웹 애플리케이션 분야에서 그 가치를 입증해온 실증된 접근 방식으로 부상했습니다.
-```
+
 
 <div class="content-ad"></div>
 

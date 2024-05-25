@@ -1,5 +1,5 @@
 ---
-title: "BigPay가 Flutter 개발자 생산성을 향상시킨 방법 파트 1 - Flutter 안드로이드를 위한 CI CD"
+title: "Flutter로 안드로이드를 위한 CI CD 구축 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-HowBigPayIncreasedFlutterDeveloperVelocityPart1CICDforFlutterAndroid_0.png"
 date: 2024-05-17 21:35

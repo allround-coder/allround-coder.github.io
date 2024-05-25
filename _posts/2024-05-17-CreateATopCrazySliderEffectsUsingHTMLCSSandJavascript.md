@@ -1,5 +1,5 @@
 ---
-title: "HTML, CSS 및 Javascript를 사용한 최고의 멋진 슬라이더 효과 만들기"
+title: "HTML, CSS 및 Javascript를 사용한 최고의 멋진 슬라이더 효과 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-CreateATopCrazySliderEffectsUsingHTMLCSSandJavascript_0.png"
 date: 2024-05-17 21:21
@@ -68,7 +68,7 @@ link: "https://medium.com/@chauhanomprakash7206/create-a-top-crazy-slider-effect
 
 <div class="content-ad"></div>
 
-```markdown
+
 *{
     margin: 0;
     padding: 0;

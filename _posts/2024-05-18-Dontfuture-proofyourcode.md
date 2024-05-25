@@ -1,5 +1,5 @@
 ---
-title: "코드를 미래지향적으로 작성하지 마세요"
+title: "제발 코드를 미래지향적으로 작성하지 마세요"
 description: ""
 coverImage: "/assets/img/2024-05-18-Dontfuture-proofyourcode_0.png"
 date: 2024-05-18 21:18

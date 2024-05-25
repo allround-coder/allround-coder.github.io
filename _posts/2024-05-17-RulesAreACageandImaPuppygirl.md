@@ -1,5 +1,5 @@
 ---
-title: "규칙은 우리를 갇히는 우리의 속성일 뿐 그리고 나는 강아지 소녀야"
+title: "규칙은 우리를 갇히는 우리의 속성"
 description: ""
 coverImage: "/assets/img/2024-05-17-RulesAreACageandImaPuppygirl_0.png"
 date: 2024-05-17 03:42

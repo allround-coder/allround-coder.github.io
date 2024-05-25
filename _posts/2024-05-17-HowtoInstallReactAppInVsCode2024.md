@@ -1,5 +1,5 @@
 ---
-title: "2024년에 VsCode에 React 앱을 설치하는 방법"
+title: "VsCode에 React 앱을 설치하는 방법(2024년 최신)"
 description: ""
 coverImage: "/assets/img/2024-05-17-HowtoInstallReactAppInVsCode2024_0.png"
 date: 2024-05-17 20:57

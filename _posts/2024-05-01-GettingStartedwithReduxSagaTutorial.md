@@ -498,7 +498,7 @@ function* mySaga() {
 
 지금까지 한 모든 변경 내용이 반영된 코드는 다음과 같습니다:
 
-````
+```
 
 <div class="content-ad"></div>
 
@@ -561,7 +561,7 @@ export const GET_POSTS_FETCH = createAction("GET_POSTS_FETCH");
 export const GET_POSTS_SUCCESS = createAction("GET_POSTS_SUCCESS");
 export const GENERAL_FAILURE = createAction("GENERAL_FAILURE");
 export const EXIT_APP = createAction("EXIT_APP");
-````
+```
 
 대부분의 생성된 액션은 어떤 작용을 하는지 명확하지만, EXIT_APP은 사용할 효과를 보여주기 위해 추가한 액션입니다. 사용자가 화면을 떠날 때 또는 뒤로 돌아갈 때를 생각해보면, 사가를 깨끗하게 정리하기 위해 exit 함수를 호출합니다. API를 호출하고 결과를 가져오고자 할 때는 Post fetch를 사용합니다. API 호출 시 오류가 발생한 경우 General failure을 사용하고, 데이터를 성공적으로 가져온 경우에는 success가 트리거됩니다.
 
@@ -1006,7 +1006,7 @@ return (
 
 그래서, 우리의 로직이 작동합니다. 이러한 변경만으로 우리가 위에서 논의한 총 4가지 중 처음 두 가지를 완료했습니다.
 
-````
+```
 
 <div class="content-ad"></div>
 
@@ -1016,7 +1016,7 @@ return (
 export const allPosts = (state) => state.myReducer.posts;
 const allComments = (state) => state.myReducer.comments;
 const allUsers = (state) => state.myReducer.users;
-````
+```
 
 위 코드에서는 가져온 전역 상태에서 allPosts를 간단히 내보냈습니다. 그것이 목록에 모든 게시물을 표시하는 데 필요한 유일한 것이기 때문에 내보내야 하는 것입니다. 다른 두 allComments 및 allUsers는 단순히 모든 데이터를 가져오기 위해 존재하며 다음으로 필요한 선택자를 만들 것입니다.
 

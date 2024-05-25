@@ -1,5 +1,5 @@
 ---
-title: "파이썬과 언더스코어_"
+title: "파이썬과 언더스코어 (_)"
 description: ""
 coverImage: "/assets/img/2024-05-18-Pythonandtheunderscore__0.png"
 date: 2024-05-18 21:38
@@ -62,7 +62,7 @@ df_actual
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 NO_OF_DAYS
 SIGNIF_LEVEL
@@ -74,7 +74,7 @@ RUN_DEBUGGER
 그러나 Python 클래스는 일반적으로 밑줄을 사용하지 않습니다. 따라서 book_publisher처럼 클래스를 이름 짓지 않을 것입니다. BookPublisher로 짓겠죠. list나 dict와 같이 잘 알려진 예외가 있긴 하지만, 여러분이 직접 이러한 예외를 만들어서는 안 된다는 뜻입니다.
 
 ## Dunder (double underscore, or magic) methods
-```
+
 
 <div class="content-ad"></div>
 
@@ -157,7 +157,7 @@ _ = save(obj, pathlib.Path("file.csv")
 ```
 
 여기서는 save()의 출력을 _에 할당했는데, 이는 코드에서 이 출력을 사용할 필요가 없기 때문입니다. 만약 사용해야 한다면, 다음과 같이 하게 됩니다:
-```
+
 
 <div class="content-ad"></div>
 

@@ -87,7 +87,7 @@ React Router의 `Link` 컴포넌트는 애플리케이션의 서로 다른 경�
 
 ```js
 <Route path="/posts/:postId" component={PostDetail} />
-````
+```
 
 이 라우트에서 :postId는 블로그 게시물의 고유 식별자를 나타내는 라우트 매개변수입니다. 사용자가 /posts/123과 같은 URL로 이동할 때, React Router는 postId 매개변수로 값 123을 캡처합니다. 이 매개변수는 그런 다음 PostDetail 컴포넌트 내에서 액세스하여 해당 블로그 게시물 콘텐츠를 가져와 표시할 수 있습니다.
 

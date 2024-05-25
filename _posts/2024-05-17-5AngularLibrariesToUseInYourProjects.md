@@ -1,5 +1,5 @@
 ---
-title: "프로젝트에서 사용할 수 있는 5가지 Angular 라이브러리 "
+title: "현업에서 바로 사용할 수 있는 5가지 Angular 라이브러리 "
 description: ""
 coverImage: "/assets/img/2024-05-17-5AngularLibrariesToUseInYourProjects_0.png"
 date: 2024-05-17 21:14
@@ -11,7 +11,7 @@ link: "https://medium.com/stackademic/5-angular-libraries-to-use-in-your-project
 ---
 
 
-```
+
 ![Angular Code Input](/assets/img/2024-05-17-5AngularLibrariesToUseInYourProjects_0.png)
 
 안녕하세요, 여러분! 오늘은 여러분과 함께 유용한 5가지 Angular 라이브러리를 소개할 거에요. 이 라이브러리들을 제가 제 프로젝트에서 사용해서, 개발 속도를 높였어요. 확실히 이 라이브러리들이 여러분들의 삶을 훨씬 편하게 만들 거예요. 그럼, 어떤 것들이 있는지 한번 알아볼까요?
@@ -19,7 +19,7 @@ link: "https://medium.com/stackademic/5-angular-libraries-to-use-in-your-project
 ## Angular Code Input
 
 ![Angular Code Input](/assets/img/2024-05-17-5AngularLibrariesToUseInYourProjects_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -43,7 +43,7 @@ link: "https://medium.com/stackademic/5-angular-libraries-to-use-in-your-project
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-5AngularLibrariesToUseInYourProjects_4.png)
 
 Angular에서 데이터 시각화를 위한 훌륭한 라이브러리입니다. 이 라이브러리는 막대 차트, 파이 차트, 산점도, 선 그래프 등 다양한 차트를 제공합니다. 이 라이브러리는 chart.js를 기반으로 하고 있습니다. 따라서 Angular 프로젝트에서 chart.js 라이브러리의 모든 차트를 사용할 수 있습니다. 이 링크에서 라이브러리 데모를 확인할 수 있습니다.
@@ -51,7 +51,7 @@ Angular에서 데이터 시각화를 위한 훌륭한 라이브러리입니다. 
 ## Ngx Cookie Service
 
 ![이미지](/assets/img/2024-05-17-5AngularLibrariesToUseInYourProjects_5.png)
-```
+
 
 <div class="content-ad"></div>
 

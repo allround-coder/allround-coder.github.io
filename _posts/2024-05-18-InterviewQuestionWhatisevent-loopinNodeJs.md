@@ -1,5 +1,5 @@
 ---
-title: "인터뷰 질문 Nodejs에서의 이벤트 루프는 무엇인가요"
+title: "프로트엔드 면접 질문 - Nodejs에서의 이벤트 루프는 무엇인가요?"
 description: ""
 coverImage: "/assets/img/2024-05-18-InterviewQuestionWhatisevent-loopinNodeJs_0.png"
 date: 2024-05-18 21:21

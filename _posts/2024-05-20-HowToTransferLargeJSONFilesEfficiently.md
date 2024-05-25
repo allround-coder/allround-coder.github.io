@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
 ```
 
 SSE 이벤트 스트림은 간단한 텍스트 데이터 스트림이며 해당 텍스트는 UTF-8 형식을 사용하여 인코딩됩니다. 따라서 textDecoder 객체를 생성할 때 인코딩을 utf-8로 설정해야 합니다. 텍스트Decoder 객체가 준비되면 해당 객체가 제공하는 decode 메소드를 호출하여 디코딩할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -202,7 +202,7 @@ SSE 이벤트 스트림은 간단한 텍스트 데이터 스트림이며 해당 
 
 <div class="content-ad"></div>
 
-```markdown
+
 large.json
 
 ```js
@@ -280,7 +280,7 @@ server.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 ``` 
-```
+
 
 <div class="content-ad"></div>
 

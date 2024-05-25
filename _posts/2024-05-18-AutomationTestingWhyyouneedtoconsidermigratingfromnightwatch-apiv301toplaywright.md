@@ -1,5 +1,5 @@
 ---
-title: "자동화 테스트 nightwatch-api v301에서 playwright로 이주를 고려해야 하는 이유"
+title: "nightwatch-api v301에서 playwright로 이주를 고려해야 하는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-18-AutomationTestingWhyyouneedtoconsidermigratingfromnightwatch-apiv301toplaywright_0.png"
 date: 2024-05-18 21:51
@@ -54,7 +54,7 @@ Nightwatch.js는 v1.x에서 v2.x로의 마이그레이션을 돕기위한 마이
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-AutomationTestingWhyyouneedtoconsidermigratingfromnightwatch-apiv301toplaywright_2.png)
 
 고려 사항
@@ -64,7 +64,7 @@ Nightwatch.js는 v1.x에서 v2.x로의 마이그레이션을 돕기위한 마이
 - 다양한 언어 지원 - Javascript, Typescript, Java, Python, .NET.
 
 나는 이러한 세 가지 고려 사항으로 Nightwatch.js v1.7에서 Playwright로 테스트를 이전하려고 합니다.
-```
+
 
 <div class="content-ad"></div>
 

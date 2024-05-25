@@ -11,7 +11,7 @@ link: "https://medium.com/ai-advances/automating-instruction-generation-off-any-
 ---
 
 
-```markdown
+
 ![Automating Instruction Generation](/assets/img/2024-05-20-AutomatingInstructionGenerationoffanyDocumentforLLMFine-Tuning_0.png)
 
 큰 언어 모델 (LLM)은 뛰어난 생성 능력으로 다양한 제품에 진입하고 있으며, 우리는 새로운 응용 분야가 버섯처럼 생겨나고 있다는 것을 발견하고 있습니다. 이러한 모델들은 일반적인 도구이며 종종 도메인 특화 지식이 부족하여 그 영향력이 다소 줄어들 수 있습니다. 이러한 유용한 도메인 지식은 분산된 기업 리포지토리에 숨겨져 있을 수 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/ai-advances/automating-instruction-generation-off-any-
 귀하의 도메인 데이터로 사용자 정의 LLM을 세밀 조정하면 이 간극을 좁히는 데 도움이 될 수 있습니다. 이 과정으로 나아가는 데 중요한 단계 중 하나가 데이터 준비입니다. 이는 데이터의 품질이 세밀 조정된 모델의 성능에 중대한 영향을 미칠 것이기 때문에 중요한 단계입니다. 이러한 데이터 세트를 수동으로 정비하려고 하면 매우 비용이 많이 들고 시간이 많이 소요되는 작업일 수 있습니다.
 
 이 기사에서는 Mistral 7B Instruct 모델을 사용하여 내부 문서에서 지침 및 교육 데이터 세트를 자동으로 생성하는 비용 효율적인 대안을 탐색할 것입니다. 우리는 귀하의 도메인을 포괄적으로 다룰 수 있는 지침 생성의 새로운 접근법을 취할 것입니다. Mistral 7B는 또한 학습 데이터 세트 생성을 위해 검색 보조 생성 (RAG) 설정에서 사용됩니다. 한번 훈련 데이터 세트를 확보하면 이 데이터 세트를 사용하여 Mistral 7B를 실제로 세밀히 조정하여 지역 도메인 지식으로보갰습니다.MLX 프레임워크 라이브러리를 호출합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -52,21 +52,21 @@ faiss-cpu는 CPU를 사용하여 밀집 벡터의 효율적인 유사성 검색 
 
 <div class="content-ad"></div>
 
-```markdown
+
 python3.10 -m venv llm_tuning
 source llm_tuning/bin/activate
-```
+
 
 다음으로 필요한 모든 라이브러리를 설치합니다:
 
-```markdown
+
 pip install langchain faiss-cpu sentence-transformers flask-sqlalchemy psutil unstructured pdf2image unstructured_inference pillow_heif opencv-python pikepdf pypdf
 pip install mlx
 CMAKE_ARGS="-DLLAMA_METAL=on" FORCE_CMAKE=1 pip install --upgrade --force-reinstall llama-cpp-python --no-cache-dir
-```
+
 
 위 마지막 줄은 M1 프로세서에서 하드웨어 가속을 사용하여 Mistral 7B를 양자화한 llama-cpp-python 라이브러리를 설치하는 과정을 포함합니다. Metal을 사용하면 계산이 GPU에서 실행됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -313,7 +313,7 @@ Q #99:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 $ python main.py -t
 
@@ -367,17 +367,17 @@ A:
 # 5.0 MLX를 사용한 세밀 조정
 
 MLX는 Apple 실리콘 기반의 머신 러닝 연구를 위한 배열 프레임워크입니다 [2]. Llama, Mistral 및 TinyLlama와 같은 LLM에 대한 텍스트 생성 및 세밀 조정에 사용될 수 있습니다. 세밀 조정을 위해 모델은 MLX에서 인식하는 형식이어야 하므로 이전에 사용했던 GGUF 버전을 사용할 수 없습니다. MLX는 mlx-examples Github 저장소의 스크립트를 제공하여 전체 워크플로우를 지원합니다. 아래와 같이 생성 시스템의 디렉터리 내에서 MLX 예제 저장소를 클론해 보겠습니다:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 $ git clone https://github.com/ml-explore/mlx-examples.git
-```
+
 
 HuggingFace에서 Mistral 7B를 다운로드하고 4비트 모델로 양자화하려면 convert.py 스크립트를 사용할 수 있습니다. 이 스크립트는 기본적으로 입력으로 HuggingFace repo를 취하고 결과를 디렉토리 mlx_model에 출력합니다. 다음은 샘플 실행 출력입니다:
 
-```markdown
+
 $ python mlx-examples/lora/convert.py --hf-path mistralai/Mistral-7B-Instruct-v0.1 -q
 [INFO] Loading
 model-00003-of-00003.safetensors: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4.54G/4.54G [33:52<00:00, 2.23MB/s]
@@ -443,7 +443,7 @@ Fine-tuning이 LLM에 도움이 되었는지 확인하기 위해 기본 및 fine
 
 <div class="content-ad"></div>
 
-```markdown
+
 ### 기본 모델 테스트
 
 $ python mlx-examples/lora/lora.py --model ./mlx_model --max-tokens 1000 --prompt 'SteelHead 경로 선택의 목적은 무엇입니까?'   
@@ -468,14 +468,14 @@ $ python mlx-examples/lora/lora.py --model ./mlx_model --adapter-file ./adapters
 SteelHead 경로 선택의 목적은 무엇입니까?
 
 네트워크 경로 선택 기능의 목적은 SaaS 응용 프로그램 트래픽을 기반으로 두 위치 사이에서 가장 효율적인 경로를 선택하는 것입니다. SteelHead 네트워크 경로 선택은 네트워크 트래픽을 특정 응용 프로그램에 액세스하기 위해 특정 경로(네트워크 경로 또는 WAN 경로 연결)를 사용하고 네트워크 성능을 보장하기 위해 트래픽을 우선순위로 처리할 수 있습니다. 이 기능은 여러 경로(다중 WAN 링크, MPLS 연결 및 LAN 등)이 있는 환경에서 특히 유용합니다.
-```
+
 
 세부 조정된 모델 테스트는 lora.py를 --adapter-file 옵션과 어댑터 파일명을 함께 사용하여 실행하는 것을 포함합니다. 그 이외에는 모든 것이 동일합니다.
 
 비교를 쉽게하기 위해 기본 및 세부 조정된 모델 간의 두 실행 결과를 비교한 결과가 Table 1에 나타납니다. 두 쿼리에 대한 기본 모델의 답변은 모두 잘못되었습니다. 세부 조정된 모델의 답변은 거의 정확하지만 일부 오류가 있습니다. 그럼에도 불구하고 비교적 작은 교육 데이터 집합을 사용하여 세세하게 조정한 모델은 여전히 비교적 잘 학습할 수 있습니다.
 
 <img src="/assets/img/2024-05-20-AutomatingInstructionGenerationoffanyDocumentforLLMFine-Tuning_2.png" />
-```
+
 
 <div class="content-ad"></div>
 

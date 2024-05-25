@@ -1,5 +1,5 @@
 ---
-title: "가장 좋은 색상과 이름"
+title: "웹개발에서 알아둬야할 Color들"
 description: ""
 coverImage: "/assets/img/2024-05-17-BestColorsandNames_0.png"
 date: 2024-05-17 21:27

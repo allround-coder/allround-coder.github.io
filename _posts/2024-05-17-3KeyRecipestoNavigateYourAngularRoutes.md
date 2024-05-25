@@ -1,5 +1,5 @@
 ---
-title: "앵귤러 라우트를 탐색하는 핵심 레시피 3가지"
+title: "앵귤러 라우트를 제대로 사용하는 방법 3가지"
 description: ""
 coverImage: "/assets/img/2024-05-17-3KeyRecipestoNavigateYourAngularRoutes_0.png"
 date: 2024-05-17 20:22

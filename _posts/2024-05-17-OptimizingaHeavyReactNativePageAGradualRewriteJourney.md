@@ -1,5 +1,5 @@
 ---
-title: "무거운 React Native 페이지 최적화 점진적 재작성 여정"
+title: "React Native 페이지 최적화 방법 정리(2024년 최신)"
 description: ""
 coverImage: "/assets/img/2024-05-17-OptimizingaHeavyReactNativePageAGradualRewriteJourney_0.png"
 date: 2024-05-17 20:52
@@ -47,7 +47,7 @@ b. 공유 값 수정은 컴포넌트를 다시 렌더링하지 않습니다. 따
 
 <div class="content-ad"></div>
 
-```
+
 ![Component Structure](/assets/img/2024-05-17-OptimizingaHeavyReactNativePageAGradualRewriteJourney_0.png)
 
 프로필 페이지의 초기 구성은 위 이미지에 요약되어 있습니다. PersonalProfile은 이 페이지의 "화면"인 최상위 구성 요소입니다. PersonalProfile을 통해 다음 정보가 표시됩니다.
@@ -62,18 +62,18 @@ b. 공유 값 수정은 컴포넌트를 다시 렌더링하지 않습니다. 따
 - WorkoutSnippet 구성 요소를 통해 각 운동이 요약됩니다. WorkoutSnippet은 운동 제목 ("Saturday Night Run"이 화면 샷에 표시됨), 캡션 ("A good run"이 화면 샷에 표시됨), 운동 경로를 나타내는 MapView, 운동 통계 및 운동과 상호 작용하는 몇 가지 제어가 표시됩니다.
 
 구성 요소 구조는 다음과 같이 요약될 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 <PersonalProfile>
   <ProfileSummary />
   <ProfileTabs>
     {...<WorkoutSnippet />}
   </ProfileTabs>
 </PersonalProfile>
-```
+
 
 Initial analysis 후 많은 개선점을 발견했지만, 페이지 성능을 저해하는 주요 원인은 운동 스니펫 목록이었다고 결론지었습니다. 각 스니펫에는 비싼 MapView가 있었고, 잘못된 위치에 상태 업데이트가 발생하여 긴 목록이 다시 처음부터 렌더링되었습니다. 사용자가 페이지를 보기 전까지 React가 가상 DOM에서 전체 목록을 렌더링할 때 크게 프레임 속도가 떨어졌습니다.
 
@@ -81,7 +81,7 @@ Initial analysis 후 많은 개선점을 발견했지만, 페이지 성능을 �
 
 - 사용자 정보는 앱의 로컬 스토리지에 캐시되어 있어 같은 세션에서는 메타데이터를 다시 가져 오지 않습니다. 사용자가 프로필 페이지를 수동으로 새로 고치지 않는 한 (Instagram처럼 아래로 끌어 다시 가져오는 것), 
 - 백엔드 통신은 GraphQL을 기반으로 하며, PersonalProfile 구성 요소는 Apollo의 useQuery 훅을 사용하여 메타데이터를 가져옵니다. 성공적인 검색을 통해 저장된 사용자 데이터를 업데이트해야 하므로 가져온 데이터에 대한 useEffect가 구현됩니다. 훅 값이 변경 될 때 캐시를 업데이트 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -350,7 +350,7 @@ useEffect(() => {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:808/1*lXJIEkRu_pn9vl7VH5loag.gif)
 
 The drop during mount is now down to 82 FPS from a previously unreliable 20–40 FPS! There is an inevitable drop when the MapViews load in eventually after 1 second, but the UI remains responsive throughout!
@@ -359,7 +359,7 @@ As for the profiler results, the render time of the screen dropped to 120ms, wit
 That’s an improvement by a third of the original render time!
 
 ## Fixing Tab Switching Logic — Making the Tabs Swipe-able
-```
+
 
 <div class="content-ad"></div>
 
@@ -480,11 +480,11 @@ interpolare 함수는 애니메이션 값과 스타일 속성 값의 매핑을 �
 Reanimated 라이브러리가 이들 극단값 사이의 중간 값들을 처리해줄 것입니다.
 
 아래에 시각화가 제공되었습니다: 
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-17-OptimizingaHeavyReactNativePageAGradualRewriteJourney_2.png)
 
 This wraps up our translation effect!
@@ -492,11 +492,11 @@ This wraps up our translation effect!
 ## Achieving Dynamic Tab Icon Color
 
 Observe carefully when the color of the tab icon changes:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](https://miro.medium.com/v2/resize:fit:1100/1*S9kq4JSTm65UgmYbbv_Cpg.gif)
 
 사용자가 탭 본문의 50% 이상으로 스크롤했을 때 탭 색상이 변경됩니다. 새로운 색상으로 유지되는 기간은 얼마인가요? 사용자가 탭 본문의 50% 이상 스크롤하지 않는 한 계속해서 색상이 유지됩니다.
@@ -507,11 +507,11 @@ Observe carefully when the color of the tab icon changes:
 각 탭에는 인덱스가 있습니다. 여기서 두 탭의 인덱스는 각각 0과 1입니다.
 
 여기 우리의 수평 탭 본문 목록이 펼쳐진 모습입니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-05-17-OptimizingaHeavyReactNativePageAGradualRewriteJourney_3.png" />
 
 그러므로, animatedValue의 최대 가능한 값은 얼마라고 생각하시나요?
@@ -522,7 +522,7 @@ Observe carefully when the color of the tab icon changes:
 - Tab 1은 Tab 0 이후 100vw에서 시작합니다.
 
 여기 사용자가 초기에 화면에서 볼 수 있는 것입니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -609,7 +609,7 @@ expo-image 라이브러리를 사용하여 사용자의 프로필 사진을 로�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 const signIn = (user) => {
   if (user.displayPicture) {
@@ -631,7 +631,7 @@ const signOut = async () => {
 긴 여정이었습니다! React Native 애플리케이션을 최적으로 설계하는 데 어떤 통찰력을 얻었으면 좋겠어요. 메모이제이션, 적절한 네이티브 컴포넌트 사용, 캐싱 그리고 값 비싼 로직을 신중하게 배치하는 것은 앱을 최적화하는 데 큰 역할을 합니다. 이러한 전략을 사용하여 렌더링 시간을 200ms에서 110ms로 줄일 수 있었어요. 탭을 재설계하고 reanimated 라이브러리를 활용하며 값 비싼 상태 업데이트를 피함으로써 추후의 느림 현상을 완전히 제거할 수 있었어요! 프로파일러는 앱 성능의 병목 지점을 관찰하는 데 훌륭한 도구에요. 다음 번엔 또 뵙겠습니다!
 
 # 관련 기사
-```
+
 
 <div class="content-ad"></div>
 

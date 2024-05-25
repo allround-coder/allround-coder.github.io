@@ -1,5 +1,5 @@
 ---
-title: "자바스크립트에서 Rest 매개변수는 무엇인가요"
+title: "자바스크립트에서 Rest 매개변수 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-WhatIstheRestParameterinJavaScript_0.png"
 date: 2024-05-17 20:26
@@ -149,7 +149,7 @@ console.log(`Total emoji length: ${totalLength}`)
 나머지 매개변수의 동생인 스프레드 연산자도 세 개의 점 구문을 사용하지만 다른 목적을 가지고 있습니다.
 
 나머지 매개변수는 함수 인수를 배열로 수집하는 반면, 스프레드 연산자는 반대로 작용합니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "Angular 개발에서 흔히 범하는 10가지 실수"
+title: "Angular 개발에서 흔히 하는 10가지 실수"
 description: ""
 coverImage: "/assets/img/2024-05-18-10CommonMistakesinAngularDevelopment_0.png"
 date: 2024-05-18 21:56
@@ -413,7 +413,7 @@ export class ExampleComponent {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 import { Component } from '@angular/core';
 
@@ -474,7 +474,7 @@ export class ExampleComponent implements OnInit {
    // 앗! API 요청이 최적화되지 않았네요
 }
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -661,7 +661,7 @@ export class ExampleComponent {
 - 허용되는 HTML 요소 및 속성을 정의하는 객체입니다.
 
 이 예제에서는 div, span, a 요소 및 a 요소의 href 속성만 허용하는 작은 화이트리스트를 정의했습니다. `unsafeHtml` 문자열에 있는 다른 요소나 속성은 살균 처리 중에 제거됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -767,7 +767,7 @@ export class ExampleComponent {
 ```
 
 이 업데이트된 버전에서 Reactive Forms를 사용하고 있어요. [(ngModel)]을 사용하는 대신 Angular의 Reactive Forms 접근 방식을 고려해보세요. Reactive Forms는 양방향 데이터 바인딩보다 더 많은 제어와 유연성을 제공하며 양식 유효성 검사 및 데이터 처리에 관한 추가적인 기능을 제공해요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -835,7 +835,7 @@ describe('ExampleComponent', () => {
 it 문은 구성 요소의 동작에 대한 기대치를 정의합니다. isLoggedIn이 true로 설정되었을 때 올바른 사용자 이름이 포함된 환영 메시지가 표시되고, isLoggedIn이 false로 설정되었을 때 로그인 메시지가 표시되는지 확인합니다.
 
 참고: 이것은 기본적인 예제일 뿐이며, 특정 요구 사항과 구성 요소 논리에 기반하여 테스트를 사용자 정의해야 할 수 있습니다. 모든 가능한 시나리오를 철저히 테스트하여 구성 요소의 정확성과 신뢰성을 보증하는 것이 중요합니다.
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -1124,7 +1124,7 @@ export class ExampleComponent {
 
 적절한 오류 처리 메커니즘을 구현함으로써, HTTP 요청의 오류가 적절히 처리되고, 사용자에게 오류 메시지가 표시되며, 디버깅을 위해 오류가 로깅되고, 응용 프로그램이 안정적이고 신뢰할 수 있게 유지될 수 있습니다.
 
-예기치 않은 예외 처리:```
+예기치 않은 예외 처리:
 
 <div class="content-ad"></div>
 
@@ -1153,7 +1153,7 @@ export class ExampleComponent {
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 import { Component } from '@angular/core';
 
@@ -1185,7 +1185,7 @@ export class ExampleComponent {
 요약하면, Angular는 웹 응용 프로그램을 구축하기 위한 강력하고 기능이 풍부한 프레임워크이지만, 최적의 성능, 유지 관리 및 신뢰성을 보장하기 위해 개발자들이 인식하고 피해야 할 몇 가지 흔한 실수가 있습니다. 이러한 실수에는 부적절한 컴포넌트 설계, 비효율적인 변경 감지, 반응형 프로그래밍의 부재, 적절하지 않은 메모리 관리, 성능 최적화의 부족, 보안 모범 사례 무시, 테스트 부재, Angular 최상의 실천법 따르지 않기, 오류 상황 처리를 미뤄두는 것 등이 있습니다.
 
 이러한 일반적인 실수를 이해하고 해결함으로써, 개발자들은 원할하고 신뢰할 수 있는 Angular 애플리케이션을 만들 수 있습니다. 사용자 경험을 원활하게 제공하며 유지 가능하며 확장 가능하며 모범 사례를 준수하는 Angular 애플리케이션을 만들기 위해 Angular 문서를 준수하고 최신 모범 사례를 따르고 적절한 오류 처리, 테스트 및 성능 최적화 기법을 통합하는 것이 중요합니다.
-```
+
 
 <div class="content-ad"></div>
 

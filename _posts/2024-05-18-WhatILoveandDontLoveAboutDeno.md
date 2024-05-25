@@ -53,7 +53,7 @@ import { Application, Router } from "https://deno.land/x/oak@v11.1.0/mod.ts";
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Deno Provides TypeScript Integration](/assets/img/2024-05-18-WhatILoveandDontLoveAboutDeno_2.png)
 
 Deno는 즉시 TypeScript 통합을 제공합니다. 반면에 Node는 TypeScript 통합을 다룰 패키지를 또 가져와야 한다는 번거로움이 있습니다. 또한 TypeScript에 대한 변환 도구를 구성해야 합니다. Deno에서는 이렇게 꼬일 필요가 없습니다. 이는 Deno에서 Node보다 빠르게 TypeScript 프로젝트를 시작할 수 있음을 의미합니다.
@@ -61,7 +61,7 @@ Deno는 즉시 TypeScript 통합을 제공합니다. 반면에 Node는 TypeScrip
 만약 TypeScript를 극도로 혐오한다면(당신을 판단하고 있습니다), Deno에서 순수 JavaScript를 작성할 수도 있습니다. 타입스크립트가 언어의 슈퍼셋이기 때문에 Deno에서도 JavaScript를 처리할 수 있습니다(하지만 정신을 바로잡으세요).
 
 ## 표준 라이브러리
-```
+
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "리액트 네이티브  쉽고 편하게 사용할 수 있는 모달 매니저 만들기"
+title: "리액트 네이티브로 모달을 윕게 사용할 수 있는 Modal Manager 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-17-ReactNativeCreateeasytouseModalManager_0.png"
 date: 2024-05-17 21:03
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
 2. 초기 설정:
 
 - 모달의 표시 상태, 표시할 데이터, 모달 구성 옵션, 모달을 숨기는 함수 및 모달 닫기 이벤트를 처리하는 콜백 함수와 같은 props를 받습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -401,7 +401,7 @@ export const useModal = ({ defaultOptions }: UseModalParams) => {
 - 모달 표시: show 함수를 사용하여 제공된 매개변수로 모달을 표시합니다. 제공된 매개변수에 기반하여 모달 데이터와 옵션을 업데이트하고 isVisible을 true로 설정합니다.
 - 모달 숨기기: hide 함수는 현재 표시 중인 모달을 숨기는 데 사용됩니다. isVisible를 false로 설정합니다.
 - 숨김 콜백: onHide 함수는 모달이 숨겨질 때 트리거되는 콜백입니다. 모달 데이터와 옵션을 초기 값으로 재설정합니다.
-```
+
 
 <div class="content-ad"></div>
 

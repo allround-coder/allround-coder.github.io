@@ -11,7 +11,7 @@ link: "https://medium.com/@patrick.jakobsen/deploying-nextjs-application-on-wind
 ---
 
 
-```markdown
+
 ![Deploying Next.js Application on Windows IIS Server](/assets/img/2024-05-20-DeployingNextJsApplicationonWindowsIISServer_0.png)
 
 NextJS는 단일 페이지 애플리케이션을 만들기 위한 서버 측 렌더링된 React 기반 프레임워크입니다. 서버 측 렌더링 기능으로 인해 매우 인기가 높습니다. NextJS를 사용하여 다음 애플리케이션을 작성하는 것은 매우 간단합니다. NextJS를 사용하기 위해 명시적으로 구성할 필요가 없습니다. npm run dev를 실행하고 애플리케이션을 구축하기 시작하면 됩니다.
@@ -19,7 +19,7 @@ NextJS는 단일 페이지 애플리케이션을 만들기 위한 서버 측 렌
 # 서버 측 렌더링이란?
 
 서버 측 렌더링(SSR)은 프런트엔드 프레임워크가 웹페이지를 준비하기 위해 사용자별 데이터를 서버 측에서 가져와 사용자 화면으로 보내는 능력입니다. 사용자에게 표시하기 위해 클라이언트 측에서 웹페이지를 준비하는 대신에 서버 측에서 웹페이지를 준비합니다.
-``` 
+ 
 
 <div class="content-ad"></div>
 

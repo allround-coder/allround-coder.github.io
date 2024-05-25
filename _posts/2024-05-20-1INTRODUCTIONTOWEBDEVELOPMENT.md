@@ -1,5 +1,5 @@
 ---
-title: "웹 개발 소개"
+title: "웹 개발에 필요한 내용들 전반적으로 소개"
 description: ""
 coverImage: "/assets/img/2024-05-20-1INTRODUCTIONTOWEBDEVELOPMENT_0.png"
 date: 2024-05-20 23:02

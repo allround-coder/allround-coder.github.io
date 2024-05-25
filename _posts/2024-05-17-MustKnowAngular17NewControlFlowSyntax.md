@@ -1,5 +1,5 @@
 ---
-title: "반갑습니다 Angular 17의 새로운 제어 흐름 구문 알아두어야 할 사항에 오신 것을 환영합니다"
+title: "Angular 17의 새로운 제어 흐름 구문 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-17-MustKnowAngular17NewControlFlowSyntax_0.png"
 date: 2024-05-17 21:10
@@ -11,7 +11,7 @@ link: "https://medium.com/@chandantechie/must-know-angular-17-new-control-flow-s
 ---
 
 
-```markdown
+
 ![New Control Flow Syntax in Angular](/assets/img/2024-05-17-MustKnowAngular17NewControlFlowSyntax_0.png)
 
 앵귤러 17과 18에서 소개된 새로운 제어 흐름 구문에 대한 포괄적인 설명을 제공해 드릴게요. 예제를 통해 자세히 설명해 드리겠습니다:
@@ -19,7 +19,7 @@ link: "https://medium.com/@chandantechie/must-know-angular-17-new-control-flow-s
 # 앵귤러에서의 새로운 제어 흐름 구문
 
 앵귤러 17과 18은 내장 구문을 사용하여 템플릿 내에서 제어 흐름을 더 직관적이고 선언적으로 다룰 수 있도록 제공합니다. 이를 통해 *ngIf, *ngFor, ngSwitch와 같은 디렉티브를 사용할 필요가 없어져 가독성과 유지보수성이 향상되었습니다.
-```
+
 
 <div class="content-ad"></div>
 

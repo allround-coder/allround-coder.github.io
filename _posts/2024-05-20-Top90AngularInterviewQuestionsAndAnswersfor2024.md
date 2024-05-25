@@ -1,5 +1,5 @@
 ---
-title: "2024년을 위한 상위 90개 이상의 Angular 면접 질문 및 답변"
+title: "(2024년 최신) Angular 면접 질문 및 답변 90가지"
 description: ""
 coverImage: "/assets/img/2024-05-20-Top90AngularInterviewQuestionsAndAnswersfor2024_0.png"
 date: 2024-05-20 22:25
@@ -11,7 +11,7 @@ link: "https://medium.com/@frontendinterviewquestions/top-90-angular-interview-q
 ---
 
 
-```markdown
+
 ![Angular Interview Questions](/assets/img/2024-05-20-Top90AngularInterviewQuestionsAndAnswersfor2024_0.png)
 
 Source:- Angular Interview Questions
@@ -19,7 +19,7 @@ Source:- Angular Interview Questions
 For more questions and answers visit our website at [Frontend Interview Questions](https://www.example.com)
 
 # Angular Interview Questions For Freshers
-```
+
 
 <div class="content-ad"></div>
 
@@ -201,7 +201,7 @@ export class MyComponent implements AfterContentInit {
 
 <div class="content-ad"></div>
 
-```markdown
+
 `ngAfterContentInit` 메소드는 `AfterContentInit` 인터페이스의 일부로 구현됩니다. 이를 통해 컴포넌트의 라이프사이클에 훅을 걸 수 있습니다. 이 메소드 내에서는 프로젝트된(content projection) 콘텐츠를 기반으로 필요한 초기화 또는 로직을 수행할 수 있습니다. 이 예시에서는 프로젝트된 엘리먼트의 텍스트 콘텐츠를 콘솔에 기록합니다.
 
 다른 템플릿에서 `MyComponent` 컴포넌트를 사용하고 프로젝트할 콘텐츠를 제공하는 경우, `ngAfterContentInit` 메소드는 콘텐츠가 초기화된 후 호출됩니다.
@@ -213,7 +213,7 @@ export class MyComponent implements AfterContentInit {
 ```
 
 위 코드가 실행되면 `MyComponent`의 `ngAfterContentInit` 메소드가 트리거되고, 프로젝트된 ``div`` 엘리먼트의 텍스트 콘텐츠를 콘솔에 기록합니다. Angular 컴포넌트에서 `Component`, `AfterContentInit`, `ContentChild`에 대한 필요한 임포트를 `@angular/core` 모듈에서 포함시켜야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -297,9 +297,9 @@ export class MyWebComponentRoutingModule { }
 
 <div class="content-ad"></div>
 
-```markdown
+
 1. 테이블 태그를 마크다운 형식으로 변경하세요.
-```
+
 
 ```js
 import { NgModule } from '@angular/core';
@@ -327,20 +327,20 @@ export class MyWebComponentModule { }
 ```
 
 3. 다른 컴포넌트나 템플릿에서 routerLink 지시문을 사용하여 웹 컴포넌트 루트로 이동하세요.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 [My Web Component](/my-component)
-```
+
 
 6) 위 단계를 따라 애플리케이션을 빌드하고 실행하여 라우팅이 적용된 웹 컴포넌트를 확인할 수 있습니다.
 
 이러한 단계를 따르면 Angular를 사용하여 라우팅이 포함된 웹 컴포넌트를 만들 수 있습니다. routerLink 지시문을 사용하여 웹 컴포넌트의 경로로 이동하고 router-outlet 지시문을 사용하여 웹 컴포넌트 내에서 라우팅된 컴포넌트를 표시할 수 있습니다.
 
 5. Angular에서의 레이지 로딩이란 무엇인가요?  
-```
+
 
 <div class="content-ad"></div>
 
@@ -380,7 +380,7 @@ const routes: Routes = [
 ```
 
 4. 빌드 및 실행: Angular CLI를 사용하여 Angular 애플리케이션을 빌드합니다. 지연로딩 모듈과 관련된 경로로 이동할 때, Angular는 필요한 모듈과 해당 리소스를 요청에 따라 가져와 로드합니다.
-``` 
+ 
 
 <div class="content-ad"></div>
 
@@ -532,7 +532,7 @@ Angular에서 두 개의 컴포넌트 간에 데이터를 공유하는 일반적
 7. Angular에서 사용자 정의 지시자(custom directives)란 무엇이며, 어떻게 만드는지 설명해주세요.
 
 사용자 정의 지시자는 Angular의 기능으로, 개발자가 자체적으로 사용자 정의 HTML 요소나 속성을 만들어 HTML의 기능을 확장할 수 있게 합니다. 사용자 정의 지시자를 사용하면 이벤트 리스너 추가, DOM 수정 또는 데이터 조작과 같은 동작을 정의할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -817,7 +817,7 @@ export class AppModule {}
 결론 :
 
 요약하면, `dependencies`는 프로덕션 환경에서 애플리케이션이 실행되는 데 필요한 패키지가 포함되며, `devDependencies`에는 개발 및 테스트 중에 필요하지만 프로덕션 배포에는 필요하지 않은 패키지가 포함됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -974,7 +974,7 @@ hotObservable.next(7);
 핫 옵저버블은 주로 이벤트나 지속적인 데이터 스트림에 사용되며, 해당 값들은 구독과는 독립적으로 생성됩니다.
 
 요약하면, 콜드 옵저버블과 핫 옵저버블의 주요 차이점은 콜드 옵저버블은 구독 시 값들을 방출하고 각 구독은 별도의 실행을 트리거하며, 핫 옵저버블은 구독과 관계없이 값들을 방출하며 늦은 구독자는 이전에 방출된 값들을 놓칠 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1140,7 +1140,7 @@ export class MyService {
 8. 컴포넌트에서 생성자를 정의해야 할 필요가 있나요?
 
 Angular에서는 컴포넌트에 생성자를 정의할 필요가 없습니다. Angular는 컴포넌트에 대한 기본 생성자를 제공하며, 컴포넌트 클래스에 생성자를 정의하지 않으면 기본 생성자가 사용됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1610,7 +1610,7 @@ Angular은 여러 내장 파이프를 제공하여 Angular 애플리케이션에
 
 <div class="content-ad"></div>
 
-```markdown
+
 1. NumberPipe: 지정된 형식에 따라 숫자를 포맷합니다.
 
 ```js
@@ -1630,7 +1630,7 @@ Angular은 여러 내장 파이프를 제공하여 Angular 애플리케이션에
 ```
 
 4. PercentPipe: 숫자를 백분율로 포맷합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1799,7 +1799,7 @@ selectProduct(product: Product) {
 ```
 
 4. 전략 패턴: 전략 패턴을 통해 런타임에 특정 조건이나 요구 사항에 따라 동적으로 다양한 전략을 선택하고 전환할 수 있습니다. 이러한 동작을 별도의 클래스에 캡슐화하여 컴포넌트는 특정 조건에 따라 전략을 전환할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1856,7 +1856,7 @@ export class PaymentContext {
 ```
 
 d. 이제 Angular 컴포넌트나 서비스에서 전략을 활용할 수 있습니다. 예를 들어:
-```
+
 
 <div class="content-ad"></div>
 
@@ -1888,7 +1888,7 @@ e. 이 예제에서 `PaymentComponent`는 사용자 조작 또는 조건에 따�
 이 구현은 `PaymentStrategy` 인터페이스를 구현하여 새로운 전략을 추가하고, `PaymentComponent` 또는 지불 처리 기능이 필요한 다른 구성 요소 내에서 서로 교환할 수 있도록 함으로써 쉬운 확장성을 제공합니다.
 
 전략 패턴은 클라이언트 코드로부터 다른 알고리즘이나 동작의 구현을 분리하여 기존 코드 수정 없이 전략을 변경하거나 확장할 수 있도록 함으로써 유연성과 유지 보수성을 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -2285,7 +2285,7 @@ const SAMPLE_APP_ROUTES: Routes = [{
 21. package.json 파일에서 물결(~)과 케어트(^) 기호의 사용용도는 무엇인가요?
 
 캐럿(^) 기호
-```
+
 
 <div class="content-ad"></div>
 
@@ -2319,7 +2319,7 @@ The tilde sign (~) indicates that only the last digit specified should change.
 - 틸드를 사용하면 3.9.*와 같은 릴리스를 얻을 수 있습니다. 틸드를 사용하면 최신 버그 수정만 허용됩니다.
 
 그래서 우리는 요령(`~`) 문자를 사용해야 하는 결론에 이를 수 있습니다. 패치 번호를 고정하고 싶을 때는 이 문자를 사용해야 합니다. 이것은 버그 수정만 수용하려고 하고 잠재적으로 호환되지 않는 변경 사항에 부딪히고 싶지 않을 때 사용해야 합니다. 반면에 업스트로크(^) 문자는 패치 및 마이너 버전 번호를 고정하는 역할을 합니다. 역호환성을 가진 새 기능과 버그 수정을 원할 때 사용해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -2887,7 +2887,7 @@ Angular 버전 2 이상에서는 1개의 요소에 1개 이상의 구조 지시�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 1. Subjects let you send data to multiple subscribers, while Observables send data to each subscriber individually. Therefore, when you add a new subscriber to a Subject, they will all receive the same data, but with Observables, each subscriber may get different data as the Observable source is re-executed for each new subscriber.
 2. Observables are cold by default because the data source is contained within the Observable itself, as shown in the code above. On the other hand, Subjects are not cold.
 For more detailed differences, refer to the following YouTube links:
@@ -3325,11 +3325,11 @@ setTimeout은 지정된 지연 시간 후에 함수를 실행하는 내장 JavaS
 setTimeout의 예시:
 
 버튼 클릭 후 2초 후에 알림을 표시하고 싶은 간단한 시나리오를 고려해 봅시다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 const showNotification = () => {
   console.log('Notification: Button clicked!');
@@ -3346,7 +3346,7 @@ button.addEventListener('click', () => {
 48. RxJS의 주요 기능은 무엇인가요 ?
 
 RxJS에는 JavaScript에서 비동기 데이터 스트림을 처리하는 강력한 도구로 만드는 몇 가지 주요 기능이 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -3420,7 +3420,7 @@ of(1, 2, 3).pipe(
 50. RxJS에서 백프레셔를 어떻게 구현하나요?
 
 백프레셔는 반응형 프로그래밍에서 사용되는 메커니즘으로, Observable이 데이터를 소비될 속도보다 빠르게 방출할 때의 상황을 처리하는 데 사용됩니다. 이로 인해 메모리 사용량이 높아지거나 처리 속도가 느려지는 문제 등이 발생할 수 있습니다. RxJS에는 `buffer`, `throttle`, `debounce`, `sample`, `switchMap`를 포함한 여러 오퍼레이터가 있는데, 이를 사용하여 백프레셔를 구현할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -3608,7 +3608,7 @@ filtered$.subscribe(
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 import { of } from 'rxjs';
 
@@ -3629,7 +3629,7 @@ filtered$.subscribe(
 54. Angular에서 서비스란 무엇인가요?
 
 Angular에서 서비스는 서로 다른 구성 요소 간이나 응용 프로그램 전반에 걸쳐 데이터, 로직 및 기능을 공유할 수 있도록 하는 아키텍처의 중요한 부분입니다. 서비스는 서버로부터 데이터 검색, 데이터 조작, 인증, 로깅 등과 같은 재사용 가능한 기능을 캡슐화하고 제공하는 데 사용됩니다. Angular에서 서비스의 주요 측면 및 특성은 다음과 같습니다: 
-```
+
 
 <div class="content-ad"></div>
 
@@ -3701,7 +3701,7 @@ export class BookService {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 import { Component, OnInit } from '@angular/core';
 import { Book } from './book.model';
@@ -3730,7 +3730,7 @@ export class BookListComponent implements OnInit {
 `BookService`를 중앙 데이터 관리 서비스로 사용함으로써 Angular 애플리케이션의 여러 컴포넌트간에 책과 관련된 데이터 및 작업을 쉽게 공유하고 관심사를 분리할 수 있습니다.
 
 서비스를 사용하여 복잡한 로직과 데이터 작업을 처리할 수 있으므로 컴포넌트를 가볍게 유지할 수 있고 컴포넌트 간의 효율적인 통신과 데이터 공유를 가능하게 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -3871,7 +3871,7 @@ export class ExampleComponent {
 
 내부적으로 Zone.js는 `setTimeout` 호출을 가로채고 비동기 작업에 훅을 설치합니다. 이를 통해 Angular이 작업의 실행을 추적하고 작업이 완료되면 변경 감지가 트리거됩니다. 타임아웃이 경과하면 콜백 함수가 실행되고, `status` 속성이 작업이 완료되었다는 것을 나타내도록 업데이트됩니다. 결과적으로 UI가 새로운 상태를 반영하도록 자동으로 업데이트됩니다.
 
-결론:```
+결론:
 
 <div class="content-ad"></div>
 
@@ -3918,7 +3918,7 @@ export class DynamicFormComponent implements OnInit {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 //...
 
@@ -3949,7 +3949,7 @@ removeFormControl(index: number) {
      <button type="submit">Submit</button>
  </form>
 ```  
-```
+
 
 <div class="content-ad"></div>
 
@@ -4194,7 +4194,7 @@ Angular 애플리케이션을 최적화하는 것은 성능과 효율성을 향�
 
 테이블 태그를 마크다운 형식으로 변경하세요.
 
-```markdown
+
 Remember that optimization is an iterative process, and the specific optimizations required may vary depending on the nature of your application. Monitor your application’s performance and gather feedback from users to identify areas that need further optimization.
 
 65. Explain pure and impure pipe in Angular ?
@@ -4202,7 +4202,7 @@ Remember that optimization is an iterative process, and the specific optimizatio
 In Angular, pipes are used to transform data in templates. They can be categorized as pure pipes and impure pipes based on their behavior and performance characteristics.
 
 - Pure Pipes: Pure pipes are the default type of pipes in Angular. They are designed to be pure functions that take an input value and return a transformed output value. Pure pipes are stateless and deterministic, meaning their output is solely dependent on their input, and they don’t have any side effects. Angular optimizes pure pipes by executing them only when their input values change.
-```
+
 
 <div class="content-ad"></div>
 
@@ -4233,9 +4233,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 <div class="content-ad"></div>
 
-```markdown
+
 { user | testPipe} in HTML
-```
+
 
 참고로 컴포넌트 코드는 다음과 같습니다:-
 
@@ -4244,7 +4244,7 @@ user = { name:'test', city: 'test city'};
 ```
 
 그리고 새로운 변경 사항은 다음과 같습니다:-
-```
+
 
 <div class="content-ad"></div>
 
@@ -4306,10 +4306,10 @@ user = { name:'test', city: 'test city'};
 
 그리고 새로운 변경 사항은 :-
 
-```
+
 js
 this.user.city = "new test city"
-```
+
 
 위 예제에서는 testPipe가 실행됩니다. Impure pipes는 입력 값의 변경 여부와 상관없이 Angular가 변경을 감지할 때마다 실행됩니다.
 
@@ -4384,7 +4384,7 @@ describe('CalculatorComponent', () => {
 ```
 
 위의 테스트에서 `describe` 함수를 사용하여 `CalculatorComponent`에 대한 테스트 스위트를 정의합니다. `beforeEach` 함수 내에서 `TestBed.createComponent`를 사용하여 구성요소의 인스턴스를 생성하고, 이를 `fixture`에 할당합니다. 그런 다음 테스트 내에서 구성요소 인스턴스를 `component`에 할당하여 편리하게 테스트에서 사용할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -4679,7 +4679,7 @@ export class MyComponent {
 비슷하게, 필요한 기능 또는 API를 지원하기 위해 다른 폴리필을 주석 처리하거나 추가할 수 있습니다.
 
 3. 애플리케이션 빌드 및 배포: "polyfills.ts" 파일에 필요한 폴리필을 구성한 후, Angular CLI나 선호하는 빌드 프로세스를 사용하여 Angular 애플리케이션을 보통대로 빌드하고 배포할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -4848,7 +4848,7 @@ describe('DataService', () => {
 ```
 
 위의 테스트에서는 `HttpClientTestingModule`을 가져오고 `TestBed.configureTestingModule()`에서 사용하여 테스트 모듈을 구성했습니다. 또한 `HttpTestingController`를 주입하여 HTTP 요청과 상호 작용합니다.
-```
+
 
 <div class="content-ad"></div>
 

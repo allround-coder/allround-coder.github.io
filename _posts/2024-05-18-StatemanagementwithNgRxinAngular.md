@@ -1,5 +1,5 @@
 ---
-title: "앵귤러에서 NgRx를 활용한 상태 관리"
+title: "앵귤러에서 NgRx를 활용한 상태 관리하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-StatemanagementwithNgRxinAngular_0.png"
 date: 2024-05-18 21:49
@@ -11,7 +11,7 @@ link: "https://medium.com/@igorm573/state-management-with-ngrx-in-angular-66ddc6
 ---
 
 
-```markdown
+
 ![스크린샷](/assets/img/2024-05-18-StatemanagementwithNgRxinAngular_0.png)
 
 현대의 프론트엔드 애플리케이션은 주로 컴포넌트 개념을 사용합니다. 이는 사용자 인터페이스의 독립적이고 재사용 가능하며 자체적인 부분을 나타냅니다. Angular, React, Vue.js와 같은 인기 있는 프론트엔드 라이브러리들에서 이 개념은 중요합니다. 다수의 컴포넌트가 동일한 데이터를 필요로 할 때 간편함과 여러 이점을 제공하지만 문제도 발생할 수 있습니다. 이 문제를 해결하기 위해 Redux 패턴이라는 개념이 있습니다. Redux 라이브러리는 처음에 React 생태계에서 인기를 얻었지만 Angular나 Vue.js와 같은 다른 프레임워크에서도 사용할 수 있습니다. 이 글에서는 NgRx 라이브러리를 사용한 상태 관리에 집중하겠습니다. Angular에서는 Redux를 사용할 수 있지만, Angular에 특별히 제작된 인기 있는 상태 관리 라이브러리인 NgRx를 사용하는 애플리케이션을 자주 볼 수 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@igorm573/state-management-with-ngrx-in-angular-66ddc6
 ## NgRx란?
 
 소개에서 언급한 대로, NgRx는 Redux에 영감을 받은 상태 관리를 위한 라이브러리입니다. Angular용 Redux 원칙을 구현하여 애플리케이션 상태를 예측 가능하고 구조적인 방식으로 관리합니다. NgRx는 액션, 리듀서, 이펙트, 셀렉터와 같은 개념을 사용하여 상태를 조작하는데 있어 가시적인 방식을 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

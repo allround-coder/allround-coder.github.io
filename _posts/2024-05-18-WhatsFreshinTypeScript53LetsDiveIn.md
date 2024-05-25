@@ -1,5 +1,5 @@
 ---
-title: "TypeScript 53에서 무슨 신기한 일이 일어나고 있을까요 함께 살펴봐요"
+title: "TypeScript 53에 새로 추가된 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-18-WhatsFreshinTypeScript53LetsDiveIn_0.png"
 date: 2024-05-18 21:47
@@ -11,7 +11,7 @@ link: "https://medium.com/@Evelyn.Taylor/whats-fresh-in-typescript-5-3-let-s-div
 ---
 
 
-```markdown
+
 ![2024-05-18-WhatsFreshinTypeScript53LetsDiveIn_0](/assets/img/2024-05-18-WhatsFreshinTypeScript53LetsDiveIn_0.png)
 
 자바스크립트로 작업 중인 상황을 상상해보세요. 이 언어는 유연하지만 때로는 까다로운 면이 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@Evelyn.Taylor/whats-fresh-in-typescript-5-3-let-s-div
 타입스크립트는 코드를 실행하기 전에 실수를 잡아주는 일종의 보조 역할을 하는데요.
 
 변수와 함수와 같은 요소들의 타입을 명시하는 방법을 추가함으로써 이를 수행합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -42,7 +42,7 @@ npm install -D typescript
 TypeScript 5.3에서 새로 추가된 멋진 기능 중 하나는 import 속성입니다. 이것들은 런타임에 가져온 항목들을 다루는 방법에 대한 특정 세부사항을 알려주는 작은 태그 같은 역할을 합니다.
 
 예를 들어, JSON 파일을 가져올 때 이것이 JSON으로 처리되고 실행 가능한 JavaScript로 처리되지 않도록 하려면 다음과 같이 할 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -71,7 +71,7 @@ const obj = await import("./something.json", {
 이제 더 이상 assert 키워드를 사용하는 대신 with를 사용합니다. 이전 코드에 assert가 있는 경우, 새로운 문법인 with를 사용하도록 업데이트하는 것이 권장됩니다.
 
 # Import 타입에서 버그 수정된 해상도 모드 안정성 지원
-```
+
 
 <div class="content-ad"></div>
 
@@ -229,7 +229,7 @@ function f(value: unknown) {
 # 인스턴스 필드에서 수퍼 속성 액세스를 위한 검사
 
 클래스를 다룰 때 기반 클래스에서 메서드에 접근하기 위해 super 키워드를 사용할 수 있습니다. 이것은 "이 클래스에서 상속 받은 클래스로부터 메서드를 가져오게 해줘"라는 방식입니다.
-```
+
 
 <div class="content-ad"></div>
 

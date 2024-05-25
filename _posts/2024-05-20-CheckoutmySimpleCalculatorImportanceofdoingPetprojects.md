@@ -1,5 +1,5 @@
 ---
-title: "내 간단한 계산기를 확인해보세요  개인 프로젝트를 하는 중요성"
+title: "웹사이트로 계산기 프로젝트 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-20-CheckoutmySimpleCalculatorImportanceofdoingPetprojects_0.png"
 date: 2024-05-20 23:03
@@ -11,7 +11,7 @@ link: "https://medium.com/@dinithoshada2003/check-out-my-simple-calculator-impor
 ---
 
 
-```markdown
+
 ![Simple Calculator](/assets/img/2024-05-20-CheckoutmySimpleCalculatorImportanceofdoingPetprojects_0.png)
 
 As a 1st year IT undergraduate, I always work on pet projects to enhance my skills. I thought I would share my little pet project with you - a simple calculator.
@@ -19,7 +19,7 @@ As a 1st year IT undergraduate, I always work on pet projects to enhance my skil
 ## How did I create this?
 
 I used HTML, CSS, and JavaScript to create this project and used Visual Studio Code as my code editor.
-```
+
 
 <div class="content-ad"></div>
 

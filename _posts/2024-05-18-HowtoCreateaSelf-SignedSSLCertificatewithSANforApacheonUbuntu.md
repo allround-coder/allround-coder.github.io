@@ -1,5 +1,5 @@
 ---
-title: "우분투에서 아파치용 SAN이 포함된 셀프사인 SSL 인증서 만들기 방법"
+title: "우분투에서 아파치용 SAN이 포함된 Self-Signed SSL 인증서 만들기 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-HowtoCreateaSelf-SignedSSLCertificatewithSANforApacheonUbuntu_0.png"
 date: 2024-05-18 21:44
@@ -61,7 +61,7 @@ openssl genpkey -algorithm RSA -aes256 -out private.key
 
 안녕하세요! 아래의 정보를 Markdown 형식으로 변환해 드릴게요.
 
-```markdown
+```
 You’ll be prompted to enter a passphrase; remember this passphrase as you’ll need it later.
 
 ## Step 3: Create a SAN Configuration File
@@ -86,7 +86,7 @@ emailAddress = smazoomder@gmail.com
 [req_ext]
 subjectAltName = IP:192.168.0.88
 ``` 
-```
+
 
 <div class="content-ad"></div>
 
@@ -233,17 +233,17 @@ Apache 가상 호스트 구성을 업데이트하세요 (/etc/apache2/sites-avai
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 가상 호스트 설정:
 
 - **`VirtualHost *:443`**: 443 포트에서 HTTPS 통신을 위한 가상 호스트 블록을 정의합니다.
 
 - **`ServerName localhost`**: 이 가상 호스트와 연결된 기본 도메인 이름을 지정합니다. 이 경우 "localhost"로 설정되어 있습니다.
-``` 
+ 
 
 <div class="content-ad"></div>
 
-```
+
 ServerAdmin webmaster@localhost: 서버 관리자의 이메일 주소.
 
 DocumentRoot /var/www/html/your-project/backend/public: 이 VirtualHost의 문서 루트 디렉터리를 설정합니다. 이것은 웹 서버가 파일을 제공하는 위치입니다.
@@ -251,7 +251,7 @@ DocumentRoot /var/www/html/your-project/backend/public: 이 VirtualHost의 문�
 SSLEngine on: SSL 연결을 처리해야 함을 나타내는이 VirtualHost를위한 SSL 엔진을 활성화합니다.
 
 SSLUseStapling off: SSL 스테이플링을 비활성화합니다. SSL 스테이플링은 SSL/TLS 인증서 확인을 강화하는 메커니즘입니다. 그러나이 예제에서는 비활성화되어 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -323,11 +323,11 @@ sudo chown -R www-data:www-data storage
 # 단계 10: React/Laravel 애플리케이션을 실행 중이라면
 
 프론트엔드 환경에서:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 REACT_APP_NAME = 'your-project'
 REACT_APP_VERSION = v1.1.0
 GENERATE_SOURCEMAP = false
@@ -339,17 +339,17 @@ REACT_APP_API_DOMAIN='https://192.168.0.88'
 REACT_APP_BACK_DOMAIN = 'https://192.168.0.88'
 
 REACT_APP_SITE_KEY = 'your-key'
-```
+
 
 in backend env :
 
-```markdown
+
 APP_URL=https://192.168.0.88
 APP_SITE_URL="https://192.168.0.88:3000"
-```
+
 
 축하합니다! Ubuntu에서 Apache 웹 서버에 대한 Subject Alternative Name이 포함된 자체 서명 SSL 인증서를 성공적으로 생성했습니다.
-```  
+  
 
 <div class="content-ad"></div>
 

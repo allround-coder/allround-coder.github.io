@@ -1,5 +1,5 @@
 ---
-title: "코드람마 대 코드제마 AI 코딩 어시스턴스에 오픈 모델 활용하기"
+title: "CodeLlama vs CodeGemma, AI 코딩 어시스턴스에 오픈 모델 활용하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-CodeLlamavsCodeGemmaUsingOpenModelsforAICodingAssistance_0.png"
 date: 2024-05-17 20:44
@@ -132,7 +132,7 @@ def test_write_file():
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-17-CodeLlamavsCodeGemmaUsingOpenModelsforAICodingAssistance_1.png" />
 
 실제로 두 테스트의 정확성에 대해 잘못 이야기 했었고, 첫 번째 테스트에 버그가 있습니다. 재미있게도, 두 번째 테스트는 뿐만 아니라 더 나은 모습을 하고 있으며, 작동하기도 합니다. 그 반면 첫 번째는 작동하지 않습니다. 스크린샷에서 오류는 명백합니다. 독자들은 자신의 힘으로 어떻게 수정할지 찾아보세요.
@@ -163,7 +163,7 @@ def test_write_file():
 
 prompt = f"""
 <|fim_prefix|>{python_code}
-
+```
 
 <div class="content-ad"></div>
 

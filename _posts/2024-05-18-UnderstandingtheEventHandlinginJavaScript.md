@@ -61,7 +61,7 @@ button.onclick = function() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 const button = document.getElementById('myButton');
 button.addEventListener('click', function() {
@@ -74,7 +74,7 @@ button.addEventListener('click', function() {
 # 결론
 
 자바스크립트에서 이벤트를 이해하고 처리하는 것은 동적이고 상호작용 가능한 웹 페이지를 생성하는 데 필수적입니다. 이벤트를 사용하면 사용자의 작업에 응답하여 웹 애플리케이션을 더 반응적이고 매력적으로 만들 수 있습니다. HTML 이벤트 핸들러, DOM 레벨 이벤트 핸들러 또는 현대적인 이벤트 리스너를 선택하더라도 각 메서드에는 사용 사례와 이점이 있습니다. 그러나 이벤트 리스너를 사용하는 것이 유연성과 효율적인 여러 이벤트 핸들러를 관리할 수 있는 기능으로 인해 일반적으로 권장됩니다. 이벤트 처리를 숙달하면 웹 애플리케이션의 사용자 경험과 기능을 크게 향상시킬 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

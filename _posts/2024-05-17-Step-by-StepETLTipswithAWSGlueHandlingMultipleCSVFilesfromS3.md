@@ -1,5 +1,5 @@
 ---
-title: "AWS Glue로 다수의 CSV 파일을 처리하는 ETL 단계별 팁 함께 해요"
+title: "AWS Glue로 다수의 CSV 파일을 처리하는 ETL 단계별 팁"
 description: ""
 coverImage: "/assets/img/2024-05-17-Step-by-StepETLTipswithAWSGlueHandlingMultipleCSVFilesfromS3_0.png"
 date: 2024-05-17 20:37
@@ -39,7 +39,7 @@ AWS Management Console에서 AWS Glue를 열고, "데이터베이스" 섹션으�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Step-by-Step ETL Tips with AWS Glue: Handling Multiple CSV Files from S3](/assets/img/2024-05-17-Step-by-StepETLTipswithAWSGlueHandlingMultipleCSVFilesfromS3_4.png)
 
 ![Step-by-Step ETL Tips with AWS Glue: Handling Multiple CSV Files from S3](/assets/img/2024-05-17-Step-by-StepETLTipswithAWSGlueHandlingMultipleCSVFilesfromS3_5.png)
@@ -47,7 +47,7 @@ AWS Management Console에서 AWS Glue를 열고, "데이터베이스" 섹션으�
 Once the crawler status is complete you can preview the table data that has been created using Athena
 
 ![Step-by-Step ETL Tips with AWS Glue: Handling Multiple CSV Files from S3](/assets/img/2024-05-17-Step-by-StepETLTipswithAWSGlueHandlingMultipleCSVFilesfromS3_6.png)
-```
+
 
 <div class="content-ad"></div>
 

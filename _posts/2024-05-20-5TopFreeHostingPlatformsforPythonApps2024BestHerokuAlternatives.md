@@ -1,5 +1,5 @@
 ---
-title: "5가지 최고 무료 Python 앱 호스팅 플랫폼 2024 - 최고의 Heroku 대체품"
+title: "5가지 최고 무료 Python 앱 호스팅 플랫폼 2024 "
 description: ""
 coverImage: "/assets/img/2024-05-20-5TopFreeHostingPlatformsforPythonApps2024BestHerokuAlternatives_0.png"
 date: 2024-05-20 23:24

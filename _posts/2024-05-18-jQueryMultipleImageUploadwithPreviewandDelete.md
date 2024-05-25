@@ -30,7 +30,7 @@ jQuery를 이용한 다중 이미지 업로드 기능에 미리 보기 및 삭�
 
 1단계: HTML 마크업
 
-```markdown
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,7 +54,7 @@ jQuery를 이용한 다중 이미지 업로드 기능에 미리 보기 및 삭�
 <script src="script.js"></script>
 </body>
 </html>
-```
+
 
 2단계: JavaScript
 JavaScript 파일을 script.js로 만들고 다음 코드를 추가하세요.

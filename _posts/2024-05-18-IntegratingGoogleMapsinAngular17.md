@@ -313,7 +313,7 @@ this.auLocations.forEach((location) => {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ...
 @for (location of auLocations; track location) {
 <map-advanced-marker
@@ -323,14 +323,14 @@ this.auLocations.forEach((location) => {
 />
 }
 ...
-```
+
 
 The final result should look like the following image:
 
 ![Integrating Google Maps in Angular](/assets/img/2024-05-18-IntegratingGoogleMapsinAngular17_3.png)
 
 ## Adding a Title
-```
+
 
 <div class="content-ad"></div>
 
@@ -428,7 +428,7 @@ export class AppComponent {
 <img src="/assets/img/2024-05-18-IntegratingGoogleMapsinAngular17_5.png" />
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 

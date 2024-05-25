@@ -1,5 +1,5 @@
 ---
-title: "대타브릭 챔피언 여정"
+title: "Databricks 사용 방법 정리"
 description: ""
 coverImage: "/assets/img/2024-05-17-DatabricksChampionJourney_0.png"
 date: 2024-05-17 03:45

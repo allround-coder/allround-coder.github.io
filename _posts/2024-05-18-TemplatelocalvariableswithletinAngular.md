@@ -74,7 +74,7 @@ Angular를 오랫동안 사용해본 적이 있다면, 언젠가는 템플릿 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 <div>
     @let user = (user$ | async) ?? { name: 'Guest' };  
@@ -94,7 +94,7 @@ Angular를 오랫동안 사용해본 적이 있다면, 언젠가는 템플릿 �
 ```
 
 - Inside @for to refactor code duplications:
-```
+
 
 <div class="content-ad"></div>
 
@@ -167,7 +167,7 @@ let 선언은 JavaScript의 let 선언과 거의 동일하게 작동합니다.
 - 타입 추론이 그대로 작동합니다!
 - let 선언은 구성 속성보다 로컬 let 선언을 우선시합니다.
 - let 선언은 정의되기 전에 참조할 수 없으며, 예외는 이벤트 핸들러 내에서 사용될 때입니다. 
-```
+
 
 <div class="content-ad"></div>
 

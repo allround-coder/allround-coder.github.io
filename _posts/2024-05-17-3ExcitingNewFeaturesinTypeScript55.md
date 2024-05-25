@@ -1,5 +1,5 @@
 ---
-title: "TypeScript 55 버전의 3가지 흥미로운 새로운 기능"
+title: "TypeScript 55 버전에 추가된 3가지 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-17-3ExcitingNewFeaturesinTypeScript55_0.png"
 date: 2024-05-17 20:24

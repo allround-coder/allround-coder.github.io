@@ -78,7 +78,7 @@ function App() {
 # Props를 통한 데이터 전달
 
 Props를 통한 데이터 전달은 간단합니다. 부모 컴포넌트에서 속성을 정의하고 이를 props를 사용하여 자식 컴포넌트에서 액세스하면 됩니다.
-```
+
 
 <div class="content-ad"></div>
 

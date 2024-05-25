@@ -1,5 +1,5 @@
 ---
-title: "Tailwind 동적 색상 테마 솔루션"
+title: "Tailwind에서 동적 색상 테마사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-TailwindDynamicColorThemeSolutions_0.png"
 date: 2024-05-18 22:10
@@ -198,7 +198,6 @@ module.exports = {
 
 <div class="content-ad"></div>
 
-```js
 ![Tailwind Dynamic Color Theme Solutions](/assets/img/2024-05-18-TailwindDynamicColorThemeSolutions_1.png)
 
 Global CSS File:
@@ -289,7 +288,7 @@ Global CSS File:
 ```
 
 The advantages of using a solution like this one are that not only the styling will be quicker to write as we don’t need to manage our dark theme with Tailwind, but we also can create as many themes as we want based on any class or selector we want.
-```
+
 
 <div class="content-ad"></div>
 

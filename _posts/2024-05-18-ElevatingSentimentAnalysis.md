@@ -1,5 +1,5 @@
 ---
-title: "감정 분석 높이기"
+title: "인공지능으로 감정 분석 성능 높이기"
 description: ""
 coverImage: "/assets/img/2024-05-18-ElevatingSentimentAnalysis_0.png"
 date: 2024-05-18 21:33
@@ -432,7 +432,7 @@ llama3_8b-instruct-fp16와 llama3_8b-instruct-sentiment_analysis-fp16을 비교�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Financial Sentiment Analysis Model Comparison](/assets/img/2024-05-18-ElevatingSentimentAnalysis_3.png)
 
 # 금융 감성 분석 모델 비교
@@ -440,7 +440,7 @@ llama3_8b-instruct-fp16와 llama3_8b-instruct-sentiment_analysis-fp16을 비교�
 ## 소개
 
 이 분석의 목표는 금융 감성 분석을 위한 최적 모델을 식별하기 위해 세부 조정된 감성 분석 모델을 해당 원본 모델과 비교하는 것입니다. 감성 점수에 대한 분산, 평균 감성 점수, 평균 확신 점수 등 메트릭을 살펴보고 F-통계 및 T-통계를 사용하여 통계적 비교를 수행했습니다.
-```
+
 
 <div class="content-ad"></div>
 

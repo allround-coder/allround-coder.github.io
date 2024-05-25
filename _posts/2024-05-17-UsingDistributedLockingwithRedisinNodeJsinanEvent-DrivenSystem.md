@@ -1,5 +1,5 @@
 ---
-title: "Redis를 활용한 NodeJs에서 이벤트 주도 시스템에서 분산 락 사용하기"
+title: "Redis를 활용한 NodeJs에서 이벤트 주도 시스템 사용하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-UsingDistributedLockingwithRedisinNodeJsinanEvent-DrivenSystem_0.png"
 date: 2024-05-17 20:27

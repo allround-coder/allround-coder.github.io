@@ -1,5 +1,5 @@
 ---
-title: "대형 언어 모델LLM을 활용한 웹 어플리케이션 구축 파트 2"
+title: "대형 언어 모델LLM을 활용한 웹 어플리케이션 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-BuildingaWebApplicationPoweredbyLargeLanguageModelsLLMpart2_0.png"
 date: 2024-05-17 20:49
@@ -72,7 +72,7 @@ body {
 ```
 
 # 주요 컴포넌트 구축하기
-```
+
 
 <div class="content-ad"></div>
 

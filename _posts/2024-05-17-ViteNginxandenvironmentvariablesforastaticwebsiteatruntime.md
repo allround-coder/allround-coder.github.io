@@ -1,5 +1,5 @@
 ---
-title: "Vite, Nginx 및 런타임에서 정적 웹 사이트용 환경 변수"
+title: "Vite, Nginx 및 런타임에서 정적 웹 사이트용 환경 변수 적용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-ViteNginxandenvironmentvariablesforastaticwebsiteatruntime_0.png"
 date: 2024-05-17 20:51
@@ -116,7 +116,7 @@ export default defineConfig({
 ```
 
 manualChunks 섹션에서 사용자 정의 청크를 생성하고, 파일을 빌드한 후 이 파일을 환경 변수로 대체할 수 있도록 일부 이름을 저장합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -250,7 +250,7 @@ COPY --from=builder /app/dist ./
 ```
 
 이제 컨테이너를 빌드해봅시다.
-```  
+  
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "여러분의 RAG 어플리케이션 개선을 위한 5가지 해킹 팁"
+title: "여러분의 RAG 어플리케이션 성능 향상을 위한 5가지 해킹 팁"
 description: ""
 coverImage: "/assets/img/2024-05-17-5HacksToImproveYourRAGApplication_0.png"
 date: 2024-05-17 04:20

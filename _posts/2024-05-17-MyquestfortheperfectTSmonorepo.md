@@ -1,5 +1,5 @@
 ---
-title: "완벽한 TSmonorepo를 위한 나의 여정"
+title: "완벽한 TS monorepo를 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-MyquestfortheperfectTSmonorepo_0.png"
 date: 2024-05-17 21:06
@@ -11,7 +11,7 @@ link: "https://medium.com/@thijs-koerselman/my-quest-for-the-perfect-ts-monorepo
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-MyquestfortheperfectTSmonorepo_0.png)
 
 올해에 도구 및 모노 레포와 관련된 이해력을 개선하기 위해 부단히 시간을 보냈습니다. 제가 한 일 중 일부를 공유해볼 테니, 혹시 필요하신 분들께 도움이 되길 바라겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@thijs-koerselman/my-quest-for-the-perfect-ts-monorepo
 도구와 모노 레포에 대한 향상된 지원이 지난 몇 년 동안 JavaScript/TypeScript 생태계를 엄청나게 성장시켰지만, 모든 것이 어떻게 연결되는지 완전히 이해하지 않으면 여전히 많은 문제를 겪을 수 있다는 사실에 놀라실 지도 모릅니다.
 
 도구와 모노 레포는 모두 매우 지루한 주제이기 때문에 내용을 간결하게 유지하려 노력하겠습니다. 가능한 한 외부 소스에 링크를 걸겠지만, 글이 짧지는 않을 것입니다. 다루어야 할 것들이 많거든요.
-```
+
 
 <div class="content-ad"></div>
 

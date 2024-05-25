@@ -1,5 +1,5 @@
 ---
-title: "루비에서의 리팩터링  긴 매개변수 목록"
+title: "루비에서  긴 매개변수 목록 리팩터링 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-RefactoringinRubyLongParameterList_0.png"
 date: 2024-05-17 03:28

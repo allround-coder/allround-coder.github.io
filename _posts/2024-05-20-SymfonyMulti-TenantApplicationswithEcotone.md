@@ -1,5 +1,5 @@
 ---
-title: "에코톤Ecotone을 활용한 Symfony 다중 테넌트 애플리케이션"
+title: "Ecotone을 활용한 Symfony 다중 테넌트 애플리케이션"
 description: ""
 coverImage: "/assets/img/2024-05-20-SymfonyMulti-TenantApplicationswithEcotone_0.png"
 date: 2024-05-20 23:21
@@ -196,7 +196,7 @@ Command Bus가 실행될 때 자동으로 데이터베이스 트랜잭션이 시
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![SymfonyMulti-TenantApplicationswithEcotone_6](/assets/img/2024-05-20-SymfonyMulti-TenantApplicationswithEcotone_6.png)
 
 이 작업은 Multi-Tenant 시스템에서 Outbox 패턴으로 작동합니다. 이외에도 Ecotone은 메시지가 데이터베이스에서 메시지 브로커(예: RabbitMQ, Redis, SQS)로 자동으로 이동될 수 있는 결합된 메시지 채널을 제공합니다. 이렇게 하면 메시지 처리가 메시지 브로커 소비자(그리고 그것들을 확장할 수 있음)를 위해 이루어지고, 데이터베이스 소비자가 아닙니다.
@@ -204,7 +204,7 @@ Command Bus가 실행될 때 자동으로 데이터베이스 트랜잭션이 시
 # Dbal Business Methods
 
 Dbal 모듈은 Business Interface를 제공하는데, 이는 추상화된 형태로 감춰진 데이터베이스 쿼리를 쉽게 작성할 수 있는 방법입니다.
-```
+
 
 <div class="content-ad"></div>
 

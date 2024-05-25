@@ -1,5 +1,5 @@
 ---
-title: "Reactime v25 반응할 시간이 다가왔어요"
+title: "Reactime v25, 개발자 도구를 더욱 잘 활용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-Reactimev25Thetimetoreactisnow_0.png"
 date: 2024-05-17 20:58

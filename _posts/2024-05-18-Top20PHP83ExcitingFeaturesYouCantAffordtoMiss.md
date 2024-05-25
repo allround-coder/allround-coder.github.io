@@ -1,5 +1,5 @@
 ---
-title: "20가지 PHP 83의 흥미로운 기능들, 놓칠 수 없어요"
+title: "PHP 8.3에 추가된 20가지 흥미로운 기능들 정리"
 description: ""
 coverImage: "/assets/img/2024-05-18-Top20PHP83ExcitingFeaturesYouCantAffordtoMiss_0.png"
 date: 2024-05-18 22:31
@@ -439,7 +439,7 @@ recursiveFunction(100000); // 큰 수로 재귀 호출
 PHP 8.3의 "스택 오버플로우 감지" 기능은 개발자가 호출 스택 크기에 제한을 설정하고 잠재적인 스택 오버플로우 상황을 감지하는 수단을 제공하여 PHP 응용 프로그램의 안정성과 견고성을 향상시킵니다. 이 ini 지시문을 통해 PHP는 스택 오버플로우 상황에 대한 개선된 오류 처리를 제공하며 세그멘테이션 오류의 발생 가능성을 줄이고 더욱 효과적인 디버깅 과정을 용이하게 합니다.
 
 # 11. 불변 상수 가시성
-```
+
 
 <div class="content-ad"></div>
 
@@ -478,7 +478,7 @@ class ChildClass extends ParentClass {
 PHP 8.3의 “불변 상수 가시성” 기능은 클래스 상수를 정의하는 더 견고하고 명시적인 방법을 제공하여 상수의 가시성이 상속 계층 구조나 인터페이스 구현에서 일관되게 유지되도록 보장합니다. 이 개선은 코드의 유지 보수성을 높이고 상수의 가시성에 의도하지 않은 변경이 발생할 가능성을 줄여 PHP 코드베이스의 전체 신뢰성과 예측 가능성을 향상시킵니다.
 
 # 12. Assert String Eval Cleanup
-```
+
 
 <div class="content-ad"></div>
 
@@ -494,7 +494,7 @@ assert('is_numeric($value)');
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 assert(is_numeric($value));
 ```
@@ -504,7 +504,7 @@ PHP 8.3에서는 단언문에 문자열 평가 코드 대신 직접 표현식을
 PHP 8.3의 "Assert String Eval Cleanup" 기능은 개발자들이 단언문에 문자열 평가 코드 대신 직접 표현식을 사용하도록 전환하도록 권장하며, 더 안전하고 신뢰할 수 있는 코딩 관행을 촉진합니다. 이 접근 방식을 deprecated 처리함으로써 PHP는 코드 보안과 유지보수성을 향상시키고, PHP 애플리케이션의 전체적인 견고성에 기여하고 있습니다.
 
 # 13. 향상된 FFI\CData:void
-```
+
 
 <div class="content-ad"></div>
 
@@ -673,7 +673,7 @@ opcache.consistency_checks=1
 PHP 8.3에서 opcache.consistency_checks 지시문이 삭제되면 OPCache의 일관성 검사 구성이 더 이상 필요하지 않아져 OPCache 구성 프로세스가 간소화됩니다.
 
 이 변경은 OPCache 구성에 대한 단순화된 접근 방식을 반영하며, OPCache의 일관성 검사를 관리하는 복잡성을 줄이고 PHP 8.3에서 OPCache의 전체 효율성과 사용 편의성을 향상시키는 목표와 일치합니다.
-```
+
 
 <div class="content-ad"></div>
 

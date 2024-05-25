@@ -298,7 +298,7 @@ body {
 
 다음으로, 다크 모드를 위해 간단한 클래스를 사용하여 이를 재정의하겠어요:
 
-````js
+```js
 body.dark {
   --bodyBg:#333;
   --borderColor:#444;
@@ -360,7 +360,7 @@ body, button, input, table, textarea, select {
  line-height:1.5;
  font-family:inherit;
 }
-````
+```
 
 그리고 일반적인 값을 몇 가지 설정해 주죠.
 

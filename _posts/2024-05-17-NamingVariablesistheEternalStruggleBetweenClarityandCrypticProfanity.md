@@ -1,5 +1,5 @@
 ---
-title: "변수 이름 짓기 명확함과 이해하기 어려운 용어 사이의 끊임없는 고민"
+title: "프론트엔드 개발자를 위한 변수 이름 짓기 팁"
 description: ""
 coverImage: "/assets/img/2024-05-17-NamingVariablesistheEternalStruggleBetweenClarityandCrypticProfanity_0.png"
 date: 2024-05-17 21:48

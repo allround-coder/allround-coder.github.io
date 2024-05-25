@@ -1,5 +1,5 @@
 ---
-title: "장고로 규모 있는 프로젝트를 다룰 수 있을까요 솔직하게 말해 봅시다"
+title: "장고로 대규모 프로젝트를 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-CanDjangoHandleYourAmbitiousProjectLetsBeHonest_0.png"
 date: 2024-05-18 22:36

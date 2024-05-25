@@ -1,5 +1,5 @@
 ---
-title: "NextJs 14에서 Route Groups은 무엇인가요"
+title: "NextJs 14에서 Route Groups이란 무엇인가?"
 description: ""
 coverImage: "/assets/img/2024-05-18-WhatareRouteGroupsinNextJs14_0.png"
 date: 2024-05-18 22:26

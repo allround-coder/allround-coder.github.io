@@ -1,5 +1,5 @@
 ---
-title: "Angular를 사용한 육각형 아키텍처"
+title: "Angular를 사용한 Hexagonal 아키텍처"
 description: ""
 coverImage: "/assets/img/2024-05-18-HexagonalArchitecturewithAngular_0.png"
 date: 2024-05-18 22:05
@@ -47,7 +47,7 @@ Angular에서 여섯각형 아키텍처를 적용하는 방법은 무엇인가�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Hexagonal Architecture with Angular](/assets/img/2024-05-18-HexagonalArchitecturewithAngular_1.png)
 
 And the associated code organization:
@@ -55,7 +55,7 @@ And the associated code organization:
 ![Hexagonal Architecture with Angular](/assets/img/2024-05-18-HexagonalArchitecturewithAngular_2.png)
 
 ## Domain
-```
+
 
 <div class="content-ad"></div>
 

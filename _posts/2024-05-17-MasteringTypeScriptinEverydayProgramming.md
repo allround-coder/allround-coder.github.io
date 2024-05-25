@@ -1,5 +1,5 @@
 ---
-title: "일상 프로그래밍에서 TypeScript 마스터하기"
+title: "프론트엔드 개발자를 위한 TypeScript 마스터하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-MasteringTypeScriptinEverydayProgramming_0.png"
 date: 2024-05-17 21:00
@@ -120,6 +120,7 @@ ESLint를 사용하여 TypeScript 코드를 구문 분석하려면 필요한 구
 
 ```js
 npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin
+```
 
 참고: `@typescript-eslint/parser` 및 `@typescript-eslint/eslint-plugin` 모두 동일한 버전이어야 합니다.
 
@@ -142,7 +143,7 @@ ESLint 구성 파일 (`.eslintrc.js`)에 다음 옵션을 추가해주세요:
 ```
 
 이 구성을 통해 ESLint가 TypeScript 코드를 구문 분석하도록 설정되며, 권장 규칙을 적용하거나 필요에 따라 규칙을 사용자 정의할 수 있습니다. 🧐🔍✨
-```
+
 
 <div class="content-ad"></div>
 
@@ -303,7 +304,7 @@ let sum = function(num1: number, num2: number): number {
 ```
 
 이 구조는 TypeScript의 타입 주석, 변수 선언 및 함수 표현식에 대한 논리적 개요를 제공하며, 명확성을 위해 이모지로 장식되어 있습니다. 🌟
-```
+
 
 <div class="content-ad"></div>
 

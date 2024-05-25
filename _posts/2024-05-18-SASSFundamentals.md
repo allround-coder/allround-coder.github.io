@@ -1,5 +1,5 @@
 ---
-title: "SASS - 기본 사항"
+title: "SASS로 웹사이트 스타일링 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-SASSFundamentals_0.png"
 date: 2024-05-18 22:07

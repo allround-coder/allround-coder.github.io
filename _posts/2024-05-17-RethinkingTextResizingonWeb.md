@@ -1,5 +1,5 @@
 ---
-title: "웹에서 텍스트 크기 조절에 대한 재고생을 하다"
+title: "웹에서 텍스트 크기 조절을 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-RethinkingTextResizingonWeb_0.png"
 date: 2024-05-17 21:46
@@ -11,7 +11,7 @@ link: "https://medium.com/airbnb-engineering/rethinking-text-resizing-on-web-104
 ---
 
 
-```markdown
+
 ![Airbnb의 웹 접근성 개선](/assets/img/2024-05-17-RethinkingTextResizingonWeb_0.png)
 
 Airbnb는 대문자 텍스트 크기가 필요한 호스트 및 게스트를 위해 웹 접근성을 개선하는 데 큰 발전을 이루었습니다.
@@ -21,7 +21,7 @@ Airbnb는 대문자 텍스트 크기가 필요한 호스트 및 게스트를 위
 - 브라우저 줌에 의존할 때 모바일 웹에서 발생하는 문제들
 - 모든 프론트엔드 엔지니어들의 워크플로에 영향을 미칠 변경 사항 도입의 어려움
 - 이러한 접근성 향상을 시작한 이후 본 이점들
-```
+
 
 <div class="content-ad"></div>
 
@@ -236,7 +236,7 @@ Another consideration is that the “100%” default font size selected does not
 # 영향
 
 확장 가능한 글꼴을 지원하는 것은 호스트 및 시각 장애가 있는 손님들 및 큰 글꼴 크기와 브라우징 경험을 제어할 수 있는 사람들에게 혁명적인 차이를 만들어줄 투자입니다. 아래는 홈페이지가 블러된 시야를 가진 사람에게 기본 글꼴 크기(16px)가 어떻게 보이는지와 글꼴 크기를 두 배로 늘려(32px) 어떻게 보이는지 보여주는 두 가지 예시입니다. 두 번째 이미지가 훨씬 더 가독성이 높고 사용하기 편합니다.
-```
+
 
 <div class="content-ad"></div>
 

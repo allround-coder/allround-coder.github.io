@@ -136,7 +136,7 @@ ${namespaceDescriptionMap
 이제 아래 다이어그램에서 새로운 아키텍처를 살펴봅시다!
 
 ![다이어그램](/assets/img/2024-05-20-AIAgentsKnowWheretoLookACrossKnowledgeBaseSearchArchitecture_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -170,7 +170,7 @@ ${namespaceDescriptionMap
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-AIAgentsKnowWheretoLookACrossKnowledgeBaseSearchArchitecture_8.png)
 
 QuestionRefiner agent is placed at the beginning of the pipeline and its main task is to refine the user's input question based on the conversation history stored in the cache. It has two primary inputs:
@@ -179,7 +179,7 @@ QuestionRefiner agent is placed at the beginning of the pipeline and its main ta
 - The conversation history cache.
 
 The QuestionRefiner agent uses the conversation history to refine the user's input question by adding context or clarifying the question based on previous exchanges. This refined question is then passed down to the Selector agent and subsequent pipeline.
-```
+
 
 <div class="content-ad"></div>
 

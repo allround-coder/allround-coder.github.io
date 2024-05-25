@@ -1,5 +1,5 @@
 ---
-title: "웹 사이트를 아름답게 만드는 방법 HTML, CSS를 사용한 멋진 큐브 로더 애니메이션"
+title: "HTML, CSS로 멋진 큐브 로더 애니메이션 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-17-EnhanceYourWebsitewithaBeautifulCubeLoaderAnimationUsingHTMLCSS_0.png"
 date: 2024-05-17 21:33
@@ -11,7 +11,7 @@ link: "https://medium.com/@withaarzoo/enhance-your-website-with-a-beautiful-cube
 ---
 
 
-```markdown
+
 ![Loading Animation](https://miro.medium.com/v2/resize:fit:1200/1*CSMMFDfA44hUID0Shg5rJg.gif)
 
 지루한 로딩 막대를 응시하면서 더 빨리 움직이기를 희망한 적이 있나요? 우리 모두 그런 경험이 있습니다. 그런데 만약 당신의 웹사이트가 뒷 배경에서 콘텐츠를 로딩하는 동안에도 시각적으로 매력적인 애니메이션으로 사용자들을 매료시킬 수 있다면 어떨까요? 그것이 바로 애니메이션 큐브 로더입니다!
@@ -19,7 +19,7 @@ link: "https://medium.com/@withaarzoo/enhance-your-website-with-a-beautiful-cube
 이 단계별 가이드는 HTML과 CSS를 사용하여 세련되고 동적인 애니메이션 큐브 로더를 만드는 방법을 안내해줍니다. 이 프로젝트는 제 #100DaysOfCode 챌린지의 일환이며, 정말 멋진 것을 구축하는 동안 프론트엔드 개발 스킬을 연습하기에 최적의 방법입니다.
 
 준비가 되셨나요? 시작해봅시다!
-```
+
 
 <div class="content-ad"></div>
 
@@ -206,7 +206,7 @@ div {
 ```
 
 - 큐브 면: 큐브의 개별 면을 차원, 그림자, 배경색으로 스타일링합니다.
-``` 
+ 
 
 
 
@@ -311,7 +311,7 @@ div {
 ```
 
 # 단계 4: 실행하고 마법을 확인하세요!
-```
+
 
 <div class="content-ad"></div>
 

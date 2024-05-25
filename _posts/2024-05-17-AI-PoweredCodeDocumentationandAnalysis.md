@@ -1,5 +1,5 @@
 ---
-title: "인공지능 기술을 활용한 코드 문서화 및 분석"
+title: "인공지능 기술을 활용한 코드 문서화 및 분석 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-AI-PoweredCodeDocumentationandAnalysis_0.png"
 date: 2024-05-17 03:30

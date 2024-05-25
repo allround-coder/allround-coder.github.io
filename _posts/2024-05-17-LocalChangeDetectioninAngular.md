@@ -1,5 +1,5 @@
 ---
-title: "앵귤러에서의 로컬 변경 감지"
+title: "앵귤러에서의 로컬 변경되었을 때 감지하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-LocalChangeDetectioninAngular_0.png"
 date: 2024-05-17 21:16
@@ -11,7 +11,7 @@ link: "https://medium.com/ngconf/local-change-detection-in-angular-410d82b38664"
 ---
 
 
-```markdown
+
 ![Local Change Detection in Angular](/assets/img/2024-05-17-LocalChangeDetectioninAngular_0.png)
 
 Angular 16 introduced Signals as a pivotal feature, setting the stage for future applications and laying the foundation for a zoneless environment. Signals operate reactively, enabling the generation of derived values or side effects through functions like signal(), computed(), and effect().
@@ -19,7 +19,7 @@ Angular 16 introduced Signals as a pivotal feature, setting the stage for future
 These Signals are instrumental in Angular’s shift from a component-centric rendering approach to one centered around Signals. The dependency graph created by Signals represents the application state. When this graph changes, Angular triggers a DOM update via Change Detection.
 
 From a framework’s perspective, the render process is just a side effect of a Signal change. By reacting to the Signals, Angular knows exactly when and what to update.
-```
+
 
 <div class="content-ad"></div>
 
@@ -125,7 +125,7 @@ TimerComponent은 매 초 간격으로 lastUpdateInSeconds를 업데이트합니
 따라서 변경 감지가 시작되면 부모 구성 요소를 통해 데이터가 변경되었는지 확인합니다. 변경이 있으면 필요한 DOM 요소를 업데이트하고 TimerComponent로 이동합니다.
 
 즉, Angular는 매 초 ListComponent를 불필요하게 확인합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -152,7 +152,7 @@ Angular가 컴포넌트를 "더티" 상태로 표시하면 해당 부모 컴포�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Local Change Detection in Angular](/assets/img/2024-05-17-LocalChangeDetectioninAngular_2.png)
 
 ![Local Change Detection in Angular](/assets/img/2024-05-17-LocalChangeDetectioninAngular_3.png)
@@ -160,7 +160,7 @@ Angular가 컴포넌트를 "더티" 상태로 표시하면 해당 부모 컴포�
 이 그림에서는 "Dirty Marking"이라는 별도의 프로세스가 변경 감지 전에 실행되는 것을 보여줍니다. 이는 속성 바인딩이 포함되지 않은 경우에만 해당됩니다. "Dirty Checking"도 변경 감지 중에 발생할 것입니다.
 
 따라서 TimerComponent가 ListComponent의 자식 요소인 한, 변경 감지는 ListComponent를 통과하여 해당 요소도 확인해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -226,7 +226,7 @@ Angular 17와 신호를 발견하세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Local Change Detection in Angular](/assets/img/2024-05-17-LocalChangeDetectioninAngular_4.png)
 
 OnPush를 추가하고 TimerComponent를 Signals로 리팩토링한 코드입니다:
@@ -255,7 +255,7 @@ export class TimerComponent {
 ```
 
 ListComponent도 OnPush여야 합니다. 그렇지 않으면 Change Detection이 항상 확인합니다.
-```
+
 
 <div class="content-ad"></div>
 

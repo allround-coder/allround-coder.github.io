@@ -1,5 +1,5 @@
 ---
-title: "네스트 JS에서 Redis 사용하기"
+title: "Nest JS에서 Redis 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-UsingRedisinNestJS_0.png"
 date: 2024-05-17 20:30
@@ -57,7 +57,7 @@ nest new using-redis-in-nestjs #원하는 프로젝트 이름으로 "using-redis
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 npm install @nestjs/cache-manager cache-manager
 ```
@@ -72,18 +72,18 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 ```
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 @Module({
   imports: [CacheModule.register()],
   controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
-```
+
 
 이 레지스트리를 통해 "app.service.ts" 파일에서 캐시 매니저를 사용하여 데이터를 저장하고 검색할 수 있게 되었습니다. 사용하려면 "app.service.ts"의 생성자에 주입해야 합니다.
 
@@ -347,16 +347,16 @@ export class AppController {
 
 <div class="content-ad"></div>
 
-```markdown
+
 {
   ttl: 5, // 초
   max: 10, // 캐시에 저장될 최대 항목 수
 }
-```
+
 
 우리 앱 전체의 모든 GET 요청을 캐시하려면 앱 모듈에서 전역으로 바인딩해야 합니다.
 
-```markdown
+
 import { CacheInterceptor, CacheModule } from '@nestjs/cache-manager';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
@@ -364,9 +364,9 @@ import { APP_INTERCEPTOR } from '@nestjs/core';
 import { RedisOptions } from 'configs/app-options.constants';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-```
 
-```markdown
+
+
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
@@ -382,7 +382,7 @@ import { AppService } from './app.service';
   ],
 })
 export class AppModule {}
-```
+
 
 <div class="content-ad"></div>
 

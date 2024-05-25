@@ -1,5 +1,5 @@
 ---
-title: "안녕하세요 오늘은 Android와 iOS 개발에 관련된 내용을 함께 알아보려고 해요 함께 즐겁게 공부해보세요"
+title: "Android와 iOS 개발을 시작하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-AndroidiOSDevTogether_0.png"
 date: 2024-05-17 03:39

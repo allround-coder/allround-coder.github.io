@@ -11,7 +11,7 @@ link: "https://medium.com/better-programming/rust-trait-a-powerful-alternative-t
 ---
 
 
-```markdown
+
 ![RustTraitAPowerfulAlternativeToTypeScriptInterface](/assets/img/2024-05-20-RustTraitAPowerfulAlternativeToTypeScriptInterface_0.png)
 
 Rust은 인터페이스 개념을 갖고 있지만, 다른 프로그래밍 언어들과는 다르게 클래스와 함수의 동작을 지정하기 위해 인터페이스 키워드를 사용하지 않습니다. 대신, Rust의 가장 가까운 추상화 패턴은 트레이트입니다. 이러한 개념들은 많은 차이가 있지만, 둘 다 다중 가능한 구현을 다루는 문제를 해결합니다.
@@ -19,7 +19,7 @@ Rust은 인터페이스 개념을 갖고 있지만, 다른 프로그래밍 언�
 이 블로그 포스트에서는 TypeScript 코드 조각과 잠재적인 Rust 동등 코드를 비교하여 간단하고 유연하며 조립 가능한 코드를 어떻게 구현하는지를 보여줄 것입니다.
 
 # 선언
-```
+
 
 <div class="content-ad"></div>
 

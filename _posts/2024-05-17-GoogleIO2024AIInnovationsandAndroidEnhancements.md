@@ -1,5 +1,5 @@
 ---
-title: "구글 IO 2024 AI 혁신과 안드로이드 향상"
+title: "구글 IO 2024 AI 혁신과 안드로이드 개발자들을 위한 정리"
 description: ""
 coverImage: "/assets/img/2024-05-17-GoogleIO2024AIInnovationsandAndroidEnhancements_0.png"
 date: 2024-05-17 03:52

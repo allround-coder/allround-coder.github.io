@@ -1,5 +1,5 @@
 ---
-title: "제이쿼리 4 새로운 시대"
+title: "제이쿼리 4, 다시 부활할 수 있을까? "
 description: ""
 coverImage: "/assets/img/2024-05-18-jQuery4ANewEra_0.png"
 date: 2024-05-18 21:16

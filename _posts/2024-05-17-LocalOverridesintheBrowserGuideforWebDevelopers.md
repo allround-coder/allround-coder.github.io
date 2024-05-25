@@ -36,7 +36,7 @@ link: "https://medium.com/@yaron-galperin/local-overrides-in-the-browser-guide-f
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image 1](/assets/img/2024-05-17-LocalOverridesintheBrowserGuideforWebDevelopers_1.png)
 
 다음 단계는 '오버라이드를 위한 폴더 선택'을 클릭하여 오버라이드 파일을 호스팅할 폴더를 선택하거나 새로 만드는 것입니다. "chrome_overrides"라는 새 폴더를 만들었습니다.
@@ -46,7 +46,7 @@ DevTools는 선택한 폴더에 대한 전체 액세스 권한을 요청하여 �
 
 참고: Pokemon 웹 사이트에서 보여드리겠지만, 원하는 웹 사이트를 자유롭게 사용해도 괜찮습니다.
 링크: https://pokemon-kde6.vercel.app
-```
+
 
 <div class="content-ad"></div>
 

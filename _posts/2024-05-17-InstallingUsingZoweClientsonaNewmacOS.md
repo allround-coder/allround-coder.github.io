@@ -1,5 +1,5 @@
 ---
-title: "새 macOS에서 Zowe 클라이언트 설치 및 사용하기"
+title: "새 macOS에서 Zowe 클라이언트 설치 및 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-17-InstallingUsingZoweClientsonaNewmacOS_0.png"
 date: 2024-05-17 03:58

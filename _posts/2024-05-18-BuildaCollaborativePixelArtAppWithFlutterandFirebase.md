@@ -1,5 +1,5 @@
 ---
-title: "플러터Flutter와 파이어베이스Firebase로 함께 하는 픽셀 아트 앱 만들기"
+title: "Flutter와 Firebase로 픽셀 아트 앱 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-18-BuildaCollaborativePixelArtAppWithFlutterandFirebase_0.png"
 date: 2024-05-18 22:24
@@ -132,7 +132,7 @@ firebase_auth 패키지를 추가하고, firebase 콘솔에서 인증 기능을 
 Cubit을 사용하면 BLoC과 달리 사용자 정의 이벤트를 만들 필요가 없습니다. 메소드를 바로 호출하면 됩니다!
 
 ## 수정 이력
-```
+
 
 <div class="content-ad"></div>
 

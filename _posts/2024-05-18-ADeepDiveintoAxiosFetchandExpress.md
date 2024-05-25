@@ -1,5 +1,5 @@
 ---
-title: "액시오스Axios, 페치Fetch, 익스프레스Express 깊이 파헤치기"
+title: "Axios, Fetch, Express 깊이 알아보기"
 description: ""
 coverImage: "/assets/img/2024-05-18-ADeepDiveintoAxiosFetchandExpress_0.png"
 date: 2024-05-18 21:41
