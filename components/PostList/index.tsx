@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import style from "./PostList.module.scss";
 import Image from "next/image";
 import moment from "moment";
+import { AUTHOR } from "@/lib/constants";
 // import Fire from "./assets/fire.svg";
 
 const cx = classNames.bind(style);
@@ -76,7 +77,7 @@ export const PostList = ({ postList }: PostListProps) => {
                       height={20}
                     />
                   </div>
-                  <span className={cx("writer")}>Allround Coder</span>
+                  <span className={cx("writer")}>{AUTHOR}</span>
                 </div>
                 <strong className={cx("title")}>{post.title}</strong>
                 {/* <p className={cx("description")}>{post.description}</p> */}

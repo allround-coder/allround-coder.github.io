@@ -9,6 +9,7 @@ export const LANG_LOCALE: { [key: string]: string } = {
   ja: "ja_JP",
 };
 export const SITE_NAME = "allround-coder";
+export const AUTHOR = "Allround Coder";
 export const SITE_URL = "https://allround-coder.github.io/";
 export const SITE_DESCRIPTION: { [key: string]: string } = {
   ko: "HTML, CSS, JS로 웹사이트, 게임, 앱을 만들고 있습니다.",
