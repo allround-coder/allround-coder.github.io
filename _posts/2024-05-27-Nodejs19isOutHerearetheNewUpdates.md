@@ -1,5 +1,5 @@
 ---
-title: "Nodejs 19가 출시되었어요 새로운 업데이트 소식을 전해드릴게요"
+title: "Nodejs 19가 출시, 새로운 기능 및 내용 정리"
 description: ""
 coverImage: "/assets/img/2024-05-27-Nodejs19isOutHerearetheNewUpdates_0.png"
 date: 2024-05-27 18:29
@@ -81,9 +81,9 @@ const myPkg = require("./my-folder")
 
 다행히도 이제 Node.js 19에서는 이 문제가 더 이상 발생하지 않습니다. 새로운 로더로 이와 같은 작업을 수행할 수 있습니다:
 
-```markdown
+
 import file from `./file` // "file"에 올바른 확장명이 있으면 동작합니다
-```
+
 
 <div class="content-ad"></div>
 

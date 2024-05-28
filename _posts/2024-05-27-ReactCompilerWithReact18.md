@@ -1,5 +1,5 @@
 ---
-title: "리액트 콤파일러와 리액트 18"
+title: "리액트 컴파일러와 리액트 18에 대해서 알아보기"
 description: ""
 coverImage: "/assets/img/2024-05-27-ReactCompilerWithReact18_0.png"
 date: 2024-05-27 18:43
@@ -120,7 +120,7 @@ export default defineConfig({
 컴파일러 구성에서는 컴파일러가 보통 react-compiler-runtime에서 가져오는 캐시 메모이제이션 훅을 @/mycache에서 가져오도록 지정하고 있습니다.
 
 또한 @ 별칭을 설정하고 소스로 가리키도록해야 합니다. 이렇게 하면 컴포넌트가 위치한 곳과 관계없이 항상 우리의 훅을 찾을 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -212,7 +212,7 @@ export default function Hello() {
 ```
 
 컴파일된 코드의 상단에서 c 훅을 불러오고 최적화된 컴포넌트에서 사용한다는 것을 확인할 수 있습니다. 컴파일러는 초기화된 플래그를 저장하는 데 첫 번째 슬롯, 두 번째 슬롯에는 DOM 트리가 포함된 JSX의 메모이즈된 버전을 저장할 때 두 개의 슬롯만 필요하다는 사실을 알고 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

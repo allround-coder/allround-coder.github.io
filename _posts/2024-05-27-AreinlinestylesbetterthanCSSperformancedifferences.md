@@ -1,5 +1,5 @@
 ---
-title: "인라인 스타일과 CSS의 성능 차이는 무엇일까요"
+title: "인라인 스타일과 CSS의 성능 차이 정리 및 비교"
 description: ""
 coverImage: "/assets/img/2024-05-27-AreinlinestylesbetterthanCSSperformancedifferences_0.png"
 date: 2024-05-27 19:06
@@ -184,7 +184,7 @@ CSS 스타일시트에 정의된 스타일은 여러 페이지와 요소에서 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```css
 /* 뷰포트 상단 컨텐츠를 위한 필수 스타일 */
 .header {
@@ -209,7 +209,7 @@ CSS 스타일시트에 정의된 스타일은 여러 페이지와 요소에서 �
 ```
 
 ## Themes.css:
-```markdown
+
 
 <div class="content-ad"></div>
 

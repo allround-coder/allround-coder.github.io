@@ -1,5 +1,5 @@
 ---
-title: "Nodejs를 활용한 마이크로서비스 이해하기"
+title: "Nodejs를 활용한 마이크로서비스 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-LeveragingMicroserviceswithNodejs_0.png"
 date: 2024-05-27 18:27

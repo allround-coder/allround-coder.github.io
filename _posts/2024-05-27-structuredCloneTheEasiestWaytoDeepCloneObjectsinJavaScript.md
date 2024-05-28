@@ -1,5 +1,5 @@
 ---
-title: "structuredClone JavaScript에서 객체를 깊은 복제하는 가장 쉬운 방법"
+title: "structuredClone(), JavaScript에서 객체를 깊은 복제하는 가장 쉬운 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-structuredCloneTheEasiestWaytoDeepCloneObjectsinJavaScript_0.png"
 date: 2024-05-27 18:19
@@ -134,7 +134,7 @@ mdn에서 가져왔어요!
 
 <div class="content-ad"></div>
 
-```markdown
+
 const testData = {
   number: 123,
   string: "test",
@@ -172,14 +172,14 @@ console.log(structuredCloneResult)
   domNode: undefined // DOM nodes are not cloned
 }
 */
-```
+
 
 <img src="/assets/img/2024-05-27-structuredCloneTheEasiestWaytoDeepCloneObjectsinJavaScript_6.png" />
 
 우리가 손에 들고 있는 잔을 들어 올려봐요. 이 결과는 축하해야 할 만하네요.
 
 # 3.2# structuredClone의 장점
-```
+
 
 <div class="content-ad"></div>
 

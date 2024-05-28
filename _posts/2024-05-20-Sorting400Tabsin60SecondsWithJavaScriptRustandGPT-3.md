@@ -506,17 +506,7 @@ async fn axum() -> shuttle_service::ShuttleAxum {
 
 <div class="content-ad"></div>
 
-위와 같이 `table` 태그를 Markdown 형식으로 바꿀 수 있습니다.
-
-
-| 구조체 ReallyBigModel |
-| ---- | 
-| id: String |
-| name: String |
-| isReal: Bool |
-| ... |
-| stuff: AnotherBigModel |
-
+```js
 impl ToJson for ReallyBigModel {
    fn toJson() -> String {
        return mapOf { "id" to id, 
@@ -527,7 +517,7 @@ impl ToJson for ReallyBigModel {
          }.toJson() 
    }
 }
-
+```
 
 조금 귀찮죠? 매일 이렇게 많은 보일러플레이트를 작성하고 싶지 않으시죠.
 

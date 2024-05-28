@@ -1,5 +1,5 @@
 ---
-title: "지난 3년 동안의 모든 JavaScript와 TypeScript 특징들"
+title: "JavaScript와 TypeScript 비교 정리"
 description: ""
 coverImage: "/assets/img/2024-05-27-AllJavaScriptandTypeScriptFeaturesofthelast3years_0.png"
 date: 2024-05-27 18:10
@@ -11,7 +11,7 @@ link: "https://medium.com/better-programming/all-javascript-and-typescript-featu
 ---
 
 
-```markdown
+
 ![2024-05-27-AllJavaScriptandTypeScriptFeaturesofthelast3years_0.png](/assets/img/2024-05-27-AllJavaScriptandTypeScriptFeaturesofthelast3years_0.png)
 
 이 기사는 지난 3년 동안 (그리고 그 이전에서도) JavaScript/ECMAScript와 TypeScript에서 발생한 거의 모든 변경 사항을 살펴봅니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/better-programming/all-javascript-and-typescript-featu
 다음의 기능들 중 일부는 여러분에게 적용되지 않거나 실용적이지 않을 수 있지만, 이러한 언어에 대한 이해를 더 깊게 하고 가능한 기능을 보여주기 위한 것입니다.
 
 많은 TypeScript 기능들을 생략했는데, 그 이유는 "이전과 달리 예상대로 작동하지 않았으나, 지금은 그렇게 됩니다"로 요약할 수 있습니다. 따라서 과거에 작동하지 않았던 것이 있다면, 다시 시도해 보세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -151,7 +151,7 @@ if (shouldImport) {
 ```
 
 - String.matchAll(): 루프를 사용하지 않고 정규 표현식의 여러 일치 항목과 캡처 그룹을 모두 얻을 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -233,7 +233,7 @@ for (const result of results) {
 ```
 
 - BigInt: 새로운 BigInt 데이터 유형을 사용하여 큰 (정수) 숫자를 정확하게 저장하고 처리할 수 있어 JavaScript가 숫자를 부동 소수점으로 저장하는 것에 의한 오류를 방지할 수 있습니다. BigInt() 생성자를 사용하여 생성할 수 있고(불완전성을 방지하기 위해 문자열을 선호) 또는 숫자 끝에 n을 추가하여 생성할 수 있습니다.
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -341,7 +341,7 @@ console.log(globalThis.Math); // Math Object
 ```
 
 - import.meta: ES-모듈을 사용할 때 현재 모듈 URL import.meta.url을 얻습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -490,7 +490,7 @@ const hex = 0xD0_E0_F0;
 ```
 
 ## ES2022
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -947,7 +947,6 @@ console.log(tuple[6]); // 타입 오류: 길이 '6'인 튜플 타입 '[23, "hey"
 
 <div class="content-ad"></div>
 
-```js
 혹시 클래스 생성자에서 속성이 설정될 때 속성의 타입을 자동으로 추론할 수 있어서 더 이상 수동으로 설정할 필요가 없습니다.
 
 ```js
@@ -963,11 +962,10 @@ class Animal {
 ```
 
 - JSDoc @deprecated 지원: JSDoc/TSDoc의 @deprecated 태그가 TypeScript에서 인식됩니다.
-```
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 /** @deprecated 메시지 */
 type Test = string;
@@ -1110,7 +1108,7 @@ class NewTest extends NewParent {
 ```
 
 - static Index Signatures: 클래스에서 정적 속성을 사용할 때, 정적 [propName: string]: string을 사용하여 색인 서명을 설정할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1139,7 +1137,6 @@ const value = originalValue;
 ```
 
 ## TypeScript 4.4
-```  
 
 <div class="content-ad"></div>
 
@@ -1217,7 +1214,6 @@ tupleNew[3] = 0; // 타입 에러: 'readonly["name", 4, true]'에 있는 인덱�
 <img src="https://miro.medium.com/v2/resize:fit:800/1*31No189vLt2Kdx5Ay_Ihig.gif" />
 
 ## TypeScript 4.6
-```
 
 <div class="content-ad"></div>
 
@@ -1477,7 +1473,7 @@ import * as foo from './foo';
 - 에디터에서 소스 정의로 이동: 에디터에서 새로운 "소스 정의로 이동" 메뉴 옵션이 사용 가능합니다. 이는 "정의로 이동"과 유사하지만, .ts 및 .js 파일을 .d.ts 타입 정의 파일보다 우선합니다.
 
 <img src="https://miro.medium.com/v2/resize:fit:800/1*y45nF8mb-nfBuVIUPt7KJQ.gif" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -1650,7 +1646,7 @@ console.log(boundFunc()); // "작업 중"
 - const 형식 매개변수: 형식 매개변수 앞에 const를 지정하는 const는 readonly 형식을 그대로 사용하는 것처럼 동작하도록 시도합니다. 그러나 변경 가능한 값을 형식화했다면 인자유추가 작동하지 않을 수 있습니다(왜냐하면 읽기전용 형식은 변경 가능한 형식에 할당할 수 없기 때문에 항상 readonly 형식을 상속해야 합니다). 이것은 여전히 허용된 매개변수를 제한하지 않습니다. 여전히 extends 내에서 제한해야 합니다.
 
 - 타입을 활용한 여러 구성 파일 지원: 복잡한 상속 구조를 만들거나 모든 "tsconfig"에서 항상 동일한 구성을 확장하거나 모든 설정을 복사하여 모두 복사하는 대신, "tsconfig" 파일에서 "extends": ["./tsconfig1.json", "./tsconfig2.json"]를 지정함으로써 여러 파일을 확장하여 동작을 재정의할 수 있습니다. 후자의 파일이 오버라이드 동작을 우선시합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1691,7 +1687,6 @@ type PrimaryColorRandom = ColorRandom.Red | ColorRandom.Green | ColorRandom.Blue
 ```
 
 - --moduleResolution bundler: TS 4.7의 모듈 해결 전략 "node16"은 ES 모듈을 더 잘 모델링할 수 있게 해주지만 일부 불필요한 제약이 있었습니다(파일 확장자를 명시해야 했으며, ...). 번들러를 사용 중이라면, 새 전략은 최신 기능을 유지하면서 일부 제약을 제거하려고 시도합니다. 컴파일러 플래그 --moduleResolution bundle를 지정하여 사용할 수 있습니다(또는 tsconfig.json에서). 번들러를 사용할 때만 사용하세요.
-```
 
 <div class="content-ad"></div>
 
@@ -1759,7 +1754,6 @@ export function drive(car: Car) {
 ```
 
 - **export type * 지원:** 기본 형식을 하위 모듈로 쉽게 다시 내보낼 수 있습니다.
-```
 
 <div class="content-ad"></div>
 

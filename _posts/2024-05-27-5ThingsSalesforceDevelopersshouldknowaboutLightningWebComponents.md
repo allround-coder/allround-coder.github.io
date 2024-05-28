@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/5-things-salesforce-developers-should-kno
 ---
 
 
-```
+
 ![image](/assets/img/2024-05-27-5ThingsSalesforceDevelopersshouldknowaboutLightningWebComponents_0.png)
 
 솔루션 아키텍트이자 전 프론트엔드 개발자로 활동한 저는 많은 Salesforce 프로젝트에서 UI 개발의 지식과 품질에 항상 놀라곤 합니다. 최근 몇 년 동안 Lightning Web Components (LWC)와 Lightning Web Security (LWS)의 도입으로 Salesforce가 일반 웹 표준을 지원하려는 움직임이 계속 확대되었다 하더라도, Aura 및 Lightning Locker와 같은 개념 이후 Salesforce 개발자들은 종종 이 분야에서 중요한 지식 갭을 갖고 Backend 중심적인 경향을 보입니다.
@@ -20,7 +20,7 @@ link: "https://medium.com/gitconnected/5-things-salesforce-developers-should-kno
 
 # Salesforce 개발자가 왜 Backend 중심적인지?
 
-```
+
 
 <div class="content-ad"></div>
 
@@ -56,7 +56,7 @@ Salesforce는 레코드 및 메타데이터 정보를 로드하는 LWC 개발을
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 3](/assets/img/2024-05-27-5ThingsSalesforceDevelopersshouldknowaboutLightningWebComponents_3.png)
 
 ![Image 4](/assets/img/2024-05-27-5ThingsSalesforceDevelopersshouldknowaboutLightningWebComponents_4.png)
@@ -64,7 +64,7 @@ Salesforce는 레코드 및 메타데이터 정보를 로드하는 LWC 개발을
 ## Without Apex
 
 ![Image 5](/assets/img/2024-05-27-5ThingsSalesforceDevelopersshouldknowaboutLightningWebComponents_5.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "제목 Nextjs 14 사용 그만하세요"
+title: "프로젝트에 Nextjs 14를 더이상 사용하면 안되는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-27-StopUsingNextjs14_0.png"
 date: 2024-05-27 18:42
@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/stop-using-next-js-14-538f35404ea4"
 ---
 
 
-```markdown
+
 ![Next.js](/assets/img/2024-05-27-StopUsingNextjs14_0.png)
 
 Next.js는 여전히 가장 훌륭한 풀스택 프레임워크 중 하나로 손꼽힙니다.
@@ -19,7 +19,7 @@ Next.js는 여전히 가장 훌륭한 풀스택 프레임워크 중 하나로 �
 하지만, 우리에게는 Next.js 버전 14 사용을 중단할 시간이 될 수도 있습니다…
 
 왜냐하면 Next.js 15 릴리스 후보 (RC) 버전이 출시되었기 때문입니다!
-```
+
 
 <div class="content-ad"></div>
 

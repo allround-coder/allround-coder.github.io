@@ -1,5 +1,5 @@
 ---
-title: "플러터에서 위젯을 어떻게 쇼케이스showcase 할 수 있을까요"
+title: "플러터에서 위젯을 showcase 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-HowtoshowcaseawidgetinFlutter_0.png"
 date: 2024-05-27 19:18
@@ -22,7 +22,6 @@ RenderBox 클래스를 사용하여 대상의 위치를 가져올 수 있습니�
 
 <div class="content-ad"></div>
 
-```js
 클래스 Clipper는 CustomClipper<Path>를 확장합니다. getClip 메서드를 재정의하여 대상 위젯 주변에 사각형을 그립니다.
 대상 위젯의 위치와 크기를 인수로 사용하여 오버레이를 그릴 경로를 반환합니다. PathFillType.evenOdd를 사용하여 사각형 외부 영역을 채웁니다.
 
@@ -38,7 +37,6 @@ RenderBox 클래스를 사용하여 대상의 위치를 가져올 수 있습니�
 ```
 
 다른 사각형은 오버레이의 크기를 정의합니다. Offset 클래스의 & 연산자를 사용하여 offset 자체와 우측 항에서 크기를 사용하여 Rect 객체를 만듭니다.
-```
 
 <div class="content-ad"></div>
 

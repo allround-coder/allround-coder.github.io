@@ -1,5 +1,5 @@
 ---
-title: "웹 개발자가 알아야 하는 놀라운 10가지 도구 - 파트 3"
+title: "웹 개발자가 반드시 알아야 하는 10가지 도구"
 description: ""
 coverImage: "/assets/img/2024-05-27-10amazingtoolsthateverywebdevelopershouldknowPart3_0.png"
 date: 2024-05-27 18:18
@@ -11,7 +11,7 @@ link: "https://medium.com/coding-beauty/web-dev-tools-3-a559072c17b9"
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-27-10amazingtoolsthateverywebdevelopershouldknowPart3_0.png)
 
 10 fantastic web dev tools to level up your productivity and achieve your coding goals faster than ever.
@@ -19,7 +19,7 @@ link: "https://medium.com/coding-beauty/web-dev-tools-3-a559072c17b9"
 From breathtaking animations to rapid project creation, these tools will boost your workflow and make a lot of things easier.
 
 # 1. Fira Code
-```
+
 
 <div class="content-ad"></div>
 
@@ -107,7 +107,7 @@ App 컴포넌트를 확인해 보세요. 제 오른손으로 (아니면 왼손�
 
 아래는 Markdown 형식으로 표를 바꾼 것입니다.
 
-```markdown
+
 ![Amazing Tools Part 1](/assets/img/2024-05-27-10amazingtoolsthateverywebdevelopershouldknowPart3_8.png)
 
 JS 개발자로써 매우 쉽고 직관적일 것입니다.
@@ -115,7 +115,7 @@ JS 개발자로써 매우 쉽고 직관적일 것입니다.
 ![Amazing Tools Part 2](/assets/img/2024-05-27-10amazingtoolsthateverywebdevelopershouldknowPart3_9.png)
 
 심지어 클라이언트 측에서 사용하고 서버 요청을 완전히 건너뛸 수도 있습니다 — 비용 절감과 앱 성능 향상을 도모할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -159,7 +159,7 @@ Parcel: 아무 설정 없이 제로 설정으로 사용 가능한 번들러 - �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-10amazingtoolsthateverywebdevelopershouldknowPart3_13.png)
 
 우리는 index.jsx에서 새로운 React 앱을 빠르게 생성할 수 있습니다:
@@ -167,7 +167,7 @@ Parcel: 아무 설정 없이 제로 설정으로 사용 가능한 번들러 - �
 ![이미지](/assets/img/2024-05-27-10amazingtoolsthateverywebdevelopershouldknowPart3_14.png)
 
 # 10. SendGrid
-```
+
 
 <div class="content-ad"></div>
 
@@ -194,6 +194,5 @@ Parcel: 아무 설정 없이 제로 설정으로 사용 가능한 번들러 - �
 
 아래는 Markdown 형식으로 변경한 코드입니다.
 
-```markdown
+
 ![이미지 설명](/assets/img/2024-05-27-10amazingtoolsthateverywebdevelopershouldknowPart3_16.png)
-```

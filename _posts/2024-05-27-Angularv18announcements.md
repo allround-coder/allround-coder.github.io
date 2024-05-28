@@ -1,5 +1,5 @@
 ---
-title: "Angular v18 발표 현황"
+title: "Angular v18 발표 내용 정리 "
 description: ""
 coverImage: "/assets/img/2024-05-27-Angularv18announcements_0.png"
 date: 2024-05-27 18:57
@@ -154,7 +154,7 @@ Angular Material의 다음 단계에 있습니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Angular v18 Announcement Image 4](/assets/img/2024-05-27-Angularv18announcements_4.png)
 
 - Signal Query APIs: offer an alternative approach to the decorator-based queries, namely @ViewChild, @ViewChildren, @ContentChild, and @ContentChildren, supplying query results as a Signal.
@@ -162,7 +162,7 @@ Angular Material의 다음 단계에 있습니다.
 ![Angular v18 Announcement Image 5](/assets/img/2024-05-27-Angularv18announcements_5.png)
 
 To learn more about signals, check the guide: [Angular Signals Guide](https://angular.dev/guide/signals)
-```
+
 
 <div class="content-ad"></div>
 
@@ -176,7 +176,7 @@ zone.js를 사용하는 Angular은 Angular zone 밖에서 변경이 일어날 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Angular v18 announcements](/assets/img/2024-05-27-Angularv18announcements_7.png)
 
 이전에 언급했듯이 Angular Material 구성 요소 및 CDK는 zone-less 호환됩니다. zone-less는 실험적인 모드에서 사용할 수 있습니다.
@@ -184,7 +184,7 @@ zone.js를 사용하는 Angular은 Angular zone 밖에서 변경이 일어날 �
 ## Typescript 5.4
 
 V18에서는 typescript 5.4 기능을 활용할 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -201,7 +201,7 @@ V18에서는 typescript 5.4 기능을 활용할 수 있습니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-27-Angularv18announcements_8.png" />
 
 ## Angular Forms 새로운 전역 observable
@@ -209,7 +209,7 @@ V18에서는 typescript 5.4 기능을 활용할 수 있습니다:
 GitHub에서 가장 많은 투표를 받은 기능 요청을 개발했습니다. 이는 모든 컨트롤 및 해당 하위 요소에 대한 모든 종류의 이벤트를 추적하도록 구독할 수 있는 전역 observable입니다.
 
 <img src="/assets/img/2024-05-27-Angularv18announcements_9.png" />
-```
+
 
 <div class="content-ad"></div>
 

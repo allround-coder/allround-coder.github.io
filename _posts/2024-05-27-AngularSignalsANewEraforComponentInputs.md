@@ -1,5 +1,5 @@
 ---
-title: " 앵귤러 신호 컴포넌트 입력을 위한 새로운 시대"
+title: "앵귤러 신호 컴포넌트 입력을 위한 새로운 시대"
 description: ""
 coverImage: "/assets/img/2024-05-27-AngularSignalsANewEraforComponentInputs_0.png"
 date: 2024-05-27 19:00

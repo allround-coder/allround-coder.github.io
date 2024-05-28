@@ -182,7 +182,7 @@ python sensor_stream_producer.py
 ```
 
 작동하는 것을 확인하면 일단 프로세스를 중지해주세요 (나중에 스트림 처리 프로세스와 함께 실행할 거에요).
-```
+
 
 <div class="content-ad"></div>
 
@@ -289,7 +289,7 @@ def initializer(value: dict) -> dict:
 
 <div class="content-ad"></div>
 
-```markdown
+
 def reducer(aggregated: dict, value: dict) -> dict:
     aggcount = aggregated['count'] + 1
     value_dict = json.loads(value)
@@ -299,13 +299,13 @@ def reducer(aggregated: dict, value: dict) -> dict:
         'max': max(aggregated['max'], value_dict['value']),
         'mean': (aggregated['mean'] * aggregated['count'] + value_dict['value']) / (aggregated['count'] + 1)
     }
-```
+
 
 이 기능은 창에서 여러 집계를 수행할 때만 필요합니다. 우리의 경우 각 창에 대해 count, min, max 및 mean 값을 생성하기 때문에 이러한 값을 미리 정의해야 합니다.
 
 다음으로, 중요한 부분입니다 - tumbling window 기능 추가:
 
-```markdown
+
 ### 창 유형 및 길이와 같은 창 매개변수 정의
 sdf = (
     # 10초의 텀블링 창 정의
@@ -325,7 +325,7 @@ sdf = sdf.apply(
         "temperature": value["value"], # 온도 매개변수에 대한 {count, min, max, mean} 값을 포함하는 사전 전송
     }
 )
-```
+
 
 <div class="content-ad"></div>
 
@@ -377,7 +377,7 @@ python sensor_stream_processor.py
 또한 집골 토픽에 집계된 데이터가 올바르게 스트리밍되는지 확인하려면 Redpanda 콘솔을 확인할 수 있습니다(주소: http://localhost:8080/topics).
 
 <img src="/assets/img/2024-05-27-AggregatingReal-timeSensorDatawithPythonandRedpanda_2.png" />
-```
+
 
 <div class="content-ad"></div>
 

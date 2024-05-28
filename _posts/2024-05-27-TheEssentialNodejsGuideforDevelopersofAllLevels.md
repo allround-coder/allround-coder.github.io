@@ -21,7 +21,7 @@ Node.js 게임을 한 단계 업시키기 위해 준비하세요!
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-05-27-TheEssentialNodejsGuideforDevelopersofAllLevels_1.png)
 
 [Gmail](mailto:your.email@gmail.com) | [LinkedIn](https://www.linkedin.com/in/yourprofile)
@@ -29,7 +29,7 @@ Node.js 게임을 한 단계 업시키기 위해 준비하세요!
 ## Why These Practices Matter
 
 ![image2](/assets/img/2024-05-27-TheEssentialNodejsGuideforDevelopersofAllLevels_2.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -61,7 +61,6 @@ link: "https://medium.com/@web.pinkisingh/unmasking-the-interview-ritual-embraci
 
 <div class="content-ad"></div>
 
-<!-- Change the table tag to Markdown format. -->
 
 There were topics I hadn’t studied, and this gap in my preparation affected my performance. Next time, I plan to cover all relevant topics thoroughly to ensure I am well-prepared.
 

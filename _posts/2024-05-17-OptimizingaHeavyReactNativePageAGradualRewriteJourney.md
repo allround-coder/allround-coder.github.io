@@ -66,14 +66,14 @@ b. 공유 값 수정은 컴포넌트를 다시 렌더링하지 않습니다. 따
 
 <div class="content-ad"></div>
 
-
+```js
 <PersonalProfile>
   <ProfileSummary />
   <ProfileTabs>
     {...<WorkoutSnippet />}
   </ProfileTabs>
 </PersonalProfile>
-
+```
 
 Initial analysis 후 많은 개선점을 발견했지만, 페이지 성능을 저해하는 주요 원인은 운동 스니펫 목록이었다고 결론지었습니다. 각 스니펫에는 비싼 MapView가 있었고, 잘못된 위치에 상태 업데이트가 발생하여 긴 목록이 다시 처음부터 렌더링되었습니다. 사용자가 페이지를 보기 전까지 React가 가상 DOM에서 전체 목록을 렌더링할 때 크게 프레임 속도가 떨어졌습니다.
 

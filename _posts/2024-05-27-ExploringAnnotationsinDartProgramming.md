@@ -1,5 +1,5 @@
 ---
-title: "단추 프로그래밍에서 주석 탐구하기"
+title: "Dart에서 Annotations 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-ExploringAnnotationsinDartProgramming_0.png"
 date: 2024-05-27 19:20
@@ -11,7 +11,7 @@ link: "https://medium.com/nonstopio/exploring-annotations-in-dart-programming-ae
 ---
 
 
-```markdown
+
 ![Exploring Annotations in Dart Programming](/assets/img/2024-05-27-ExploringAnnotationsinDartProgramming_0.png)
 
 Dart에서 주석은 개발자가 코드에 메타데이터를 추가할 수 있는 기능입니다. 이 메타데이터는 도구, 라이브러리 및 런타임에서 코드 생성, 유효성 검사 및 문서화와 같은 다양한 작업을 수행하는 데 사용될 수 있습니다. 이 블로그에서는 Dart에서 주석이 작동하는 방법, 사용 방법 및 사용자 정의 주석을 만드는 방법을 살펴보겠습니다.
@@ -19,7 +19,7 @@ Dart에서 주석은 개발자가 코드에 메타데이터를 추가할 수 있
 ## Annotations이란?
 
 Dart에서 주석은 클래스, 메서드, 필드 등과 같은 다양한 프로그램 요소에 첨부할 수 있는 메타데이터 형식입니다. 컴파일러 또는 런타임에서 처리될 수 있는 추가 정보를 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

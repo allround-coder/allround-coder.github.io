@@ -1,5 +1,5 @@
 ---
-title: "네스트JS의 비즈니스 로직 조직 이해하기"
+title: "NestJS의 비즈니스 로직 조직 이해하기"
 description: ""
 coverImage: "/assets/img/2024-05-27-UnderstandingNestJSsBusinessLogicOrganization_0.png"
 date: 2024-05-27 18:47
@@ -11,7 +11,7 @@ link: "https://medium.com/@dpericich/understanding-nestjss-business-logic-organi
 ---
 
 
-```markdown
+
 ![Understanding NestJS's Business Logic Organization](/assets/img/2024-05-27-UnderstandingNestJSsBusinessLogicOrganization_0.png)
 
 전통적인 MVC 아키텍처에서 왔다면 NestJS는 낯설게 느껴질 수 있습니다. 물론, view(사용자 인터페이스) 계층, model(데이터베이스) 계층, 및 controller(비즈니스 로직) 간의 관심사 분리 아이디어는 존재합니다. 그러나 NestJS에서는 파일과 비즈니스 로직을 구조화하기 위한 새로운 흐름을 소개합니다. 라우팅 요청에 대한 컨트롤러, 비즈니스 로직 처리를 위한 서비스, 데이터베이스 조작을 위한 리포지토리의 패턴을 사용합니다. NestJS에서 비즈니스 로직을 어떻게 구성할지 살펴보겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@dpericich/understanding-nestjss-business-logic-organi
 ## 요청 처리 새로운 방식
 
 NestJS는 구성 기반의 백엔드 프레임워크입니다. JavaScript로 작성되었지만 TypeScript를 사용할 때 가장 빛을 발합니다. 기본 NodeJS와 Express의 Wild West 접근 방식과 Ruby on Rails의 엄격한 규칙 기반 접근 방식과는 다릅니다. NestJS는 애플리케이션 개발을 위한 최상의 관행을 형성하면서도 유연한 디자인을 가능하게 하는 패턴 또는 레시피를 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

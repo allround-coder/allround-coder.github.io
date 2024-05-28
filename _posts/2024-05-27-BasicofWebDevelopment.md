@@ -1,5 +1,5 @@
 ---
-title: "웹 개발의 기초"
+title: "웹 개발의 기초 내용들 정리"
 description: ""
 coverImage: "/assets/img/2024-05-27-BasicofWebDevelopment_0.png"
 date: 2024-05-27 18:45
@@ -11,7 +11,7 @@ link: "https://medium.com/@aarishbangash/basic-of-web-development-da5d925a6650"
 ---
 
 
-```markdown
+
 ![Basic of Web Development](/assets/img/2024-05-27-BasicofWebDevelopment_0.png)
 
 요즘, 수천 명의 사람들이 온라인으로 일하고 있어. 사람들은 프리랜싱을 선호하고 있어. 급부상하고 있는 분야 중 하나가 웹 개발이야. 소프트웨어 공학 또는 컴퓨터 과학 전공자 뿐만 아니라 많은 비기술적인 사람들도 이 분야로 오고 있어.
@@ -19,7 +19,7 @@ link: "https://medium.com/@aarishbangash/basic-of-web-development-da5d925a6650"
 거의 모든 브랜드와 심지어 가게들도 웹 사이트를 갖추고 있는데, 그 웹 개발자가 그들을 위해 웹 사이트를 디자인하고 만들어 주는 거야. 이제 어떻게 웹 개발자가 되고 어떻게 시작해야 할지 궁금증이 드는데요?
 
 먼저 사람은 프런트엔드, 백엔드 또는 풀 스택 개발자 가운데 어디로 갈지 결정해야 해. 프런트엔드에 대해 이야기해 보죠.
-```
+
 
 <div class="content-ad"></div>
 

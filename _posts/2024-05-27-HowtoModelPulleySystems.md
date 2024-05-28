@@ -11,7 +11,7 @@ link: "https://medium.com/@keith-mcnulty/how-to-model-pulley-systems-7dc71ab4eb6
 ---
 
 
-```markdown
+
 ![Pulley System](/assets/img/2024-05-27-HowtoModelPulleySystems_0.png)
 
 풀리 시스템은 비탄성 케이블이나 줄을 통해 연결된 물체들의 시스템으로, 일반적으로 고정된 축 위의 바퀴인 부드러운 풀리를 통해 통과됩니다. 일상생활에서 가장 흔히 발견되는 풀리 시스템은 강철 케이블로 연결된 두 묵직한 물체로 구성됩니다. 케이블이 시스템 상단의 부드러운 풀리를 통과하고 물체들은 풀리 양쪽에서 수직으로 올라가거나 내려갑니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@keith-mcnulty/how-to-model-pulley-systems-7dc71ab4eb6
 풀리의 한 쪽에 엘리베이터가 있고 다른 쪽에 카운터웨이트가 있는 엘리베이터 시스템이 일반적인 예입니다. 또 다른 일반적이고 비슷한 예로는 인간이 카운터웨이트에 맞서 풀리를 통해 케이블을 당기는 웨이트 머신이 있습니다.
 
 풀리 시스템 문제는 고등학교에서 흔히 배우는 수학 도구를 사용하여 해결하는 데 재미있고 깔끔할 수 있습니다. 최근에 매우 만족스러운 해결책이 있는 이 형태의 문제를 발견했습니다. 이 문제를 해결하기 위해서는 뉴턴의 법칙, 운동의 기본 방정식, 그리고 에너지와 운동량에 대한 기본 지식이 필요합니다. 또한 문제를 수학으로 모델링하기 위해 체계적으로 생각할 수 있어야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -33,7 +33,7 @@ A 파일드라이버는 가벼운 무게 m의 경량 카운터웨이트에 의�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![How to Model Pulley Systems Part 1](/assets/img/2024-05-27-HowtoModelPulleySystems_1.png)
 
 이 시스템은 정지 상태에서 출발되며, 우리는 편막기가 말뚝을 타격할 것으로 예상할 수 있습니다. 이 충돌이 완전히 탄성 없다고 합니다. 이는 모든 운동 에너지가 손실되고 편막기가 말뚝에서 튕겨 나오지 않고 충돌 후 그 자리에서 그대로 남게 될 것을 의미합니다.
@@ -41,7 +41,7 @@ A 파일드라이버는 가벼운 무게 m의 경량 카운터웨이트에 의�
 그러나 카운터웨이트는 충돌 후에도 계속해서 상승할 것이며, 그 결과 줄은 느슨해질 것입니다. 이것은 중력이 카운터웨이트를 멈출 때까지 계속될 것이며, 그리고 다시 하강하기 시작합니다. 이 상황의 다이어그램은 다음과 같습니다:
 
 ![How to Model Pulley Systems Part 2](/assets/img/2024-05-27-HowtoModelPulleySystems_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -75,7 +75,7 @@ A 파일드라이버는 가벼운 무게 m의 경량 카운터웨이트에 의�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-27-HowtoModelPulleySystems_6](/assets/img/2024-05-27-HowtoModelPulleySystems_6.png)
 
 이제 이 시스템이 중력으로 인해 느려지고, 더블카드가 두 번째로 펠을 충돌할 때 속도 v₁로 다시 돌아올 것을 알았습니다. 우리는 이전에 계산한 것과 같은 방법을 사용하여 더블카드가 멈출 때까지 걸리는 시간을 계산합니다. 초기 속도는 v₁, 최종 속도는 0이며, 가속도는 전체 시스템의 가속도입니다. 따라서 다음과 같습니다:
@@ -83,11 +83,11 @@ A 파일드라이버는 가벼운 무게 m의 경량 카운터웨이트에 의�
 ![2024-05-27-HowtoModelPulleySystems_7](/assets/img/2024-05-27-HowtoModelPulleySystems_7.png)
 
 첫 번째와 두 번째 충돌 사이의 총 시간 T₁을 얻으려면 이 값을 두 배하여 역추적하는 시간을 더해야 합니다:
-```  
+  
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-05-27-HowtoModelPulleySystems_8.png)
 
 ## 연속적인 충돌 사이의 움직임 공부
@@ -95,7 +95,7 @@ A 파일드라이버는 가벼운 무게 m의 경량 카운터웨이트에 의�
 우리의 논리를 반복하면, 만약 v₁가 두 번째 충돌 직전 시스템의 속도라면, 반추중량은 2v₁/g 시간에 탄력줄 위치로 돌아올 것입니다. 이 시점에서 우리는 시스템의 새로운 속도 v₂가 다음과 같은 조건을 만족한다고 말할 수 있습니다:
 
 ![이미지](/assets/img/2024-05-27-HowtoModelPulleySystems_9.png)
-```
+
 
 <div class="content-ad"></div>
 

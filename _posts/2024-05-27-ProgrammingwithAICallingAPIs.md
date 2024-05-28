@@ -1,5 +1,5 @@
 ---
-title: "AI와 함께 하는 프로그래밍  API 호출하기"
+title: "AI와 함께 하는 프로그래밍,  API 호출하기"
 description: ""
 coverImage: "/assets/img/2024-05-27-ProgrammingwithAICallingAPIs_0.png"
 date: 2024-05-27 18:37
@@ -293,7 +293,7 @@ console.log(completion);
 ```
 
 다른 공급자들로는 진행하지 않겠지만, 아이디어를 얻으실 수 있습니다. 공식적으로 지원되는 라이브러리를 사용하시려면 Python 및 Javascript가 좋습니다. REST API 외에도 Python 및 Javascript를 포함한 대부분의 공급자는 다른 언어에 대한 공식 지원이 없지만 Google은 훨씬 더 다양한 언어를 지원합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -443,7 +443,7 @@ chain = prompt | llm | output_parser
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Programming with AI: Calling APIs](/assets/img/2024-05-27-ProgrammingwithAICallingAPIs_1.png)
 
 체인은 강력하고 구성 가능합니다. 컨텍스트와 함께 질문을 LLM에 전달하여 간단한 검색 증강 생성(RAG)을 수행하는 방법을 살펴보겠습니다.
@@ -483,7 +483,7 @@ chain = setup_and_retrieval | prompt | model | output_parser
 results = chain.invoke("스마트 네이션은 어떻게 시민들의 삶을 개선했습니까?")
 print(results)
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -507,7 +507,7 @@ print(results)
 ## LlamaIndex
 
 다른 인기 있는 LLM 프레임워크인 LlamaIndex가 있습니다. LlamaIndex는 2022년 11월에 GPTIndex라는 이름의 프레임워크로 시작되었습니다. LlamaIndex의 기본 개념은 LLM을 데이터에 연결하는 것입니다. 실제로 LlamaIndex와 Langchain은 거의 동시에 시작되었다는 것에 주목할 수 있습니다. 사실, Langchain의 창시자인 해리슨 체이스와 LlamaIndex의 창시자인 제리 류는 인공 지능 보안 회사인 Robust Intelligence에서 동료였습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "다음 수준의 사용자 경험 크로스 문서 뷰 전환"
+title: "사용자 경험(UX) 크로스 문서 뷰 전환 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-Next-levelUserExperienceWithCross-documentViewTransitions_0.png"
 date: 2024-05-27 19:05

@@ -179,29 +179,6 @@ body {
 
 <div class="content-ad"></div>
 
-
-상속 고급 {
- 텍스트-변환: 대문자;
- }
-
-
-속성: 상자 그림자
-요소 주변에 그림자 효과 추가합니다.
-예시:
-
-
-.상자 {
- 상자-그림자: 5px 5px 5px #888888;
- }
-
-
-속성: 커서
-표시할 커서 유형을 지정합니다.
-예시:
-
-
-<div class="content-ad"></div>
-
 ```js
 button {
   cursor: pointer;

@@ -1,5 +1,5 @@
 ---
-title: "테일윈드가 사용자 경험의 풍경을 바꾸고 있습니다"
+title: "웹사이트를 TailwindCSS로 만들어야하는 이유 "
 description: ""
 coverImage: "/assets/img/2024-05-27-Tailwindischangingthelandscapeofuserexperience_0.png"
 date: 2024-05-27 19:04
@@ -58,22 +58,22 @@ This is more straightforward than traditional CSS, where you need to define and 
 
 <div class="content-ad"></div>
 
-```markdown
+
 <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1">
   <div>test</div>
   <h3 class="text-slate-900 dark:text-white">some text</h3>
 </div>
-```
 
-```markdown
+
+
 <!-- dark:text-white will be applied to dark mode only, for light mode it will take 
 text-slate-900 -->
-```
+
 
 - Enhanced Workflow: Tailwind를 사용하기 전에 일반 CSS에 의존했던 개발자로서, 저는 Tailwind가 효율성을 20~30% 향상시켰다는 사실을 발견했습니다. 반응형 디자인을 간소화하여 최근 Angular과 Tailwind를 사용하여 개발한 학교 정적 웹사이트 프로젝트 등에 도움이 되었습니다.
 
 Tailwind 사용 방법
-```
+
 
 <div class="content-ad"></div>
 

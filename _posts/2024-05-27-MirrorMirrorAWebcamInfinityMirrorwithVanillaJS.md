@@ -1,5 +1,5 @@
 ---
-title: "미러미러  바닐라 JS로 만들어진 웹캠 인피니티 미러"
+title: "바닐라 JS로 만들어진 웹캠 인피니티 미러"
 description: ""
 coverImage: "/assets/img/2024-05-27-MirrorMirrorAWebcamInfinityMirrorwithVanillaJS_0.png"
 date: 2024-05-27 19:14
@@ -246,7 +246,7 @@ function sobelFilter(data, width, height) {
 Sobel은 그 연산 부하가 비교적 적은 편이기 때문에 인기 있는 선택지입니다. Canny Filter 또한 엣지 검출을 제공하지만 이미지를 그라디언트를 취하기 전에 블러처리하여 연산량이 많이 필요합니다. 이로 인해 라인 드로잉 형식의 효과를 더 많이 만들어 냅니다. Canny Filter에 대해 더 알고 싶다면 여기를 참고하세요. Canny Filter (및 해당 파생)는 콘크리트 입자나 작은 직물 패턴과 같은 '질감있는' 가장자리보다는 덜 민감합니다.
 
 코드에서 Canny 필터를 활성화하는 방법은 아래에 나와 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

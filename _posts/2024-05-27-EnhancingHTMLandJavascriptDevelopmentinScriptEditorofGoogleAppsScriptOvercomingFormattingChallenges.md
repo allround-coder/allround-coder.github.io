@@ -11,7 +11,7 @@ link: "https://medium.com/google-cloud/enhancing-html-and-javascript-development
 ---
 
 
-```markdown
+
 ![EnhancingHTMLandJavascriptDevelopmentinScriptEditorofGoogleAppsScript](/assets/img/2024-05-27-EnhancingHTMLandJavascriptDevelopmentinScriptEditorofGoogleAppsScriptOvercomingFormattingChallenges_0.png)
 
 # 개요
@@ -19,7 +19,7 @@ link: "https://medium.com/google-cloud/enhancing-html-and-javascript-development
 2022년 4월에 시작된 Google Apps Script IDE가 개선되었음에도 불구하고 HTML 및 Javascript 개발에 대한 어려움이 발생합니다. 특히 스크립트 편집기의 내장된 언어 형식 지정은 큰 Javascript 코드베이스에 대해 불충분하며, 잠재적으로 오류를 일으킬 수 있습니다. 본 보고서는 이러한 형식 지정 문제를 해결하고 스크립트 편집기 내에서 개발을 원활하게 할 수 있는 솔루션을 제안합니다.
 
 # 소개
-```
+
 
 <div class="content-ad"></div>
 

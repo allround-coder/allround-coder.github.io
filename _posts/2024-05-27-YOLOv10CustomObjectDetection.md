@@ -1,5 +1,5 @@
 ---
-title: "YOLOv10 사용자 지정 객체 검출"
+title: "YOLOv10 Custom Object Detection"
 description: ""
 coverImage: "/assets/img/2024-05-27-YOLOv10CustomObjectDetection_0.png"
 date: 2024-05-27 18:31
@@ -121,11 +121,11 @@ val: /content/X-Ray-Baggage-3/valid/images
 ```
 
 결과를 살펴봅시다.
-``` 
+ 
 
 <div class="content-ad"></div>
 
-```md
+md
 ![Training results](/content/runs/detect/train/results.png){width=1000}
 
 ![Prediction results](/assets/img/2024-05-27-YOLOv10CustomObjectDetection_5.png)
@@ -139,7 +139,7 @@ model_path = '/content/runs/detect/train/weights/best.pt'
 model = YOLOv10(model_path)
 results = model(source='/content/X-Ray-Baggage-3/test/images', conf=0.25, save=True)
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -172,7 +172,7 @@ plt.show()
 
 - 이 글을 작성하는 동안 여러 데이터셋에서 YOLOv10n 모델을 학습하여 Colab의 15GB 무료 T4 GPU 한도를 고갈시켰습니다. Colab 환경에서 모델을 학습할 때 한도를 초과하면 T4 GPU에 제한이 있습니다. 이 문제를 해결하기 위해 다른 구글 계정으로 로그인할 수 있습니다.
 - 기술이 빠르게 발전함에 따라 컴퓨터 비전과 대형 언어 모델 양쪽에서 단일 기술에 갇히지 않고 주요 개념을 배우는 것이 유익하다고 생각됩니다. 이를 적응하기 위해 이러한 기술의 개발자들로부터 배우는 것이 도움이 됩니다. Ultralytics와 Roboflow의 콘텐츠는 이 분야에서 매우 가치 있으며, 그들을 팔로우하는 것이 바람직합니다.
-```
+
 
 <div class="content-ad"></div>
 

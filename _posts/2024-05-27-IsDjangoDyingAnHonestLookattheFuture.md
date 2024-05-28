@@ -1,5 +1,5 @@
 ---
-title: "Django가 죽고 있는가 미래에 대해 솔직하게 살펴보기"
+title: "현업에서 Django를 더이상 사용하지 않는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-27-IsDjangoDyingAnHonestLookattheFuture_0.png"
 date: 2024-05-27 19:23
@@ -11,7 +11,7 @@ link: "https://medium.com/python-in-plain-english/is-django-dying-an-honest-look
 ---
 
 
-```markdown
+
 ![Is Django Dying](/assets/img/2024-05-27-IsDjangoDyingAnHonestLookattheFuture_0.png)
 
 Django의 소멸을 선언하는 클릭베이트 제목에 지쳤나요? 저는 그렇습니다. 여전히 Django를 의존하는 대규모 기업들이나 커뮤니티가 구축하는 놀라운 것들을 확인하지 않은 것처럼 보입니다. 솔직히, Django를 "소멸"이라고 부르는 것은 인터넷 익스플로러를 사용하는 것보다 더 접촉을 잃은 것으로 여겨집니다. Django가 톱 플레이어로 남아 있는 이유에 대해 알아봅시다.
@@ -19,7 +19,7 @@ Django의 소멸을 선언하는 클릭베이트 제목에 지쳤나요? 저는 
 ## 섹션 1: Django는 비디오 게임 고양이보다 더 많은 생명력을 가지고 있습니다.
 
 정말이에요, "Django가 죽었다"는 기사들은 금방 질리죠. 이 프레임워크는 핵 겨울 속의 바퀴벌레보다 더 저항력이 있습니다. 여기 이유가 있습니다:
-```
+
 
 <div class="content-ad"></div>
 

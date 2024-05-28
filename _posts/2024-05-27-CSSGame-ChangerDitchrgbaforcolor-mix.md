@@ -1,5 +1,5 @@
 ---
-title: "CSS 게임 체인저 rgba를 버리고 color-mix를 사용하세요"
+title: "CSS에서 rgba 대신 color-mix를 사용해야하는 이유"
 description: ""
 coverImage: "/assets/img/2024-05-27-CSSGame-ChangerDitchrgbaforcolor-mix_0.png"
 date: 2024-05-27 18:44

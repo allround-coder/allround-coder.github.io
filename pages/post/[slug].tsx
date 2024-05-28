@@ -15,12 +15,13 @@ import { visit } from "unist-util-visit";
 import markdownIt from "markdown-it";
 import highlightjs from "markdown-it-highlightjs";
 import markdownContainer from "markdown-it-container";
-import { LANG_LOCALE, SITE_NAME, SITE_URL } from "@/lib/constants";
+import { AUTHOR, LANG_LOCALE, SITE_NAME, SITE_URL } from "@/lib/constants";
 import CustomHead from "@/components/CustomHead";
 import GoogleAd from "@/components/GoogleAd";
 import moment from "moment";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import markdownToHtml from "@/lib/markdownToHtml";
 
 const md = markdownIt({ html: true }).use(highlightjs).use(markdownContainer, "tip");
 
@@ -55,7 +56,7 @@ export default function Post({ post, content }: Props) {
                 <div className={cx("profile_wrap")}>
                   <div className={cx("profile_image_wrap")}>
                     <Image
-                      src={"/assets/profile.jpg"}
+                      src={"/favicons/apple-icon-114x114.png"}
                       className={cx("profile")}
                       alt={post.title}
                       width={44}
@@ -63,7 +64,7 @@ export default function Post({ post, content }: Props) {
                     />
                   </div>
                   <div className={cx("textarea")}>
-                    <span className={cx("writer")}>Allround Coder</span>
+                    <span className={cx("writer")}>{AUTHOR}</span>
                     <span className={cx("info")}>
                       <span className={cx("date")}>{`Posted On ${moment(post.date).format("MMM D, YYYY")}`}</span>
                       <span className={cx("reading_time")}>{post.readingTime} min read</span>
@@ -82,7 +83,8 @@ export default function Post({ post, content }: Props) {
 
               <article className={cx("post_content")}>
                 {/* <div dangerouslySetInnerHTML={{ __html: md.render(post.content) }}></div> */}
-                <MDXRemote {...content} components={components} />
+                <div dangerouslySetInnerHTML={{ __html: content }} />
+                {/* <MDXRemote {...content} components={components} /> */}
               </article>
             </div>
           </main>
@@ -141,12 +143,15 @@ export async function getStaticProps({ params }: Params) {
     ],
   });
 
-  const content = await serialize(post.content, {
-    mdxOptions: {
-      rehypePlugins: [rehypeHighlight],
-      remarkPlugins: [remarkDirective, myRemarkPlugin],
-    },
-  });
+  // const content = await serialize(post.content, {
+  //   mdxOptions: {
+  //     rehypePlugins: [rehypeHighlight],
+  //     remarkPlugins: [remarkDirective, myRemarkPlugin],
+  //   },
+  // });
+  // console.log(post.content);
+  // console.log(mdxcontent);
+  const content = await markdownToHtml(post.content || "");
   return {
     props: {
       post: {

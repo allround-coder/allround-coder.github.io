@@ -1,5 +1,5 @@
 ---
-title: "플러터에서의 마이크로 프론트엔드 모듈화 응용 프로그램 - Part 2"
+title: "플러터에서의 마이크로 프론트엔드 모듈화 응용 프로그램"
 description: ""
 coverImage: "/assets/img/2024-05-27-MicroFrontendsinFlutterModularizationApplication-Part2_0.png"
 date: 2024-05-27 19:17
@@ -56,7 +56,7 @@ scripts:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```dart
 export 'grid_view_load_more.dart';
 export 'list_view_load_more.dart';
@@ -68,7 +68,7 @@ export 'list_view_load_more.dart';
 이게 전부에요. 이 package에 대해 더 이상 논의할 주제는 없습니다.
 
 3. Core Module
-```
+
 
 <div class="content-ad"></div>
 
@@ -151,7 +151,7 @@ void _goToHome() {
 이것은 데모하고 싶은 샘플 모듈뿐이에요. 거의 모든 일반 모듈이 동일한 개념을 가지고 있어요:
 
 ![이미지](/assets/img/2024-05-27-MicroFrontendsinFlutterModularizationApplication-Part2_5.png)
-```
+
 
 <div class="content-ad"></div>
 

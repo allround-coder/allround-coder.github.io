@@ -34,7 +34,7 @@ link: "https://medium.com/@preranapupadhya/sending-emails-from-node-js-using-a-p
 
 다음은 우리 프로젝트의 구조입니다:
 
-```markdown
+
 server/
   ├── Controller/
   │   └── mailController.js
@@ -44,7 +44,7 @@ server/
   │   └── mailSender.py
   └── server.js
   └── .env
-```
+
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "Routing 의 수수께끼 풀기 나만의 파일 경로 기반 라우터 만들기"
+title: "Routing으로 나만의 파일 경로 기반 라우터 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-27-DemystifyingRoutingCreatingYourOwnfile-path-basedRouter_0.png"
 date: 2024-05-27 18:24

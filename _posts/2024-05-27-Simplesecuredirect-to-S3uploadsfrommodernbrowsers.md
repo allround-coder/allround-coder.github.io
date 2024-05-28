@@ -1,5 +1,5 @@
 ---
-title: "모던 브라우저에서 안전한 S3 직접 업로드하기"
+title: "모던 브라우저에서 AWS S3 직접 업로드하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-Simplesecuredirect-to-S3uploadsfrommodernbrowsers_0.png"
 date: 2024-05-27 18:48
@@ -201,7 +201,7 @@ export function useUpload() {
 ```
 
 ## 마지막으로: 새로 업로드된 파일 사용하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -238,4 +238,3 @@ except Exception:
 요렇게 해요. 누군가에겐 도움이 되길 바래요! 혹시 다시 필요하시다면 여기 스크립트 내용이 담긴 gist 링크도 드릴게요. 🥰
 
 의견이나 피드백이 있으시면 언제든지 알려주세요! @taylorhughes
-```

@@ -1,5 +1,5 @@
 ---
-title: "Angular 18의 새로운 기능은 무엇이 있을까요"
+title: "Angular 18의 새로운 기능 알아보기"
 description: ""
 coverImage: "/assets/img/2024-05-27-WhatsnewinAngular18_0.png"
 date: 2024-05-27 18:51

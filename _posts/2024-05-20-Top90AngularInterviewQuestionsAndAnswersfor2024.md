@@ -4233,9 +4233,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 <div class="content-ad"></div>
 
-
+```js
 { user | testPipe} in HTML
-
+```
 
 참고로 컴포넌트 코드는 다음과 같습니다:-
 

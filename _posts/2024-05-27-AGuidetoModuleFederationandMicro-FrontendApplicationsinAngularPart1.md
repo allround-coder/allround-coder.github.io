@@ -1,5 +1,5 @@
 ---
-title: "앵귤러에서 모듈 연합 및 마이크로 프론트엔드 애플리케이션 가이드 - 파트 1"
+title: "앵귤러에서 마이크로 프론트엔드 애플리케이션 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-AGuidetoModuleFederationandMicro-FrontendApplicationsinAngularPart1_0.png"
 date: 2024-05-27 19:02

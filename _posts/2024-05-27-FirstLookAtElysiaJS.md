@@ -1,5 +1,5 @@
 ---
-title: "엘리시아JS 소개"
+title: "ElysiaJS 소개 및 정리"
 description: ""
 coverImage: "/assets/img/2024-05-27-FirstLookAtElysiaJS_0.png"
 date: 2024-05-27 18:50
@@ -87,7 +87,7 @@ $ curl http://localhost:8080/
 ```
 
 더 많은 라우트를 그룹화하고 생성하기 위해 인스턴스를 만들고 메인 애플리케이션에서 사용할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -274,7 +274,7 @@ http://localhost:8080에서 서버를 실행 중이라면, 애플리케이션을
 
 <div class="content-ad"></div>
 
-```markdown
+
 $ bun test
 bun test v1.0.30 (1424a196)
 
@@ -289,14 +289,14 @@ test/route.test.ts:
  0 fail
  10 expect() calls
 Ran 5 tests across 1 files. [43.00ms]
-```
+
 
 Eden은 E2E Type Safety를 얻을 수 있는 훌륭한 도구입니다. 이를 프런트엔드 애플리케이션에서 사용하거나 서버를 테스트할 때 활용할 수 있습니다.
 
 # 결론
 
 안타깝게도 이 글은 너무 길어져서 종료하겠습니다. 유용한 기능을 가진 Elysia에 대한 설명을 계속 진행할 수 없어서 유감스럽습니다. 더 많은 정보를 알고 싶다면 여기에서 문서를 확인할 수 있습니다. Elysia 팀은 훌륭한 일을 하고 있고 이 라이브러리가 밝은 미래를 가질 것으로 기대합니다. 첫 안정적인 릴리스를 기대할 수밖에 없네요.
-```
+
 
 <div class="content-ad"></div>
 

@@ -1,5 +1,5 @@
 ---
-title: "플러터에서 흔히 하는 로컬라이제이션 실수 방지하기 최상의 실천 방법과 해결책"
+title: "플러터에서 흔히 하는 로컬라이제이션 실수 방지하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-AvoidingcommonlocalizationmistakesinFlutterbestpracticesandsolutions_0.png"
 date: 2024-05-27 19:19
@@ -176,7 +176,7 @@ flutter: 13:24
 ```
 
 ## 4. Concatenating currency and price strings
-```
+
 
 <div class="content-ad"></div>
 

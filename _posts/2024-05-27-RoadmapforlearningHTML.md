@@ -1,5 +1,5 @@
 ---
-title: "HTML 학습 로드맵"
+title: "HTML 학습 로드맵(2024년 최신)"
 description: ""
 coverImage: "/assets/img/2024-05-27-RoadmapforlearningHTML_0.png"
 date: 2024-05-27 19:13
@@ -11,7 +11,7 @@ link: "https://medium.com/@rajanraj8979/roadmap-for-learning-html-88b22e36e3fe"
 ---
 
 
-```markdown
+
 ![Learning HTML](/assets/img/2024-05-27-RoadmapforlearningHTML_0.png)
 
 웹 개발을 시작하는 좋은 출발점은 HTML(Hypertext Markup Language)을 배우는 것입니다. 이 과정을 안내하는 로드맵이 있어요:
@@ -19,7 +19,7 @@ link: "https://medium.com/@rajanraj8979/roadmap-for-learning-html-88b22e36e3fe"
 시작하려면 다음 링크를 참조하세요: [https://www.w3schools.com/html/default.asp](https://www.w3schools.com/html/default.asp)
 
 # 초보자 레벨:
-```
+
 
 <div class="content-ad"></div>
 

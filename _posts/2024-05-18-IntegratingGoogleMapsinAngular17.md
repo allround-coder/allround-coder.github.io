@@ -210,7 +210,6 @@ export class AppComponent {
 다음으로, app.component.html 파일에서 for-loop를 사용하여 지도에 Advanced Markers를 추가할 것입니다.
 
 ```html
-...
 <google-map height="600px" width="800px" [options]="options">
   @for (location of nzLocations; track location) {
   <map-advanced-marker
@@ -314,7 +313,7 @@ this.auLocations.forEach((location) => {
 <div class="content-ad"></div>
 
 
-...
+```js
 @for (location of auLocations; track location) {
 <map-advanced-marker
   #markerElem="mapAdvancedMarker"
@@ -322,7 +321,7 @@ this.auLocations.forEach((location) => {
   [content]="location.content"
 />
 }
-...
+```
 
 
 The final result should look like the following image:
@@ -336,25 +335,6 @@ The final result should look like the following image:
 
 마커 위로 마우스를 올리면 제목 텍스트가 나타나며, 이는 `map-advanced-marker` 태그의 title 속성을 수정하여 설정합니다. 아래 코드에서는 각 위치의 인덱스 번호를 기반으로 제목을 추가했지만, 원하는 대로 변경할 수 있습니다.
 
-```js
-...
-@for (location of nzLocations; track location; let index = $index) {
-<map-advanced-marker
-  #markerElem="mapAdvancedMarker"
-  [position]="{ lat: location.lat, lng: location.lng }"
-  [content]="location.content"
-  [title]="'Location ' + (index + 1)"
-/>
-} @for (location of auLocations; track location; let index = $index) {
-<map-advanced-marker
-  #markerElem="mapAdvancedMarker"
-  [position]="{ lat: location.lat, lng: location.lng }"
-  [content]="location.content"
-  [title]="'Location ' + (index + 1)"
-/>
-}
-...
-```
 
 따라서 마커 위로 커서를 올리면 해당 위치 번호가 나타나는 작은 텍스트가 표시됩니다.
 
@@ -399,29 +379,6 @@ export class AppComponent {
 이제 할 일은 만들어둔 onMarkerClick 함수와 `map-info-window` 태그를 app.component.html 파일에 추가하는 거에요.
 
 <div class="content-ad"></div>
-
-```js
-...
-@for (location of nzLocations; track location; let index = $index) {
-  <map-advanced-marker
-    #markerElem="mapAdvancedMarker"
-    [position]="{ lat: location.lat, lng: location.lng }"
-    [content]="location.content"
-    [title]="'위치 ' + (index + 1)"
-    (mapClick)="onMarkerClick(markerElem)"
-  />
-} @for (location of auLocations; track location; let index = $index) {
-<map-advanced-marker
-  #markerElem="mapAdvancedMarker"
-  [position]="{ lat: location.lat, lng: location.lng }"
-  [content]="location.content"
-  [title]="'위치 ' + (index + 1)"
-  (mapClick)="onMarkerClick(markerElem)"
-/>
-}
-<map-info-window #infoWindow></map-info-window>
-...
-```
 
 파일을 저장하고 이제 마커를 클릭하면 마커 제목이 나타나는 정보 창이 표시됩니다.
 

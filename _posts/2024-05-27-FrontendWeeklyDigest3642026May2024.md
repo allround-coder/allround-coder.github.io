@@ -1,5 +1,5 @@
 ---
-title: "프론트엔드 주간 요약 364 2024년 5월 20일부터 5월 26일까지"
+title: "프론트엔드 주간 뉴스 - 2024년 5월 20일"
 description: ""
 coverImage: "/assets/img/2024-05-27-FrontendWeeklyDigest3642026May2024_0.png"
 date: 2024-05-27 19:03
@@ -11,7 +11,7 @@ link: "https://medium.com/@frontender-ua/frontend-weekly-digest-364-20-26-may-20
 ---
 
 
-```markdown
+
 ![Web-development](/assets/img/2024-05-27-FrontendWeeklyDigest3642026May2024_0.png)
 
 - Web-development
@@ -27,7 +27,7 @@ link: "https://medium.com/@frontender-ua/frontend-weekly-digest-364-20-26-may-20
   - Quantifying the Impact of Styled Components on Server Response Times
   - How Do Chrome Extensions Impact Website Performance In 2024?
   - Comprehensive guide to JavaScript performance analysis using Chrome DevTools
-```
+
 
 <div class="content-ad"></div>
 

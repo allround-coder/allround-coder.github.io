@@ -1,5 +1,5 @@
 ---
-title: "챗GPT, TypeScript 컴파일러 및 실험적인 데코레이터를 사용하여 기본 코드 주도형 DB 도구 만들기"
+title: "챗GPT, TypeScript를 사용하여 기본 코드 주도형 DB 도구 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-27-UsingChatGPTtheTypeScriptCompilerandExperimentalDecoratorstoBuildaBasicCode-FirstDBTool_0.png"
 date: 2024-05-27 18:54
@@ -195,7 +195,7 @@ pTypeRef --> return
 첫 번째 호출이 속성이 공용 형식인지 여부에 따라 분기되는 것을 볼 수 있습니다. 이는 공용 형식을 사용하는 방식 중 하나로 "archived: boolean | undefined"와 같이 null 값을 db 모델로 나타낼 수 있는 방법입니다. 반면에 "string | number"를 허용하는 모델을 작성하려는 경우, 대부분의 데이터베이스에서 이를 표현할 수 없으므로 이를 시도하는 사람에게 명시적인 오류를 throw합니다. Else 조건의 경우 "정의되지 않은 형식" 노드를 일반적으로 처리할 것입니다.
 
 그리하여 processSingularNode로 이어지는데, 이 처리 과정이 우리의 분류 작업의 주된 부분을 담당합니다. 현재 노드 유형을 가져오고 여러 코드 경로가 있으며 각각은 열 정의를 생성하는 방식에서 약간의 차이가 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

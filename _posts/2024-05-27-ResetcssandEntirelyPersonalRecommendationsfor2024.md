@@ -1,5 +1,5 @@
 ---
-title: "리셋css 및 완전히 개인적인 2024년 권장사항"
+title: "Reset.css로 프로젝트 스타일을 초기화 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-ResetcssandEntirelyPersonalRecommendationsfor2024_0.png"
 date: 2024-05-27 19:08
@@ -11,7 +11,7 @@ link: "https://medium.com/@itsuki.enjoy/reset-css-and-entirely-personal-recommen
 ---
 
 
-```markdown
+
 ![Reset CSS](/assets/img/2024-05-27-ResetcssandEntirelyPersonalRecommendationsfor2024_0.png)
 
 웹 사이트 소스를 확인하면 이곳저곳에서 이 reset.css를 만날 수 있습니다. CSS Reset은 무엇이며 왜 필요한 걸까요?
@@ -19,7 +19,7 @@ link: "https://medium.com/@itsuki.enjoy/reset-css-and-entirely-personal-recommen
 이 기사에서 다양한 reset.css를 확인할 수 있는 간단한 코드펜을 만들었어요! CSS Reset을 느껴보기 위해 한 번 시도해보세요!
 
 CSS Reset 스타일 시트는 기본 브라우저 스타일을 모두 재정의하는 CSS 스타일 목록입니다. 대부분의 브라우저는 테두리, 패딩 및 마진, 확대 축소, 글꼴 등에 자체 스타일을 가지고 있습니다. reset.css를 사용하면 이러한 기본 동작을 모두 제거하고 다양한 브라우저에서 일관된 UI/UX를 유지할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -44,12 +44,12 @@ reset.css를 다른 스타일 시트처럼 사용할 수 있습니다. 여기서
 
 <div class="content-ad"></div>
 
-```markdown
+
 <head>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="otherStyles.css" />
 </head>
-```
+
 
 # 2024년을 위한 추천
 
@@ -89,7 +89,7 @@ reset.css를 다른 스타일 시트처럼 사용할 수 있습니다. 여기서
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-ResetcssandEntirelyPersonalRecommendationsfor2024_2.png)
 
 다음 방법으로 추가할 수 있어요
@@ -98,7 +98,7 @@ reset.css를 다른 스타일 시트처럼 사용할 수 있습니다. 여기서
 - Github에서 다운로드하세요.
 
 ## @acab/reset.css
-```
+
 
 <div class="content-ad"></div>
 

@@ -68,7 +68,7 @@ link: "https://medium.com/@chauhanomprakash7206/create-a-top-crazy-slider-effect
 
 <div class="content-ad"></div>
 
-
+```css
 *{
     margin: 0;
     padding: 0;
@@ -131,7 +131,7 @@ html,body {
     color: #191919;
     border: none;
 }
-
+```
 ## Step 3: Adding JavaScript for Functionality
 
 Finally, add JavaScript to bring the slider to life. This script will handle the slide transitions and navigation functionality:

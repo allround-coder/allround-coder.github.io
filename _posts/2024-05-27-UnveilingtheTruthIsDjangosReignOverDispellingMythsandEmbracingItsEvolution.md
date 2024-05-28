@@ -1,5 +1,5 @@
 ---
-title: "진실 폭로 장고의 왕국 종말인가 잘못 된 풍선풍선 해부 및 진화 환영 "
+title: "장고의 왕국이 곧 종말을 맞이할 이유"
 description: ""
 coverImage: "/assets/img/2024-05-27-UnveilingtheTruthIsDjangosReignOverDispellingMythsandEmbracingItsEvolution_0.png"
 date: 2024-05-27 19:25

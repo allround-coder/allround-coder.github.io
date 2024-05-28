@@ -171,7 +171,7 @@ useEffect(() => {
 
 <div class="content-ad"></div>
 
-
+```html
 <div
   style={
     padding: "8vh 8vw",
@@ -182,7 +182,7 @@ useEffect(() => {
   <p style={paragraphStyle}>Detailed paragraph here.</p>
   {/* Additional paragraphs... */}
 </div>
-
+```
 
 이 솔루션을 통해 텍스트가 다양한 화면 비율에서 스케일링되며, 좋은 글꼴 크기로 조정되어 윈도우 높이 및 폭에 모두 적응합니다.
 
