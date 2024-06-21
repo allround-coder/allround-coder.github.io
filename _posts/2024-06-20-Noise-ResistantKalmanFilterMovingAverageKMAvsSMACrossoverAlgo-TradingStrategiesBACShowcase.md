@@ -145,7 +145,7 @@ plt.ylabel('Close Price USD')
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-Noise-ResistantKalmanFilterMovingAverageKMAvsSMACrossoverAlgo-TradingStrategiesBACShowcase_2.png)
 
 ## KMA-SMA40 Trading Strategy
@@ -194,7 +194,7 @@ sma_50 = df['sma']
 
 buy_price, sell_price, signal = implement_sma_strategy(df['Close'], sma_20, sma_50)
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -255,7 +255,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-Noise-ResistantKalmanFilterMovingAverageKMAvsSMACrossoverAlgo-TradingStrategiesBACShowcase_3.png)
 
 - 저희 전략의 백테스팅을 수행 중입니다.
@@ -279,7 +279,7 @@ BAC에 10만 달러를 투자하여 전략으로 얻은 이익: $29026.39
 ```
 
 ## SMA 20–50 트레이딩 전략
-```  
+
 
 <div class="content-ad"></div>
 
@@ -475,7 +475,7 @@ plt.title('BAC Buy-Hold 누적 수익률')
 ```
 
 <img src="/assets/img/2024-06-20-Noise-ResistantKalmanFilterMovingAverageKMAvsSMACrossoverAlgo-TradingStrategiesBACShowcase_6.png" />
-```
+
 
 <div class="content-ad"></div>
 

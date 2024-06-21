@@ -182,7 +182,7 @@ F.on("complete", () => {
 ```
 
 <img src="/assets/img/2024-05-12-MakeHTML5GamesTileGameTutorial_11.png" />
-```
+
 
 
 
@@ -812,27 +812,24 @@ function startGame() {
  const pod = new Sprite("plasmapods.jpg", 10, 10).reg(CENTER);
 }
 
-startGame 함수를 호출한 후 makeLevel()을 호출하여 startGame() 함수를 종료하세요. 문서를 올바르게 들여쓰기하여 형식을 유지해주세요. VS Code에서 오른쪽 클릭하여 "Format Document"를 실행해주세요.```
+startGame 함수를 호출한 후 makeLevel()을 호출하여 startGame() 함수를 종료하세요. 문서를 올바르게 들여쓰기하여 형식을 유지해주세요. VS Code에서 오른쪽 클릭하여 "Format Document"를 실행해주세요.
 
 
 
-```js
  } // makeLevel 함수 끝
 
  makeLevel();
 
 } // startGame 함수 끝
-```
 
 ![MakeHTML5GamesTileGameTutorial 이미지](/assets/img/2024-05-12-MakeHTML5GamesTileGameTutorial_21.png)
 
 ## 음소거 버튼
 
-음소거 기능을 추가하세요. 기존 버튼에 expand()와 tap()을 추가하세요. expand는 모바일에서 쉽게 누를 수 있게 만듭니다.```
+음소거 기능을 추가하세요. 기존 버튼에 expand()와 tap()을 추가하세요. expand는 모바일에서 쉽게 누를 수 있게 만듭니다.
 
 
 
-```js
 // 하단 인터페이스
 const mute = new Button({
  width: 80,
@@ -842,7 +839,6 @@ const mute = new Button({
  if (mute.toggled && intro) intro.fade(0);
  else if (!mute.toggled && intro) intro.fade(.1);
 });
-```
 
 <img src="/assets/img/2024-05-12-MakeHTML5GamesTileGameTutorial_22.png" />
 

@@ -129,7 +129,7 @@ export class AppModule {}
 
 # 지도 추가하기
 
-이제 맵의 높이와 너비를 추가하고, 옵션을 설정하여 구글 지도 컴포넌트를 애플리케이션에 추가할 수 있습니다:```
+이제 맵의 높이와 너비를 추가하고, 옵션을 설정하여 구글 지도 컴포넌트를 애플리케이션에 추가할 수 있습니다:
 
 <div class="content-ad"></div>
 
@@ -276,7 +276,7 @@ this.nzLocations.forEach((location) => {
 ...
 ```
 
-다음 이미지는 마커의 기본 핀 모양을 변경한 후 현재 지도가어떻게 보여야하는지 보여줍니다.```
+다음 이미지는 마커의 기본 핀 모양을 변경한 후 현재 지도가어떻게 보여야하는지 보여줍니다.
 
 <div class="content-ad"></div>
 
@@ -308,7 +308,7 @@ this.auLocations.forEach((location) => {
 });
 ```
 
-한번 더, app.component.html 파일에서 오스트레일리아 위치들의 `map-advanced-marker` 태그의 내용 속성을 추가 및 수정해야 합니다.```
+한번 더, app.component.html 파일에서 오스트레일리아 위치들의 `map-advanced-marker` 태그의 내용 속성을 추가 및 수정해야 합니다.
 
 <div class="content-ad"></div>
 

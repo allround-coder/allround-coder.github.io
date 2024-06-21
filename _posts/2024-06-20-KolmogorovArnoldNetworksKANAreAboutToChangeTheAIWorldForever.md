@@ -31,7 +31,7 @@ link: "https://medium.com/accredian/kolmogorov-arnold-networks-kan-are-about-to-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*1VcxJSh_CYAPc9-0os2-pA.gif)
 
 # KAN의 시크릿 소스, 스플라인!
@@ -39,7 +39,7 @@ link: "https://medium.com/accredian/kolmogorov-arnold-networks-kan-are-about-to-
 스플라인은 연속 점들을 연결하여 부드러운 곡선을 생성할 수 있는 수학적 함수입니다. 스플라인은 인접 세그먼트 사이의 연속성과 부드러움을 보장하면서 곡선의 모양을 조절하는 유연성을 제공합니다.
 
 스플라인을 생성하기 위해 일반적으로 곡선의 경로를 정의하는 일련의 제어점을 시작점으로 삼습니다. 그런 다음, B-스플라인이나 베지에 곡선과 같은 기저 함수를 사용하여 이러한 제어점 사이의 경로를 보간하거나 근사합니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -101,7 +101,7 @@ export default theme;
 
 루트 layout.tsx에 ThemeProvider를 직접 추가하는 대신, ThemeProvider 및 layout.tsx에서 호출할 별도의 파일을 생성해야 합니다. 이렇게 하는 이유는 ThemeProvider가 클라이언트 측 컨텍스트를 설정하기 때문에 서버 측에서 렌더링할 수 없으므로 코드를 자체 클라이언트 렌더링 파일로 가져와서 layout.tsx에서 호출합니다.
 
-이 새 파일인 StyledRoot.tsx에서는 client-side rendered 파일임을 나타내기 위해 파일을 'use client'로 시작합니다 (더 읽기). 파일은 다음과 같이 보일 것입니다:```
+이 새 파일인 StyledRoot.tsx에서는 client-side rendered 파일임을 나타내기 위해 파일을 'use client'로 시작합니다 (더 읽기). 파일은 다음과 같이 보일 것입니다:
 
 
 
@@ -148,7 +148,7 @@ export default function RootLayout({
 }
 ```
 
-그래서 마무리입니다!```
+그래서 마무리입니다!
 
 
 

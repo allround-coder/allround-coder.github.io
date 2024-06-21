@@ -21,7 +21,7 @@ link: "https://medium.com/proandroiddev/why-calling-a-composable-from-a-regular-
 
 
 
-```
+
 ```js
 @Composable
 fun IAmAComposable(){

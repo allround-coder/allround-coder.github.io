@@ -145,7 +145,7 @@ rawdb = wrapper.results('LLM Mixture of Agents',max_results=5)
 ]
 ```
 
-결과가 정확히 5개인 것을 확인할 수 있습니다. 하지만 텍스트가 짧네요! 이 짧은 조각 텍스트는 구체적인 사실적 질문에 사용할 수는 있지만 새로운 지식 베이스를 구축하기에는 부족합니다!```
+결과가 정확히 5개인 것을 확인할 수 있습니다. 하지만 텍스트가 짧네요! 이 짧은 조각 텍스트는 구체적인 사실적 질문에 사용할 수는 있지만 새로운 지식 베이스를 구축하기에는 부족합니다!
 
 <div class="content-ad"></div>
 
@@ -225,7 +225,7 @@ print(article.meta_keywords)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 article.top_image
 article.publish_date
@@ -236,7 +236,7 @@ article.publish_date
 # 그럼 이제 어떻게 하죠? 자체 문서 저장소 만들기
 
 지금까지 말한 모든 것들은 데이터/정보가 생성 AI 애플리케이션에 있어 핵심이라는 것을 고려할 때에만 관련이 있습니다. LLM은 이제 NLP 작업을 뛰어나게 수행하므로 좋은 텍스트가 필요합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -285,7 +285,7 @@ rawdb = wrapper.results(research,max_results=5)
 
 ## 신문 NLP 도구와 Wrapper 결과 병합
 
-이제 rawdb 리스트를 반복하고 각 URL을 사용하여 newspaper3k를 실행할 수 있습니다. 더 똑똒하게 만들기 위해 반복 중 LangChain Document 객체를 만들어요.```
+이제 rawdb 리스트를 반복하고 각 URL을 사용하여 newspaper3k를 실행할 수 있습니다. 더 똑똒하게 만들기 위해 반복 중 LangChain Document 객체를 만들어요.
 
 <div class="content-ad"></div>
 
@@ -338,7 +338,7 @@ for items in rawdb:
 따라서 나는 이러한 문서를 저장하기 위해 피클 형식을 선택한 것입니다. pickle 모듈은 Python 표준 라이브러리에 포함되어 있습니다. Python 개체 구조를 직렬화하고 역 직렬화하기 위한 이진 프로토콜을 구현합니다.
 
 “Pickling”은 Python 개체 계층 구조를 바이트 스트림으로 변환하는 프로세스이며, “unpickling”은 그 반대 작업으로, 바이너리 파일 또는 바이트류 객체에서 바이트 스트림을 개체 계층 구조로 변환하는 작업입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -355,7 +355,7 @@ console.print(Markdown("> LangChain 문서 데이터가 저장되었습니다...
 
 # 결론
 
-Web 검색 및 자연어 처리(NLP) 도구를 이용하여 최신 및 관련 데이터로 언어 학습 모델(LLM)를 풍부하게 하는 혁신적인 접근 방식을 함께 탐색했습니다.```
+Web 검색 및 자연어 처리(NLP) 도구를 이용하여 최신 및 관련 데이터로 언어 학습 모델(LLM)를 풍부하게 하는 혁신적인 접근 방식을 함께 탐색했습니다.
 
 <div class="content-ad"></div>
 

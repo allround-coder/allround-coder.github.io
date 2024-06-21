@@ -169,7 +169,6 @@ person.greet(); // "안녕, 내 이름은 존이야!"
 
 JavaScript
 
-```js
 function Person(name, age) {
   this.name = name;
   this.age = age;
@@ -179,7 +178,6 @@ Person.prototype.greet = function() {
 };
 let john = new Person('존', 30);
 john.greet(); // "안녕, 내 이름은 존이야!"
-```
 
 
 
@@ -187,7 +185,6 @@ john.greet(); // "안녕, 내 이름은 존이야!"
 
 자바스크립트
 
-```js
 function Employee(name, age, department) {
   Person.call(this, name, age);
   this.department = department;
@@ -195,7 +192,6 @@ function Employee(name, age, department) {
 Employee.prototype = Object.create(Person.prototype);
 let employee = new Employee('Jane', 25, '마케팅');
 employee.greet(); // "안녕하세요, 제 이름은 Jane입니다!"
-```
 
 # 4. DOM 조작과 이벤트
 
@@ -215,10 +211,8 @@ employee.greet(); // "안녕하세요, 제 이름은 Jane입니다!"
 
 JavaScript
 
-```js
 let heading = document.querySelector('h1');
 heading.textContent = '새 헤딩';
-```
 
 # 이벤트 처리:
 
@@ -226,25 +220,21 @@ JavaScript
 
 
 
-```js
 let button = document.querySelector('button');
 button.addEventListener('click', function() {
   console.log('버튼이 클릭되었습니다!');
 });
-```
 
 # 이벤트 위임:
 
 JavaScript
 
-```js
 let ul = document.querySelector('ul');
 ul.addEventListener('click', function(event) {
   if (event.target.tagName === 'LI') {
     console.log('리스트 아이템이 클릭되었습니다!');
   }
 });
-```
 
 
 
@@ -264,7 +254,6 @@ ul.addEventListener('click', function(event) {
 
 자바스크립트
 
-```js
 function loadData(callback) {
   setTimeout(function() {
     callback(['John', 'Jane', 'Bob']);
@@ -273,7 +262,6 @@ function loadData(callback) {
 loadData(function(data) {
   console.log(data); // 출력: ["John", "Jane", "Bob"]
 });
-```
 
 ## 프로미스:
 
@@ -281,7 +269,6 @@ loadData(function(data) {
 
 JavaScript
 
-```js
 function loadData() {
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
@@ -292,7 +279,6 @@ function loadData() {
 loadData().then(function(data) {
   console.log(data); // 출력: ["John", "Jane", "Bob"]
 });
-```
 
 # Async/await:
 
@@ -300,7 +286,6 @@ JavaScript
 
 
 
-```js
 async function loadData() {
   try {
     let data = await fetch('(링크 제공 불가)');
@@ -310,7 +295,6 @@ async function loadData() {
   }
 }
 loadData();
-```
 
 # 6. JavaScript 객체 메소드와 배열
 
@@ -328,11 +312,9 @@ loadData();
 
 자바스크립트
 
-```js
 let person = { name: 'John', age: 30 };
 console.log(Object.keys(person)); // 출력: ["name", "age"]
 console.log(Object.values(person)); // 출력: ["John", 30]
-```
 
 
 
@@ -340,11 +322,9 @@ console.log(Object.values(person)); // 출력: ["John", 30]
 
 자바스크립트
 
-```js
 let numbers = [1, 2, 3, 4, 5];
 console.log(numbers.map(x => x * 2)); // 결과: [2, 4, 6, 8, 10]
 console.log(numbers.filter(x => x % 2 === 0)); // 결과: [2, 4]
-```
 
 # 배열 해체 및 전개:
 
@@ -352,17 +332,13 @@ console.log(numbers.filter(x => x % 2 === 0)); // 결과: [2, 4]
 
 자바스크립트
 
-```js
 let arr = [1, 2, 3];
 let [first, ...rest] = arr;
 console.log(first); // 결과는 1
 console.log(rest); // 결과는 [2, 3]
-```
 
-```js
 let newArr = [...arr, 4, 5];
 console.log(newArr); // 결과는 [1, 2, 3, 4, 5]
-```
 
 # 7. 클로저와 'this' 키워드
 
@@ -382,7 +358,6 @@ console.log(newArr); // 결과는 [1, 2, 3, 4, 5]
 
 JavaScript
 
-```js
 function outer() {
   let x = 10;
   function inner() {
@@ -392,7 +367,6 @@ function outer() {
 }
 let innerFunc = outer();
 innerFunc(); // 10을 출력합니다
-```
 
 # 'this' 키워드:
 
@@ -400,7 +374,6 @@ JavaScript
 
 
 
-```js
 function Person(name) {
   this.name = name;
 }
@@ -409,28 +382,23 @@ Person.prototype.greet = function() {
 };
 let john = new Person('John');
 john.greet(); // 출력: "Hello, my name is John!"
-```
 
 # Bind, call, and apply:
 
 JavaScript
 
-```js
 function greet(name) {
   console.log(`Hello, ${name}!`);
 }
 let greetJohn = greet.bind(null, 'John');
 greetJohn(); // 출력: "Hello, John!"
-```
 
 
 
-```js
 let person = { name: 'Jane' };
 greet.call(person, person.name); // 출력: "안녕, Jane!"
 let numbers = [1, 2, 3];
 console.log(Math.max.apply(null, numbers)); // 출력: 3
-```
 
 # 8. 오류 처리 및 디버깅
 
@@ -448,13 +416,11 @@ console.log(Math.max.apply(null, numbers)); // 출력: 3
 
 JavaScript
 
-```js
 try {
   let x = 10 / 0;
 } catch (error) {
   console.error(error); // "Error: Division by zero"이 출력됩니다.
 }
-```
 
 
 
@@ -462,10 +428,8 @@ try {
 
 JavaScript
 
-```js
 console.log('Hello'); // "Hello"를 출력합니다
 debugger; // 실행을 일시 중단하고 DevTools를 엽니다
-```
 
 # 9. JavaScript Best Practices and Code Organization
 
@@ -486,21 +450,17 @@ debugger; // 실행을 일시 중단하고 DevTools를 엽니다
 
 JavaScript
 
-```js
 // greet.js
 function greet(name) {
   console.log(`안녕, ${name}!`);
 }
 export { greet };
-```
 
 JavaScript
 
-```js
 // main.js
 import { greet } from './greet.js';
 greet('John'); // 출력 결과: "안녕, John!"
-```
 
 
 
@@ -508,18 +468,14 @@ greet('John'); // 출력 결과: "안녕, John!"
 
 JavaScript
 
-```js
 // 일관된 네이밍 규칙을 따르세요
 let firstName = 'John';
 let lastName = 'Doe';
-```
 
-```js
 // 일관된 들여쓰기와 공백을 사용하세요
 if (true) {
   console.log('Hello');
 }
-```
 
 
 
@@ -527,10 +483,8 @@ if (true) {
 
 자바스크립트
 
-```js
 // Webpack 또는 Rollup을 사용하여 코드를 작은 조각으로 분할하고
 // 사용하지 않는 코드를 제거하세요 (트리 쉐이킹)
-```
 
 # 10. 브라우저 호환성 및 웹 표준
 
@@ -552,13 +506,11 @@ if (true) {
 
 자바스크립트
 
-```javascript
 if (typeof window.addEventListener === 'function') {
   // 이벤트 리스너 추가
 } else {
   // 대체 방법 사용
 }
-```
 
 ## 폴리필:
 
@@ -566,31 +518,25 @@ if (typeof window.addEventListener === 'function') {
 
 
 
-```js
 if (!Array.prototype.includes) {
   Array.prototype.includes = function(searchElement) {
     // Polyfill 구현
   };
 }
-```
 
 # 웹 표준과 접근성:
 
 JavaScript
 
-```js
 // 시맨틱 HTML 요소 사용
 <header>헤더</header>
 <nav>네비게이션</nav>
 <main>주요 콘텐츠</main>
-```
 
 
 
-```js
 // 접근성을 위해 ARIA 속성을 사용하세요
 <button aria-label="제출">제출</button>
-```
 
 추가 자료
 

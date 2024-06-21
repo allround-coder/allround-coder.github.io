@@ -65,7 +65,7 @@ link: "https://medium.com/gitconnected/system-design-interview-amazon-flipkart-e
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지1](/assets/img/2024-06-20-SystemDesignInterviewAmazonFlipkart_0.png)
 
 ![이미지2](/assets/img/2024-06-20-SystemDesignInterviewAmazonFlipkart_1.png)
@@ -73,7 +73,7 @@ link: "https://medium.com/gitconnected/system-design-interview-amazon-flipkart-e
 우리 시스템의 소비자 중 하나는 상품 서비스입니다
 
 ## 상품 서비스
-```
+
 
 <div class="content-ad"></div>
 

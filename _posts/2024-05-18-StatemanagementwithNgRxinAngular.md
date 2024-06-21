@@ -289,7 +289,7 @@ export class HomeProductComponent {
 
 ## 셀렉터 사용하기
 
-셀렉터를 사용하기 위해서는 '@ngrx/store' 모듈에서 'Store'를 가져와야 합니다. 그러나 셀렉터를 사용하여 데이터를 검색하는 데 사용되는 함수는 'pipe'입니다. 다음 코드에서 자세한 내용을 확인하세요:```
+셀렉터를 사용하기 위해서는 '@ngrx/store' 모듈에서 'Store'를 가져와야 합니다. 그러나 셀렉터를 사용하여 데이터를 검색하는 데 사용되는 함수는 'pipe'입니다. 다음 코드에서 자세한 내용을 확인하세요:
 
 <div class="content-ad"></div>
 
@@ -323,7 +323,7 @@ matBadge="{(favoritesProducts | async)?.length}"
 matBadgePosition="above after">favorite</mat-icon>
 ```
 
-템플릿에서 'async' 파이프를 사용해 TypeScript에서 옵저버블로 받은 데이터를 처리합니다. 그리고 'length' 속성을 이용하여 목록에 있는 항목 수를 얻습니다. 더 자세한 코드는 제 GitHub 리포지토리에서 확인할 수 있습니다. 아래 링크에 접속해주세요: igormarti/angular-ngrx-shopping (github.com)```
+템플릿에서 'async' 파이프를 사용해 TypeScript에서 옵저버블로 받은 데이터를 처리합니다. 그리고 'length' 속성을 이용하여 목록에 있는 항목 수를 얻습니다. 더 자세한 코드는 제 GitHub 리포지토리에서 확인할 수 있습니다. 아래 링크에 접속해주세요: igormarti/angular-ngrx-shopping (github.com)
 
 <div class="content-ad"></div>
 

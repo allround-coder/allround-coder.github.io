@@ -47,7 +47,7 @@ link: "https://medium.com/user-experience-design-1/inaccessible-native-html-sele
 
 ![애완동물 선택 창](/assets/img/2024-05-01-InaccessiblenativeHTMLselectmultiple_1.png)
 
-그 multiple 속성이 설정되어 있어서, 사용자는 여러 애완동물을 선택할 수 있습니다. 사용자가 어떻게 여러 옵션을 선택할 수 있나요?```
+그 multiple 속성이 설정되어 있어서, 사용자는 여러 애완동물을 선택할 수 있습니다. 사용자가 어떻게 여러 옵션을 선택할 수 있나요?
 
 <div class="content-ad"></div>
 

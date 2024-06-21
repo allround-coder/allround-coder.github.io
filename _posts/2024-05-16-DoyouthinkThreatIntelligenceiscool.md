@@ -70,7 +70,7 @@ Www-club[.]link
 
 <img src="/assets/img/2024-05-16-DoyouthinkThreatIntelligenceiscool_3.png" />
 
-- **Puppet Master**: 네, 정말로 그렇습니다! 당신은 꼭두각시 주인이 될 수 있습니다... 하지만 위협 인텔리전스 분야에서요.```
+- **Puppet Master**: 네, 정말로 그렇습니다! 당신은 꼭두각시 주인이 될 수 있습니다... 하지만 위협 인텔리전스 분야에서요.
 
 <div class="content-ad"></div>
 

@@ -38,7 +38,7 @@ $primaryColor: #fff
 }
 ```
 
-이로써 SCSS는 CSS에 익숙한 개발자들에게 더 친숙하며, 두 언어 간의 전환을 쉽게 만들어 줍니다.```
+이로써 SCSS는 CSS에 익숙한 개발자들에게 더 친숙하며, 두 언어 간의 전환을 쉽게 만들어 줍니다.
 
 <div class="content-ad"></div>
 

@@ -206,7 +206,7 @@ getEmbeddedComponent 함수를 통해 보고서 개체에 액세스할 수 있�
 eventHandlers를 사용하여 Power BI 보고서의 다양한 이벤트에 액세스할 수 있습니다.
 
 허용된 이벤트는 다음과 같습니다:-
-```
+
 
 
 

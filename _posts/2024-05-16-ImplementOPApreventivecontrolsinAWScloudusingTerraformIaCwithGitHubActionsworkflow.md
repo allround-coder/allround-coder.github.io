@@ -68,7 +68,7 @@ OPA 정책 검사는 각 리포지토리에서 Github Actions 워크플로우를
 
 <div class="content-ad"></div>
 
-```md
+
 name: Terraform 유효성 검증
 
 on:
@@ -140,13 +140,13 @@ jobs:
     - name: Terraform 적용
       if: steps.evaluate_policies.outputs.exit_code == 0
       run: terraform apply -auto-approve
-```
+
 
 4. 변경 사항을 "dev" 브랜치에서 "Main" 브랜치로 병합하기 위해 Pull Request가 올라왔을 때 워크플로우가 트리거됩니다.
 
 5. AWS 계정에 배포하는 Terraform 코드에서 위반 사항이 발견되지 않으면 워크플로우가 성공적으로 실행됩니다. 그렇지 않으면 "AWS 계정에 배포하는 Terraform 리소스가 정의된 표준을 준수하지 않습니다. "Evaluate Rego Policies"를 확인하여 준수되지 않는 구성을 찾고 코드를 수정하십시오."라는 오류 메시지와 함께 워크플로우가 실패합니다.
 
-## 관련 자료```
+## 관련 자료
 
 <div class="content-ad"></div>
 

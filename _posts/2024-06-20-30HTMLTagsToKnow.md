@@ -21,7 +21,7 @@ HTML 세계에 오신 것을 환영합니다! 웹 개발자로서, 웹페이지�
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 2. `title` 태그:
 
 `title` 태그는 HTML 문서의 제목을 정의하는 데 사용됩니다. 브라우저의 제목 표시줄이나 탭에 표시됩니다. 다음은 예시입니다:
@@ -61,14 +61,14 @@ HTML 세계에 오신 것을 환영합니다! 웹 개발자로서, 웹페이지�
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 6. `p` Tag (Paragraph Tag):
 
 The `p` tag is used to define paragraphs in HTML. It represents a block of text or content. Here’s an example:
 
-```
+
 <p>This is a paragraph of text.</p>
-```
+
 
 <div class="content-ad"></div>
 
@@ -227,7 +227,7 @@ The `p` tag is used to define paragraphs in HTML. It represents a block of text 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 <form>
   <label for="name">Name:</label>
@@ -272,15 +272,15 @@ The `p` tag is used to define paragraphs in HTML. It represents a block of text 
 
 <div class="content-ad"></div>
 
-```md
+
 <p>This is a <span style="color: red;">red</span> text.</p>
-```
+
 
 # 23. `aside` Tag (Aside Tag):
 
 The `aside` tag is used to define content that is tangentially related to the main content, such as sidebars or callouts. Here’s an example:
 
-```md
+
 <aside>
   <h3>Related Links</h3>
   <ul>
@@ -288,7 +288,7 @@ The `aside` tag is used to define content that is tangentially related to the ma
     <li><a href="link2.html">Link 2</a></li>
   </ul>
 </aside>
-```
+
 
 <div class="content-ad"></div>
 
@@ -321,9 +321,9 @@ The `aside` tag is used to define content that is tangentially related to the ma
 
 <div class="content-ad"></div>
 
-```md
+
 <p>This is the first line.<br>This is the second line.</p><hr> Tag (Horizontal Rule Tag):
-```
+
 
 # 27. `hr` Tag (Horizontal Rule Tag):
 
@@ -361,19 +361,19 @@ The `aside` tag is used to define content that is tangentially related to the ma
 
 <div class="content-ad"></div>
 
-```md
+
 <figure>
   <img src="image.jpg" alt="이미지 설명">
   <figcaption>이미지 캡션</figcaption>
 </figure>
-```
+
 
 # 결론:
 
 축하합니다! 이제 귀하는 뛰어난 웹 콘텐츠를 만들 수 있도록 지원하는 여정에 착수하셨습니다. 이 30가지 HTML 태그를 숙달함으로써 시각적으로 멋진, 구조화된, 상호작용이 가능한 웹 페이지를 구축할 수 있는 도구를 얻었습니다. 계속해서 실험하고, 탐구하고, HTML 기술을 계속 개선하는 것을 잊지 마세요.
 
 웹 개발 여정을 계속하면서, 이 태그에만 그치지 말고 HTML은 더 알아야 할 것이 많은 광활한 세계입니다. 호기심을 갖고 지식에 굶주리고, 학습을 멈추지 마세요.
-```
+
 
 <div class="content-ad"></div>
 

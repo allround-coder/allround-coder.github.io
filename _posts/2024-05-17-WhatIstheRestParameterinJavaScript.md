@@ -130,7 +130,7 @@ console.log(`Total emoji length: ${totalLength}`)
 
 나머지 매개변수를 사용함으로써, Array.from()을 사용하여 먼저 인자 객체를 배열로 변환할 필요 없이 번거로움을 줄일 수 있습니다.
 
-JavaScript의 화살표 함수 구문을 사용하면 이 코드가 더 짧아지면서도 여전히 매우 가독성이 높아집니다.```
+JavaScript의 화살표 함수 구문을 사용하면 이 코드가 더 짧아지면서도 여전히 매우 가독성이 높아집니다.
 
 <div class="content-ad"></div>
 

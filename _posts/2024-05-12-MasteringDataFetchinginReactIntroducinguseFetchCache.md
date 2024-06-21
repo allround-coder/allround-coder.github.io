@@ -174,7 +174,7 @@ const DataFetchingComponent = () => {
 export default DataFetchingComponent;
 ```
 
-# 주요 내용```
+# 주요 내용
 
 
 

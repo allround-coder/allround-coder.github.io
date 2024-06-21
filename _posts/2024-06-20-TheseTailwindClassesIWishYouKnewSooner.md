@@ -11,7 +11,7 @@ link: "https://medium.com/javascript-in-plain-english/these-tailwind-classes-i-w
 ---
 
 
-```markdown
+
 ![Tailwind CSS](/assets/img/2024-06-20-TheseTailwindClassesIWishYouKnewSooner_0.png)
 
 Tailwind CSS는 빠른 개발과 높은 사용자 정의가 필요한 프런트엔드 프로젝트에 이상적인 강력하고 유연한 CSS 프레임워크입니다. 유틸리티 클래스, 반응형 디자인 지원, 그리고 고도로 사용자 정의가 가능한 구성을 통해 개발자들은 개발 효율성을 향상시키고 코드 일관성을 유지할 수 있습니다.
@@ -19,11 +19,11 @@ Tailwind CSS는 빠른 개발과 높은 사용자 정의가 필요한 프런트�
 # 1. isolate
 
 isolate 클래스는 요소가 새로운 쌓임 맥락을 만들지 여부를 제어하는 CSS isolation 속성을 설정하는 데 사용됩니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 <div class="isolate">
   This element creates a new stacking context
@@ -35,7 +35,7 @@ isolate 클래스는 요소가 새로운 쌓임 맥락을 만들지 여부를 �
 # 2. scroll-snap
 
 scroll-snap 클래스는 수평 또는 수직 스크롤이 있는 컨테이너에 적합한 스크롤 스냅 효과를 구현하는 데 사용됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -72,7 +72,7 @@ Tailwind CSS에서 truncate는 텍스트 자르기에 사용되는 유틸리티 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ## This is a very long title that will be truncated with an ellipsis.
 
 ![Image](/assets/img/2024-06-20-TheseTailwindClassesIWishYouKnewSooner_1.png)
@@ -80,7 +80,7 @@ Tailwind CSS에서 truncate는 텍스트 자르기에 사용되는 유틸리티 
 More details can be found here: [Text Overflow in Tailwind CSS](https://tailwindcss.com/docs/text-overflow)
 
 # 5. Gradients: from, via, to
-```  
+
 
 <div class="content-ad"></div>
 
@@ -102,7 +102,7 @@ More details can be found here: [Text Overflow in Tailwind CSS](https://tailwind
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-TheseTailwindClassesIWishYouKnewSooner_2.png)
 
 더보기: https://tailwindcss.com/docs/gradient-color-stops
@@ -110,7 +110,7 @@ More details can be found here: [Text Overflow in Tailwind CSS](https://tailwind
 # 6. 애니메이션
 
 Tailwind CSS는 간단한 CSS 애니메이션 효과를 빠르게 추가할 수 있도록 내장된 애니메이션 클래스 세트를 제공합니다. 이 클래스에는 회전, 흔들림, 맥박 등과 같은 일반적인 애니메이션이 포함되어 있어 사용자 지정 CSS를 작성하지 않고도 빠르게 애니메이션을 적용할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -130,7 +130,7 @@ Tailwind CSS는 간단한 CSS 애니메이션 효과를 빠르게 추가할 수 
 ```
 
 ![로딩 중](https://miro.medium.com/v2/resize:fit:1400/1*EgQzEHlcZlmUFIg6W3lWtw.gif)
-```
+
 
 <div class="content-ad"></div>
 
@@ -225,7 +225,7 @@ ring 유틸리티는 요소에 링 효과를 적용하는 데 사용됩니다. �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-TheseTailwindClassesIWishYouKnewSooner_3.png)
 
 자세한 내용은 여기를 참조하세요: [링 너비](https://tailwindcss.com/docs/ring-width)
@@ -233,7 +233,7 @@ ring 유틸리티는 요소에 링 효과를 적용하는 데 사용됩니다. �
 Tailwind CSS는 프론트엔드 개발자에게 강력한 도구이며, 유틸리티 클래스는 그 중 일부에 불과합니다. 이러한 도구들을 워크플로우에 통합하면 개발 프로세스를 간소화하고 동적이고 시각적으로 매력적인 웹 디자인을 만들 수 있습니다. 아직 이러한 클래스를 시도해보지 않았다면 한번 시도해보고 다음 프로젝트에 어떻게 도움이 될 수 있는지 확인해보세요.
 
 # 간단히 설명한 것 🚀
-```
+
 
 <div class="content-ad"></div>
 

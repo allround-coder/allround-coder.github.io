@@ -265,7 +265,7 @@ vite-nginx-dynamic-env-variables-example .
 docker run -p 81:80 -e VITE_VERSION=FROM_NGINX
 vite-nginx-dynamic-env-variables-example
 ```
-http://127.0.0.1:81 으로 이동하여, 환경 변수가 현재 값으로 초기화되었음을 확인할 수 있습니다. 직접 읽은 환경 변수는 여전히 이전 값으로 남아 있습니다.```
+http://127.0.0.1:81 으로 이동하여, 환경 변수가 현재 값으로 초기화되었음을 확인할 수 있습니다. 직접 읽은 환경 변수는 여전히 이전 값으로 남아 있습니다.
 
 <div class="content-ad"></div>
 

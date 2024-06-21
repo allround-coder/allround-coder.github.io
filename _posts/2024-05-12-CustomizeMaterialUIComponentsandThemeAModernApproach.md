@@ -38,15 +38,15 @@ npx @teambit/bvm install
 
 
 
-```md
+
 비트 새 basic my-workspace
-```
+
 
 ## Bit 워크스페이스로 완전한 솔루션 복제하기
 
 빠르게 시작하려면이 범위의 구성 요소를 자체 Bit 워크스페이스로 복제합니다 (비트 워크스페이스를 만들고 해당 위치로 cd해야합니다).
 
-MY_BIT_PLATFORM_ACCOUNT를 비트 플랫폼에서의 사용자 이름 또는 비트 조직 이름으로 바꿉니다. MY_SCOPE를 범위 이름으로 바꿉니다. 이미 설정된 것이 없다면 새로운 범위를 만듭니다.```
+MY_BIT_PLATFORM_ACCOUNT를 비트 플랫폼에서의 사용자 이름 또는 비트 조직 이름으로 바꿉니다. MY_SCOPE를 범위 이름으로 바꿉니다. 이미 설정된 것이 없다면 새로운 범위를 만듭니다.
 
 
 
@@ -150,10 +150,8 @@ import { Button } from './button.js';
 
 버튼 컴포넌트 내에서 표시하려는 텍스트를 제공하세요:
 
-```jsx live
 () => <Button>Click me</Button>;
 ``
-``` 
 
 ## 독립적인 버전 관리
 
@@ -163,10 +161,8 @@ import { Button } from './button.js';
 
 <img src="/assets/img/2024-05-12-CustomizeMaterialUIComponentsandThemeAModernApproach_3.png" />
 
-```js
 bit tag actions/button -m "add custom docs" --patch
 bit export
-```
 
 # Typography
 
@@ -178,7 +174,6 @@ bit export
 
 이 "라이브러리"는 모듈식이고 조립이 가능하도록 구축되었기 때문에 해당 확장을 지원하는 타입 선언 (d.ts)을 프로젝트 루트에 배치하지 않고, 이 기능을 담당하는 컴포넌트가 기본 타입을 확장하도록 할 것입니다. 이렇게 하면 이 컴포넌트를 사용하는 구체적인 프로젝트에 관계없이 모든 것이 문제없이 작동됩니다.
 
-```js
 /**
  * @componentId: learnbit-react.custom-mui-lib/typography/typography
  * @filename: create-theme.ts
@@ -219,7 +214,6 @@ export interface TypographyVariantsOptions
   extends BaseTypographyVariantsOptions {
   handwriting?: CSSProperties;
 }
-```
 
 # 테마 생성
 
@@ -227,7 +221,6 @@ export interface TypographyVariantsOptions
 
 저희 맞춤형 '테마 생성' 컴포넌트는 MUI를 확장하여 추가 테마 옵션을 제공합니다. 이 경우에는 새로운 타이포그래피 변형이 포함됩니다. 이를 통해 저희는 확장된 스키마에 따라 새로운 테마를 생성할 수 있습니다.
 
-```js
 /**
  * @componentId: learnbit-react.custom-mui-lib/theme/create-theme
  * @filename: create-theme.ts
@@ -240,11 +233,9 @@ import type { ThemeOptions } from "./theme-options.js";
 export function createTheme(options: ThemeOptions, ...args: object[]): Theme {
   return createThemeBase(options, ...args);
 }
-```
 
 저희 테마 옵션은 저희 맞춤 타이포그래피 컴포넌트가 제공하는 타이포그래피 변형으로 확장됩니다.
 
-```js
 /**
  * @componentId: learnbit-react.custom-mui-lib/theme/create-theme
  * @filename: theme-options.ts
@@ -259,7 +250,6 @@ import type { TypographyVariantsOptions } from "@learnbit-react/custom-mui-lib.t
 export interface ThemeOptions extends BaseThemeOptions {
   typography?: TypographyVariantsOptions;
 }
-```
 
 
 
@@ -267,7 +257,6 @@ export interface ThemeOptions extends BaseThemeOptions {
 
 우리의 사용자 정의 테마는 추가 속성(새로운 타이포그래피 유형)이 있는 테마를 생성하기 위해 사용자 정의 ‘create-theme’ 컴포넌트를 사용합니다:
 
-```js
 /**
  * @componentId: learnbit-react.custom-mui-lib/theme/default-theme
  * @filename: default-theme.ts
@@ -306,7 +295,6 @@ export function defaultTheme(): ThemeOptions {
     },
   });
 }
-```
 
 # 사용자 정의 ‘dark’ 테마
 
@@ -314,7 +302,6 @@ export function defaultTheme(): ThemeOptions {
 
 ‘다크’ 테마는 해당 테마를 확장하고 사용자 정의하는 값을/디자인 토큰으로 구성됩니다. 이 경우 ‘기본’ 테마가 ‘다크’ 테마에 의해 확장되지만 동일한 패턴을 사용하여 어떤 테마든 어떤 테마 플레이버로 확장(또는 추가 확장)할 수 있습니다.
 
-```js
 /**
  * @componentId: learnbit-react.custom-mui-lib/theme/dark-theme
  * @filename: dark-theme.ts
@@ -342,7 +329,6 @@ export function darkTheme(): ThemeOptions {
     },
   });
 }
-```
 
 # 재사용 가능한 리액트 개발 환경
 
@@ -352,7 +338,6 @@ Bit 컴포넌트는 컴파일러, 린터, 테스터 등을 지원하는 재사�
 
 우리 사용 사례에는 기본 구성을 변경할 필요가 없습니다. 그러나 우리는 매번 테마 공급자를 수동으로 설정하는 시간을 절약하고 또한 표준화된 미리보기 컨텍스트를 보장하기 위해 우리의 모든 컴포넌트 미리보기를 테마로 래핑하는 재사용 가능한 env가 필요합니다.
 
-```js
 /**
  * @componentId: learnbit-react.custom-mui-lib/dev/react-mui
  * @filename: preview/mounter.ts
@@ -370,11 +355,9 @@ import { ThemeProvider } from '@learnbit-react/custom-mui-lib.theme.theme-provid
 export function MyReactProvider({ children }: { children: React.ReactNode }) {
   return <ThemeProvider>{children}</ThemeProvider>;
 }
-```
 
 우리는 이 env를 workspace.jsonc 구성 파일에 설정하여 새로운 컴포넌트가 이 env에서 제공하는 템플릿을 사용하여 생성되도록하고(그리고 자동으로 이 env를 env로 설정)하는 것을 보장할 수 있습니다:
 
-```js
 /**
  * @filename: {workspace-root}/workspace.jsonc
  */
@@ -390,26 +373,21 @@ export function MyReactProvider({ children }: { children: React.ReactNode }) {
     ]
   },
 }
-```
 
 
 
 예를 들어, 이 'slider' 컴포넌트는 다음과 같은 개발 환경을 사용하여 생성됩니다:
 
-```js
 $ bit create react actions/slider
-```
 
 생성된 컴포넌트가 올바른 환경을 사용하여 생성되었음을 확인하는 출력:
 
-```js
 1 개의 컴포넌트가 생성되었습니다
 
 learnbit-react.custom-mui-lib/actions/slider
     위치: custom-mui-lib/actions/slider
     환경: learnbit-react.custom-mui-lib/dev/react-mui@0.0.4 (템플릿에서 설정됨)
     패키지: @learnbit-react/custom-mui-lib.actions.slider
-```
 
 
 

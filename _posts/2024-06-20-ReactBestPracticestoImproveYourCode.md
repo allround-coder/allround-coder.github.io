@@ -84,7 +84,7 @@ export default Counter;
 ```
 
 # 2. 구성 요소 조합
-```
+
 
 <div class="content-ad"></div>
 

@@ -128,7 +128,7 @@ export default DropdownMenu;
 - 버튼을 클릭하면 isOpen 상태가 토글되고, 이는 메뉴가 표시되는지 여부를 제어합니다.
 - DropdownMenu 컴포넌트 내에서 isOpen 상태를 사용하여 드롭다운 메뉴를 조건부로 렌더링합니다.
 - 드롭다운 메뉴는 ClickOutsideWrapper 컴포넌트로 래핑되어 있으며 onClickOutside 프롭을 가지고 있습니다. 이 프롭은 메뉴 외부를 클릭했을 때 메뉴를 닫는 closeMenu 함수로 설정됩니다.
-- 사용자가 드롭다운 메뉴 외부 요소와 상호 작용할 때 ClickOutsideWrapper 컴포넌트를 사용하여 메뉴가 자동으로 닫히도록 하여 매끄러운 사용자 경험을 제공합니다.```
+- 사용자가 드롭다운 메뉴 외부 요소와 상호 작용할 때 ClickOutsideWrapper 컴포넌트를 사용하여 메뉴가 자동으로 닫히도록 하여 매끄러운 사용자 경험을 제공합니다.
 
 
 

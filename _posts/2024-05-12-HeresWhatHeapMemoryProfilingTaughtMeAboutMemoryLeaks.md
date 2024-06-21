@@ -124,7 +124,7 @@ link: "https://medium.com/javascript-in-plain-english/heres-what-the-heap-memory
 
 
 
-```
+
 만약 이 콘텐츠를 즐겼고 이러한 노력을 지원하고 싶다면 여기를 방문해주세요: https://ko-fi.com/jacobmacinnis.
 
 # 쉽고 날 것의 영어로 🚀
@@ -135,4 +135,3 @@ In Plain English 커뮤니티의 일원이 되어 주셔서 감사합니다! 떠
 - 팔로우하기: X | LinkedIn | YouTube | Discord | Newsletter
 - 다른 플랫폼 방문하기: Stackademic | CoFeed | Venture | Cubed
 - PlainEnglish.io 에서 더 많은 콘텐츠 확인하기
-```

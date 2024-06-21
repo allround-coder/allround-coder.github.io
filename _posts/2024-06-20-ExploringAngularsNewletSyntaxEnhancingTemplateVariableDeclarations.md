@@ -11,7 +11,7 @@ link: "https://medium.com/netanelbasal/exploring-angulars-new-let-syntax-enhanci
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-ExploringAngularsNewletSyntaxEnhancingTemplateVariableDeclarations_0.png)
 
 Angular의 진화가 계속되면서 최근 병합된 @let 구문과 같은 흥미로운 새로운 기능들이 추가되었습니다. 이 기능은 아직 릴리스되지 않았지만 최근에 병합되었습니다. 이러한 추가 기능은 개발자가 템플릿 내에서 로컬 변수를 선언하고 제어 흐름을 직접 관리할 수 있는 간소화된 방법을 제공합니다. 이 기능은 템플릿 로직을 간단화하고 가독성을 향상시키는 데 초점을 맞추며, 특히 비동기 데이터와 복잡한 조건 처리 시 유용합니다. 새로운 @let 구문의 다양한 사용 사례와 장점을 자세히 살펴보겠습니다.
@@ -19,7 +19,7 @@ Angular의 진화가 계속되면서 최근 병합된 @let 구문과 같은 흥�
 # @let 구문 이해
 
 @let 구문을 사용하면 Angular 템플릿 내에서 로컬 변수를 선언하고 사용할 수 있습니다. 사용법을 설명하기 위해 다음과 같이 간단한 예제를 살펴봅시다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -35,7 +35,7 @@ Angular의 진화가 계속되면서 최근 병합된 @let 구문과 같은 흥�
 # let 구문의 사용 사례
 
 ## Falsy 값 회피 또는 Async Pipe를 사용한 여러 구독 방지
-```
+
 
 <div class="content-ad"></div>
 

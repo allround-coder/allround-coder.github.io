@@ -11,7 +11,7 @@ link: "https://medium.com/@sibingeorge2698/understanding-javascripts-task-callba
 ---
 
 
-```
+
 <img src="/assets/img/2024-05-14-UnderstandingJavaScriptsTaskCallbackandMicro-taskQueues_0.png" />
 
 JavaScript 코드 실행 방식에 대해 궁금했던 적이 있나요? 웹 브라우저 내에서 JavaScript 코드 실행은 단일 스레드로 이루어지며 비동기 작업들이 어떻게 조율되는지 흥미로운 여정을 안내합니다.
@@ -19,7 +19,7 @@ JavaScript 코드 실행 방식에 대해 궁금했던 적이 있나요? 웹 브
 JavaScript는 단일 스레드 내에서 작동합니다. 이는 한 번에 한 가지 작업만 수행할 수 있다는 것을 의미합니다. 그러나 재미있는 점은, 이 제약에도 불구하고 JavaScript가 네트워크 요청이나 setTimeout() 함수 호출과 같은 비동기 작업을 원할하게 다룰 수 있고 사용자 인터페이스가 멈추지 않는다는 것입니다.
 
 그렇다면, JavaScript는 이를 어떻게 성취할까요?
-```
+
 
 
 

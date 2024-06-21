@@ -97,7 +97,7 @@ link: "https://medium.com/@oscar.lindberg/how-to-create-pixel-perfect-graphics-u
 창의 크기를 조정하면 캔버스 크기가 변경되는 것을 확인할 수 있습니다. 또한 INTEGER_SCALING 값을 false로 변경하여 캔버스가 항상 창을 가로 또는 세로로 채우는 방법을 확인해보세요.
 
 # 캔버스에 그리기
-```
+
 
 <div class="content-ad"></div>
 

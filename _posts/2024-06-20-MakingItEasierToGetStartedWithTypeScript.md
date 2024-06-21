@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/making-it-easier-to-get-started-with-type
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-06-20-MakingItEasierToGetStartedWithTypeScript_0.png" />
 
 # 함수 정의
@@ -19,7 +19,7 @@ link: "https://medium.com/gitconnected/making-it-easier-to-get-started-with-type
 TypeScript에서 함수를 정의하는 여러 가지 방법을 설명하기 위해 몇 가지 쉽게 이해할 수 있는 예제로 시작해봅시다.
 
 - 함수 선언 방법
-```
+
 
 <div class="content-ad"></div>
 

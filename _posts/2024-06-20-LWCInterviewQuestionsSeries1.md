@@ -443,7 +443,7 @@ export default class ChildComponent extends LightningElement {
 - 부모 및 자식 컴포넌트간의 통신을 용이하게합니다.
 
 단점:
-```
+
 
 <div class="content-ad"></div>
 

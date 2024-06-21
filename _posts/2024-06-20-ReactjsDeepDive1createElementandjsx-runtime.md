@@ -92,7 +92,7 @@ function App() {
 ```
 
 # 왜 이 변화가 있었을까요?
-```
+
 
 <div class="content-ad"></div>
 

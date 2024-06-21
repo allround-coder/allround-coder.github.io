@@ -264,7 +264,7 @@ npm i -g typescript-language-server
 <img src="/assets/img/2024-06-20-MyNeovimsetupforReactTypeScriptTailwindCSSetc_4.png" />
 
 팬시한 픽토그램이 포함된 LSP를 인식하는 자동 완성 기능을 얻으려면 다음 플러그인을 사용합니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -316,7 +316,7 @@ vim.cmd [[
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-MyNeovimsetupforReactTypeScriptTailwindCSSetc_5.png)
 
 Treesitter은 구문 강조를 위한 인기있는 언어 구문 분석기입니다. 먼저 다음을 설치하세요:
@@ -326,7 +326,7 @@ brew install tree-sitter
 ```
 
 Packer를 사용하여 nvim-treesitter/nvim-treesitter를 설치하고 다음과 같이 구성하세요:
-```
+
 
 <div class="content-ad"></div>
 
@@ -587,7 +587,7 @@ vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename<CR>', opts)
 제가 가장 좋아하는 LSP 플러그인 중 하나인 glepnir/lspsaga.nvim은 hover doc, definition preview, rename actions 등과 같은 다양한 LSP 관련 기능에 대한 아름다운 UI를 제공합니다. 제 설정은 간단합니다. typescript 파일에 대해 'typescript' 서버를 매핑하고, 다른 기능에 대한 keymap을 설정합니다.
 
 TypeScript/JavaScript/CSS 파일을 포맷하는 데 Prettier에 큰 의존을 하고 있습니다. 이를 위해 jose-elias-alvarez/null-ls.nvim 및 MunifTanjim/prettier.nvim을 사용합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -639,7 +639,7 @@ prettier.setup {
 # Git 표시: gitsigns
 
 ![이미지](/assets/img/2024-06-20-MyNeovimsetupforReactTypeScriptTailwindCSSetc_12.png)
-```
+
 
 <div class="content-ad"></div>
 

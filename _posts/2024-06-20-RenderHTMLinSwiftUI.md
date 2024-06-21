@@ -220,7 +220,7 @@ struct ContentView: View {
 
 다음은 Markdown 형식으로 테이블 태그를 변경한 코드입니다.
 
-```markdown
+
 import SwiftUI
 
 // Example of a simple Theme struct.
@@ -248,11 +248,11 @@ extension EnvironmentValues {
         set { self[ThemeEnvironmentKey.self] = newValue }
     }
 }
-```
+
 
 NSAttributedString을 위한 편리한 이니셜라이저
 
-```markdown
+
 import UIKit
 
 extension NSAttributedString {
@@ -327,10 +327,10 @@ private extension UIColor {
         )
     }
 }
-```
+
 
 SwiftUI에서 테마가 적용된 HTML 렌더링하기
-``` 
+
 
 <div class="content-ad"></div>
 
@@ -368,4 +368,3 @@ struct ContentView: View {
 쉽죠! SwiftUI가 정말 멋지지만, 때로는 몇 년 동안 사랑해 온 UIKit 뷰와 기능을 임베드할 수 있는 것이 참 좋습니다.
 
 코딩하세요! 🙌
-```

@@ -220,7 +220,7 @@ const store = userStore()
 
 <div class="content-ad"></div>
 
-```markdown
+
 attrs: 부모 스코프에서 클래스 및 스타일을 제외한 컬렉션을 포함합니다.
 
 ```js
@@ -248,7 +248,7 @@ attrs: 부모 스코프에서 클래스 및 스타일을 제외한 컬렉션을 
 # v-model
 
 여러 데이터 요소에 대한 양방향 데이터 바인딩을 지원합니다.
-```
+
 
 <div class="content-ad"></div>
 

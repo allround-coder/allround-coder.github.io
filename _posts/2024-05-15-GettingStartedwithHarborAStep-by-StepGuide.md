@@ -67,7 +67,7 @@ externalURL: https://core.harbor.localhost
 3. 윈도우 호스트 파일 수정:
 
 - 관리자 권한으로 텍스트 편집기에서 c:\Windows\System32\Drivers\etc\hosts 파일을 엽니다.
-- 다음 줄을 추가하세요:```
+- 다음 줄을 추가하세요:
 
 
 

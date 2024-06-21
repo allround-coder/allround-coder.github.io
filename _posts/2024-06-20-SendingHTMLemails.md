@@ -25,7 +25,7 @@ Snowball에서는 현재 미디어 웹 앱에서 뉴스레터 판본 목록을 �
 
 아래와 같이 변경하시면 됩니다:
 
-```markdown
+
 ![Image](/assets/img/2024-06-20-SendingHTMLemails_0.png)
 
 참 쉽지 않나요?
@@ -53,15 +53,15 @@ Snowball에서는 현재 미디어 웹 앱에서 뉴스레터 판본 목록을 �
   <!-- 모든 에디션에 대해 반복합니다... -->
 </div>
 ```
-```
+
 
 <div class="content-ad"></div>
 
 당신이 Tailwind로 생성한 스타일시트와 함께 Gmail 받은 편지함으로 이메일을 보냅니다:
 
-```
+
 <img src="/assets/img/2024-06-20-SendingHTMLemails_1.png" />
-```
+
 
 음... 제대로 작동하지 않는 것 같네요 (이것은 과장이 아닙니다).
 
@@ -69,7 +69,7 @@ Snowball에서는 현재 미디어 웹 앱에서 뉴스레터 판본 목록을 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 테이블 태그를 Markdown 형식으로 변경해 드렸어요.
 
 ```js
@@ -92,7 +92,7 @@ Snowball에서는 현재 미디어 웹 앱에서 뉴스레터 판본 목록을 �
 
 완벽하진 않지만, 거의 비슷하죠…
 아쉬운 점들이 있어요
-```
+
 
 <div class="content-ad"></div>
 
@@ -185,7 +185,7 @@ SpamAssassin (그리고 세계의 메일 제공업체들)에 대한 중요한 �
 
 - Email On Acid은 이메일을 만들고 최적화, 미리 보기, 테스트 및 유효성을 검사하는 데 도움을 줍니다. 그러나 솔루션이 상당히 비싼 편입니다.
 - Mail Tester는 이메일을 보낼 수 있는 이메일 주소를 제공하고 다음의 다양한 기준에 근거하여 이메일의 "스팸 레벨"을 평가합니다: 도메인, 헤더, 내용, SpamAssassin 결과, 깨진 링크 또는 이미지, URL 단축기 등등.. 그런 다음 당신에게 1에서 10까지의 점수와 평판 수준 향상을 위한 조언을 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

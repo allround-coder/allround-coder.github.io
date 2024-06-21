@@ -72,7 +72,7 @@ preload 매개변수는 Google Chrome에 하드코딩된 브라우저 사전로�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-AngularWaystoenforceasecurehttpsconnectionwhenloadingapplicationOrresourcesinaapplication_0.png)
 
 이제 로컬 개발 서버와 nginx 웹 서버에서 이 헤더를 사용하는 방법을 살펴보겠습니다.
@@ -80,7 +80,7 @@ preload 매개변수는 Google Chrome에 하드코딩된 브라우저 사전로�
 로컬 개발 서버 사용하기
 
 package.json 파일의 "start" 스크립트는 다음과 같이 보입니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -141,7 +141,7 @@ return 301 https://$host$request_uri;
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 add_header ‘Strict-Transport-Security’ ‘max-age=63072000; includeSubDomains; preload’;
 ``` 
@@ -151,7 +151,7 @@ Angular 앱을 Nginx에 배포하기 위해 애플리케이션을 컨테이너�
 다음은 docker-compose.yml입니다.
 
 다음은 Dockerfile입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -286,7 +286,7 @@ Nginx 웹서버의 경우, 아래와 같이 nginx.config 파일을 업데이트�
 이제 브라우저에서 http://innocent.csrfexample.com:5443을 입력하면 HSTS가 307 응답 코드를 사용해 https://innocent.csrfexample.com:5443로 리디렉션되며 이미지는 https를 사용하여 요청되어 "혼합 콘텐츠" 경고 없이 보여집니다.
 
 아래 두 번째 스크린샷에서 응답 헤더를 확인해보세요. "Content-Security-Policy" 헤더에는 "upgrade-insecure-requests" 지시문이 포함되어 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

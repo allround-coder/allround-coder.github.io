@@ -99,7 +99,6 @@ Monkey patching은 프로그래밍에서 사용되는 기술로, 기존 코드�
 ```js
 익스포트된 상수 fetchAPIRequestInterceptor을 사용하여 Fetch API 인터셉터를 설정합니다. endPoint, apiKey 및 config를 매개변수로 받습니다. 
 
-```js
 export const fetchAPIRequestInterceptor  = async (endPoint, apiKey, config) => {
     const { fetch: originalFetch } = window;
     window.fetch =  async (...args) => {
@@ -116,21 +115,17 @@ export const fetchAPIRequestInterceptor  = async (endPoint, apiKey, config) => {
         }
     };  
 }
-```
 
 fetch-intercept npm 라이브러리를 사용한 Fetch API 인터셉터입니다.
 
 먼저, 아래 명령어를 사용하여 npm 라이브러리를 설치해야 합니다.
 
-```js
 npm i fetch-intercept
-```
 
 
 
 인터셉터는 Fetch API 호출을 위해 인터셉터를 등록할 수 있는 register 메서드를 사용하여 정의할 수 있습니다. 이는 request, requestError, response, responseError 콜백을 포함하는 객체를 가지고 있습니다. 여기서 register 메서드는 인터셉터를 등록할 때 사용하는 unregister 메서드를 반환합니다. 필요하지 않을 때 인터셉터를 등록 해제할 수 있습니다. 아래는 인터셉터 구현을 나타냅니다.
 
-```js
 import * as fetchIntercept from 'fetch-intercept';
 
 export const fetchInterceptRequestInterceptor  = async (endPoint, apiKey) => {
@@ -157,7 +152,6 @@ export const fetchInterceptRequestInterceptor  = async (endPoint, apiKey) => {
         },
       }); 
 }
-```
 
 ## 요약
 

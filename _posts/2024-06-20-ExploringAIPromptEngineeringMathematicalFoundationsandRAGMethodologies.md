@@ -11,7 +11,7 @@ link: "https://medium.com/towards-artificial-intelligence/exploring-ai-prompt-en
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-06-20-ExploringAIPromptEngineeringMathematicalFoundationsandRAGMethodologies_0.png" />
 
 ## 대형 언어 모델 (LLMs)의 수학적 표현
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-artificial-intelligence/exploring-ai-prompt-en
 먼저 대형 언어 모델 (LLM)을 다음과 같은 공식으로 표현합니다:
 
 <img src="/assets/img/2024-06-20-ExploringAIPromptEngineeringMathematicalFoundationsandRAGMethodologies_1.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -198,7 +198,7 @@ def get_retriever():
 ```
 
 단계 4: LLM 초기화
-```
+
 
 <div class="content-ad"></div>
 
@@ -215,7 +215,7 @@ qa_chain = ConversationalRetrievalChain.from_llm(llm=chat_model, chain_type='stu
 ```
 
 평가
-```
+
 
 <div class="content-ad"></div>
 
@@ -249,7 +249,7 @@ RAG 방법 2: 검색 재랭킹
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-ExploringAIPromptEngineeringMathematicalFoundationsandRAGMethodologies_10.png)
 
 결과적으로 RAG 다시 순위 지정은 AI 프롬프트(X_RERANKED_RAG)를 LLM에 제공합니다. 논리는 LLM이 항상 주어진 순서대로 AI 프롬프트를 고려할 것이라는 것입니다. 사용자의 질문과 일치하는 문서를 AI 프롬프트 상단에 놓으면 더 나은 답변을 제공할 수 있을 것입니다.
@@ -257,7 +257,7 @@ RAG 방법 2: 검색 재랭킹
 예: 다시 순위 지정 검색
 
 다음 단계에서는 다시 순위 지정 검색 과정을 설명합니다. 이 과정에서 llama_index, RankGPTRerank 및 OpenAI API 도구를 활용합니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -531,7 +531,7 @@ RAG 방법 4.2.1: 비공개 데이터 요약
 
 먼저 위의 표 태그를 마크다운 형식으로 변경해보겠습니다.
 
-```markdown
+
 ![ExploringAIPromptEngineeringMathematicalFoundationsandRAGMethodologies_18](/assets/img/2024-06-20-ExploringAIPromptEngineeringMathematicalFoundationsandRAGMethodologies_18.png)
 
 이 방법은 동시에 다음 조치들을 최소화하도록 명시적으로 목표로 합니다:
@@ -539,7 +539,7 @@ RAG 방법 4.2.1: 비공개 데이터 요약
 ![ExploringAIPromptEngineeringMathematicalFoundationsandRAGMethodologies_19](/assets/img/2024-06-20-ExploringAIPromptEngineeringMathematicalFoundationsandRAGMethodologies_19.png)
 
 이는 결과적으로 RAG 데이터가 개인 데이터와 밀접한 관련이 있으면서도 텍스트를 최대한 간결하게 유지해야 한다는 것을 의미합니다. 또한, 결과적인 RAG 데이터에는 최소한의 중복이 있어야 하며, 관련 없는 주제를 피해야 한다는 것을 시사합니다.
-``` 
+
 
 위의 내용이 도움이 되었기를 바라며, 궁금한 점이 있으면 언제든지 물어보세요!
 
@@ -607,9 +607,9 @@ RAG Method 4.2.3: 특별한 구조로 개인 데이터 변환하기
 <div class="content-ad"></div>
 
 한 가지 가능한 방법은 개인 데이터를 특수 구조(지식 그래프, 플로우차트, JSON 파일, 데이터베이스 메타데이터, 이미지 파일 및 기계 학습 결과를 포함)로 변환하는 것입니다. 이러한 구조는 고급 AI 시스템에서 RAG 성능을 향상시키는 데 입증되었습니다. 다음 공식은 이 절차를 설명합니다:
-```
+
 ![image](/assets/img/2024-06-20-ExploringAIPromptEngineeringMathematicalFoundationsandRAGMethodologies_21.png)
-```
+
 여기서 M(D(doc), Structure)는 일반 변환 함수를 나타내며, LLMs, 트랜스포머 또는 수동 절차를 포함한 로컬 NLP 모델 등이 될 수 있습니다. 두 번째 매개변수인 Structure은 위에서 언급한 데이터 구조를 나타냅니다. 여기서 Prompt는 RAG 프롬프트와 콘텍스트 프롬프트를 통합하며, 최근의 콘텍스트와 같은 대화 콘텍스트의 함수 값입니다.
 
 예시: 인터넷 문제 해결 대화 기록
@@ -715,14 +715,14 @@ Customer1[Customer: ID=1, Age=20–30, Status=Single] → Transaction101[Transac
 
 다음은 Markdown 형식으로 표를 변경하였습니다.
 
-```
+
 | 관계               | 함께 사용되는 항목                        |
 |---------------------|-----------------------------------------|
 | Transaction101     | Product1001 [제품: ID=1001, 이름=제품 A, 카테고리=전자제품] |
 | Customer2          | Customer: ID=2, 나이=30-40, 상태=기혼 |
 | Customer2 → Transaction102 | Transaction: ID=102, 날짜=2023-05-02 |
 | Transaction102     | Product1002 [제품: ID=1002, 이름=제품 B, 카테고리=가정용] |
-```
+
 
 LLM을 위한 RAG 프롬프트에서 고객-제품 거래 데이터를 기반으로 한 응답을 개선하는데 사용할 수 있는 이 지식 그래프를 참고하세요.
 
@@ -738,7 +738,7 @@ RPF(Relevance, Precision, and Fidelity) for RAG은 RAG 데이터의 적절성, �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Exploring AI Prompt Engineering Mathematical Foundations and RAG Methodologies](/assets/img/2024-06-20-ExploringAIPromptEngineeringMathematicalFoundationsandRAGMethodologies_24.png)
 
 신뢰도 평가: 가장 높은 RPF 점수 max_score_RPF를 선택하고, 가장 높은 RPF 점수를 가진 문서 X_RAG를 선택합니다. 점수 max_score_RPF가 임계값 T보다 높으면 LLM은 X_RAG를 사용하여 응답하고, 그렇지 않으면 사용자로부터 명확화를 위해 상호 작용적 피드백을 제공하여 사용자로부터 설명을 듣습니다:
@@ -746,7 +746,7 @@ RPF(Relevance, Precision, and Fidelity) for RAG은 RAG 데이터의 적절성, �
 ![Exploring AI Prompt Engineering Mathematical Foundations and RAG Methodologies](/assets/img/2024-06-20-ExploringAIPromptEngineeringMathematicalFoundationsandRAGMethodologies_25.png)
 
 AI 및 사용자 상호작용: LLM은 사용자에게 질문을 명확히하거나 쿼리의 의미를 이해하기 위해 몇 가지 선택지를 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

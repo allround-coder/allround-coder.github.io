@@ -167,7 +167,7 @@ ng build your-app-name --stats-json 명령을 실행하면 응용 프로그램�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 npm install --save-exact --save-dev esbuild
 ```
@@ -179,7 +179,7 @@ npm install --save-exact --save-dev esbuild
 ```
 
 이렇게 길고 이상한 명령을 한 번에 실행하려면 package.json에 스크립트를 만들었습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -206,7 +206,7 @@ npm install --save-exact --save-dev esbuild
 npm run analyze-esbuild
 ```
 
-을 실행하면, 애플리케이션 루트 폴더에 meta.json 파일이 생성됩니다. 그런 다음 meta.json을 esbuild 번들 크기 분석기에서 사용하여 번들을 시각화할 수 있습니다.```
+을 실행하면, 애플리케이션 루트 폴더에 meta.json 파일이 생성됩니다. 그런 다음 meta.json을 esbuild 번들 크기 분석기에서 사용하여 번들을 시각화할 수 있습니다.
 
 <div class="content-ad"></div>
 

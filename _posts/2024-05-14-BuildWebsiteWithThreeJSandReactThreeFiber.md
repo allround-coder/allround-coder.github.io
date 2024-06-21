@@ -189,7 +189,7 @@ dpr='[]' : 이 속성은 캔버스의 장치 픽셀 비율(device pixel ratio, d
 
 <img src="/assets/img/2024-05-14-BuildWebsiteWithThreeJSandReactThreeFiber_9.png" />
 
-이것은 우리의 코드가 작동 중이라는 것을 의미합니다 😳. 이제 사각형을 더 크게 만들기 위해 다음 CSS 코드를 App.css에 추가해주세요 :```
+이것은 우리의 코드가 작동 중이라는 것을 의미합니다 😳. 이제 사각형을 더 크게 만들기 위해 다음 CSS 코드를 App.css에 추가해주세요 :
 
 
 
@@ -380,7 +380,7 @@ const { height, width } = useThree((state) => state.viewport);
 const data = useScroll();
 ```
 
-useThree는 React Three Fiber에서 제공하는 훅으로 Three.js 상태에 접근할 수 있게 해줍니다. 이 경우에는 뷰포트의 높이와 너비를 얻기 위해 사용되었습니다.```
+useThree는 React Three Fiber에서 제공하는 훅으로 Three.js 상태에 접근할 수 있게 해줍니다. 이 경우에는 뷰포트의 높이와 너비를 얻기 위해 사용되었습니다.
 
 
 
@@ -729,7 +729,7 @@ export default App;
 ```
 
 Suspense 컴포넌트는 내장 React 컴포넌트로, 컴포넌트가 렌더링되기 전에 무언가를 기다리도록 허용하는 것입니다. 보통 데이터 가져오기나 코드 분할과 같은 비동기 작업을 처리하는 데 사용됩니다.
-```
+
 
 
 

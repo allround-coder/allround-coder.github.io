@@ -31,7 +31,7 @@ link: "https://medium.com/gitconnected/how-i-ship-faster-with-typescript-schemat
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-06-20-HowIShipFasterwithTypeScriptSchemataandInference_0.png)
 
 위의 그림 속 핸들을 잡고 있는 사람은 배의 엔지니어링에 대해 의심하고 있는 걸까요?
@@ -39,7 +39,7 @@ link: "https://medium.com/gitconnected/how-i-ship-faster-with-typescript-schemat
 생산성 향상은 다음과 같은 개념에서 비롯되었습니다.
 
 파싱을 프로젝트의 핵심 요소로 취급하고 계약 프로그래밍을 강제 적용하기 시작했습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -131,7 +131,7 @@ canAccessDashboard(userWithExcessProperties);
 구조를 검증할 때는 해당 스키마에 적합한지만 확인합니다. 유효성 검사는 새 객체를 생성하지 않습니다. TypeScript에서 원본 구조를 함수에 전달할 때 초과된 속성도 함께 전달될 수 있습니다.
 
 로그에 사용자 데이터를 기록하면 개인 식별 정보를 저장할 수 있습니다! 그래서 그것을 피하기 위해 원하는 속성을 갖는 새 객체를 만들어 데이터를 구문 분석해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -168,15 +168,12 @@ type User = z.infer<typeof userSchema>;
 ```js
 유저 타입을 호출할 때 다음 메소드를 이용하여 구문 분석할 거에요:
 
-```js
 const user: User = userSchema.parse(userWithExcessProperties);
-```
 
-사용자들을 그룹화하고 싶다고 상상해 보세요. 그룹 스키마와 해당 유형을 비슷하게 작성할 거에요:```
+사용자들을 그룹화하고 싶다고 상상해 보세요. 그룹 스키마와 해당 유형을 비슷하게 작성할 거에요:
 
 <div class="content-ad"></div>
 
-```js
 const groupSchema = z.object({
   id: z.string(),
   name: z.string(),
@@ -192,7 +189,6 @@ const groupSchema = z.object({
 }).readonly();
 
 type Group = z.infer<typeof groupSchema>;
-```
 
 ## 추이추론
 
@@ -202,9 +198,7 @@ TypeScript 유형 메커니즘을 활용하여 다음과 같이 작성할 수 �
 
 <div class="content-ad"></div>
 
-```js
 type InterestLevel = Group['interests'][number]['level'];
-```
 
 만약 제가 스키마를 별도로 사용하지 않는다면, 제 다른 비즈니스 구조의 일부로 유지합니다.
 
@@ -224,39 +218,33 @@ type InterestLevel = Group['interests'][number]['level'];
 
 <div class="content-ad"></div>
 
-```js
 const buildChecksumEnvelopeSchema = <T>(
   datumSchema: ZodType<T>
 ) => z.object({
   datum: datumSchema,
   checksum: z.string(),
 }).readonly();
-```
 
 위의 코드 조각에서 `ZodType<T>`는 일반 타입 T로 구문 분석되는 스키마입니다.
 
 만약 사용자 및 그룹 스키마와 타입을 필요로 한다면, 다음과 같이 타입을 지정할 수 있습니다:
 
-```js
 const userEnvelopeSchema = buildChecksumEnvelopeSchema(userSchema);
 const groupEnvelopeSchema = buildChecksumEnvelopeSchema(groupSchema);
 
 type UserChecksumEnvelope = z.infer<typeof userEnvelopeSchema>;
 type GroupChecksumEnvelope = z.infer<typeof groupEnvelopeSchema>;
-```
 
 <div class="content-ad"></div>
 
 만약 우리가 일반적인 envelope 타입을 유지하고 싶다면 어떻게 할까요? 우리는 이를 사용하여 내용을 정확히 모르는 임의의 envelopes에 작업을 수행할 수 있습니다. 예를 들어, 체크섬을 계산하는 것과 같이요.
 
-```js
 type ChecksumEnvelope<T> = z.infer<
   ReturnType<typeof buildChecksumEnvelopeSchema<T>>
 >;
 
 type UserChecksumEnvelope = ChecksumEnvelope<User>;
 type GroupChecksumEnvelope = ChecksumEnvelope<Group>;
-```
 
 ## 단수 schema
 
@@ -264,16 +252,14 @@ type GroupChecksumEnvelope = ChecksumEnvelope<Group>;
 
 <div class="content-ad"></div>
 
-```js
 const usersSchema = z.array(userSchema);
 type Users = z.infer<typeof usersSchema>;
-```
 
 가능하다면 복수형 타입을 정의하지 않겠어요. 배열에는 `ReadonlyArray<User>`나 `User[]`를 사용할 거에요. 혼란을 피하고 다른 명명 규칙을 만들지 않기 위해 가능한 한 타입 별칭을 적게 사용하려고 해요.
 
 ## 내보내기
 
-일반적으로 schema와 비즈니스 구조체의 유추된 타입을 내보내요. 다른 개발자들이 혼란스럽지 않도록 helper schema를 절대 내보내지 않아요. 가져올 수 있는 문장을 줄이기 위해 노력해요.```
+일반적으로 schema와 비즈니스 구조체의 유추된 타입을 내보내요. 다른 개발자들이 혼란스럽지 않도록 helper schema를 절대 내보내지 않아요. 가져올 수 있는 문장을 줄이기 위해 노력해요.
 
 <div class="content-ad"></div>
 
@@ -293,7 +279,6 @@ Zod 스키마를 불변하게 만들기 위해 readonly 메서드를 호출합�
 
 예를 들어, 아래에 명시된 것처럼 그룹 스키마는 이미 불변성 원칙을 준수합니다:
 
-```js
 const groupSchema = z.object({
   id: z.string(),
   name: z.string(),
@@ -307,7 +292,6 @@ const groupSchema = z.object({
     ]),
   })).readonly(),
 }).readonly();
-```
 
 <div class="content-ad"></div>
 
@@ -321,17 +305,13 @@ const groupSchema = z.object({
 
 <div class="content-ad"></div>
 
-```js
 bun install ts-essentials
-```
 
 이제 아래의 코드를 작성할 수 있습니다:
 
-```js
 import type { DeepWritable } from ‘ts-essentials’;
 
 type WritableGroup = DeepWritable<Group>;
-```
 
 # Enumerations
 
@@ -355,21 +335,17 @@ Zod에서 열거형을 정의하는 세 가지 방법이 있습니다:
 
 TypeScript를 사용하면 컴파일 시에 존재하고 런타임에도 존재하는 열거형(enum) 타입을 선언할 수 있습니다. 예를 들어, 다음과 같이 관심 수준을 나타내는 enum을 정의할 수 있습니다:
 
-```js
 enum InterestLevel {
   Low = 'low',
   Medium = 'medium',
   High = 'high',
 };
-```
 
 <div class="content-ad"></div>
 
 Zod는 열거 유형에서 스키마를 작성하는 방법을 제공합니다. 아래 코드 스니펫에서와 같이:
 
-```js
 const interestLevelSchema = z.nativeEnum(InterestLevel);
-```
 
 만약 const 키워드로 InterestLevel 열거 유형을 선언했다면, 이전에는 컴파일 시간에만 존재했기 때문에 Zod 도우미를 사용할 수 없었습니다.
 
@@ -377,9 +353,7 @@ const interestLevelSchema = z.nativeEnum(InterestLevel);
 
 <div class="content-ad"></div>
 
-```js
 const interestLevels = Object.values(InterestLevel);
-```
 
 ## Zod의 리터럴 유니언
 
@@ -389,29 +363,23 @@ const interestLevels = Object.values(InterestLevel);
 
 <div class="content-ad"></div>
 
-```js
 const interestLevelLiteralSchemata = [
   z.literal('low'),
   z.literal('medium'),
   z.literal('high'),
 ] as const;
-```
 
 자 이제 적절한 스키마와 타입을 정의할 시간입니다:
 
-```js
 const interestLevelSchema = z.union(interestLevelLiteralSchemata);
 type InterestLevel = z.infer<typeof interestLevelSchema>;
-```
 
-마지막으로, 모든 열거된 값을 추출할 수 있습니다:```  
+마지막으로, 모든 열거된 값을 추출할 수 있습니다:  
 
 <div class="content-ad"></div>
 
-```js
 const interestLevels = interestLevelLiteralSchemata
   .map((literal) => literal.value);
-```
 
 ## 조드의 열거
 
@@ -421,16 +389,12 @@ const interestLevels = interestLevelLiteralSchemata
 
 <div class="content-ad"></div>
 
-```js
 const interestLevelSchema = z.enum(['low', 'medium', 'high']);
 type InterestLevel = z.infer<typeof interestLevelSchema>;
-```
 
 모든 열거된 값 추출을 한 줄로 처리할 수 있습니다:
 
-```js
 const interestLevels = interestLevelSchema.options;
-```
 
 # 구분된 연합(Unions)
 ```
@@ -632,7 +596,7 @@ const interestLevels = interestLevelSchema
   .flatMap((member) => member.literals);
 ```
 
-두 번째 접근 방법은 스키마 리터럴 도우미를 사용하는 것입니다. 한 줄로 스키마를 정의할 수 있습니다.```
+두 번째 접근 방법은 스키마 리터럴 도우미를 사용하는 것입니다. 한 줄로 스키마를 정의할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -647,7 +611,7 @@ const interestLevels = interestLevelSchema.literals;
 ```
 
 이 라이브러리를 사용하면 네이티브 열거 유형을 사용할 수 있습니다! 다음 조각을 살펴보세요:
-```
+
 
 <div class="content-ad"></div>
 
@@ -680,7 +644,7 @@ type Actor = Schema.Schema.Type<typeof actorSchema>;
 ```
 
 # 부록 B : Yup
-```
+
 
 <div class="content-ad"></div>
 

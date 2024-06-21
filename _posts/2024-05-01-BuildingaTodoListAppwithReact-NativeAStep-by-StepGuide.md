@@ -245,7 +245,7 @@ export default function TodoItem({ task, deleteTask, toggleCompleted }) {
 - .completed : 완료된 작업에 대해 가로 줄 꾸미기 및 텍스트 색상 변경을 추가합니다.
 - .delete-button : 빨간색 배경, 흰색 텍스트, 패딩 및 테두리 반경으로 삭제 버튼을 스타일링합니다. 또한 상호 작용을 위해 커서 포인터를 제공합니다.
 
-여기까지 완료되었습니다! React-Native를 사용하여 직접 Todo List 앱을 만들었다니 축하드립니다. 이 안내서를 통해 React-Native 컴포넌트, 상태 관리, 훅, 프롭스, 이벤트 처리를 이해하고 스타일링을 향상시켰습니다. 이제 당신이 이룬 것을 되돌아보고 다음 단계를 생각해봅시다.```
+여기까지 완료되었습니다! React-Native를 사용하여 직접 Todo List 앱을 만들었다니 축하드립니다. 이 안내서를 통해 React-Native 컴포넌트, 상태 관리, 훅, 프롭스, 이벤트 처리를 이해하고 스타일링을 향상시켰습니다. 이제 당신이 이룬 것을 되돌아보고 다음 단계를 생각해봅시다.
 
 <div class="content-ad"></div>
 

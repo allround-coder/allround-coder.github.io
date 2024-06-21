@@ -148,7 +148,7 @@ handleMouseMove 함수에서 x와 y 좌표가 어떻게 계산되는지 살펴�
 - 마우스 이동 이벤트가 발생하면 clientX 및 clientY 속성이 제공됩니다. 이는 브라우저 창의 클라이언트 영역에 대한 마우스 포인터의 수평 및 수직 좌표를 나타냅니다.
 - 직사각형과 오프셋: getBoundingClientRect() 메서드는 요소의 크기와 뷰포트에 대한 위치를 반환합니다. 여기서 containerRef로 참조된 컨테이너 div에 대해 호출됩니다. rect 객체에는 요소의 상하좌우 위치를 나타내는 top, left, right, bottom과 같은 속성이 포함됩니다.
 - 빛 크기 조정: lightSize는 컨테이너 너비의 반( rect.width * 0.5 )로 계산됩니다. 이는 CSS 파일에서 빛의 크기에 해당합니다.
-- X와 Y 계산: x와 y 좌표를 컨테이너에 대해 계산하기 위해 마우스의 clientX 및 clientY 위치에서 컨테이너의 left 및 top 위치를 각각 빼줍니다. 추가로 lightSize의 절반을 빼서 x와 y 좌표가 마우스 포인터를 중심으로 정렬되도록 합니다.```
+- X와 Y 계산: x와 y 좌표를 컨테이너에 대해 계산하기 위해 마우스의 clientX 및 clientY 위치에서 컨테이너의 left 및 top 위치를 각각 빼줍니다. 추가로 lightSize의 절반을 빼서 x와 y 좌표가 마우스 포인터를 중심으로 정렬되도록 합니다.
 
 
 

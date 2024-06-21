@@ -150,7 +150,7 @@ popover.hidePopover();
 
 
 
-```
+
 <img src="/assets/img/2024-05-15-BrowserBeginsSupportforPopoverAPIAQuickGuide_2.png" />
 
 ## :popover-open
@@ -158,7 +158,7 @@ popover.hidePopover();
 The :popover-open pseudo-class matches a popover element only when it is in the showing state — it can be used to style popover elements when they are showing.
 
 ## [popover]
-```
+
 
 
 

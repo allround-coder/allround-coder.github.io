@@ -11,7 +11,7 @@ link: "https://medium.com/@desinaoluseun/using-env-to-store-environment-variable
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-UsingenvtostoreenvironmentvariablesinAngular_0.png)
 
 API 키가 포함된 Angular 프로젝트를 작업한 적이 있나요? 그리고 API 키를 사용자 정의 환경 변수에 저장하고 싶지 않았나요?
@@ -19,7 +19,7 @@ API 키가 포함된 Angular 프로젝트를 작업한 적이 있나요? 그리�
 다양한 이유가 있을 수 있지만, 기본적인 사용 사례는 항상 해당 키를 깃 저장소에 노출시키지 않고자 하는 것입니다.
 
 이 방법을 사용하고 싶은 이유와 장점은 많지만, 그에 대해 자세히 다루지는 않겠습니다. 왜냐하면 이 글을 읽고 계시다면 이미 해당 접근 방식의 이점을 알고 있으며, 이 방법이 필요하기 때문이라고 생각하기 때문입니다.
-```
+
 
 <div class="content-ad"></div>
 

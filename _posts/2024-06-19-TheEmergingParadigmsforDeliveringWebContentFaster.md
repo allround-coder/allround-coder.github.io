@@ -11,7 +11,7 @@ link: "https://medium.com/better-programming/the-emerging-paradigms-for-deliveri
 ---
 
 
-```markdown
+
 ![TheEmergingParadigmsforDeliveringWebContentFaster_0](/assets/img/2024-06-19-TheEmergingParadigmsforDeliveringWebContentFaster_0.png)
 
 React, Svelte, Vue 등 구성 요소 기반 프레임워크가 나오기 전에는 모든 콘텐츠를 서버에서 렌더링하는 것이 보편적이었습니다. 그때는 웹 사이트를 탐색하는 것이 서버로 여러 요청을 하게 되어 HTML, CSS 및 JS로 렌더링된 내용을 다시 웹 브라우저로 보내는 것이었습니다. 이를 서버 사이드 렌더링 (SSR)이라고 합니다.
@@ -19,7 +19,7 @@ React, Svelte, Vue 등 구성 요소 기반 프레임워크가 나오기 전에�
 ![TheEmergingParadigmsforDeliveringWebContentFaster_1](/assets/img/2024-06-19-TheEmergingParadigmsforDeliveringWebContentFaster_1.png)
 
 이후 React 및 다른 구성 요소 기반 프레임워크들이 나오면서 조금 덜 일반적인 클라이언트 사이드 렌더링 (CSR) 방법이 개발자들의 가장 선호하는 선택이 되었습니다. 개발자들은 싱글 페이지 애플리케이션을 만들고, 렌더링 콘텐츠의 책임을 서버에서 브라우저로 옮기는 경향을 보였습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -53,7 +53,7 @@ SSG는 클라이언트 요청을 받기 전에 HTML을 미리 렌더링하는 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-TheEmergingParadigmsforDeliveringWebContentFaster_4.png" />
 
 SSG란 각 웹 사이트 경로에 대해 미리 HTML 파일을 생성하여 FCP, LCP 및 TTI가 빨라지도록 하는 것입니다. 내용은 이미 렌더링되어 있으며 요청이 발생할 때 서버에서 로직을 수행할 필요가 없어 TTFB가 더 빨라집니다. 내용은 서버나 CDN에 캐시될 수도 있어 매우 빠른 응답이 가능합니다. SSG는 자주 변경되지 않는 정적 콘텐츠에 이상적입니다. FAQ나 About 페이지와 같은 내용에 적합합니다.
@@ -61,11 +61,11 @@ SSG란 각 웹 사이트 경로에 대해 미리 HTML 파일을 생성하여 FCP
 ## SSG의 함정
 
 정적 사이트 생성은 데이터가 필요한 페이지에도 적용 가능합니다. 이 데이터는 빌드 시간에 HTML에 통합됩니다. 뉴스 기사나 블로그 게시물을 다루는 웹 사이트에서 해당될 수 있습니다. 안타깝게도, 이러한 경우는 SSG의 주요 단점 중 하나인 것을 강조합니다: 변경이 발생할 때마다 전체 페이지를 재구축해야 하며 캐시된 HTML 파일이 무효화됩니다. 이는 SSG가 매우 동적인 콘텐츠에 대해 최상의 선택이 아닐 수 있다는 것을 의미합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-TheEmergingParadigmsforDeliveringWebContentFaster_5.png)
 
 또한, 사이트의 경로가 많다면 많은 사전 렌더링된 HTML 사이트가 필요할 수 있습니다. 예를 들어, 모든 블로그 게시물을 SSG를 통해 렌더링하는 경우 많은 HTML 파일을 저장할 수 있습니다. 기본 코드베이스에 변경 사항이 발생할 때마다 전체 사이트를 재구축하고 다시 배포해야 한다는 점을 기억하세요. 오타를 수정해야 할 때마다 사이트를 다시 배포해야 한다고 상상해보세요.
@@ -73,7 +73,7 @@ SSG란 각 웹 사이트 경로에 대해 미리 HTML 파일을 생성하여 FCP
 ## 증분 정적 사이트 생성 (iSSG)
 
 Next.js와 같은 프레임워크에서 제공하는 증분 정적 사이트 생성 (iSSG)을 사용하여 이러한 문제 중 일부를 해결할 수 있습니다. iSSG를 사용하면 서버가 백그라운드에서 사이트에 페이지를 업데이트하고 추가할 수 있으면서도 클라이언트 요청을 처리할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +127,7 @@ max-age는 초 단위로 설정됩니다. 위 예시에서는 2분 후에 캐시
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Edge computing](/assets/img/2024-06-19-TheEmergingParadigmsforDeliveringWebContentFaster_9.png)
 
 에지 컴퓨팅은 IoT와 웹 애플리케이션 개발에서 부상하고 있는 패러다임입니다. 사용자에 가까운 위치에 컴퓨팅 로직과 데이터를 가져오려고 노력합니다. 클라우드와 마찬가지로 글로벌 아키텍처를 추구합니다. 그러나 클라우드와 달리 응용프로그램을 위한 상태 없는 분산 컴퓨팅 성능을 추구합니다.
@@ -135,7 +135,7 @@ max-age는 초 단위로 설정됩니다. 위 예시에서는 2분 후에 캐시
 CDN 서버가 이 패러다임에 완벽하게 들어맞는 모습을 볼 수 있습니다. 이 서버들은 거의 웹 서버처럼 작동하여 클라이언트 요청에 응답하지만 많은 데이터 센터에 전 세계적으로 배치되어 정적 콘텐츠를 최대한 사용자에게 가까이 가져옵니다. CDN 서버의 근접성은 요청과 응답이 웹 페이지를 렌더링하는 데 필요한 거리를 줄이므로 전송 속도에 막대한 혜택을 제공합니다.
 
 ![CDN servers](/assets/img/2024-06-19-TheEmergingParadigmsforDeliveringWebContentFaster_10.png)
-```
+
 
 <div class="content-ad"></div>
 

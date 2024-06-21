@@ -52,7 +52,7 @@ npx pod-install ios
 ```
 
 react-native-image-picker 레포지토리에는 몇 가지 추가 설치 단계에 대한 조언이 있습니다. 그 중 일부는 다음과 같습니다:
-사용자가 사진 또는 비디오를 선택할 수 있도록 하는 경우 NSPhotoLibraryUsageDescription을 추가하세요.```
+사용자가 사진 또는 비디오를 선택할 수 있도록 하는 경우 NSPhotoLibraryUsageDescription을 추가하세요.
 
 
 

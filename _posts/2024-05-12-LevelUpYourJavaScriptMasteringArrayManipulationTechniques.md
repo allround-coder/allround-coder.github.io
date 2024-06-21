@@ -315,7 +315,7 @@ console.log(Math.round(totalCount / ages.length)); // 29
 
 every 메서드는 제공된 콜백 함수에 의해 구현된 테스트를 통과하는 배열의 모든 요소를 검증하는 데 사용됩니다.
 
-every는 모든 요소가 콜백 함수에서 지정된 조건을 충족하는 경우에만 true를 반환합니다. 콜백 함수에서 요소 중 하나라도 테스트를 통과하지 못하면 (콜백이 false를 반환하면) every는 즉시 반복을 중지하고 false를 반환합니다.```
+every는 모든 요소가 콜백 함수에서 지정된 조건을 충족하는 경우에만 true를 반환합니다. 콜백 함수에서 요소 중 하나라도 테스트를 통과하지 못하면 (콜백이 false를 반환하면) every는 즉시 반복을 중지하고 false를 반환합니다.
 
 
 
@@ -393,7 +393,7 @@ console.log(catNames); //  ["Luna", "Whiskers"]
 ```
 
 ## ToSpliced
-```
+
 
 
 

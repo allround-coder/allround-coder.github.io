@@ -11,7 +11,7 @@ link: "https://medium.com/javascript-in-plain-english/simple-trick-to-make-your-
 ---
 
 
-```
+
 ![Simple Trick To Make Your Angular Routes Semi-Typed](/assets/img/2024-05-14-SimpleTrickToMakeYourAngularRoutesSemiTyped_0.png)
 
 링크나 버튼 요소의 [routerLink] 지시문이 하드 코딩된 값을 입력받는 프로젝트를 많이 본 적이 있습니다. 예를 들어:
@@ -77,7 +77,7 @@ export const movieRoutes: MovieRoutes = {
 }
 ```
 
-또한 not-found-page.route.ts에 다음과 같은 캐치-올 route를 만들어봅시다:```
+또한 not-found-page.route.ts에 다음과 같은 캐치-올 route를 만들어봅시다:
 
 
 

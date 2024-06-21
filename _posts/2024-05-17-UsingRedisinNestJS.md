@@ -284,7 +284,7 @@ export class AppModule {}
 
 - 응답 캐싱 (속도)
 - JWT 토큰 유효성 검사 (보안)
-- 채팅을 위한 소켓 ID 저장 (속도)```
+- 채팅을 위한 소켓 ID 저장 (속도)
 
 <div class="content-ad"></div>
 

@@ -118,7 +118,7 @@ Angular에는 tap(), switchMap(), 그리고 catchError()와 같은 다양한 연
 
 # Observables 구독하기
 
-Observable이 방출하는 데이터를 사용하려면 해당 Observable을 구독해야 합니다. Observable을 구독하는 것은 이벤트 리스너를 등록하는 것과 유사하며, Observable이 방출하는 값을 받아 처리할 수 있게 해줍니다. 다음은 Observable을 구독하는 예제입니다:```
+Observable이 방출하는 데이터를 사용하려면 해당 Observable을 구독해야 합니다. Observable을 구독하는 것은 이벤트 리스너를 등록하는 것과 유사하며, Observable이 방출하는 값을 받아 처리할 수 있게 해줍니다. 다음은 Observable을 구독하는 예제입니다:
 
 <div class="content-ad"></div>
 

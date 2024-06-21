@@ -11,7 +11,7 @@ link: "https://medium.com/tech-talk-with-chatgpt/advanced-python-for-experts-20-
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-06-20-AdvancedPythonforExperts20Steps_0.png)
 
 You will find the links to 20 tutorials on this story.
@@ -22,7 +22,7 @@ You will find the links to 20 tutorials on this story.
 - The links are Friend Links, so you can read without being a Medium member.
 
 ## Tutorials
-```
+
 
 <div class="content-ad"></div>
 

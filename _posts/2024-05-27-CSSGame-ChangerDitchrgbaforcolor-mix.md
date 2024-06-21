@@ -46,7 +46,7 @@ background-color: rgba($color: $primary, $alpha: 0.6);
 
 허무하죠? 그렇죠? 그럴 준비를 하세요. 왜냐하면 color-mix()가 여러분을 구할 거예요!
 
-## 기다려봐... color-mix()는 지원돼요?```
+## 기다려봐... color-mix()는 지원돼요?
 
 <div class="content-ad"></div>
 

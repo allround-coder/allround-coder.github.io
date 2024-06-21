@@ -67,7 +67,7 @@ VSCode에서 프로젝트 열기:
 <img src="/assets/img/2024-05-12-BuildingaCustomRefreshAnimationinReactNativeusingReanimated_0.png" />
 
 의존성 설치:
-필요한 종속 항목을 설치하려면 npm install 또는 yarn을 실행하세요.```
+필요한 종속 항목을 설치하려면 npm install 또는 yarn을 실행하세요.
 
 
 
@@ -163,7 +163,7 @@ const DribbbleShots: React.FC<DribbbleShotsProps & ViewProps> = () => {
 
 이제 목록이 화면 상단까지 스크롤된 것을 감지할 수 있게 되었으므로, 다음 단계는 사용자가 목록을 더 아래로 끌 때 팬 제스처를 캡처하는 것입니다. 이를 달성하기 위해 FlatList의 부모 View에 PanResponder를 사용할 것입니다.
 
-팬 응답자(pan responder)를 생성하기 위해 React Native에서 PanResponder를 가져오세요:```
+팬 응답자(pan responder)를 생성하기 위해 React Native에서 PanResponder를 가져오세요:
 
 
 
@@ -465,7 +465,7 @@ const panResponderRef = React.useRef(
 
 ## 새로고침 작업 트리거
 
-사용자의 제스처가 끝나고 새로고침 작업 준비가 완료되면, onRefresh 함수를 호출할 것입니다. 이 함수는 하나의 매개변수를 받습니다. 해당 매개변수는 새로고침 작업이 완료된 후 애니메이션을 재설정할 done 함수입니다.```
+사용자의 제스처가 끝나고 새로고침 작업 준비가 완료되면, onRefresh 함수를 호출할 것입니다. 이 함수는 하나의 매개변수를 받습니다. 해당 매개변수는 새로고침 작업이 완료된 후 애니메이션을 재설정할 done 함수입니다.
 
 
 
@@ -632,7 +632,7 @@ const DribbbleShots: React.FC<DribbbleShotsProps & ViewProps> = () => {
 ```
 
 데이터가 아직로드 중인 동안 원치 않는 pull-down 제스처를 제어하고 방지하려면 pointerEvents 속성을 추가했습니다.
-```  
+
 
 
 
@@ -730,7 +730,7 @@ const refreshIconStyles = useAnimatedStyle(() => {
 ...
 ```
 
-이러한 마지막 손짓으로, 새로 고침 애니메이션이 기능적이면서 시각적으로 매력적으로 완성되었습니다.```
+이러한 마지막 손짓으로, 새로 고침 애니메이션이 기능적이면서 시각적으로 매력적으로 완성되었습니다.
 
 
 

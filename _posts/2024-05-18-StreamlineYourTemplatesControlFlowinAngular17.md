@@ -74,7 +74,7 @@ link: "https://medium.com/@mayankjain1394/streamline-your-templates-control-flow
 # @switch로 결정 내리기 ⚖️
 
 여러 조건에 따라 콘텐츠를 렌더링해야 하는 경우 @switch 문이 구원의 손을 내밀어줍니다:
-```  
+
 
 <div class="content-ad"></div>
 

@@ -458,7 +458,7 @@ function App() {
 - 대기 중 상태: Suspense의 대기 중 대체(fallback)로 처리됩니다.
 - 오류 상태: ErrorBoundary의 대체(fallback)로 처리됩니다.
 
-일부 분들께서는 이러한 역할 분담의 분리가 TanStack Router의 파일 기반 접근 방식과 잘 맞는다는 것을 알아채셨을 것입니다. TanStack Router에서는 각 경로(route)별로 컴포넌트, 대기 중 컴포넌트(pendingComponent) 및 오류 컴포넌트(errorComponent)를 정의할 수 있었습니다.```
+일부 분들께서는 이러한 역할 분담의 분리가 TanStack Router의 파일 기반 접근 방식과 잘 맞는다는 것을 알아채셨을 것입니다. TanStack Router에서는 각 경로(route)별로 컴포넌트, 대기 중 컴포넌트(pendingComponent) 및 오류 컴포넌트(errorComponent)를 정의할 수 있었습니다.
 
 
 
@@ -606,7 +606,7 @@ function PostComponent() {
 
 
 
-```md
+
 .
 ├── pages
 ├── components
@@ -614,13 +614,13 @@ function PostComponent() {
 │   ├── Todo.tsx // 해당 컴포넌트 라우트 훅을 사용하나요?
 │   ├── Form.tsx // ???
 │   └── Card.tsx // ???
-```
+
 
 아주 극단적인 예시라고 하더라도, 컴포넌트가 최상위 계층에 배치된 디자인에서는 어떤 라우트 훅이 어디에 사용되고 있는지를 구분하는 것이 어렵습니다.
 
 특집 기반의 디자인에 초점을 맞추면, 특정 라우트 내에서 사용되는 컴포넌트만을 고려하게 됩니다.
 
-```md
+
 .
 ├── posts
 │   ├── -components // /posts 라우트 훅이 사용됨
@@ -628,7 +628,7 @@ function PostComponent() {
 │   │   └── Form.tsx
 │   └── $postId 
 │       └── -components // /posts/$postId 라우트 훅이 사용됨
-```
+
 
 
 

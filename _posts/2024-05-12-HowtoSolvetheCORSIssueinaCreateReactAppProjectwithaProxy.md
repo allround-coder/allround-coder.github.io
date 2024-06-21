@@ -51,7 +51,7 @@ module.exports = function(app) {
 changeOrigin 옵션은 요청의 원래 호스트 이름을 볼 수 있도록 대상 서버를 활성화하는 데 true로 설정됩니다.
 
 - fetch 요청을 사용하여 /api 접두사를 업데이트하십시오:
-```
+
 
 
 

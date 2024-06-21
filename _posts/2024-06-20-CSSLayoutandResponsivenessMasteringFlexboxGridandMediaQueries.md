@@ -84,7 +84,7 @@ HTML:
 ```
 
 ## What the code displays
-```
+
 
 <div class="content-ad"></div>
 
@@ -193,7 +193,7 @@ CSS:
 
 Markdown:
 
-```markdown
+
 # Media Query Example
 
 ```css

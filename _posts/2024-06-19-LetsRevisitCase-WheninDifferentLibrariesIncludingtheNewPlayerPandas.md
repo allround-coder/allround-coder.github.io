@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/lets-revisit-case-when-in-differe
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-LetsRevisitCase-WheninDifferentLibrariesIncludingtheNewPlayerPandas_0.png)
 
 데이터 분석, 데이터 정리 또는 심지어 피처 엔지니어링을 할 때, 다른 열의 값에 기반한 새로운 열을 만드는 것은 자주 수행되는 작업입니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/lets-revisit-case-when-in-differe
 나는 데이터 정리 및 조작에 사용한 모든 도구들이 이 작업을 위한 함수를 가지고 있었다 (예: SQL, R 데이터 테이블, PySpark). 이제 우리에게 새로운 플레이어가 등장했습니다: Pandas.
 
 그런데, Pandas로 조건부 열을 만드는 것은 가능했지만, 전용 case-when 함수는 없었습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -90,7 +90,7 @@ from mytable
 
 데이터 테이블 패키지는 R 프로그래밍 언어를 위한 매우 효율적인 데이터 분석 및 조작 도구입니다.
 
-이제 이 패키지를 사용하여 조건부 열 d를 생성하는 방법을 배워보겠습니다. 먼저 SQL 테이블과 동일한 열을 포함하는 데이터 테이블을 만들어봅시다.```
+이제 이 패키지를 사용하여 조건부 열 d를 생성하는 방법을 배워보겠습니다. 먼저 SQL 테이블과 동일한 열을 포함하는 데이터 테이블을 만들어봅시다.
 
 <div class="content-ad"></div>
 

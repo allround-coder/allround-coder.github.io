@@ -238,7 +238,7 @@ app.delete("/delete/:id", async (req, res) => {
 ```
 
 위 코드에서 제품을 조작하는 네 가지 기본 라우트를 볼 수 있습니다. 프론트엔드 없이 테스트하려면 API 테스트 도구가 필요합니다. 저는 Postman(https://www.postman.com/)을 사용할 예정이지만, 다른 API 테스트 도구를 잘 알고 있다면 사용해도 좋습니다!
-```
+
 
 
 

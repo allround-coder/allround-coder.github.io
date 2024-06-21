@@ -11,7 +11,7 @@ link: "https://medium.com/@gb.usmanumar/how-to-import-data-from-excel-xlsx-in-re
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-HowtoimportdatafromExcelXLSXinReactjs_0.png)
 
 React.js 애플리케이션에서 .xlsx 파일에서 데이터를 가져오려면 JavaScript에서 엑셀 파일을 읽고 쓰는 인기 있는 라이브러리 인 xlsx 를 사용할 수 있습니다. 이 안내서에서는 React.js 애플리케이션에서 .xlsx 파일에서 데이터를 가져 오는 단계를 안내합니다.
@@ -19,7 +19,7 @@ React.js 애플리케이션에서 .xlsx 파일에서 데이터를 가져오려�
 ## 단계 1: 새로운 React.js 애플리케이션 생성
 
 아직 React.js 애플리케이션을 생성하지 않았다면 Create React App 을 사용하여 새로 만들 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

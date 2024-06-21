@@ -240,7 +240,7 @@ module.exports = router;
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-HandlingConcurrentRequeststoanAPINodejsAWS_0.png)
 
 단계
@@ -383,7 +383,7 @@ pollQueue();
 - Amazon RDS/DynamoDB: 경매 및 입찰 데이터를 처리할 데이터베이스를 설정합니다.
 - Amazon ElastiCache (Redis): 자주 액세스되는 데이터를 캐싱하여 데이터베이스 부하를 줄이기 위해 Redis를 사용합니다.
 - Amazon CloudWatch: 인프라를 모니터링하고 스케일링 이벤트를 트리거할 알림을 설정합니다.
-```
+
 
 <div class="content-ad"></div>
 

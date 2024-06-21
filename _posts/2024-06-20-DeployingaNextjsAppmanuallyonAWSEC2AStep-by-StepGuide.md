@@ -233,7 +233,7 @@ pm2 list nextjs-app
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Next.js app deployment](/assets/img/2024-06-20-DeployingaNextjsAppmanuallyonAWSEC2AStep-by-StepGuide_16.png)
 
 Next.js 애플리케이션의 기능을 확인하려면, 웹 브라우저에 EC2 인스턴스의 공용 IP와 포트 번호 3000을 입력하세요. 예를 들어, 다음 형식을 사용하세요: 0.0.0.0:3000
@@ -241,7 +241,7 @@ Next.js 애플리케이션의 기능을 확인하려면, 웹 브라우저에 EC2
 ![Next.js app deployment](/assets/img/2024-06-20-DeployingaNextjsAppmanuallyonAWSEC2AStep-by-StepGuide_17.png)
 
 nextjs-app 프로세스를 중지하려면, 아래 명령어를 사용하세요:
-```
+
 
 <div class="content-ad"></div>
 

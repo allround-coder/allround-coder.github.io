@@ -17,7 +17,7 @@ link: "https://medium.com/@manikmudholkar831995/event-loop-in-nodejs-999f6db7eb0
 
 안녕하세요! 이 글은 저의 고급 NodeJS 기술자를 위한 시리즈의 세 번째 글입니다. 이 글에서는 노드JS의 이벤트 루프가 무엇이며, 왜 그리고 어떻게 작동하는지에 대해 자세히 설명하고 있습니다. 아래에서 고급 NodeJS 기술자 시리즈의 다른 글들을 찾아볼 수 있어요:
 
-```markdown
+
 글 시리즈 로드맵
 
 * V8 JavaScript 엔진
@@ -27,11 +27,11 @@ link: "https://medium.com/@manikmudholkar831995/event-loop-in-nodejs-999f6db7eb0
 * 자식 프로세스: NodeJS에서의 멀티태스킹
 * 클러스터링과 PM2: NodeJS에서의 멀티태스킹
 * 흔한 NodeJS 오해들을 해소
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 차례
 
 - Node.js에서의 이벤트 루프
@@ -47,14 +47,14 @@ link: "https://medium.com/@manikmudholkar831995/event-loop-in-nodejs-999f6db7eb0
   - process.nextTick 중첩
   - process.nextTick 프로미스 및 setTimeout
   - IO, process.nextTick 프로미스 및 setTimeout setImmediate
-```
+
 
 이 글에서는 Event Loop에 대해 깊이 설명하겠습니다. 따라서 초보자라도 이해하기 쉽게 했습니다. 자바스크립트를 배우기 시작할 때 이벤트 루프는 매우 추상적이며 이러한 개념들로 Node.js로 넘어가면 오해하기 쉬울 수 있습니다. 게다가 인터넷에는 많은 잘못된 다이어그램이 있습니다.
 
 # Node.js에서의 이벤트 루프
 
 ![Event Loop in Nodejs](https://miro.medium.com/v2/resize:fit:1080/1*17w5J0pMc9Ae49wztRWHhw.gif)
-```
+
 
 <div class="content-ad"></div>
 
@@ -254,7 +254,7 @@ console.log('third');
 
 <div class="content-ad"></div>
 
-```markdown
+
 첫 번째
 세 번째
 두 번째
@@ -321,7 +321,7 @@ console.log('second');
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 첫 번째
 두 번째

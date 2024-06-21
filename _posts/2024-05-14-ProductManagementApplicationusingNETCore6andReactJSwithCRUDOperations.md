@@ -251,7 +251,7 @@ namespace ProductManagementAPI.Controllers
 
 7단계
 
-앱 설정 파일을 열어 데이터베이스 연결 문자열을 추가하세요.```
+앱 설정 파일을 열어 데이터베이스 연결 문자열을 추가하세요.
 
 
 

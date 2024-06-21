@@ -59,7 +59,7 @@ span {
 ## CSS 배경 이미지로 이미지 추가하기
 
 CSS의 background-image 속성을 사용하면 어떤 요소든 멋진 이미지를 표현할 수 있습니다. 단순히 이미지 파일의 경로를 제공하면 요소의 배경에 이미지가 나타납니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -185,37 +185,37 @@ background-size 속성을 사용하면 배경 이미지가 요소 내에 어떻�
 
 <div class="content-ad"></div>
 
-```markdown
+
 .box {
   background-image: url(star.png);
   background-repeat: no-repeat;
   background-position: top center;
 }
-```
 
-```markdown
+
+
 .box {
   background-image: url(star.png);
   background-repeat: no-repeat;
   background-position: 20px 10%;
 }
-```
 
-```markdown
+
+
 .box {
   background-image: url(star.png);
   background-repeat: no-repeat;
   background-position: 20px top;
 }
-```
 
-```markdown
+
+
 .box {
   background-image: url(star.png);
   background-repeat: no-repeat;
   background-position: top 20px right 10px;
 }
-```
+
 
 <div class="content-ad"></div>
 
@@ -243,7 +243,7 @@ background-size 속성을 사용하면 배경 이미지가 요소 내에 어떻�
 
 ## 그라디언트 배경의 힘을 발휘해보세요
 
-단조로운 색상에 지쳤나요? 그라디언트는 귀하의 웹사이트에 화려한 전환을 더할 수 있습니다! 그라디언트는 배경 이미지처럼 작동하며 익숙한 background-image 속성을 사용하여 설정됩니다.``` 
+단조로운 색상에 지쳤나요? 그라디언트는 귀하의 웹사이트에 화려한 전환을 더할 수 있습니다! 그라디언트는 배경 이미지처럼 작동하며 익숙한 background-image 속성을 사용하여 설정됩니다. 
 
 <div class="content-ad"></div>
 
@@ -436,7 +436,7 @@ h2 {
 
 ## 꼭지각형으로 모양 만들기
 
-border-radius 속성을 사용하면 상자의 모서리를 둥글게 형성할 수 있습니다. 곡률을 정의하는 shorthand와 longhand 옵션이 모두 제공됩니다.```
+border-radius 속성을 사용하면 상자의 모서리를 둥글게 형성할 수 있습니다. 곡률을 정의하는 shorthand와 longhand 옵션이 모두 제공됩니다.
 
 <div class="content-ad"></div>
 

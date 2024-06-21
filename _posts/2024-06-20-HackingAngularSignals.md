@@ -70,7 +70,6 @@ double(8) // 16
 
 또는 Proxy 객체를 만들어서 요청된 메서드를 가지고 있지 않은 Signal에 대해서만 Observable의 메서드를 반환할 수 있습니다:
 
-```typescript
 export function toObservableSignal<T>(s: Signal<T>) {
 
   const obs = toObservable(s, options); 
@@ -84,13 +83,11 @@ export function toObservableSignal<T>(s: Signal<T>) {
     }
   });
 }
-```
 
 <div class="content-ad"></div>
 
 아래는 사용 예시입니다:
 
-```js
 @Component({
   //...
   template: `
@@ -126,7 +123,6 @@ export class App {
     this.a.update((v) => Math.max(1, v - 1));
   }
 }
-```
 
 NG Extension Platform에서 이 기능을 찾을 수 있습니다. 
 
@@ -138,7 +134,6 @@ NG Extension Platform에서 이 기능을 찾을 수 있습니다.
 
 저희 Signal에 값을 입력 변환하거나 다른 곳에 정보를 복제하거나 디버깅을 위해 쓰기를 중간에서 가로채고 싶다고 가정해 봅시다.
 
-```js
 function skipNonEvenNumbers(s: WritableSignal<number>) {
   const srcSet = s.set; // 재귀를 피하기 위해 소스 메서드가 필요합니다
 
@@ -160,7 +155,6 @@ function skipNonEvenNumbers(s: WritableSignal<number>) {
     srcSet(value);
   };
 }
-```
 
 사용 예시:
 
@@ -176,7 +170,6 @@ Angular 시그널은 단순히 함수가 아니라 객체입니다. 이 객체�
 
 <div class="content-ad"></div>
 
-```js
 // packages/core/primitives/signals/src/graph.ts
 
 export const REACTIVE_NODE: ReactiveNode = {
@@ -196,11 +189,9 @@ export const REACTIVE_NODE: ReactiveNode = {
   consumerMarkedDirty: () => {},
   consumerOnSignalRead: () => {},
 };
-```
 
 이렇게:
 
-```js
 // packages/core/primitives/signals/src/signal.ts
 
 export const SIGNAL_NODE = {
@@ -208,7 +199,6 @@ export const SIGNAL_NODE = {
   equal: defaultEquals,
   value: undefined,
 }
-```
 
 하지만 실제로 Signal 객체가 인스턴스화되면 이들이 모두 직접적으로 포함되지 않습니다. 모두 Symbol을 이름으로 사용하는 필드 아래에 숨겨져 있습니다:
 ```
@@ -237,7 +227,7 @@ export function createSignal<T>(initialValue: T): SignalGetter<T> {
 어떻게 사용할 수 있을까요?
 
 우리는 필드를 읽고 액세스를 가로채어 디버깅에 사용하거나 Signal 내부에서 무슨 일이 일어나는지를 설명하는 멋진 도구를 생성하는 데 사용할 수 있습니다. 종속성 그래프를 렌더링할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

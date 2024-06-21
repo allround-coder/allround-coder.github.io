@@ -11,7 +11,7 @@ link: "https://medium.com/@dgongoragamboa/how-to-create-an-angular-project-from-
 ---
 
 
-```markdown
+
 ![Angular Project](/assets/img/2024-06-20-HowtoCreateanAngularProjectfromScratch_0.png)
 
 Angular은 강력하고 확장 가능한 웹 애플리케이션을 구축할 수 있는 널리 사용되는 웹 개발 프레임워크입니다. Angular에 처음이신 분들을 위해 스크래치에서 자체 프로젝트를 개발하기 시작하고 싶다면, 이 기사가 필요한 단계를 안내해 드립니다. 새 프로젝트를 설정하고, 컴포넌트를 생성하고, 라우트를 구현하는 방법 등을 배우게 될 것입니다. 시작해 봅시다!
@@ -19,7 +19,7 @@ Angular은 강력하고 확장 가능한 웹 애플리케이션을 구축할 수
 Read this article in Spanish: Crear un proyecto en Angular | Medium
 
 # Prerequisites
-```
+
 
 <div class="content-ad"></div>
 
@@ -116,7 +116,7 @@ export class AppRoutingModule { }
 
 # 단계 7: 컴포넌트에 내용 추가하기
 
-이제 새롭게 생성한 컴포넌트에 내용을 추가할 수 있습니다. 컴포넌트 파일 (component-name.component.ts, component-name.component.html, 그리고 component-name.component.css)을 열고 필요에 맞게 사용자 정의하세요. 텍스트, 이미지, 링크 등을 추가할 수 있습니다.```  
+이제 새롭게 생성한 컴포넌트에 내용을 추가할 수 있습니다. 컴포넌트 파일 (component-name.component.ts, component-name.component.html, 그리고 component-name.component.css)을 열고 필요에 맞게 사용자 정의하세요. 텍스트, 이미지, 링크 등을 추가할 수 있습니다.  
 
 <div class="content-ad"></div>
 

@@ -44,7 +44,7 @@ link: "https://medium.com/gitconnected/jupyter-lab-ide-basics-with-typescript-an
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![JupyterLab IDE Basics](/assets/img/2024-06-20-JupyterLabIDEbasicswithTypescriptandDeno_1.png)
 
 “File browser”에서 원본 파일을 열고 편집할 수 있습니다. “File browser”의 루트 디렉터리는 Jupyter Lab을 시작한 디렉터리입니다.
@@ -52,7 +52,7 @@ link: "https://medium.com/gitconnected/jupyter-lab-ide-basics-with-typescript-an
 “File browser” 위에 있는 플러스 아이콘 버튼은 “Launcher”입니다. 새 노트북, 텍스트 파일, 터미널, 콘솔 및 기타 도구를 생성할 수 있는 바로 가기를 제공합니다:
 
 ![Launcher](/assets/img/2024-06-20-JupyterLabIDEbasicswithTypescriptandDeno_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -135,7 +135,7 @@ Deno에는 https://deno.land/std에서 사용 가능한 표준 라이브러리�
 import { escape } from "https://deno.land/std@0.224.0/html/mod.ts";
 ```
 
-또한 Deno에는 서드 파티 모듈을 위한 저장소가 https://deno.land/x에 있습니다. html() 함수를 가져오려면 다음을 사용하세요:```
+또한 Deno에는 서드 파티 모듈을 위한 저장소가 https://deno.land/x에 있습니다. html() 함수를 가져오려면 다음을 사용하세요:
 
 <div class="content-ad"></div>
 
@@ -149,7 +149,7 @@ Deno는 npm 모듈을 npm: 접두사를 사용하여 가져올 수 있습니다.
 import { z } from "npm:zod";
 ```
 
-# 결과 셀에 입력하는 방법```
+# 결과 셀에 입력하는 방법
 
 <div class="content-ad"></div>
 

@@ -110,7 +110,7 @@ console.log(selectTotal(exampleState)) // { total: 2.322 }
 
 Reselect는 Redux에만 한정되지 않으나, 공식 Redux Toolkit 패키지에 이미 기본으로 포함되어 있습니다. 추가 설치가 필요하지 않습니다.
 
-# 3. SWR 사용하기 - 데이터 패치용 리액트 훅스 라이브러리```
+# 3. SWR 사용하기 - 데이터 패치용 리액트 훅스 라이브러리
 
 
 

@@ -80,7 +80,7 @@ protected readonly user$: Observable<UserResponse | 'loading' | 'error'> =
   );
 ```
 
-컴포넌트의 마크업에서는 Asynchronous State Handler의 현재 유형을 결정하기 위해 협소화(narrowing)를 사용할 수 있습니다. 이는 순수 TypeScript와 거의 유사합니다. 사용자 Observable에 구독하여 초기 가져오기를 초기화하고, 구독 취소로도 중지할 수 있습니다. Angular의 비동기 파이프(async pipe) 덕분에 사용자 Observable을 수동으로 구독하고 취소할 필요가 없습니다. 컴포넌트가 렌더링된 후 자동으로 구독하며, 컴포넌트가 파괴될 때 HTTP 요청을 취소할 수도 있습니다.```
+컴포넌트의 마크업에서는 Asynchronous State Handler의 현재 유형을 결정하기 위해 협소화(narrowing)를 사용할 수 있습니다. 이는 순수 TypeScript와 거의 유사합니다. 사용자 Observable에 구독하여 초기 가져오기를 초기화하고, 구독 취소로도 중지할 수 있습니다. Angular의 비동기 파이프(async pipe) 덕분에 사용자 Observable을 수동으로 구독하고 취소할 필요가 없습니다. 컴포넌트가 렌더링된 후 자동으로 구독하며, 컴포넌트가 파괴될 때 HTTP 요청을 취소할 수도 있습니다.
 
 <div class="content-ad"></div>
 
@@ -122,7 +122,7 @@ export function toAsynchronousStateHandler<T, R>(
 ```
 
 프로필 구성요소에서는 값을 발행할 수 있는 표준 Subject를 사용하고 있습니다. 이를 연산자에 전달하고 해당 Subject의 next() 함수를 사용하여 다시 가져오기를 트리거할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -150,7 +150,7 @@ protected onRefetch() {
 쥬닷오 치우의 병렬 데이터 가져오기 섹션을 읽어보시면 이 패턴의 일반적인 아이디어를 이해할 수 있습니다.
 
 이름 그대로, 병렬 데이터 가져오기 패턴은 데이터를 병렬로 가져오는 것을 다룹니다. 이를 통해 요청 폭포를 줄일 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -262,13 +262,13 @@ export const routes: Routes = [
 
 위의 표는 Markdown 형식으로 변경하였습니다.
 
-```markdown
+
 | Lazy chunk files  | Names            | Raw size  |
 | ----------------- | ----------------- | --------- |
 | chunk-OQXIE7JX.js | profile-component | 6.70 kB   | 
 | chunk-FX2UNWRV.js | albums-component  | 4.96 kB   | 
 | chunk-REKZS4LG.js | -                 | 500 bytes |
-```
+
 
 기본적으로 Angular 라우터가 청크의 지연 로드를 수행할 때 특별한 표시가 없습니다. 사용자 경험을 향상시키기 위해 어플리케이션의 루트 수준에 일부 로딩 표시기를 표시하는 것이 유용할 수 있습니다. Angular 라우터는 지연 로드가 시작되거나 끝날 때 두 가지 특정 이벤트를 제공합니다.
 
@@ -366,7 +366,7 @@ chunk-REKZS4LG.js   | -                  | 500 bytes |
 # 사전로드
 
 Juntao Qiu의 사전로드 섹션을 읽어 이 패턴의 일반적인 아이디어를 이해해보세요.
-```
+
 
 <div class="content-ad"></div>
 

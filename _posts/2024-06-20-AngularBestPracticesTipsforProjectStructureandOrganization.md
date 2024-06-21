@@ -168,7 +168,7 @@ Angular Module은 관련 기능을 그룹화하고 정리하는 개념입니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Shared Module](/assets/img/2024-06-20-AngularBestPracticesTipsforProjectStructureandOrganization_8.png)
 
 큰 애플리케이션 작업 시 공유 모듈이 더 유용합니다. 이는 애플리케이션의 번들 크기와 초기 빌드 시간을 줄이고 성능을 향상하기 위해 애플리케이션의 지연 로딩을 고려할 때 더 유용합니다. 공유 모듈은 애플리케이션의 다른 모듈에 의존해서는 안 됩니다.
@@ -176,7 +176,7 @@ Angular Module은 관련 기능을 그룹화하고 정리하는 개념입니다.
 참고: 여기서 서비스를 정의해서는 안 됩니다. 공유 모듈은 어디서든 가져오기(import) 때문에 지연 로딩된 모듈에서 가져오면 서비스의 새 인스턴스가 생성될 수 있습니다.
 
 ## 기능 모듈
-```
+
 
 <div class="content-ad"></div>
 

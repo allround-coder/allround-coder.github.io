@@ -118,7 +118,7 @@ This is the controller file which is used to load the news and sort them. As you
 
 <div class="content-ad"></div>
 
-```md
+
 #set($class = ${NAME})
 #set($class_start = $class.substring(0,1).toUpperCase())
 #set($class_rest = $class.substring(1).toLowerCase())
@@ -139,11 +139,11 @@ class _${class}Screen extends ${class}Controller {
     return Container();
   }
 }
-```
+
 
 7. 메인 파일 아래에 다음 코드와 함께 자식 템플릿 파일을 만듭니다.
 
-```md
+
 #set($class = ${NAME})
 #set($class_start = $class.substring(0,1).toUpperCase())
 #set($class_rest = $class.substring(1).toLowerCase())
@@ -165,7 +165,7 @@ abstract class ${class}Controller extends State<${class}Screen> {
     super.dispose();
   }
 }
-```
+
 
 8. 자식 템플릿 파일을 '$'NAME'_controller.dart'로 명명하고 확장자는 이전과 동일한 dart로 설정합니다.
   

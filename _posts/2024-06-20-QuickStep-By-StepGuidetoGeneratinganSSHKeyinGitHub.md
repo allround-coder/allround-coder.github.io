@@ -131,7 +131,7 @@ less id_rsa.pub
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Step 6](/assets/img/2024-06-20-QuickStep-By-StepGuidetoGeneratinganSSHKeyinGitHub_6.png)
 
 ## Open the Tab “SSH and GFG Keys”
@@ -139,11 +139,11 @@ less id_rsa.pub
 ![Step 7](/assets/img/2024-06-20-QuickStep-By-StepGuidetoGeneratinganSSHKeyinGitHub_7.png)
 
 ## Create a “NEW SSH KEY”
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![QuickStep-By-StepGuidetoGeneratinganSSHKeyinGitHub_8](/assets/img/2024-06-20-QuickStep-By-StepGuidetoGeneratinganSSHKeyinGitHub_8.png)
 
 The screen shown below will pop up.
@@ -151,7 +151,7 @@ The screen shown below will pop up.
 ![QuickStep-By-StepGuidetoGeneratinganSSHKeyinGitHub_9](/assets/img/2024-06-20-QuickStep-By-StepGuidetoGeneratinganSSHKeyinGitHub_9.png)
 
 Give your SSH key a meaningful title. I called mine ASUS LAPTOP.
-```
+
 
 <div class="content-ad"></div>
 

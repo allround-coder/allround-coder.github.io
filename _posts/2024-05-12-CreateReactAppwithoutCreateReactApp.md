@@ -11,7 +11,7 @@ link: "https://medium.com/bitsrc/create-react-app-without-create-react-app-b0a58
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-05-12-CreateReactAppwithoutCreateReactApp_0.png)
 
 이 기사는 "create-react-app", "NextJS" 등의 라이브러리 또는 프레임워크를 사용하지 않고 리액트 앱을 만드는 과정에 대해 이야기합니다.
@@ -21,7 +21,7 @@ link: "https://medium.com/bitsrc/create-react-app-without-create-react-app-b0a58
 - Webpack — 코드를 하나의 파일로 번들링하는 데 도움을 줍니다.
 - Babel — ECMAScript 2015+ (ES6+) 코드를 이전 JavaScript 엔진에서 실행할 수 있는 하위 호환 버전으로 변환하는 데 사용됩니다.
 - Node.js — 노드 설치, package.json 생성 및 npm을 사용하여 노드 모듈 설치
-```
+
 
 
 

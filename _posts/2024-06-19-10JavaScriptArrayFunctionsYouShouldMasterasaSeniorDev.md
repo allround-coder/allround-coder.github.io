@@ -301,10 +301,9 @@ try {
 
 아래는 마크다운 형식의 코드입니다.
 
-```markdown
+
 You’ll be able to create code that is easier to understand, more efficient, and more flexible, letting you work with data more effortlessly.
 
 ![Image 1](/assets/img/2024-06-19-10JavaScriptArrayFunctionsYouShouldMasterasaSeniorDev_1.png)
 
 ![Image 2](/assets/img/2024-06-19-10JavaScriptArrayFunctionsYouShouldMasterasaSeniorDev_2.png)
-```

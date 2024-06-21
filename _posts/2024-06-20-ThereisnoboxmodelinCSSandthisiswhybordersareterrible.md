@@ -52,7 +52,7 @@ CSS "박스" 모델의 핵심에는 세 가지 개념이 있습니다: 마진 "�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*ayv0dXb1OsnY0qv6EaxxUQ.gif)
 
 아래는 이를 달성하는 코드입니다.:
@@ -89,7 +89,7 @@ Stack(
 ```
 
 이는 일반적이고 상대적으로 간단한 레이아웃 상황입니다: 동일한 크기의 두 버튼을 만들어 호버 시 2px 폭의 검은 실선 테두리를 추가합니다. border-box를 사용하면 버튼 내부의 레이아웃이 깨지고 content-box를 사용하면 주변에 레이아웃이 깨집니다. 이보다 더 기본적인 예제를 찾기 어려울 것이며, 심지어 여기서도 "box" 모델이 완전히 붕괴됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -128,7 +128,7 @@ Stack(
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-20-ThereisnoboxmodelinCSSandthisiswhybordersareterrible_4.png)
 
 이 모델에서는 테두리(border)를 inset/inside 또는 outset/outside로 설정해도 실제 내용 위에 다른 레이어로 렌더링됩니다. 테두리는 레이아웃에 영향을 미치지 않아야 합니다.
@@ -136,7 +136,7 @@ Stack(
 ## 결과
 
 이 접근 방식을 사용하면 단일하고 명확한 요소 크기를 얻을 수 있으며, 레이아웃에 영향을 주지 않고 테두리를 어떤 방식으로든 변경할 수 있습니다. 심지어 테두리를 제대로 정렬할 수도 있습니다. 갑자기 모든 해킹, box-sizing 및 content-box와 같은 불필요한 개념이 완전히 워크플로우에서 제거되고 이제 Box Model이라는 이름도 약간 더 의미를 갖게 됩니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -199,7 +199,7 @@ def generate_training(db, bm25_r, QA_PROMPT, llm) -> None:
 
 ## 2.3 main 함수
 
-이 함수에서 두 함수에서 사용하는 여러 개의 공통 개체가 인스턴스화됩니다. 먼저 프롬프트 템플릿이 정의됩니다. 그런 다음 LlamaCpp를 사용하여 4비트 Mistral 7B Instruct 모델을 GGUF 형식으로 로드합니다. 그런 다음 pdf 문서를 벡터화하고 해당 FAISS 객체에 대한 참조 및 BM25 검색기를 얻습니다.```
+이 함수에서 두 함수에서 사용하는 여러 개의 공통 개체가 인스턴스화됩니다. 먼저 프롬프트 템플릿이 정의됩니다. 그런 다음 LlamaCpp를 사용하여 4비트 Mistral 7B Instruct 모델을 GGUF 형식으로 로드합니다. 그런 다음 pdf 문서를 벡터화하고 해당 FAISS 객체에 대한 참조 및 BM25 검색기를 얻습니다.
 
 <div class="content-ad"></div>
 

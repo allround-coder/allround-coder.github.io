@@ -95,7 +95,7 @@ print('3개 이상의 환불이 일어날 확률:',
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-20-AppliedstatsprobabilitydistributionsBinomial_2.png)
 
 예시를 확장해서 X=1, X=2, X=3, …, X=50 성공 시 확률을 정확히 계산해보자. 이를 위해 단순히 확률질량함수를 사용하면 된다. 왜냐하면 이는 이산형 변수이기 때문이다.
@@ -122,7 +122,7 @@ fig.show()
 ```
 
 이 코드는 기사 초반에 보았던 그래프를 나타낼 것입니다. 빠르고 매우 유용하죠?
-```
+
 
 <div class="content-ad"></div>
 

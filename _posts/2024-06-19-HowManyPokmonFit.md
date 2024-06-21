@@ -186,7 +186,7 @@ prob += pulp.lpSum(x[i] for i in range(len(pokemon_data))) == 6, "팀 크기"
 
 아래와 같이 Markdown 형식으로 변경할 수 있습니다:
 
-```markdown
+
 The defined problem can be solved simply by:
 
 ```js
@@ -196,7 +196,7 @@ prob.solve()
 … which returns ‘1’, meaning that the status of our problem is ‘LpStatusOptimal’, meaning the problem has an optimal solution. prob.solve() may also return other outputs, as for instance ‘-1’ (LpStatusInfeasible), meaning that there is no feasible solution for the problem given the constraints, or ‘-2’ (LpStatusUnbounded), indicating that the solution is unbounded.
 
 In any case, given that our problem has an optimal solution, we can display it by:
-```
+
 
 <div class="content-ad"></div>
 

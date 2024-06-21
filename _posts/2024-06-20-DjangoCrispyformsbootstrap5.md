@@ -42,7 +42,7 @@ link: "https://medium.com/@azzouzhamza13/django-crispy-forms-bootstrap5-00a1eb3e
 - Django 템플릿에서 사용되는 템플릿 태그 구문입니다.
 - 폼을 렌더링하기 위해 명시적으로 crispy 템플릿 태그를 포함하는 데 사용됩니다.
 - 추가 옵션을 지정하고 렌더링 동작을 사용자 정의할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -143,7 +143,7 @@ def __init__(self, *args, **kwargs):
 
 <div class="content-ad"></div>
 
-```md
+
         self.helper = FormHelper(self)
         self.helper.layout = Layout(
         Row(
@@ -161,14 +161,14 @@ def __init__(self, *args, **kwargs):
         ),
 .......
 .......
-```
+
 
 ![이미지](/assets/img/2024-06-20-DjangoCrispyformsbootstrap5_1.png)
 
 forms.py에서 필드를 재정의한 후:
 
 ![이미지](/assets/img/2024-06-20-DjangoCrispyformsbootstrap5_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -195,7 +195,7 @@ Django Crispy-Forms에서 css_class 및 wrapper_class는 양식 필드의 스타
 
 테이블 태그를 마크다운 형식으로 변경해주세요.
 
-```markdown
+
 | css_class:                                              |
 | ------------------------------------------------------- |
 | - 이 속성은 개별 폼 필드에 적용되며, HTML 입력 요소의 CSS 클래스를 지정합니다. |

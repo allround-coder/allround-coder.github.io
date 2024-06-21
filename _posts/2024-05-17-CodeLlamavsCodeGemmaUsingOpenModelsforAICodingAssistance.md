@@ -279,7 +279,7 @@ sgpt "로컬 파일을 표시하는 명령어를 작성해주세요"
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*xTTNTI0Ykh8NGuqkIpwLVg.gif)
 
-더 개선할 공간이 있습니다. 예를 들어, "문서 폴더의 크기 표시하기" 프롬프트에 대한 ```du -sh ~/Documents``` 응답이 반환됩니다. 이것은 올바른 bash 명령어입니다. 그러나 ShellGPT는 ``` 문자열에서 해당 명령을 가져오지 못했고 "명령을 찾을 수 없음" 오류만 받았습니다.
+더 개선할 공간이 있습니다. 예를 들어, "문서 폴더의 크기 표시하기" 프롬프트에 대한 du -sh ~/Documents 응답이 반환됩니다. 이것은 올바른 bash 명령어입니다. 그러나 ShellGPT는  문자열에서 해당 명령을 가져오지 못했고 "명령을 찾을 수 없음" 오류만 받았습니다.
 
 <div class="content-ad"></div>
 
@@ -337,7 +337,7 @@ root.mainloop()
 
 <img src="/assets/img/2024-05-17-CodeLlamavsCodeGemmaUsingOpenModelsforAICodingAssistance_4.png" />
 
-결과가 적절하게 나와 요청한 애플리케이션이 예상대로 작동했습니다.```
+결과가 적절하게 나와 요청한 애플리케이션이 예상대로 작동했습니다.
 
 <div class="content-ad"></div>
 

@@ -211,7 +211,7 @@ frontend/App.module.css:
 }
 ```
 
-frontend/main.jsx:```
+frontend/main.jsx:
 
 
 

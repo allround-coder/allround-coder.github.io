@@ -171,7 +171,7 @@ _ = save(obj, pathlib.Path("file.csv")
 save(obj, pathlib.Path("file.csv")
 ```
 
-이 접근 방식이 마음에 들지 않는 이유는 save() 함수가 아무것도 반환하지 않는 것처럼 보이기 때문입니다. 함수의 출력을 무시하는 경우는 항상 None을 반환할 때뿐이라고 생각합니다.```
+이 접근 방식이 마음에 들지 않는 이유는 save() 함수가 아무것도 반환하지 않는 것처럼 보이기 때문입니다. 함수의 출력을 무시하는 경우는 항상 None을 반환할 때뿐이라고 생각합니다.
 
 <div class="content-ad"></div>
 

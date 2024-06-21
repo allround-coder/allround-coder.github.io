@@ -95,7 +95,7 @@ npm install express dotenv bcrypt jsonwebtoken concurrently memory-cache
 - concurrently: 단일 터미널에서 여러 npm 스크립트를 동시에 실행할 수 있게 하는 Node.js 유틸리티입니다.
 - memory-cache: Node.js를 위한 간단한 메모리 캐싱 라이브러리로, 데이터를 메모리에 저장하여 빠르게 액세스하고 검색할 수 있는 방법을 제공합니다.
 
-## 이러한 종속성들에 대한 TypeScript 타입 정의 설치:```  
+## 이러한 종속성들에 대한 TypeScript 타입 정의 설치:  
 
 <div class="content-ad"></div>
 
@@ -197,7 +197,7 @@ step-by-step
 concurrently를 사용하여 "tsc -w" 및 "nodemon build/index.js"를 동시에 실행하므로 앱을 실행하려면 npm run start:dev를 실행하면 ts 파일을 js로 컴파일한 다음 nodemon을 실행할 것입니다.
 
 # src/index.ts
-```
+
 
 <div class="content-ad"></div>
 
@@ -397,7 +397,7 @@ export class encrypt {
 
 # Error Handling
 
-src/middlewares/error.middleware.ts에서 전역 오류 처리 미들웨어를 설정해보세요.```
+src/middlewares/error.middleware.ts에서 전역 오류 처리 미들웨어를 설정해보세요.
 
 <div class="content-ad"></div>
 
@@ -499,7 +499,7 @@ export class UserResponce {
 
 API 응답에서 사용자 데이터의 사용자 정의가 필요한 시나리오에서는 user.dto.ts 파일을 활용할 수 있습니다. 응답으로 보낼 원하는 형식에 맞는 UserDTO 인터페이스의 구조를 정의한 후 응답으로 보내세요.
 
-이 접근 방식은 API 응답을 특정 요구 사항에 맞게 유연하게 조정하여 응용 프로그램의 상호 운용성과 효율성을 향상시킵니다.```
+이 접근 방식은 API 응답을 특정 요구 사항에 맞게 유연하게 조정하여 응용 프로그램의 상호 운용성과 효율성을 향상시킵니다.
 
 <div class="content-ad"></div>
 
@@ -557,7 +557,7 @@ UserResponse 클래스가 UserController 파일로 올바르게 가져와지고 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ## 사용자 컨트롤러 (src/controllers/user.controller.ts)
 
 ```js
@@ -631,7 +631,7 @@ export class UserController {
 ```
 
 # 영화 컨트롤러 (src/controllers/movie.controller.ts)
-```
+
 
 <div class="content-ad"></div>
 
@@ -716,7 +716,7 @@ export class MovieController {
 
 src/routes/user.routes.ts 파일에 사용자 관리와 관련된 라우트를 정의하십시오:
 
-라우트는 웹 애플리케이션 내에서 클라이언트가 다양한 작업을 수행하거나 특정 리소스를 요청할 수 있는 특정 URL 또는 엔드포인트를 가리킵니다. 라우트는 수신된 HTTP 요청에 대한 웹 애플리케이션이 응답하는 방식을 정의하는 데 중요한 요소입니다.```
+라우트는 웹 애플리케이션 내에서 클라이언트가 다양한 작업을 수행하거나 특정 리소스를 요청할 수 있는 특정 URL 또는 엔드포인트를 가리킵니다. 라우트는 수신된 HTTP 요청에 대한 웹 애플리케이션이 응답하는 방식을 정의하는 데 중요한 요소입니다.
 
 <div class="content-ad"></div>
 

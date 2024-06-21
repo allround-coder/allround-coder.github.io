@@ -279,7 +279,7 @@ dbg!(nums);     // 이 코드는 오류를 발생시킵니다.
 dbg!(doubles);
 ```
 
-위 코드는 오류가 발생합니다. 왜냐하면 into_iter 메서드는 "소비형 반복자(consuming iterator)"를 생성하는데, 다시 말해 nums로부터 소유권을 가져와 doubles에게 주기 때문입니다. 그렇기 때문에 doubles를 만든 후에는 dbg!(nums)를 호출할 수 없습니다.```
+위 코드는 오류가 발생합니다. 왜냐하면 into_iter 메서드는 "소비형 반복자(consuming iterator)"를 생성하는데, 다시 말해 nums로부터 소유권을 가져와 doubles에게 주기 때문입니다. 그렇기 때문에 doubles를 만든 후에는 dbg!(nums)를 호출할 수 없습니다.
 
 
 

@@ -60,7 +60,7 @@ try {
 
 # 구현 세부 사항
 
-여기 클라이언트 측 JavaScript를 사용하여 "유니코드 문제"를 해결하기 위한 2가지 가능한 방법이 있습니다. 양 구현 모두 아래의 헬퍼 함수 convertBitArrtoB64 및 convertB64ToBitArr가 포함되어야 한다는 점을 유의하십시오:```
+여기 클라이언트 측 JavaScript를 사용하여 "유니코드 문제"를 해결하기 위한 2가지 가능한 방법이 있습니다. 양 구현 모두 아래의 헬퍼 함수 convertBitArrtoB64 및 convertB64ToBitArr가 포함되어야 한다는 점을 유의하십시오:
 
 
 

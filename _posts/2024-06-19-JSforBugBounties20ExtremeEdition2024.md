@@ -58,9 +58,9 @@ dialogs540f334e628dbce748a8js navigation_secondary55dfd8fe215f8edecd48js dialogs
 위의 명령어를 사용하여 새로운 대상에 대한 단어 목록을 사용할 수 있습니다.
 
 하는 방법은 다음과 같습니다:
-```
+
 waybackurls "site.com" | grep -Eo 'https?://[^/]+/[^"]+\.js' | sed 's|^https\?://[^/]\+/||' | awk -F '/' 'print $NF'
-```
+
 
 명령어의 각 부분을 살펴보겠습니다:
 
@@ -103,18 +103,18 @@ curl -s https://app.site.com/config.js |
 grep -E “environment: ‘Production’|storageUrl: ‘https://buildxact.blob.core.windows.net/’|googleApiKey: ‘|appInsightsInstrumentationKey: ‘|globalApiEndpoint: ‘|streamChatApiKey: ‘|auth0ClientId: ‘|auth0Domain: ‘|flatfileApiKey: ‘|webSpellCheckerServiceId: ‘|webSpellCheckerServiceUrl: ‘|clientPortalUrl: ‘|appVersion: ‘|appVersionDate: ‘|appDomainUrl: ‘|oneBuildKey: ‘|flatfilePlatformPublishableKey: ‘|flatfilePlatformEnvironmentId: ‘“ |
 sed “s/.*’\([^']*\)’.*/\1/”
 
-```markdown
+
 We can add the words which we think are sensitive here:
 
 Example:
-```
+
 
 
 <div class="content-ad"></div>
 
 아래는 Markdown 형식의 표입니다.
 
-```markdown
+
 | 변수명                           | 값                   |
 |------------------------------------|---------------------|
 | ANACONDA_TOKEN                    |                     |
@@ -159,7 +159,7 @@ Example:
 | ARTIFACTS_SECRET                  |                     |
 | ASSISTANT_IAM_APIKEY              |                     |
 | ASYNC_MQ_APP_SECRET               |                     |
-``` 
+
 
 JS URL을 얻으면 nuclei 노출 태그를 사용하여 더 많은 민감한 정보를 얻을 수 있습니다.
 
@@ -168,7 +168,7 @@ js.txt 파일에서 노출 태그를 사용하여 Nuclei 명령을 실행하려�
 ```bash
 nuclei -l js.txt -t ~/nuclei-templates/exposures/ -o js_exposures_results.txt
 ``` 
-```
+
 
 <div class="content-ad"></div>
 

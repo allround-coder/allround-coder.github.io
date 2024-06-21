@@ -179,7 +179,7 @@ TypeScript가 실시간 버그 피드백을 제공한다는 주장도 있겠지�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-TheTypeScriptTax_9.png)
 
 일부 사람들은 정적 타입이 있다면 많은 테스트를 작성할 필요가 없다고 말합니다. 이들은 어리석은 주장을 하는 중입니다. 정말 아무 대결도 아닙니다. TypeScript를 사용하더라도 다른 조치들이 필요합니다.
@@ -187,7 +187,7 @@ TypeScript가 실시간 버그 피드백을 제공한다는 주장도 있겠지�
 ![이미지](/assets/img/2024-06-20-TheTypeScriptTax_10.png)
 
 이 시나리오에서 리뷰 및 TDD를 통해 TypeScript 없이 1,000개 중 900개의 버그를 잡을 수 있습니다. TypeScript는 리뷰와 TDD를 건너뛰면 1,000개 중 200개의 버그를 잡아냅니다. 당연히 둘 중 하나를 선택할 필요는 없지만, 다른 조치들을 적용한 후 TypeScript를 추가하면 기하급수적으로 감소하는 결과로 인해 매우 작은 개선이 이루어집니다.
-```
+
 
 <div class="content-ad"></div>
 

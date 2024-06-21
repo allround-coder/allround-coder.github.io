@@ -85,17 +85,17 @@ link: "https://medium.com/better-programming/sorting-400-tabs-in-60-seconds-with
 
 <div class="content-ad"></div>
 
-```md
+
 npm install -g chrome-extension-cli
 chrome-extension-cli bookie-js
 cd bookie-js
-```
+
 
 마지막에 나오는 안내에 따라 빌드 폴더를 확장 프로그램으로 로드하세요. 이를 통해 확장 프로그램을 핫 리로드를 통해로드 및 테스트할 수 있어서 변경 사항이 즉시 보입니다.
 
 지금 생성된 구조 안을 엿보세요. 대부분이 자명합니다.
 
-```md
+
 ├── README.md
 ├── config
 │   ├── paths.js
@@ -114,7 +114,7 @@ cd bookie-js
     ├── contentScript.js
     ├── popup.css
     └── popup.js
-```
+
 
 <div class="content-ad"></div>
 
@@ -455,18 +455,18 @@ for (i = 0; i < sortedCategories.categories.length; i++) {
 
 <div class="content-ad"></div>
 
-```md
+
 ├── Cargo.lock
 ├── Cargo.toml
 └── src
     └── lib.rs
-```
+
 
 간단한 구조에요 — `Cargo.toml` 파일이 있습니다. 이는 `manifest.json`이나 `package.json`의 러스트 버전입니다. 이 파일에는 패키지, 의존성, 컴파일 특징 등에 대한 메타데이터가 포함되어 있어요. `Cargo.lock`은 환경 간 일관된 빌드를 보장하기 위해 지정된 의존성 목록을 담은 파일입니다.
 
 메인 서버 코드는 `src/lib.rs` 파일 안에 있어요. 아직 신선하고 아름다운 상태에서 코드를 살펴보려고 합니다:
 
-```md
+
 use axum::{routing::get, Router};
 use sync_wrapper::SyncWrapper;
 async fn hello_world() -> &'static str {
@@ -478,7 +478,7 @@ async fn axum() -> shuttle_service::ShuttleAxum {
     let sync_wrapper = SyncWrapper::new(router);
     Ok(sync_wrapper)
 }
-```
+
 
 
 <div class="content-ad"></div>
@@ -735,7 +735,7 @@ fn prompt_open_ai(prompt: String) -> Result<String, String>
 
 우리는 프롬프트가 필요할 것이라고 생각해요. 아래와 같이 시도해봅시다. - 우리는 GPT3에게 항목 목록을 받을 것이라고 알려주고 형식을 제시한 후 목록을 포함해야 합니다.
 
-그런 다음, 반환할 유효한 JSON 형식을 설명하고 기존 카테고리를 전달하세요. 마지막으로, 유효한 JSON 형식으로 반환하도록 요청하세요. JSON 형식을 준수하고 이를 해석하지 않기를 희망하지만 후속 게시물에서 그 부분을 미세 조정할 거에요.```
+그런 다음, 반환할 유효한 JSON 형식을 설명하고 기존 카테고리를 전달하세요. 마지막으로, 유효한 JSON 형식으로 반환하도록 요청하세요. JSON 형식을 준수하고 이를 해석하지 않기를 희망하지만 후속 게시물에서 그 부분을 미세 조정할 거에요.
 
 <div class="content-ad"></div>
 
@@ -851,7 +851,7 @@ fn create_chunks_for_prompting(items: Vec<Item>) -> Vec<Vec<Item>> {
 프롬프트를 구성하기 위해 정렬해야 할 항목 목록과 기존의 카테고리가 필요합니다.
 
 항목 목록을 [제목, ID] 형식의 문자열로 변환한 다음, 카테고리를 JSON으로 변환하여 이를 모두 결합하는 형식으로 하나의 프롬프트를 생성할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -880,7 +880,7 @@ fn build_prompt(items: Vec<Item>,
 
 이를 위해 reqwest 크레이트를 사용할 것입니다. 이 크레이트는 간단한 비동기 함수를 사용하여 OpenAI API와 통신할 수 있도록 해주는 고수준 HTTP 클라이언트를 제공하며, 쉬운 직렬화/역직렬화를 위한 JSON 기능도 제공합니다.
 
-그러니 우리의 Cargo.toml 파일에 이를 추가해 봅시다:```
+그러니 우리의 Cargo.toml 파일에 이를 추가해 봅시다:
 
 <div class="content-ad"></div>
 
@@ -900,7 +900,7 @@ let client = Client::builder()
     .unwrap();
 ```
 
-그러나 만약 우리가 prompt_open_ai 함수 내에서 클라이언트를 구축한다면, 우리는 각 요청마다 Client 인스턴스를 생성하게 될 것이므로, 대신 종속성을 만들어 sort_items 함수에 클라이언트 코드를 추가한 다음, 이를 sort_recursively 함수와 prompt_open_ai 함수에 전달하도록 하겠습니다.```
+그러나 만약 우리가 prompt_open_ai 함수 내에서 클라이언트를 구축한다면, 우리는 각 요청마다 Client 인스턴스를 생성하게 될 것이므로, 대신 종속성을 만들어 sort_items 함수에 클라이언트 코드를 추가한 다음, 이를 sort_recursively 함수와 prompt_open_ai 함수에 전달하도록 하겠습니다.
 
 <div class="content-ad"></div>
 
@@ -1199,7 +1199,7 @@ async-recursion = "1.0.2"
 
 그리고 함수에 #[async_recursion] 매크로를 붙여서 Box 처리할 수 있도록 해주세요.
 
-이제 이 문제를 해결했으므로, 원래의 sort_items 메서드로 돌아가서 마침내 API 요청에 응답할 차례입니다. 마지막으로 그곳에 Client 인스턴스를 추가한 채로, 그 아래로 내려가서 sort_recursively 메서드를 호출하고, map_err를 사용하여 오류를 ErrorResponse 구조체로 매핑하고, JSON으로 래핑하여 응답으로 반환하고, map을 사용하여 Ok 결과를 적절한 응답으로 바꿉니다:```
+이제 이 문제를 해결했으므로, 원래의 sort_items 메서드로 돌아가서 마침내 API 요청에 응답할 차례입니다. 마지막으로 그곳에 Client 인스턴스를 추가한 채로, 그 아래로 내려가서 sort_recursively 메서드를 호출하고, map_err를 사용하여 오류를 ErrorResponse 구조체로 매핑하고, JSON으로 래핑하여 응답으로 반환하고, map을 사용하여 Ok 결과를 적절한 응답으로 바꿉니다:
 
 <div class="content-ad"></div>
 
@@ -1226,7 +1226,7 @@ sort_recursively(categories, prompt_slices, client).await
 
 우리는 응답을 가져와서 형식을 지정하고 사용자에게 돌려줍니다. 우리의 계획은 안전하고 제대로 되어 있습니다. 배포해야 할 일만 남았는데, 인스턴스 프로비저닝, 보안 그룹 설정 또는 도커파일 작성에 대해 걱정할 필요가 없습니다. 셔틀을 통해 서비스를 만들었기 때문에 단순히 터미널을 사용하여 쉽게 배포할 수 있습니다.
 
-쉘에서 프로젝트 폴더를 열고 다음을 입력하세요:```
+쉘에서 프로젝트 폴더를 열고 다음을 입력하세요:
 
 <div class="content-ad"></div>
 

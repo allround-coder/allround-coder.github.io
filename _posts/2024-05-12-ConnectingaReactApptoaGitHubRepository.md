@@ -56,7 +56,7 @@ cd my-first-app
 
 
 
-```
+
 ![Connecting a React App to a GitHub Repository](/assets/img/2024-05-12-ConnectingaReactApptoaGitHubRepository_3.png)
 
 Once created, you'll land on a new page.
@@ -64,7 +64,7 @@ Once created, you'll land on a new page.
 ![Connecting a React App to a GitHub Repository](/assets/img/2024-05-12-ConnectingaReactApptoaGitHubRepository_4.png)
 
 Remember to copy the repository link.
-```
+
 
 
 

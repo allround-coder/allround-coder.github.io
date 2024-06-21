@@ -147,7 +147,7 @@ setDownloadingProgress() 메서드에서는 진행률 비율을 downloadingProgr
 AppComponent 템플릿에서 이 Subject에 async pipe를 통해 구독하고 있다는 것을 기억하시나요?
 
 6. Node 서버로부터 본문을 포함한 전체 응답을 받으면, HttpEvent는 Response 유형이 됩니다. 그런 다음 응답 본문에서 Blob 객체를 생성하고 이 blob 객체 및 HttpResponse를 downloadBlob() 메서드에 인수로 전달합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -172,7 +172,7 @@ link.click();
 }
 ```
 
-We are first extracting the filename from the Content-Disposition response header.```
+We are first extracting the filename from the Content-Disposition response header.
 
 <div class="content-ad"></div>
 

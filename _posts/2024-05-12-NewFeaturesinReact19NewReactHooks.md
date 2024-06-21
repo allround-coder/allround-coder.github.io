@@ -184,7 +184,7 @@ action: 함수 참조
 
 useFormStatus()를 사용하여 Form 제출 상태에 따라 UI를 업데이트하는 반응형 Form을 만들 수 있습니다.
 
-다음은 코드 예시입니다:```
+다음은 코드 예시입니다:
 
 
 
@@ -217,7 +217,7 @@ export default FormStatus;
 useFormState() 훅
 
 useFormState() 훅을 사용하면 폼 제출 결과를 기반으로 상태를 업데이트할 수 있습니다. 이는 특히 폼의 결과에 따라 UI 요소를 업데이트하거나 동작을 트리거하는 데 유용합니다:
-```
+
 
 
 

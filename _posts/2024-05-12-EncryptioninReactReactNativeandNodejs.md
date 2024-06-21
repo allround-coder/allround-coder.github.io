@@ -96,7 +96,7 @@ const decryptedAesKey = rsaKeyPair.privateKey.decrypt(forge.util.decode64(encryp
 ```
 
 요청 데이터를 AES 키를 사용하여 암호화하고 백엔드에서 데이터를 복호화하기 위해 제 요구에 따라 다른 모듈을 사용했습니다 (React에는 crypto-js, React Native에는 react-native-crypto-js). 여전히 이 프로세스에 node-forge를 사용할 수 있습니다.
-```
+
 
 
 

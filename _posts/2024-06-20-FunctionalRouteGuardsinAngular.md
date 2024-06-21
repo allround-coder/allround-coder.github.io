@@ -76,7 +76,7 @@ export function featureFlagGuard(
 이전에는 클래스 기반 경로의 경우이 유형의 가드를 사용하려면 매개변수를 라우트 데이터 객체에 전달해야 했습니다. 이 방법이 훨씬 간단하며 그게 무슨 일이 벌어지고 있는지 더 명확합니다.
 
 # 라우트에 함수형 라우트 가드 추가하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -190,7 +190,7 @@ describe("AuthenticationGuard", () => {
 });
 ```
 
-다음으로 여기에는 기능 플래그 가드에 대한 테스트가 있습니다:```
+다음으로 여기에는 기능 플래그 가드에 대한 테스트가 있습니다:
 
 <div class="content-ad"></div>
 

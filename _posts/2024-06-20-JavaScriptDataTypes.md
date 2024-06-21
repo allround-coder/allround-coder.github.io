@@ -125,7 +125,7 @@ const Variable_two = Symbol("abc");
 8. 객체
 
 객체는 속성들의 모음이며, JavaScript에서 유일한 원시 데이터 윕입니다.
-```
+
 
 <div class="content-ad"></div>
 

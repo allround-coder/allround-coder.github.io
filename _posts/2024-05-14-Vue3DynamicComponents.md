@@ -86,7 +86,7 @@ const postStore = usePostsStore()
 지금까지 잘 진행되고 있어요! 이제 우리는 동적 접근 방식을 사용하고 있습니다. component 키워드를 사용하여 Vue에게 MediumPreview.vue 컴포넌트를 사용하도록 하고 있어요. 결과는 이렇게 나와요:
 
 ![2024-05-14-Vue3DynamicComponents_1](/assets/img/2024-05-14-Vue3DynamicComponents_1.png)
-```
+
 
 
 

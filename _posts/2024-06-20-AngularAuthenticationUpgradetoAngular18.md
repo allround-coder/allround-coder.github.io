@@ -73,9 +73,7 @@ nvm 사용 18
 
 [단계 4] ⏩ Angular 14로 업데이트하기:
 
-```bash
 ng update @angular/core@14 @angular/cli@14 --force
-```
 
 <div class="content-ad"></div>
 
@@ -83,24 +81,19 @@ ng update @angular/core@14 @angular/cli@14 --force
 
 [단계 5] ⏩ 순차적인 업데이트:
 
-```js
 ng update @angular/core@15 @angular/cli@15 --force
 ng update @angular/core@16 @angular/cli@16 --force
 ng update @angular/core@17 @angular/cli@17 --force
-```
 
 [단계 6] ⏩ Node 20으로 전환:
 
 <div class="content-ad"></div>
 
-```js
 nvm 사용 20
 
 [Step.7] ⏩ 최신 Angular 버전(v18)으로 업데이트:
 
-```js
 ng update @angular/core@latest @angular/cli@latest --force
-```
 
 # 조정 및 비교
 ```  

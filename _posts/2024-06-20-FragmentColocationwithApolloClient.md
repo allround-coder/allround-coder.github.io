@@ -11,7 +11,7 @@ link: "https://medium.com/shippio/fragment-colocation-with-apolloclient-815edbcf
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-06-20-FragmentColocationwithApolloClient_0.png" />
 
 # Fragment이란 무엇인가요?
@@ -19,7 +19,7 @@ link: "https://medium.com/shippio/fragment-colocation-with-apolloclient-815edbcf
 Fragment Colocation에 대해 논의하기 전에, 먼저 Fragment가 무엇인지 간단히 설명하겠습니다.
 
 GraphQL에서 Fragment는 쿼리의 재사용 가능한 조각입니다. Fragment를 사용하면 코드 중복을 피하고 쿼리를 구성할 때 특히 여러 쿼리에서 같은 데이터 조각을 검색할 때 쿼리를 조직화할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -48,7 +48,7 @@ query GetAllUsers {
 # Fragment Colocation이란
 
 일본에서는 Fragment Colocation(apollo Client에서 fragment 일치)라고도 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -321,7 +321,7 @@ export const ShipmentListHeader = ({ shipmentHeader }: Props) => {
 - 유지보수성 향상: 쿼리에 대한 변경 사항이 지역화되어 유지보수가 쉬워집니다. 상위 컴포넌트의 쿼리를 수정할 필요가 없습니다.
 - 1 기능 컴포넌트에 1 루트 쿼리
 - 데이터 캡슐화: Fragment 마스킹을 사용하여 종속성이 없는 컴포넌트에서 의도하지 않은 필드 사용을 차단할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

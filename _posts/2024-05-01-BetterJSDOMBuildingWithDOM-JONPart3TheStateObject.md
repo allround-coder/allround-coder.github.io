@@ -147,7 +147,7 @@ tbody.lastElementChild.__make(
 spectres["note Ezra Bridger"] = "이 레코드는 나머지 뒤에 추가되었습니다";
 ```
 
-Jacen은 분명히 "스펙터 7"입니다만, 거기에 하이픈이 있어요. 이건 쉽게 수정 가능하고, 거기에 노트도 추가해 봅시다.```
+Jacen은 분명히 "스펙터 7"입니다만, 거기에 하이픈이 있어요. 이건 쉽게 수정 가능하고, 거기에 노트도 추가해 봅시다.
 
 <div class="content-ad"></div>
 
@@ -931,7 +931,7 @@ addProperty(name, ...args) { // valueOrObj, getFilters, setFilters
 
 옵션!
 
-그리고 이미 store가 있을 경우, 참조를 반환하여 빠져나가면 됩니다.```
+그리고 이미 store가 있을 경우, 참조를 반환하여 빠져나가면 됩니다.
 
 <div class="content-ad"></div>
 

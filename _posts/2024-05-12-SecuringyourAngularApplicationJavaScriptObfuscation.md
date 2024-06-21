@@ -282,7 +282,7 @@ npm i @angular-builders/custom-webpack
 
 난독화된 빌드 생성:
 
-Angular CLI 옵션을 사용하여 애플리케이션을 빌드하면 됩니다:```
+Angular CLI 옵션을 사용하여 애플리케이션을 빌드하면 됩니다:
 
 
 

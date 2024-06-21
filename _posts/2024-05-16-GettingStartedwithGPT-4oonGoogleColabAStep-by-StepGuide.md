@@ -163,7 +163,7 @@ print(response.choices[0].message.content)
 
 ## 단계 3: URL 이미지 분석
 
-URL에서 직접 이미지를 분석할 수도 있습니다.```
+URL에서 직접 이미지를 분석할 수도 있습니다.
 
 <div class="content-ad"></div>
 

@@ -67,7 +67,7 @@ export default async function MyComponent() {
 
 # 팁 2: 환경 변수 처리
 
-환경 변수를 `next.config.env.NEXT_PUBLIC_*`로 표시할 때 주의하십시오. 이러한 변수는 브라우저에서 노출되며 JavaScript 번들에 포함됩니다. 민감한 API 키나 비밀 정보가 있는 경우 `NEXT_PUBLIC_`로 접두사를 붙이지 않도록 주의하십시오. Node.js 환경에서만 사용할 수 있게 됩니다.```
+환경 변수를 `next.config.env.NEXT_PUBLIC_*`로 표시할 때 주의하십시오. 이러한 변수는 브라우저에서 노출되며 JavaScript 번들에 포함됩니다. 민감한 API 키나 비밀 정보가 있는 경우 `NEXT_PUBLIC_`로 접두사를 붙이지 않도록 주의하십시오. Node.js 환경에서만 사용할 수 있게 됩니다.
 
 
 

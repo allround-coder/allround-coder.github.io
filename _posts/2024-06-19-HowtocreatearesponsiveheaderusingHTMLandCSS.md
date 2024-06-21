@@ -11,7 +11,7 @@ link: "https://medium.com/@ilhanbal577/how-to-create-a-responsive-header-using-h
 ---
 
 
-```
+
 <img src="/assets/img/2024-06-19-HowtocreatearesponsiveheaderusingHTMLandCSS_0.png" />
 
 안녕하세요, 이 기사에서는 웹사이트 구축시 필수 요소 중 하나 인 반응형 헤더를 만드는 방법에 대해 이야기하겠습니다. 이 기사에서 모든 코드와 세부 정보를 찾을 수 있습니다.
@@ -27,11 +27,11 @@ link: "https://medium.com/@ilhanbal577/how-to-create-a-responsive-header-using-h
 ```
 
 우선, 코드를 body 태그 사이에 작성합니다. 첫 번째 단계에서 고유한 클래스 이름을 가진 div 태그를 만듭니다. 이 div 태그 내부에 2개의 nav 태그를 엽니다. 두 번째 nav 태그 내에서 로고를 추가하기 위해 고유한 클래스 이름을 가진 h2인 서브 태그를 생성합니다. 여기서 h2 태그를 사용했지만, 선호하는 경우 h1, h3 등을 사용할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-HowtocreatearesponsiveheaderusingHTMLandCSS_1.png)
 
 다음으로 진행하기 전에, 코드 블록에 요소들을 포함해야 합니다. 이를 위해 정렬되지 않은 목록 태그인 ul을 사용할 것입니다.
@@ -51,7 +51,7 @@ link: "https://medium.com/@ilhanbal577/how-to-create-a-responsive-header-using-h
         </nav>
         </div>
 ``` 
-```
+
 
 <div class="content-ad"></div>
 
@@ -65,7 +65,7 @@ link: "https://medium.com/@ilhanbal577/how-to-create-a-responsive-header-using-h
 
 <div class="content-ad"></div>
 
-```markdown
+
 Our HTML code block is completed. Now we can use CSS to enhance the appearance of our page.
 
 In the second step, create a file with a .css extension. To link our existing HTML file with the CSS file we created, place the following code block between the head tags of our HTML page.
@@ -81,7 +81,7 @@ In the second step, create a file with a .css extension. To link our existing HT
  
 </head>
 ```
-```
+
 
 <div class="content-ad"></div>
 

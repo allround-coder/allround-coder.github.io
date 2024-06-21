@@ -51,7 +51,7 @@ index.html의 HTML 구조에서 시작해보겠습니다. 본문에서 "call" UI
 
 <div class="content-ad"></div>
 
-```markdown
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -88,14 +88,14 @@ index.html의 HTML 구조에서 시작해보겠습니다. 본문에서 "call" UI
     <script type="module" src="/main.js"></script>
   </body>
 </html>
-```
+
 
 투사 UI 외에도 사용자가 아바타 URL을 입력할 수 있는 오버레이 화면과 채널에 참여하는 버튼이 필요합니다.
 
 # Agora Client 및 데이터 저장소
 
 main.js에 우리는 Agora 클라이언트를 생성하여 Agora의 SDK를 사용하고 로컬 미디어를 사용하여 오디오, 비디오 및 캔버스 트랙과 활성 상태에 대한 참조를 유지합니다. MediPipe의 컴퓨터 비전에서 얻은 데이터를 저장하기 위해 headRotation과 blendShapes가 필요합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -216,7 +216,7 @@ loadingDiv.remove() // 로딩 스피너 삭제
 <img src="/assets/img/2024-06-20-AddRealtime3DAvatarstoAgoraLiveVideoStreams_0.png" />
 
 카메라 액세스를 받고 비디오 및 오디오 트랙을 만드는 데 Agora를 사용합니다. 비디오 엘리먼트의 소스로 카메라의 비디오 트랙을 사용할 것입니다. 더 자세한 설명이 필요하면 Agora를 사용하여 사용자 정의 비디오 엘리먼트를 사용하는 방법에 대한 내 안내서를 확인해주세요. 
-```
+
 
 <div class="content-ad"></div>
 
@@ -236,7 +236,7 @@ video.srcObject = new MediaStream([localMedia.video.track.getMediaStreamTrack()]
 얼굴과 제스처를 인식하기 전에, 미디어파이프의 컴퓨터 비전 기술을 위한 최신 웹어셈블리(WASM) 파일을 먼저 다운로드해야 합니다. 이 파일들은 FaceLandmarker 작업을 설정하는 데 필수적입니다. FaceLandmarker는 비디오 스트림에서 사용자 얼굴의 특정 "관심 지점"을 식별하는 컴퓨터 비전 알고리즘입니다. 이 정밀도는 인공지능이 얼굴 특징을 효과적으로 추적할 수 있게 합니다.
 
 컴퓨터 비전에서 작업을 실행하는 것은 AI에 요청을 보내고, AI가 자신감 수준인 예측을 반환하는 것을 의미합니다. 우리는 각 비디오 프레임에 대해 이 작업을 계속 반복적으로 실행할 것이며, 이를 predictionLoop이라고 이름 붙였습니다.
-```
+
 
 <div class="content-ad"></div>
 

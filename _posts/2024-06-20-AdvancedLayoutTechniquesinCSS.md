@@ -11,7 +11,7 @@ link: "https://medium.com/@szaranger/advanced-layout-techniques-in-css-38b229c37
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-06-20-AdvancedLayoutTechniquesinCSS_0.png)
 
 # :empty 가상 클래스를 사용하여 내용이 없는 요소 선택하기
@@ -19,7 +19,7 @@ link: "https://medium.com/@szaranger/advanced-layout-techniques-in-css-38b229c37
 추가적인 마크업 없이 빈 요소를 선택하는 쉬운 방법은 :empty 가상 클래스를 사용하여 자식 요소가 없는 요소를 대상으로 하는 것입니다.
 
 아래 예시에서는 class가 message인 두 개의 div 요소가 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -51,7 +51,7 @@ link: "https://medium.com/@szaranger/advanced-layout-techniques-in-css-38b229c37
 }
 ```
 
-하지만, :not(:empty) 가상 클래스 선택자를 사용하여 비어 있지 않은 message 요소를 스타일링하는 방법도 있어요```
+하지만, :not(:empty) 가상 클래스 선택자를 사용하여 비어 있지 않은 message 요소를 스타일링하는 방법도 있어요
 
 <div class="content-ad"></div>
 
@@ -110,14 +110,14 @@ article blockquote:only-of-type {
 
 <div class="content-ad"></div>
 
-```markdown
+
 /* 위 예시에서 2번째와 6번째 단락과 일치합니다. (즉, 4n+2 규칙에 따라 일치하는 요소입니다.)
     4n+2는 4*0 + 2 = 2번째, 4*1 + 2 = 6번째 등으로 변환될 수 있습니다.
 */
 article p:nth-of-type(4n+2) {
   color: purple;
 }
-```
+
 
 아래 예시를 살펴보세요:
 
@@ -138,7 +138,7 @@ article p:nth-of-type(4n+2) {
 ```
 
 또한, CSS 코드는 다음과 같습니다:
-```markdown
+
 
 <div class="content-ad"></div>
 
@@ -185,7 +185,7 @@ calc() 속성은 스타일시트 내의 CSS 길이 또는 숫자가 있는 곳�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 .parent {
   border: 1px solid black;
@@ -206,7 +206,7 @@ And the HTML code:
 ```
 
 Now if you preview this code, it’d look like:
-```
+
 
 <div class="content-ad"></div>
 
@@ -281,7 +281,7 @@ p {
 브라우저 크기를 조절하면 크기가 반응적으로 변경됩니다.
 
 # 단 하나의 CSS 값으로 손쉽게 스타일 재설정하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -299,7 +299,7 @@ p {
 
 <div class="content-ad"></div>
 
-```md
+
 section {
   color: black;
 }
@@ -319,7 +319,7 @@ button {
 section button {
   color: unset;
 }
-```
+
 
 실제로 보십시오:
 

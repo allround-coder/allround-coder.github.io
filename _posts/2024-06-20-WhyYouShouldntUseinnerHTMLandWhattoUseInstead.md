@@ -41,7 +41,7 @@ link: "https://medium.com/@verity.carlos/why-you-shouldnt-use-innerhtml-and-what
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-20-WhyYouShouldntUseinnerHTMLandWhattoUseInstead_2.png" />
 
 이 부분은 확실히 제대로 보이지 않아요. 만약 'textContent'를 'innerText'로 바꾼다면 어떻게 될까요?
@@ -49,7 +49,7 @@ link: "https://medium.com/@verity.carlos/why-you-shouldnt-use-innerhtml-and-what
 <img src="/assets/img/2024-06-20-WhyYouShouldntUseinnerHTMLandWhattoUseInstead_3.png" />
 
 음... 아무래도 조금 나아졌지만, 여전히 원하는 것과는 다르네요. 아마 'innerText' 대신에 'innerHTML'을 사용하면 우리가 원하는 굵은 목록을 얻을 수 있을 것 같아요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -97,7 +97,7 @@ link: "https://medium.com/@verity.carlos/why-you-shouldnt-use-innerhtml-and-what
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-20-WhyYouShouldntUseinnerHTMLandWhattoUseInstead_6.png" />
 
 # 결론
@@ -105,12 +105,11 @@ link: "https://medium.com/@verity.carlos/why-you-shouldnt-use-innerhtml-and-what
 간편성 때문에 innerHTML을 사용하기 유혹받을 수 있지만, 웹 페이지의 로딩을 느리게 만들고 보안 위험을 초래할 수 있으므로 innerHTML을 피하고 요소를 생성하고 텍스트를 추가하는 작업을 분리하는 것이 좋습니다. textContent와 innerText 모두 원하는 텍스트를 안전하게 추가할 수 있지만, innerText는 콘솔에서 내용을 더 명확하게 표시하기 때문에 일반적으로 선호됩니다. innerHTML, textContent 및 innerText 간의 차이를 명확히 해주고 어떤 것을 사용할지 결정하는 데 도움이 되었기를 바랍니다. 즐거운 코딩 되세요!
 
 ## 출처
-```  
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 [Element.innerHTML.](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
 
 Leng, Allen. [“1 In 2 Visitors Abandon a Website That Takes More than 6 Seconds to Load.”](https://digital.com/1-in-2-visitors-abandon-a-website-that-takes-more-than-6-seconds-to-load/#:~:text=However%2C%20when%20it%20comes%20to,will%20leave%20after%20one%20second.)
-```

@@ -11,11 +11,11 @@ link: "https://medium.com/javascript-in-plain-english/how-to-do-a-marquee-animat
 ---
 
 
-```markdown
+
 ![Marquee Animation](https://miro.medium.com/v2/resize:fit:1400/1*u9Rh5cAUft9Hiqdnursjog.gif)
 
 안녕하세요, 코더 여러분! 오늘은 마퀴 애니메이션을 만들어 보려고 해요. 이런 소리를 하는 것도 웃겼네요. 제목을 클릭했다면, 무엇을 구독했는지 이미 알고 계셨겠죠? 저도 바보 같습니다. 이렇게 만들어 볼 것입니다:
-```
+
 
 
 <div class="content-ad"></div>

@@ -160,7 +160,7 @@ export function resetHookIndex() {
 
 ## HookPattern.js
 
-HookPattern.js는 useHookPattern과 resetHookIndex 두 가지 메서드를 내보냅니다. 이전에 언급했듯이, resetHookIndex는 다시 렌더링 단계를 시뮬레이션하며, 이 글에서는 훅 사용자 코드에서 수동으로 호출할 것입니다. React에서는 이것이 렌더링 및 조정 엔진의 일부이며, 프레임워크에 의해 자동으로 호출될 것이라고 믿을 수 있습니다.```
+HookPattern.js는 useHookPattern과 resetHookIndex 두 가지 메서드를 내보냅니다. 이전에 언급했듯이, resetHookIndex는 다시 렌더링 단계를 시뮬레이션하며, 이 글에서는 훅 사용자 코드에서 수동으로 호출할 것입니다. React에서는 이것이 렌더링 및 조정 엔진의 일부이며, 프레임워크에 의해 자동으로 호출될 것이라고 믿을 수 있습니다.
 
 
 

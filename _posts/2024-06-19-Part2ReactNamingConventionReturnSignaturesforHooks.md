@@ -89,9 +89,9 @@ Markdown 형식으로 테이블 태그를 변경해주세요.
 
 대부분의 경우, 우리는 컴포넌트 내에서 다음과 같이 훅을 사용해요:
 
-```markdown
+
 <img src="/assets/img/2024-06-19-Part2ReactNamingConventionReturnSignaturesforHooks_5.png" />
-```
+
 
 당신이 생각하는 것 알아요. 구조 분해를 제거하고 객체를 직접 사용해야 한다고요. 네, 그렇게 할 수 있지만 경우에 따라 객체를 구조 분해하고 이 오류를 만날 수 있어요.
 

@@ -11,7 +11,7 @@ link: "https://medium.com/stackademic/angular-to-subscribe-or-not-subscribe-f5fc
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-AngularToSubscribeorNotSubscribe_0.png)
 
 Angular에서의 구독(Subscriptions). 이 주제는 프레임워크를 처음 탐색하는 동안 매우 까다로워질 수 있습니다. Angular는 여전히 가장 의견이 분분한 프레임워크 중 하나이지만 Observable 및 구독에 대한 다양한 방법이 있습니다.
@@ -19,7 +19,7 @@ Angular에서의 구독(Subscriptions). 이 주제는 프레임워크를 처음 
 ## subscribe()란 무엇인가요?
 
 Angular에서 subscribe() 메서드는 Observable을 구독하는 데 사용됩니다. Observable은 Angular의 핵심 개념이며 이벤트, HTTP 요청과 같은 비동기 작업을 처리하는 데 사용됩니다. 거의 모든 것을 Observable로 변환할 수 있습니다. Observable을 구독하면 Observable이 새 값을 방출하거나 오류가 발생할 때 알림을 받고 싶습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -43,7 +43,7 @@ HTTP 호출은 "cold observables"로 인식됩니다. Observable(HTTP 이벤트)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*sjTC0Kw8kLgzFwvnHelfmw.gif)
 
 우리의 이론은 콘솔 로그를 확인함으로써 확인되었습니다. next와 complete에 대한 subscribe() 콜백이 모두 실행되었고 Observable이 자동으로 구독 해제되었습니다.
@@ -51,7 +51,7 @@ HTTP 호출은 "cold observables"로 인식됩니다. Observable(HTTP 이벤트)
 하지만 Observable이 새로운 값들을 발행하는 빈도에 대해 확실하지 않을 때는 어떻게 해야 할까요?
 
 # 구독 관리
-```
+
 
 <div class="content-ad"></div>
 
@@ -69,7 +69,7 @@ HTTP 호출은 "cold observables"로 인식됩니다. Observable(HTTP 이벤트)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*5B8aXGdi_KtczL2Bj7XYFA.gif)
 
 ## 수동으로 구독 취소하기
@@ -80,7 +80,7 @@ HTTP 호출은 "cold observables"로 인식됩니다. Observable(HTTP 이벤트)
 - '중지'를 클릭하면 기존 구독을 제거하고 새로운 구독을 생성하지 않습니다.
 - 시작/중지 버튼을 클릭하여 이전 데모에서 발생했던 여러 구독 문제를 다시 만들어 보았지만 성공하지 못했습니다.
 - 이제 애플리케이션이 의도한대로 작동합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +127,7 @@ Angular에서 Observable과 함께 async 파이프를 사용하는 것은 일반
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*56m_2d_sldWVyBmbl5T6ZA.gif)
 
 ## RxJS take() 연산자 소개
@@ -135,7 +135,7 @@ Angular에서 Observable과 함께 async 파이프를 사용하는 것은 일반
 테이블에서 행 위로 마우스를 올렸을 때 추가 세부 정보를 로드하려는 시나리오에서 RxJS take() 연산자는 가치 있는 도구로 입증됩니다. 이 연산자를 사용하면 Observable에서 발행되는 값의 수를 제한할 수 있습니다.
 
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*ezlcTQirocW_SCwwTTXj4w.gif)
-```  
+
 
 <div class="content-ad"></div>
 

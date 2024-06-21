@@ -27,15 +27,15 @@ link: "https://medium.com/towards-data-science/hands-on-optimization-with-expect
 
 우리가 가상 지능을 사용해 집값을 예측한다고 가정해봅시다. 가상 지능을 사용하기 전에는 실제로 여러 요소들(위치, 크기, 건축 연도 등)을 기반으로 집 값 평가를 하는 사람이 있습니다. 우리 모두가 알다시피, 가상 지능에는 데이터가 필요하죠. 그래서 트레이닝 세트를 만들기 위해 이 일을 수많은 번 반복해야 합니다.
 다음과 같은 내용이겠지요:
-```markdown
+
 # 0. 기계 학습은 최소화 문제로
 
 우리가 가상 지능을 사용해 집값을 예측한다고 가정해봅시다. 가상 지능을 사용하기 전에는 실제로 여러 요소들(위치, 크기, 건축 연도 등)을 기반으로 집 값 평가를 하는 사람이 있습니다. 우리 모두가 알다시피, 가상 지능에는 데이터가 필요하죠. 그래서 트레이닝 세트를 만들기 위해 이 일을 수많은 번 반복해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 이미지 파일: /assets/img/2024-06-19-HandsOnOptimizationwithExpectedImprovementandGaussianProcessRegressioninPython_1.png
 
 이 집 모음과 해당하는 가격은 머신러닝 모델을 최적화하는 데 사용됩니다. 예를 들어, 우리가 사는 매우 단순한 상상 속 세계에서 집 값은 오직 크기에만 의존한다고 가정해 봅시다. 예를 들어, 만약 크기가 x이고 해당하는 가격이 y라면 다음과 같습니다:
@@ -43,7 +43,7 @@ link: "https://medium.com/towards-data-science/hands-on-optimization-with-expect
 이미지 파일: /assets/img/2024-06-19-HandsOnOptimizationwithExpectedImprovementandGaussianProcessRegressioninPython_2.png
 
 따라서 크기가 x = 2인 집은 가격이 50x2 = 100(임의의 단위)인 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -121,7 +121,7 @@ Gradient descent은 함수의 오류를 반복적으로 최소화하는 기술�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-HandsOnOptimizationwithExpectedImprovementandGaussianProcessRegressioninPython_7.png)
 
 우리가 Python과 일부 라이브러리 친구들을 사용하여 그래프를 그리면 이렇게 됩니다:
@@ -129,7 +129,7 @@ Gradient descent은 함수의 오류를 반복적으로 최소화하는 기술�
 말씀드리는 대로, 확률 과정이 데이터를 평균 함수와 위에서 설명한 공분산 함수로 모델링한다고 가정할 수 있습니다. 아름다운 이야기입니다. 이제 새 데이터로 사전 확률을 업데이트할 것입니다. 지금 제가 철학을 하고 있는 것처럼 들릴 수 있지만, 실제로 말하고 싶은 것은 사전 확률(위에서 정의한 평균과 공분산)과 훈련 세트 사이의 조건부 확률을 작성하는 것입니다. 저와 같은 수학 좋아하는 사람들에게는 이것이 아이디어입니다:
 
 ![image](/assets/img/2024-06-19-HandsOnOptimizationwithExpectedImprovementandGaussianProcessRegressioninPython_8.png)
-```
+
 
 <div class="content-ad"></div>
 

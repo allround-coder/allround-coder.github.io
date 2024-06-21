@@ -144,7 +144,7 @@ btn.addEventListener('click', () => {
 이 프로젝트의 코드를 이해하면 HTML, CSS 및 JavaScript를 사용하여 대화형 검색 위젯을 만드는 방법을 배울 수 있습니다. 필요에 따라 프로젝트의 스타일 및 기능을 수정하여 검색 힌트, 검색 기록 등을 추가하여 더 유용한 검색 경험을 만들 수 있습니다.
 
 GIF의 과정 전체가 표시됩니다:
-```
+
 
 <div class="content-ad"></div>
 

@@ -92,7 +92,7 @@ OSM 데이터가 신뢰성이 떨어지거나 오래되어 있는 지역에서�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-AnOpenData-DrivenApproachtoOptimisingHealthcareFacilityLocationsUsingPython_6.png)
 
 ## 행정 경계의 대표적인 잠재 위치 그리드
@@ -100,7 +100,7 @@ OSM 데이터가 신뢰성이 떨어지거나 오래되어 있는 지역에서�
 새로운 병원과 클리닉을 배치하는 것은 포괄적인 건강 관리 지원을 보장하기 위해 중요합니다. 이는 종종 공식 소스로부터 특정 사이트 권장이 없는 경우에는 대상 지역 내에서 대표적인 그리드를 통해 근사화할 수 있는 잠재적 위치를 분석하는 것을 포함합니다.
 
 이러한 그리드는 새로운 건강 시설을 설립할 위치를 고려하는 시작 프레임워크를 제공하여 언더서빈 인구에 대한 접근성을 극대화하기 위한 목적으로 사용됩니다. 이 코드 조각은 특정 지리적 영역 내에서 이 대표적인 그리드를 생성하는 데 사용되는 generate_grid_in_polygon Python 함수를 설명합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -157,7 +157,7 @@ OSM 데이터가 신뢰성이 떨어지거나 오래되어 있는 지역에서�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-AnOpenData-DrivenApproachtoOptimisingHealthcareFacilityLocationsUsingPython_8.png)
 
 첫 번째 줄은 가구 수를 최대화하는 목표를 설명하고, 두 번째 줄 (_subject to:_ 이후)은 첫 번째 제약 조건을 나열합니다: 각 가구는 도달 가능한 최소한 하나의 병원이 열려 있을 때에만 서비스를 받습니다. 그런 다음, 열 병원 수는 선택을 제한하며, 마지막으로 사용되는 변수의 이진성이 지정됩니다.
@@ -165,7 +165,7 @@ OSM 데이터가 신뢰성이 떨어지거나 오래되어 있는 지역에서�
 위 모델은 최대 𝑝개의 병원을 선택합니다. 원래 논문에서는 Church와 ReVelle이 정확히 𝑝개의 병원을 선택했지만, 우리 모델에는 나중에 논의할 장점이 있습니다.
 
 ## 수학적 모델 구현하기
-```
+
 
 <div class="content-ad"></div>
 

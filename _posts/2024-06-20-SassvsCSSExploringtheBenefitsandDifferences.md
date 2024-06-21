@@ -11,7 +11,7 @@ link: "https://medium.com/@kasun-r-weerasinghe/sass-vs-css-exploring-the-benefit
 ---
 
 
-```markdown
+
 ![Sass vs CSS](/assets/img/2024-06-20-SassvsCSSExploringtheBenefitsandDifferences_0.png)
 
 웹 개발의 세계에서, CSS (Cascading Style Sheets)는 웹 페이지의 스타일링 및 서식 지정의 기본이 됩니다. 그러나 Sass (Syntactically Awesome Style Sheets)의 등장은 개발자들에게 스타일시트를 작성하고 관리하는 더 강력하고 효율적인 방법을 제공했습니다. 이 글에서는 Sass와 CSS의 차이를 탐구하고, 그들의 혜택을 살펴보며 그들의 고유한 기능을 보여주기 위한 코드 비교를 제공합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@kasun-r-weerasinghe/sass-vs-css-exploring-the-benefit
 # CSS 이해하기:
 
 CSS는 HTML로 작성된 문서의 스타일을 설명하는 데 사용되는 표준 스타일링 언어입니다. 개발자들은 이를 통해 웹 페이지의 레이아웃, 타이포그래피, 색상 및 기타 시각적 측면을 제어할 수 있습니다. CSS 파일은 선택자, 속성 및 값으로 구성되어 있으며 요소가 어떻게 스타일링되어야 하는지 정의합니다.
-```
+
 
 <div class="content-ad"></div>
 

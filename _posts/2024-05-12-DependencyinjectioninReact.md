@@ -354,7 +354,7 @@ const App = () => {
 
 그런 다음 MyService 객체를 정의하고 컨테이너 오브젝트의 레지스트리 속성에 추가합니다. 또한 컨테이너 오브젝트에 식별자를 입력받아 해당 객체를 검색하는 resolve 메소드를 정의합니다. 이 경우 resolve 메소드는 MyService 객체를 반환합니다.
 
-MyComponent를 ContainerProvider로 감싸고 컨테이너 오브젝트를 prop으로 전달한 후 MyComponent를 렌더하는 App 컴포넌트를 렌더합니다. MyComponent가 렌더되면 컨테이너에서 myService 의존성을 검색하고 화면에 해당하는 foo 속성을 렌더합니다.```
+MyComponent를 ContainerProvider로 감싸고 컨테이너 오브젝트를 prop으로 전달한 후 MyComponent를 렌더하는 App 컴포넌트를 렌더합니다. MyComponent가 렌더되면 컨테이너에서 myService 의존성을 검색하고 화면에 해당하는 foo 속성을 렌더합니다.
 
 
 

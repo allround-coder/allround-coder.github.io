@@ -11,7 +11,7 @@ link: "https://medium.com/@priyanshu-shkl7/i-wrote-a-script-to-send-out-cold-e-m
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-06-20-IWroteAnAutomatedScripttoSendOutColdE-MailstotheTechCompaniesIWanttoWorkAtWithResults_0.png" />
 
 'Cold e-mailing'은 오늘날 모든 구직자가 들어본 적이 있는 것입니다. 그러나 실제로 도움되고 쉬운 것일까요? 매번 이메일을 맞춤화하여 모든 채용 담당자 및 관리자들의 이메일을 검색하고 보내기는 귀찮은 일입니다. 굳이 그렇게 해야 하는가?
@@ -19,7 +19,7 @@ link: "https://medium.com/@priyanshu-shkl7/i-wrote-a-script-to-send-out-cold-e-m
 어떻게하면 프로세스를 쉽게 만들 수 있을까요? LinkedIn에서 사람들에게 메시지를 보내는 것은 수백 명의 사람들이 이미 모든 채용 담당자와 리크루터에게 메시지를 보냈다는 점을 고려하면 불가능합니다 (아무도 무시하려는 것이 아닙니다. 현재는 정말 어려운 시기이며 모두 최선을 다하고 있습니다)
 
 # 생각
-```
+
 
 <div class="content-ad"></div>
 
@@ -75,7 +75,7 @@ link: "https://medium.com/@priyanshu-shkl7/i-wrote-a-script-to-send-out-cold-e-m
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![1](/assets/img/2024-06-20-IWroteAnAutomatedScripttoSendOutColdE-MailstotheTechCompaniesIWanttoWorkAtWithResults_1.png)
 
 ![2](/assets/img/2024-06-20-IWroteAnAutomatedScripttoSendOutColdE-MailstotheTechCompaniesIWanttoWorkAtWithResults_2.png)
@@ -83,7 +83,7 @@ link: "https://medium.com/@priyanshu-shkl7/i-wrote-a-script-to-send-out-cold-e-m
 ![3](/assets/img/2024-06-20-IWroteAnAutomatedScripttoSendOutColdE-MailstotheTechCompaniesIWanttoWorkAtWithResults_3.png)
 
 ![4](/assets/img/2024-06-20-IWroteAnAutomatedScripttoSendOutColdE-MailstotheTechCompaniesIWanttoWorkAtWithResults_4.png)
-```
+
 
 <div class="content-ad"></div>
 

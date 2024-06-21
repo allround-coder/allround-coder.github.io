@@ -11,7 +11,7 @@ link: "https://medium.com/@frontendinterviewquestions/checkbox-border-color-usin
 ---
 
 
-```markdown
+
 ![Checkbox border color using css](/assets/img/2024-06-20-Checkboxbordercolorusingcss_0.png)
 
 출처: CSS를 사용한 체크박스 테두리 색상
@@ -19,7 +19,7 @@ link: "https://medium.com/@frontendinterviewquestions/checkbox-border-color-usin
 더 많은 질문과 답변을 보려면 Frontend Interview Questions 웹 사이트를 방문해주세요.
 
 ## 체크박스 테두리 색상 사용 방법 이해하기
-```
+
 
 <div class="content-ad"></div>
 

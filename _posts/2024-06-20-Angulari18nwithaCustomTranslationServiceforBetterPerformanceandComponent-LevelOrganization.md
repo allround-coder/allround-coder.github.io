@@ -63,7 +63,7 @@ Angular i18n에서 흔히 사용되는 관행은 assets/i18n 디렉토리에 있
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-Angulari18nwithaCustomTranslationServiceforBetterPerformanceandComponent-LevelOrganization_5.png)
 
 # 사용자 정의 번역 서비스의 이점
@@ -73,7 +73,7 @@ Angular i18n에서 흔히 사용되는 관행은 assets/i18n 디렉토리에 있
 - 향상된 조직화: 번역을 해당 구성 요소에 가깝게 유지함으로써 코드베이스가 보다 조직화되고 탐색하기 쉬워집니다.
 - 단순화된 유지 관리: 특정 구성 요소의 번역을 업데이트하는 것이 더 쉽고 오류 가능성이 낮아집니다.
 - 향상된 성능: 필요한 번역 파일만 로드하면 메모리 사용량이 줄어들고 애플리케이션 성능이 향상되어 특히 지연로드된 구성 요소에 유용합니다.
-```
+
 
 <div class="content-ad"></div>
 

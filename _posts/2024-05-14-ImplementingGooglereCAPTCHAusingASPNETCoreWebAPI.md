@@ -284,7 +284,7 @@ To register HttpClient Middleware:
 builder.Services.AddHttpClient();
 ```
 
-Your API Project is now completed. You can run and test it once using swagger.```
+Your API Project is now completed. You can run and test it once using swagger.
 
 
 

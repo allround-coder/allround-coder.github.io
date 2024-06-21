@@ -11,7 +11,7 @@ link: "https://medium.com/@dwslalit/react-api-fetching-simplifying-the-process-w
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-06-20-ReactAPIFetchingSimplifyingtheProcesswithFiveMethods_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/@dwslalit/react-api-fetching-simplifying-the-process-w
 API에서 데이터를 가져오는 것은 현대 웹 애플리케이션에 필수적입니다. React에서는 페이지 전체를 새로 고침하지 않고 콘텐츠를 로드하고 표시할 수 있습니다. 이 블로그에서는 API 가져오기 및 React에서 이를 수행하는 다섯 가지 쉬운 방법을 설명하겠습니다.
 
 API 가져오기 설명
-```
+
 
 <div class="content-ad"></div>
 

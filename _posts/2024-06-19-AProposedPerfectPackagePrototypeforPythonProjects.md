@@ -138,7 +138,7 @@ Anaconda에서 CMD.exe 프롬프트를 실행하고 **site-packages** 폴더의 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-AProposedPerfectPackagePrototypeforPythonProjects_2.png)
 
 프로그램이 pandas에서 DataFrame을 가져오는 것과 같이 import를 실행할 때, 참조는 C:\Users\GHarr\anaconda3\envs\project-env\Lib\site-packages에서 시작되며 DataFrame이 포함 된 pandas라는 이름의 디렉토리를 찾을 것으로 예상합니다.
@@ -146,7 +146,7 @@ Anaconda에서 CMD.exe 프롬프트를 실행하고 **site-packages** 폴더의 
 주피터 노트북은 다르게 동작합니다. 그들의 "홈" 위치(또는 시작 실행 경로)는 .ipynb 소스 파일을 포함하는 폴더이며, 참조는 주피터 노트북에서 상대적으로(및 아래로) 진행됩니다.
 
 마지막으로 Visual Studio Code에서의 pytest 단위 테스트는 다시 다르게 동작합니다. VS Code 안에서 pytest 단위 테스트의 홈 / 실행 경로는 프로젝트의 루트 폴더입니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@leejamesgilmore/cdk-nested-stacks-the-why-and-how-3f8
 ---
 
 
-```markdown
+
 ![CDK Nested Stacks](/assets/img/2024-06-20-CDKNestedStacksTheWhyandHow_0.png)
 
 ## 시작말
@@ -20,7 +20,7 @@ link: "https://medium.com/@leejamesgilmore/cdk-nested-stacks-the-why-and-how-3f8
 ✔️ AWS CDK로 어떻게 이것이 실현될 수 있는지 논의합니다.
 
 # 소개 👋🏽
-```
+
 
 <div class="content-ad"></div>
 
@@ -354,9 +354,9 @@ stateless.addDependency(stateful);
 
 그럼 이제 'gilmore-cuisine' 폴더에서 다음 명령을 실행하여 스택을 배포해 보겠습니다:
 
-```
+
 npm run deploy
-```
+
 
 <div class="content-ad"></div>
 

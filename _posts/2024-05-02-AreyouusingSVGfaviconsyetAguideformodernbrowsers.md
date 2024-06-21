@@ -45,9 +45,9 @@ iOS 기기 및 브라우저의 즐겨찾기 새 탭 페이지에 대한 아이�
 
 <div class="content-ad"></div>
 
-```md
+
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-```
+
 
 # 매니페스트
 

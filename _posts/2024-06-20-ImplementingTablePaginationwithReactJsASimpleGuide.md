@@ -63,7 +63,7 @@ npx create-react-app pagination-demo
 
 <div class="content-ad"></div>
 
-```markdown
+
 css
 table {
   border: 1px solid black;
@@ -96,14 +96,14 @@ button {
   border: 1px solid black;
   padding: 2px;
 }
-```
+
 
 2. Table.jsx
 
 이 컴포넌트에서는 부모 컴포넌트로부터 dataToDisplay를 받아옵니다.
 
 테이블 헤더에는 (userId)를 제외한 3가지 헤더 값을 표시합니다. (포함하려면 포함할 수 있습니다). 테이블 본문에는 해당 값들을 표시합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -234,7 +234,7 @@ if (data.length == 0) return <div>Loading...</div>;
 
 이 블록은 데이터가 페이지로 나뉘어진 개수만큼 1부터 페이지 번호까지의 배열을 생성합니다.
 
-데모에서 데이터 길이가 200이고 페이지 당 10개의 행을 표시하므로, totalPages = 200/10이므로 20이 됩니다. 따라서 [1,2,3……20]과 같은 배열이 생성되며, 이를 매핑하여 선택 드롭다운의 옵션을 생성합니다.```
+데모에서 데이터 길이가 200이고 페이지 당 10개의 행을 표시하므로, totalPages = 200/10이므로 20이 됩니다. 따라서 [1,2,3……20]과 같은 배열이 생성되며, 이를 매핑하여 선택 드롭다운의 옵션을 생성합니다.
 
 <div class="content-ad"></div>
 

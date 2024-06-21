@@ -73,7 +73,6 @@ php artisan make:controller CustomAuthController
 ```plaintext
 `app\Http\Controllers\CustomAuthController.php` 에 위 코드를 주의 깊게 넣어주세요.
 
-```php
 <?php
 
 namespace App\Http\Controllers;
@@ -156,7 +155,6 @@ class CustomAuthController extends Controller
         return Redirect('login');
     }
 }
-```
 
 Step 4: 권한 부여 라우트 생성
 
@@ -165,7 +163,6 @@ Step 4: 권한 부여 라우트 생성
 
 이 단계에서는 라라벨 애플리케이션에서 사용자 정의 인증을 처리하기 위해 POST 및 GET 방식으로 경로를 생성하는 방법을 설명합니다. route/web.php 파일을 열고 다음 코드를 추가하세요.
 
-```js
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -183,7 +180,6 @@ Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name(
 Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
 Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
 Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
-```
 
 단계 5: Auth Blade View 파일 생성
 
@@ -191,7 +187,6 @@ Resources/views/ 폴더 내에서 auth 폴더를 생성하고 그 안에 new log
 
 
 
-```js
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
 <main class="login-form">
     <div class="cotainer">
@@ -232,11 +227,9 @@ Resources/views/ 폴더 내에서 auth 폴더를 생성하고 그 안에 new log
         </div>
     </div>
 </main>
-```
 
 Resources/views/auth 폴더로 이동하여 비슷하게 registration.blade.php 파일을 만들고, 이 파일에 다음 코드를 추가해주세요:
 
-```js
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <main class="signup-form">
@@ -290,13 +283,11 @@ Resources/views/auth 폴더로 이동하여 비슷하게 registration.blade.php 
         </div>
     </div>
 </main>
-```
 
-Resources/views/ 폴더로 이동하여 새로운 dashboard.blade.php 파일을 만들고, 이 파일에 다음 코드를 추가해주세요:```
-
+Resources/views/ 폴더로 이동하여 새로운 dashboard.blade.php 파일을 만들고, 이 파일에 다음 코드를 추가해주세요:
 
 
-```js
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -335,24 +326,19 @@ Resources/views/ 폴더로 이동하여 새로운 dashboard.blade.php 파일을 
 </body>
 
 </html>
-```
 
 단계 6: 라라벨 서버 실행하기
 
 마지막으로, 브라우저에서 애플리케이션을 시작할 수 있도록 라라벨 개발 서버를 실행해야 합니다. 명령 프롬프트를 통해 다음 명령어를 실행해 주세요.
 
-```js
 php artisan serve
-```
 
 
 
 브라우저 주소창에 다음 URL을 추가하고 애플리케이션을 테스트해보세요.
 
-```js
 http://127.0.0.1:8000/login
 http://127.0.0.1:8000/registration
-```
 
 소스 코드
 

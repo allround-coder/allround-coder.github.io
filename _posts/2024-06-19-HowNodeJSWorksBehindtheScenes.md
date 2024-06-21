@@ -11,7 +11,7 @@ link: "https://medium.com/@zeugurlu/how-node-js-works-behind-the-scenes-61b915cc
 ---
 
 
-```markdown
+
 ![How Node.js Works Behind the Scenes](/assets/img/2024-06-19-HowNodeJSWorksBehindtheScenes_0.png)
 
 Node.js는 Google의 오픈 소스 V8 JavaScript 엔진을 기반으로 한 JavaScript 런타임입니다. 또한 웹 서버로 사용하기에 이상적이며, 서버 측 웹 개발에 JavaScript를 사용할 수 있는 장점을 제공합니다. Node.js는 V8 JavaScript 엔진과 런타임 환경 내의 Libuv와 같은 몇 가지 핵심 라이브러리에 의존합니다.
@@ -20,7 +20,7 @@ Node.js는 Google의 오픈 소스 V8 JavaScript 엔진을 기반으로 한 Java
 - Libuv는 비동기 I/O에 강점을 가진 오픈 소스 라이브러리입니다. 이 레이어를 통해 Node는 기본 컴퓨터 운영 체제, 파일 시스템, 네트워킹 등에 대한 액세스 권한을 얻습니다. 또한 libuv는 Node.js의 두 가지 매우 중요한 기능인 이벤트 루프와 스레드 풀도 구현합니다.
 
 # 스레드 풀
-```
+
 
 <div class="content-ad"></div>
 
@@ -47,7 +47,7 @@ process.env.UV_THREADPOOL_SIZE = 1;
 # 이벤트 루프
 
 Node.js에서는 애플리케이션 내에서 중요한 사건이 발생할 때마다 명명된 이벤트를 방출하는 이벤트 발생자라는 특정 개체가 있습니다. 이 사건에는 서버에 요청이 도착하거나 타이머가 만료되거나 파일이 읽기 작업을 완료하는 등의 중요한 일이 포함될 수 있습니다. 이러한 이벤트는 개발자가 설정한 이벤트 리스너에 의해 수집되며, 각 리스너에 첨부된 콜백 함수가 실행됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -61,4 +61,4 @@ const server = http.createServer(); server.on('request',(req,res) => { res.end('
 - 이 리스너에 연결된 콜백 함수는 자동으로 호출됩니다.
 - 함수는 그런 다음 데이터를 클라이언트에 다시 보냅니다.
 
-JavaScript 프로그래밍에서 이벤트 발생자 논리는 관찰자 패턴이라고 합니다. 결론적으로 이벤트 루프는 콜백 실행 및 네트워킹 I/O와 같은 간단한 작업을 처리하는 것을 담당하며, 스레드 풀은 파일 액세스나 압축과 같은 더 많은 작업을 처리합니다.```
+JavaScript 프로그래밍에서 이벤트 발생자 논리는 관찰자 패턴이라고 합니다. 결론적으로 이벤트 루프는 콜백 실행 및 네트워킹 I/O와 같은 간단한 작업을 처리하는 것을 담당하며, 스레드 풀은 파일 액세스나 압축과 같은 더 많은 작업을 처리합니다.

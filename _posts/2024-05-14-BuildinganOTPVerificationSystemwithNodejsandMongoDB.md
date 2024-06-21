@@ -61,7 +61,7 @@ npm install express mongoose twilio dotenv body-parser
 이제 프로젝트가 설정되었으므로 OTP 인증 시스템을 구축할 차례입니다.
 
 MongoDB 설정: 먼저 MongoDB 데이터베이스를 설정해보겠습니다. 프로젝트 디렉토리에 db.js라는 파일을 생성하고 다음 코드를 추가하세요:
-```
+
 
 
 

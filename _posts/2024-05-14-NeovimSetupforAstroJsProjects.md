@@ -57,7 +57,7 @@ link: "https://medium.com/@adam-drake-frontend-developer/neovim-setup-for-astroj
   })
 ```
 
-저는 이 부분이 헷갈렸어요. astro-language-server를 설치했는데 lspconfig에서는 astro만 사용한다고 하더라구요. 나중에 돌아봤을 때 Mason에서 LSP 이름 뒤에 astro를 제공하는 걸 볼 수 있었지만, 처음에는 이게 명확하지 않았어요.```
+저는 이 부분이 헷갈렸어요. astro-language-server를 설치했는데 lspconfig에서는 astro만 사용한다고 하더라구요. 나중에 돌아봤을 때 Mason에서 LSP 이름 뒤에 astro를 제공하는 걸 볼 수 있었지만, 처음에는 이게 명확하지 않았어요.
 
 
 
@@ -99,7 +99,7 @@ pnpm add -D prettier-plugin-astro
 
 # 결론
 
-이 모든 것을 설정하는 방법이 100% 명확하지는 않았고, 꽤 오랜 시간이 걸렸습니다. 여러 가지를 찾아보고 시행착오를 격은 결과였죠. 이 기사가 Neovim에서 AstroJs 프로젝트를 작업하기를 희망하는 사람들이 자신의 설정을 Neovim에서 잘 작동하도록 도와줄 수 있기를 바랍니다.```
+이 모든 것을 설정하는 방법이 100% 명확하지는 않았고, 꽤 오랜 시간이 걸렸습니다. 여러 가지를 찾아보고 시행착오를 격은 결과였죠. 이 기사가 Neovim에서 AstroJs 프로젝트를 작업하기를 희망하는 사람들이 자신의 설정을 Neovim에서 잘 작동하도록 도와줄 수 있기를 바랍니다.
 
 
 

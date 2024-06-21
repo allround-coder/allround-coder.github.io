@@ -283,7 +283,7 @@ function UserProfileComponent({ userId }) {
 - 컴포넌트 속성으로 ref 사용:
 
 이후에는 새 인자로 선언하는 대신 컴포넌트 속성에서 ref를 가져올 수 있습니다.
-```
+
 
 
 

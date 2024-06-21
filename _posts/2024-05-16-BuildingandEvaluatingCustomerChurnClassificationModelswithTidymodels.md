@@ -48,7 +48,7 @@ package.check <- lapply(packages, FUN = function(x) {
 
 이 연습에서는 Simarpreet Singh의 Kaggle에서 Creative Commons Attribution 4.0 International 라이선스(CC BY 4.0)로 사용 가능한 Binary Classification of Bank Churn Synthetic Data를 사용합니다.
 
-데이터셋은 "Exited" 열을 포함하고 있으며 이는 고객이 떠났는지 여부를 나타냅니다. 이를 예측할 것입니다. 먼저 데이터셋을 로드하고 데이터셋의 모습을 살펴볼 것입니다:```
+데이터셋은 "Exited" 열을 포함하고 있으며 이는 고객이 떠났는지 여부를 나타냅니다. 이를 예측할 것입니다. 먼저 데이터셋을 로드하고 데이터셋의 모습을 살펴볼 것입니다:
 
 <div class="content-ad"></div>
 

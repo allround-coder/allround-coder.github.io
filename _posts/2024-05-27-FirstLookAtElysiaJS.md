@@ -270,7 +270,7 @@ GET /api/books/:id -> app.api.books[id].get()
 POST /auth/login   -> app.auth.login.post(body)
 ```
 
-http://localhost:8080에서 서버를 실행 중이라면, 애플리케이션을 테스트해보세요.```
+http://localhost:8080에서 서버를 실행 중이라면, 애플리케이션을 테스트해보세요.
 
 <div class="content-ad"></div>
 

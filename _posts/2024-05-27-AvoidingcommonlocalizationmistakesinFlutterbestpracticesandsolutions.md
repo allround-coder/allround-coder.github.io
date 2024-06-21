@@ -139,7 +139,7 @@ dependencies:
 Text(t.usersOnline(n: 3)),
 ```
 
-그 결과로 문법적으로 올바른 복수형을 얻게됩니다. POEditor와 같은 온라인 편집기도 이를 지원합니다.```
+그 결과로 문법적으로 올바른 복수형을 얻게됩니다. POEditor와 같은 온라인 편집기도 이를 지원합니다.
 
 <div class="content-ad"></div>
 

@@ -87,13 +87,11 @@ console.log(newGreeting); // "Jello"
 
 ```js
 #### 객체의 깊은 복사:
-```javascript
 let original = { name: "Ali", age: 25 };
 let copy = JSON.parse(JSON.stringify(original));
 copy.name = "Reza";
 console.log(original); // { name: "Ali", age: 25 }
 console.log(copy); // { name: "Reza", age: 25 }
-```
 
 <div class="content-ad"></div>
 

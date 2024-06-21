@@ -95,7 +95,7 @@ npm install commander
 
 
 
-```md
+
 #!/usr/bin/env node
 
 import { program } from "commander";
@@ -109,7 +109,7 @@ program
   });
 
 program.parse(process.argv);
-```
+
 
 패키지.json에 bin을 추가하여 CLI 명령을 인식하도록하고 CommonJS 대신 ES 모듈과 함께 작동하도록 유형을 추가하십시오:
 
@@ -340,16 +340,12 @@ my-node-cli/
 
 ## 설치
 
-```bash
 npm install -g my-node-cli
-```
 
 ## 사용법
 내 노드 CLI를 사용하려면 다음을 실행하십시오:
 
-```bash
 my-node-cli - help
-```
 
 ### 명령어
 - `my-node-cli - name YourName`: 당신의 이름으로 인사합니다.
@@ -370,7 +366,6 @@ my-node-cli - help
 
 테이블 태그를 마크다운 형식으로 변경하세요.
 
-```js
 /**
  * 이 함수는 사용자의 이름으로 인사합니다.
  * @param {string} name 사용자의 이름
@@ -378,7 +373,6 @@ my-node-cli - help
 const greet = (name) => {
   console.log(`안녕, ${name}!`);
 };
-```
 
 # Best Practices
 

@@ -65,7 +65,7 @@ scrollToBottom(document.body);
 const isIE = !!document.documentMode;
 ```
 
-## 주어진 텍스트에서 HTML 태그 제거하기```
+## 주어진 텍스트에서 HTML 태그 제거하기
 
 
 

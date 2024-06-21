@@ -213,11 +213,11 @@ Mapbox 타일 레이어를 사용하려면 Mapbox 계정에 가입하고 액세�
 
 - Create React App을 사용하여 새로운 React 프로젝트를 만들어보세요:
 
-```
+
 npx create-react-app leaflet-map-app
 
 cd leaflet-map-app
-```
+
 
 2. 필요한 종속성을 설치하세요:
 
@@ -284,7 +284,7 @@ MapContainer의 높이와 너비를 설정하지 않으면 지도가 렌더링�
 mapRef 사용 이유:
 
 useRef로 mapRef를 사용하면 React-Leaflet이 관리하는 Leaflet 지도 인스턴스에 직접 액세스할 수 있습니다. 이는 표준 속성이나 이벤트 처리의 범위를 벗어나야 하는 작업을 수행해야 할 때 특히 유용합니다. 예를 들어 지도와 상호 작용하거나 지도의 중심을 동적으로 업데이트하거나 Leaflet의 기본 API에 직접 액세스해야 할 수 있습니다.
-```
+
 
 
 
@@ -333,13 +333,13 @@ export default App;
 
 아래는 Markdown 형식으로 테이블을 변경한 결과입니다.
 
-```
+
 <img src="/assets/img/2024-05-12-GettingStartedwithLeafletjsandReactRenderingaSimpleMap_2.png" />
 
 # React-Leaflet의 한계
 
 React-Leaflet은 상호작용적 지도를 만드는 데 훌륭한 도구이지만 몇 가지 재미있는 한계가 있습니다.
-```
+
 
 
 

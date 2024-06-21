@@ -22,7 +22,7 @@ link: "https://medium.com/javascript-in-plain-english/18-advanced-javascript-tec
 
 
 
-```
+
 # 전체 화면으로 변환하기 ✨
 
 ```js
@@ -103,7 +103,7 @@ window.print()
 
 
 
-```
+
 ```js
 window.onbeforeunload = function(){
     return 'haorooms 블로그를 나가시겠습니까? 🚪🤔';

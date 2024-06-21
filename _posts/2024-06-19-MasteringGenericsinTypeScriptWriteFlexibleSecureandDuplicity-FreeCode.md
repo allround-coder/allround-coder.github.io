@@ -70,7 +70,7 @@ function logInformations<T extends ExtraInformations>(infos: T): T {
 ## 결론
 
 TypeScript의 제네릭은 더 유연하고 안전한 코드를 작성하는 데 필수적이며, any를 사용한 적 less robust한 방식을 대체하고 불필요한 코드 중복을 제거합니다. 타입을 추론하고 제약을 부과할 수 있는 기능을 통해, 제네릭은 개발을 단순화하고 타입의 정확성을 크게 향상시켜 코드를 확장 가능하고 유지보수하기 쉽게 만듭니다.
-```
+
 
 <div class="content-ad"></div>
 

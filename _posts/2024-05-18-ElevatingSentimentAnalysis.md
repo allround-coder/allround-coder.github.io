@@ -360,7 +360,7 @@ num_tokens_to_predict: 1024
 
 Ollama은 클라우드 서비스가 필요 없이 사용자가 자신의 기기에서 오픈 LLMs를 로컬에서 실행할 수 있는 도구입니다. llama.cpp의 프론트 엔드로, GGUF 모델을 로드할 수 있습니다. 사용 편의성을 고려하여 설계되었으며 간단한 API, OpenAI 엔드포인트 호환성(즉, OpenAI를 지원하는 모든 것과 작동할 수 있음) 및 사전 빌드된 모델 라이브러리를 제공합니다. Ollama는 macOS, Linux 및 Windows에서 실행되며 CPU와 GPU를 사용할 수 있습니다. LangChain, LiteLLM 등 인기있는 프레임워크와 원활하게 통합됩니다. 로컬 실행을 통해 데이터 개인 정보 보호 및 지연 시간을 줄이므로 고급 NLP 기능을 효율적으로 활용하려는 개발자 및 연구자에게 이상적인 선택지입니다.
 
-HuggingFace에서 GGUF 파인 튜닝된 모델을 다운로드할 수 있습니다.```
+HuggingFace에서 GGUF 파인 튜닝된 모델을 다운로드할 수 있습니다.
 
 <div class="content-ad"></div>
 

@@ -116,7 +116,7 @@ export default schema;
 ```
 
 리졸버 생성하기
-```
+
 
 <div class="content-ad"></div>
 

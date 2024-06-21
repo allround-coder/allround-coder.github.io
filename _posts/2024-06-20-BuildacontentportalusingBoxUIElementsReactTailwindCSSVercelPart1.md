@@ -11,7 +11,7 @@ link: "https://medium.com/box-developer-blog/build-a-content-portal-using-box-ui
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-06-20-BuildacontentportalusingBoxUIElementsReactTailwindCSSVercelPart1_0.png)
 
 Box는 그 자체로 훌륭하지만 때로는 특정 사용자 인터페이스를 가진 맞춤 환경을 외부 사용자에게 제공하고 싶은 경우가 있을 수 있습니다. 이때 컨텐츠 포털이 등장합니다!
@@ -19,7 +19,7 @@ Box는 그 자체로 훌륭하지만 때로는 특정 사용자 인터페이스�
 이 포털 시리즈의 첫 번째 부분에서 Box의 샘플 코드 저장소 중 하나를 사용하여 Box UI Elements, React, Tailwind CSS 및 Vercel을 이용해 포털 개발을 시작하는 방법을 살펴볼 것입니다.
 
 # 커스텀 포털 개요
-```
+
 
 <div class="content-ad"></div>
 

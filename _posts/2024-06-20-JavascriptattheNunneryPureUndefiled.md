@@ -61,7 +61,7 @@ JavaScript가 약했더라도 웹을 구동하는 기술로서 죽어서는 안�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-JavascriptattheNunneryPureUndefiled_2.png)
 
 클래스로 할 수 있는 것은 모두 객체와 함수로도 할 수 있어요. 그리 어렵지 않아요.
@@ -69,7 +69,7 @@ JavaScript가 약했더라도 웹을 구동하는 기술로서 죽어서는 안�
 ## 데코레이터는 사용하지 않아요
 
 사실 데코레이터 아이디어를 좋아해요. 안타깝게도 자바스크립트 위원회가 금기 주류에 취해 있었던 그 날 밤, 형식을 결정해버렸어요.
-```
+
 
 <div class="content-ad"></div>
 

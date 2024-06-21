@@ -72,7 +72,7 @@ export class RetryInterceptor implements HttpInterceptor {
 
 ## retry
 
-이름에서 알 수 있듯이 retry 연산자는 API 호출을 다시 시도합니다. HTTP 요청 옵저버블이 실패하면 이 방법은 다시 시도하기 위해 소스 원래 옵저버블에 다시 구독할 것입니다. 위에서 선언한 count와 delay 속성이 있는 구성 객체를 사용합니다.```
+이름에서 알 수 있듯이 retry 연산자는 API 호출을 다시 시도합니다. HTTP 요청 옵저버블이 실패하면 이 방법은 다시 시도하기 위해 소스 원래 옵저버블에 다시 구독할 것입니다. 위에서 선언한 count와 delay 속성이 있는 구성 객체를 사용합니다.
 
 
 
@@ -239,7 +239,7 @@ export class RetryInterceptor implements HttpInterceptor {
 export class AppModule { }
 ```
 
-하지만 아직도 마지막 문제가 있습니다. 특정 API 호출이 이 구성을 재정의하려면 어떻게 해야 할까요? 예를 들어, 네트워크 부하가 큰 호출은 재시도하지 않고 싶을 수 있습니다.```
+하지만 아직도 마지막 문제가 있습니다. 특정 API 호출이 이 구성을 재정의하려면 어떻게 해야 할까요? 예를 들어, 네트워크 부하가 큰 호출은 재시도하지 않고 싶을 수 있습니다.
 
 
 

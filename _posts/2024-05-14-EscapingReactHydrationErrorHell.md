@@ -58,7 +58,7 @@ React는 세계의 이해가 동기화되지 않아 발생하는 이슈가 있�
 - 서버에서는 isClient 조건이 false로 평가되어 null 값이 렌더링됩니다.
 - 수화하기 전 클라이언트 측에선 window가 정의되어 이 표현식이 true로 평가됩니다.
 - 수화 후 함수형 컴포넌트가 처음 렌더링되면 `ClientOnlyComponent /`이 결과로 나오는데, 이는 서버 측에서 렌더링된 null 값과 맞지 않습니다.
-- 이로 인해 수화 오류가 발생합니다.```
+- 이로 인해 수화 오류가 발생합니다.
 
 
 
@@ -117,7 +117,7 @@ const BreakpointVaryingCTA = ({ showModel }) => {
 경고: <div>에서 텍스트 노드 " "을(를) 포함하는 서버 HTML을 기대하지 않았습니다.
 ```
 
-이와 유사하게 응답 HTML의 공백을 제거하여 압축하면 비슷한 문제가 발생할 수 있습니다.```
+이와 유사하게 응답 HTML의 공백을 제거하여 압축하면 비슷한 문제가 발생할 수 있습니다.
 
 
 
@@ -144,7 +144,7 @@ const BreakpointVaryingCTA = ({ showModel }) => {
 
 
 
-```
+
 ![이미지](/assets/img/2024-05-14-EscapingReactHydrationErrorHell_2.png)
 
 브라우저에 따라 이러한 부적절한 요소가 수화 전에 DOM에서 제거될 수 있으며, React가 수화하려고 할 때 불일치가 발생할 수 있습니다.
@@ -152,7 +152,7 @@ const BreakpointVaryingCTA = ({ showModel }) => {
 여기서 중요한 점은 유효한 HTML을 작성하는 것입니다!
 
 ## 제삼자의 간섭
-```
+
 
 
 
@@ -231,7 +231,7 @@ hydrateRoot() 옵션에 대한 추가 정보는 리액트 문서에서 확인할
 
 NextJS 어플리케이션
 
-NextJS를 사용할 때는 애플리케이션의 수화를 직접 호출할 필요가 없습니다. NextJS가 대신 수행해줍니다.```
+NextJS를 사용할 때는 애플리케이션의 수화를 직접 호출할 필요가 없습니다. NextJS가 대신 수행해줍니다.
 
 
 

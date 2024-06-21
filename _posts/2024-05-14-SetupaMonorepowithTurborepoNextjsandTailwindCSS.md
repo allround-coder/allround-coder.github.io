@@ -135,12 +135,12 @@ yarn workspace docs add -D tailwindcss autoprefixer
 
 좋아요! 여기서 테이블 태그를 마크다운 형식으로 변경했습니다:
 
-```md
+
 | 파일명            | 설정 내용                                       |
 |----------------------|-----------------------------------------------------|
 | tailwind.config.js    | `module.exports = require("@mrizkiaiman/configs/tailwind/tailwind.config");` |
 | postcss.config.js       | `module.exports = require("@mrizkiaiman/configs/tailwind/postcss.config");` |
-```
+
 
 
 

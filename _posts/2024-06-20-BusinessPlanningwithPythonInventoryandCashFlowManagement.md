@@ -118,7 +118,7 @@ III. 결론
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-BusinessPlanningwithPythonInventoryandCashFlowManagement_6.png)
 
 재고 보충 소요시간, 목표 주기 서비스 레벨 및 고객 수요의 표준 편차를 사용하여 정의합니다.
@@ -126,7 +126,7 @@ III. 결론
 결과는 아래 차트와 같습니다.
 
 ![이미지](/assets/img/2024-06-20-BusinessPlanningwithPythonInventoryandCashFlowManagement_7.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -192,7 +192,7 @@ III. 결론
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![](/assets/img/2024-06-20-BusinessPlanningwithPythonInventoryandCashFlowManagement_11.png)
 
 💡 관찰
@@ -204,7 +204,7 @@ III. 결론
 내 친구는 커피숍에 대한 판매 시 독립적인 영업 대행사와 함께 일하며, 이들은 매출의 30%의 수수료를 받습니다.
 
 ![](/assets/img/2024-06-20-BusinessPlanningwithPythonInventoryandCashFlowManagement_12.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -232,7 +232,7 @@ III. 결론
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-BusinessPlanningwithPythonInventoryandCashFlowManagement_14.png)
 
 💡 관찰 사항
@@ -240,7 +240,7 @@ III. 결론
 - 현금 흐름은 공급 업체 및 화물 수송업자에게 지불할 때를 제외하고 항상 양수입니다.
 
 만약 우리가 현금이 없는 상태에서 연도를 시작한다고 가정해보자 (나쁜 아이디어),
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@frontender-ua/frontend-weekly-digest-366-3-9-jun-2024
 ---
 
 
-```markdown
+
 ![Frontend Weekly Digest](/assets/img/2024-06-20-FrontendWeeklyDigest36639Jun2024_0.png)
 
 # 웹 개발
@@ -28,7 +28,7 @@ link: "https://medium.com/@frontender-ua/frontend-weekly-digest-366-3-9-jun-2024
 - 효과
 - 독립적인 웹 컴포넌트의 라이브 데모
 - 그리드 항목에 푸시 애니메이션
-```
+
 
 <div class="content-ad"></div>
 

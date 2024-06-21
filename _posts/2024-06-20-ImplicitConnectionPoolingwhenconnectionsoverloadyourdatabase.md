@@ -138,7 +138,7 @@ Time 26.85 seconds
 # Oracle Database 23ai 암시적 연결 풀링
 
 암시적 연결 풀링은 데이터베이스 서버 프로세스 및 세션 메모리를 공유하기 위해 데이터베이스 주거 연결 풀링을 활용하는 Oracle Database 23ai의 기능입니다. 이는 python-oracledb, node-oracledb, JDBC를 포함한 인기 있는 Oracle Database 드라이버에서 지원됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -217,8 +217,8 @@ User02 sid-ser 399-25678 at time 2024-06-11 20:28:46.830118
 ```
 
 If you analyze the output, you can see that in this run, only three servers are used for all the queries being executed. The session identifier/serial number pairs are:
-```
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -233,7 +233,7 @@ If you analyze the output, you can see that in this run, only three servers are 
 두 실행 간의 총 시간 차이는 비교에 중요하지 않지만 이 작은 테스트에서는 유의미하지 않습니다. 일반적으로 암시적 연결 풀링은 리소스를 공유하고 오라클 스택에 추가 작업을 수행해야 하기 때문에 암시적 연결 풀링으로 이동할 때 총 시간이 느려질 수 있습니다. — 심지어 정확하게 측정 가능한 차이가 있는 경우에도. 이는 애플리케이션이 SQL을 실행하는 빈도에 따라 달라질 수 있습니다. 그러나 데이터베이스 계층은 서버 프로세스 수가 적기 때문에 더 적은 메모리를 사용하므로 더 효율적일 수 있습니다 — 그리고 다른 애플리케이션에서 더 많은 사용자 연결을 처리할 수 있습니다.
 
 # 암시적 연결 풀링 구성하기
-```
+
 
 <div class="content-ad"></div>
 

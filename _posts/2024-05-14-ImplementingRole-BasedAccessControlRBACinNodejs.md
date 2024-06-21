@@ -307,7 +307,7 @@ module.exports = router;
 ```
 
 routes/user.controllers.js:
-```
+
 
 
 
@@ -518,7 +518,7 @@ views/index.jade:
   p 환영합니다 #{title}
 ```
 
-views/layout.jade:```
+views/layout.jade:
 
 
 

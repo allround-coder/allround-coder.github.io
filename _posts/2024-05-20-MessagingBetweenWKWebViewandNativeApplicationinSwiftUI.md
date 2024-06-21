@@ -224,7 +224,7 @@ let absolutePath = Bundle.main.path(forResource: fileName,
                                     inDirectory: inDirectory)
 ```
 
-애플리케이션 메인 번들에서 path 메서드는 주어진 파일 정보를 절대 경로로 변환하려고 합니다. 만약 주어진 파일 정보가 잘못되었다면 nil을 반환합니다.``` 
+애플리케이션 메인 번들에서 path 메서드는 주어진 파일 정보를 절대 경로로 변환하려고 합니다. 만약 주어진 파일 정보가 잘못되었다면 nil을 반환합니다. 
 
 <div class="content-ad"></div>
 

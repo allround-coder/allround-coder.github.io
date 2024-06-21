@@ -152,7 +152,7 @@ HTML 표준은 페이지 로드 및 대화 상자/팝오버 표시 상태에서 
 위의 HTML 코드 조각은 유효성 상태에 따라 스타일을 설정하기 위해 CSS 코드를 사용합니다. 아래 미리보기에서와 같이, 유효하지 않은 입력값은 입력 상자 테두리를 빨간색으로 변하고 빨간색 교차 표시를 표시합니다. 한편, 유효한 입력값은 녹색 테두리와 녹색 확인 표시가 렌더링됩니다:
 
 <img src="https://miro.medium.com/v2/resize:fit:954/1*yCIHUIN8Sn6IMxuFbv0YVg.gif" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -182,7 +182,7 @@ if(productInput.validity.valid) {
 
 <div class="content-ad"></div>
 
-```md
+
 ![이미지](/assets/img/2024-05-01-HTMLAttributesThatEveryWebDeveloperShouldKnow_1.png)
 
 입력 요소와 함께 inputmode 속성을 다음과 같이 사용해봅시다:
@@ -247,7 +247,7 @@ let { playerName, playerScore, playerCity } = document.getElementById('elm').dat
 console.log(playerName, playerScore, playerCity); // John 20 LA
 ```
 
-또한 CSS 문서 내에서 이러한 데이터 속성에 액세스할 수도 있습니다.```
+또한 CSS 문서 내에서 이러한 데이터 속성에 액세스할 수도 있습니다.
 
 <div class="content-ad"></div>
 
@@ -267,7 +267,7 @@ console.log(playerName, playerScore, playerCity); // John 20 LA
 
 <img src="/assets/img/2024-05-01-HTMLAttributesThatEveryWebDeveloperShouldKnow_3.png" />
 
-제3자 라이브러리를 사용하지 않고도 최신 네이티브 HTML 태그를 사용하여 간결하고 사용자 친화적이며 성능이 우수하며 접근성이 좋은 웹 프론트엔드를 개발할 수 있습니다. 아래 이야기로 더 자세히 알아보세요:```
+제3자 라이브러리를 사용하지 않고도 최신 네이티브 HTML 태그를 사용하여 간결하고 사용자 친화적이며 성능이 우수하며 접근성이 좋은 웹 프론트엔드를 개발할 수 있습니다. 아래 이야기로 더 자세히 알아보세요:
 
 <div class="content-ad"></div>
 

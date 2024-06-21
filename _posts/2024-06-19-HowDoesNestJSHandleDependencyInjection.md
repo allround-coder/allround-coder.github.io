@@ -44,7 +44,7 @@ import 'reflect-metadata';
 
 # 결론
 
-NestJS는 TypeScript에서 메타데이터와 리플렉션을 사용하여 의존성을 효과적으로 관리합니다. 이 기능을 통해 NestJS는 타입 주석이 제거되어도 올바르게 의존성을 식별하고 주입할 수 있습니다. TypeScript로 서버 측 응용 프로그램을 개발할 때 NestJS의 강점 중 하나입니다.```
+NestJS는 TypeScript에서 메타데이터와 리플렉션을 사용하여 의존성을 효과적으로 관리합니다. 이 기능을 통해 NestJS는 타입 주석이 제거되어도 올바르게 의존성을 식별하고 주입할 수 있습니다. TypeScript로 서버 측 응용 프로그램을 개발할 때 NestJS의 강점 중 하나입니다.
 
 <div class="content-ad"></div>
 

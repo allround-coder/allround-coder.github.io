@@ -214,8 +214,8 @@ iOS에서 올바른 흐름은 첫 번째 모달을 표시한 후에, 첫 번째 
 
 단계 1: 프로젝트에 라이브러리 추가하기:
 
-- ```yarn add @whitespectre/rn-modal-presenter```
-- ```npm install @whitespectre/rn-modal-presenter```
+- yarn add @whitespectre/rn-modal-presenter
+- npm install @whitespectre/rn-modal-presenter
 
 단계 2: 모달을 표시하고 싶은 컴포넌트 위에 래핑하기:
 

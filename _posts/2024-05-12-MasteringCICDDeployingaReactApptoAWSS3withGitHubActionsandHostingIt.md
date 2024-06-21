@@ -113,7 +113,7 @@ npx create-react-app react-gh-action-s3
 React 앱을 만든 후에, ".github\workflows" 라는 폴더를 하나 추가하고 새 파일을 만들어 "main.yaml"이라고 이름 짓습니다. 아래 코드를 main.yaml 파일에 복사하세요:
 
 ![이미지](/assets/img/2024-05-12-MasteringCICDDeployingaReactApptoAWSS3withGitHubActionsandHostingIt_13.png)
-```
+
 
 
 

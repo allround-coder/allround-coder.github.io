@@ -28,7 +28,7 @@ React.js와 Node.js는 효율성, 확장성 및 유연성으로 현대적인 웹
 
 <div class="content-ad"></div>
 
-```markdown
+
 mkdir fullstack-app
 cd fullstack-app
 
@@ -41,7 +41,7 @@ mkdir server
 cd server
 npm init -y
 npm install express
-```
+
 
 단계 2: 백엔드 API 생성하기
 `server` 디렉토리 내에 Express.js 서버용 `index.js` 파일을 만들어 보세요:
@@ -67,7 +67,7 @@ app.listen(PORT, () => {
 
 단계 3: React.js로 프론트엔드 설정하기
 `client` 디렉토리 (create-react-app에서 생성됨)에서 `App.js`를 수정하여 백엔드 API에서 데이터를 가져올 수 있도록 설정하세요:
-```
+
 
 <div class="content-ad"></div>
 
@@ -103,17 +103,17 @@ export default App;
 Step 4: 애플리케이션 실행하기
 프론트엔드와 백엔드 서버를 동시에 실행하세요:
 
-```
+
 # 'client' 디렉토리에서
 npm start
 
 # 'server' 디렉토리에서
 node index.js
-```
+
 
 결론:
 이 블로그 포스트에서 React.js와 Node.js를 사용하여 풀 스택 웹 애플리케이션을 구축하는 기본적인 내용을 다뤘습니다. 환경을 설정하는 방법, Express.js를 사용하여 백엔드 API를 생성하는 방법, 그리고 백엔드에서 데이터를 가져와 React.js 프론트엔드에 표시하는 방법을 배웠습니다. 이 프로젝트를 확장하여 더 많은 기능을 추가하거나 MongoDB와 같은 데이터베이스를 통합하거나 Heroku나 AWS와 같은 플랫폼에 애플리케이션을 배포하는 등의 작업을 자유롭게 진행해보세요.
-```
+
 
 <div class="content-ad"></div>
 

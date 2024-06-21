@@ -33,7 +33,7 @@ Promise.all([fn1, fn2])를 고려해보세요. fn1 또는 fn2가 I/O에 의해 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-OperationalizingNodejsforServerSideRendering_2.png)
 
 현실에서는 요청이 여러 가지 다른 비동기 단계로 구성되는 경우가 많습니다. 심지어 대부분이 계산에 대한 경우라도요. 이는 더 나쁜 교차 결과로 이어질 수 있습니다. renderPromise().then(out => formatResponsePromise(out)).then(body => res.send(body))와 같은 체인으로 요청이 구성된 경우, 다음과 같은 요청 교차가 발생할 수 있습니다.
@@ -43,7 +43,7 @@ Promise.all([fn1, fn2])를 고려해보세요. fn1 또는 fn2가 I/O에 의해 �
 이 경우, 두 요청 모두 두 배로 오래 걸릴 수 있습니다. 이 문제는 동시성이 증가함에 따라 심각해집니다.
 
 게다가 SSR의 일반적인 목표 중 하나는 클라이언트와 서버 모두에서 동일하거나 유사한 코드를 사용할 수 있어야 한다는 것입니다. 이러한 환경 간의 큰 차이점 중 하나는 클라이언트 컨텍스트가 본질적으로 단일 테넌트인 반면 서버 컨텍스트는 다중 테넌트입니다. 클라이언트 측에서 쉽게 작동하는 싱글톤이나 다른 전역 상태와 같은 기법은 서버에서 동시 요청 부하하에 대해 버그, 데이터 누출 및 일반적인 혼돈을 초래할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -119,7 +119,7 @@ nginx가 요청을 읽는 작업을 처리하면, 노드 프로세스의 사용�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![데이터](/assets/img/2024-06-19-OperationalizingNodejsforServerSideRendering_12.png)
 
 이 요청의 더 나은 분배 방식은 다음과 같습니다:
@@ -127,7 +127,7 @@ nginx가 요청을 읽는 작업을 처리하면, 노드 프로세스의 사용�
 ![데이터](/assets/img/2024-06-19-OperationalizingNodejsforServerSideRendering_13.png)
 
 대기 시간을 최소화하고 응답을 빠르게 반환할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -109,7 +109,7 @@ export class CreateUserDto {
 }
 ```
 
-NestJS는 기본 TCP 전송 계층을 사용하여 서로 다른 마이크로서비스 인스턴스 간에 메시지를 전달합니다. NestJS는 microservice 전송자를 설명하는 객체 배열을 인자로받는 static register() 메서드를 노출하는 ClientsModule을 제공합니다. 다음 코드 라인을 사용하여 auth.service.ts를 추가하고 AUTH_MICROSERVICE를 등록해 보겠습니다:```
+NestJS는 기본 TCP 전송 계층을 사용하여 서로 다른 마이크로서비스 인스턴스 간에 메시지를 전달합니다. NestJS는 microservice 전송자를 설명하는 객체 배열을 인자로받는 static register() 메서드를 노출하는 ClientsModule을 제공합니다. 다음 코드 라인을 사용하여 auth.service.ts를 추가하고 AUTH_MICROSERVICE를 등록해 보겠습니다:
 
 <div class="content-ad"></div>
 
@@ -235,7 +235,7 @@ export class AuthController {
 
 # 인증 마이크로서비스 생성
 
-이제 다음 명령을 실행하여 첫 번째 인증 마이크로서비스를 생성할 것입니다:```
+이제 다음 명령을 실행하여 첫 번째 인증 마이크로서비스를 생성할 것입니다:
 
 <div class="content-ad"></div>
 
@@ -275,7 +275,7 @@ bootstrap();
 ```
 
 NestFactory 클래스의 createMicroservice() 메소드를 사용하여 마이크로서비스의 인스턴스를 생성할 수 있습니다. 아주 간단하죠! 만약 궁금한 점이 있거나 도움이 필요하시다면 언제든지 물어주세요! 😊✨
-```
+
 
 <div class="content-ad"></div>
 

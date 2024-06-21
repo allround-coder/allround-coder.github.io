@@ -115,7 +115,7 @@ Modal.show({
 
 - children ⇒ 모달의 콘텐츠를 나타냅니다. 예를 들어, 간단한 텍스트를 삽입했습니다.
 - dismissable ⇒ 배경을 탭하여 모달을 닫을 수 있는지 여부를 나타냅니다.
-- position ⇒ 모달의 위치를 지정합니다. 이는 중앙 또는 하단일 수 있습니다. 이 두 값 중 하나를 사용할 때는 기본적인 스타일을 쉽게 오버라이드할 수 있는 BaseCenterModalContainer 또는 BaseBottomModalContainer 컴포넌트를 사용할 수도 있습니다.```
+- position ⇒ 모달의 위치를 지정합니다. 이는 중앙 또는 하단일 수 있습니다. 이 두 값 중 하나를 사용할 때는 기본적인 스타일을 쉽게 오버라이드할 수 있는 BaseCenterModalContainer 또는 BaseBottomModalContainer 컴포넌트를 사용할 수도 있습니다.
 
 <div class="content-ad"></div>
 

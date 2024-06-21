@@ -249,7 +249,7 @@ MyComponent.jsx 파일 내에서, 각각의 JSX 요소에 정의한 CSS 클래�
 - className="my-component-title"는 `h1` 요소에 스타일을 적용합니다.
 - className="my-component-description"는 `p` 요소에 스타일을 적용합니다.
 
-# App.jsx에서 MyComponent를 다중으로 사용하기```  
+# App.jsx에서 MyComponent를 다중으로 사용하기  
 
 <div class="content-ad"></div>
 

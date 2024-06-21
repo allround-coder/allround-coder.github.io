@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
 ```
 
 # 코드 설명
-```
+
 
 
 

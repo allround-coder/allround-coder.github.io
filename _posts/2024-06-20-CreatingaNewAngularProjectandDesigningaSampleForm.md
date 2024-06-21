@@ -93,7 +93,7 @@ ng generate component sample-form
 - 제출 버튼을 클릭하면 onSubmit 메서드를 통해 양식이 제출됩니다.
 
 # 5. 양식 제출 처리하기 #
-```
+
 
 <div class="content-ad"></div>
 

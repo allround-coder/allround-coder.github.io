@@ -80,11 +80,11 @@ https://codepen.io/una/pen/KKYXMNo
 
 <img src="/assets/img/2024-06-20-PositioningCSSanchors_1.png" />
 
-그러나 아랫부분에도 충분한 공간이 없으면 상단 위치로 다시 이동하게 됩니다. 심지어 거기에도 충분한 공간이 없다면 (다른 곳으로 갈 곳이 없기 때문에):```
+그러나 아랫부분에도 충분한 공간이 없으면 상단 위치로 다시 이동하게 됩니다. 심지어 거기에도 충분한 공간이 없다면 (다른 곳으로 갈 곳이 없기 때문에):
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-20-PositioningCSSanchors_2.png" />
 
 여기서 함께 놀 수 있는 피들(fiddle)이 있어요:
@@ -92,7 +92,7 @@ https://codepen.io/una/pen/KKYXMNo
 또한 너무 흥분하기 전에 현재 브라우저 지원을 고려해주세요:
 
 <img src="/assets/img/2024-06-20-PositioningCSSanchors_3.png" />
-```
+
 
 <div class="content-ad"></div>
 

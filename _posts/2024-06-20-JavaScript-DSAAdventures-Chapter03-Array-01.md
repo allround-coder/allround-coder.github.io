@@ -47,7 +47,7 @@ b. 다차원
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*opzqu5bRV6657AZwySuS5g.gif)
 
 2. pop(): 배열의 끝에서 요소를 제거하고 다른 인덱스를 업데이트하지 않습니다.
@@ -59,11 +59,11 @@ b. 다차원
 3. shift(): 배열의 시작에서 요소를 제거하고 남은 인덱스를 업데이트합니다.
 시간 복잡도: O(n)
 공간 복잡도: O(1)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*wDYt2Kg8rb0miocg8amjYw.gif)
 
 4. unshift(): 배열의 시작 부분에 요소를 추가하고 남은 인덱스를 업데이트합니다.
@@ -75,7 +75,7 @@ b. 다차원
 5. splice(): 기존 요소를 이동하여 요소를 추가하거나 제거합니다.
 시간 복잡도: O(n)
 공간 복잡도: O(n) (요소가 추가되면 새로운 요소에 대한 추가 공간이 필요합니다)
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +127,7 @@ b. 다차원
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*vjlt1A3ss8ncvINiuD4QJg.gif)
 
 15. find(): 주어진 테스트 함수를 만족하는 배열 내 첫 번째 요소를 반환합니다.
@@ -139,11 +139,11 @@ b. 다차원
 16. findIndex(): 주어진 테스트 함수를 만족하는 배열 내 첫 번째 요소의 인덱스를 반환합니다.
 시간 복잡도: O(n)
 공간 복잡도: O(1)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*vjlt1A3ss8ncvINiuD4QJg.gif)
 
 17. sort(): 배열 요소를 정렬하며 일반적으로 Timsort의 변형을 사용합니다.
@@ -153,7 +153,7 @@ b. 다차원
 # 왜 배열을 사용해야 할까요?
 
 배열은 요소에 쉽게 액세스하고 더 나은 캐시 지역성을 갖고 싶을 때 유용합니다. 캐시 지역성은 상대적으로 가까운 저장 위치 내에서 데이터 요소를 사용하는 것을 의미합니다. 프로세서가 메모리 위치에 액세스할 때 그것이 필요한 특정 데이터뿐만 아니라 인접한 데이터 블록도 캐시로 로드합니다. 배열은 연속적으로 저장되어 있기 때문에 한 요소에 액세스하면 캐시로 로드된 인접 요소가 있을 수 있습니다. 이는 인접한 요소에 대한 후속 액세스가 빠르다는 것을 의미합니다. 왜냐하면 이미 캐시에 들어있기 때문입니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -100,7 +100,7 @@ CSS나 PHP를 알지 못해도 멋진 웹사이트를 만들 수 있다면, 이 
 
 Input:
 
-```md
+
 ```js
 <span style="background-color: #004aad> highlighted text.</span>
 ```

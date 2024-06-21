@@ -86,7 +86,6 @@ HTML(HyperText Markup Language)은 웹 개발의 기초로 웹 페이지의 구�
 ``` markdown
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*KJNJQ75h76oAhSL4atPIfw.gif)
 
-```js
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -101,7 +100,6 @@ HTML(HyperText Markup Language)은 웹 개발의 기초로 웹 페이지의 구�
     </details>
 </body>
 </html>
-```
 
 ## 4. `meter` Tag
 
@@ -110,7 +108,7 @@ HTML(HyperText Markup Language)은 웹 개발의 기초로 웹 페이지의 구�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![](/assets/img/2024-06-20-Conclusion_0.png)
 
 ```javascript
@@ -131,7 +129,7 @@ HTML(HyperText Markup Language)은 웹 개발의 기초로 웹 페이지의 구�
 ## 5. `progress` Tag
 
 `progress` 태그는 작업의 완료 진행률을 나타내는 데 사용됩니다. 다운로드 또는 파일 업로드와 같은 작업의 진행 상황을 제공하여 사용자에게 진행 중인 작업의 상태에 대한 시각적인 신호를 제공하며 사용자 경험을 보다 원활하고 정보를 얻을 수 있게 합니다.
-```  
+
 
 <div class="content-ad"></div>
 

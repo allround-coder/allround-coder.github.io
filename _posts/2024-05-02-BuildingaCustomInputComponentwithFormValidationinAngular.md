@@ -120,7 +120,7 @@ The CustomInputComponent HTML template (custom-input.component.html):
 - 템플릿은 입력 필드를 렌더링하고 필수 필드에 대한 유효성 검사 메시지를 표시합니다.
 - 컴포넌트 스타일은 UI 조정에 필요한 대로 사용자 정의할 수 있습니다.
 
-# 3. 폼에서 사용자 정의 입력 구현하기:```
+# 3. 폼에서 사용자 정의 입력 구현하기:
 
 <div class="content-ad"></div>
 

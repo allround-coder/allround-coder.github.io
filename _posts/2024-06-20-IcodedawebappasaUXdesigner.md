@@ -73,7 +73,7 @@ Visual Studio를 다운로드하고 html 파일을 시작했다. HTML은 그리 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-20-IcodedawebappasaUXdesigner_3.png)
 
 ## 결국...
@@ -81,7 +81,7 @@ Visual Studio를 다운로드하고 html 파일을 시작했다. HTML은 그리 
 너무 야 ambicio했어요. 너무 많은 기능들을 원했어요, 특히 관계 부분이요. 코딩하는 것은 그리 어렵지 않을 것이지만, 이 프로젝트의 목표는 코딩의 최소를 배우는 것이었어요. 나는 손님 목록을 기반으로 무작위 테이블을 생성하는 MVP에 집중했어요. 여기 결과입니다:
 
 ![결과](https://miro.medium.com/v2/resize:fit:1200/1*dSoEhPKNX2q2mRCwdeCVlA.gif)
-```
+
 
 <div class="content-ad"></div>
 

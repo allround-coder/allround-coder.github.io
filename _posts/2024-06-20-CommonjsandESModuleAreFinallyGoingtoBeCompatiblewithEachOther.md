@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/commonjs-and-es-module-are-finally-going-
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-CommonjsandESModuleAreFinallyGoingtoBeCompatiblewithEachOther_0.png)
 
 ECMAScript 모듈은 현대 JavaScript 개발에서 인정받는 산업 표준이 되어가고 있습니다. ESM이 Node.js에 소개된 이후 비동기 로딩 기능과 모듈 해결 논리가 잘 받아들여졌습니다.
@@ -19,7 +19,7 @@ ECMAScript 모듈은 현대 JavaScript 개발에서 인정받는 산업 표준�
 그러나 역사적인 이유로 많은 기존 코드베이스와 타사 라이브러리는 여전히 CommonJS 모듈 시스템에 의존하고 있습니다. ESM의 비동기 로딩 설계로 인해 이 두 모듈화 체계가 아직 공존할 수 없었는데, 이는 많은 개발자들에게 주요 고통 요인이 되었습니다.
 
 최근 joyeecheung 님이 이 문제를 해결하기 위한 중요한 Pull Request를 제출했습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -120,7 +120,7 @@ https://github.com/nodejs/node/pull/51977
 
 <div class="content-ad"></div>
 
-```md
+
 ![](/assets/img/2024-06-20-CommonjsandESModuleAreFinallyGoingtoBeCompatiblewithEachOther_4.png)
 
 현재, 이 기능은 여전히 실험 단계로 진행 중이며 실험적으로-require-module 플래그 아래에서 작업을 완료해야 합니다.
@@ -128,7 +128,7 @@ https://github.com/nodejs/node/pull/51977
 현재, require(esm)은 명시적으로 .mjs 확장자를 통해 또는 .js 확장자에 “type”: “module” 패키지 필드를 사용하여 ESM으로 표시된 ESM 모듈만 지원합니다. 이는 npm에서 ESM-only 패키지를로드하는 데 충분합니다. .js 파일에 ESM 구문이 포함되어 있지만 가장 가까운 package.json에 “type”: “module” 필드가 없는 경우 .js 파일이 ESM로드로 “fallback”할 수 있지만, 이를 일반적으로 사용자가 피해야 할 사항입니다. ESM 구문 감지는 오버헤드를 유발하며 프로젝트에 충분한 ESM 모듈이 있을 때 노드.js가 모듈 유형을 추측하는 데 시간을 낭비하고 싶지 않을 수 있습니다. 특히, package.json에 명시적인 “type”: “module” 필드를 사용하여 이러한 오버헤드를 저장할 수 있습니다.
 
 ## 마침내
-```
+
 
 <div class="content-ad"></div>
 

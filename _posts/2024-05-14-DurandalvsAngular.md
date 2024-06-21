@@ -74,7 +74,7 @@ export class GreetingComponent {
 ```
 
 ## 컴포넌트 기반 아키텍처
-```
+
 
 
 

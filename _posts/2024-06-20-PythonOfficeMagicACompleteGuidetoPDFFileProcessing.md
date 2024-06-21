@@ -42,7 +42,7 @@ pip install PyPDF2 FPDF reportlab
 특별 안내: 이 모듈의 API를 배울 때 주의해야 할 문제가 있어요. PdfFileReader, PdfFileWriter, PdfFileMerger 클래스는 3.0.0 버전에서 삭제될 예정이에요. PdfReader, PdfWriter 및 PdfMerger를 대신 사용하는 것이 좋습니다.
 
 저는 PyPDF2 (버전 3.0.1)를 설치했고, 다음 코드만이 정상적으로 실행되는 것을 확인했어요. 모두가 버전 호환성 문제에 주의해야 해요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -68,7 +68,7 @@ with open('example.pdf', 'rb') as file:
 
 # PDF 병합 및 분할
 
-이제 두 번째로 PDF 병합 및 분할입니다. 손에 든 여러 PDF 파일을 쉽게 병합하거나 큰 파일을 여러 작은 파일로 분할할 수 있어요. 다음 유쾌한 코드를 시도해보세요:```
+이제 두 번째로 PDF 병합 및 분할입니다. 손에 든 여러 PDF 파일을 쉽게 병합하거나 큰 파일을 여러 작은 파일로 분할할 수 있어요. 다음 유쾌한 코드를 시도해보세요:
 
 <div class="content-ad"></div>
 
@@ -255,7 +255,7 @@ sudo apt-get install poppler-utils
 
 ## PDF를 HTML로 변환
 
-PDF 파일을 HTML 형식으로 변환하려면 PyPDF2와 같은 PDF 파싱을 지원하는 라이브러리를 사용할 수 있습니다. 다음은 PDF를 HTML로 변환하는 예제 코드입니다:```
+PDF 파일을 HTML 형식으로 변환하려면 PyPDF2와 같은 PDF 파싱을 지원하는 라이브러리를 사용할 수 있습니다. 다음은 PDF를 HTML로 변환하는 예제 코드입니다:
 
 <div class="content-ad"></div>
 
@@ -282,7 +282,7 @@ pdf_to_html 함수를 호출하여 입력 PDF 파일을 HTML 형식으로 변환
 
 ## PDF를 일반 텍스트로 변환하기
 
-PDF를 일반 텍스트 형식으로 변환하려면 pdfminer 라이브러리를 사용할 수 있습니다. PDF 문서에서 텍스트를 추출하는 강력한 도구입니다. PDF를 일반 텍스트로 변환하는 예시 코드는 다음과 같습니다:```
+PDF를 일반 텍스트 형식으로 변환하려면 pdfminer 라이브러리를 사용할 수 있습니다. PDF 문서에서 텍스트를 추출하는 강력한 도구입니다. PDF를 일반 텍스트로 변환하는 예시 코드는 다음과 같습니다:
 
 <div class="content-ad"></div>
 
@@ -314,7 +314,7 @@ pdf_to_text 함수를 호출하여 입력 PDF 파일을 일반 텍스트 형식�
 ## PDF를 워드 문서로 변환
 
 PDF를 워드 문서로 변환하려면 python-docx와 같은 서드파티 라이브러리를 사용할 수 있습니다. 이 라이브러리를 사용하여 워드 문서를 생성하고 편집할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -506,7 +506,7 @@ print("테이블 생성이 완료되었습니다! 이제 생성된 보고서 파
 # OCR (Optical Character Recognition)
 
 마지막으로 OCR (Optical Character Recognition)가 있습니다. 몇 장의 스캔된 PDF 문서가 있고 이를 검색 가능하고 편집 가능한 텍스트로 변환해야 한다고 상상해보세요. Python이 이를 가능하게 해줄 수 있다는 좋은 소식이 있습니다! 이 마법 같은 주문을 함께 체험해봅시다!
-```
+
 
 <div class="content-ad"></div>
 
@@ -554,7 +554,7 @@ print("OCR (광학 문자 인식) 매직이 완료되었습니다! 이제 스캔
 
 # 끝에 작성됨
 
-대단해요! 우리는 방금 Python PDF 자동화 처리의 일곱 가지 마법 중 하나를 마스터했어요! PDF 구문 분석 및 텍스트 추출, PDF 병합 및 분할, PDF 양식 처리, PDF 문서 변환, PDF 워터마킹 및 서명, PDF 보고서 생성 및 OCR(광학 문자 인식)을 포함해요. 정말 진정한 오피스 마법사가 되셨네요! 파일 처리, 보고서 생성 또는 텍스트 추출, Python이 도와드릴 준비가 되어있어요.```
+대단해요! 우리는 방금 Python PDF 자동화 처리의 일곱 가지 마법 중 하나를 마스터했어요! PDF 구문 분석 및 텍스트 추출, PDF 병합 및 분할, PDF 양식 처리, PDF 문서 변환, PDF 워터마킹 및 서명, PDF 보고서 생성 및 OCR(광학 문자 인식)을 포함해요. 정말 진정한 오피스 마법사가 되셨네요! 파일 처리, 보고서 생성 또는 텍스트 추출, Python이 도와드릴 준비가 되어있어요.
 
 <div class="content-ad"></div>
 

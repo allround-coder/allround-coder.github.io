@@ -56,7 +56,7 @@ link: "https://medium.com/@decketts/designing-a-new-style-system-to-replace-css-
 
 <div class="content-ad"></div>
 
-```md
+
 ```js
 #foo {
     font-family: Helvetica;
@@ -85,7 +85,7 @@ foo.style.opacity = 0.5;
 ## 현재 브라우저 API의 주요 문제점
 
 자바스크립트에서 스타일을 설정하는 방법은 두 가지가 있습니다: 개별 속성을 설정할 수도 있고, 뷰에서 클래스를 추가/제거할 수도 있습니다. 동적으로 클래스를 만드는 건 그다지 깔끔하지 않아서 저는 첫 번째 옵션에 집중하고 싶었어요.
-```
+
 
 <div class="content-ad"></div>
 

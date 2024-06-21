@@ -112,7 +112,7 @@ App Inbox 설정을 위해 하나의 스크립트를 사용하여 고급 기능�
 
 
 
-```md
+
 ![이미지](/assets/img/2024-05-12-In-AppNotificationVSPushNotificationsWhichNotificationChannelisBetterForProductCommunicationin2024_10.png)
 
 ## 토큰 사용법:
@@ -120,7 +120,7 @@ App Inbox 설정을 위해 하나의 스크립트를 사용하여 고급 기능�
 푸시 알림은 메시지를 보내기 위해 푸시 토큰을 사용하며 사용자는 웹사이트에서 구독해야 합니다.
 
 예시 코드:
-```
+
 
 
 

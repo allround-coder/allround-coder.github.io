@@ -177,6 +177,5 @@ HTTPS 연결 설정 과정을 다시 살펴보겠습니다: 먼저 TCP 쓰이-�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-06-20-SomeMethodsforOptimizingHTTPSPerformance_4.png](/assets/img/2024-06-20-SomeMethodsforOptimizingHTTPSPerformance_4.png)
-```

@@ -100,7 +100,7 @@ link: "https://medium.com/bitgrit-data-science-publication/linear-algebra-concep
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-LinearAlgebraConceptsEveryDataScientistShouldKnow_3.png" />
 
 두 벡터를 요소별로 더하여 새로운 벡터를 형성하는 것을 의미합니다.
@@ -108,7 +108,7 @@ link: "https://medium.com/bitgrit-data-science-publication/linear-algebra-concep
 <img src="/assets/img/2024-06-19-LinearAlgebraConceptsEveryDataScientistShouldKnow_4.png" />
 
 ## 스칼라 곱
-```
+
 
 <div class="content-ad"></div>
 
@@ -172,7 +172,7 @@ V가 벡터 공간이라고 불리기 위해서는 공리 목록을 만족해야
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-LinearAlgebraConceptsEveryDataScientistShouldKnow_10.png)
 
 두 벡터가 일치하는 경우, 원점을 지나는 단일 선에 제한됩니다.
@@ -180,7 +180,7 @@ V가 벡터 공간이라고 불리기 위해서는 공리 목록을 만족해야
 span의 개념은 basis의 개념에 기초합니다.
 
 ## Basis
-```
+
 
 <div class="content-ad"></div>
 
@@ -214,7 +214,7 @@ span의 개념은 basis의 개념에 기초합니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Linear Transformation](/assets/img/2024-06-19-LinearAlgebraConceptsEveryDataScientistShouldKnow_12.png)
 
 ## 선형 변환
@@ -222,7 +222,7 @@ span의 개념은 basis의 개념에 기초합니다.
 ![선형 변환](/assets/img/2024-06-19-LinearAlgebraConceptsEveryDataScientistShouldKnow_13.png)
 
 선형 변환은 두 벡터 공간 간의 매핑 V → W로, 벡터 덧셈과 스칼라 곱셈의 연산을 보존하는 것을 말합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -358,7 +358,7 @@ Determinant는 행렬이 역행렬인지를 알려줄 수 있습니다. det(A)�
 
 <div class="content-ad"></div>
 
-```
+
 ![image](https://miro.medium.com/v2/resize:fit:600/1*d34D2o-Gx1IOgFnuuJ2kog.gif)
 
 행렬 A와 벡터 v에 대해, Av = λv이면 λ가 고유값이고, v가 행렬 A의 고유벡터입니다.
@@ -366,7 +366,7 @@ Determinant는 행렬이 역행렬인지를 알려줄 수 있습니다. det(A)�
 다른 말로, 정방 행렬 A의 고유벡터는 행렬 곱셈 = 스칼라 곱셈인 벡터입니다.
 
 # 읽어 주셔서 감사합니다!
-```
+
 
 <div class="content-ad"></div>
 

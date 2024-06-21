@@ -231,7 +231,7 @@ async function createTreeObjectsFromPaths(folderPath) {
 }
 ```
 
-이 함수를 실행해보고 정상적으로 작동하는지 확인해보겠습니다:```
+이 함수를 실행해보고 정상적으로 작동하는지 확인해보겠습니다:
 
 
 

@@ -22,7 +22,7 @@ link: "https://medium.com/@prasad.reddy0708/deploy-react-app-to-azure-webapp-usi
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_1.png)
 
 3. 클릭하여 Web App 옵션을 선택하고 새 웹 앱을 만듭니다. 아래와 같이 요구 사항에 맞게 웹 앱을 구성하세요.
@@ -33,11 +33,11 @@ link: "https://medium.com/@prasad.reddy0708/deploy-react-app-to-azure-webapp-usi
 가격 책정: 요구 사항에 가장 적합한 계획을 선택하세요.
 
 ![image](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_2.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 3](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_3.png)
 
 ![Image 4](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_4.png)
@@ -45,7 +45,7 @@ link: "https://medium.com/@prasad.reddy0708/deploy-react-app-to-azure-webapp-usi
 ![Image 5](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_5.png)
 
 ![Image 6](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_6.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -193,7 +193,7 @@ stages:
 
 <div class="content-ad"></div>
 
-```
+
 ![Table 1](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_21.png)
 
 ![Table 2](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_22.png)
@@ -201,7 +201,7 @@ stages:
 ![Table 3](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_23.png)
 
 # 환경 변수 구성
-```
+
 
 <div class="content-ad"></div>
 
@@ -215,7 +215,7 @@ stages:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image 1](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_26.png)
 
 ![image 2](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_27.png)
@@ -223,7 +223,7 @@ stages:
 ![image 3](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_28.png)
 
 20. If you have multiple environment variables to configure, repeat Step #19.
-```
+
 
 <div class="content-ad"></div>
 
@@ -247,7 +247,7 @@ stages:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Deployment successful](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_34.png)
 
 24. Deployment completed successfully!!!
@@ -255,7 +255,7 @@ stages:
 ![React App deployed](/assets/img/2024-06-20-DeployReactApptoAzureWebappusingmutistageAzureYAMLPipeline_35.png)
 
 24. Browse the Web App and you can see React App is deployed successfully. The environment variable value that we configured in Step #19 is displayed here.
-```
+
 
 <div class="content-ad"></div>
 

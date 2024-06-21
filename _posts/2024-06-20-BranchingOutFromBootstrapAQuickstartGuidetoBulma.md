@@ -21,7 +21,7 @@ Bulma는 반응형 열 구조를 만들기 위해 Flexbox를 활용합니다. �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Offset](/assets/img/2024-06-20-BranchingOutFromBootstrapAQuickstartGuidetoBulma_0.png)
 
 ## Offset
@@ -29,7 +29,7 @@ Bulma는 반응형 열 구조를 만들기 위해 Flexbox를 활용합니다. �
 특정 열 요소의 오프셋을 만들려면, 대상 주변의 여백을 자동으로 채울 빈 열을 생성하거나 오프셋 수정자를 사용할 수 있습니다. 다음은 어떻게 보이는지에 대한 예시입니다:
 
 ![Offset Example](/assets/img/2024-06-20-BranchingOutFromBootstrapAQuickstartGuidetoBulma_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -43,18 +43,18 @@ Bulma는 반응형 열 구조를 만들기 위해 Flexbox를 활용합니다. �
 
 <div class="content-ad"></div>
 
-```markdown
+
 <div class="columns">   
   <div id=”popsiclePhoto” class="column 
    is-4-desktop is-6-tablet is-8-mobile/>
-```
+
 
 <img src="/assets/img/2024-06-20-BranchingOutFromBootstrapAQuickstartGuidetoBulma_2.png" />
 
 <img src="/assets/img/2024-06-20-BranchingOutFromBootstrapAQuickstartGuidetoBulma_3.png" />
 
 <img src="/assets/img/2024-06-20-BranchingOutFromBootstrapAQuickstartGuidetoBulma_4.png" />
-```
+
 
 <div class="content-ad"></div>
 

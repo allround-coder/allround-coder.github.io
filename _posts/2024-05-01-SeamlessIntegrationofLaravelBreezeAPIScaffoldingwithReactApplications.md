@@ -83,7 +83,7 @@ REACT_APP_BACKEND_URL=http://localhost:8000
 
 ## CSRF 요청
 
-라라벨 Breeze가 인증에 Sanctum을 활용하기 때문에 React 앱은 먼저 /sanctum/csrf-cookie 엔드포인트로 초기 요청을 보내야 합니다. 이는 인증에 중요하며, 로그인, 등록 및 비밀번호 잊어버리기와 같은 모든 비인증된 경로에서 수행되어야 합니다. 이 프로세스를 간소화하기 위해 hooks/auth.js 파일에 사용자 정의 후크를 만들어 CSRF 요청을 처리합니다.```
+라라벨 Breeze가 인증에 Sanctum을 활용하기 때문에 React 앱은 먼저 /sanctum/csrf-cookie 엔드포인트로 초기 요청을 보내야 합니다. 이는 인증에 중요하며, 로그인, 등록 및 비밀번호 잊어버리기와 같은 모든 비인증된 경로에서 수행되어야 합니다. 이 프로세스를 간소화하기 위해 hooks/auth.js 파일에 사용자 정의 후크를 만들어 CSRF 요청을 처리합니다.
 
 <div class="content-ad"></div>
 

@@ -114,7 +114,7 @@ React에 익숙하다면, 이것은 단지 "hello world"일 뿐입니다.
 주목할 점은 main 구성요소가 별도의 파일인 main.js로 나뉘어져 있다는 것입니다. "/app/main.js"는 실제로 절대 또는 상대 URL이 될 수 있으며, 파일 경로가 아닙니다.
 
 ## The splash screen example
-```
+
 
 <div class="content-ad"></div>
 
@@ -183,7 +183,7 @@ export function MainApp() {
 HTM 구문은 브라우저에서 직접 JSX와 유사한 컴포넌트를 생성하는 데 사용되며, Signal은 상태 변경을 반응적으로 관리하여 사용자 상호 작용에 따라 UI를 업데이트합니다.
 
 이 구성 요소에서 $loading이 TRUE일 때만 렌더링되지 않습니다(널 값), 즉 div#main이 아닌 div#preload가 그대로 표시됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -265,7 +265,7 @@ const PageHome = function() {
 
 그게 다 입니다.
 
-만약 풀 기능의 PWA를 만들기 위해 Manifest.json과 좋아하는 ServiceWorker 구현을 추가하고 싶다면 언제라도 추가해 주세요.```
+만약 풀 기능의 PWA를 만들기 위해 Manifest.json과 좋아하는 ServiceWorker 구현을 추가하고 싶다면 언제라도 추가해 주세요.
 
 <div class="content-ad"></div>
 

@@ -87,7 +87,7 @@ def encode_boroct(bc, l, sct):
 2010년 인구 조사 구 지정이 세 인구 조사 연도에 모두 사용되었기 때문에 이러한 구역의 shapefile을 GeoPandas GeoDataFrame으로 가져와 NYC를 위해 하위 집합으로 만든 다음, boroct를 사용하여 2015년 나무 수 데이터와 결합했습니다.
 
 그런 다음 boroct를 사용하여 왼쪽 외부 조인을 계속 적용하여 각 인구 조사 구에 대한 2015년, 2005년 및 1995년 나무 수뿐만 아니라 각 인구 조사 구의 구 이름, 면적 및 지오메트리를 포함하는 최종 데이터프레임을 만들었습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -157,7 +157,7 @@ def encode_boroct(bc, l, sct):
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-06-19-VisualizingStreetTreePopulationVarianceinNYCUsingGeoPandasPlotlyandJavaScript_7.png)
 
 ![image2](/assets/img/2024-06-19-VisualizingStreetTreePopulationVarianceinNYCUsingGeoPandasPlotlyandJavaScript_8.png)
@@ -165,7 +165,7 @@ def encode_boroct(bc, l, sct):
 환경 정의 측면에서, 지난 20년간의 나무 심는 노력은 확실히 시내 전역에서 레드라인의 시각적 유산을 줄였습니다. 리치먼드 대학의 역사적 레드라인 지도와 1995년의 거리 나무 분포를 비교하면 수십 년 전에 내린 결정이 지금까지도 도시 지리를 지속적으로 영향을 미치고 있다는 것을 명확히 보여줍니다:
 
 ![image3](/assets/img/2024-06-19-VisualizingStreetTreePopulationVarianceinNYCUsingGeoPandasPlotlyandJavaScript_9.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -187,7 +187,7 @@ def encode_boroct(bc, l, sct):
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Visualization 1](/assets/img/2024-06-19-VisualizingStreetTreePopulationVarianceinNYCUsingGeoPandasPlotlyandJavaScript_13.png)
 
 When this distribution is mapped according to the borough, however, vast differences can be observed between boroughs.
@@ -195,7 +195,7 @@ When this distribution is mapped according to the borough, however, vast differe
 ![Visualization 2](/assets/img/2024-06-19-VisualizingStreetTreePopulationVarianceinNYCUsingGeoPandasPlotlyandJavaScript_14.png)
 
 As is shown above, Queens and Brooklyn had a much larger number of tracts decreasing their population density in the sampled period than did Staten Island, Manhattan, and the Bronx.
-```
+
 
 <div class="content-ad"></div>
 
@@ -227,7 +227,7 @@ As is shown above, Queens and Brooklyn had a much larger number of tracts decrea
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-VisualizingStreetTreePopulationVarianceinNYCUsingGeoPandasPlotlyandJavaScript_17.png)
 
 이렇게 하면 더 좋아 보이고 사용자에게 데이터의 공백이 어디에 있는지 이해하는 데 도와주며 이러한 공백의 중요성을 판단할 수 있게 합니다.
@@ -235,7 +235,7 @@ As is shown above, Queens and Brooklyn had a much larger number of tracts decrea
 지도에 있는 토목은 "블록 당 나무" 지수에 따라 색칠되어 있습니다. 하지만 이 지수와 함께 제시하고 싶었던 여러 측정 항목이 더 있어서 이를 마우스 오버 팝업에 포함시켰습니다.
 
 ![이미지](/assets/img/2024-06-19-VisualizingStreetTreePopulationVarianceinNYCUsingGeoPandasPlotlyandJavaScript_18.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@dpericich/how-to-bypass-useeffect-on-your-first-page-
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-05-01-HowtoSkipReactuseEffectonInitialRender_0.png)
 
 많은 React 개발자들이 클래스 컴포넌트보다 함수 컴포넌트를 선호합니다. 함수 컴포넌트는 더 작고, 자체 상태를 관리하는 자식 UI 요소를 구성하는 기능을 제공합니다. 그러나 몇 가지 단점이 있습니다. 최근 버그 찾기 세션에서 한 가지 문제점은 함수 컴포넌트의 초기 렌더 기능을 제어할 수 없다는 것이었습니다. 폼 페이지의 첫 번째 렌더에서 useEffect 호출을 우회하지 않아 발생한 오류를 발견했을 때 이것이 분명해졌습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@dpericich/how-to-bypass-useeffect-on-your-first-page-
 ## useEffect와 어떤 문제가 있었나요?
 
 useEffect 훅은 React 개발자들이 컴포넌트 상태에 기반한 작업을 대기열에 넣을 수 있게 합니다. React는 JQuery와 같은 선행자들과 다르게 상태 유지(stateful) 또는 상태 없음(stateless) 컴포넌트를 구축할 수 있도록 허용합니다. 이러한 컴포넌트는 내부 상태 변수를 통해 사용자 상호작용과 데이터를 추적할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

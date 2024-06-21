@@ -67,7 +67,7 @@ soup_sephora = BeautifulSoup(driver.page_source, 'lxml')
 
 <img src="/assets/img/2024-05-01-BuildingaWebScraperforThreeCommonUseCases_1.png" />
 
-<img src="/assets/img/2024-05-01-BuildingaWebScraperforThreeCommonUseCases_2.png" />```
+<img src="/assets/img/2024-05-01-BuildingaWebScraperforThreeCommonUseCases_2.png" />
 
 <div class="content-ad"></div>
 
@@ -139,7 +139,7 @@ for j in range(1, 페이지 수):
 
 무한 스크롤은 사용자가 페이지를 스크롤할 때 더 많은 콘텐츠를 로드하는 웹사이트 디자인으로, 페이지 이동을 클릭하지 않고 자동으로 더 많은 콘텐츠를 로드합니다. 이로 인해 Use Case 1용으로 작성된 For-Loop가 다소 유용하지 않을 수 있습니다.
 
-그러나 무한 스크롤은 더 스크롤하는 모션을 흉내 내는 웹 스크레이퍼로 자동화할 수도 있습니다. 이를 위해 스크레이퍼에게 먼저 전체 웹페이지 길이만큼 스크롤하도록 지시하고, 컨텐츠가 로드되기를 기다린 후 몇 초 동안 기다린 후 다시 전체 페이지 길이만큼 스크롤하여 무한 스크롤의 끝에 도달한 후 HTML 코드를 Python 객체로 파싱할 수 있습니다.```
+그러나 무한 스크롤은 더 스크롤하는 모션을 흉내 내는 웹 스크레이퍼로 자동화할 수도 있습니다. 이를 위해 스크레이퍼에게 먼저 전체 웹페이지 길이만큼 스크롤하도록 지시하고, 컨텐츠가 로드되기를 기다린 후 몇 초 동안 기다린 후 다시 전체 페이지 길이만큼 스크롤하여 무한 스크롤의 끝에 도달한 후 HTML 코드를 Python 객체로 파싱할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -212,7 +212,7 @@ df_acne = pd.DataFrame(
 df_acne
 ```
 
-데이터프레임 결과 샘플은 아래와 같습니다. Infinite Scroll이 없었다면 데이터프레임에는 아마 10개 정도의 기록만 포함되었을 것입니다.```
+데이터프레임 결과 샘플은 아래와 같습니다. Infinite Scroll이 없었다면 데이터프레임에는 아마 10개 정도의 기록만 포함되었을 것입니다.
 
 <div class="content-ad"></div>
 

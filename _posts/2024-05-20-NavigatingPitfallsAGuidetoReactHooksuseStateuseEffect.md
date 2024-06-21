@@ -31,7 +31,7 @@ const [state, setState] = useState(initialState);
 
 ## 상태 업데이트
 
-setState 메서드를 통해 상태를 업데이트할 수 있습니다. 예를 들어:```
+setState 메서드를 통해 상태를 업데이트할 수 있습니다. 예를 들어:
 
 <div class="content-ad"></div>
 
@@ -133,7 +133,7 @@ setList(nextList);
 
 ## setState 이후 최신 값 가져올 수 없음
 
-setState는 즉시 업데이트되지 않기 때문에, React는 업데이트 전 어느 시점에서 여러 setState 호출을 병합합니다. 따라서 setState 이후 최신 값을 가져오는 것은 어려울 수 있습니다. 다음은 몇 가지 접근 방법입니다:```
+setState는 즉시 업데이트되지 않기 때문에, React는 업데이트 전 어느 시점에서 여러 setState 호출을 병합합니다. 따라서 setState 이후 최신 값을 가져오는 것은 어려울 수 있습니다. 다음은 몇 가지 접근 방법입니다:
 
 <div class="content-ad"></div>
 
@@ -548,7 +548,7 @@ export default () => {
 🔍 상태가 변경될 때만 업데이트가 트리거됩니다. useState와 useReducer는 업데이트를 시작할 수 있는 유일한 훅입니다.
 
 사용 안내:
-📌 useRef의 값은 useRef의 변경으로 상태 변경이 필요한 경우가 확실한 경우에만 의존성으로 사용하세요.```
+📌 useRef의 값은 useRef의 변경으로 상태 변경이 필요한 경우가 확실한 경우에만 의존성으로 사용하세요.
 
 <div class="content-ad"></div>
 

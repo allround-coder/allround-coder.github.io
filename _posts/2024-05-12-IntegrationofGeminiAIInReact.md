@@ -97,7 +97,7 @@ catch(error){
 ```
 
 위 코드 스니펫은 `promptResponses` 배열을 반복하며 각 응답을 UI에 표시합니다.
-```  
+
 
 
 

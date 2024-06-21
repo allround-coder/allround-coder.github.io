@@ -121,7 +121,7 @@ function Counter(t0) {
 _c는 여기에서 실제 리액트 컴파일러 훅이며 useMemoCache()라고도 불리며 우리가 보았던 바와 같이 useMemo() 네이티브 훅과는 다르게 작동합니다.
 
 그래서 간단히 말해서, Dan Abramov의 말로 하면, 리액트 컴파일러는 본질적으로 이것입니다 —
-```  
+
 
 <div class="content-ad"></div>
 
@@ -141,7 +141,7 @@ if(prevCount != count){
 - useMemo() 훅의 경우 대부분의 경우에는 필요하지 않을 것이며, React 컴파일러가 적절하게 캐싱을 할 수 없는 경우에만 필요할 것입니다. 이 경우 오리지널 컴파일러 구현체로 되돌아갈 것입니다. 이를 잘못 사용했을 때 useMemo() 훅의 예시가 될 수 있습니다.
 
 # 제 ACT III: 지나치게 복잡한 최적화가 끝나는 시작
-```
+
 
 <div class="content-ad"></div>
 

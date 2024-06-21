@@ -68,7 +68,7 @@ console.log(myFirstMap); // Map(0) 반환
 ```
 
 # JavaScript Map에서 키 가져오기
-```
+
 
 <div class="content-ad"></div>
 
@@ -204,7 +204,7 @@ myFirstMap.forEach(function(value, key, map) {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 let myFirstMap = new Map();
 myFirstMap.set("some", "value");
@@ -219,8 +219,8 @@ for(let x of myFirstMap) {
 JavaScript에서 값 또는 키를 순회하는 또 다른 멋진 방법은 values() 또는 entries() 메서드를 사용하는 것입니다. 이들 메서드는 각각 map의 값과 항목에 대한 새로운 반복자를 반환합니다. 이는 생성기 함수에서와 마찬가지로 next() 함수를 사용하여 다음 키 또는 값을 액세스할 수 있다는 것을 의미합니다.
 
 예를 들어, entries()가 어떻게 작동하는지 살펴보겠습니다:
-```
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -248,7 +248,7 @@ console.log(allValues.next()); // { value: 'value', done: false }를 반환합�
 console.log(allValues.next().value); // 'value'를 반환합니다
 ```
 
-이러한 이터레이터들은 특정 상황에서 유용하며 맵에 있는 모든 데이터를 반복하는 멋진 방법이 될 수 있습니다.```
+이러한 이터레이터들은 특정 상황에서 유용하며 맵에 있는 모든 데이터를 반복하는 멋진 방법이 될 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -269,7 +269,7 @@ console.log(JSON.stringify(myFirstMap));
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 let myFirstMap = new Map();
 myFirstMap.set("some", "value");
@@ -298,7 +298,7 @@ console.log(getMap);
 ```
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 

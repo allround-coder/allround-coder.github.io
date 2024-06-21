@@ -95,7 +95,7 @@ gcloud run deploy pdfun \
 
 # 보너스: Nx를 활용하여 서비스 배포하기
 
-서비스를 배포할 때 Nx는 간편한 프로세스를 제공합니다. 구성 후에는 영향을 받는 앱만 배포할 수 있도록 하기 위해 yarn deploy를 실행하기만 하면 됩니다. 예를 들어 프론트엔드만 업데이트하는 경우 프론트엔드만 빌드되고 배포됩니다.```
+서비스를 배포할 때 Nx는 간편한 프로세스를 제공합니다. 구성 후에는 영향을 받는 앱만 배포할 수 있도록 하기 위해 yarn deploy를 실행하기만 하면 됩니다. 예를 들어 프론트엔드만 업데이트하는 경우 프론트엔드만 빌드되고 배포됩니다.
 
 <div class="content-ad"></div>
 
@@ -144,7 +144,7 @@ npx nx deploy-docker pdf
 npx nx deploy-cloudrun pdf
 ```
 
-이 명령들은 이어서 도커 이미지를 빌드하고 해당 이미지를 푸시한 후 Artifact Registry에 업로드된 이미지를 기반으로 Cloud Run 서비스를 배포할 것입니다.```
+이 명령들은 이어서 도커 이미지를 빌드하고 해당 이미지를 푸시한 후 Artifact Registry에 업로드된 이미지를 기반으로 Cloud Run 서비스를 배포할 것입니다.
 
 <div class="content-ad"></div>
 

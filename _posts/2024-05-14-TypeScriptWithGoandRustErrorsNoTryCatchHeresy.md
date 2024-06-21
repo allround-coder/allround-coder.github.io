@@ -309,7 +309,7 @@ if (!body.success) {
 
 문제는... 우리는 그것을 할 수 없어요. 네, 그 확인을 해야 합니다. 그것을 하지 않으면 body.data가 존재하지 않을 거에요. LSP가 "Property 'data' does not exist on type 'Safe`string`’" 오류를 던져서 우리를 알릴 거에요. 그리고 그건 우리가 만든 간단한 Safe 타입 덕분이에요. 그리고 에러 메시지에도 작동해요. 우리는 !body.success를 확인하지 않으면 body.error에 액세스할 수 없어요.
 
-여기 TypeScript를 감사하게 생각해야 할 때예요. 그리고 이것이 적용되는 방법은 다음과 같아요:```
+여기 TypeScript를 감사하게 생각해야 할 때예요. 그리고 이것이 적용되는 방법은 다음과 같아요:
 
 
 

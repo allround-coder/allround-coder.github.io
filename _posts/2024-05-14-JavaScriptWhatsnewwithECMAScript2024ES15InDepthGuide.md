@@ -75,7 +75,7 @@ console.log('올바른 형식의 URI:', encodeURI(problematicURL.toWellFormed())
 
 - problematicURL 변수에는 뒷 부분 대체 문자(\uDC00)를 포함한 URL이 들어 있습니다.
 - encodeURI()로 이 URL을 인코딩하려고 하면 잘못된 유니코드 문자열로 인해 URIError가 발생합니다.
-- toWellFormed()를 적용하면 혼자 있는 대체 문자가 유니코드 대체 문자(U+FFFD, %EF%BF%BD로 인코드)로 대체되어 encodeURI()가 오류 없이 처리할 수 있게 됩니다.```
+- toWellFormed()를 적용하면 혼자 있는 대체 문자가 유니코드 대체 문자(U+FFFD, %EF%BF%BD로 인코드)로 대체되어 encodeURI()가 오류 없이 처리할 수 있게 됩니다.
 
 
 
@@ -383,7 +383,7 @@ const otherObject2024 = {};
 console.log(BookES2024.hasAuthorField(otherObject2024)); // 예상 결과: false
 ```
 
-이 예제에서 Book 클래스는 전통적인 방식을 보여주고, BookES2024는 새로운 ES2024 구문을 사용합니다. hasAuthorField 정적 메소드는 #author 비공개 필드가 객체에 존재하는지 확인하며, 각 클래스에서 서로 다른 접근 방식을 사용합니다.```
+이 예제에서 Book 클래스는 전통적인 방식을 보여주고, BookES2024는 새로운 ES2024 구문을 사용합니다. hasAuthorField 정적 메소드는 #author 비공개 필드가 객체에 존재하는지 확인하며, 각 클래스에서 서로 다른 접근 방식을 사용합니다.
 
 
 

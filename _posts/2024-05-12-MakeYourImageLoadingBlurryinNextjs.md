@@ -44,7 +44,7 @@ placeholder prop을 blur로 전달하고 src prop을 정적으로 가져온 이�
 ## Plaiceholder를 사용하여 dataURL 생성하기
 
 정적 이미지를 사용하는 경우 로딩 상태에 대한 흐린 이미지를 추가할 수 있습니다. 이제 이전 방법의 한계를 극복해야 합니다.
-```
+
 
 
 

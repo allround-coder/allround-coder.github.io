@@ -11,7 +11,7 @@ link: "https://medium.com/@mohamad.razzi.my/javascript-parsing-xml-data-from-onl
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-JavaScriptParsingXMLDataFromOnlineSources_0.png)
 
 웹에서 XML 데이터를 가져오고 추출하는 능력은 웹 개발자에게 중요한 기술입니다. XML은 구조화된 데이터를 교환하는 데 널리 사용되는 형식이며, 많은 온라인 서비스와 API가 이 형식으로 데이터를 제공합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@mohamad.razzi.my/javascript-parsing-xml-data-from-onl
 JavaScript로 XML 데이터를 가져오는 현대적인 방법 중 하나는 fetch() API를 사용하는 것입니다. fetch() 함수를 사용하면 이전의 XMLHttpRequest 객체보다 더 간결하고 promise 기반으로 HTTP 요청을 보내고 XML 내용을 검색할 수 있습니다.
 
 fetch()를 사용하여 XML 데이터를 가져오면 JavaScript에서 DOMParser 객체와 같은 도구를 제공하여 XML을 DOM 구조로 구문 분석할 수 있으며, 이를 통해 필요한 정보를 추출할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -109,7 +109,7 @@ function parseXML(xmlString) {
 위의 JavaScript 코드는 fetch() API를 사용하여 HTTP 요청을 수행하고, 잠재적인 Cross-Origin Resource Sharing (CORS) 문제를 처리하기 위해 "https://cors-anywhere.herokuapp.com/"의 프록시 URL을 활용합니다. fetch 요청에서의 응답은 텍스트 형식으로 변환되며, XML 문자열이 가정적인 parseXML() 함수에 전달되어 추가 처리됩니다. 코드에는 또한 fetch나 파싱 작업 중 발생할 수 있는 문제를 기록하기 위한 오류 처리도 포함되어 있습니다.
 
 parseXML() 함수는 이전 코드 스니펫에서 가져온 XML 데이터를 파싱하는 역할을 합니다. 먼저 DOMParser 객체의 새 인스턴스를 생성하고, parseFromString() 메서드를 사용하여 XML 문자열을 Document 객체로 파싱합니다. 함수는 이후 파싱된 문서에서 모든 'Post' 요소를 검색하고, 각각의 'class', 'user' 및 텍스트 내용을 추출하여 콘솔에 기록합니다. 다음으로, 함수는 각 'Post' 요소 내부의 모든 't' (터미널) 요소를 가져와, 'pos' (품사) 및 'word' 속성을 추출하고, 이 정보를 콘솔에 기록하고 동시에 'divOutput' ID를 가진 HTML 요소에 추가합니다. 이 과정을 통해 함수는 XML 데이터를 파싱하고 관련 정보를 추출하여 이를 콘솔과 웹 페이지에 표시할 수 있게 됩니다.
-```
+
 
 <div class="content-ad"></div>
 

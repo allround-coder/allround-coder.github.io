@@ -125,7 +125,7 @@ Next.js와 Vercel을 사용한다면 세계 최고의 데브옵스 팀을 고용
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-06-19-TopJavaScriptFrameworksandTechnology2023_10](/assets/img/2024-06-19-TopJavaScriptFrameworksandTechnology2023_10.png)
 
 ## Web3
@@ -133,11 +133,11 @@ Next.js와 Vercel을 사용한다면 세계 최고의 데브옵스 팀을 고용
 곰 시장에도 불구하고, 암호화 자금은 2023년에도 Web3에 수십억 달러를 투자할 계획입니다. 예를 들어, a16z는 2022년에 자사의 45억 달러 펀드 4를 발표하며 암호화 투자에 더 많은 자금을 투자했습니다.
 
 2020년에는 DeFi가 큰 이슈였고 Web3의 사용량을 촉진했습니다. 그러나 2021년 이후로 NFT(토큰화되지 않은 자산)가 대체되어 비디오 게임 아이템부터 예술 및 음악까지 모든 것에 대한 증명 가능한 희소성과 소유권을 나타내고 있습니다. 지난 30일간 블록체인에서 NFT 거래량이 어떻게 되는지 확인해보세요.
-```  
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-TopJavaScriptFrameworksandTechnology2023_11.png)
 
 ## 기본적으로 안전하게
@@ -145,7 +145,7 @@ Next.js와 Vercel을 사용한다면 세계 최고의 데브옵스 팀을 고용
 2018년에 Chrome은 http 사이트를 "안전하지 않음"으로 표시하기 시작할 것이라고 발표했습니다. 그로부터 안전하게 기본 설정하는 것이 더욱 중요해졌습니다.
 
 그러나 저희는 애플리케이션에 대한 생성한 id로 정보를 유출하는 습관이 있습니다. 이는 다양한 보안 문제와 사용자 개인 정보 침해로 이어질 수 있습니다. 10년 전, 저는 식별자 충돌에 관심을 가졌고, 이를 방지하기 위한 id 표준을 작성했는데, 그 후 UUID V6-V8을 영감을 받아 만들었습니다.
-```
+
 
 <div class="content-ad"></div>
 

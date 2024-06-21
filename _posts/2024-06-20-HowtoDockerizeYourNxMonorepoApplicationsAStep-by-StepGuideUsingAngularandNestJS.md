@@ -54,7 +54,7 @@ npx create-nx-workspace@latest
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-HowtoDockerizeYourNxMonorepoApplicationsAStep-by-StepGuideUsingAngularandNestJS_4.png)
 
 여기에는 'my-app'이라는 Angular 프로젝트, 'api'라는 NestJS 프로젝트, 그리고 함께 사용할 라이브러리 프로젝트가 있습니다.
@@ -62,7 +62,7 @@ npx create-nx-workspace@latest
 Api 및 My-app 프로젝트를 실행하고 브라우저에서 열면 다음 페이지가 표시됩니다.
 
 ![이미지](/assets/img/2024-06-20-HowtoDockerizeYourNxMonorepoApplicationsAStep-by-StepGuideUsingAngularandNestJS_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -145,7 +145,7 @@ bootstrap();
 결과적으로, 프로젝트 배포를 위해 준비가 끝났습니다. 이제 두 번째 과정으로 넘어가서 'Dockerfile' 파일을 작성하는 것부터 시작하여 프로젝트를 배포할 준비를 완료할 수 있습니다.
 
 ## Dockerfile 파일 작성하기
-```  
+
 
 <div class="content-ad"></div>
 
@@ -240,7 +240,7 @@ ENTRYPOINT ["pm2-runtime", "build/main.js"]
 - 이 단계에서 express 패키지를 설치합니다. 이 패키지를 별도로 설치해야 하는 이유는 express 패키지가 설치를 위한 package.json 파일에 포함되어 있지 않기 때문입니다. 이미 프로젝트에 express를 설치한 경우 이 단계가 필요하지 않을 것입니다.
 - 첫 번째 단계에서 'builder' 이미지 내에서 프로젝트를 컴파일한 위치에서 컴파일된 프로젝트 파일을 이 작업 디렉토리의 build 폴더로 복사합니다.
 - 그런 다음 main.js 파일에서 pm2-runtime 명령을 사용하여 백엔드 서버를 시작합니다.
-참고: 이 컨테이너를 시작하면 main.ts에서 지정된 포트에서 프로젝트가 실행됩니다. 저는 이를 3333으로 설정했으므로 프로젝트는 이 포트에서 실행됩니다.```
+참고: 이 컨테이너를 시작하면 main.ts에서 지정된 포트에서 프로젝트가 실행됩니다. 저는 이를 3333으로 설정했으므로 프로젝트는 이 포트에서 실행됩니다.
 
 <div class="content-ad"></div>
 

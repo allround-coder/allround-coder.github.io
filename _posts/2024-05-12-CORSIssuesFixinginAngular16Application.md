@@ -11,7 +11,7 @@ link: "https://medium.com/@srinathsree122/fixing-cors-issues-in-angular16-applic
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-05-12-CORSIssuesFixinginAngular16Application_0.png)
 
 Cross-Origin Resource Sharing (CORS)은 웹 브라우저가 제한하는 필수적인 보안 메커니즘입니다.
@@ -19,7 +19,7 @@ Cross-Origin Resource Sharing (CORS)은 웹 브라우저가 제한하는 필수�
 CORS는 HTTP 헤더 기반 메커니즘으로, 서버가 브라우저가 리소스를로드 허용해야 하는 자신의 도메인, 스키마 또는 포트 이외의 모든 출처를 나타낼 수 있도록 허용합니다.
 
 여기에서는 Angular 애플리케이션에서 CORS 문제를 해결하는 방법과 CORS 문제 없이 애플리케이션을 실행하는 방법을 논의할 것입니다.
-```
+
 
 
 

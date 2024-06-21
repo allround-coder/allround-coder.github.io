@@ -97,7 +97,7 @@ useEffect(() => {
 # 해결 방법:
 
 우리는 React에서 useState와 useEffect 훅을 사용하여 viewport 너비 (vw) 및 높이 (vh)의 변경에 따라 적응하는 반응형 텍스트 크기를 만들어 보겠습니다. 아래는 단계별 가이드입니다:
-```
+
 
 <div class="content-ad"></div>
 

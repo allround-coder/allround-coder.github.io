@@ -13,7 +13,7 @@ link: "https://medium.com/bajra-technologies-blog/simplifying-javascript-develop
 
 이제부터 테이블 태그를 Markdown 형식으로 변경할게요: 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-SimplifyingJavascriptDevelopmentYourSingletonPatternGuide_0.png)
 
 싱글톤 패턴(Singleton Pattern)은 클래스가 하나의 인스턴스만을 가지고 전역적인 접근 지점을 제공하는 디자인 패턴입니다. 이 패턴은 1994년 Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides가 공동으로 지은 "Design Patterns: Elements of Reusable Object-Oriented Software" 책에서 처음 소개되었습니다. 싱글톤 패턴은 게임 개발에서 널리 사용되지만, 자바스크립트를 포함한 웹 개발에도 광범위하게 적용됩니다.
@@ -21,7 +21,7 @@ link: "https://medium.com/bajra-technologies-blog/simplifying-javascript-develop
 # 용어의 유래
 
 "싱글톤(singleton)"이라는 용어는 하나의 원소만 포함하는 단일한 집합을 나타내는 수학적 개념에서 유래되었습니다. 이 아이디어는 클래스에 대한 단일 인스턴스 개념과 일치합니다.
-```
+
 
 <div class="content-ad"></div>
 

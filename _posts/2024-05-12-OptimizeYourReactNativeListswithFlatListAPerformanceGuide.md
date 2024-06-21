@@ -793,7 +793,7 @@ const FavoriteList = ({route}) => {
 ![Image 1](/assets/img/2024-05-12-OptimizeYourReactNativeListswithFlatListAPerformanceGuide_3.png)
 
 ![Image 2](/assets/img/2024-05-12-OptimizeYourReactNativeListswithFlatListAPerformanceGuide_4.png)
-```
+
 
 
 

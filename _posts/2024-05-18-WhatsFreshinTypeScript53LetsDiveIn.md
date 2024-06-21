@@ -99,7 +99,7 @@ import type { TypeFromImport } from "pkg" with {
 
 지금은 TypeScript 5.3에서 이 "resolution-mode" 속성을 import 타입에도 확장했습니다. 따라서, 이제 일반적인 import뿐만 아니라 import()를 사용하여 동적으로 타입을 끌어올 때에도 사용할 수 있어요.
 
-여기에 더 실용적인 예시가 있습니다:```
+여기에 더 실용적인 예시가 있습니다:
 
 <div class="content-ad"></div>
 

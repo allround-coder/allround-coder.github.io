@@ -61,7 +61,7 @@ Copilot에 선택한 코드를 리팩토링하거나 개선할 것을 요청할 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-Top10GitHubCopilotFeatures_6.png)
 
 # 6. 유닛 테스트 케이스 생성
@@ -69,7 +69,7 @@ Copilot에 선택한 코드를 리팩토링하거나 개선할 것을 요청할 
 Copilot은 우리의 테스트 프레임워크와 코딩 스타일을 식별하고 오류, 널 값 또는 예기치 않은 입력 데이터 유형을 다루기 위한 테스트 케이스를 제안합니다.
 
 이전 arraySum 함수에 대한 테스트 케이스를 생성해 보겠습니다:
-```
+
 
 <div class="content-ad"></div>
 

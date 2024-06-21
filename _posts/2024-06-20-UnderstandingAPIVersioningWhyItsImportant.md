@@ -125,7 +125,7 @@ app.listen(port, () => {
 
 Create separate API servers for v1 and v2.
 
-Step 3.1: API v1 (port 3001):```
+Step 3.1: API v1 (port 3001):
 
 <div class="content-ad"></div>
 
@@ -169,7 +169,7 @@ app.listen(port, () => {
 ```
 
 ## 단계 4: 서버 실행하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -187,17 +187,17 @@ node api-v2.js
 
 <div class="content-ad"></div>
 
-```md
+
 curl http://localhost:3000/api/v1/users
 curl http://localhost:3000/api/v2/users
-```
+
 
 API 게이트웨이 및 버전별 API를 Node.js에서 구현하여 클라이언트 요청을 적절한 API 버전으로 라우팅하고 관리할 수 있습니다.
 
 이 설정은 하위 호환성을 보장하고 API의 다른 버전 간에 원확한 전환을 가능하게 합니다.
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 

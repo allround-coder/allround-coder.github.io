@@ -102,7 +102,7 @@ const getImages = (
 ): Image | undefined => get<Image>(id, images);
 ```
 
-Rust에서 동일한 기능을 구현하는 경우 초기에는 코드를 중복해야 합니다:```
+Rust에서 동일한 기능을 구현하는 경우 초기에는 코드를 중복해야 합니다:
 
 <div class="content-ad"></div>
 

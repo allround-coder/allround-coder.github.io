@@ -480,7 +480,7 @@ wait_cdf("Wiki Edits", wiki_df, wiki_wait_ticks, dist=wiki_expon_dist, dist_labe
 
 <div class="content-ad"></div>
 
-```md
+
 from scipy.stats import weibull_min
 
 lotto_shape, _, lotto_w_scale = weibull_min.fit(lotto_df['Time Delta'].dt.total_seconds(), floc=0)
@@ -489,7 +489,7 @@ lotto_weibull_dist = weibull_min(c=lotto_shape,scale=lotto_w_scale)
 print(f"복권 당첨 위블 중앙값은 {seconds_to_text(lotto_weibull_dist.median())}")
 lotto_weibull_label = f'WeibullDistribution(shape={lotto_shape:.3},scale={seconds_to_text(lotto_w_scale)})'
 wait_cdf("복권 당첨", lotto_df, wiki_wait_ticks, dist=lotto_weibull_dist, dist_label=lotto_weibull_label, xscale='log')
-```
+
 
 이는 지수함수와 유사한 장착 곡선을 생성합니다. 실제로 형태가 1일때 위블 분포는 지수 분포입니다. 여기서 형태는 1.06입니다.
 

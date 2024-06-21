@@ -52,7 +52,7 @@ public double calculateBmi(double massInLbs, double heightInMeters) {
 ```
 
 ## 2. Avoid Noise Words
-```
+
 
 <div class="content-ad"></div>
 
@@ -98,7 +98,7 @@ interface ICustomerDetailsProvider {}
 class CustomerDetailsProviderImpl implements ICustomerDetailsProvider {}
 ```
 
-그럼 정말 인터페이스가 필요한 이유는 무엇일까요? 대부분의 경우 인터페이스를 두 가지 경우 중 하나에서 사용할 것입니다:```
+그럼 정말 인터페이스가 필요한 이유는 무엇일까요? 대부분의 경우 인터페이스를 두 가지 경우 중 하나에서 사용할 것입니다:
 
 <div class="content-ad"></div>
 

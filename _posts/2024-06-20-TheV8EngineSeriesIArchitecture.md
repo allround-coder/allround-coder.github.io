@@ -67,15 +67,15 @@ const chk = "have it";
 
 이 코드는 다음과 같이 시각적으로 AST로 구문 분석됩니다:
 
-```
+
 ![image](/assets/img/2024-06-20-TheV8EngineSeriesIArchitecture_2.png)
-```
+
 
 ## 2. 바이트 코드 생성 (Ignition)
 
-```
+
 ![image](/assets/img/2024-06-20-TheV8EngineSeriesIArchitecture_3.png)
-```
+
 
 <div class="content-ad"></div>
 

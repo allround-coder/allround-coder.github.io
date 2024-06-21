@@ -136,7 +136,7 @@ MMM은 전 세계 기업들에게 광고 채널의 효과를 측정하고 미디
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-20-MMMBayesianFrameworkforMarketingMixModelingandROAS_13.png)
 
 - Gamma (γ) and Intercept are usually modeled by a normal distribution.
@@ -144,7 +144,7 @@ MMM은 전 세계 기업들에게 광고 채널의 효과를 측정하고 미디
 ![image](/assets/img/2024-06-20-MMMBayesianFrameworkforMarketingMixModelingandROAS_14.png)
 
 - Lambda (λ) is usually modeled by a gamma distribution.
-```
+
 
 <div class="content-ad"></div>
 
@@ -285,7 +285,7 @@ my_model_config = {'intercept': {'dist': 'Normal', 'kwargs': {'mu': 0, 'sigma': 
 
 Figure 13에서 저희가 구현한 모델의 Kruschke 다이어그램을 제시합니다. 이는 이전에 정의한 내용에 대한 간결한 개요를 제공합니다. 이러한 다이어그램을 해석할 때 고려해야 할 몇 가지 측면이 있습니다. 각 노드 내에서 변수와 해당 분포를 찾을 수 있음을 유의하십시오. 예를 들어, α를 포함하는 원은 이전에 정의한 대로 베타 분포를 나타냅니다. 음영 처리된 노드는 관측된 변수를 나타냅니다. 둥근 모서리 상자는 반복을 나타냅니다. 예를 들어, 저희는 세 개의 확보 채널이 있으므로 각 채널에 대해 별도의 α, β 및 λ 매개변수 집합을 설정합니다. 화살표는 종속성을 보여줍니다. 저희 모델에서는 두 개의 화살표가 가능 함수를 가리키는데, 하나는 mu 매개변수에 종속성을 나타내고 다른 하나는 sigma 매개변수에 종속성을 나타냅니다. mu 매개변수 자체가 세 개의 추가 종속성을 가지고 있음을 상기해 주세요. 우리는 이동 효과, 모양 효과 및 제어 변수를 통합하여 매출을 모델링하기로 선택했음을 기억하세요.
 
-이제 우리는 교육 및 테스트 세트, 그리고 모델 구성을 정의했으므로 베이지안 모델을 초기화하고 교육 데이터에 맞출 수 있습니다.```
+이제 우리는 교육 및 테스트 세트, 그리고 모델 구성을 정의했으므로 베이지안 모델을 초기화하고 교육 데이터에 맞출 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -362,7 +362,7 @@ X 축은 채널 데이터 백분율 수준입니다:
 
 - When =1 일 때, 모델 입력 지출 데이터가 됩니다.
 - When =1.5 일 때, 지출을 50% 증가시켰을 때의 공헌도가 어떨지 볼 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -406,7 +406,7 @@ print(f"평균 절대 비율 오차 (MASE): {mean_absolute_error(test_df['sales'
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-20-MMMBayesianFrameworkforMarketingMixModelingandROAS_21.png)
 
 저희 데이터에 더 적합한 곡선을 결정하기 위해, 적합된 MMM을 사용하여 각 함수의 매개변수를 계산할 것입니다. 그 후 두 가지를 모두 플롯하고 시각적으로 어느 것이 더 적합한지 확인할 것입니다.
@@ -421,7 +421,7 @@ sigmoid_params = mmm.compute_channel_curve_optimization_parameters_original_scal
 mm_response_curve_fig = mmm.plot_direct_contribution_curves(show_fit=True, method='michaelis-menten')
 mm_params = mmm.compute_channel_curve_optimization_parameters_original_scale(method='michaelis-menten')
 ``` 
-```
+
 
 <div class="content-ad"></div>
 

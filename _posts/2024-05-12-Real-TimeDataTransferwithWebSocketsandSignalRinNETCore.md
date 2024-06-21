@@ -125,7 +125,6 @@ dotnet add package Microsoft.AspNetCore.SignalR
 ```js
 Microsoft.AspNetCore.SignalR를 사용하여 SignalR을 구성하고 있어요. WebSocket 지원을 활성화하고 허브 엔드포인트를 매핑하려면 Startup 클래스에서 SignalR을 구성하세요.
 
-```js
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddSignalR();
@@ -140,7 +139,6 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         endpoints.MapHub<ChatHub>("/chatHub");
     });
 }
-```
 
 
 
@@ -148,7 +146,6 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 클라이언트 측에 SignalR을 통합하여 연결을 설정하고 실시간 업데이트를 받으세요.
 
-```js
 <!DOCTYPE html>
 <html>
 <head>
@@ -183,7 +180,6 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     </script>
 </body>
 </html>
-```
 
 이 예제를 확장하여 클라이언트로부터 메시지를 받고 백엔드와 프론트엔드 코드를 사용한 엔드 투 엔드 솔루션을 제공해보죠.
 
@@ -195,7 +191,6 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 클라이언트 연결을 관리하고 메시지 브로드캐스팅을 처리하는 SignalR 허브를 생성하세요.
 
-```javascript
 using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
 
@@ -211,7 +206,6 @@ public class ChatHub : Hub
         // 받은 메시지 처리(예: 데이터베이스 저장, 처리 등)
     }
 }
-```
 
 
 
@@ -219,7 +213,6 @@ public class ChatHub : Hub
 
 Startup 클래스에서 SignalR을 구성하여 WebSocket 지원을 활성화하고 허브 엔드포인트를 매핑합니다.
 
-```js
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddSignalR();
@@ -234,7 +227,6 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         endpoints.MapHub<ChatHub>("/chatHub");
     });
 }
-```
 
 ## 단계 3: 메시지 수신을 위한 컨트롤러 생성
 
@@ -242,7 +234,6 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 클라이언트로부터 수신된 메시지를 처리하는 컨트롤러를 만들어보세요.
 
-```js
 using Microsoft.AspNetCore.Mvc;
 
 [Route("api/[controller]")]
@@ -263,7 +254,6 @@ public class ChatController : ControllerBase
         return Ok();
     }
 }
-```
 
 # Frontend: React UI with SignalR
 
@@ -273,9 +263,7 @@ public class ChatController : ControllerBase
 
 JavaScript SignalR 클라이언트 라이브러리를 npm을 사용해서 설치해주세요.
 
-```js
 npm install @microsoft/signalr
-```
 
 ## 단계 2: WebSocket 연결 생성
 
@@ -283,7 +271,6 @@ SignalR 허브에 대한 WebSocket 연결을 생성하고 들어오는 메시지
 
 
 
-```js
 import React, { useState, useEffect } from 'react';
 import * as signalR from '@microsoft/signalr';
 
@@ -330,7 +317,6 @@ const Chat = () => {
 };
 
 export default Chat;
-```
 
 # 결론
 

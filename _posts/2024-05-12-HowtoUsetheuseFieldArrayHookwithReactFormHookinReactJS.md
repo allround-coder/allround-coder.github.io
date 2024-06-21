@@ -70,7 +70,7 @@ export default MyForm;
 fields.map 함수는 "items" 배열의 각 입력 필드를 렌더링하는 데 사용됩니다. "Remove" 버튼을 클릭하면 제거 함수가 호출되고, "Add Item" 버튼을 클릭하면 추가 함수가 호출됩니다.
 
 useFieldArray 훅을 사용하면 form의 상태를 수동으로 관리하지 않고도 form에서 필드를 쉽게 추가하거나 제거할 수 있습니다. 이를 통해 동적 입력이 있는 복잡한 form을 쉽게 생성할 수 있습니다.
-```
+
 
 
 

@@ -165,7 +165,7 @@ export class AppComponent {
 
 일반적으로 한 애플리케이션 당 여러 환경이 있습니다. Angular 애플리케이션의 설정은 개발자마다 다를 수 있습니다. 그럼에도 불구하고 추가 환경을 구성하려면 개발 및 프로덕션 환경 이외의 환경을 설정해야 합니다.
 
-기본적으로 Angular 애플리케이션에는 environment.ts 및 environment.prod.ts가 있습니다. 저는 개발 환경으로 environment.ts를 사용합니다. 지역에서 Angular 애플리케이션을 개발하기 때문에 명령에 추가 인수를 추가할 필요가 없고, environment.ts가 기본 설정으로 사용됩니다. 반면 프로덕션 환경에서는 ng serve --configuration production과 같은 추가 매개변수를 전달해야 합니다.```
+기본적으로 Angular 애플리케이션에는 environment.ts 및 environment.prod.ts가 있습니다. 저는 개발 환경으로 environment.ts를 사용합니다. 지역에서 Angular 애플리케이션을 개발하기 때문에 명령에 추가 인수를 추가할 필요가 없고, environment.ts가 기본 설정으로 사용됩니다. 반면 프로덕션 환경에서는 ng serve --configuration production과 같은 추가 매개변수를 전달해야 합니다.
 
 <div class="content-ad"></div>
 

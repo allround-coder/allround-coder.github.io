@@ -82,7 +82,7 @@ link: "https://medium.com/better-programming/the-future-of-micro-frontends-2f527
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-TheFutureofMicroFrontends_1.png)
 
 마이크로 프론트엔드는 분산 아키텍처이기 때문에 더 형식적인 API나 이벤트 관리가 필요합니다.
@@ -91,7 +91,7 @@ API나 이벤트는 팀이 상호 작용하는 방법입니다. 마이크로 프
 이러한 사례들은 이벤트가 전송될 때 개발자가 실수를 피할 뿐만 아니라 팀 간 토론을 용이하게 하고 의도를 명확히 하는 데 도움이 됩니다.
 
 미래에는 잘 연결된 통신 전략을 대규모로 사용하는 대규모 애플리케이션에서 개발자 경험을 더 간단하게 만드는 데 더 많은 노력이 기울여졌으면 좋겠습니다.
-```
+
 
 <div class="content-ad"></div>
 

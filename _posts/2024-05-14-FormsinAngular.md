@@ -289,7 +289,7 @@ export class TemplateDrivenFormComponent {
 - 이 예제에서 #userForm="ngForm"은 폼 참조를 생성하여 컴포넌트 내의 사용자 객체의 속성에 접근할 수 있도록 합니다. [(ngModel)] 지시문은 입력 요소와 사용자 객체의 속성 간에 양방향 데이터 바인딩을 설정합니다.
 
 - 유효성 검사 지시문 (required 및 email)이 폼 컨트롤에 적용되며, 오류 메시지는 컨트롤의 상태에 따라 조건부로 표시됩니다.
-```
+
 
 
 
@@ -400,7 +400,7 @@ export class ReactiveFormComponent {
 ![FormsinAngular_2](/assets/img/2024-05-14-FormsinAngular_2.png)
 
 # GitHub
-```
+
 
 
 

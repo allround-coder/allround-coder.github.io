@@ -122,7 +122,7 @@ node index.js
 위 명령을 실행하면 다음과 같이 출력이 표시됩니다:
 
 <img src="/assets/img/2024-05-01-HowtoDebugNodejsApplicationsUsingthedebuggerStatementEasiestWay_1.png" />
-```
+
 
 <div class="content-ad"></div>
 

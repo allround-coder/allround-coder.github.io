@@ -233,7 +233,7 @@ const { blok } = Astro.props
 
 
 
-```md
+
 src/pages/storyblok/Page.astro
 
 ---
@@ -249,7 +249,7 @@ const { blok } = Astro.props
     })
   }
 </main>
-```
+
 
 이제, 우리가 블록을 만들었으니, 블로그용 각 웹페이지에 대한 동적 경로를 처리해야 합니다. Astro를 사용하여 동적 경로를 구성하는 것은 매우 간단합니다. 페이지 디렉토리 안에 blog라는 새 디렉토리를 만들고 그 안에 아래 코드가 있는 [...slug].astro라는 새 파일을 만들어주기만 하면 됩니다:
 

@@ -117,7 +117,7 @@ export const FederatedModuleMap = {
 };
 ```
 
-Now let`s create the component that will load a remote application from our dynamic component, which we created — `app.federated.component /````
+Now let`s create the component that will load a remote application from our dynamic component, which we created — `app.federated.component /
 
 <div class="content-ad"></div>
 
@@ -154,4 +154,4 @@ export class MyProfileComponent {
 
 원격 컴포넌트가 입력을 필요로 하는 경우 Map과 함께 모든 입력을 전달할 수 있습니다.
 
-이것은 Angular로의 마이크로 프론트엔드에 전념된 시리즈의 첫 번째 블로그이며, 앞으로 미래 게시물에서 MFE 통합의 보다 어려운 측면을 탐구할 예정입니다.```
+이것은 Angular로의 마이크로 프론트엔드에 전념된 시리즈의 첫 번째 블로그이며, 앞으로 미래 게시물에서 MFE 통합의 보다 어려운 측면을 탐구할 예정입니다.

@@ -58,9 +58,7 @@ link: "https://medium.com/@adaridonalrahul/amazing-scroll-effects-in-simple-css-
 ```jsx
 표시되는 것처럼 보이도록 애니메이션을 추가해주세요
 
-```js
 animation: revealing;
-```
 
 # 애니메이션 타임라인
 
@@ -72,9 +70,7 @@ animation: revealing;
 
 우리 경우에는 특정 요소가 화면에 나타날 때를 의미합니다. 따라서 타임라인을 적용하려면 다음 속성을 지정하세요.
 
-```js
 animation-timeline: view(block);
-```
 
 이제 애니메이션이 동작하기 시작할 것입니다. 하지만 완전히 작동하지는 않는 것 같습니다.
 
@@ -84,9 +80,7 @@ animation-timeline: view(block);
 
 애니메이션 범위는 뷰포트 관점에서 애니메이션이 시작되고 완료되는 시점을 지정합니다. 뷰포트는 얼마나 많은 부분이 커버되거나 포함되는지에 따라서 결정됩니다. 이렇게 지정할 수 있어요.
 
-```js
 animation-range: cover 0% cover 50%;
-```
 
 <div class="content-ad"></div>
 

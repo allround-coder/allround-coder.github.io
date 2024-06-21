@@ -11,7 +11,7 @@ link: "https://medium.com/@akinnurun.samuel/writing-a-microservice-using-node-js
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-WritingAMicroserviceUsingNodejs_0.png)
 
 자바스크립트는 프로그래밍 언어 평가에서 주요 위치를 유지하고 있습니다. 자바스크립트에는 브라우저와 Node.js 두 가지 구현이 있습니다. 후자는 웹 서비스 개발에 널리 사용됩니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@akinnurun.samuel/writing-a-microservice-using-node-js
 IT 경력을 시작한 지 약 여덟 년 전에 자바스크립트를 배우기 시작했고, 몇 년 전에 David Flanagan의 훌륭한 책 "JavaScript: The Definitive Guide"를 읽었습니다.
 
 이 책은 많은 질문에 답하고 흥미로운 자바스크립트 레시피를 보여줬는데, 이를 내 업무에 적용하고 있습니다. 그러나 더 중요한 것은, Node.js로 웹 서비스 개발에 초점을 맞추게 됐습니다 (이전에는 JS를 프론트엔드 개발에만 사용). 이 책을 새로운 자바스크립트 개발자뿐만 아니라 경험있는 개발자에게도 추천합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -117,7 +117,7 @@ app.listen(port, () => {
 # 유효성 검사
 
 유효성 검사는 웹 애플리케이션의 중요한 부분입니다. 사용자가 API를 어떻게 사용할지 알 수 없기 때문에, 침입자가 잘못된 입력을 제공하여 응용프로그램을 손상시킬 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -219,7 +219,7 @@ winston은 간단하지만 강력한 로깅 라이브러리로, 다양한 전송
 
 커밋이 무엇인가를 망가뜨리지 않았는지 확인하기 위해, 지속적 통합(CI)가 필요합니다.
 
-이를 위해, 저는 GitHub Actions를 사용할 것입니다:```
+이를 위해, 저는 GitHub Actions를 사용할 것입니다:
 
 <div class="content-ad"></div>
 
@@ -319,7 +319,7 @@ if (status && !(status in availableUpdates)) {
 두 개의 동시 요청에서 동일한 작업을 완료하고 취소하려고 하는 상황을 상상해보세요. 두 요청이 모두 상태가 '활성'인 작업을 받고 모델을 저장할 때 충돌이 발생할 수 있어요. 첫 번째 작업의 상태가 '완료'로 변경되고 그런 다음 '취소'로 변경될 수 있습니다(또는 그 반대로). 이는 '완료'-'취소' 및 '취소'-'완료' 전이가 허용되지 않기 때문에 잘못된 동작입니다.
 
 Mongoose는 낙관적 락으로 이 문제에 대한 해결책을 구현했어요. 낙관적 락은 데이터베이스에서 동시 요청을 처리하는 데 사용되는 전략입니다. 각 문서에는 추가적인 버전 속성이 있어요. 트랜잭션이 모델을 저장/업데이트하려고 할 때 버전을 확인합니다. 버전이 get 쿼리를 수행할 때 받은 버전과 다른 경우, 이미 누군가 문서를 동시에 업데이트했을 수 있어요. 트랜잭션이 중단됩니다(위의 코드에서는 오류가 발생합니다).
-```
+
 
 <div class="content-ad"></div>
 
@@ -485,7 +485,7 @@ module.exports = router;
  */
 ```
 
-맨 아래에서는 Swagger 미들웨어가 사용하는 OpenAPI 사양이 API 문서 페이지를 생성하는 데 사용됨을 볼 수 있습니다.```
+맨 아래에서는 Swagger 미들웨어가 사용하는 OpenAPI 사양이 API 문서 페이지를 생성하는 데 사용됨을 볼 수 있습니다.
 
 <div class="content-ad"></div>
 

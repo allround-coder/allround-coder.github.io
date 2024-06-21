@@ -498,7 +498,7 @@ function* mySaga() {
 
 지금까지 한 모든 변경 내용이 반영된 코드는 다음과 같습니다:
 
-```
+
 
 <div class="content-ad"></div>
 
@@ -630,7 +630,7 @@ export default function* mySaga() {
 
 fork가 블로킹되지 않는 호출이기 때문에 call(...)과 같은 기대값이나 take와 같은 기다림이 필요하지 않습니다. 위의 코드에서는 실제로 이야기를 전달하고 있는데, 즉시 Saga가 시작되면 getPostsSaga를 fork했음을 의미합니다. 즉, getPostsSaga 함수를 완료할 때까지 기다리지 않고 별도의 스레드에서 실행합니다.
 
-getPostsSaga의 첫 줄이 take 이펙트인데, 이는 GET_POSTS_FETCH 액션을 '청취'하거나 '감시'하기 시작하게 됩니다. 이 액션이 실행될 때가지 즉시 take를 수행합니다. getPostsSaga에서 take와 같은 블로킹 호출이 없으면 전체 함수를 실행하게 되므로, 사용자가 이 작업을 취할 때마다 Saga는 별도의 스레드에서 이를 실행하기 위해 기다리게 됩니다(즉, 앱의 현재 흐름을 방해하지 않는 상태).```
+getPostsSaga의 첫 줄이 take 이펙트인데, 이는 GET_POSTS_FETCH 액션을 '청취'하거나 '감시'하기 시작하게 됩니다. 이 액션이 실행될 때가지 즉시 take를 수행합니다. getPostsSaga에서 take와 같은 블로킹 호출이 없으면 전체 함수를 실행하게 되므로, 사용자가 이 작업을 취할 때마다 Saga는 별도의 스레드에서 이를 실행하기 위해 기다리게 됩니다(즉, 앱의 현재 흐름을 방해하지 않는 상태).
 
 <div class="content-ad"></div>
 
@@ -1006,7 +1006,7 @@ return (
 
 그래서, 우리의 로직이 작동합니다. 이러한 변경만으로 우리가 위에서 논의한 총 4가지 중 처음 두 가지를 완료했습니다.
 
-```
+
 
 <div class="content-ad"></div>
 
@@ -1209,7 +1209,7 @@ onClick={() => {
 앱을 실행하면 이렇게 작동해야 합니다:
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*Ve1TEwbgQTZwb_e6JFcVTg.gif" />
-```
+
 
 <div class="content-ad"></div>
 

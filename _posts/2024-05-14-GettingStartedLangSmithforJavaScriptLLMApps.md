@@ -89,7 +89,7 @@ OPENAI_API_KEY=<your-openai-api-key>
   - LLM을 호출합니다 (ChatOpenAI).
   - 응답을 구문 분석하여 문자열로 반환합니다 (StrOutputParser).
 
-# 실습하기```
+# 실습하기
 
 
 

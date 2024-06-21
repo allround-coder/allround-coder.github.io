@@ -109,7 +109,7 @@ sample_text = """65세 여성이 복부 및 골반의 컴퓨터 단층 촬영(CT
 """
 ```
 
-여기서 LightPipeline을 사용하여 엔티티를 추출해 보겠습니다. LightPipeline은 Spark NLP 특정 파이프라인 클래스로, Spark ML 파이프라인과 동등한 기능을 제공합니다. 다만, Spark 원칙을 준수하지 않고 모든 계산을 로컬(그러나 병렬)로 수행하여 데이터 양이 적을 때 빠른 결과를 얻을 수 있습니다.```
+여기서 LightPipeline을 사용하여 엔티티를 추출해 보겠습니다. LightPipeline은 Spark NLP 특정 파이프라인 클래스로, Spark ML 파이프라인과 동등한 기능을 제공합니다. 다만, Spark 원칙을 준수하지 않고 모든 계산을 로컬(그러나 병렬)로 수행하여 데이터 양이 적을 때 빠른 결과를 얻을 수 있습니다.
 
 <div class="content-ad"></div>
 

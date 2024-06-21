@@ -237,7 +237,7 @@ for (const result of results) {
 
 <div class="content-ad"></div>
 
-```md
+
 // 이전:
 // JavaScript는 숫자를 부동 소수점으로 저장하기 때문에 항상 약간의 부정확성이 있습니다.
 // 더 중요한 것은 특정 숫자 이후에 정수 연산에 부정확성이 시작됩니다.
@@ -332,13 +332,13 @@ console.log(BigInt.asIntN(2, -2n)); // -2
 
 // 음수 숫자는 부호가 있는 숫자로 변환될 때 2의 보수로 변환됩니다.
 console.log(BigInt.asUintN(8, -2n)); // 254
-```
+
 
 - globalThis: 환경(브라우저, NodeJS, ...)와 상관없이 전역 컨텍스트에서 변수에 액세스할 수 있습니다. 여전히 권장되지는 않지만 때로는 필요합니다. 브라우저의 최상위 수준에서 this와 유사합니다.
 
-```md
+
 console.log(globalThis.Math); // Math Object
-```
+
 
 - import.meta: ES-모듈을 사용할 때 현재 모듈 URL import.meta.url을 얻습니다.
 
@@ -429,7 +429,7 @@ x2 ??= getNewValue();
 console.log(x2) // "a"
 ```
 
-- Logical and assignment (&&=): 이전에 "truthy"였을 때만 값을 할당합니다 (true 또는 true로 변환되는 값).```
+- Logical and assignment (&&=): 이전에 "truthy"였을 때만 값을 할당합니다 (true 또는 true로 변환되는 값).
 
 <div class="content-ad"></div>
 
@@ -1183,7 +1183,7 @@ import type { SomeType } from './file';
 import { something, type SomeType } from './file';
 ```
 
-- Const 어순: 상수를 정의할 때 const 키워드를 사용하여 이를 리터럴 타입으로 정확하게 지정할 수 있습니다. 이는 다양한 용례가 있으며 정확한 유형 정의가 쉬워집니다. 또한 상수 객체와 배열은 읽기 전용이 되어 상수 객체의 변이를 방지합니다.```
+- Const 어순: 상수를 정의할 때 const 키워드를 사용하여 이를 리터럴 타입으로 정확하게 지정할 수 있습니다. 이는 다양한 용례가 있으며 정확한 유형 정의가 쉬워집니다. 또한 상수 객체와 배열은 읽기 전용이 되어 상수 객체의 변이를 방지합니다.
 
 <div class="content-ad"></div>
 
@@ -1452,7 +1452,7 @@ type GetterNew<out T> = () => T;
 type SetterNew<in T> = (value: T) => void;
 ```
 
-- moduleSuffixes로 해상도 사용자 정의: 사용자 정의 파일 접미사를 사용하는 환경(예: 네이티브 앱 빌드에 .ios를 사용하는 경우)에서는 TypeScript가 가져오기를 정확하게 해석하도록 이 접미사를 tsconfig.json에 지정할 수 있습니다.```
+- moduleSuffixes로 해상도 사용자 정의: 사용자 정의 파일 접미사를 사용하는 환경(예: 네이티브 앱 빌드에 .ios를 사용하는 경우)에서는 TypeScript가 가져오기를 정확하게 해석하도록 이 접미사를 tsconfig.json에 지정할 수 있습니다.
 
 <div class="content-ad"></div>
 

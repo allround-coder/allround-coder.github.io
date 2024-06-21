@@ -188,7 +188,7 @@ export function Website() {
 
 ![2024-05-14-HowtoReuseMicroFrontends_3.png](/assets/img/2024-05-14-HowtoReuseMicroFrontends_3.png)
 
-이제 두 섹션에 대한 라우트를 추가해 봅시다. 블로그 섹션이 가장 쉽기 때문에, 그것부터 시작해봅시다.```
+이제 두 섹션에 대한 라우트를 추가해 봅시다. 블로그 섹션이 가장 쉽기 때문에, 그것부터 시작해봅시다.
 
 
 

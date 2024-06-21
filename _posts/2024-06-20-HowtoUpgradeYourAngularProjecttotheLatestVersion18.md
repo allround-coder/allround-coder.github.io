@@ -25,9 +25,9 @@ Angular은 웹 애플리케이션을 구축하기 위한 강력하고 널리 사
 
 현재 사용 중인 Angular 버전을 확인하려면 다음 명령어를 실행해보세요:
 
-```
+
 ng version
-```
+
 
 Angular CLI, Angular 프레임워크 및 기타 종속성을 확인하고 메모해주세요.
 
@@ -47,15 +47,15 @@ npm uninstall -g @angular/cli
 
 가장 최신 Angular CLI를 설치해보세요:
 
-```
+
 npm install -g @angular/cli@latest
-```
+
 
 프로젝트의 로컬 Angular CLI를 업데이트해보세요:
 
-```
+
 ng update @angular/cli
-```
+
 
 <div class="content-ad"></div>
 
@@ -83,9 +83,9 @@ npm outdated
 
 #### 더 이상 사용되지 않는 패키지를 업데이트하세요:
 
-```
+
 npm update
-```
+
 
 일부 패키지는 주요 업데이트나 호환되지 않는 변경사항이 있을 경우 수동 개입이 필요할 수 있습니다. 각 패키지의 설명서를 확인하여 특정 업데이트 지침을 확인하세요.
 
@@ -127,15 +127,15 @@ ng lint
 
 유닛 테스트를 실행하세요:
 
-```
+
 ng test
-```
+
 
 엔드 투 엔드 테스트를 실행하세요:
 
-```
+
 ng e2e
-```
+
 
 <div class="content-ad"></div>
 

@@ -39,7 +39,7 @@ npm i react-native-google-mobile-ads
 
 여기서 중요한 점은 빌드 버전을 따라야 한다는 것입니다. ios 및 안드로이드 플랫폼에서 광고를 오류없이 사용하고 싶다면 버전 12.6.0을 사용하는 것을 권장드립니다.
 
-적절히 패키지를 설치한 후 pod install을 실행한 상태에서 android와 ios 모두 다음 단계를 수행해야 합니다.```
+적절히 패키지를 설치한 후 pod install을 실행한 상태에서 android와 ios 모두 다음 단계를 수행해야 합니다.
 
 
 

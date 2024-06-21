@@ -53,7 +53,7 @@ const App = () => {
 ```
 
 # useMediaQuery
-```
+
 
 
 
@@ -125,15 +125,12 @@ searchTerm이란 상태와 setSearchTerm 함수를 만들었고, debouncedSearch
 
 useEffect 안에서는 debouncedSearchTerm을 감시하며 API 호출을 수행합니다.
 
-```jsx
 <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-```
 
 # useFetch
 
 비동기적으로 데이터를 가져오는 것은 현대 웹 개발에서 흔한 작업입니다. 이를 간단하게 처리해주는 useFetch 훅을 알아봅시다.
 
-```js
 import { useState, useEffect } from 'react';
 
 const useFetch = (url) => {
@@ -156,13 +153,11 @@ const useFetch = (url) => {
   }, [url]);
   return { data, error, loading };
 };
-```
 
 
 
 이 훅은 fetch 요청의 복잡성을 추상화하고 응답, 오류 및 로딩 상태를 제공합니다. 이 훅을 사용하는 방법은 다음과 같습니다:
 
-```js
 const App = () => {
   const { data, error, loading } = useFetch('https://api.example.com/data');
 
@@ -182,7 +177,6 @@ const App = () => {
     </div>
   );
 };
-```
 
 # useToggle
 
@@ -190,7 +184,6 @@ const App = () => {
 
 
 
-```js
 import { useState } from 'react';
 
 const useToggle = (initialValue = false) => {
@@ -200,11 +193,9 @@ const useToggle = (initialValue = false) => {
   };
   return [value, toggle];
 };
-```
 
 이 훅은 상태를 토글하는 프로세스를 간단하게 해줍니다. 아래는 사용 예시입니다:
 
-```js
 const App = () => {
   const [isModalOpen, toggleModal] = useToggle(false);
 
@@ -215,7 +206,6 @@ const App = () => {
     </div>
   );
 };
-```
 
 # 결론
 

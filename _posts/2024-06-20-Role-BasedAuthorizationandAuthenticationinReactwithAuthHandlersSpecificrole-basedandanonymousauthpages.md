@@ -140,7 +140,7 @@ export default ProtectedRoute;
 ```
 
 ## 단계 3: 인증 컴포넌트 사용하기
-```
+
 
 <div class="content-ad"></div>
 

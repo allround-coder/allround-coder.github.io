@@ -115,7 +115,7 @@ const cat = {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 const cat = {
   catName: "Whiskers",
@@ -135,7 +135,7 @@ console.log(`My cat ${catNname} is ${age} moths old`)
 ```
 
 The output will be:
-```
+
 
 <div class="content-ad"></div>
 
@@ -194,7 +194,6 @@ console.log(E1);
 ```js
 기본 형식보다 더 짧게 ES6 객체 리터럴로 작성할 수 있어요. 아래와 같이 써보세요;
 
-```js
 function Task(title, description, priority) {
   return {
     title,
@@ -202,7 +201,6 @@ function Task(title, description, priority) {
     priority,
   };
 }
-```
 
 # 전개 연산자
 ```

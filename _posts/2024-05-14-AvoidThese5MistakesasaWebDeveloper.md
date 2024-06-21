@@ -11,7 +11,7 @@ link: "https://medium.com/javascript-in-plain-english/avoid-these-5-mistakes-as-
 ---
 
 
-```
+
 ![Avoid These 5 Mistakes as a Web Developer](/assets/img/2024-05-14-AvoidThese5MistakesasaWebDeveloper_0.png)
 
 우리는 모두 실수를 합니다. 배우고成長하며、경험을 쌓는 가장 효율적인 방법입니다. 실수를 돌아보고 그로부터 배우면 스스로를 향상시킬 수 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/javascript-in-plain-english/avoid-these-5-mistakes-as-
 대부분의 사람들은 자신의 실수를 돌아보지 않습니다. 그들은 그 실수를 저지르지 않았어야 한다고 자책합니다. 다른 사람이 그들을 비난할 필요는 없습니다; 그들 스스로 힘을 줍니다.
 
 웹 개발자 경력 중에 백엔드 엔지니어가 범하는 십 가지 오류를 나열하겠습니다. 실수를 범하는 데는 현재 위치가 중요하지 않습니다. 우리는 경력 어디서든지 언제든지 실수를 합니다.
-```
+
 
 
 

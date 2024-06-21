@@ -89,7 +89,7 @@ MERN 스택으로의 웹 개발 여정과 React Native를 사용한 앱 개발�
 
 <div class="content-ad"></div>
 
-```markdown
+
 # `section`
 
 "section" 태그는 웹 페이지 내에서 콘텐츠의 섹션을 정의하는 데 사용됩니다. 주로 그룹화된 콘텐츠에 사용됩니다.
@@ -111,7 +111,7 @@ MERN 스택으로의 웹 개발 여정과 React Native를 사용한 앱 개발�
   <p>Semantic HTML is a powerful tool for web developers...</p>
 </article>
 ``` 
-```
+
 
 <div class="content-ad"></div>
 

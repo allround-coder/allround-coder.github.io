@@ -217,7 +217,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-참고 문헌``` 
+참고 문헌 
 
 <div class="content-ad"></div>
 

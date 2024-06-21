@@ -194,7 +194,7 @@ Yarn 사용자:
 C:\Users\사용자명\Desktop\react-folder\my-app>yarn start
 ```
 
-참고: React 앱을 만들 때 사용하는 npm 또는 yarn을 사용하여 React 종속성을 설치하고 React 스크립트를 실행하세요. 원하는 방법에 따라 npm이나 yarn을 사용하세요.```
+참고: React 앱을 만들 때 사용하는 npm 또는 yarn을 사용하여 React 종속성을 설치하고 React 스크립트를 실행하세요. 원하는 방법에 따라 npm이나 yarn을 사용하세요.
 
 
 
@@ -281,7 +281,7 @@ export default Products;
 - return 메소드를 가진 Card 함수를 생성합니다.
 - 카드 함수 내에 return 메소드 전에 productItems 변수를 생성합니다.
 - productItems 변수를 우리 Products를 순회하는 map 함수에 할당합니다. map 함수는 아래 코드 예시와 같아야 합니다.
-```
+
 
 
 
@@ -302,7 +302,7 @@ const productItems = Products.map(store =>{
 
 7. Card 컴포넌트를 export하세요.
 
-Card.js 파일의 최종 코드는 아래의 코드 예시와 같을 것입니다.```
+Card.js 파일의 최종 코드는 아래의 코드 예시와 같을 것입니다.
 
 
 
@@ -338,7 +338,7 @@ export default Card;
 
 index.css 파일에 Card 컴포넌트에 CSS 스타일을 추가하십시오.
 
-참고: Card 컴포넌트 내부의 div 태그와 section 태그에는 className 속성이 포함되어 있습니다. 이 className 속성은 목적에 맞게 CSS 스타일링을 위해 만들어졌습니다.```
+참고: Card 컴포넌트 내부의 div 태그와 section 태그에는 className 속성이 포함되어 있습니다. 이 className 속성은 목적에 맞게 CSS 스타일링을 위해 만들어졌습니다.
 
 
 
@@ -575,7 +575,7 @@ export default App;
 
 3. 슬라이스(Slice) 메서드를 사용하여 설명 단어를 줄입니다.
 
-최종 카드 컴포넌트 코드는 아래의 코드 예시와 같이 되어야 합니다.```
+최종 카드 컴포넌트 코드는 아래의 코드 예시와 같이 되어야 합니다.
 
 
 

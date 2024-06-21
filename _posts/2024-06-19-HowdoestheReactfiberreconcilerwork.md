@@ -44,9 +44,9 @@ link: "https://medium.com/@maxtsh/how-does-the-react-fiber-reconciler-work-77c36
 
 예를 들어, 사용자가 UI와의 아래 상호 작용을 가정해 봅니다:
 
-```
+
 ![React Fiber Reconciler](/assets/img/2024-06-19-HowdoestheReactfiberreconcilerwork_2.png)
-```
+
 
 스택 조정기에서 비응답 UI의 문제
 
@@ -85,7 +85,7 @@ Fiber Reconciler = Fiber 객체 또는 작업 단위를 기반으로 하는 현�
 
 <div class="content-ad"></div>
 
-```markdown
+
 createFiberFromtText();
 createFiberFromElement();
 createFiberFromPortal();
@@ -95,7 +95,7 @@ Fibers는 DOM과 React 생태계에서 거의 모든 옵션에서 만들 수 있
 React는 DOM 조작을 처리하는 선언적인 방법으로, 화면에 표시하길 원하는 내용을 알려주면 React가 하부에서 역할을 수행하여 비즈니스 로직 및 비즈니스에 필요한 중요한 부분에 집중할 수 있습니다.
 
 아래에는 페이지의 간단한 예시가 있습니다:
-```
+
 
 <div class="content-ad"></div>
 

@@ -110,7 +110,7 @@ printf("Debug mode\n");
 
 매크로의 힘은 코드 재사용성, 조건부 컴파일, 코드 생성 및 변환에 대한 강력한 도구를 제공하는 능력에 있습니다.
 
-매크로가 메타 프로그래밍의 한 형태라는 것을 알고 계셨나요? 여기 메타 프로그래밍의 초기 정의가 있습니다:```
+매크로가 메타 프로그래밍의 한 형태라는 것을 알고 계셨나요? 여기 메타 프로그래밍의 초기 정의가 있습니다:
 
 <div class="content-ad"></div>
 
@@ -273,9 +273,9 @@ eval(code);  // 출력: 안녕, 세상!
 
 프로퍼티 접근을 가로채기 위한 기본적인 방법은 다음과 같습니다:
 
-```markdown
+
 You can play with the code [here](<link>)
-```
+
 
 ✳️ target은 단일 속성 message를 가진 간단한 객체로, "Hello, World!"라는 문자열이 포함되어 있습니다.
 
@@ -589,7 +589,7 @@ console.log(target.age);  // Output: undefined
 이 예제의 아름다움은 기존 코드와의 원활한 통합에 있으며, 라이브러리 및 프레임워크 개발에 매우 유용합니다. 함께 살펴보겠습니다!
 
 # 사례 연구 및 실제 예제
-```  
+
 
 <div class="content-ad"></div>
 
@@ -820,7 +820,6 @@ Vue.js와 MobX와 같은 프레임워크는 상태 관리와 반응성을 위해
 
 <div class="content-ad"></div>
 
-```md
+
 Want to Connect? 
 You can find me at GitHub: https://github.com/helabenkhalfallah
-```

@@ -344,7 +344,7 @@ node server.js
 npm start
 ```
 
-결과:```
+결과:
 
 
 

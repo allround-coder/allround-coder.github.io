@@ -19,7 +19,7 @@ link: "https://medium.com/@meganelise_23551/images-not-displaying-07683b97dad4"
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지가 표시되지 않는 이유](/assets/img/2024-06-20-Imagesnotdisplaying_1.png)
 
 왜 이런 일이 발생하는 걸까요?
@@ -27,7 +27,7 @@ link: "https://medium.com/@meganelise_23551/images-not-displaying-07683b97dad4"
 CSS(2)에서 절대 경로를 사용하고 있는데, 경로 시작 부분에 슬래시( / )가 있어서 assets 폴더가 루트 디렉토리 안에 바로 있는 디렉토리에서 이미지를 찾고 있는 것 같아요. 하지만 해당 assets 폴더가 실제로는 존재하지 않는 것 같습니다.
 
 CSS에서 경로를 아래와 같이 상대 경로로 변경하면, ..으로 시작해서 CSS 파일의 부모 디렉토리를 가리키게 되므로, 브라우저가 우리의 배경 이미지 위치를 올바르게 가리킬 수 있게 됩니다.
-```
+
 
 <div class="content-ad"></div>
 

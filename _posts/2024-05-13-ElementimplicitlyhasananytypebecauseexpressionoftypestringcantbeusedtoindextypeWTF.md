@@ -105,7 +105,7 @@ function getTotalGemsCount(gemCollection: GemCollection): number {
 }
 ```
 
-논리적으로는 이해가 되고 잘 작동할 것으로 기대하지만 타입 체커는 gemCollection[key]에서 에러를 발생시킬 것입니다:```
+논리적으로는 이해가 되고 잘 작동할 것으로 기대하지만 타입 체커는 gemCollection[key]에서 에러를 발생시킬 것입니다:
 
 
 

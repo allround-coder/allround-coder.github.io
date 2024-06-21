@@ -299,7 +299,7 @@ export default function PaymentForm() {
   const elements = useElements();
 ```
 
-from을 제출할 수 있는 onSubmit이라는 함수를 만들어봅시다.```
+from을 제출할 수 있는 onSubmit이라는 함수를 만들어봅시다.
 
 
 

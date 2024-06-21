@@ -96,7 +96,7 @@ index.html
 아래에서 스크립트 기능을 볼 수 있습니다. 이 예제에서는 HerokuApp 버전의 CORS Anywhere를 사용하고 있습니다.
 
 참고: HerokuApp 버전의 CORS Anywhere는 데모 및 테스트 용도로만 사용해야 합니다. 프로덕션 환경에서 CORS Anywhere를 사용하려면 이 링크를 참조하세요.
-```
+
 
 <div class="content-ad"></div>
 

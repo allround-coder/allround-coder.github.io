@@ -273,7 +273,7 @@ Feathers.js는 마이크로서비스 아키텍처를 활용한 현대적인 웹 
 
 표를 마크다운 형식으로 변경하세요.
 
-```markdown
+
 | 왜 Feathers.js를 고려해야 하는가:
 
 - 마이크로서비스 아키텍처로 구축된 현대 웹 애플리케이션에 적합합니다.
@@ -283,7 +283,7 @@ Feathers.js는 마이크로서비스 아키텍처를 활용한 현대적인 웹 
 ## 10. Adonis.js
 
 Adonis.js는 내장된 ORM(Object-Relational Mapper)을 갖춘 객체지향 MVC 프레임워크이며, 데이터베이스 상호작용을 간소화합니다.
-```
+
 
 <div class="content-ad"></div>
 

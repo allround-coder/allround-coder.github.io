@@ -118,11 +118,11 @@ Rack::MiniProfilerRails.initialize!(Rails.application)
 
 
 
-```md
+
 # spec_helper.rb 또는 rails_helper.rb 파일에서
 require 'database_cleaner'
 DatabaseCleaner.strategy = :transaction
-```
+
 
 8. Ransack:
 

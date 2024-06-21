@@ -134,7 +134,7 @@ link: "https://medium.com/bitsrc/adding-multi-version-support-to-your-astro-base
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-20-AddingMulti-VersionSupporttoYourAstro-basedDocumentation_1.png)
 
 Bit’s open-source tool helps over 250,000 developers build apps with components.
@@ -142,7 +142,7 @@ Bit’s open-source tool helps over 250,000 developers build apps with component
 Easily turn any UI, feature, or page into a reusable component — and share it across your applications. Collaborate more efficiently and build faster.
 
 → Learn more
-```
+
 
 <div class="content-ad"></div>
 

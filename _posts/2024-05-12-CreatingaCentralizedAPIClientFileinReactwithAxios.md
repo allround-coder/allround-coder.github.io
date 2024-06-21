@@ -192,7 +192,7 @@ Axios에서 config 매개변수를 사용하면 HTTP 요청에 대한 추가 구
 
 참고: axios.create()로 Axios 인스턴스를 만들 때 baseURL 옵션을 BASE_URL로 설정합니다. 이렇게 하면 이 Axios 인스턴스로 작성된 모든 요청에 기본 URL이 URL에 접두사로 붙습니다.
 
-예를 들어, ExampleComponent에서 _get(`/data`)를 호출하면 Axios는 `https://api.example.com/data`로 GET 요청을 보냅니다.```
+예를 들어, ExampleComponent에서 _get(`/data`)를 호출하면 Axios는 `https://api.example.com/data`로 GET 요청을 보냅니다.
 
 
 

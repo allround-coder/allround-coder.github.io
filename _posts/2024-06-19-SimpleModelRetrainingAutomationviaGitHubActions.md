@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/simple-model-retraining-automatio
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-SimpleModelRetrainingAutomationviaGitHubActions_0.png)
 
 비즈니스에 엄청난 가치를 창출할 수 있는 것은 기계 학습 모델입니다. 그러나 이를 개발하는 것은 일회성 활동이 아닙니다. 대신 모델이 계속 가치를 제공할 수 있도록 지속적인 프로세스여야 합니다. 이것이 MLOps가 나오게 된 이유입니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/simple-model-retraining-automatio
 CI/CD 원칙과 기계 학습 개발을 결합한 것을 MLOps라고 합니다. 이를 통해 모델이 지속적인 가치를 제공할 수 있도록 합니다.
 
 기계 학습 모델이 지속적인 이점을 제공하는 한 가지 방법은 필요할 때 재학습하는 것입니다. 예를 들어, 데이터 드리프트가 감지될 경우 모델을 재학습하는 것입니다. 모델 재학습 자동화를 위해 재학습 트리거의 환경을 설정하여 수행할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -43,7 +43,7 @@ GitHub Actions는 GitHub에서 제공하는 기능으로, CI/CD 플랫폼에 사
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-SimpleModelRetrainingAutomationviaGitHubActions_2.png)
 
 GitHub 저장소를 로컬 또는 작업하는 플랫폼에 복제하세요. 준비가 되었으면 튜토리얼 전체 구조를 준비해 봅시다. 좋아하는 IDE에서 다음과 같이 폴더를 생성하세요.
@@ -59,7 +59,7 @@ diabetes-project/
 ``` 
 
 폴더가 갖춰지면 가상 환경을 설정합니다. 고립된 환경을 원하기 때문에 이는 좋은 관행입니다. 루트 폴더로 이동하여 다음 CLI 코드를 사용하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -73,7 +73,7 @@ python -m venv your_environment_name
 your_environment_name\Scripts\activate
 ```
 
-가상 환경을 활성화한 후, 튜토리얼을 위해 필요한 모든 패키지를 설치할 것입니다. 루트 폴더에 requirements.txt 파일을 생성하고 아래 패키지를 채워넣어주세요.```
+가상 환경을 활성화한 후, 튜토리얼을 위해 필요한 모든 패키지를 설치할 것입니다. 루트 폴더에 requirements.txt 파일을 생성하고 아래 패키지를 채워넣어주세요.
 
 <div class="content-ad"></div>
 
@@ -233,7 +233,7 @@ if __name__ == "__main__":
 uvicorn scripts.app:app --host 0.0.0.0 --port 8000
 ```
 
-그런 다음, Jupyter Notebook에서 다음 코드를 실행하여 API를 테스트합니다.```
+그런 다음, Jupyter Notebook에서 다음 코드를 실행하여 API를 테스트합니다.
 
 <div class="content-ad"></div>
 
@@ -339,13 +339,13 @@ drifted_data = drifted_data.reset_index(drop=True)
 
 <div class="content-ad"></div>
 
-```markdown
+
 reference_data['Outcome'] = y_train.reset_index(drop=True)
 drifted_data['Outcome'] = y_test.reset_index(drop=True)
 
 drifted_data.to_csv('..//data//new_data.csv', index=False)
 reference_data.to_csv('..//data//reference_data.csv', index=False)
-```
+
 
 Evidently(제가 Evidently와 어떤 제휴도 없습니다)를 사용하여 제품 데이터가 참조 데이터에 비해 드리프트했는지 확인할 수 있습니다. 다음 코드로 확인할 수 있습니다.
 
@@ -362,7 +362,7 @@ drift_detected = report_json['metrics'][0]['result']['dataset_drift']
 ```
 
 ![이미지](/assets/img/2024-06-19-SimpleModelRetrainingAutomationviaGitHubActions_4.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -540,7 +540,7 @@ jobs:
 위의 YAML에서 수행한 전체 설정 구조는 아래 이미지에 나와 있습니다.
 
 ![Simple Model Retraining Automation via GitHub Actions](/assets/img/2024-06-19-SimpleModelRetrainingAutomationviaGitHubActions_5.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -40,7 +40,7 @@ export default MyComponent;
 
 그럼 언제 useState 대신 useRef를 사용해야 할까요?
 
-useState와 useRef는 React Hooks에서 서로 다른 목적을 제공합니다.```
+useState와 useRef는 React Hooks에서 서로 다른 목적을 제공합니다.
 
 
 

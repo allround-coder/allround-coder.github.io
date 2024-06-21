@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/an-intuitive-guide-to-docker-for-
 ---
 
 
-```md
+
 ![An Intuitive Guide to Docker for Data Science](/assets/img/2024-05-15-AnIntuitiveGuidetoDockerforDataScience_0.png)
 
 데이터 과학자로 일할 때, 모든 운영 체제에서 실행되고 필요한 종속성이 모두 갖춰진 코드를 작성하고 클라우드에 배포할 수 있어야 합니다. 노력에도 불구하고 작동하지 않을 수 있고 문제가 무엇인지 이해하는 데 시간을 낭비할 수도 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/an-intuitive-guide-to-docker-for-
 이 고통을 피하기 위해 어떤 도구를 사용할 수 있을까요? Docker가 여러분의 문제를 해결해 줄 것입니다. Docker를 사용하면 데이터 과학 프로젝트를 위한 견고한 환경을 손쉽게 얻을 수 있습니다. 미치도록 미쳐버리지 않고요.
 
 이 글에서는 Docker의 주요 개념, 가장 일반적인 명령어, 그리고 Docker화된 머신러닝 애플리케이션의 빠른 예제에 대해 설명하겠습니다. 시작해 봅시다!
-```
+
 
 
 

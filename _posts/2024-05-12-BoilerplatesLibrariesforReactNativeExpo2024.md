@@ -51,7 +51,7 @@ const theme = createTheme({
 react-native-paper는 구글의 머티리얼 디자인을 따릅니다. 만약 머티리얼 디자인을 사용하는 웹사이트가 있다면, react-native-paper가 일관성을 제공해줍니다.
 
 <img src="/assets/img/2024-05-12-BoilerplatesLibrariesforReactNativeExpo2024_2.png" />
-```
+
 
 ## gluestack
 
@@ -173,13 +173,13 @@ For yarn workspace and Lerna, developers need to do their configuration and setu
 
 For new developers, @x/react-native and @nx/expo provide a good developer experience and documentation to start; nevertheless, it still gives developers flexibility on the tech stack. To start, run this command:
 
-```
+
 # react-native
 npx create-nx-workspace --preset=react-native
 
 # expo
 npx create-nx-workspace --preset=expo
-```
+
 
 # Summary
 

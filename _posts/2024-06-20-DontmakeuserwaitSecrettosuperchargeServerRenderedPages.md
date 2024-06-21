@@ -116,7 +116,7 @@ SSR 페이지를 업그레이드하기 위한 주요 최적화 전략 몇 가지
 
 아래는 마크다운 형식으로 변경한 내용입니다.
 
-```markdown
+
 ![Image 1](/assets/img/2024-06-20-DontmakeuserwaitSecrettosuperchargeServerRenderedPages_5.png)
 
 우리가 이 변경 사항을 배포한 후에는 Backend API에 대한 히트가 급격히 감소했습니다.
@@ -124,7 +124,7 @@ SSR 페이지를 업그레이드하기 위한 주요 최적화 전략 몇 가지
 ![Image 2](/assets/img/2024-06-20-DontmakeuserwaitSecrettosuperchargeServerRenderedPages_6.png)
 
 이는 이제 Backend 서버가 다른 중요 사항에 더 많은 시간을 할애하고 더 적은 부하로 인해 더 빠르고 지연 시간이 낮아질 것을 의미합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -161,9 +161,9 @@ SSR 페이지를 업그레이드하기 위한 주요 최적화 전략 몇 가지
 
 Pre-connect은 페이지 상단 콘텐츠가 제 3자 또는 CDN 네트워크에서 에셋이나 이미지를 필요로 하는 경우에 유용합니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-DontmakeuserwaitSecrettosuperchargeServerRenderedPages_11.png)
-```
+
 
 Pre-connect를 사용하지 않으면 브라우저는 우선 콘텐츠를 다운로드한 후, 다른 출처에 대한 에셋에 따라 특정 콘텐츠를 찾으면, 먼저 제 3자와 연결을 시도한 뒤 연결이 확립되면 콘텐츠를 다운로드하므로 중요한 시간이 소비됩니다.
 

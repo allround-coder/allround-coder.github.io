@@ -43,7 +43,7 @@ cd login-form-app
 npm install react-hook-form @hookform/resolvers zod
 ```
 
-# 폼 생성하기```
+# 폼 생성하기
 
 
 

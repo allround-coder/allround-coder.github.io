@@ -52,11 +52,11 @@ import matplotlib.pyplot as plt
 
 예를 들어, 한 그룹 내에서 다른 사람들 간의 우정 관계를 표현하고 싶다고 가정해 봅시다. 이 경우 A가 B의 친구라면 B가 A의 친구라고 가정할 수 있으며 따라서 관계를 표시할 필요가 없습니다. 만약 A에서 B로 소포가 이동하는 운송 그래프를 표현하고 있다면, 방향성 있는 그래프를 사용하는 것이 좋습니다.
 
-Networkx에서 방향성 있는 그래프나 무방향 그래프를 구축하는 것은 매우 쉽습니다:```
+Networkx에서 방향성 있는 그래프나 무방향 그래프를 구축하는 것은 매우 쉽습니다:
 
 <div class="content-ad"></div>
 
-```md
+
 # 무방향 그래프 G 생성
 G = nx.Graph()
 print("그래프 G는 방향이 지정되어 있습니다: {}".format(G.is_directed()))
@@ -67,13 +67,13 @@ print("그래프 H는 방향이 지정되어 있습니다: {}".format(H.is_direc
 
 # 엣지와 노드 수 얻기
 G.number_of_nodes(), G.number_of_edges()
-```
+
 
 ![이미지](/assets/img/2024-06-20-GraphMLintroductiontoNetworkX_2.png)
 
 그래프를 구축한 후 추가 데이터를 수집하여 그래프를 업데이트해야 할 수 있습니다. NetworkX를 사용하면 노드를 추가하거나 다른 그래프를 직접 추가하기 쉽습니다.
 
-```md
+
 # 노드 추가
 G.add_node(1)
 G.add_nodes_from([2, 3])
@@ -83,11 +83,11 @@ G.add_nodes_from(H)
 # 또는 그래프를 직접 추가할 수도 있습니다
 G.add_node(H)
 G.number_of_nodes(), G.number_of_edges()
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Graph](/assets/img/2024-06-20-GraphMLintroductiontoNetworkX_3.png)
 
 당연히 A가 B와 친구이고 나중에 C와도 친구가 될 수 있으므로, 또 다른 링크를 추가하려고 합니다.
@@ -102,7 +102,7 @@ G.add_edges_from(H.edges())
 ```
 
 지금까지 그래프를 요소와 관계의 집합으로 삼았습니다. 노드는 모두 같았고, 관계도 단순한 연결이었습니다. 실제로 이는 축소된 것이며, 노드와 연결은 레이블 또는 기능과 연관될 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -208,7 +208,7 @@ for neighbor in G.neighbors(node_id):
 
 # 서로 다른 그래프 유형
 
-이전 튜토리얼에서 우리는 그래프 유형이 다양하다는 것을 알 수 있었고 이러한 정보의 많은 부분이 인접 행렬에 요약되어 있다는 것을 알았습니다. 이제 이러한 그래프를 표현하고 시각화할 수 있는 모든 요소를 갖췄습니다.```
+이전 튜토리얼에서 우리는 그래프 유형이 다양하다는 것을 알 수 있었고 이러한 정보의 많은 부분이 인접 행렬에 요약되어 있다는 것을 알았습니다. 이제 이러한 그래프를 표현하고 시각화할 수 있는 모든 요소를 갖췄습니다.
 
 <div class="content-ad"></div>
 
@@ -258,7 +258,7 @@ nx.draw(G, with_labels = True)
 
 <div class="content-ad"></div>
 
-```md
+
 ![그래프](/assets/img/2024-06-20-GraphMLintroductiontoNetworkX_13.png)
 
 앞서 언급했듯이 가중 그래프를 사용하는 경우가 있습니다. 예를 들어, 2D 매트릭스 게임, 그래프에 제약 조건을 적용해야 하는 경우 (제품 설계, 회로 설계). 또한 가중 그래프는 우선 순위 흐름을 지정하는 의존성 그래프와 같이 가중할 수도 있습니다.
@@ -288,11 +288,11 @@ nx.draw_networkx_edges(G, pos,  width =width)
 ```
 
 ![그래프](/assets/img/2024-06-20-GraphMLintroductiontoNetworkX_14.png)
-```  
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-20-GraphMLintroductiontoNetworkX_15.png)
 
 지금까지 우리는 자체 루프(노드가 자기 자신과 연결될 때)가 없다고 결론 지었습니다. 그러나 화학, 유전학, 게임, 대기 이론 등에서 유용한 경우도 있습니다. 이전에 대각선에 1이 없었는데 이제 있습니다(노드가 실제로 자기 자신과 연결되어 있음을 볼 수 있습니다).
@@ -313,7 +313,7 @@ nx.draw(G, with_labels=True)
 ```
 
 ![image](/assets/img/2024-06-20-GraphMLintroductiontoNetworkX_16.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -354,7 +354,7 @@ plt.axis('off')
 
 <div class="content-ad"></div>
 
-```md
+
 ![이미지](/assets/img/2024-06-20-GraphMLintroductiontoNetworkX_19.png)
 
 양 부분 그래프(또는 이분 그래프)는 그래프 이론에 따르면 그래프의 꼭짓점을 두 가지 서로 다른 및 독립적인 집합으로 나눌 수 있는 그래프이며 각 간선이 꼭짓점을 서로 연결합니다. 양 부분 그래프는 암 검출, 전자 상거래 및 매칭 문제 등에서 사용됩니다.
@@ -379,7 +379,7 @@ plt.show()
 ```
 
 ![이미지](/assets/img/2024-06-20-GraphMLintroductiontoNetworkX_20.png)
-```
+
 
 <div class="content-ad"></div>
 

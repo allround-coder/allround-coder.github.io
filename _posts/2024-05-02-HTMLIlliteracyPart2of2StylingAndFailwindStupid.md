@@ -318,7 +318,6 @@ body.dark {
   --modalBorder:0.125rem solid #000;
   --sectionFocusBg:#333;
 }
-```"
 
 <div class="content-ad"></div>
 
@@ -326,7 +325,6 @@ body.dark {
 
 다음은 리셋이에요. 모든 것을 리셋하는 * { margin:0; padding:0; border:0;} 같은 리셋들은 FF에서 INPUT과 TEXTAREA 같은 것들의 스타일을 망가뜨릴 수 있어요. Meyers의 "리셋 리로디드" 같은 다른 리셋들은 너무 크기 때문에 프레임워크처럼 보이고 리셋에 나쁜 명성을 샀어요. 제 리셋은 적어도 금방 중간 정도에 있다고 생각해요.
 
-```js
 html,body,div,p,h1,h2,h3,h4,h5,h6,
 ul,ol,li,dl,dt,dd,form,fieldset,caption,legend,
 table,tr,td,th,address,blockquote,img {
@@ -360,13 +358,11 @@ body, button, input, table, textarea, select {
  line-height:1.5;
  font-family:inherit;
 }
-```
 
 그리고 일반적인 값을 몇 가지 설정해 주죠.
 
 <div class="content-ad"></div>
 
-```js
 body {
   font-family: flowtext, sans-serif;
 }
@@ -374,11 +370,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: var(--headerColor);
 }
-```
 
 알아볼만한 내용이네요. #fauxbody:
 
-```js
 #fauxBody {
   position: fixed;
   top: 0;
@@ -391,13 +385,11 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bodyBg);
   color: var(--flowColor);
 }
-```
 
-이것은 BODY의 행동을 가장하여 스크롤링을 다루지만, 다른 절대 및 고정 위치 요소가 스크롤바를 회피 가능케하여 일반적인 모달 대화 상자의 이중 스크롤 막대 버그를 처리합니다. 또한 MAIN에 flex-grow를 넣어 "100% 최소 높이" 레이아웃을 손쉽게 만들게되어 있습니다. 이것은 max-width 동작을 설정한 후에 수행되는 작업입니다.```
+이것은 BODY의 행동을 가장하여 스크롤링을 다루지만, 다른 절대 및 고정 위치 요소가 스크롤바를 회피 가능케하여 일반적인 모달 대화 상자의 이중 스크롤 막대 버그를 처리합니다. 또한 MAIN에 flex-grow를 넣어 "100% 최소 높이" 레이아웃을 손쉽게 만들게되어 있습니다. 이것은 max-width 동작을 설정한 후에 수행되는 작업입니다.
 
 <div class="content-ad"></div>
 
-```js
 #fauxBody > * {
   width:100%;
   max-width:calc(54rem + var(--sidePad));
@@ -409,13 +401,11 @@ h1, h2, h3, h4, h5, h6 {
 main {
   flex-grow:1;
 }
-```
 
 나는 좀 더 좁은 max-width와 동적으로 성장/축소하는 패딩을 위한 계산을 사용했어. 이건 텍스트의 긴 줄이 읽기 어려워지지 않게 제한하고, 커다란 디스플레이에서 더 나은 간격을 만들어 주면서 작은 화면에 적합하게 축소해줘.
 
 아이콘에 대해 배경 정렬과 크기 조정을 공유하는 요소들이 몇 개 있어서, 이들을 함께 묶어 뒀어.
 
-```js
 #top > a:first-child:after,
 #mainMenu div > a:before,
 .toggleLightDark {
@@ -423,7 +413,6 @@ main {
   background-repeat:no-repeat;
   background-size:contain;
 }
-```
 
 <div class="content-ad"></div>
 
@@ -431,7 +420,6 @@ main {
 
 헤더:
 
-```js
 #top {
   display:flex;
   align-items:center;
@@ -449,7 +437,6 @@ h1 {
   position:absolute;
   left:-200vw;
 }
-```
 
 또한 이것은 flex 컨테이너이며, 그 안에 밑줄이 그어진 앵커를 원하지 않고, 이 모든 SPAN과 h1은 아이콘 또는 이미지를 대신하여 화면 밖에 숨겨져야 합니다.
 
@@ -457,7 +444,6 @@ h1 {
 
 <div class="content-ad"></div>
 
-```js
 #top > a:first-child:after {
   content:"";
   display:inline-block;
@@ -466,11 +452,9 @@ h1 {
   background-image:url(images/avatar.webp);
   border-radius:1.5rem;
 }
-```
 
 그래서 첫 번째 앵커 안에 생성된 콘텐츠를 사용하여 숨겨진 H1을 감싸 아바타 원을 만듭니다. 이것은 모든 페이지에서 사용되기 때문에 우리는 외관을 미리로드하여 각 페이지를 더 작고 빠르게 만들었습니다! 이것은 변경 기회를 놓치지 않고 마크업에 '쓸데없는 것'을 넣는 것을 의미하는 것입니다. HTML 캐싱은 여전히 작동하지만 쓸데없는 이야기하는 사람들! 너희는 쓰레기에 대해 아무것도 모르는 것이야. 조용히 있어!
 
-```js
 #mainMenu {
   flex-grow:1;
 }
@@ -480,15 +464,13 @@ h1 {
   list-style:none;
   display:flex;
 }
-```
 
-메인 메뉴는 사용 가능한 공간을 채우도록 허용되며, 데스크톱에서 다크/라이트 토글 및 사이트 로고 사이에 중앙에 배치됩니다. 푸터와 헤더 메뉴가 일부 스타일을 공유하기 때문에 함께 그룹화했습니다.```
+메인 메뉴는 사용 가능한 공간을 채우도록 허용되며, 데스크톱에서 다크/라이트 토글 및 사이트 로고 사이에 중앙에 배치됩니다. 푸터와 헤더 메뉴가 일부 스타일을 공유하기 때문에 함께 그룹화했습니다.
 
 <div class="content-ad"></div>
 
 간단하게 푸터를 끝내는 걸로 할 수 있겠군요.
 
-```js
 #fauxBody > footer {
   display:flex;
 }
@@ -497,11 +479,9 @@ h1 {
   flex-grow:1;
   gap:0.25rem 1rem;
 }
-```
 
 메인 메뉴는 로켓 과학이 아닙니다. Von Braun이 말했듯이, 달에 사람을 올리는 것도 로켓 과학이 아닙니다. 그들을 안전하게 집으로 데려오는 것이 중요한 것죠.
 
-```js
 #mainMenu ul {
   justify-content:center;
 }
@@ -543,7 +523,6 @@ h1 {
   border-right-width:0.0625rem;
   border-radius:0 2.5rem 2.5rem 0;
 }
-```
 
 <div class="content-ad"></div>
 
@@ -551,7 +530,6 @@ h1 {
 
 라이트/다크 토글은 원본 이미지가 너무 얇아 거의 보이지 않고 접근성 최소 기준을 완전히 미달했기 때문에 font-awesome에서 SVG를 빌렸습니다. 나는 이를 CSS에 인라인으로 넣어 그 불필요한 쓰레기들이 경쟁할 기회를 줬지만, 실제로는 웹폰트를 사용할 것입니다.
 
-```css
 테두리없이 색상을 투명하게 한 버튼을 만듭니다. .toggleLightDark {
   display: block;
   width: 3rem;
@@ -565,7 +543,6 @@ h1 {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath d='M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z'/%3E%3C/svg%3E");
   filter: invert(1);
 }
-```
 
 SVG에 이미 색상을 직접 넣을 수도 있지만 CSS에서 SVG를 사용할 때는 filter가 더 나은 선택입니다. 단색 SVG의 경우 filter를 사용하여 검정에서 흰색으로 전환하는 것뿐만 아니라, filter가 할 수 있는 모든 작업을 조사하면 심지어 색상을 입힐 수도 있습니다! "CSS에 있는 SVG의 색상을 제어할 수 없다"는 얘기는 그만큼일 뿐입니다.
 
@@ -573,7 +550,6 @@ SVG에 이미 색상을 직접 넣을 수도 있지만 CSS에서 SVG를 사용�
 
 다음으로 UI 일관성을 위해 공통 요소를 스타일링합니다.
 
-```css
 h2 {
   font-size: clamp(1.25rem, 6vw, 2rem);
   line-height: 1.2;
@@ -592,7 +568,6 @@ p {
 p {
   margin: 1rem 0;
 }
-```
 
 클램프된 글꼴 크기는 모바일에서 매끄럽고 깨끗하게 확장되도록 하며, Failwind와 같은 메디어 쿼리나 쿼리 기반 클래스를 사용하는 번거로움을 피할 수 있습니다.
 
@@ -600,7 +575,6 @@ p {
 
 <div class="content-ad"></div>
 
-```css
 .articleSummaries {
   margin-top: 2rem;
 }
@@ -642,7 +616,6 @@ p {
 .articleSummaries article > header ~ * {
   margin-left: 10rem;
 }
-```
 
 다시 말하지만, 그 곳에서 특별히 기록할 내용은 없어요.
 
@@ -652,14 +625,12 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
 
 그런데 호버 상태는 앵커 가상 상태 내에서 동일한 인접 형제 선택자를 사용합니다.
 
-```css
 .articleSummaries > a:focus header h3,
 .articleSummaries > a:hover header h3,
 .articleSummaries > a:focus header ~ *,
 .articleSummaries > a:hover header ~ * {
   background: var(--sectionFocusBg);
 }
-```
 
 좀 아쉽지만, 'TIME'이 강조되지 않길 원하기 때문에... 이것이 마크업 의미론을 희생하지 않는 한 우리가 고생하는 방식입니다.
 
@@ -667,18 +638,15 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
 
 <div class="content-ad"></div>
 
-```css
 .articleSummaries p {
   margin: 0;
   padding: 0 1rem 1rem;
 }
-```
 
 그리고 이것이 모두 바로 데스크탑 레이아웃입니다. 총 6k밖에 없어요.
 
 미디어 쿼리는 코드 작성 순서와 다르게 나와 있습니다. 보통 소스에서 작은 것부터 큰 것 순서대로 나열하는 편이지만, 우리는 먼저 가장 작은 것을 살펴보겠습니다:
 
-```css
 @media (max-width: 30rem) {
   #fauxBody > footer {
     display: block;
@@ -688,13 +656,11 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
     justify-content: center;
   }
 } /* max-width:30rem */
-```
 
 <div class="content-ad"></div>
 
 그것은 단순히 왼쪽/오른쪽 동작을 제거하여 메뉴를 멍청하게 중앙에 위치시키는 것 뿐이에요. 졸려요.
 
-```css
 @media (max-width: 35rem) {
   header > a:first-child {
     flex-grow: 1;
@@ -740,7 +706,6 @@ H3와 TIME은 HEADER 컨테이너 내에서 순서가 바껴 있고 padding과 l
   }
   // 나머지 내용은 생략합니다.
 } /* max-width:35rem */
-```
 
 해당 스타일은 햄버거 메뉴의 모달 버전을 만듭니다. 앵커를 확장하여 햄버거를 밀고 밝은/어두운 모드를 오른쪽으로 이동시키고 있는데, 중앙 NAV를 제거하고 있기 때문입니다. "hidden" 메뉴 앵커를 보이도록 하기 위해 display:block을 사용하고, "버거 아이콘"처럼 보이도록 스타일을 지정했어요. 바깥쪽 NAV는 모달로 스타일을 적용하여 화면 밖으로 이동되도록 하여, :target일 때 보여주기 위해 애니메이션 효과를 줄 수 있어요.
 
@@ -760,7 +725,6 @@ DIV 자체는 메뉴 프레임이며, 여기에서는 margin:auto를 사용하�
 
 마지막 쿼리:
 
-```css
 @media (max-width: 40rem) {
   .articleSummaries article > header {
     display: block;
@@ -782,7 +746,6 @@ DIV 자체는 메뉴 프레임이며, 여기에서는 margin:auto를 사용하�
     background: var(--sectionFocusBg);
   }
 } /* max-width:40rem */
-```
 
 화면이 너무 작은 경우에는 날짜를 별도의 열로 표시하는 대신 H3 아래에 표시하고 모든 것에 적절한 강조 효과를 추가하며 패딩/마진을 조정합니다.
 
@@ -817,7 +780,6 @@ https://cutcodedown.com/for_others/medium_articles/failwindUI/shotlight/scripts/
 
 첫 번째 섹션을 살펴봅시다. 먼저 쿠키가 "on"으로 설정되어 있는지 확인하고 필요에 따라 클래스를 적용하는 라이트/다크 모드를 살펴봅니다.
 
-```js
 { // 라이트/다크 모드
 
   let match = document.cookie.match(
@@ -826,7 +788,6 @@ https://cutcodedown.com/for_others/medium_articles/failwindUI/shotlight/scripts/
   document.body.classList[
     match && (match[2] == "on") ? "add" : "remove"
   ]("dark");
-```
 
 <div class="content-ad"></div>
 
@@ -836,19 +797,16 @@ https://cutcodedown.com/for_others/medium_articles/failwindUI/shotlight/scripts/
 
 그런 다음 innerHTML 대신 DOM 요소를 생성하는 도우미 함수를 추가합니다.
 
-```js
 const make = (tagName, attr = {}, ...append) => {
   let e = Object.assign(document.createElement(tagName), attr);
   if (append) e.append(...append);
   return e;
 };
-```
 
 <div class="content-ad"></div>
 
 여기 고르게 축소한 것이며 전체 버전의 루틴에서 가져온 내용입니다. 그래도 이것으로 충분해요:
 
-```js
   document.getElementById("top").appendChild(
     make(
       "button",
@@ -866,7 +824,6 @@ const make = (tagName, attr = {}, ...append) => {
   );
 
 } // Light / Dark Mode
-```
 
 DOM에서 라이트/다크 토글을 만들고 버튼의 클릭 이벤트를 연결하고 적절히 쿠키를 설정합니다.
 
@@ -874,7 +831,6 @@ DOM에서 라이트/다크 토글을 만들고 버튼의 클릭 이벤트를 연
 
 <div class="content-ad"></div>
 
-```js
 document.getElementById("top").__make(
   "button_button.toggleLightDark",
   {
@@ -882,17 +838,15 @@ document.getElementById("top").__make(
   },
   ["span", "Toggle Light/Dark Mode"]
 );
-```
 
 간단한 라이트/다크 모드 전환을 만드는 데 무거운 코드들을 보게되면서 정말 헛수고인 것 같아요. 어떤 사람들은 모든 문제에 대한 대답이 마크업에 더 많은 클래스를 추가하는 것인가봐요.
 
 쿠키가 존재하지 않는 경우 호스트 OS 값을 감지하는 등 개선할 부분이 있을 수 있지만, 그것조차 15줄이 아닌 3줄 정도라니요.
 
-라이트/다크 모드 이후에는 ESC 키를 눌러 열려있는 모달을 닫는 기능이 있어요. 저는 보통 모달에 .modal 클래스를 사용하는데, 그에 대한 후크를 설정하고 #mainMenu을 테스트합니다. 많은 경우에 이들이 쌓이는 경우 배열 대 조건문으로 전환할 것이에요.```
+라이트/다크 모드 이후에는 ESC 키를 눌러 열려있는 모달을 닫는 기능이 있어요. 저는 보통 모달에 .modal 클래스를 사용하는데, 그에 대한 후크를 설정하고 #mainMenu을 테스트합니다. 많은 경우에 이들이 쌓이는 경우 배열 대 조건문으로 전환할 것이에요.
 
 <div class="content-ad"></div>
 
-```js
 {
   // Modal Helpers
 
@@ -903,7 +857,6 @@ document.getElementById("top").__make(
     if (target && (target.classList.contains("modal") || target.id == "mainMenu")) location.hash = "";
   });
 } // Modal Helpers
-```
 
 기술적으로 바깥 {}를 제거해도 스코프가 누출되지는 않겠지만, 형식을 일관성있게 유지하기 위해 남겨두고 있습니다.
 

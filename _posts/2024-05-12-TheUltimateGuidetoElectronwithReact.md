@@ -191,7 +191,7 @@ loadURL() 함수를 사용하여 URL에서 HTML 파일을 로드하는 방법을
 다음은 실제 모습입니다.
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*T1mZlyoO9B51rPlDSdf1kQ.gif" />
-```
+
 
 
 
@@ -372,7 +372,7 @@ export default App
 이렇게 생겼어요.
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*3qDlBC3KOU27v_sv-vaPdg.gif)
-```
+
 
 
 
@@ -501,7 +501,7 @@ ipcRenderer.once(channel, listener)
 'once' 함수도 동일한 방식으로 작동하지만, 한 번 이벤트를 청취한 후에는 제거됩니다.
 
 ## send()
-```
+
 
 
 
@@ -531,7 +531,7 @@ removeAllListeners([channel])
 
 렌더러 프로세스에서 네이티브 API를 호출하려면 주로 메인 프로세스에 IPC 호출을 수행해야 합니다. 렌더러 프로세스에서는 네이티브 API에 직접 액세스할 수 없기 때문입니다. 그런데 요청된 네이티브 작업이 무거운 작업이라면 어떨까요? 그렇다면 IPC 호출이 무거운 네이티브 작업의 실행이 완료될 때까지 UI를 차단하게 될 것입니다. 이를 해결하기 위해 비차단적인 비동기 전송 함수가 있습니다.
 
-메인 프로세스는 요청을 수행한 후 일부 메타데이터와 함께 비동기적으로 응답을 보낼 수도 있습니다.```
+메인 프로세스는 요청을 수행한 후 일부 메타데이터와 함께 비동기적으로 응답을 보낼 수도 있습니다.
 
 
 

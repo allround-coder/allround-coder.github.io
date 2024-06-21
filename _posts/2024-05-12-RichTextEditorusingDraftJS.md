@@ -136,7 +136,7 @@ export default RichTextArea;
 <img src="/assets/img/2024-05-12-RichTextEditorusingDraftJS_0.png" />
 
 이렇게 보입니다.
-```
+
 
 
 

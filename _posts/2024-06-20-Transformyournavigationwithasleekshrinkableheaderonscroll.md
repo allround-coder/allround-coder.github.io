@@ -85,4 +85,3 @@ link: "https://medium.com/@codingmadeeasy92/transform-your-navigation-with-a-sle
 자세한 내용은 아래 링크를 확인해주세요.
 
 https://codemagnet.in/2024/06/18/create-shrink-header-on-scroll-html-css-and-javascript/
-```

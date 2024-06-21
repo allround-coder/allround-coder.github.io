@@ -13,9 +13,9 @@ link: "https://medium.com/frontend-canteen/fantastic-css-border-animation-b02e06
 
 오늘 나는 블로그 사이트인 shoptalkshow를 방문했는데, 그 사이트에서 다음과 같은 스타일을 보게 되어 정말 흥미로웠어요:
 
-```
+
 <img src="/assets/img/2024-06-20-FantasticCSSborderanimation_0.png" />
-```
+
 
 그 사이트의 스타일은 유니크하다고 생각되며, 특히 일부 베젤들이 돋보였어요.
 
@@ -102,14 +102,14 @@ div {
 
 물론, 테이블 태그를 마크다운 형식으로 변경하겠습니다.
 
-```md
+
 | 브라우저 | 지원 여부 |
 | ------- | --------- |
 | Chrome  | 예        |
 | Firefox | 예        |
 | Safari  | 예        |
 | Edge    | 예        |
-```
+
 
 <div class="content-ad"></div>
 
@@ -288,7 +288,7 @@ div::after {
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-20-FantasticCSSborderanimation_12.png" />
 
 다시 한 번 함께 돌려보고 단색 추격 테두리 애니메이션이 나옵니다:
@@ -296,7 +296,7 @@ div::after {
 <img src="/assets/img/2024-06-20-FantasticCSSborderanimation_13.png" />
 
 CodePen 데모 - 그라데이션 테두리 애니메이션 2
-```
+
 
 <div class="content-ad"></div>
 
@@ -421,7 +421,7 @@ CodePen — clip-path border animation 2
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-20-FantasticCSSborderanimation_19.png" />
 
 CodePen Demo — Using overflow and transform to achieve line hover effect
@@ -430,7 +430,7 @@ Two core points:
 
 - We use overflow: hiddento hide an entire element that was originally outside the container
 - used transform-origin, controls the center of rotation of the element
-```
+
 
 <div class="content-ad"></div>
 

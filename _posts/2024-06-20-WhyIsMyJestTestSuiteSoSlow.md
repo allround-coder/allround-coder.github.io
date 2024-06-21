@@ -170,7 +170,7 @@ rules: {
 @mui/material-icons, lodash-es, 그리고 @mui-x-date-picker로부터 import를 수정해야 했고, 그 외에도 내부 라이브러리에서 import를 고쳐야 했어요. 이런 모든 import를 업데이트하는 데 걸리는 시간이 테스트 수행 시간의 약 50%를 절약할 수 있었어요.
 
 ## setupTests.ts 확인하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -212,7 +212,7 @@ module.exports = {
 ![WhyIsMyJestTestSuiteSoSlow_6](/assets/img/2024-06-20-WhyIsMyJestTestSuiteSoSlow_6.png)
 
 ## misconfigurations을 점검하기
-```  
+
 
 <div class="content-ad"></div>
 

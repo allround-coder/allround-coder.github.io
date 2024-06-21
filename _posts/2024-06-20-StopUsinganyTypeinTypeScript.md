@@ -55,7 +55,7 @@ console.log('myVariable의 값: ' + myVariable);
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-StopUsinganyTypeinTypeScript_2.png)
 
 어떤 사람들은 프로젝트에서 모든 변수를 정의하는 좋은 방법이라고 생각할 수 있습니다. 그러나 any 타입을 사용하는 것에는 상당한 단점이 있으며, TypeScript 프로젝트가 일반적인 JavaScript 프로젝트와 유사해질 수 있습니다. 그래서 TypeScript에서 변수를 정의할 때 any 타입을 사용하지 말아야 하는 이유에 대해 이야기해 봅시다.
@@ -63,7 +63,7 @@ console.log('myVariable의 값: ' + myVariable);
 # 왜 any 타입을 사용해서는 안 되는가?
 
 타입 체킹은 TypeScript의 가장 중요한 기능 중 하나입니다. 데이터 할당과 타입 변환을 체크함으로써 응용 프로그램에서 예기치 않은 문제를 피하는 데 도움을 줍니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -116,7 +116,7 @@ console.log('Value of myVariable : ' + myVariable);
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![StopUsinganyTypeinTypeScript_3](/assets/img/2024-06-20-StopUsinganyTypeinTypeScript_3.png)
 
 알 수 있듯이, unknown 타입 변수는 any 타입 변수와 동일하게 작동합니다. 그러나 두 변수를 다른 변수에 할당하려고 할 때 any와 unknown 사이에 차이가 있습니다. 변수가 any 타입이면 오류 없이 다른 변수에 할당할 수 있습니다. 그러나 올바른 타입을 가진 변수에 unknown 타입 변수를 할당하려고하면 오류가 발생합니다.
@@ -131,7 +131,7 @@ console.log('myVariable2의 값: ' + myVariable2);
 ```
 
 ![StopUsinganyTypeinTypeScript_4](/assets/img/2024-06-20-StopUsinganyTypeinTypeScript_4.png)
-```
+
 
 <div class="content-ad"></div>
 

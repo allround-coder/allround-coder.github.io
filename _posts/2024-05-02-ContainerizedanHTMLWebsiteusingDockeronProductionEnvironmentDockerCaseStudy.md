@@ -221,7 +221,7 @@ cd project-html-website
 
 # Problem 1 Solution: 개발자들은 Docker를 사용하지 않을 것이기 때문에, 그들이 제공하는 코드를 받을 거에요. 당신이 만든 사용자 정의 이미지에 코드를 넣을 수 있는 Docker 파일을 작성해주세요.
 
-단계 1: 먼저, 다음 명령을 사용하여 Docker 파일을 생성하세요:```
+단계 1: 먼저, 다음 명령을 사용하여 Docker 파일을 생성하세요:
 
 <div class="content-ad"></div>
 

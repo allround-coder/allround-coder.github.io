@@ -67,11 +67,11 @@ Github 코드: https://github.com/fbzz/angular-build-once-deploy-anywhere
 }
 ```
 
-npm run build를 실행하면 dist에 config 폴더가 생깁니다.```
+npm run build를 실행하면 dist에 config 폴더가 생깁니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Angular Docker Nginx BuildonceDeployanywhere](/assets/img/2024-06-20-AngularDockerNginxBuildonceDeployanywhere_1.png)
 
 1.2 - Angular에서는 응용 프로그램 전체에 걸쳐 데이터를 유지할 수 있는 싱글톤 서비스를 생성할 수 있습니다. 이는 응용 프로그램 전체에서 재사용할 수 있습니다.
@@ -117,7 +117,7 @@ export class ConfigService {
 ```
 
 1.3 - Angular에서는 APP_INITIALIZER라는 DI 토큰을 제공하여 하나 이상의 초기화 함수를 제공할 수 있습니다. 이 함수는 응용 프로그램 부트스트랩 프로세스 중에 실행되며 시작할 때 필요한 데이터가 사용 가능해집니다.
-```  
+
 
 <div class="content-ad"></div>
 
@@ -208,7 +208,7 @@ export class AppComponent {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 server {
   listen 80;
@@ -279,7 +279,7 @@ EXPOSE 80 443 6006 4200
 RUN chmod +x /usr/local/app/entrypoint.sh
 ENTRYPOINT [ "/usr/local/app/entrypoint.sh" ]
 ```
-```
+
 
 <div class="content-ad"></div>
 

@@ -402,27 +402,22 @@ TypeScript를 사용하기 때문에 전역 창에 속성을 추가하여 오류
 ```js
 전역을 선언합니다:
    
-```typescript
 declare global {
     interface Window {
       paypal?: any;
     }
 }
-```
 
 이제 네 개의 속성 유형을 지정하는 객체를 인수로 취하는 함수형 컴포넌트를 정의해야 합니다:
 
-```js
 const PayPalPaymentButton = ({ amount, paypalClientId, onSuccess, onError }: { amount: number; paypalClientId: string | null; onSuccess: () => void; onError: (err: any) => void; }) => {
 
 }
-```
 
 함수형 컴포넌트인 PayPalPaymentButton 안에서 useEffect를 사용하여 컴포넌트가 마운트될 때 PayPal SDK 스크립트를 DOM에 추가하세요:
 
 
 
-```js
   useEffect(() => {
     const script = document.createElement('script');
     script.src = `https://www.paypal.com/sdk/js?client-id=${paypalClientId}`;
@@ -436,11 +431,9 @@ const PayPalPaymentButton = ({ amount, paypalClientId, onSuccess, onError }: { a
       document.body.removeChild(script);
     };
   }, []);
-```
 
 이제 웹페이지에 PayPal 버튼을 렌더링하는 함수를 만들어봅시다:
 
-```js
   const initializePayPalButton = () => {
     window.paypal.Buttons({
       createOrder: function(data: any, actions: any) {
@@ -470,7 +463,6 @@ const PayPalPaymentButton = ({ amount, paypalClientId, onSuccess, onError }: { a
       },
     }).render('#paypal-button-container');
   };
-```
 
 이제 버튼을 표시하는 것만 남았습니다:
 ```
@@ -752,4 +744,3 @@ export default actualPage;
 이렇게해요. 이 글은 Next.js 프로젝트에 PayPal 체크아웃을 통합하는 것에 대한 내용이었습니다. 파일 이름과 코드의 일부 이름으로 보았듯이, 모든 것이 가지고 있기 전에 약간 실험을 해봤습니다. 이 글이 결제 페이지를 만들 때 올바른 방향으로 안내가 되길 바랍니다. 이 튜토리얼을 좋아하셨다면 박수를 보내주시고, 팔로우를 눌러주세요. 질문이 있으시면 언제든지 답변해 드리겠습니다.
 
 즐거운 코딩되세요!
-```

@@ -35,7 +35,7 @@ Method 2: 변화하는 터치
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![How to Flip an Image Horizontally with Tailwind CSS](/assets/img/2024-06-20-HowtoFlipanImageHorizontallywithTailwindCSS_1.png)
 
 다이나믹 듀오 - 변형 요소를 해방하자!

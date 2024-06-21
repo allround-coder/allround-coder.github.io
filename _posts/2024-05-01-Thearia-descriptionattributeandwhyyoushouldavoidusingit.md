@@ -105,7 +105,7 @@ aria-description="최소 2자"/>
 
 <img src="/assets/img/2024-05-01-Thearia-descriptionattributeandwhyyoushouldavoidusingit_2.png" />
 
-그러나 보조 기술(AT)로는 첫 번째 예제와 동일하게 읽힙니다:```
+그러나 보조 기술(AT)로는 첫 번째 예제와 동일하게 읽힙니다:
 
 <div class="content-ad"></div>
 
@@ -119,11 +119,11 @@ aria-description="최소 2자"/>
 
 <div class="content-ad"></div>
 
-```md
+
 <label for="textFirstName">이름</label>
 <input type="text" id="textFirstName" aria-describedby="descFirstName" />
 <div hidden id="descFirstName">2자 이상 필요합니다</div>
-```
+
 
 위 코드는 다음과 같이 렌더링됩니다:
 

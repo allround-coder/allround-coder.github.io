@@ -52,11 +52,11 @@ Google API는 구글이 개발한 응용 프로그램 프로그래밍 인터페�
 - Google Cloud Console에 접속합니다.
 - 왼쪽 상단 로고 근처에서 프로젝트를 선택하거나 새로 만듭니다.
 
-```markdown
+
 ![이미지1](/assets/img/2024-06-20-StatelessAuthenticationIntegratingJWTforGoogleAPIinReactandDjangoRestFrameworkPart1_0.png)
 
 ![이미지2](/assets/img/2024-06-20-StatelessAuthenticationIntegratingJWTforGoogleAPIinReactandDjangoRestFrameworkPart1_1.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -121,7 +121,7 @@ export class AppComponent {
 
 이 코드에서는 MyService 클래스를 가져와서 구성 요소의 constructor에 주입했습니다. 또한 서비스의 data 속성으로 구성 요소에 프로퍼티 data를 추가했습니다. 마지막으로 사용자가 데이터 배열에 새 항목을 추가할 수 있도록 input과 button을 추가했습니다.
 
-서비스의 데이터를 구성 요소의 템플릿에 표시하려면 *ngFor 지시문을 추가하여 데이터 배열을 반복하고 각 항목을 목록에 표시했습니다.```
+서비스의 데이터를 구성 요소의 템플릿에 표시하려면 *ngFor 지시문을 추가하여 데이터 배열을 반복하고 각 항목을 목록에 표시했습니다.
 
 <div class="content-ad"></div>
 
@@ -254,7 +254,7 @@ export class TodoListComponent implements OnInit {
 ```
 
 - 별도의 컴포넌트에서 getTodoById() 메서드를 사용하세요:
-```
+
 
 <div class="content-ad"></div>
 
@@ -293,7 +293,7 @@ export class TodoDetailsComponent implements OnInit {
 ## 2. Router
 
 Angular 라우터 서비스는 Angular에서 내장된 서비스로, Angular 애플리케이션의 다른 뷰나 컴포넌트 간의 탐색을 관리하는 역할을 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -617,7 +617,7 @@ export class MyService {
 Angular의 이전 버전에서는 서비스가 NgModule의 providers 배열에 추가되었습니다. 그러나 Angular의 최신 버전에서는 @Injectable 데코레이터의 providedIn 속성을 대신 사용할 수 있습니다. 이는 트리 쉐이킹을 가능하게 하여 최종 애플리케이션 번들의 크기를 줄일 수 있는 더 나은 접근 방식입니다.
 
 - 컴포넌트 간에 통신하기 위해 서비스를 사용하세요
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,13 +11,13 @@ link: "https://medium.com/@tutorialsfreak2022/adding-multiple-font-families-for-
 ---
 
 
-```markdown
+
 ![Font selection plays a crucial role in web design. It sets the tone, enhances readability, and influences user experience. CSS (Cascading Style Sheets) offers the power to incorporate multiple font families, giving you flexibility and control over your website’s visual appeal. This article delves into the methods for adding two or more font families in your CSS, ensuring a stylish and reliable presentation.](/assets/img/2024-06-20-AddingMultipleFontFamiliesforStyleandReliabilityinCSS_0.png)
 
 # The Essential Rule: @font-face
 
 The @font-face rule is the cornerstone of incorporating custom fonts into your CSS. It allows you to define the font family name, specify the location of the font files and set additional properties like font weight and style.
-```
+
 
 <div class="content-ad"></div>
 

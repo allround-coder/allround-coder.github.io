@@ -32,7 +32,7 @@ link: "https://medium.com/@itsuki.enjoy/javascript-html-rich-text-editors-8fbde4
 
 <img src="/assets/img/2024-06-20-JavascriptHTMLRich-TextEditors_0.png" />
 
-가장 간단한 형태로 시작해보겠습니다.```
+가장 간단한 형태로 시작해보겠습니다.
 
 <div class="content-ad"></div>
 
@@ -83,7 +83,7 @@ Quill은 툴바를 위한 클래스인 ql-toolbar를 사용하므로 아래와 �
 
 아래는 Markdown 형식으로 변경한 내용입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-JavascriptHTMLRich-TextEditors_3.png)
 
 또는 전체 편집기를 사용자 정의 컨테이너에 임베드하고 컨테이너 너비를 변경할 수도 있습니다.
@@ -91,7 +91,7 @@ Quill은 툴바를 위한 클래스인 ql-toolbar를 사용하므로 아래와 �
 ![이미지](/assets/img/2024-06-20-JavascriptHTMLRich-TextEditors_4.png)
 
 세 번째 옵션은 new Quill()를 호출하고 편집기를 만들 때 추가 구성을 추가하는 것입니다. 다음 부분에서 이에 대해 자세히 살펴보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -137,9 +137,9 @@ var quill = new Quill('#editor', {
 
 아래에는 위에서 보여드렸던 기본적인 것이 있어요
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-JavascriptHTMLRich-TextEditors_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -217,7 +217,7 @@ var quill = new Quill('#editor', options);
 만약 사용자 정의 컨테이너를 사용한다면, 컨트롤도 직접 설정해야 합니다. 그렇지 않으면 빈 툴바가 나타날 수 있습니다. 아래와 같이 확인하세요.
 
 <img src="/assets/img/2024-06-20-JavascriptHTMLRich-TextEditors_7.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -254,7 +254,7 @@ var quill = new Quill('#editor', options);
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*QpD3jR3s6v4M_nUWwLOFdg.gif" />
 
 핸들러 함수는 툴바에 바인딩되어 있으므로 this를 사용하면 툴바 인스턴스를 참조하게 됩니다.
-```  
+
 
 <div class="content-ad"></div>
 
@@ -304,7 +304,7 @@ hljs.highlightAll();
 ```
 
 ## placeholder
-```  
+
 
 <div class="content-ad"></div>
 
@@ -353,7 +353,7 @@ var quill = new Quill('#editor', options);
 이 키는 전체 스타일링을 구성하는 데 사용할 키이며 곧 자세히 살펴볼 것입니다.
 
 # 모듈
-```  
+
 
 <div class="content-ad"></div>
 

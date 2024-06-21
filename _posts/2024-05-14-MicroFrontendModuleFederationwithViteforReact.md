@@ -61,7 +61,7 @@ export default defineConfig({
 
 Name: 공유 컴포넌트를 포함한 JavaScript 모듈에 할당할 모듈 이름입니다. 필수입니다. 자세한 내용은 여기에서 확인할 수 있습니다.
 
-FileName: JavaScript 모듈의 진입 파일의 파일 이름입니다. 이 필드는 필수가 아니며, 기본값은 `remoteEntry.js`입니다. 자세한 내용은 여기에서 확인할 수 있습니다.```
+FileName: JavaScript 모듈의 진입 파일의 파일 이름입니다. 이 필드는 필수가 아니며, 기본값은 `remoteEntry.js`입니다. 자세한 내용은 여기에서 확인할 수 있습니다.
 
 
 

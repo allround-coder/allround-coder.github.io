@@ -177,7 +177,7 @@ export default Home;
 ## Next JS에서 Styled Components 설정하기
 
 1. `styled-components`를 사용하려면 아래 명령어로 다음 패키지를 설치해야 합니다.
-```
+
 
 
 
@@ -308,7 +308,7 @@ const StyledHeading = styled.h1`
 여기까지입니다. 이렇게하면 동일한 Next JS 프로젝트에서 Tailwind와 Styled Components를 설정하고 사용할 수 있습니다.
 
 # 결론
-```
+
 
 
 

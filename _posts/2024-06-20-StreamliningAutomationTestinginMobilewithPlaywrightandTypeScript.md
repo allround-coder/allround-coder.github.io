@@ -11,7 +11,7 @@ link: "https://medium.com/@jignect/streamlining-automation-testing-in-mobile-wit
 ---
 
 
-```markdown
+
 ![Playwright](/assets/img/2024-06-20-StreamliningAutomationTestinginMobilewithPlaywrightandTypeScript_0.png)
 
 플레이 라이트는 모바일 및 웹 애플리케이션을 처리할 수 있는 다재다능한 도구로, 모든 주요 브라우저를 지원합니다. 이 유연성은 개발자와 테스터가 웹 애플리케이션이 다양한 화면 크기와 다른 조명 조건에서 어떻게 보이고 동작할지에 대한 통찰력을 얻을 수 있도록 합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@jignect/streamlining-automation-testing-in-mobile-wit
 Playwright에서 모바일 장치 에뮬레이션은 테스트 범위를 크게 확장하지만, 실제 장치에서의 테스트 필요성을 대체하지는 않는다는 점을 기억하는 것이 중요합니다. 에뮬레이션은 사전 점검을 수행하고 애플리케이션이 다양한 장치 구성에 잘 적응하는지 확인하는 편리한 방법을 제공합니다. 그러나 성능 및 특정 하드웨어 상호작용에 대한 포괄적인 테스트, 특히 실제 장치에서의 테스트는 여전히 필수적입니다.
 
 Playwright의 기능을 활용함으로써 개발 및 QA 팀은 다양한 장치 범주에 걸쳐 더 견고하고 사용자 친화적인 경험을 보장할 수 있으며, 궁극적으로 더 높은 품질의 웹 애플리케이션으로 이끌어 줄 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -185,7 +185,7 @@ const iPhone11 = devices['iPhone 11'];
 
 <div class="content-ad"></div>
 
-```markdown
+
 모바일 기기 정의
 
 - const iPhone11 = devices['iPhone 11'];iPhone11: 이 줄은 iPhone 11에 대한 미리 정의된 기기 설명자를 변수 iPhone11에 할당합니다. 기기 설명자에는 뷰포트 크기, 사용자 에이전트 및 해당 기기를 흉내 내는 기타 설정과 같은 정보가 포함됩니다.
@@ -194,7 +194,7 @@ const iPhone11 = devices['iPhone 11'];
 
 - (async () => {
 - 이것은 비동기 함수를 시작합니다. async 키워드를 사용하면 함수 내에서 await을 사용할 수 있어서 동기적으로 보이는 방식으로 비동기 작업을 수행할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -292,7 +292,7 @@ console.log('로그인 성공'): 해당 구문이 찾아진 경우 콘솔에 '�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지1](/assets/img/2024-06-20-StreamliningAutomationTestinginMobilewithPlaywrightandTypeScript_3.png)
 
 ![이미지2](/assets/img/2024-06-20-StreamliningAutomationTestinginMobilewithPlaywrightandTypeScript_4.png)
@@ -300,7 +300,7 @@ console.log('로그인 성공'): 해당 구문이 찾아진 경우 콘솔에 '�
 ![이미지3](/assets/img/2024-06-20-StreamliningAutomationTestinginMobilewithPlaywrightandTypeScript_5.png)
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 

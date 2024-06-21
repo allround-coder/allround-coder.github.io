@@ -59,9 +59,9 @@ CORS는 특정 자바스크립트 코드(예: 내 React 코드 - http://localhos
 
 콘솔에서 받은 오류 메시지로 이해해 봅시다:
 
-```
+
 fetch에 대한 액세스가 CORS 정책에 의해 차단되었습니다. ‘http://localhost:8080/airports`에서 `http://localhost:3000` 출처로부터: 사전 플라이트 요청에 대한 응답이 액세스 제어 확인을 통과하지 못함: 요청한 리소스에 ‘Access-Control-Allow-Origin’ 헤더가 없습니다. 불투명한 응답이 필요한 경우 요청의 모드를 ‘no-cors’로 설정하여 CORS가 비활성화된 상태로 리소스를 가져올 수 있습니다.
-```
+
 
 
 
@@ -192,9 +192,9 @@ post 요청이 하나만 있었고 프리플라이트 요청은 없었습니다.
 
 Fetch를 사용하므로 React에서 POST 호출을 할 때 보내는 매개변수에 다음 헤더 정보를 첨부해야 합니다:
 
-```
+
 "Authorization":"Basic Base64encoded(username:password)"
-```
+
 
 
 

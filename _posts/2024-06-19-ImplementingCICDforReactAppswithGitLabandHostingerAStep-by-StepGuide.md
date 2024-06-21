@@ -11,7 +11,7 @@ link: "https://medium.com/@deabdullahmanzoor/implementing-ci-cd-for-react-apps-w
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-ImplementingCICDforReactAppswithGitLabandHostingerAStep-by-StepGuide_0.png)
 
 이 가이드에서는 React 애플리케이션을 Hostinger에 배포하기 위한 파이프라인 설정 과정을 안내해 드릴 거에요. 목표는 GitLab 저장소로의 푸시가 웹사이트에 자동 업데이트를 유발하는 배포 프로세스를 자동화하는 것입니다. 이 튜토리얼에서는 GitLab의 강력한 CI/CD 기능을 활용하여 Hostinger에 React 애플리케이션을 배포하는 데 필요한 단계에 대해 자세히 살펴볼 거예요.
@@ -19,7 +19,7 @@ link: "https://medium.com/@deabdullahmanzoor/implementing-ci-cd-for-react-apps-w
 Gitlab CI/CD 파이프라인 설정하기
 
 CI/CD 파이프라인을 설정하려면 프로젝트의 루트 디렉토리에 .gitlab-ci.yml 파일을 생성해야 해요. 이 파일은 파이프라인의 단계와 작업을 정의할 거예요. 여기에 React 프로젝트에 대한 샘플 내용이 있어요:
-```
+
 
 <div class="content-ad"></div>
 
@@ -54,7 +54,7 @@ deploy:
 deploy 스테이지는 가장 최신의 Alpine 이미지를 사용하고 lftp라는 명령 줄 FTP 클라이언트를 설치합니다. 그런 다음, lftp를 사용하여 $FTP_SERVER로 지정된 FTP 서버에 $FTP_USERNAME 및 $FTP_PASSWORD로 지정된 사용자 이름과 비밀번호로 연결합니다. 수정 시간을 무시하고 병렬로 최대 10개의 파일을 업로드하여 dist/ 디렉터리를 FTP 서버의 /your_hosting_directory 디렉터리로 미러링합니다. 이 스테이지는 main 브랜치에서만 실행됩니다.
 
 실제 FTP 자격 증명으로 $FTP_USERNAME, $FTP_PASSWORD 및 $FTP_SERVER를 교체해야 합니다. 이에 대해 확실하지 않다면 걱정하지 마세요. GitLab 프로젝트 설정에서 이러한 자격 증명을 비밀 변수로 설정하는 프로세스를 설명하는 단계에 따라 안내해 드릴 테니 걱정 마세요. 이 접근 방식을 통해 자격 증명이 안전하고 비밀 유지됩니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -179,7 +179,7 @@ class Audi : ICar
 ## Nest.js vs. ASP.NET
 
 이제 논란이 될 부분으로 향하고 있습니다. 프로젝트에는 무엇을 선택해야 할까요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -253,7 +253,7 @@ Nest.js와 비교하면 ASP.NET에서 작성하는 것이 더 장황해 보입�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image 1](/assets/img/2024-06-20-WhyNestJSisthePerfectFrameworkforASPNETTeamsMigratingtoNodejsOrVice-Versa_1.png)
 
 While Nest.js, using a Fastify backend, is ranked at #239.
@@ -261,7 +261,7 @@ While Nest.js, using a Fastify backend, is ranked at #239.
 ![image 2](/assets/img/2024-06-20-WhyNestJSisthePerfectFrameworkforASPNETTeamsMigratingtoNodejsOrVice-Versa_2.png)
 
 Please note that these benchmarks are arbitrary speed calculations of how fast a framework would respond. You don’t necessarily need a fast framework most of the time. And the most important metric is (arguably) your development speed, but that’s VERY subjective, bringing us to the next point.
-```
+
 
 <div class="content-ad"></div>
 

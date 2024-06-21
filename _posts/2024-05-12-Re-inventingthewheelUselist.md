@@ -678,7 +678,7 @@ export function useList<T, U>(
 ![Re-inventing the wheel: UseList](/assets/img/2024-05-12-Re-inventingthewheelUselist_1.png)
 
 심지어 모두 선택을 시도해 볼 수 있고, 필터된 결과만 선택됨을 알 수 있을 거예요. 그러나 모든 선택된 값을 삭제하면, "모두 선택" 확인란이 여전히 선택된 채로 남겨진다는 것을 알 수 있을 거예요. 이는 데이터가 변경될 때 선택 목록을 업데이트하지 않기 때문입니다.
-이러한 문제를 해결해 봅시다:```
+이러한 문제를 해결해 봅시다:
 
 
 

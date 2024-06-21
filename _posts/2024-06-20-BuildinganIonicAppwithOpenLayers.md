@@ -73,7 +73,7 @@ ng generate component open-layers-map --standalone
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![OpenLayers Map](/assets/img/2024-06-20-BuildinganIonicAppwithOpenLayers_1.png)
 
 # 컴포넌트 수정
@@ -115,7 +115,7 @@ export class OpenLayersMapComponent implements AfterViewInit {
   }
 }
 ```
-```
+
 
 <div class="content-ad"></div>
 

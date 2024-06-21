@@ -94,11 +94,11 @@ React:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Angular](/assets/img/2024-06-20-FearDrivenDevelopment_3.png)
 
 ![Vue(core)](/assets/img/2024-06-20-FearDrivenDevelopment_4.png)
-```
+
 
 <div class="content-ad"></div>
 

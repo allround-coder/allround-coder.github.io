@@ -61,7 +61,7 @@ openssl genpkey -algorithm RSA -aes256 -out private.key
 
 안녕하세요! 아래의 정보를 Markdown 형식으로 변환해 드릴게요.
 
-```
+
 You’ll be prompted to enter a passphrase; remember this passphrase as you’ll need it later.
 
 ## Step 3: Create a SAN Configuration File
@@ -421,7 +421,7 @@ awk -v cmd='openssl x509 -noout -subject' ' /BEGIN/{close(cmd)};{print | cmd}' <
 openssl x509 -in server.cert -text -noout
 ```
 
-만료 날짜 확인: SSL 인증서가 만료되지 않았는지 확인하십시오. 다음 OpenSSL 명령어를 사용하여 만료 날짜를 확인할 수 있습니다.```
+만료 날짜 확인: SSL 인증서가 만료되지 않았는지 확인하십시오. 다음 OpenSSL 명령어를 사용하여 만료 날짜를 확인할 수 있습니다.
 
 <div class="content-ad"></div>
 

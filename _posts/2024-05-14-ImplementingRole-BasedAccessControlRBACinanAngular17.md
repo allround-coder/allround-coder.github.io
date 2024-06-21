@@ -168,7 +168,7 @@ ng generate component admin
 ng generate component user
 ```
 
-각 컴포넌트는 필요에 따라 기본 정보 또는 양식을 렌더링하는 간단한 구조여야 합니다.```
+각 컴포넌트는 필요에 따라 기본 정보 또는 양식을 렌더링하는 간단한 구조여야 합니다.
 
 
 

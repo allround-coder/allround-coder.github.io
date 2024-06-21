@@ -92,7 +92,7 @@ fun NamesList(names: List<String>) {
 접근성은 앱 개발의 중요한 측면이었고, Jetpack Compose는 이를 더욱 발전시키고 있습니다. 새로 도입된 도구와 기능은 개발자들이 더 접근성이 뛰어난 앱을 만들 수 있도록 설계되었습니다. 이에는 더 나은 스크린 리더 지원, 향상된 포커스 관리 및 모든 사용자에게 앱을 사용할 수 있게 하는 기타 기능이 포함되어 있습니다.
 
 접근성을 위해 Modifier.semantics 사용하기:
-```      
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/stackademic/how-to-create-dynamic-forms-in-angular-usi
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-HowtoCreateDynamicFormsinAngularUsingaDictionaryInterface_0.png)
 
 앵귤러에서 동적 폼을 생성하면 유연한 데이터 구조를 처리하는 강력한 방법이 될 수 있습니다. 특히 복잡하거나 중첩된 JSON 객체를 반환하는 API와 작업할 때 유용합니다. 이 기사에서는 Dictionary 인터페이스와 동적 폼 생성기 서비스를 사용하여 앵귤러에서 동적 폼을 생성하는 방법을 보여드리겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/stackademic/how-to-create-dynamic-forms-in-angular-usi
 ## Dictionary 인터페이스 정의하기
 
 먼저 Dictionary 인터페이스를 정의해봅시다. 이 인터페이스를 사용하면 문자열 또는 중첩된 사전을 포함할 수 있는 재귀 형식을 사용할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -67,7 +67,7 @@ export class DynamicFormGeneratorService {
 이제, 이 서비스를 사용하여 사전 데이터를 기반으로 폼을 생성하는 컴포넌트를 생성해 봅시다. 이 컴포넌트는 폼을 랜더링하고 폼 제출을 처리하는 역할을 담당할 것입니다.
 
 다음은 DynamicFormGroupComponent의 TypeScript 코드입니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -159,7 +159,7 @@ export class DynamicFormGroupComponent implements OnInit {
 ```
 
 # 모두 함께 넣어보기
-```
+
 
 <div class="content-ad"></div>
 

@@ -124,7 +124,7 @@ npm run lint:fix
 
 위의 코드를 다음과 같이 Markdown 형식으로 변경해주세요.
 
-```markdown
+
 This will apply automatic fixes to your code where possible.
 
 ## Automating Linting with IDE Plugins
@@ -132,7 +132,7 @@ This will apply automatic fixes to your code where possible.
 To make the linting process even more seamless, consider installing ESLint plugins for your preferred code editor. Popular code editors like Visual Studio Code have ESLint extensions available. These extensions can highlight ESLint issues directly in your editor as you write code.
 
 ## Conclusion
-```
+
 
 <div class="content-ad"></div>
 

@@ -167,7 +167,7 @@ class Auth {
 
 아래와 같이 변경해 주세요:
 
-```md
+
 // emailService.js
 class EmailService {
   sendEmail(to, subject, body) {
@@ -176,16 +176,16 @@ class EmailService {
 }
 
 module.exports = EmailService;
-```
 
-```md
+
+
 // IncorrectEmailService.js
 const nodemailer = require('nodemailer');
 
 const sendEmail = (to, subject, body) => {
   // nodemailer를 직접 사용하여 이메일을 보내는 로직
 };
-```
+
 
 
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@oguzkilic/rendering-strategies-every-react-developer-
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-RenderingStrategiesEveryReactDeveloperShouldKnow_0.png)
 
 ## 소개:
@@ -19,7 +19,7 @@ link: "https://medium.com/@oguzkilic/rendering-strategies-every-react-developer-
 React는 현대 웹 개발의 핵심입니다. 최대한 효과적으로 활용하려면 복잡한 렌더링 전략을 이해하고 사용해야 합니다. 이 글에서는 이러한 전략을 보여드릴 것입니다.
 
 이러한 전략은 React 개발자가 더 빠르고 효율적인 앱을 만들 수 있도록 돕습니다. 개발을 쉽게 만들어주고 사용자에게 더 나은 경험을 제공합니다. 얼마나 많은 경험이 있든, 이러한 전략들은 여러분을 도와줄 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -64,7 +64,7 @@ React의 렌더링 프로세스는 UI를 효율적으로 업데이트하는 방�
 
 아래는 Markdown 형식으로 테이블 태그가 변경되었습니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-RenderingStrategiesEveryReactDeveloperShouldKnow_2.png)
 
 주요 포인트:
@@ -72,7 +72,7 @@ React의 렌더링 프로세스는 UI를 효율적으로 업데이트하는 방�
 1. 동적 콘텐츠 로딩: CSR은 전체 페이지 새로고침 없이 동적으로 콘텐츠를 로드할 수 있습니다.
 
 2. 향상된 사용자 상호작용: 렌더링이 클라이언트 측에서 발생하기 때문에 상호작용이 더 반응적일 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -732,7 +732,7 @@ export default ProgressiveComponent;
 
 - 서버 측: 서버는 ReactDOMServer.renderToString을 사용하여 초기 HTML을 생성합니다.
 - 클라이언트 측: ReactDOM.hydrate은 주 응용 프로그램을 즉시 채웁니다.
-- 점진적 구성 요소 수화: Intersection Observer는 ProgressiveComponent가 뷰포트에 진입할 때 그것을 수화합니다.```
+- 점진적 구성 요소 수화: Intersection Observer는 ProgressiveComponent가 뷰포트에 진입할 때 그것을 수화합니다.
 
 <div class="content-ad"></div>
 

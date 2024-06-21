@@ -11,7 +11,7 @@ link: "https://medium.com/design-bootcamp/animating-like-apple-using-react-and-f
 ---
 
 
-```markdown
+
 ![Link](https://miro.medium.com/v2/resize:fit:1200/1*VEU7TCQhdrDbzHhlzGHBPg.gif)
 
 This article is a continuation of Animating Like Apple: Using Figma and Jitter to Design Complex Animations for Web Interfaces. We will explore how to utilize the useAnimate function from Framer Motion to execute complex animations, specifically focusing on the sequential and simultaneous animation of multiple elements and SVGs.
@@ -19,7 +19,7 @@ This article is a continuation of Animating Like Apple: Using Figma and Jitter t
 ![Link](https://miro.medium.com/v2/resize:fit:1400/1*0Ztl6bGF41txECfcoY9vvw.gif)
 
 # Prerequisites
-```
+
 
 <div class="content-ad"></div>
 
@@ -35,7 +35,7 @@ SVG.svg
 
 <div class="content-ad"></div>
 
-```markdown
+
 <svg width="244" height="84" viewBox="0 0 244 84" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="121.5" cy="40.5" r="40.5" fill="#0171E2"/>
     <circle cx="121.5" cy="40.5" r="22.5" fill="#EFEFF2"/>
@@ -50,14 +50,14 @@ SVG.svg
         </clipPath>
     </defs>
 </svg>
-```
+
 
 <img src="/assets/img/2024-06-20-AnimatingLikeAppleUsingReactandFramer-MotiontoCodeComplexAnimationsforWebInterfaces_1.png" />
 
 이 디자인은 Figma에서 만들었고 SVG로 내보냈습니다.
 
 <img src="/assets/img/2024-06-20-AnimatingLikeAppleUsingReactandFramer-MotiontoCodeComplexAnimationsforWebInterfaces_2.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -76,7 +76,7 @@ SVG.svg
 <div class="content-ad"></div>
 
 
-```markdown
+
 ![Image](/assets/img/2024-06-20-AnimatingLikeAppleUsingReactandFramer-MotiontoCodeComplexAnimationsforWebInterfaces_4.png)
 
 ```js
@@ -91,7 +91,7 @@ SVG.svg
     <path d="M129.083 39.5278H123.511V33.9556C123.511 33.1056 122.85 32.4444 122 32.4444C121.15 32.4444 120.583 33.1056 120.583 33.8611V39.4333H115.011C114.161 39.4333 113.5 40.0944 113.5 40.9444C113.5 41.7944 114.161 42.3611 114.917 42.3611H120.489V47.9333C120.489 48.7833 121.15 49.35 121.906 49.35C122.756 49.35 123.322 48.6889 123.322 47.9333V42.3611H128.894C129.744 42.3611 130.311 41.7 130.311 40.9444C130.5 40.1889 129.839 39.5278 129.083 39.5278Z" fill="white"/>
 </g>
 ``` 
-```
+
 
 <div class="content-ad"></div>
 
@@ -317,7 +317,7 @@ export default AppleButton;
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Animated Button](https://miro.medium.com/v2/resize:fit:1400/1*eNwg7lM93XU13vBp9aGt1w.gif)
 
 # 결론
@@ -325,4 +325,3 @@ export default AppleButton;
 그럼 이제 해냈습니다! 이제 이 애니메이션 버튼을 웹사이트에 통합할 수 있습니다. 더 많은 효과를 주고 싶다면, 스크롤-보기 효과로 더욱 향상시킬 수 있습니다. 버튼이 보이게 될 때 Entry Animation을 시작하도록 스크롤 이벤트를 링크하고, 버튼이 뷰를 벗어날 때 Exit Animation을 시작하도록 설정하세요.
 
 이 프로젝트의 완성된 코드를 다운로드하려면 꼭 제 GitHub를 방문해주세요.
-```

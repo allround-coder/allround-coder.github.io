@@ -20,11 +20,11 @@ link: "https://medium.com/@erichfreeland/creating-a-mobile-form-with-advanced-cs
 먼저 간단한 HTML 구조를 폼에 설정해 보겠습니다. 이름, 이메일, 메시지 입력 필드와 제출 버튼이 포함된 폼을 만들어 보겠습니다.
 
 HTML:
-```markdown
+
 <form class="contact-form">
     <label for="name">이름:</label>
     <input type="text" id="name" name="name" required>
-```
+
 
 
 
@@ -84,7 +84,7 @@ CSS Grid를 사용하여 양식 필드와 레이블이 적절하게 정렬되고
 모바일 기기에서는 미디어 쿼리를 추가하여 양식의 모양을 더 조정할 수 있습니다. 이를 통해 최소 화면에서도 양식이 사용자 친화적으로 유지됩니다.
 
 CSS:
-```
+
 @media (max-width: 600px) {
   .contact-form {
     padding: 10px;
@@ -94,15 +94,15 @@ CSS:
     font-size: 12px;
   }
 }
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 .contact-form button {
     padding: 8px;
 }
-```
+
 
 **결론**  
-고급 CSS를 활용하여 모바일 친화적인 폼을 만드는 것은 CSS 그리드와 미디어 쿼리와 같은 기술을 활용하여 응답성과 사용성을 보장하는 것을 포함합니다. 이러한 단계를 따라가면, 장치에 관계없이 훌륭하게 보이고 사용자 경험이 훌륭한 폼을 디자인할 수 있습니다. 반응형 웹 디자인 및 고급 CSS 기술에 대한 추가 자료가 필요하다면, CSS 그리드 및 미디어 쿼리에 대한 MDN 웹 문서를 참고하세요.```
+고급 CSS를 활용하여 모바일 친화적인 폼을 만드는 것은 CSS 그리드와 미디어 쿼리와 같은 기술을 활용하여 응답성과 사용성을 보장하는 것을 포함합니다. 이러한 단계를 따라가면, 장치에 관계없이 훌륭하게 보이고 사용자 경험이 훌륭한 폼을 디자인할 수 있습니다. 반응형 웹 디자인 및 고급 CSS 기술에 대한 추가 자료가 필요하다면, CSS 그리드 및 미디어 쿼리에 대한 MDN 웹 문서를 참고하세요.

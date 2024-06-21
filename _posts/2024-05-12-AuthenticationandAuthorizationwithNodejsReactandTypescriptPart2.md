@@ -155,7 +155,7 @@ app.listen(SERVER_PORT, () => {
 });
 ```
 
-Git에서 무시될 수 있는 .env 파일에 프로젝트 환경 변수를 지정하는 것은 좋은 관행입니다. 이 파일은 /server폴더에 생성할 것입니다:```
+Git에서 무시될 수 있는 .env 파일에 프로젝트 환경 변수를 지정하는 것은 좋은 관행입니다. 이 파일은 /server폴더에 생성할 것입니다:
 
 ```js
 # .env
@@ -171,7 +171,7 @@ rm -rf ./dist && npx tsc && cp .env ./dist/.env && cd ./dist && node index.js
 
 위 명령은 먼저 ./dist 디렉토리를 제거하고, ./src 디렉토리에 있는 모든 코드를 타입 확인하고 ./dist 디렉토리 내의 JavaScript로 변환합니다. 컴파일 단계가 완료되면 .env 파일이 ./dist 디렉토리로 복사되어 서버를 node index.js로 실행할 때 환경 변수가 올바르게 초기화됩니다. 매번 이 명령을 실행하는 것은 지루할 수 있으므로 server/package.json 내에 몇 가지 스크립트를 만들어 프로세스를 단순화하겠습니다:
 
-```
+
 
 
 
@@ -210,7 +210,7 @@ yarn start
 
 ![이미지](/assets/img/2024-05-12-AuthenticationandAuthorizationwithNodejsReactandTypescriptPart2_2.png)
 
-```
+
 
 
 
@@ -276,7 +276,7 @@ export default class InMemoryDataProvider<Resource extends {id: string, data: an
 }
 ```
 
-InMemoryDataProvider는 IDataProvider에서 정의된 공개 메서드를 엄격하게 구현합니다. 실제 데이터 저장소는 InMemoryDataProvider 클래스 인스턴스에 특정한 private \_data 배열 속성입니다. InMemoryDataProvider의 generic 타입은 Resource이며 'id: string, data: any'를 확장하였기 때문에 입력 자원은 id 및 데이터를 포함하고 기타 속성을 추가로 가져야합니다. TypeScript의 이 인터페이스 중심적 접근의 장점은 IDataProvider 인터페이스를 준수한다면 데이터 저장소를 다른 구현체로 쉽게 교체할 수 있다는 점입니다(예: SQL 데이터베이스 사용).```
+InMemoryDataProvider는 IDataProvider에서 정의된 공개 메서드를 엄격하게 구현합니다. 실제 데이터 저장소는 InMemoryDataProvider 클래스 인스턴스에 특정한 private \_data 배열 속성입니다. InMemoryDataProvider의 generic 타입은 Resource이며 'id: string, data: any'를 확장하였기 때문에 입력 자원은 id 및 데이터를 포함하고 기타 속성을 추가로 가져야합니다. TypeScript의 이 인터페이스 중심적 접근의 장점은 IDataProvider 인터페이스를 준수한다면 데이터 저장소를 다른 구현체로 쉽게 교체할 수 있다는 점입니다(예: SQL 데이터베이스 사용).
 
 사용자 관련 데이터에서 CRUD 작업을 실행하기 위해 비즈니스 로직을 데이터 액세스 계층에서 분리하는 사용자 저장소를 추가로 생성할 것입니다. 먼저, 다음과 같이 정의된 추상화 Repository를 작성할 것입니다. 이 Repository는 다양한 데이터 소스 유형에서 확장될 수 있는 인터페이스를 정의합니다.
 
@@ -381,7 +381,7 @@ touch index.ts user.ts
         |__ user.ts
 ```
 
-index.ts 내에서는 응용 프로그램의 모든 가능한 경로를 포함하는 중앙 라우터를 만들 것입니다. 현재는 등록 및 로그인을 위한 특정 /user 경로만 가질 것입니다.```
+index.ts 내에서는 응용 프로그램의 모든 가능한 경로를 포함하는 중앙 라우터를 만들 것입니다. 현재는 등록 및 로그인을 위한 특정 /user 경로만 가질 것입니다.
 
 ```js
 // server/src/routes/index.ts
@@ -516,7 +516,7 @@ export default userRoute;
 
 POST /user/register 엔드포인트에서는 요청 본문에 이름, 이메일 및 비밀번호 세 개의 매개변수를 받습니다. 사용자가 이메일을 통해 존재하는지 확인한 후, 참이면 오류를 반환합니다. 그런 다음 저장을 위해 사용자 관련 데이터 userData를 생성하며, 제공된 비밀번호는 이전에 설치한 bcrypt를 사용하여 ENCRYPTION_KEY로 암호화됩니다. 사용자 데이터의 지속성은 userRepository.createUser를 사용하여 수행하며, 사용자 생성이 성공하면 24시간 만료 기간이 있는 JWT 토큰이 초기화됩니다. JWT 토큰은 이전에 설치한 jwt를 사용하여 AUTH_TOKEN_KEY로 서명되며 사용자 관련 데이터를 포함합니다. 브라우저가 서버 응답을 받으면 이 JWT 토큰이 프론트엔드에 저장됩니다.
 
-```
+
 
 
 
@@ -652,7 +652,7 @@ export const checkAuthToken = async (req: any, res: any, next: any) => {
 };
 ```
 
-확인할 토큰은 요청 헤더 X-ACCESS-TOKEN 안에 포함될 것입니다. 추출된 토큰은 AUTH_TOKEN_KEY를 사용하여 검증되며, 해당 데이터 페이로드는 decodedUserInfo에 할당될 것입니다. 그런 다음 제출된 토큰의 유효성을 보장하기 위해 데이터 저장소에 사용자가 실제로 존재하는지 추가로 확인할 것입니다. 토큰 유효성 검사에 실패하면 403 오류 'Unauthorized' 메시지로 응답할 것입니다.```
+확인할 토큰은 요청 헤더 X-ACCESS-TOKEN 안에 포함될 것입니다. 추출된 토큰은 AUTH_TOKEN_KEY를 사용하여 검증되며, 해당 데이터 페이로드는 decodedUserInfo에 할당될 것입니다. 그런 다음 제출된 토큰의 유효성을 보장하기 위해 데이터 저장소에 사용자가 실제로 존재하는지 추가로 확인할 것입니다. 토큰 유효성 검사에 실패하면 403 오류 'Unauthorized' 메시지로 응답할 것입니다.
 
 인증 논리를 테스트하려면 보호된 서버 리소스를 흉내 내는 더미 /resource API 엔드포인트를 설정할 수 있습니다. 먼저 다음 명령을 사용하여 resource.ts 파일을 만듭니다.
 
@@ -826,7 +826,7 @@ export default App;
 
 어플리케이션이 동작하려면 인터페이스가 사용자의 인증 상태에 대해 알아야 합니다. 이를 React Context와 useReducer 훅을 사용하여 전역 상태로 관리할 것입니다. 먼저 ui/src/ 안에 전역 인증 상태를 위한 스토어 디렉토리를 생성합니다:
 
-```
+
 
 
 

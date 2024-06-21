@@ -130,7 +130,7 @@ export class AuthService {
 # 로그아웃
 
 ## NextJS
-```
+
 
 
 
@@ -164,7 +164,7 @@ export async function POST(request: NextRequest) {
 
 프로젝트에 대한 최종 인증 흐름이 아마 이것은 아닐 것입니다. 여전히 더 나은 구현 방법(예: Refresh Token 흐름 구현 등)을 찾고 있습니다. 읽어 주셔서 감사합니다.
 
-# 간단하게 설명하면 🚀```
+# 간단하게 설명하면 🚀
 
 
 

@@ -47,7 +47,7 @@ const articleForm = new FormGroup({
 
 ## 템플릿 바인딩
 
-Angular Reactive Forms 모델 기반 접근 방식은 라이브러리 자체에서 제공하는 다양한 디렉티브에 의해 지원되며, 이는 폼 컨트롤을 HTML 요소와 쉽게 통합할 수 있도록 합니다.``` 
+Angular Reactive Forms 모델 기반 접근 방식은 라이브러리 자체에서 제공하는 다양한 디렉티브에 의해 지원되며, 이는 폼 컨트롤을 HTML 요소와 쉽게 통합할 수 있도록 합니다. 
 
 <div class="content-ad"></div>
 
@@ -178,7 +178,7 @@ Angular 반응형 폼의 기본 사항 중 일부를 다시 살펴보았으니, 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-AngularFormsnewunifiedcontrolstatechangeevents_0.png)
 
 # 새로운 통합 제어 상태 변경 이벤트
@@ -186,7 +186,7 @@ Angular 반응형 폼의 기본 사항 중 일부를 다시 살펴보았으니, 
 Angular v18부터 AbstractControl 클래스는 이제 모든 제어 상태 변경 이벤트를 추적하기 위한 새로운 이벤트 observable을 노출합니다.
 
 이를 통해 이제 PristineEvent, ValueChangeEvent, StatusEvent 및 TouchedEvent 이벤트를 통해 FormControl, FormGroup 및 FormArray 클래스를 모니터링할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -107,7 +107,7 @@ gsap.context(() =` ' ... ')를 사용하여 GSAP 콘텍스트를 만들기 시�
 - ScrollTrigger 플러그인 등록: gsap.registerPlugin(ScrollTrigger)를 사용하여 ScrollTrigger 플러그인을 등록합니다. ScrollTrigger 플러그인은 스크롤 위치를 기반으로 애니메이션을 만드는 데 필수적입니다.
 - 타임라인 생성: 이후, gsap.timeline(' ... ')를 사용하여 타임라인을 만듭니다.
 타임라인은 여러 애니메이션을 순차적으로 배치하고 제어하는 컨테이너입니다. defaults 객체는이 타임라인 내 모든 애니메이션에 대한 기본 속성을 지정합니다(이 경우 1초의 지속 시간).
-- ScrollTrigger 구성: 타임라인에 대한 ScrollTrigger를 설정합니다:```
+- ScrollTrigger 구성: 타임라인에 대한 ScrollTrigger를 설정합니다:
 
 <div class="content-ad"></div>
 

@@ -286,7 +286,7 @@ export class AppModule {}
 
 app.component.ts 파일을 열고 AuthService 클래스에 대한 종속성을 생성자에 추가하고 '@auth0/auth0-angular'에서 AuthService를 가져와주세요.
 
-귀하의 코드는 다음과 같아야 합니다:```
+귀하의 코드는 다음과 같아야 합니다:
 
 <div class="content-ad"></div>
 

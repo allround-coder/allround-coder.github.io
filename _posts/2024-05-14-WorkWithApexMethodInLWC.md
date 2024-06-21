@@ -124,7 +124,7 @@ wiredAccount;
 
 이러한 단계를 따라 하면 Lightning Web Component로 Apex 메서드를 원활하게 가져와 데이터를 검색하고, Apex 클래스에서 Apex 메서드를 Lightning Web Component에서 사용할 수 있게 공개할 수 있습니다. 이를 통해 Salesforce 개발에서 프론트엔드와 백엔드 간의 효율적인 통신이 가능해집니다.
 
-각 시나리오를 예제 코드와 함께 단계별로 살펴보겠습니다:```
+각 시나리오를 예제 코드와 함께 단계별로 살펴보겠습니다:
 
 
 
@@ -488,7 +488,7 @@ export default class LdsWithApex extends LightningElement {
 출력:
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/0*TytD0CuSTNo7y-1i.gif" />
-```  
+
 
 
 

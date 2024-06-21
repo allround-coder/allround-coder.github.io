@@ -95,7 +95,7 @@ export default SliderNumber;
 
 ![이미지](https://miro.medium.com/v2/resize:fit:1200/1*gFdYciuJgTYyJj2evLgauw.gif)
 
-Framer Motion의 강력한 애니메이션 기능과 몇 줄의 코드만으로 무한 슬라이더의 기반을 마련했습니다.```
+Framer Motion의 강력한 애니메이션 기능과 몇 줄의 코드만으로 무한 슬라이더의 기반을 마련했습니다.
 
 
 
@@ -191,4 +191,3 @@ export default SliderDesign2;
 이제 무한 슬라이더가 작동하는 방법을 이해했으니, 여러분들만의 디자인을 시작해보세요!
 
 전체 디자인을 다운로드할 수 있는 GitHub을 확인해보세요!
-```

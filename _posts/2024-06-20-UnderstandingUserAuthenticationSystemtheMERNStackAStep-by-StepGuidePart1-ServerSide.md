@@ -121,7 +121,7 @@ app.listen(PORT, () => console.log(`SERVER RUNNING ON PORT: ${PORT}`));
 node src/server.js
 ```
 
-서버를 시작하는 데 nodemon 패키지를 사용할 수도 있습니다. nodemon을 사용하면 파일 변경 후 서버를 다시 시작할 필요가 없습니다.```
+서버를 시작하는 데 nodemon 패키지를 사용할 수도 있습니다. nodemon을 사용하면 파일 변경 후 서버를 다시 시작할 필요가 없습니다.
 
 <div class="content-ad"></div>
 
@@ -214,7 +214,7 @@ module.exports = mongoose.model("user", UserSchema);
 
 ## 7. Controllers 만들기
 
-컨트롤러는 route의 로직을 처리합니다. 이제 src/controllers 폴더에 authController.js를 생성하세요.```
+컨트롤러는 route의 로직을 처리합니다. 이제 src/controllers 폴더에 authController.js를 생성하세요.
 
 <div class="content-ad"></div>
 
@@ -340,7 +340,7 @@ module.exports = { Login, Register, GetUser };
 
 ## 8. 미들웨어 구현
 
-토큰을 확인하기 위한 미들웨어가 필요합니다. 계속하기 전에 미들웨어가 무엇인지 설명드리겠습니다.```
+토큰을 확인하기 위한 미들웨어가 필요합니다. 계속하기 전에 미들웨어가 무엇인지 설명드리겠습니다.
 
 <div class="content-ad"></div>
 
@@ -425,7 +425,7 @@ app.listen(PORT, () => console.log(`서버가 포트 ${PORT}에서 실행 중입
 ## 10. 서버 테스트하기
 
 이제 서버를 테스트해보는 시간입니다. 제대로 작동하는지 확인해봅시다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -440,7 +440,7 @@ app.listen(PORT, () => console.log(`서버가 포트 ${PORT}에서 실행 중입
 
 <div class="content-ad"></div>
 
-```md
+
 POST http://localhost:3000/login
 Content-Type: application/json
 
@@ -466,14 +466,14 @@ Content-Type: application/json
 GET http://localhost:3000/user
 Content-Type: application/json
 x-token:your_access_token
-```
+
 
 <img src="https://miro.medium.com/v2/resize:fit:990/0*Fl_hEz8V6Z0DRz88.gif" />
 
 이 글에서는 간단한 토큰 기반 인증 시스템을 Node.js에서 구축했습니다. 이 설정은 Node.js 애플리케이션에서 안전한 인증을 구현하기 위한 견고한 기반을 제공합니다. Part 2에서는 이 프로젝트의 클라이언트 측을 구축하여 인증용 사용자 인터페이스를 만드는 방법과 서버와의 연결 방법에 대해 살펴볼 것입니다.
 
 이 글이 여러분에게 도움이 되기를 바랍니다. 계속 주시고 이와 같은 내용을 더 원하시면 박수를 치세요! 즐거운 코딩하세요!
-```
+
 
 <div class="content-ad"></div>
 

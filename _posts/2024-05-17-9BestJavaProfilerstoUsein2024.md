@@ -110,7 +110,7 @@ java -Xmx125m -Xms25m -Xmn15m -XX:PermSize=30m -XX:MaxPermSize=30m -XX:+UseSeria
 ps aux | grep java
 ```
 
-JVM Heap Memory 사용량을 모니터링하려면 터미널에서 jstat을 -gc 옵션과 함께 실행하세요.```
+JVM Heap Memory 사용량을 모니터링하려면 터미널에서 jstat을 -gc 옵션과 함께 실행하세요.
 
 <div class="content-ad"></div>
 

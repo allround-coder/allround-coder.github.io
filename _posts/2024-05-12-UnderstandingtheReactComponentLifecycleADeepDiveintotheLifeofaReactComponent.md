@@ -101,7 +101,7 @@ class ComponentDidMount extends React.Component {
 - getDerivedStateFromProps가 호출되었음을 나타내는 두 번째 콘솔 메시지입니다. 그러나 이 특정 예시에서는 null을 반환하므로 프롬프트에 기반한 상태 업데이트가 없음을 나타냅니다.
 - 세 번째로 렌더 함수가 호출되었음을 나타내는 콘솔 메시지입니다. 모든 HTML을 렌더링하고 구성 요소의 상태에서 현재 카운트를 표시하며 incrementCount 메서드를 호출하는 onClick 이벤트 핸들러가 있는 버튼을 표시합니다.
 - componentDidMount가 호출되었음을 나타내는 네 번째 콘솔 메시지입니다.
-- "Increment" 버튼을 클릭하면 incrementCount 메서드가 상태를 업데이트하고 React 구성 요소 라이프사이클의 업데이팅 단계를 트리거합니다. 이 단계는 마운팅 단계와 분리된 단계이며 렌더 및 getDerivedStateFromProps와 같은 메서드를 포함합니다.```
+- "Increment" 버튼을 클릭하면 incrementCount 메서드가 상태를 업데이트하고 React 구성 요소 라이프사이클의 업데이팅 단계를 트리거합니다. 이 단계는 마운팅 단계와 분리된 단계이며 렌더 및 getDerivedStateFromProps와 같은 메서드를 포함합니다.
 
 
 
@@ -279,7 +279,7 @@ export default class UnmountingExample extends React.Component {
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*KkomvSyjYradmjZ1G7f_wQ.gif" />
 
-자식 컴포넌트는 언마운트될 컴포넌트를 나타냅니다. componentDidMount와 componentWillUnmount 라이프사이클 메소드를 포함하고 있습니다. 두 메소드에는 콘솔에 로그를 남기는 메시지가 포함되어 있습니다.```
+자식 컴포넌트는 언마운트될 컴포넌트를 나타냅니다. componentDidMount와 componentWillUnmount 라이프사이클 메소드를 포함하고 있습니다. 두 메소드에는 콘솔에 로그를 남기는 메시지가 포함되어 있습니다.
 
 
 

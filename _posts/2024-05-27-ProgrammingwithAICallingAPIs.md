@@ -90,11 +90,11 @@ API를 호출하면 다음과 같은 결과가 반환되어야 합니다:
 }
 ```
 
-아마도 OpenAI가 이러한 API를 처음으로 개발한 것이거나, 더 인기가 많아서 다른 많은 공급자들이 그들의 REST API에서 비슷한 형식을 사용하는 것일 수도 있습니다. 예를 들어, Anthropic의 형식은 다음과 같습니다.```
+아마도 OpenAI가 이러한 API를 처음으로 개발한 것이거나, 더 인기가 많아서 다른 많은 공급자들이 그들의 REST API에서 비슷한 형식을 사용하는 것일 수도 있습니다. 예를 들어, Anthropic의 형식은 다음과 같습니다.
 
 <div class="content-ad"></div>
 
-```md
+
 $ curl https://api.anthropic.com/v1/messages \
   -H "content-type: application/json" \
   -H "x-api-key: $ANTHROPIC_API_KEY" \
@@ -106,13 +106,13 @@ $ curl https://api.anthropic.com/v1/messages \
         {"role": "user", "content": "Why is the sky blue?"}
     ]
 }'
-```
+
 
 위에서 보듯이, API 키는 다른 헤더를 통해 전달되지만 페이로드는 거의 동일하지만 모델 작동 방식에 따라 약간 차이가 있습니다. 예를 들어, Anthropic에서 메시지의 일부로 시스템 역할 콘텐츠를 전달할 수 없습니다.
 
 또 다른 예시는 Mistral의 것입니다.
 
-```md
+
 $ curl https://api.mistral.ai/v1/chat/completions \
      --header 'Content-Type: application/json' \
      --header 'Accept: application/json' \
@@ -126,7 +126,7 @@ $ curl https://api.mistral.ai/v1/chat/completions \
       }
     ]
   }'
-```
+
 
 <div class="content-ad"></div>
 

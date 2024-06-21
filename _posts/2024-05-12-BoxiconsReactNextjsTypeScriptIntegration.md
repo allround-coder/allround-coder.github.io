@@ -65,7 +65,7 @@ declare module "boxicons" {
 
 ## 4. 스타일시트 임포트
 
-프로젝트에 boxicons 스타일시트를 추가하세요. 이는 애플리케이션의 메인 스타일시트 맨 위에 CSS import를 추가하여 수행할 수 있습니다. 기본적으로 Next.js의 "src/pages" 디렉토리에 있는 "global.css" 파일이 메인 애플리케이션 스타일시트입니다.```
+프로젝트에 boxicons 스타일시트를 추가하세요. 이는 애플리케이션의 메인 스타일시트 맨 위에 CSS import를 추가하여 수행할 수 있습니다. 기본적으로 Next.js의 "src/pages" 디렉토리에 있는 "global.css" 파일이 메인 애플리케이션 스타일시트입니다.
 
 동일한 결과를 얻으려면 "src/pages" 디렉토리의 "layout.tsx" 파일에 헤드 태그에 링크 태그를 추가하면 됩니다.
 

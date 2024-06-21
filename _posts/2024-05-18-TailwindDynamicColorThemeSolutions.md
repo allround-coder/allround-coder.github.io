@@ -99,7 +99,7 @@ export const getNeutral = shade => {
 }
 ```
 
-Using this solution may have some drawbacks. The process of setting up dark mode, while somewhat improved, still involves some complexity. Additionally, managing text visibility over colored backgrounds is manageable but finding a semantically sensible solution can be challenging.```
+Using this solution may have some drawbacks. The process of setting up dark mode, while somewhat improved, still involves some complexity. Additionally, managing text visibility over colored backgrounds is manageable but finding a semantically sensible solution can be challenging.
 
 <div class="content-ad"></div>
 

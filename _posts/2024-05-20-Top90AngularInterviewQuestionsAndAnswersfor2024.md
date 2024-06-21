@@ -505,7 +505,7 @@ export class ComponentA {
 }
 ```
 
-Component B:```
+Component B:
 
 <div class="content-ad"></div>
 
@@ -594,7 +594,7 @@ ng serve
 
 2. `npm start` 예시:
 
-`package.json` 파일에 `start` 스크립트가 정의된 Node.js 프로젝트에서 작업 중이라고 가정해보겠습니다. `start` 스크립트는 주 애플리케이션 파일인 `index.js`를 실행하도록 설정되어 있습니다. 애플리케이션을 시작하려면 프로젝트 디렉토리로 이동하여 다음 명령어를 실행하면 됩니다.```
+`package.json` 파일에 `start` 스크립트가 정의된 Node.js 프로젝트에서 작업 중이라고 가정해보겠습니다. `start` 스크립트는 주 애플리케이션 파일인 `index.js`를 실행하도록 설정되어 있습니다. 애플리케이션을 시작하려면 프로젝트 디렉토리로 이동하여 다음 명령어를 실행하면 됩니다.
 
 <div class="content-ad"></div>
 
@@ -1034,7 +1034,7 @@ Angular `8`에서는 angular-cli.json에서 spec.component 매개변수를 false
 
 만약 위와 같은 테이블 태그를 마크다운 형식으로 변경하고 싶다면, 아래와 같이 변경하시면 됩니다.
 
-```md
+
 {
    ...
    "defaults" : {
@@ -1045,13 +1045,13 @@ Angular `8`에서는 angular-cli.json에서 spec.component 매개변수를 false
        }
    }
 }
-```
+
 
 또는 생성 시 `— spec=false` 옵션을 사용할 수 있습니다.
 
-```md
+
 ng generate component --spec=false component-name
-```
+
 
 6. RxJS는 무엇인가요?
 
@@ -1197,9 +1197,9 @@ Angular는 템플릿에서 사용자 제공 입력을 자동으로 살균화하�
 
 <div class="content-ad"></div>
 
-```md
+
 {{ user.name }}
-```
+
 
 If the `user.name` property contains potentially harmful HTML code, Angular automatically sanitizes it and renders it as plain text, preventing any script execution.
 
@@ -1350,7 +1350,7 @@ describe('MyComponent', () => {
 
 `compileComponents` 함수는 컴포넌트의 템플릿과 종속성을 컴파일하는 비동기 작업입니다.
 
-개별 테스트 케이스 내에서 `TestBed.createComponent`을 사용하여 테스트할 컴포넌트의 인스턴스를 생성합니다. 이는 `ComponentFixture` 객체를 반환하며, 해당 컴포넌트 인스턴스 (`componentInstance`)와 관련된 DOM 요소 (`nativeElement`)에 액세스할 수 있습니다.```
+개별 테스트 케이스 내에서 `TestBed.createComponent`을 사용하여 테스트할 컴포넌트의 인스턴스를 생성합니다. 이는 `ComponentFixture` 객체를 반환하며, 해당 컴포넌트 인스턴스 (`componentInstance`)와 관련된 DOM 요소 (`nativeElement`)에 액세스할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -2390,7 +2390,7 @@ export class AppModule {}
 
 이제 애플리케이션에서 HTTP 요청이 발생할 때마다 AuthInterceptor가 요청을 가로채고 인증 헤더를 추가한 후 다음 인터셉터나 실제 HTTP 핸들러로 전달합니다. 이를 통해 일반적인 HTTP 요청 관련 작업을 중앙 집중화하고 코드를 깔끔하고 유지 관리 가능하게 유지할 수 있습니다.
 
-Angular 프로젝트에서 dist 폴더의 이름을 변경할 수 있을까요?```
+Angular 프로젝트에서 dist 폴더의 이름을 변경할 수 있을까요?
 
 <div class="content-ad"></div>
 
@@ -2474,7 +2474,7 @@ $forkJoin.subscribe(data=>{
 27. TypeScript에서 모듈이란 무엇이며 어떻게 사용할 수 있나요?
 
 TypeScript에서 모듈은 응용 프로그램의 서로 다른 부분 간에 가져오고 내보낼 수 있는 재사용 가능한 독립 단위 코드로 코드를 구성하는 방법입니다. 모듈에는 클래스, 함수, 인터페이스 및 기타 코드가 포함될 수 있으며 프로젝트 내부 또는 외부 라이브러리일 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -2887,11 +2887,11 @@ Angular 버전 2 이상에서는 1개의 요소에 1개 이상의 구조 지시�
 
 <div class="content-ad"></div>
 
-```
+
 1. Subjects let you send data to multiple subscribers, while Observables send data to each subscriber individually. Therefore, when you add a new subscriber to a Subject, they will all receive the same data, but with Observables, each subscriber may get different data as the Observable source is re-executed for each new subscriber.
 2. Observables are cold by default because the data source is contained within the Observable itself, as shown in the code above. On the other hand, Subjects are not cold.
 For more detailed differences, refer to the following YouTube links:
-```
+
 
 <div class="content-ad"></div>
 
@@ -3604,7 +3604,7 @@ filtered$.subscribe(
 
 반면, 패치 오퍼레이터는 RxJS 5.5 이전에 오퍼레이터를 사용하는 원래 방식이었습니다. 패치 오퍼레이터들은 `Observable` 클래스의 메소드로 import되어 그 후 직접 observable에 바로 호출함으로써 사용됩니다. 패치 오퍼레이터는 호출된 observable 인스턴스의 동작을 수정하며, pipeable 오퍼레이터와 같은 방식으로 함께 조합될 수 없습니다.
 
-# 다음은 observable을 변환하는 패치 오퍼레이터 사용 예시입니다:```
+# 다음은 observable을 변환하는 패치 오퍼레이터 사용 예시입니다:
 
 <div class="content-ad"></div>
 
@@ -4654,7 +4654,7 @@ export class MyComponent {
 
 앵귤러에서 ViewEncapsulation을 이해하고 활용함으로써 애플리케이션의 컴포넌트 간 스타일 간섭을 방지하고 스타일을 더 잘 제어할 수 있습니다.
 
-72. 폴리필(polyfills)의 사용 목적은 무엇인가요?```
+72. 폴리필(polyfills)의 사용 목적은 무엇인가요?
 
 <div class="content-ad"></div>
 
@@ -4722,7 +4722,7 @@ $scanOperator.subscribe(data=> {
 
 결론:
 
-scan 연산자는 상태를 유지하거나 값들을 시간이 지남에 따라 누적해야 하는 경우 유용합니다. 전체 카운트 추적, 평균 계산 또는 러닝 합을 시뮬레이션하는 경우와 같이 시간이 지남에 따라 값을 누적해야 하는 시나리오에 유용합니다.```
+scan 연산자는 상태를 유지하거나 값들을 시간이 지남에 따라 누적해야 하는 경우 유용합니다. 전체 카운트 추적, 평균 계산 또는 러닝 합을 시뮬레이션하는 경우와 같이 시간이 지남에 따라 값을 누적해야 하는 시나리오에 유용합니다.
 
 <div class="content-ad"></div>
 
@@ -4776,7 +4776,7 @@ describe('DataService', () => {
 }
 ```
 
-위의 테스트에서, `spyOn` 함수를 사용하여 `DataService`의 `fetchData` 메서드에 스파이를 생성합니다. `and.returnValue` 메서드를 사용하여 스파이의 반환 값을 지정합니다. 이 값은 모킹된 API 응답이 포함된 해결된 프로미스입니다.```
+위의 테스트에서, `spyOn` 함수를 사용하여 `DataService`의 `fetchData` 메서드에 스파이를 생성합니다. `and.returnValue` 메서드를 사용하여 스파이의 반환 값을 지정합니다. 이 값은 모킹된 API 응답이 포함된 해결된 프로미스입니다.
 
 <div class="content-ad"></div>
 

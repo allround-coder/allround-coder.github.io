@@ -124,7 +124,7 @@ nx graph --affected
 
 아래는 Markdown 형식의 코드입니다.
 
-```markdown
+
 ![이미지1](/assets/img/2024-06-19-DeepDiveintoNxAffected_5.png)
 
 그래프를 확인할 수 있는 웹 페이지가 열립니다:
@@ -132,7 +132,7 @@ nx graph --affected
 ![이미지2](/assets/img/2024-06-19-DeepDiveintoNxAffected_6.png)
 
 ## 😶‍🌫️ 영향 받는 규칙
-```
+
 
 <div class="content-ad"></div>
 
@@ -146,7 +146,7 @@ Nx는 영향을 받는 프로젝트의 목록을 계산하기 전에 수정/변�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-DeepDiveintoNxAffected_8.png)
 
 Nx는 대상 영향을 받은 베이스 이후의 수정된 파일을 계산합니다.
@@ -154,7 +154,7 @@ Nx는 대상 영향을 받은 베이스 이후의 수정된 파일을 계산합�
 기본적으로 베이스는 기본 브랜치이지만, -base 및 -head 옵션을 사용하여 수정할 수 있습니다.
 
 아직 커밋되지 않거나 추적되지 않은 모든 수정된 파일도 추가됩니다. -uncommitted 또는 -untracked 옵션을 사용하여 동작을 변경할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -168,7 +168,7 @@ Nx는 대상 영향을 받은 베이스 이후의 수정된 파일을 계산합�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-DeepDiveintoNxAffected_9.png)
 
 가장 일반적인 규칙은 파일 경로가 프로젝트 루트 경로와 일치하는지 확인하는 것입니다.
@@ -176,11 +176,11 @@ Nx는 대상 영향을 받은 베이스 이후의 수정된 파일을 계산합�
 ## 단계 2.2 - 작업에서 영향을받는 노드 찾기
 
 Nx 작업을 실행할 때 두 가지 개념이 고려됩니다:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-DeepDiveintoNxAffected_10.png)
 
 - 작업 실행 중에 소스 자산을 정의하는 데 사용되는 입력입니다.
@@ -189,7 +189,7 @@ Nx 작업을 실행할 때 두 가지 개념이 고려됩니다:
 자바스크립트의 순수 함수와 유사하게, 입력이 변경되지 않았다면 출력도 동일해야 합니다.
 
 입력 목록을 재사용하기 쉽게 하려면 nx.json 또는 project.json에서 Named Inputs를 사용하여 정의할 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -216,7 +216,7 @@ Nx 작업을 실행할 때 두 가지 개념이 고려됩니다:
 }
 ```
 
-파일을 변경하더라도 해당 작업 목록에는 영향을 미치지 않습니다:```
+파일을 변경하더라도 해당 작업 목록에는 영향을 미치지 않습니다:
 
 <div class="content-ad"></div>
 
@@ -232,7 +232,7 @@ Nx 프로젝트 크리스털과 추론된 구성을 통한 Nx 플러그인의 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-06-19-DeepDiveintoNxAffected_12](/assets/img/2024-06-19-DeepDiveintoNxAffected_12.png)
 
 예를 들면, 파일을 삭제하거나 이동하면 Nx는 해당 프로젝트가 삭제되었다고 가정하고 모든 프로젝트를 영향을 받는 것으로 표시합니다.
@@ -240,7 +240,7 @@ Nx 프로젝트 크리스털과 추론된 구성을 통한 Nx 플러그인의 �
 ## 단계 2.4 - Npm 종속성에서 영향받는 노드 찾기
 
 만약 package.json이 수정되면, Nx는 어떤 것이 정확히 변경되었는지 이해하기 위해 스마트한 접근법을 사용합니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -142,7 +142,7 @@ CMD 내에서 'node --version' 명령으로 설치를 확인하세요.
 
 
 
-```md
+
 ![이미지](/assets/img/2024-05-12-HowtoSetUpExpoDevClientACompleteGuide2024_9.png)
 
 마침내, 우리는 Expo 애플리케이션을 시작할 수 있습니다. 저는 NativeWind-Tailwind 지원, 최신 Expo SDK 50, Expo 파일 기반 라우팅, React Reanimated 라이브러리 및 TypeScript 통합을 포함한 애플리케이션을 설정하는 데 다음 예제를 사용합니다.
@@ -152,7 +152,7 @@ npx create-expo-app -e with-router-tailwind
 ```
 
 프로젝트가 작동하고 오류가 없는지 확인하세요. Play Store 또는 App Store에서 실제 기기에 Expo Go Client를 다운로드하세요. 그런 다음 아래 명령을 실행하여 QR 코드를 스캔하여 기기에서 Expo 애플리케이션을 실행하세요. 이제 Expo Go Client로 애플리케이션을 실행 중임을 주의하세요.
-```  
+
 
 
 
@@ -230,7 +230,7 @@ npx expo install expo-dev-client
 
 <img src="/assets/img/2024-05-12-HowtoSetUpExpoDevClientACompleteGuide2024_10.png" />
 
-다음 명령을 사용하여 프로젝트를 로컬에서 컴파일하세요.```
+다음 명령을 사용하여 프로젝트를 로컬에서 컴파일하세요.
 
 
 

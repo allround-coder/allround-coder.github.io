@@ -174,7 +174,7 @@ app.component.html:
 </div>
 ```
 
-위 예제에서는 현재 날짜 객체를 저장하는 currentDate 변수가 있습니다. 그런 다음 템플릿에서 currentDate 변수를 날짜 값으로 형식화하기 위해 date 파이프를 사용합니다.```
+위 예제에서는 현재 날짜 객체를 저장하는 currentDate 변수가 있습니다. 그런 다음 템플릿에서 currentDate 변수를 날짜 값으로 형식화하기 위해 date 파이프를 사용합니다.
 
 <div class="content-ad"></div>
 
@@ -518,25 +518,25 @@ export class AppComponent {
 
 <div class="content-ad"></div>
 
-```markdown
+
     # Observable을 사용하는 AsyncPipe
     { myObservable$ | async }
 
     # Promise를 사용하는 AsyncPipe
     { myPromise$ | async }
-```
 
-```markdown
+
+
 Observable을 사용하는 AsyncPipe
 42
 Promise를 사용하는 AsyncPipe
 Hello World!
-```
+
 
 첫번째 출력 섹션은 Observable을 통해 발행된 값을 보여줍니다. 두번째 출력 섹션은 Promise를 통해 해결된 값을 보여줍니다. AsyncPipe는 자동으로 Observable 및 Promise에 구독하며, 컴포넌트가 파괴되면 메모리 누수를 방지하기 위해 구독을 해제합니다.
 
 # 4. 사용자 정의 Pipe 생성하기
-```
+
 
 <div class="content-ad"></div>
 

@@ -107,11 +107,11 @@ export default async function UserProfile({ userId }) {
 }
 ```
 
-클라이언트 컴포넌트에서의 사용법:```
+클라이언트 컴포넌트에서의 사용법:
 
 
 
-```md
+
 // components/App.client.js
 import UserProfile from './UserProfile.server';
 
@@ -125,14 +125,14 @@ function App({ userId }) {
 }
 
 export default App;
-```
+
 
 ## 3. Form Inputs and Debounced Updates
 
 Instead of debouncing updates through useEffect, handle it directly via controlled input components.
 
 Incorrect Example:
-```
+
 
 
 
@@ -187,7 +187,7 @@ export default useDebounce;
 
 다른 항목 간을 이동할 때 폼 필드나 필터와 같은 상태 변수를 재설정하는 것이 중요합니다. 이 재설정을 처리하는 비효율적인 방법은 useEffect 훅을 사용하여 prop 변경에 따라 상태를 수동으로 지우는 것입니다. 그러나 이렇게 하면 추가 렌더링 사이클이 발생하고 불필요한 복잡성을 야기합니다.
 
-올바르지 않은 예시:```
+올바르지 않은 예시:
 
 
 

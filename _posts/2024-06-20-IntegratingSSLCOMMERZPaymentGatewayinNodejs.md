@@ -66,7 +66,7 @@ MONGO_URI = "mongodb+srv://username:password@cluster0.7ctc5qe.mongodb.net/?retry
 # 단계 3: 익스프레스 서버 설정
 
 이제 익스프레스 서버를 설정하고 결제 작업을 처리하기 위한 필요한 라우트를 정의하세요. app.js 파일을 만들고 다음 코드를 추가하세요:
-```
+
 
 <div class="content-ad"></div>
 

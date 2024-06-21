@@ -71,7 +71,7 @@ A 도메인이 www.aaa.com이고 B 도메인이 www.bbb.com일 때, B 도메인�
 ```
 
 이제 도메인 A는 도메인 B로부터 userId와 같은 데이터가 포함된 메시지를 받을 준비가 되었습니다. 이 데이터를 localStorage에 저장합니다. 이 스크립트는 www.aaa.com 아래에 있음을 기억하세요. Iframe에 포함되어 있더라도 여전히 도메인 A의 localStorage를 사용합니다. 사용자가 도메인 B에서 도메인 A로 이동할 때, 우리는 이미 데이터를 갖고 있을 것입니다. 왜냐하면 도메인 B가 메시지를 보내고 도메인 A가 해당 데이터를 localStorage에 저장했기 때문입니다. 중요한 보안 점검으로 message.origin을 먼저 확인하는 것을 잊지 마세요! 우리는 익숙하지 않은 출처의 메시지에 응답하고 싶지 않습니다.
-```
+
 
 <div class="content-ad"></div>
 

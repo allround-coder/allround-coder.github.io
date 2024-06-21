@@ -43,7 +43,7 @@ react-beautiful-dnd가 무엇인지 모른다면 괜찮아요. Atlassian 팀에�
 
 
 
-```md
+
 ![이미지](/assets/img/2024-05-14-Howtoimplementasimpledrag-and-dropusingCreate-React-Appandreact-beautiful-dnd_3.png)
 
 ```js

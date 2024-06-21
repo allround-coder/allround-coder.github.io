@@ -11,7 +11,7 @@ link: "https://medium.com/@snimkar1905/building-microservices-with-fastapi-and-r
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-06-20-BuildingEnd-to-EndMicroserviceswithFastAPIandRabbitMQAComprehensiveGuide_0.png)
 
 # 소개:
@@ -19,7 +19,7 @@ link: "https://medium.com/@snimkar1905/building-microservices-with-fastapi-and-r
 최근 몇 년간, 마이크로서비스 아키텍처는 확장 가능하고 유지보수 가능하며 유연한 애플리케이션을 만드는 능력 때문에 인기를 얻었습니다. 이 블로그 포스트에서는 마이크로서비스 아키텍처의 개념을 탐구하고, 파이썬 생태계의 강력한 도구인 FastAPI와 RabbitMQ를 사용하여 간단한 마이크로서비스를 구축하는 방법을 보여드리겠습니다.
 
 # 몰리딕 아키텍처란? 
-```
+
 
 <div class="content-ad"></div>
 
@@ -87,9 +87,7 @@ PostgreSQL을 Docker를 사용하여 설치하려면 다음 명령을 실행하�
 ```js
 도커를 사용하여 RabbitMQ를 설치하기 위해서는 다음 명령어를 실행하세요:
 
-```js
 도커를 실행하여 RabbitMQ를 설치하려면 다음 명령어를 실행하세요:
-```
 
 <div class="content-ad"></div>
 
@@ -97,7 +95,6 @@ PostgreSQL을 Docker를 사용하여 설치하려면 다음 명령을 실행하�
 
 ## A. 프로젝트 폴더 설정하기
 
-```js
 microservices-demo/
 │
 ├── gateway/
@@ -128,7 +125,6 @@ microservices-demo/
 │ └── main.py
 │
 └── README.md
-```
 
 ## B. 게이트웨이 구현하기
 
@@ -136,7 +132,6 @@ microservices-demo/
 
 이제 게이트웨이 서비스를 구현해 봅시다. gateway/ 디렉토리에 main.py 파일을 만들어 아래 코드를 추가해주세요:
 
-```js
 from fastapi import FastAPI, HTTPException, File, UploadFile
 import fastapi as _fastapi
 from fastapi.security import OAuth2PasswordBearer
@@ -273,21 +268,17 @@ def ocr(file: UploadFile = File(...), payload: dict = _fastapi.Depends(jwt_valid
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=5001, reload=True)
-```
 
 게이트웨이 환경을 설정하려면 gateway 폴더에 .env 파일을 만드세요.
 
-```js
 AUTH_BASE_URL=http://0.0.0.0:5000
 JWT_SECRET=e56623570e0a0152989fd38e13da9cd6eb7031e4e039e939ba845167ee59b496
 RABBITMQ_URL=localhost
-```
 
 <div class="content-ad"></div>
 
 다른 마이크로서비스와 통신하기 위해 RabbitMQ를 사용할 것입니다. 이는 서비스 간 비동기 메시징을 가능하게 하는 메시지 브로커입니다. RabbitMQ 서버와의 통신을 처리하기 위해 gateway/ 디렉토리에 rpc_client.py 파일을 생성할 것입니다.
 
-```python
 import pika
 import uuid
 import json
@@ -333,7 +324,6 @@ class OcrRpcClient(object):
             self.connection.process_data_events()
         response_json = json.loads(self.response)
         return response_json
-```
 
 이 코드는 RabbitMQ를 사용하여 OCR 마이크로서비스(ML 마이크로서비스)로 메시지를 보내기 위한 클라이언트 클래스인 OcrRpcClient를 정의합니다. 연결을 초기화하고, 응답을 위한 콜백 큐를 설정하고, 메시지를 보내고 응답을 비동기적으로 받을 수 있는 방법을 제공합니다.
 
@@ -355,7 +345,6 @@ OCR 마이크로서비스(ML 마이크로서비스)에 메시지를 보냅니다
 
 이 코드는 FastAPI를 사용하여 사용자 등록, 로그인, JWT 토큰 생성, OTP를 사용한 이메일 확인 및 사용자 프로필 검색을 제공하는 인증 서비스를 구현합니다. 데이터베이스 작업에는 SQLAlchemy를 사용하고 OTP 이메일을 보내기 위해 RabbitMQ를 사용합니다. 이 서비스에는 사용자 생성, JWT 토큰 생성, 사용자 프로필 검색 및 이메일 확인을 위한 OTP 확인에 대한 엔드포인트가 포함되어 있습니다.
 
-```js
 from typing import List
 from fastapi import HTTPException 
 import fastapi as _fastapi
@@ -476,13 +465,11 @@ async def verify_otp(userdata: _schemas.VerifyOtp, db: _orm.Session = _fastapi.D
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=5000, reload=True)
-```
 
 이 코드는 PostgreSQL 데이터베이스에 연결하기 위해 SQLAlchemy 엔진과 세션 메이커를 설정합니다. dotenv를 사용하여 환경 변수에서 데이터베이스 연결 세부 정보를 로드합니다. DATABASE_URL은 호스트, 데이터베이스 이름, 사용자 이름 및 암호를 포함하여 검색된 환경 변수를 사용하여 구성됩니다. 데이터베이스 연결 세부를 사용하여 create_engine를 사용하여 엔진을 생성하고 해당 엔진에 바인딩된 세션 메이커인 SessionLocal을 정의합니다. ORM 모델을 정의하는 Declarative Base로 사용하기 위해 Base 변수가 초기화됩니다.
 
 <div class="content-ad"></div>
 
-```python
 import sqlalchemy as _sql
 import sqlalchemy.ext.declarative as _declarative
 import sqlalchemy.orm as _orm
@@ -504,11 +491,9 @@ DATABASE_URL = f"postgresql://{postgres_user}:{postgres_password}@{postgres_host
 engine = _sql.create_engine(DATABASE_URL)
 SessionLocal = _orm.sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = _declarative.declarative_base()
-```
 
 이 코드는 사용자 및 주소 테이블에 대한 SQLAlchemy 모델을 정의하며, 사용자 정보 및 주소를 저장하고 이들 사이의 관계를 설정합니다. 또한 제공된 엔진을 사용하여 데이터베이스에 테이블을 생성합니다.
 
-```python
 import datetime as _dt
 import sqlalchemy as _sql
 import sqlalchemy.orm as _orm
@@ -544,9 +529,8 @@ class Address(_database.Base):
     user = _orm.relationship("User", back_populates="addresses")
     latitude = _sql.Column(_sql.Float)
     longitude = _sql.Column(_sql.Float)
-```
 
-이 코드는 사용자 관련 데이터 구조에 대한 Pydantic 모델을 정의하며, 사용자 생성, 인증 및 OTP 확인용입니다. 위치 정보를 위한 주소 모델도 포함되어 있습니다. 이 모델들은 사전 속성으로부터 인스턴스를 자동으로 생성하도록 구성되어 있습니다.```
+이 코드는 사용자 관련 데이터 구조에 대한 Pydantic 모델을 정의하며, 사용자 생성, 인증 및 OTP 확인용입니다. 위치 정보를 위한 주소 모델도 포함되어 있습니다. 이 모델들은 사전 속성으로부터 인스턴스를 자동으로 생성하도록 구성되어 있습니다.
 
 <div class="content-ad"></div>
 
@@ -554,23 +538,18 @@ class Address(_database.Base):
 
 환경 변수 로드
 
-```python
 JWT_SECRET = os.getenv("JWT_SECRET")
 RABBITMQ_URL = os.getenv("RABBITMQ_URL")
 oauth2schema = _security.OAuth2PasswordBearer("/api/token")
-```
 
 데이터베이스 생성
 
-```python
 def create_database():
     # 데이터베이스 테이블 생성
     return _database.Base.metadata.create_all(bind=_database.engine)
-```
 
 데이터베이스 세션 가져오기
 
-```python
 def get_db():
     # 데이터베이스 세션을 얻는 의존성
     db = _database.SessionLocal()
@@ -578,19 +557,15 @@ def get_db():
         yield db
     finally:
         db.close()
-```
 
 이메일별 사용자 가져오기
 
-```python
 async def get_user_by_email(email: str, db: _orm.Session):
     # 데이터베이스에서 이메일별로 사용자 검색
     return db.query(_models.User).filter(_models.User.email == email and _models.User.is_verified == True).first()
-```
 
 새 사용자 생성
 
-```python
 async def create_user(user: _schemas.UserCreate, db: _orm.Session):
     # 데이터베이스에 새 사용자 생성
     try:
@@ -605,11 +580,9 @@ async def create_user(user: _schemas.UserCreate, db: _orm.Session):
     db.commit()
     db.refresh(user_obj)
     return user_obj
-```
 
 사용자 인증
 
-```python
 async def authenticate_user(email: str, password: str, db: _orm.Session):
     # 사용자 인증
     user = await get_user_by_email(email=email, db=db)
@@ -624,11 +597,9 @@ async def authenticate_user(email: str, password: str, db: _orm.Session):
         return False
 
     return user
-```
 
 JWT 토큰 생성
 
-```python
 async def create_token(user: _models.User):
     # 인증을 위한 JWT 토큰 생성
     user_obj = _schemas.User.from_orm(user)
@@ -636,11 +607,9 @@ async def create_token(user: _models.User):
     del user_dict["date_created"]
     token = jwt.encode(user_dict, JWT_SECRET, algorithm="HS256")
     return dict(access_token=token, token_type="bearer")
-```
 
 현재 사용자 가져오기
 
-```python
 async def get_current_user(db: _orm.Session = _fastapi.Depends(get_db), token: str = _fastapi.Depends(oauth2schema)):
     # JWT 토큰에서 현재 인증된 사용자 가져오기
     try:
@@ -649,19 +618,15 @@ async def get_current_user(db: _orm.Session = _fastapi.Depends(get_db), token: s
     except:
         raise _fastapi.HTTPException(status_code=401, detail="유효하지 않은 이메일 또는 비밀번호")
     return _schemas.User.from_orm(user)
-```
 
 랜덤 OTP 생성
 
-```python
 def generate_otp():
     # 랜덤 OTP 생성
     return str(random.randint(100000, 999999))
-```
 
 RabbitMQ에 연결
 
-```python
 def connect_to_rabbitmq():
     # RabbitMQ에 연결
     while True:
@@ -671,11 +636,9 @@ def connect_to_rabbitmq():
         except pika.exceptions.AMQPConnectionError:
             print("RabbitMQ에 연결하지 못했습니다. 5초 후 다시 시도 중...")
             time.sleep(5)
-```
 
 OTP 이메일 알림 전송
 
-```python
 def send_otp(email, otp, channel):
     # RabbitMQ를 사용하여 OTP 이메일 알림 전송
     connection = connect_to_rabbitmq()
@@ -711,7 +674,6 @@ def send_otp(email, otp, channel):
     finally:
         channel.close()
         connection.close()
-```
 
 ## D. 머신 러닝 마이크로서비스 구현
 
@@ -719,7 +681,6 @@ def send_otp(email, otp, channel):
 
 이 Python 스크립트는 RabbitMQ 서버에 연결하여 'ocr_service'라는 큐에서 메시지를 소비합니다. 메시지를받으면 OCRService 객체를 사용하여 처리하고 send_email_notification 함수를 사용하여 이메일 알림을 보내며, 그런 다음 응답을 응답 큐에 발행합니다. 각 메시지를 처리한 후 RabbitMQ에 메시지 전달을 인식합니다. 스크립트는 RabbitMQ가 전달할 수 있는 미인증 메시지의 수를 제한하는 prefetch count 1을 사용합니다.
 
-```js
 import pika
 import json
 from utils import OCRService
@@ -755,9 +716,7 @@ channel.basic_consume(queue='ocr_service', on_message_callback=on_request)
 # 메시지 수신 시작
 print(" [x] RPC 요청 대기중")
 channel.start_consuming()
-```
 
-```js
 import json
 import base64
 import pandas as pd
@@ -826,7 +785,6 @@ def send_email_notification(email, ocr_text, channel):
         print("OCR 처리 완료 이메일 알림 전송됨")
     except Exception as err:
         print(f"메시지 게시 실패: {err}")
-```
 
 ## D. 알림 마이크로서비스 구현
 
@@ -834,7 +792,6 @@ def send_email_notification(email, ocr_text, channel):
 
 이 스크립트는 "email_notification" 큐에서 메시지를 수신하는 RabbitMQ 소비자를 설정합니다. 메시지를 받으면 email_service 모듈의 notification 함수를 호출하여 알림 프로세스를 처리합니다. 성공하면 메시지를 확인하고, 그렇지 않으면 메시지를 거부하고 오류 메시지를 출력합니다.
 
-```js
 import pika
 import sys
 import os
@@ -880,9 +837,7 @@ if __name__ == "__main__":
             sys.exit(0)
         except SystemExit:
             os._exit(0)
-```
 
-```js
 import smtplib, os, json
 from email.message import EmailMessage
 from dotenv import load_dotenv
@@ -921,7 +876,6 @@ def notification(message):
         print("이메일 발송 완료")
     except Exception as e:
         print(f"이메일 발송 실패: {e}")
-```
 
 # 애플리케이션 데모
 

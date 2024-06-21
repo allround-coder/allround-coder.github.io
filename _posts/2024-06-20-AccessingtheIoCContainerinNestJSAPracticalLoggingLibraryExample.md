@@ -226,7 +226,7 @@ instance[methodKey] = (...args: any[]) => {
 
 # 실제 예시
 
-createUser 및 deleteUser 메소드를 갖는 UserService 클래스가 있다고 가정해보겠습니다:```
+createUser 및 deleteUser 메소드를 갖는 UserService 클래스가 있다고 가정해보겠습니다:
 
 <div class="content-ad"></div>
 
@@ -253,7 +253,7 @@ LoggerService가 초기화될 때 다음을 합니다:
 - 원본 메서드를 호출하기 전에 호출과 매개변수를 기록하는 새 함수로 메서드를 대체합니다
 
 ## 단계 3: 사용자 정의 데코레이터 정의하기
-```  
+
 
 <div class="content-ad"></div>
 
@@ -314,7 +314,7 @@ export class UserService {
 nest generate controller user
 ```
 
-4. UserController를 구현합니다:```
+4. UserController를 구현합니다:
 
 <div class="content-ad"></div>
 
@@ -343,7 +343,7 @@ export class UserController {
 
 LoggerService와 UserController가 응용 프로그램 모듈에 포함되어 있는지 확인하십시오.
 
-AppModule 업데이트:```
+AppModule 업데이트:
 
 <div class="content-ad"></div>
 
@@ -370,7 +370,7 @@ export class AppModule {
 
 curl을 사용하여 엔드포인트를 테스트하고 로깅 기능을 확인할 수 있습니다.
 
-- 유저 생성:```
+- 유저 생성:
 
 <div class="content-ad"></div>
 
@@ -401,4 +401,3 @@ id가 1인 사용자가 삭제되었습니다.
 이 지침을 따라 NestJS 프로젝트를 생성하고, 특정 메타데이터로 표시된 모든 프로바이더 및 컨트롤러에 대한 메서드 호출을 동적으로 기록하는 로깅 라이브러리를 구축했습니다. 이 튜토리얼은 NestJS의 IoC 컨테이너에 액세스하여 등록된 프로바이더 및 컨트롤러를 검사하고 동적 동작을 적용하는 방법을 보여주었습니다.
 
 사용자 지정 데코레이터와 메타데이터 반사를 활용하여 메서드 호출을 기록하는 유연한 시스템을 구축하여, NestJS의 강력한 IoC 컨테이너를 활용하여 고급 사용 사례에 대처하는 방법을 시연했습니다. 이 접근 방식은 NestJS 애플리케이션의 다른 부분과 동적으로 상호작용해야 하는 다양한 제네릭 및 통합 라이브러리를 구축하기 위해 확장할 수 있습니다.
-```

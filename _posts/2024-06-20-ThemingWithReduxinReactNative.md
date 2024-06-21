@@ -243,11 +243,11 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 ```
 
 이제 저장소를 설정하고 이 저장소를 지속해야 합니다. 지속된 리듀서를 사용하여 저장소를 생성하면 테마 상태를 지속하고 다시 살립니다. 지속된 저장소(persistor)는 persistStore와 Redux 저장소를 사용하여 만듭니다. 이 persistor는 필요할 때 상태를 수동으로 보존하고 다시 살릴 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 상태 = createStore(
 = 지속Reducer,

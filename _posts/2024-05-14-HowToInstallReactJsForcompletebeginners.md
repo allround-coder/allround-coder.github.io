@@ -32,7 +32,7 @@ a) CDN 사용 (가장 쉬운 방법)
 
 a) Vite를 사용하는 방법
 
-명령줄에 다음과 같이 입력하세요: npm create vite@latest app_name — — template react. 그리고 npm install을 실행하고 코드를 행복하게 작성하세요. 이 방법의 장점은 vite가 다양한 기능을 갖추고 빠르며 서버를 빠르게 실행한다는 것입니다.```
+명령줄에 다음과 같이 입력하세요: npm create vite@latest app_name — — template react. 그리고 npm install을 실행하고 코드를 행복하게 작성하세요. 이 방법의 장점은 vite가 다양한 기능을 갖추고 빠르며 서버를 빠르게 실행한다는 것입니다.
 
 
 

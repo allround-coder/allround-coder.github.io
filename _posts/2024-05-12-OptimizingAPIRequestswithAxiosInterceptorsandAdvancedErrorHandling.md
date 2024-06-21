@@ -86,7 +86,6 @@ const api = axios.create({
 ```js
 Axios는 요청과 응답을 전역적으로 처리하기 위해 인터셉터를 사용할 수 있습니다. 이는 헤더 추가, 오류 처리 등과 같은 작업에 유용합니다.
 
-```js
 // 요청 인터셉터
 api.interceptors.request.use(
   (config) => {
@@ -110,7 +109,6 @@ api.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-```
 
 ## 4. 비동기 요청에 대해 Async/Await 사용:
 
@@ -240,4 +238,3 @@ axios 템플릿 코드를 문서에 추가했고, 아래 링크를 참조해주�
 [실시간 코드 — StackBlitz](https://www.0cb.tech/fvopy)
 
 ' embed https://stackblitz.com/edit/vitejs-vite-uqovqp?embed=1&file=src%2Flib%2Faxios.js '
-```

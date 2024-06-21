@@ -122,7 +122,7 @@ function CarBuilder() {
 
 구조적 패턴은 서로 다른 클래스와 객체를 조직화하여 더 큰 구조를 형성하는 것에 관한 것이며 시스템의 한 부분이 변경될 때 전체 시스템이 함께 바뀌지 않도록 보장합니다.
 
-어댑터 패턴```
+어댑터 패턴
 
 
 
@@ -372,7 +372,7 @@ function UserFactory() {
 
 
 
-```md
+
 ```js
 class ThirdPartyAPI {
   constructor() {

@@ -185,7 +185,7 @@ const elementRef = useRef(null);
 ```
 
 참고: 스타일이 포함된 이미지를 다운로드하려면 HTML에 인라인 스타일을 포함해야 합니다.
-```
+
 
 
 

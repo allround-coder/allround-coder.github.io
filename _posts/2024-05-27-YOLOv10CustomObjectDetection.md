@@ -90,15 +90,15 @@ dataset = version.download("yolov8")
 
 <div class="content-ad"></div>
 
-```md
+
 !yolo task=detect mode=train epochs=25 batch=32 plots=True \
 model='/content/-q/yolov10n.pt' \
 data='/content/X-Ray-Baggage-3/data.yaml'
-```
+
 
 예시 data.yaml 파일
 
-```md
+
 names:
 - Gun
 - Knife
@@ -118,7 +118,7 @@ roboflow:
 test: /content/X-Ray-Baggage-3/test/images
 train: /content/X-Ray-Baggage-3/train/images
 val: /content/X-Ray-Baggage-3/valid/images
-```
+
 
 결과를 살펴봅시다.
  

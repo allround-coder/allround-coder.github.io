@@ -143,7 +143,7 @@ export default IFrame;
 <img src="/assets/img/2024-05-12-iFramewipesoutlistenersandReactdoesnotknowaboutit_0.png" />
 
 # 화면에서 보이는 모습
-```
+
 
 
 

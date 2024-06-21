@@ -119,7 +119,7 @@ PEP8 문서는 우리에게 Python 코딩 규칙을 제공하여 코드베이스
 
 제품용 코드에서는 모든 사람이 따라야 할 폴더/파일 구조가 있습니다. 각 팀마다 약간씩 다를 수 있지만, 동일한 팀 구성원 모두가 합의해야 할 사항입니다.
 
-```markdown
+
 src/
  └── sqlmodels/
     └── dog.py
@@ -146,7 +146,7 @@ src/
 .gitignore
 README.md
 dockerfile
-```
+
 
 <div class="content-ad"></div>
 
@@ -193,7 +193,7 @@ print(dogs)
 
 ORM은 우리 데이터베이스를 감싼 래퍼인데, 시작하는 데는 학습 곡선이 있을 수 있어요. 하지만 거대한 응용프로그램에는 구조가 필요하다는 걸 기억해봐요.
 
-만약 FastAPI 앱에서 수천 개의 문자열 SQL 쿼리를 처리해야 한다면 상황은 좀 체증스러울 거에요 (코드베이스와 정신 건강 모두 말이에요)```
+만약 FastAPI 앱에서 수천 개의 문자열 SQL 쿼리를 처리해야 한다면 상황은 좀 체증스러울 거에요 (코드베이스와 정신 건강 모두 말이에요)
 
 <div class="content-ad"></div>
 
@@ -315,7 +315,7 @@ class Dog(DogBase, table=True):
 ```
 
 그리고 데이터베이스 내의 다른 중요한 관계들도 함께 가져옵니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -13,17 +13,17 @@ link: "https://medium.com/@urban-institute/the-evolution-of-the-urban-institutes
 
 1.한 해 동안 여러 웹사이트를 출시한다고 상상해보세요. 각 사이트는 버튼, 아이콘, 이미지, 제목, 요약 및 날짜와 같은 디자인 요소를 여러 페이지에 걸쳐 복제해야 합니다. 이 복제본마다 다른 카드 변형이 필요할 수도 있습니다. 아래 프로젝트를 참고해주세요:
 
-```markdown
+
 ![이미지 0](/assets/img/2024-06-20-TheEvolutionoftheUrbanInstitutesDesignLibrary_0.png)
-```
 
-```markdown
+
+
 ![이미지 1](/assets/img/2024-06-20-TheEvolutionoftheUrbanInstitutesDesignLibrary_1.png)
-```
 
-```markdown
+
+
 ![이미지 2](/assets/img/2024-06-20-TheEvolutionoftheUrbanInstitutesDesignLibrary_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -67,7 +67,7 @@ Lyndon은 Figma에서 제작되어 일관된 컴포넌트, 색상, 간격 및 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-20-TheEvolutionoftheUrbanInstitutesDesignLibrary_4.png)
 
 Storybook은 접근성이 좋고 직관적인 레이아웃에서 전체 컴포넌트 라이브러리를 제공하여 개발 도구로서 작용하며 디자인 시스템의 살아있는 문서 역할을 합니다. 색상, 간격과 같은 디자인 토큰부터 타이틀과 같은 원자화된 컴포넌트까지, Storybook은 사용자 인터페이스 요소와의 동적 실험을 위한 대화형 컨트롤을 제공합니다. Storybook은 이러한 컴포넌트를 개발, 테스트 및 품질 보증 과정에서 사용할 수 있는 이야기로 보존합니다.
@@ -75,7 +75,7 @@ Storybook은 접근성이 좋고 직관적인 레이아웃에서 전체 컴포�
 결과적으로, Lyndon의 가벼운 독립형 컴포넌트는 빠른 로딩 시간과 유연성을 보장합니다. 버튼 컴포넌트를 통해 사용자는 텍스트, 아이콘, 색상 변형, 링크, 사이즈 등을 쉽게 드롭다운 옵션에서 선택하여 사용자 정의할 수 있습니다.
 
 ![이미지](/assets/img/2024-06-20-TheEvolutionoftheUrbanInstitutesDesignLibrary_5.png)
-```
+
 
 <div class="content-ad"></div>
 

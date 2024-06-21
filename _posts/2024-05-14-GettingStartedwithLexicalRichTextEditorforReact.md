@@ -64,7 +64,7 @@ npm install --save lexical @lexical/react
 ```
 
 # 시작
-```
+
 
 
 
@@ -181,7 +181,7 @@ export const CustomHistoryActions = () => {
 
 설명:
 
-- editor는 `LexicalComposer/` 컴포넌트에서 가져온 컨텍스트 값입니다. 에디터 클래스/메소드에 대한 자세한 내용은 여기서 확인할 수 있습니다:```
+- editor는 `LexicalComposer/` 컴포넌트에서 가져온 컨텍스트 값입니다. 에디터 클래스/메소드에 대한 자세한 내용은 여기서 확인할 수 있습니다:
 
 
 
@@ -356,7 +356,7 @@ return (
 <img src="/assets/img/2024-05-14-GettingStartedwithLexicalRichTextEditorforReact_4.png" />
 
 Nodes에 대해 더 많은 정보를 읽어보실 수 있습니다.
-```
+
 
 
 

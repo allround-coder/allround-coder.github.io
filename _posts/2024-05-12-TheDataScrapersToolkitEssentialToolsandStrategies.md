@@ -443,7 +443,7 @@ const path = require('path');
 ```
 
 아마도 여기까지 JavaScript 플레이 라이팅 소개의 끝입니다. 웹 스크래핑과 playwright에 대해 더 깊이 파고들고 싶다면 이 웹 사이트를 방문해보세요.
-```
+
 
 
 

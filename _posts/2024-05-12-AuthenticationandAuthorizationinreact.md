@@ -46,7 +46,7 @@ yarn add react-router-dom@6
 다음 파일을 만들어보세요: Authentication.js, Authorization.js, 그리고 RoutePath.js.
 
 <img src="/assets/img/2024-05-12-AuthenticationandAuthorizationinreact_1.png" />
-```
+
 
 permissions와 provider라는 이름의 두 개의 추가 폴더를 만들어 주세요. permissions 폴더 안에 permissions.js 파일을, provider 폴더 안에는 authprovider.js 파일을 만들어 주세요.
 
@@ -225,7 +225,7 @@ export default Extra;
 
 Home.js
 
-```
+
 
 
 
@@ -267,7 +267,7 @@ export default Login;
 
 우리는 사용자 상태 변수를 생성하고 입력 필드를 추가했습니다. 입력란에 입력된 데이터는 사용자를 위해 보관되며 로그인할 때 전달됩니다.
 
-```
+
 
 
 
@@ -295,7 +295,7 @@ export const Navbar = () => {
 
 <img src="/assets/img/2024-05-12-AuthenticationandAuthorizationinreact_3.png" />
 
-```md
+
 ![Authentication and Authorization in React](/assets/img/2024-05-12-AuthenticationandAuthorizationinreact_4.png)
 
 Profile.js
@@ -323,11 +323,11 @@ const Profile = () => {
 
 export default Profile;
 ```
-```
+
 
 We used useAuth() to access user and logout(). We added a logout button to handle logout operations and displayed the username of the user who is presently logged in.
 
-```
+
 
 
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@w3lt/why-3-in-1-2-3-return-false-464de649cb21"
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-06-20-Why3in123falseinJavaScriptTypeScript_0.png" />
 
 안녕 친구들, 이번 주에는 몇 가지 재미있는 것들을 배웠어요. 오늘은 그 중 일부를 공유하고 싶습니다. 주제는 in 연산자에 대한 것이에요. 간단한 예제로 시작해보죠:
@@ -21,7 +21,7 @@ console.log(3 in [1, 2, 3]) // false
 ```
 
 의아하지 않나요? 3이 [1, 2, 3] 안에 없어요. 왜 그럴까요??? 그 이유를 알아보기 위해 in 연산자를 살펴보도록 해요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -203,7 +203,7 @@ console.log(person.name, person.name !== undefined); // undefined false
 ```
 
 빠르게 다시 한 번 요약해보면
-```
+
 
 <div class="content-ad"></div>
 

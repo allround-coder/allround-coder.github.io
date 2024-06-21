@@ -39,7 +39,7 @@ npm i react-apexcharts apexcharts
 pnpm i react-apexcharts apexcharts
 ```
 
-우리는 기존의 신뢰받는 페이지와 새롭고 반짝이는 앱 디렉토리를 함께 사용할 것입니다. 두 가지의 구현 차이는 크지 않으니 시작해 봅시다.```
+우리는 기존의 신뢰받는 페이지와 새롭고 반짝이는 앱 디렉토리를 함께 사용할 것입니다. 두 가지의 구현 차이는 크지 않으니 시작해 봅시다.
 
 
 
@@ -100,7 +100,7 @@ export function ExampleChart(){
 import Chart from 'react-apexcharts'
 ```
 
-아마도 이런 에러를 마주하게 될 것입니다```
+아마도 이런 에러를 마주하게 될 것입니다
 
 
 

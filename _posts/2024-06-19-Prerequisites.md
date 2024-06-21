@@ -33,7 +33,7 @@ link: "https://medium.com/@zemmel.mootez/implementing-keycloak-authentication-in
 
 <div class="content-ad"></div>
 
-```markdown
+
 nextjs-app
 ├── auth
 │   ├── config
@@ -56,7 +56,7 @@ nextjs-app
 먼저, Next.js 프로젝트에서 Keycloak을 구성해야 합니다. Keycloak은 애플리케이션과 연결하기 위해 초기 구성이 필요합니다. 설정 파일을 만들어 시작하겠습니다.
 
 Keycloak 설정 파일 만들기
-```
+
 
 <div class="content-ad"></div>
 

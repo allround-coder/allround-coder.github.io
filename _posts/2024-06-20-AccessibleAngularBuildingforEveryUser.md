@@ -51,7 +51,7 @@ link: "https://medium.com/@babatundelamidi/accessible-angular-building-for-every
 
 <div class="content-ad"></div>
 
-```md
+
 html
 <header>
   <nav>
@@ -67,15 +67,15 @@ html
 <footer>
   <p>© 2024 Babatunde Lamidi</p>
 </footer>
-```
+
 
 ## 2. Implement ARIA (Accessible Rich Internet Applications)
 
 ARIA 속성은 웹 콘텐츠의 의미를 향상시켜 보조 기술에 대한 추가 정보를 제공하여 응용 프로그램을 보다 접근성이 높게 만들어줍니다. ARIA 역할, 상태 및 속성을 사용하여 응용 프로그램을 더 쉽게 접근할 수 있도록 만들어보세요.
 
-```md
+
 <button aria-label="close" role="button">X</button>
-```
+
 
 <div class="content-ad"></div>
 
@@ -133,20 +133,20 @@ export class FocusExampleComponent implements OnInit {
 
 <div class="content-ad"></div>
 
-```markdown
+
 <label for="username">사용자 이름</label>
 <input type="text" id="username" name="username" />
 <label for="email">이메일</label>
 <input type="email" id="email" name="email" />
 <button type="submit" role="button">제출</button>
-```
+
 
 ## 6. 충분한 색 대비 보장
 
 시각 장애가 있는 사용자를 위해 텍스트와 배경 간의 높은 대비는 가독성을 향상시킵니다. WebAIM의 색 대비 점검기와 같은 도구를 사용하여 접근성 표준을 준수하는지 확인해보세요.
 
 ## 7. 비 텍스트 콘텐츠를 위한 텍스트 대체 제공하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -217,4 +217,4 @@ import { MatInputModule, MatButtonModule } from '@angular/material';
 export class AppModule {}
 ```
 
-웹 접근성이란 모든 사용자에게 포용되고 사용하기 쉬운 웹 환경을 만드는 데 준수만큼 중요합니다. Angular의 도구와 기능을 활용하고 최상의 모범 사례를 따르며 애플리케이션을 지속적으로 테스트하고 개선함으로써 모든 사용자가 웹 애플리케이션에 접근하고 혜택을 받을 수 있도록 보장할 수 있습니다. 개발 프로세스에서 웹 접근성을 핵심 원칙으로 받아들이면 포괄적이고 사용자 친화적인 애플리케이션을 구축할 수 있습니다.```
+웹 접근성이란 모든 사용자에게 포용되고 사용하기 쉬운 웹 환경을 만드는 데 준수만큼 중요합니다. Angular의 도구와 기능을 활용하고 최상의 모범 사례를 따르며 애플리케이션을 지속적으로 테스트하고 개선함으로써 모든 사용자가 웹 애플리케이션에 접근하고 혜택을 받을 수 있도록 보장할 수 있습니다. 개발 프로세스에서 웹 접근성을 핵심 원칙으로 받아들이면 포괄적이고 사용자 친화적인 애플리케이션을 구축할 수 있습니다.

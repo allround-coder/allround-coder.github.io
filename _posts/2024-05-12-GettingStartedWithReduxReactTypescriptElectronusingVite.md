@@ -103,7 +103,7 @@ yarn add redux
 첫 번째 Redux 스토어 생성하기
 
 Redux 스토어를 생성하기 전에 slice를 정의해야 합니다. slice는 Redux 스토어의 독립된 모듈입니다. 프로젝트의 src 폴더로 이동하여 slices라는 폴더를 만듭니다. 이 폴더는 redux 스토어의 독립된 모듈 또는 slice를 보관할 것입니다. 나중에 이를 redux 스토어에 삽입할 것입니다.
-```
+
 
 
 
@@ -187,7 +187,7 @@ const counterSlice = createSlice({
 첫 번째 슬라이스를 정의한 후에는 이 슬라이스를 보유하는 store를 생성합니다. 이를 프로젝트에서 만들어 봅시다. src 폴더 안에 stores라는 새 폴더를 만들어주세요. 그 안에 store.ts라는 새 파일을 만드세요.
 
 <img src="/assets/img/2024-05-12-GettingStartedWithReduxReactTypescriptElectronusingVite_6.png" />
-```
+
 
 
 
@@ -229,7 +229,7 @@ export type AppDispatch = typeof store.dispatch
 Redux 문서에 따르면 redux toolkit은 추가적인 typings가 필요 없지만, 우리가 필요할 때 참조할 수 있도록 RootState와 AppDispatch를 추출해야 합니다. 우리의 store가 커지고 더 많은 slice가 추가될수록, 이러한 유형을 추론하는 것은 이들이 정확히 업데이트되도록 하기 위함입니다.
 
 또한 Redux 문서는 TypeScript와 작업할 때 useDispatch()와 useSelector()에 대한 사용자 정의 타입된 훅을 정의하는 것이 최선의 실천 방법임을 강조합니다. 이러한 함수들은 컴포넌트에서 상태 값을 청취하고 상태 값을 업데이트하는 데 사용될 것이며, 이렇게 함으로써 값이 업데이트 될 때 store 내에서 업데이트된 내용이 반영되도록 합니다. 각 훅이 하는 일에 대한 간단한 개요는 다음과 같습니다.
-```
+
 
 
 

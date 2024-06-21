@@ -78,7 +78,7 @@ export default ScreenB;
 
 이 예시에서:
 - ScreenA는 navigation.navigate를 사용하여 ScreenB로 이동하고 매개변수로 콜백 함수(onGoBack)를 전달합니다.
-- ScreenB는 navigation route에서 콜백 함수를 추출하고 이를 사용하여 되돌아갈 때 ScreenA로 데이터를 전달합니다.```
+- ScreenB는 navigation route에서 콜백 함수를 추출하고 이를 사용하여 되돌아갈 때 ScreenA로 데이터를 전달합니다.
 
 <div class="content-ad"></div>
 

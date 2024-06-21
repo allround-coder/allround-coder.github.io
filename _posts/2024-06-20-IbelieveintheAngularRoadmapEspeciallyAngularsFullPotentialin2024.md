@@ -86,7 +86,7 @@ Angular CLI는 프로젝트 설정 및 관리를 간단하게 해주며, 다음�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Angular](/assets/img/2024-06-20-IbelieveintheAngularRoadmapEspeciallyAngularsFullPotentialin2024_2.png)
 
 ## Angular Roadmap의 핵심 개념 및 모범 사례
@@ -97,7 +97,7 @@ Angular CLI는 프로젝트 설정 및 관리를 간단하게 해주며, 다음�
 - 반응형 폼(reactive forms): 복잡한 데이터 입력을 위한 모델 주도 접근 방식
 - 의존성 주입(dependency injection): 모듈화 및 단위 테스트 단순화
 - HTTP 클라이언트: 외부 API와의 통신 처리
-```  
+
 
 <div class="content-ad"></div>
 

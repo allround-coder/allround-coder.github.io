@@ -152,9 +152,9 @@ HTML (하이퍼텍스트 마크업 언어)는 모든 웹사이트의 기초입�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Description of Image](path/to/image.jpg)
-```
+
 
 # 🗓️ Day 4: HTML Semantic Tags
 
@@ -177,13 +177,13 @@ HTML (하이퍼텍스트 마크업 언어)는 모든 웹사이트의 기초입�
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 🗓️ Day 5: HTML 미디어 태그
 
 미디어 태그를 사용하면 비디오, 오디오 및 기타 멀티미디어 요소를 웹 페이지에 삽입하여 사용자 경험을 향상시킬 수 있습니다.
 
 ## 학습 자료:
-```
+
 
 <div class="content-ad"></div>
 
