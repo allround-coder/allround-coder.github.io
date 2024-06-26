@@ -200,7 +200,7 @@ Streamlit 검색 UI에서 다시 "우주 전투"를 검색해보세요 - 이제 
 <div class="content-ad"></div>
 
 
-```markdown
+
 ![StreamChangesfromaPostgreSQLDatabasetoaVectorStore_7](/assets/img/2024-06-22-StreamChangesfromaPostgreSQLDatabasetoaVectorStore_7.png)
 
 "The War of the Words"이 상위 자리에서 밀려난 이유는 새로 추가된 용어가 의미론적으로 더 관련된 설명을 갖고 있기 때문이다: 설명에서 "전쟁"이라는 용어는 의미에서 "전투"에 더 가깝고, "국제 우주"는 "화성"보다 "우주"라는 검색어에 의미론적으로 더 가까워진다.
@@ -208,7 +208,7 @@ Streamlit 검색 UI에서 다시 "우주 전투"를 검색해보세요 - 이제 
 # 하드웨어 하에서 작동하는 방식
 
 이제 이 프로토타입이 무엇을 하는지 이해했으니, 어떻게 작동하는지 살펴보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -414,7 +414,7 @@ def simplify_data(row):
 }
 ```
 
-두 번째 함수는 단순화된 페이로드의 "description" 필드에 대한 임베딩을 생성하기 위해 Qdrant의 FastEmbed 라이브러리를 사용합니다.```
+두 번째 함수는 단순화된 페이로드의 "description" 필드에 대한 임베딩을 생성하기 위해 Qdrant의 FastEmbed 라이브러리를 사용합니다.
 
 <div class="content-ad"></div>
 
@@ -480,7 +480,7 @@ app.run(sdf)
 이 프로세스는 sdf.update() 방법을 다시 사용하지만 먼저 sdf.update()에 전달 할 함수를 정의해야합니다. 즉, 들어오는 벡터와 메타데이터를 벡터 DB에 입력하는 함수를 정의해야합니다. 전체 코드는 이 GitHub 폴더에서 찾을 수 있습니다.
 
 여기서는 환경 변수를 사용하여 벡터 DB에 연결을 정의하고, 스트리밍 데이터프레임 행에서 관련 데이터를 추출하며, upload_points() 메서드를 사용하여 벡터 DB(이 경우 로컬 Qdrant DB)에 항목을 추가합니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@maks-dolgikh/the-front-end-development-were-used-to-i
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-06-22-TheFront-EndDevelopmentwereusedtoisdying_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/@maks-dolgikh/the-front-end-development-were-used-to-i
 SPA가 등장하기 전에 웹 애플리케이션은 일반적으로 다중 페이지로 이루어져 있었습니다. 사용자가 애플리케이션과 상호 작용할 때마다 서버가 새로운 전체 페이지를 보내고 브라우저가 다시로드하는 방식이었습니다. 사용자가 페이지 간을 이동할 때마다 완전한 페이지 재로드가 발생했고, 이로 인해 속도가 느려지고 부자연스러운 사용자 경험이 발생할 수 있었습니다. 비슷한 애플리케이션들은 주로 PHP, Ruby on Rails, ASP.NET 등과 같은 서버 측 기술을 사용하여 구축되었는데, 이들은 서버 측에서 HTML 코드를 생성하여 브라우저로 보냈습니다.
 
 ![image](/assets/img/2024-06-22-TheFront-EndDevelopmentwereusedtoisdying_1.png)
-```
+
 
 <div class="content-ad"></div>
 

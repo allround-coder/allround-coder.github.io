@@ -31,21 +31,21 @@ link: "https://medium.com/@manikmudholkar831995/the-v8-javascript-engine-d1434ca
 
 <div class="content-ad"></div>
 
-```markdown
+
 내용 목차
 
 * V8를 선택한 이유는?
 * Node.js에서 어떻게 사용되는가?
 * V8는 어떻게 작동하는가?
 * 자체적인 JavaScript 런타임 만들기
-```
+
 
 우리는 Node.js의 가장 낮은 수준에 도달했는데, 여기서는 사물이 혼란스럽고 복잡해집니다. JavaScript는 동적으로 타입이 지정되고 해석되는 언어이며, 우리가 JavaScript에서 실행하는 모든 것은 엔진에 전달됩니다. 그런 다음 엔진은 환경과 상호 작용하여 기계가 프로그램을 실행할 수 있도록 필요한 바이트 코드를 생성합니다. 이를 담당하는 엔진은 Google에서 개발한 오픈 소스 고성능 JavaScript 및 WebAssembly 엔진인 V8입니다. V8는 C++로 작성되었으며 Chrome(또는 유사한 환경)과 Node.js에서 모두 사용됩니다. V8는 ECMAScript와 WebAssembly를 완전히 지원합니다. 흥미로운 점은 V8가 브라우저에만 제한되지 않고 독립적으로 실행되어 모든 C++ 애플리케이션에 임베드될 수 있다는 것입니다.
 
 # V8를 선택한 이유는?
 
 <img src="/assets/img/2024-06-22-TheV8JavaScriptEngine_1.png" />
-```
+
 
 <div class="content-ad"></div>
 

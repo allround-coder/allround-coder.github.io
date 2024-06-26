@@ -175,7 +175,7 @@ import { partition } from "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17
 
 'img' 태그를 Markdown 형식으로 바꿔보세요.
 
-```markdown
+
 ![이미지](/assets/img/2024-06-22-ItsTimetoTalkAboutImportMapMicroFrontendandNxMonorepo_7.png)
 
 HTML에 새로운 import map을 주입함으로써, 어떤 번들이든 후킹/매핑할 수 있습니다. 따라서, 마이크로 프론트엔드, 구성 요소, 심지어 공유 라이브러리를 대체할 수 있습니다!
@@ -183,7 +183,7 @@ HTML에 새로운 import map을 주입함으로써, 어떤 번들이든 후킹/�
 ## 보안
 
 웹 응용 프로그램에서 import map을 덮어 쓰는 것은 보안을 감소시키지 않습니다. 왜냐하면 모든 프론트엔드 자산은 공개되어 있고 클라이언트 측에서 수정할 수 있기 때문입니다. 그러나 여러 서버로부터 자산을로드하는 응용 프로그램의 경우, Content-Security-Policy (CSP)를 구성하는 것이 중요합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -339,7 +339,7 @@ npx nx run mf-admin:serve
 
 ![애플리케이션 이미지](/assets/img/2024-06-22-ItsTimetoTalkAboutImportMapMicroFrontendandNxMonorepo_11.png)
 
-5. 이제, 즐겨 사용하는 브라우저 디버깅 도구를 열고 로컬 서버를 원격 애플리케이션에 연결하려면 로컬 스토리지에 이 항목을 추가하세요:```
+5. 이제, 즐겨 사용하는 브라우저 디버깅 도구를 열고 로컬 서버를 원격 애플리케이션에 연결하려면 로컬 스토리지에 이 항목을 추가하세요:
 
 <div class="content-ad"></div>
 
@@ -351,7 +351,7 @@ localStorage.setItem('native-federation-override:mfAdmin', 'http://localhost:420
 
 ![이미지](/assets/img/2024-06-22-ItsTimetoTalkAboutImportMapMicroFrontendandNxMonorepo_12.png)
 
-7. 변경 사항을 적용한 후 페이지를 새로고침하면, 원격 서버에 즉시 변경 사항이 반영된 것을 확인할 수 있습니다!```
+7. 변경 사항을 적용한 후 페이지를 새로고침하면, 원격 서버에 즉시 변경 사항이 반영된 것을 확인할 수 있습니다!
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@pdasedano/linear-regression-from-scratch-2f25c1ab21ea
 ---
 
 
-```markdown
+
 ![Linear Regression](/assets/img/2024-06-22-LinearRegressionfromScratch_0.png)
 
 안녕하세요! 가장 간단한 머신 러닝 기술 중 하나인 선형 회귀로 시작합니다. 이 게시물의 수학적 부분은 선형 대수와 미적분의 좋은 이해력이 필요할 것입니다. 이 부분은 다음 시리즈에도 해당될 것이죠. 이는 머신 러닝의 많은 부분을 뒷받침하고 있고, 깊은 이해를 위한 선행 요건입니다. 그렇다면 함께 알아보도록 하죠!
@@ -19,7 +19,7 @@ link: "https://medium.com/@pdasedano/linear-regression-from-scratch-2f25c1ab21ea
 # 단순 선형 회귀
 
 선형 회귀는 여러 점들을 고려하여 최적의 선을 찾는 과제입니다. 최적의 선을 찾는 방법을 알아내기 전에, 이것이 실제로 무엇을 의미하는지를 이해해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -65,9 +65,9 @@ n개의 데이터 포인트가 있는 컬렉션이 있다고 가정해 보겠습
 
 왜 ||y’ — y||²을 사용하는지 궁금하다면 단순히 ||y’ — y||만 사용하는 것보다 제곱 크기를 사용하는 게 훨씬 간단하다는 점이 하나의 답일 수 있습니다. ||y’ — y||는 합계 외부에 하나의 추가 제곱근 기호가 있습니다:
 
-```markdown
+
 <img src="/assets/img/2024-06-22-LinearRegressionfromScratch_8.png" />
-```
+
 
 이로 인해 미분을 할 때 공식을 처리하는 것이 훨씬 더 까다로워집니다.
 
@@ -75,7 +75,7 @@ n개의 데이터 포인트가 있는 컬렉션이 있다고 가정해 보겠습
 
 <div class="content-ad"></div>
 
-```md
+
 ![이미지](/assets/img/2024-06-22-LinearRegressionfromScratch_9.png)
 
 방정식 1에 따라 y'에 kx를 대입하면,
@@ -83,11 +83,11 @@ n개의 데이터 포인트가 있는 컬렉션이 있다고 가정해 보겠습
 ![이미지](/assets/img/2024-06-22-LinearRegressionfromScratch_10.png)
 
 x와 y를 일정한 값으로 유지할 때 오차를 최소화하는 k의 값을 찾아야 합니다. 이를 위해서는 식 1의 k에 대한 미분값을 0으로 설정하고 해를 구할 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Linear Regression 1](/assets/img/2024-06-22-LinearRegressionfromScratch_11.png)
 
 ![Linear Regression 2](/assets/img/2024-06-22-LinearRegressionfromScratch_12.png)
@@ -183,9 +183,9 @@ plt.show()
 
 하나의 독립 변수 x와 하나의 종속 변수 y로 선형 회귀를 수행하는 방법을 배웠습니다. 이제 y가 m개의 독립 변수에 의존한다고 가정해 보겠습니다. 따라서 우리는 (m + 1)차원 데이터를 다루게 됩니다. 우리가 가진 데이터가 다음과 같은 n개의 데이터 포인트일 수 있습니다:
 
-```markdown
+
 ![image](/assets/img/2024-06-22-LinearRegressionfromScratch_14.png)
-```
+
 
 여기서 x_ij는 i번째 데이터 포인트에서 j번째 독립 변수의 값을 나타냅니다.
 
@@ -221,9 +221,9 @@ plt.show()
 
 β 계수들의 벡터를 만들어보세요.
 
-```markdown
+
 Equation 3은 매우 간결하게 다음과 같이 표현될 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -305,7 +305,7 @@ Expression 7의 두 가운데 항목은 인덱스 변수의 이름이 다를 뿐
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-22-LinearRegressionfromScratch_36.png)
 
 ![image](/assets/img/2024-06-22-LinearRegressionfromScratch_37.png)
@@ -313,7 +313,7 @@ Expression 7의 두 가운데 항목은 인덱스 변수의 이름이 다를 뿐
 첫 번째 항이 베타_l을 포함하지 않기 때문에 0이 됩니다.
 
 식 6 미분
-```
+
 
 <div class="content-ad"></div>
 
@@ -339,15 +339,15 @@ Expression 7의 두 가운데 항목은 인덱스 변수의 이름이 다를 뿐
 
 이 시점에서 우리는 다음 항등식을 사용할 수 있습니다.
 
-```
+
 ![식1](/assets/img/2024-06-22-LinearRegressionfromScratch_42.png)
-```
+
 
 이를 통해 방정식 5를 더 변형할 수 있습니다.
 
-```
+
 ![식2](/assets/img/2024-06-22-LinearRegressionfromScratch_43.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -500,7 +500,7 @@ Beta: [-9.95436533  5.02469925 -7.95431319 -1.97266714  1.03726794 -2.95935233
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-22-LinearRegressionfromScratch_45.png)
 
 변수 x_1은 원본 데이터를 나타내고, x_2는 모든 데이터 포인트에서 1로 설정됩니다. 데이터 포인트 (x, y)는 이렇게 (x_1, x_2, y) = (x, 1, y)가 됩니다. x_1 = x이고 x_2 = 1을 대입하면, 방정식 7은 다음과 같이 단순화됩니다.
@@ -508,7 +508,7 @@ Beta: [-9.95436533  5.02469925 -7.95431319 -1.97266714  1.03726794 -2.95935233
 ![image](/assets/img/2024-06-22-LinearRegressionfromScratch_46.png)
 
 여기서 β_1은 기울기이고, β_2는 바이어스입니다. 우리는 다중 선형 회귀를 사용하여 이 모델을 적합시킬 수 있습니다. 고차원 데이터의 경우, 이 과정은 비슷하게 작동합니다.
-```
+
 
 <div class="content-ad"></div>
 

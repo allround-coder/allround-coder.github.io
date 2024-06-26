@@ -81,7 +81,7 @@ app.use((req, res, next) => {
 Express.js는 데이터베이스에 구애받지 않습니다. 특정 데이터베이스 선택을 강요하지 않습니다. 개발자들은 원하는 데이터베이스를 선택할 수 있습니다. Express.js와 데이터베이스를 통합시키는 것은 모듈식이고 유연한 성질과 데이터베이스 연결을 제공하는 npm 패키지의 풍부한 생태계 덕분에 쉽습니다.
 
 4. 배우기 쉽습니다
-```
+
 
 <div class="content-ad"></div>
 
@@ -217,7 +217,7 @@ export class PaymentDto {
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-22-Top5NodejsBackendFrameworksin2024_5.png" />
 
 Koa.js는 Express.js 팀이 설계한 더 작고 표현력 있는 웹 프레임워크입니다. 이를 사용하면 콜백을 버릴 수 있고 async 함수를 활용하여 오류를 처리할 수 있습니다.
@@ -225,7 +225,7 @@ Koa.js는 Express.js 팀이 설계한 더 작고 표현력 있는 웹 프레임�
 # 주요 기능: 눈에 띄는 특징
 
 1. 컨텍스트 객체(ctx)
-```
+
 
 <div class="content-ad"></div>
 
@@ -399,7 +399,7 @@ server.route({
 4. 입력 유효성 검사
 
 입력 유효성 검사는 hapi.js의 또 다른 중요한 측면입니다. route의 options 객체에서 어떤 입력을 검증해야 하는지 정의할 수 있습니다. 기본 validate 객체는 아래 값으로 구성됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -418,7 +418,7 @@ server.route({
 
 ![Adonis.js Logo](/assets/img/2024-06-22-Top5NodejsBackendFrameworksin2024_7.png)
 
-Adonis.js는 Node.js를 위한 전체 기능을 갖춘 MVC 프레임워크입니다. 확장 가능하고 유지 보수 가능한 애플리케이션을 구축할 수 있습니다. Adonis.js는 Laravel과 유사한 구조를 따르며 ORM, 인증 및 라우팅과 같은 기능을 기본 제공합니다.```
+Adonis.js는 Node.js를 위한 전체 기능을 갖춘 MVC 프레임워크입니다. 확장 가능하고 유지 보수 가능한 애플리케이션을 구축할 수 있습니다. Adonis.js는 Laravel과 유사한 구조를 따르며 ORM, 인증 및 라우팅과 같은 기능을 기본 제공합니다.
 
 <div class="content-ad"></div>
 

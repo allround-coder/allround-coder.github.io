@@ -135,9 +135,7 @@ CMD ["/compiled/main"]
 
 이제 빌드된 이미지를 사용하여 도커 컨테이너를 실행하십시오.
 
-```js
 docker run -p 3000:3000 nestjs-pkg-app
-```
 
 <div class="content-ad"></div>
 
@@ -161,7 +159,7 @@ docker run -p 3000:3000 nestjs-pkg-app
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Building NestJS with PKG Module](/assets/img/2024-06-22-BuildingNestJSwithPKGModuleisaResource-SavingGameChanger_2.png)
 
 이 상세한 비교는 사이즈를 중점으로 하여 기존 빌드와 pkg 간의 선택 시 혜택 및 고려 사항을 독자들에게 명확히 전달해줄 것입니다.
@@ -169,7 +167,7 @@ docker run -p 3000:3000 nestjs-pkg-app
 # 결론
 
 요약하면, NestJS 애플리케이션을 빌드하는 데 npm pkg를 활용하는 것은 개발 관행의 중요한 진보를 의미합니다. node_modules 디렉토리의 크기를 줄이고 싱글 이진 파일로의 간단한 배포를 통해, npm pkg는 개발자에게 더 효율적이고 확장 가능한 접근 방식을 제공합니다. 자원 사용량을 최적화하고 배포 워크플로우를 간소화하거나 보안을 강화하려는 경우, npm pkg는 현대적인 개발 요구에 부합하는 매력적인 솔루션을 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

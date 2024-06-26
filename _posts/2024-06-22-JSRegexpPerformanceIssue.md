@@ -42,7 +42,7 @@ console.log(performance.now() - start)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-22-JSRegexpPerformanceIssue_1.png)
 
 만약 우리가 숫자로 구성된 ID 뒤에 "id"라는 단어가 오는 존재를 확인하려고 한다고 가정해봅시다. 우리의 정규 표현식에서는 (\d*) 표현식이 반복되는 숫자 시퀀스를 찾습니다. 하나의 추가와일드카드로 감싸면 엔진은 시퀀스의 시퀀스를 찾습니다. 와일드카드 하나를 제거하면 여전히 동일한 결과를 얻으면서 검색에 필요한 시간을 크게 줄일 수 있습니다.
@@ -50,7 +50,7 @@ console.log(performance.now() - start)
 (백트래킹 알고리즘의 문제에 대해 더 자세히 설명된 것은 여기에서 확인할 수 있습니다)
 
 결론:
-```
+
 
 <div class="content-ad"></div>
 

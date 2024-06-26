@@ -315,9 +315,9 @@ export const SimpleCase3 = () => {
 
 UI는 매우 간단합니다. 국가 목록이 있는 테이블, 각 행마다 "삭제" 버튼, 그리고 테이블 아래에 있는 입력 컴포넌트로 새로운 국가를 목록에 추가할 수 있습니다.
 
-```markdown
+
 ![테이블](/assets/img/2024-06-22-ItriedReactCompilertodayandguesswhat_3.png)
-```
+
 
 코드적으로는 하나의 컴포넌트만 있는데, 상태, 쿼리 및 뮤테이션도 있습니다. 전체 코드는 여기 있습니다. 조사에 필요한 필수 정보만 있는 간소화된 버전은 다음과 같습니다:
 
@@ -377,11 +377,11 @@ export const Countries = () => {
 - "삭제"를 클릭하면 모든 것이 다시 렌더링됩니다.
 - "추가"를 클릭하면 모든 것이 다시 렌더링됩니다.
 
-이런 간단한 컴포넌트의 경우, 컴파일러가 이를 모두 해결해 줄 것으로 기대됩니다. 특히 React Dev Tools에서 모든 것이 메모이제이션되어 있는 것을 고려할 때요.```
+이런 간단한 컴포넌트의 경우, 컴파일러가 이를 모두 해결해 줄 것으로 기대됩니다. 특히 React Dev Tools에서 모든 것이 메모이제이션되어 있는 것을 고려할 때요.
 
 <div class="content-ad"></div>
 
-```
+
 ![React Compiler](/assets/img/2024-06-22-ItriedReactCompilertodayandguesswhat_4.png)
 
 하지만 "컴포넌트 렌더링 시 업데이트 강조" 설정을 활성화해보고 멋진 빛쇼를 즐기세요.
@@ -389,7 +389,7 @@ export const Countries = () => {
 ![Light Show](https://miro.medium.com/v2/resize:fit:1076/0*XrqU0579UN-SXWgm.gif)
 
 테이블 내 모든 컴포넌트에 console.log를 추가하면 헤더 컴포넌트를 제외한 모든 것이 모든 원천에서 상태 업데이트 시 다시 렌더링됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -506,7 +506,7 @@ const onDelete = useCallback(
 const deleteCountryMutation = useMutation({...});
 ```
 
-마지막 단계는 TableBody를 메모이즈하고 메모이즈된 자식을 렌더링하는 것입니다. 모든 것이 올바르게 메모이즈되었다면, 입력란에 타이핑할 때 행과 셀의 재렌더링이 멈추어야 합니다.```
+마지막 단계는 TableBody를 메모이즈하고 메모이즈된 자식을 렌더링하는 것입니다. 모든 것이 올바르게 메모이즈되었다면, 입력란에 타이핑할 때 행과 셀의 재렌더링이 멈추어야 합니다.
 
 <div class="content-ad"></div>
 
@@ -525,7 +525,7 @@ const mutate = React.useCallback(...);
 return { ...result, mutate, mutateAsync: result.mutate };
 ```
 
-반환값은 memoized되지 않은 객체야요!! 단순히 의존성으로 사용할 수 있다고 가정했던 것이 잘못된 판단이었네요.```
+반환값은 memoized되지 않은 객체야요!! 단순히 의존성으로 사용할 수 있다고 가정했던 것이 잘못된 판단이었네요.
 
 <div class="content-ad"></div>
 
@@ -564,7 +564,7 @@ const onDelete = useCallback(
 
 테이블 태그는 다음과 같이 Markdown 형식으로 변경해보겠습니다.
 
-```markdown
+
 | TableBody |
 | --- |
 | {countries?.map(({ name }, index) => ( |
@@ -584,7 +584,7 @@ const onDelete = useCallback(
 |   |   </TableCell> |
 |   </TableRow> |
 | ))} |
-```
+
 
 <div class="content-ad"></div>
 
@@ -662,7 +662,7 @@ const CountryRow = ({ name, onDelete }) => {
 ```
 
 그리고 CountryRow를 React.memo로 감싸주세요. onDelete은 이미 메모이제이션되어 있습니다 - 우리가 이미 수정했어요.
-```  
+
 
 <div class="content-ad"></div>
 

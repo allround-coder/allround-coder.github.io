@@ -211,7 +211,7 @@ API의 다양한 버전을 신중하게 관리함으로써 사용자들에게 �
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/0*4KabDY9ZImT3QdwF.gif)
 
 And hey, don’t miss out on more insightful content — hit that follow button to stay updated!
@@ -219,4 +219,3 @@ And hey, don’t miss out on more insightful content — hit that follow button 
 Get email alerts for my latest Medium posts! Click here.
 
 Let’s learn and grow together. Happy Coding! 👏
-```

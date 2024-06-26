@@ -208,7 +208,7 @@ bootstrapApplication(App, {
 Angular DevTools를 업데이트하여 Angular의 수화 프로세스를 시각화했습니다. 각 구성 요소 옆에는 구성 요소의 수화 상태를 나타내는 아이콘이 있습니다. 페이지에서 Angular가 수화한 구성 요소를 미리 볼 수 있도록 오버레이 모드도 활성화할 수 있습니다. 앱에 수화 오류가 있는 경우 Angular DevTools가 구성 요소 탐색기에 시각화해줍니다.
 
 <img src="/assets/img/2024-06-22-Angularv18isnowavailable_5.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -246,7 +246,7 @@ ng-conf와 Google I/O에서 부분 수분화를 발표했어요. 이 기술은 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-22-Angularv18isnowavailable_6.png" />
 
 올해 구글 I/O에서 Firebase가 앱 호스팅을 발표했습니다. 앱 호스팅은 동적 Angular 애플리케이션의 개발 및 배포를 간소화하며 기본 프레임워크 지원, GitHub 통합 및 인증, 클라우드 Firestore, Firebase의 Vertex AI와의 통합 등을 제공합니다.
@@ -254,7 +254,7 @@ ng-conf와 Google I/O에서 부분 수분화를 발표했어요. 이 기술은 �
 Angular와 함께 Firebase 작업을 하면서 개발자 경험을 보다 원할하게 만들도록 노력해 왔습니다. 오늘 앱 호스팅을 시작하는 것에 관한 속기 보세요!
 
 # 그리고 추가로... 
-```
+
 
 <div class="content-ad"></div>
 
@@ -330,7 +330,7 @@ Angular v17에서 우리는 "응용 프로그램 빌더"를 안정적인 상태�
 
 <div class="content-ad"></div>
 
-```markdown
+
 const routes: Routes = [
 { path: "first-component", component: FirstComponent },
 {
@@ -348,14 +348,14 @@ return `/not-found`;
 },
 { path: "user/:userId", component: OtherComponent },
 ];
-```
+
 
 ### TypeScript 5.4
 
 마지막으로 TypeScript의 종속성이 업데이트되어 최신 TypeScript 5.4 기능을 모두 활용할 수 있게 되었습니다!
 
 ### 커뮤니티 하이라이트
-```
+
 
 <div class="content-ad"></div>
 

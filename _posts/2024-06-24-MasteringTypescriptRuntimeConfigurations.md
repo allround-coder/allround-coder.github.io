@@ -198,4 +198,3 @@ export default config
 ```
 
 ![](https://miro.medium.com/v2/resize:fit:960/1*ipkgq4adHLjucIErFR2buA.gif)
-```

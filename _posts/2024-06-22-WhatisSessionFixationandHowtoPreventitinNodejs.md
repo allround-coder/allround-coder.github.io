@@ -122,7 +122,7 @@ console.log(signature); // x5UxPQEtKrj3sWrIy6S01CQRjAtp4biVs4H2zgqmSs
 
 # 세션 고정이란?
 
-세션 고정 공격에서 공격자는 유효한 사용자 세션을 탈취합니다. 쿠키를 서명하여 다른 사용자의 유효한 세션을 탈취할 수 없도록 하는 걸로 말씀드렸죠. 그런데 만약 공격자가 자신의 유효한 세션을 가지고 또 다른 사용자와 연관시키려고 한다면 어떨까요? 이 경우에 공격자는 피해자를 대신하여 작업을 수행할 수 있어요.```
+세션 고정 공격에서 공격자는 유효한 사용자 세션을 탈취합니다. 쿠키를 서명하여 다른 사용자의 유효한 세션을 탈취할 수 없도록 하는 걸로 말씀드렸죠. 그런데 만약 공격자가 자신의 유효한 세션을 가지고 또 다른 사용자와 연관시키려고 한다면 어떨까요? 이 경우에 공격자는 피해자를 대신하여 작업을 수행할 수 있어요.
 
 <div class="content-ad"></div>
 
@@ -136,7 +136,7 @@ console.log(signature); // x5UxPQEtKrj3sWrIy6S01CQRjAtp4biVs4H2zgqmSs
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-22-WhatisSessionFixationandHowtoPreventitinNodejs_4.png)
 
 이제 브라우저는이 웹 사이트에 대해 이 쿠키를 설정합니다. 다른 사람이 로그인 요청을 보내려고 시도하면 express-session이 새로운 세션 ID를 생성하지 않고 기존 세션 ID를 덮어쓰는 것을 의미합니다.
@@ -144,7 +144,7 @@ console.log(signature); // x5UxPQEtKrj3sWrIy6S01CQRjAtp4biVs4H2zgqmSs
 Joe(피해자)가 이 공유 컴퓨터를 사용하기로 결정하면, Bob의 쿠키와 유효한 세션이 함께 전송된다:
 
 ![이미지](/assets/img/2024-06-22-WhatisSessionFixationandHowtoPreventitinNodejs_5.png)
-```
+
 
 <div class="content-ad"></div>
 

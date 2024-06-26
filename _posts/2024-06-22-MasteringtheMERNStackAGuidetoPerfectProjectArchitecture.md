@@ -31,7 +31,7 @@ Frontend 폴더에서 다음 명령어를 아래 스크린샷에 표시된 대�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Mastering the MERN Stack: A Guide to Perfect Project Architecture](/assets/img/2024-06-22-MasteringtheMERNStackAGuidetoPerfectProjectArchitecture_2.png)
 
 Now we will install dependencies which will be required for setting up the backend server.
@@ -39,7 +39,7 @@ Now we will install dependencies which will be required for setting up the backe
 ![Mastering the MERN Stack: A Guide to Perfect Project Architecture](/assets/img/2024-06-22-MasteringtheMERNStackAGuidetoPerfectProjectArchitecture_3.png)
 
 Why are we using these libraries?
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/coding-beauty/functional-try-catch-javascript-f21885cc
 ---
 
 
-```Markdown
+
 ![image](/assets/img/2024-06-22-Thisishowfunctionaltry-catchtransformsyourJavaScriptcode_0.png)
 
 How common is this?
@@ -19,4 +19,3 @@ How common is this?
 ![image](/assets/img/2024-06-22-Thisishowfunctionaltry-catchtransformsyourJavaScriptcode_1.png)
 
 It’s yet another instance where we want a value that depends on whether or not there’s an exception.
-```

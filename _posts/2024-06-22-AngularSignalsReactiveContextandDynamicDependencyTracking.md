@@ -235,7 +235,7 @@ isItGoodWeatherOutside() {
 보시다시피, untracked()은 우리가 추적하고 싶은 종속성을 제어하는 데 도움이 됩니다. 또한 또 다른 중요한 측면을 관리하는 데 도움이 됩니다:
 
 ## 반응형 컨텍스트
-```
+
 
 <div class="content-ad"></div>
 
@@ -366,7 +366,7 @@ export function untracked<T>(nonReactiveReadsFn: () => T): T {
 이 함수는 반응적인 컨텍스트를 일시적으로 해제하고 우리 함수를 실행한 후 반응적인 컨텍스트를 복원합니다.
 
 따라서 우리 함수가 실행되는 동안, 시그널이 읽혀지는 경우 activeConsumer에 null을 읽고 이를 소비자 목록에 추가하지 않습니다. 즉, 새로운 종속성이 생성되지 않습니다.
-```
+
 
 <div class="content-ad"></div>
 

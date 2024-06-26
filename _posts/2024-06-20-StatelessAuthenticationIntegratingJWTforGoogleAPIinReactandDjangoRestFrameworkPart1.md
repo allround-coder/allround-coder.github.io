@@ -60,7 +60,7 @@ Google API는 구글이 개발한 응용 프로그램 프로그래밍 인터페�
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![Image 1](/assets/img/2024-06-20-StatelessAuthenticationIntegratingJWTforGoogleAPIinReactandDjangoRestFrameworkPart1_2.png)
 
 ![Image 2](/assets/img/2024-06-20-StatelessAuthenticationIntegratingJWTforGoogleAPIinReactandDjangoRestFrameworkPart1_3.png)
@@ -69,7 +69,7 @@ Google API는 구글이 개발한 응용 프로그램 프로그래밍 인터페�
 - 이제 동일한 드롭다운에서 새로운 OAuth 클라이언트 ID를 생성할 수 있습니다. 모바일 앱이나 태블릿 애플리케이션을 개발 중이라면 다른 플랫폼을 사용할 수 있습니다.
 
 ![Image 3](/assets/img/2024-06-20-StatelessAuthenticationIntegratingJWTforGoogleAPIinReactandDjangoRestFrameworkPart1_4.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -43,7 +43,7 @@ export default List;
 ## HOC로 컴포넌트 향상하기
 
 고차 컴포넌트(Higher-Order Components, HOC)는 컴포넌트 로직을 재사용하는 강력한 패턴입니다. 기본적으로 컴포넌트를 감싸서 구조를 변경하지 않고 기능을 확장합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -91,7 +91,7 @@ export default withErrorHandling;
 
 withLoading과 withErrorHandling을 결합하여, 로딩 및 에러 상태를 우아하게 처리하는 견고한 컴포넌트를 만들 수 있습니다. 이 접근 방식은 코드 재사용과 관심사 분리를 촉진하여 컴포넌트를 더 쉽게 유지하고 이해하기 쉽게 만듭니다.
 
-## 훅을 사용하여 데이터 가져오기```
+## 훅을 사용하여 데이터 가져오기
 
 <div class="content-ad"></div>
 

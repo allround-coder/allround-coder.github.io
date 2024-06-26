@@ -213,7 +213,7 @@ Twitter에서 사람들에게 다이렉트 메시지를 보내려면 진실하�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-22-RoadmaptoLearnAIin2024_3.png)
 
 100페이지짜리 머신 러닝 책을 읽어보세요.
@@ -221,7 +221,7 @@ Twitter에서 사람들에게 다이렉트 메시지를 보내려면 진실하�
 ## 처음부터 써보기
 
 읽으면서 알고리즘을 처음부터 짜보세요.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@twinkal189/javascript-scrollintoview-method-198436f81
 ---
 
 
-```Markdown
+
 ![scrollIntoView method](/assets/img/2024-06-22-JavascriptscrollIntoViewmethod_0.png)
 
 scrollIntoView는 요소를 뷰포트 안으로 부드럽게 스크롤할 수 있는 자바스크립트 메소드입니다. 이 메소드는 이미 보이는 뷰포트에 요소가 없다면 요소를 보이게 만듭니다. 사용자가 어떤 작업을 수행하거나 애니메이션 효과로 요소를 보여줄 때 유용합니다.

@@ -323,11 +323,11 @@ for i in range(num_videos):
 ![Training Dataset Structure](/assets/img/2024-06-22-BuildinganAIText-to-VideoModelfromScratchUsingPython_1.png)
 
 각 훈련 비디오 폴더에는 프레임과 텍스트 프롬프트가 포함되어 있습니다. 훈련 데이터세트 샘플을 살펴보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![https://miro.medium.com/v2/resize:fit:1400/1*mzizetR6zOyIheNFtKpo0A.gif](https://miro.medium.com/v2/resize:fit:1400/1*mzizetR6zOyIheNFtKpo0A.gif)
 
 훈련 데이터셋에서 원이 위로 올라가고 오른쪽으로 이동하는 동작을 포함시키지 않았습니다. 이것을 보고 우리가 훈련한 모델을 보지 않은 데이터에서 테스트하는 프롬프트로 사용할 것입니다.
@@ -335,7 +335,7 @@ for i in range(num_videos):
 한 가지 더 중요한 점은 우리의 훈련 데이터에는 장면에서 멀어지는 물체나 카메라 앞에 부분적으로 나타나는 많은 샘플이 포함되어 있다는 것입니다. 이는 OpenAI 소라 데모 비디오에서 관찰한 것과 유사합니다.
 
 ![https://miro.medium.com/v2/resize:fit:1400/1*RP5M_TEt2H4Mo6OhnlcRLA.gif](https://miro.medium.com/v2/resize:fit:1400/1*RP5M_TEt2H4Mo6OhnlcRLA.gif)
-```
+
 
 <div class="content-ad"></div>
 
@@ -410,7 +410,7 @@ dataloader = torch.utils.data.DataLoader(dataset, batch_size=16, shuffle=True)
 ```
 
 # 텍스트 임베딩 레이어 구현하기
-```
+
 
 <div class="content-ad"></div>
 

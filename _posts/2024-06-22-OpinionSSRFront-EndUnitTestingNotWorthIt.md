@@ -21,7 +21,7 @@ link: "https://medium.com/codex/opinion-ssr-front-end-unit-testing-not-worth-it-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![OpinionSSRFront-EndUnitTestingNotWorthIt](/assets/img/2024-06-22-OpinionSSRFront-EndUnitTestingNotWorthIt_0.png)
 
 # 요약
@@ -29,7 +29,7 @@ link: "https://medium.com/codex/opinion-ssr-front-end-unit-testing-not-worth-it-
 먼저, 문서에서 나온 프론트엔드 단위 테스트는 쓸모없고, 많은 비용이 들면서 아무것도 알려주지 않는다는 문제를 강조합니다. 그런 다음, 실제로 우리가 생산 중에 직면한 문제들은 우리가 원하는대로 렌더링되지 않거나, 우리가 원하는 방식으로 렌더링되지 않는 것이었습니다. 따라서, 실제 문제에 어떻게 대처할 수 있는 지를 제안하였는데, 그것은 간단한 if문일 것입니다. 마지막에, '나쁜 것'을 개선하는 방법과 제안된 해결책의 '추악한 점'을 개선하는 방법을 논의합니다. 거의 비전적인 개선 사항으로 글을 마무리합니다.
 
 # 면책조항
-```
+
 
 <div class="content-ad"></div>
 
@@ -84,7 +84,7 @@ link: "https://medium.com/codex/opinion-ssr-front-end-unit-testing-not-worth-it-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![OpinionSSRFront-EndUnitTestingNotWorthIt_1.png](/assets/img/2024-06-22-OpinionSSRFront-EndUnitTestingNotWorthIt_1.png)
 
 나는 각 시나리오에서 완전히 헷갈려 하고 있다. 어쩌면, 너무 복잡하고 오버로드된 앱들에서는 개발 중에 적어도 하나의 질문에 대답할 수 없을지도 모르지만 나는 localhost에서 이러한 질문 중 어느 하나에도 갇히지 않아서 운이 좋은 편이다. 그래서, 중요한 것에 대답하지 못하는 단위 테스트가 왜 필요한지 묻고 싶다. 내 현재 프로젝트를 살펴보고 무엇을 확인하는 데 유용할지 찾아보자.
@@ -92,7 +92,7 @@ link: "https://medium.com/codex/opinion-ssr-front-end-unit-testing-not-worth-it-
 # 실제로 생산에서 어떤 문제가 발생하나요?
 
 위에서 언급한 대로, 문서에 실제 시나리오가 있었으면 좋겠지만, 그럴 만한 것이 없다면 웹사이트에서 만난 문제들을 분류해보려 한다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -143,7 +143,7 @@ link: "https://medium.com/codex/opinion-ssr-front-end-unit-testing-not-worth-it-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-22-OpinionSSRFront-EndUnitTestingNotWorthIt_3.png)
 
 만약 CMS에서 무언가를 기대하고 있지만 컴포넌트가 전혀 렌더링되지 않길 원한다면, null을 반환하면 됩니다. 이것은 말 그대로 빙산의 일각에 불과합니다.
@@ -151,7 +151,7 @@ link: "https://medium.com/codex/opinion-ssr-front-end-unit-testing-not-worth-it-
 ## if 문장만으로 충분할까요?
 
 이미 반복된 느낌일 수 있지만, 사실 "아니요". 이번에는 "아니지만 충분합니다." 
-```
+
 
 <div class="content-ad"></div>
 
@@ -191,7 +191,7 @@ DRY(Don't Repeat Yourself) 원칙부터 적용해보겠습니다. 재사용이 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-22-OpinionSSRFront-EndUnitTestingNotWorthIt_4.png" />
 
 배열 확인을 더 자세히 살펴보세요. 이미지와 Storyblok 유형에 대해서는 if 문을 확장해야 할 필요가 있겠지만, 방향은 명확해야 합니다. 개발 환경에서 컴포넌트 이름을 두 번째 매개변수로 전달하고 부족한 필드 이름을 로깅하여 컴포넌트 이름별로 그룹화하는 방법으로 더 개선할 수 있지만, 지금은 간단하게 유지하는 것을 선호합니다.
@@ -199,7 +199,7 @@ DRY(Don't Repeat Yourself) 원칙부터 적용해보겠습니다. 재사용이 �
 이제 우리는 모든 컴포넌트에 쉽고 일관된 if 문을 갖게 됩니다:
 
 <img src="/assets/img/2024-06-22-OpinionSSRFront-EndUnitTestingNotWorthIt_5.png" />
-```
+
 
 <div class="content-ad"></div>
 

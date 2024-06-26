@@ -93,7 +93,7 @@ np.random.randn(6,4)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_3.png)
 
 안타깝게도 np.random.randn() 함수는 분포의 평균과 표준 편차를 변경할 수 있는 기능을 제공하지 않습니다. 이 함수에서 두 매개변수는 각각 0과 1로 고정되어 있습니다. 만약 이러한 값을 사용자 정의하고 싶다면 np.random.normal()을 사용해야 합니다. np.random.normal()에서는 평균을 loc 매개변수를 사용하여 조절하고, 표준편차는 scale 매개변수를 통해 수정할 수 있습니다.
@@ -104,7 +104,7 @@ np.random.normal(loc=8, scale=3, size=(5,5))
 ```
 
 ![Image](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_4.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -204,7 +204,7 @@ np.random.randint(low=0, high=10, size=(2,5))
 # 9. 뷰(View)와 복사(Copy)
 
 ## 뷰(View)
-```
+
 
 <div class="content-ad"></div>
 
@@ -235,7 +235,7 @@ print('M:', M)
 이 결과가 나온 이유는 M이 단순히 L의 "뷰(view)"일 뿐이기 때문입니다. 다시 말해 위에서 보여준 방법은 배열을 복사하는 것이 아니라 두 변수가 여전히 "연결"되어 있기 때문입니다.
 
 ## 복사
-```
+
 
 <div class="content-ad"></div>
 
@@ -271,20 +271,20 @@ O = np.array([4,5,6], dtype='int32')
 
 <div class="content-ad"></div>
 
-```md
+
 # 코드 블록 17
 print(N + O)
 print(N - O)
 print(N * O)
 print(N / O)
-```
+
 
 ![이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_15.png)
 
 위의 코드블록 17에서 소개된 방법들은 Numpy 배열에서만 작동합니다. 리스트에 똑같은 작업을 시도하면 모든 예제가 오류가 발생할 것이며, 덧셈 연산은 두 리스트를 연결할 것입니다.
 
 대안으로 np.add(), np.subtract(), np.multiply() 및 np.divide()와 같은 Numpy에서 제공하는 함수들을 사용할 수도 있습니다. 연산자 기호와 함수 모두 정확히 같은 결과를 생성합니다. 따라서 이 경우에는 개인 취향에 따라 선택하면 됩니다. 아래 코드블록은 이러한 함수들을 어떻게 사용하는지 보여줍니다. 결과 출력은 Figure 16에 표시된 것과 완전히 동일합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -426,25 +426,25 @@ print(np.tan(T))
 ## 로그 함수
 
 로그 함수에 대해 이야기할 때, 적어도 가장 기본적이라고 생각되는 세 가지 함수가 있습니다. 아래 코드 블록 27에서는 배열 U에 np.log(), np.log2() 및 np.log10() 함수를 어떻게 사용하는지 보여줍니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 코드 블록 27
 U = [1, 2, 10, np.e]
 
 print(np.log(U))
 print(np.log2(U))
 print(np.log10(U))
-```
+
 
 ![Image](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_24.png)
 
 Numpy에서 np.log()는 수학의 ln() 함수와 동일합니다 (밑이 e인 로그). 한편, np.log2()와 np.log10()은 각각 밑이 2와 10인 로그입니다.
 
 ## 통계 함수
-```
+
 
 <div class="content-ad"></div>
 
@@ -482,7 +482,7 @@ print('argmax\t:', np.argmax(V))
 
 ## 선형 대수
 
-넘파이는 선형 대수 계산을 수행하는데 다양한 도구를 제공합니다. 여기서 여러분께 보여드릴 수 있는 몇 가지 사항들이 있습니다. 코드 블록 30에 표시된 두 배열이 있다고 가정해 봅시다.```
+넘파이는 선형 대수 계산을 수행하는데 다양한 도구를 제공합니다. 여기서 여러분께 보여드릴 수 있는 몇 가지 사항들이 있습니다. 코드 블록 30에 표시된 두 배열이 있다고 가정해 봅시다.
 
 <div class="content-ad"></div>
 
@@ -535,7 +535,7 @@ np.transpose(Y)
 ```
 
 ![이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_29.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -600,7 +600,7 @@ print(np.logical_xor(Z, AA))
 
 <div class="content-ad"></div>
 
-```md
+
 ![이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_33.png)
 
 OR 및 AND 연산자와 약간 비슷한 두 가지 특수 기능이 실제로 있는데, np.any()와 np.all()입니다. np.any()는 배열에 하나 이상의 True가 있으면 True를 반환합니다. 반면에 np.all()은 배열의 모든 요소가 True인 경우에만 True를 반환합니다. 아래 코드 블록 40에서는 배열 Z와 AA에 대해 이 두 함수를 어떻게 사용하는지 보여줍니다.
@@ -614,7 +614,7 @@ print('np.all(AA):', np.all(AA))
 ```
 
 ![이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_34.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -706,7 +706,7 @@ AC[(AC > 5) & (AC != 9)]
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_41.png)
 
 실제로 np.where()를 사용하여 동일한 결과를 얻을 수 있습니다. 아래는 그 방법입니다. 결과 출력은 이전 것과 정확히 동일하기 때문에 나타내지 않습니다.
@@ -717,31 +717,31 @@ AC[np.where((AC > 5) & (AC != 9))]
 ```
 
 np.where() 함수 자체는 배열에서 지정된 기준을 충족하는 색인을 반환하여 작동합니다. 이 특정 경우에는 선택된 색인이 6, 8 및 6에 해당하는 5, 6 및 7이며, 이는 배열 AC에서의 값들과 일치합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```md
+
 # 코드블록 49
 np.where((AC > 5) & (AC != 9))
 
 # AC의 요소를 떠올려보세요: [9, 4, 5, 3, 2, 6, 8, 6, 5, 4, 5, 5, 3, 2].
-```
+
 
 ![이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_42.png)
 
 np.where() 함수는 3개의 인수를 전달할 때 더 유용할 수 있습니다. 즉, 조건, x 및 y를 정확한 순서로 전달합니다. 이러한 인수를 다음과 같이 생각할 수 있습니다: "조건이 True를 반환하면 x를 수행하고, 그렇지 않으면 y를 수행합니다." 이를 더 잘 설명하기 위해 다음 코드는 배열 AC의 모든 요소를 5보다 큰 경우 0으로 변환합니다. 그렇지 않으면 숫자가 2씩 추가됩니다.
 
-```md
+
 # 코드블록 50
 print(AC)
 print(np.where(AC > 5, 0, AC+2))
-```
-``` 
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![마스터링 넘파이 효율적인 배열 처리를 위한 포괄적인 가이드 22_43 이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_43.png)
 
 만약 배열 내의 고유한 값의 수를 찾는다는 요청이 오면, np.unique()를 사용할 수 있습니다. 이 함수를 사용하는 방법은 간단합니다. 배열을 유일한 매개변수로 넣기만 하면 됩니다. 또는 만약 원한다면, return_counts=True를 사용하여 해당 값들의 발생 횟수도 얻을 수 있습니다.
@@ -752,7 +752,7 @@ np.unique(AC, return_counts=True)
 ```
 
 ![마스터링 넘파이 효율적인 배열 처리를 위한 포괄적인 가이드 22_44 이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_44.png)
-```  
+
 
 <div class="content-ad"></div>
 
@@ -791,21 +791,21 @@ print(np.flip(np.sort(AE)))
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 코드블록 54
 np.argsort(AD)
 
 # AD의 요소들을 상기해 봅시다: [77, 33, 44, 99, 22, 88, 55, 11, 66].
-```
+
 
 ![이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_47.png)
 
 Figure 48에 표시된 출력은 기본적으로 AD 배열에서 가장 작은 숫자를 포함하는 7번째 인덱스를 보여줍니다. 이후로 AD[4], AD[1], 등이 따릅니다. 정렬이 제대로 작동하는지 확인하기 위해 np.argsort()의 전체 출력을 사용하여 다음과 같이 인덱싱을 수행할 수 있습니다:
 
-```markdown
+
 # 코드블록 55
 AD[np.argsort(AD)]
-```
+
 
 <div class="content-ad"></div>
 
@@ -895,7 +895,7 @@ AH.reshape(3,10)
 
 배열을 재구성할 때 중요한 점은 재구성 전후의 총 요소 수가 일정해야 한다는 것입니다. 다시 말해, 배열 차원은 총 요소 수의 인수여야 합니다. 이 요구 사항을 충족하지 못하면 오류가 발생합니다.
 
-배열 재구성은 2D 배열에만 국한되지 않습니다. 아래 코드 블록에서 배열을 3D로 변환하는 예시를 보여드리겠습니다.```
+배열 재구성은 2D 배열에만 국한되지 않습니다. 아래 코드 블록에서 배열을 3D로 변환하는 예시를 보여드리겠습니다.
 
 <div class="content-ad"></div>
 
@@ -915,7 +915,7 @@ AH.reshape(-1,5)
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_56.png" />
 
 다음은 또 다른 예시입니다. 이 경우에는 배열을 30행 1열로 설정했습니다.
@@ -926,7 +926,7 @@ AH.reshape(-1,1)
 ```
 
 <img src="/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_57.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -946,29 +946,29 @@ AH.flatten()
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 코드 블록 67
 AH.flatten()[:, np.newaxis]
 
 ### 대안
 # AH.flatten().reshape(-1,1)
-```
+
 
 ![이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_59.png)
 
 아래는 np.newaxis에 대한 또 다른 예제입니다. 여기서는 행에 새로운 축을 추가하는 데 사용했습니다.
 
-```markdown
+
 # 코드 블록 68
 AH.flatten()[np.newaxis, :]
 
 ### 대안
 # AH.flatten().reshape(1,-1)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_60.png)
 
 # 14. Concatenation and Splitting
@@ -976,7 +976,7 @@ AH.flatten()[np.newaxis, :]
 파이썬 리스트에 새 요소를 추가하려면 append() 메소드를 사용할 수 있습니다. Numpy에서는 np.vstack(), np.hstack(), np.append(), np.concatenate()와 같은 다양한 대안이 있습니다. 이러한 함수들은 모두 여러 배열을 결합하는 것이라는 기본 아이디어를 가지고 있지만, 이러한 함수들은 각각 다른 용도를 가지고 있습니다.
 
 이 주제를 논의하기 전에 먼저 두 개의 새 배열 AI와 AJ를 초기화하고 싶습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1023,23 +1023,23 @@ print(np.hstack((AI,AJ,AJ,AJ,AI)))
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 코드 블록 73
 print(np.append(AI, AJ), end='\n\n')
 print(np.append(AI, AJ, axis=0), end='\n\n')
 print(np.append(AI, AJ, axis=1))
-```
+
 
 <img src="/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_65.png" />
 
 사실 np.append() 함수는 한 번에 두 개 이상의 배열을 결합할 수 없습니다. 만약 그렇게 하고 싶다면 np.concatenate()를 사용할 수 있습니다. axis 매개변수도 np.append()와 동일하게 작동합니다. 만약 axis에 값을 지정하지 않으면 np.concatenate() 함수는 수직 스택을 수행합니다.
 
-```markdown
+
 # 코드 블록 74
 print(np.concatenate([AI, AI, AI], axis=None), end='\n\n')
 print(np.concatenate([AI, AI, AI]), end='\n\n')
 print(np.concatenate([AI, AI, AI], axis=1))
-```
+
 
 <div class="content-ad"></div>
 
@@ -1059,7 +1059,7 @@ AK
 
 <div class="content-ad"></div>
 
-```md
+
 ![이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_67.png)
 
 np.split() 함수를 먼저 소개하겠습니다. 이 함수는 두 가지 주요 매개변수를 받습니다: ary (나눌 배열) 및 indices_or_sections (분할 지점). 다음 코드에서는 배열 AL을 인덱스 3과 5에서 나누어 세 개의 새 배열을 얻으려고 합니다. 각 배열은 원본 배열에서 0부터 2까지, 3부터 4까지, 5부터 19까지의 범위를 갖습니다.
@@ -1070,7 +1070,7 @@ np.split(AK, indices_or_sections=[3,5])
 ```
 
 ![이미지](/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_68.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -1088,25 +1088,25 @@ AL
 
 <div class="content-ad"></div>
 
-```md
+
 # 코드 블록 78
 np.vsplit(AL, [2,4])
 
 ### 대안
 # np.split(AL, [2,4], axis=0)
-```
+
 
 <img src="/assets/img/2024-06-22-MasteringNumPyAComprehensiveGuidetoEfficientArrayProcessingPart22_70.png" />
 
 마지막으로 np.hsplit() 사용법입니다.
 
-```md
+
 # 코드 블록 79
 np.hsplit(AL, [3,4])
 
 ### 대안
 # np.split(AL, [3,4], axis=1) #동등한
-```
+
 
 <div class="content-ad"></div>
 

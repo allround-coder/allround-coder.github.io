@@ -11,7 +11,7 @@ link: "https://medium.com/@harshitkishor2/understanding-javascripts-call-apply-a
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-06-22-UnderstandingJavaScriptscallapplyandbindMethodswithReal-LifeAnalogies_0.png)
 
 자바스크립트는 함수가 작동하는 문맥(this)을 제어하기 위해 call, apply, bind 세 가지 강력한 메서드를 제공합니다. 이러한 메서드를 이해하면 유연하고 재사용 가능한 코드를 작성할 수 있는 능력이 크게 향상됩니다. 각 메서드를 간단한 설명과 현실적인 비유와 함께 살펴보겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@harshitkishor2/understanding-javascripts-call-apply-a
 # call
 
 call은 한 객체로부터 메서드를 빌려와 다른 객체에 즉시 사용할 수 있도록 합니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -398,7 +398,7 @@ def threading_two_threads() -> None:
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![Example 7-2 threads](/assets/img/2024-06-22-ThreadinginPython_10.png)
 
 ## Example 7-2 threads
@@ -407,7 +407,7 @@ def threading_two_threads() -> None:
 - Thread 2: 5 I/O-bound tasks of 1s each
 
 Now we have two threads. Thread 1 executes a CPU-bound operation taking about 3.5 seconds, while thread 2 executes five I/O-bound tasks, each taking 1 second.
-```
+
 
 <div class="content-ad"></div>
 

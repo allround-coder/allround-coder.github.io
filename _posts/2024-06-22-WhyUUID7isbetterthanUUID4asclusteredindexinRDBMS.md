@@ -138,7 +138,7 @@ UUID V4 / UUID V7 백분율: 1.2318757479947573
 
 <div class="content-ad"></div>
 
-```
+
 ![Link to WhyUUID7isbetterthanUUID4asclusteredindexinRDBMS_1.png](/assets/img/2024-06-22-WhyUUID7isbetterthanUUID4asclusteredindexinRDBMS_1.png)
 
 ![Link to WhyUUID7isbetterthanUUID4asclusteredindexinRDBMS_2.png](/assets/img/2024-06-22-WhyUUID7isbetterthanUUID4asclusteredindexinRDBMS_2.png)
@@ -146,7 +146,7 @@ UUID V4 / UUID V7 백분율: 1.2318757479947573
 새 레코드 ID 8이 추가되었음을 알 수 있습니다. Figure 4에서 10, 15, 및 20을 포함하는 페이지가 분할되었습니다. 이 과정에서 데이터 페이지도 분할되었음을 강조해야 합니다.
 
 ![Link to WhyUUID7isbetterthanUUID4asclusteredindexinRDBMS_3.png](/assets/img/2024-06-22-WhyUUID7isbetterthanUUID4asclusteredindexinRDBMS_3.png)
-```
+
 
 <div class="content-ad"></div>
 

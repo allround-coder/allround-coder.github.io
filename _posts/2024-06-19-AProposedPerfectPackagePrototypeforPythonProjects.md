@@ -3,13 +3,12 @@ title: "파이썬 프로젝트를 위한 완벽한 패키지 프로토 타입 �
 description: ""
 coverImage: "/assets/img/2024-06-19-AProposedPerfectPackagePrototypeforPythonProjects_0.png"
 date: 2024-06-19 23:20
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-AProposedPerfectPackagePrototypeforPythonProjects_0.png
 tag: Tech
 originalTitle: "A Proposed Perfect Package Prototype for Python Projects"
 link: "https://medium.com/towards-data-science/a-proposed-perfect-package-prototype-for-python-projects-cf7c2e89c611"
 ---
-
 
 <img src="/assets/img/2024-06-19-AProposedPerfectPackagePrototypeforPythonProjects_0.png" />
 
@@ -65,7 +64,7 @@ Python 패키지의 구조를 세울 때 고려해야 할 많은 옵션이 있�
 - class BaseLearner()는 알고리즘 클래스 집합을 위한 베이스 클래스로 설계된 가상의 클래스입니다.
 - class Fisher(BaseLearner)는 "Fisher" 알고리즘 코드를 포함할 가상의 클래스로, 이 클래스는 BaseLearner(폴더 구조의 완전히 다른 부분에 위치한)를 상속받는 것이 목적입니다.
 
-# 뒤의 시작하기 
+# 뒤의 시작하기
 
 <div class="content-ad"></div>
 
@@ -91,7 +90,6 @@ from common.base_file import BaseLearner
 
 <div class="content-ad"></div>
 
-```Markdown
 ghpackage.common 모듈에서 BaseLearner를 가져왔습니다.
 
 따라서 이 패키지를 사용하는 사람들이 사용하는 네이밍 규칙이 직관적이지 않고 statsmodels.regression.linear_model에서 사용하는 표준과 일치하지 않을 수 있습니다.
@@ -99,7 +97,6 @@ ghpackage.common 모듈에서 BaseLearner를 가져왔습니다.
 # 상대 및 절대 참조
 
 fisher_file.py에서는 ghtestpackage.common 모듈의 BaseLearner를 불러오는 코드가 작동하지 않을 것입니다. 왜냐하면 현재 위치에서 상대적인 참조를 사용했기 때문입니다. 즉, ghtestpackage.common 모듈에서 BaseLearner를 해결하려는 시도는 algorithms.ghtestpackage.common에서 BaseLearner를 찾지 못할 것입니다.
-```
 
 <div class="content-ad"></div>
 
@@ -118,18 +115,20 @@ fisher_file.py에서는 ghtestpackage.common 모듈의 BaseLearner를 불러오�
 패키지가 Python 프로그램으로 가져올 때, 해당 패키지의 시작 지점은 부모 폴더입니다. 다음 시스템 경로를 고려하면 확인할 수 있습니다...
 
 ```js
-['c:\\Users\\GHarr\\OneDrive\\Python Projects\\Public-Github\\Package Structure',
- 'c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\python310.zip',
- 'c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\DLLs',
- 'c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib',
- 'c:\\Users\\GHarr\\anaconda3\\envs\\project-env',
- '',
- 'C:\\Users\\GHarr\\AppData\\Roaming\\Python\\Python310\\site-packages',
- 'c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib\\site-packages',
- 'C:\\Users\\GHarr\\OneDrive\\Python Projects\\Packages',
- 'c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib\\site-packages\\win32',
- 'c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib\\site-packages\\win32\\lib',
- 'c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib\\site-packages\\Pythonwin']
+[
+  "c:\\Users\\GHarr\\OneDrive\\Python Projects\\Public-Github\\Package Structure",
+  "c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\python310.zip",
+  "c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\DLLs",
+  "c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib",
+  "c:\\Users\\GHarr\\anaconda3\\envs\\project-env",
+  "",
+  "C:\\Users\\GHarr\\AppData\\Roaming\\Python\\Python310\\site-packages",
+  "c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib\\site-packages",
+  "C:\\Users\\GHarr\\OneDrive\\Python Projects\\Packages",
+  "c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib\\site-packages\\win32",
+  "c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib\\site-packages\\win32\\lib",
+  "c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib\\site-packages\\Pythonwin",
+];
 ```
 
 저는 현재 Anaconda를 사용 중이며, project-env 채널을 선택한 상태입니다. 경로에서 알 수 있듯이, **site-packages**가 **c:\\Users\\GHarr\\anaconda3\\envs\\project-env\\lib\\site-packages**에 위치하고 있습니다.
@@ -138,7 +137,6 @@ Anaconda에서 CMD.exe 프롬프트를 실행하고 **site-packages** 폴더의 
 
 <div class="content-ad"></div>
 
-
 ![이미지](/assets/img/2024-06-19-AProposedPerfectPackagePrototypeforPythonProjects_2.png)
 
 프로그램이 pandas에서 DataFrame을 가져오는 것과 같이 import를 실행할 때, 참조는 C:\Users\GHarr\anaconda3\envs\project-env\Lib\site-packages에서 시작되며 DataFrame이 포함 된 pandas라는 이름의 디렉토리를 찾을 것으로 예상합니다.
@@ -146,7 +144,6 @@ Anaconda에서 CMD.exe 프롬프트를 실행하고 **site-packages** 폴더의 
 주피터 노트북은 다르게 동작합니다. 그들의 "홈" 위치(또는 시작 실행 경로)는 .ipynb 소스 파일을 포함하는 폴더이며, 참조는 주피터 노트북에서 상대적으로(및 아래로) 진행됩니다.
 
 마지막으로 Visual Studio Code에서의 pytest 단위 테스트는 다시 다르게 동작합니다. VS Code 안에서 pytest 단위 테스트의 홈 / 실행 경로는 프로젝트의 루트 폴더입니다.
-
 
 <div class="content-ad"></div>
 
@@ -188,7 +185,7 @@ Anaconda에서 CMD.exe 프롬프트를 실행하고 **site-packages** 폴더의 
 
 파일 이름과 .pth 확장자가 붙은 파일을 생성한 다음, 해당 파일을 site-packages 폴더에 저장하면 Anaconda가 자동으로 읽어 시작 시 삽입할 패키지 경로를 추가할 수 있습니다.
 
-여기에 제 .pth 파일이 어떻게 생겼는지 알려드리겠습니다... 
+여기에 제 .pth 파일이 어떻게 생겼는지 알려드리겠습니다...
 
 ![링크명](/assets/img/2024-06-19-AProposedPerfectPackagePrototypeforPythonProjects_3.png)
 
@@ -226,9 +223,9 @@ from ghlibrary.algorithms import Fisher
 
 <div class="content-ad"></div>
 
-하지만 코드를 폴더 및 파일로 계층적으로 분할하는 유연성과 패키지의 소비자에게 표시되는 가져오기를 여전히 제어할 수도 있습니다. 이것은 패키지 각 수준에 있는 __init__.py 파일을 통해 이루어집니다.
+하지만 코드를 폴더 및 파일로 계층적으로 분할하는 유연성과 패키지의 소비자에게 표시되는 가져오기를 여전히 제어할 수도 있습니다. 이것은 패키지 각 수준에 있는 **init**.py 파일을 통해 이루어집니다.
 
-ghpackage\algorithms\fisher_folder부터 시작합니다. 여기에 있는 __init__.py 파일은 다음과 같습니다.
+ghpackage\algorithms\fisher_folder부터 시작합니다. 여기에 있는 **init**.py 파일은 다음과 같습니다.
 
 ```python
 from .fisher_file import Fisher
@@ -240,7 +237,7 @@ from .fisher_file import Fisher
 
 <div class="content-ad"></div>
 
-다음 단계는 알고리즘 폴더에 다음과 같이 __init__.py를 제공하는 것입니다...
+다음 단계는 알고리즘 폴더에 다음과 같이 **init**.py를 제공하는 것입니다...
 
 이전 단계에서 fisher_folder에 추가한 참조를 취하고, 이를 알고리즘 폴더에서 사용할 수 있도록 만듭니다.
 
@@ -254,7 +251,7 @@ ghlibrary.algorithms에서 Fisher를 가져와주세요.
 
 베이스 클래스를 마무리하기 위해서 동일한 처리가 필요합니다.
 
-ghpackage\common 하위 폴더의 __init__.py 파일은 다음과 같습니다...
+ghpackage\common 하위 폴더의 **init**.py 파일은 다음과 같습니다...
 
 그리고 common 폴더에 추가 하위 폴더가 없기 때문에 그게 전부입니다.
 
@@ -305,10 +302,10 @@ ghtestpackage\notebooks 폴더에는 ghtest_notebook.ipynb라는 주피터 노�
 그리고 이것이 출력 결과입니다...
 
 ```js
-ic| 'BaseLearner.init'
-ic| 'BaseLearner.init'
-ic| 'fisher.init'
-ic| 'BaseLearner.test'
+ic | "BaseLearner.init";
+ic | "BaseLearner.init";
+ic | "fisher.init";
+ic | "BaseLearner.test";
 ```
 
 ...결과적으로 베이스 클래스와 알고리즘 클래스를 참조하고 인스턴스화하고 호출할 수 있다는 것을 증명했습니다.
@@ -400,7 +397,7 @@ python -m pydoc -w "..\common\base.py"
 
 <div class="content-ad"></div>
 
-주요 도전 과제는 전문적인 네임스페이스의 최상의 폴더 및 파일 레이아웃을 통합하고 클래스가 .pth 파일을 구성하고 __init__.py 파일의 항목을 통해 일반 프로젝트, Jupyter 노트북 및 pytest 단위 테스트로 가져올 수 있도록 하는 것이었습니다.
+주요 도전 과제는 전문적인 네임스페이스의 최상의 폴더 및 파일 레이아웃을 통합하고 클래스가 .pth 파일을 구성하고 **init**.py 파일의 항목을 통해 일반 프로젝트, Jupyter 노트북 및 pytest 단위 테스트로 가져올 수 있도록 하는 것이었습니다.
 
 파이썬 프로젝트용 완벽한 패키지 프로토타입에 대한 다른 제안이 많을 수 있겠지만, 이 프로젝트는 매우 잘 작동합니다.
 

@@ -182,15 +182,15 @@ npm start
 
 관리자 사용자가 생성되면 사용자의 "사용자 세부정보" 페이지로 이동하여 "자격 증명" 탭에서 사용자의 비밀번호를 설정해주세요.
 
-```Markdown
+
 ![이미지](/assets/img/2024-06-23-SimpleKeycloakRBACwithNodejsExpressjs_3.png)
-```
+
 
 한 번 더 "사용자" 페이지로 돌아가서 다른 사용자를 추가해주세요.
 
-```Markdown
+
 ![이미지](/assets/img/2024-06-23-SimpleKeycloakRBACwithNodejsExpressjs_4.png)
-```
+
 
 <div class="content-ad"></div>
 

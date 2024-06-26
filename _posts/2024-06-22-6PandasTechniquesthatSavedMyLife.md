@@ -11,7 +11,7 @@ link: "https://medium.com/@derekmeegan/6-pandas-techniques-that-saved-my-life-0d
 ---
 
 
-```markdown
+
 ![img](/assets/img/2024-06-22-6PandasTechniquesthatSavedMyLife_0.png)
 
 만약 귀하가 직장이나 사이드 프로젝트에서 데이터 작업을 한다면, 실제로 대부분의 시간을 데이터를 정리, 조작 및 변환하는 데 쓸 것입니다. 사실 데이터 과학자들 사이에서 80%의 시간이 데이터를 다루는 데 소요된다는 것은 인기 있는 트로프입니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@derekmeegan/6-pandas-techniques-that-saved-my-life-0d
 이 현실을 감안하면, 데이터 조작을 위한 필수적인 Python 라이브러리인 판다스를 이미 사용해 보셨을 것입니다. 저는 판다스를 광범위하게 사용하여 즉석 분석부터 제품 수준의 데이터 파이프라인 구축에 이르기까지 모든 일에 활용했습니다. 제 경험을 통해, 제 워크플로우를 크게 단순화하고 코드 품질을 향상시킨 6가지 주요 기술을 수집했습니다.
 
 이 글에서는 해당 기술들을 탐구하고, 상징적인 Titanic 데이터셋을 사용하여 효과적으로 적용하는 방법을 보여드릴 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -33,7 +33,7 @@ link: "https://medium.com/@derekmeegan/6-pandas-techniques-that-saved-my-life-0d
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![링크1](/assets/img/2024-06-22-6PandasTechniquesthatSavedMyLife_1.png)
 
 ![링크2](/assets/img/2024-06-22-6PandasTechniquesthatSavedMyLife_2.png)
@@ -41,7 +41,7 @@ link: "https://medium.com/@derekmeegan/6-pandas-techniques-that-saved-my-life-0d
 체인 방식으로 변수를 생성할 필요가 없다는 것을 주목하세요! 만약 주피터 노트북에서 이 파이프라인을 실행하고 있다면 셀을 직접 실행하여 결과를 확인할 수 있습니다. 프로덕션에서는 결과를 변수에 저장해야 하지만, 다른 네 개의 변수 인스턴스화를 제거하여 코드를 더 깨끗하고 유지보수하기 쉽게 만듭니다.
 
 체이닝 시 시각적 명확성을 유지하려면 각 인덴트가 파이프라인의 더 깊은 수준에 해당하도록 코드를 계층적으로 배치하세요. 이는 워크플로가 더 복잡해질수록 점점 더 중요해집니다. 또한, .assign 메소드에서 "lambda" 함수의 사용에 주목하세요. 처음에는 복잡해 보일 수 있지만, 이 람다는 간단히 앞서 언급된 DataFrame을 참조하는 것뿐입니다. 그룹화된 또는 필터된 데이터에 변환을 적용하거나 여러 의존하는 열을 생성할 때 특히 유용합니다.
-```
+
 
 <div class="content-ad"></div>
 

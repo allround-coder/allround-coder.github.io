@@ -11,7 +11,7 @@ link: "https://medium.com/@denoland/how-the-guardian-uses-deno-to-audit-accessib
 ---
 
 
-```
+
 ![Image](/assets/img/2024-06-22-HowtheGuardianusesDenotoauditaccessibilityandperformanceacrosstheir27millionarticles_0.png)
 
 (원래 deno.com/blog에 게시됨.)
@@ -19,7 +19,7 @@ link: "https://medium.com/@denoland/how-the-guardian-uses-deno-to-audit-accessib
 독립 매체인 가디언은 자사의 기사의 성능과 접근성을 감사하기 위한 가벼운 유지보수 솔루션이 필요했습니다. 가디언이 Deno를 핵심 인프라에서 이용하여 270만 개의 기사 전반에 걸쳐 접근성과 성능을 감사하는 방법을 알아보세요.
 
 # 과제
-```
+
 
 <div class="content-ad"></div>
 

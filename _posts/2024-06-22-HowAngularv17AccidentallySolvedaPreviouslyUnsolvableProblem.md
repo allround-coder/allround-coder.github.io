@@ -93,7 +93,7 @@ Python을 사용하여 Windows OS 기계에서 다음 명령을 실행함으로�
 
 만약 자체 호스팅된 에이전트를 사용한다면, 파이프라인 로그 중에 하나도 에이전트의 컴퓨터에 저장되지 않음을 알 수 있습니다. 대신, 저희가 사용하는 파이프라인 에이전트는 모든 로그를 Azure DevOps 서버로 보내어 저장합니다.
 
-문제는 '체크 마크'로 알려진 '\u2714' 문자가 파이프라인 에이전트에서 디코딩을 시도할 때 발생합니다. 이는 colorama/ansitowin32.py 스크립트 파일 내에서 다음과 같은 에러 로그 부분에서 확인할 수 있습니다:```
+문제는 '체크 마크'로 알려진 '\u2714' 문자가 파이프라인 에이전트에서 디코딩을 시도할 때 발생합니다. 이는 colorama/ansitowin32.py 스크립트 파일 내에서 다음과 같은 에러 로그 부분에서 확인할 수 있습니다:
 
 <div class="content-ad"></div>
 
@@ -105,7 +105,7 @@ D:\a\_work\1\s\build_scripts\windows\artifacts\cli\Lib\site-packages\colorama/an
 
 ![이미지](/assets/img/2024-06-22-HowAngularv17AccidentallySolvedaPreviouslyUnsolvableProblem_2.png)
 
-기술적으로, 2단계와 3단계의 경우 우리의 압축된 프로젝트는 Azure Blog 스토리지에 업로드되며, ACR 빌드 에이전트에 의해 가져옵니다. 마찬가지로 ACR 빌드 에이전트는 Azure Blog 스토리지에 로그를 저장한 후 az acr 명령어의 일부로 스트리밍됩니다.```
+기술적으로, 2단계와 3단계의 경우 우리의 압축된 프로젝트는 Azure Blog 스토리지에 업로드되며, ACR 빌드 에이전트에 의해 가져옵니다. 마찬가지로 ACR 빌드 에이전트는 Azure Blog 스토리지에 로그를 저장한 후 az acr 명령어의 일부로 스트리밍됩니다.
 
 <div class="content-ad"></div>
 
@@ -134,7 +134,7 @@ print(flush.decode('utf-8', errors='ignore'))
 Colorama는 Win32 API 호출을 사용하여 터미널 상태를 수정하며, Win32 API는 기본적으로 Unicode-특정 문자를 지원하지 않는 ANSI 코드 페이지를 사용합니다. 이는 Unicode 문자열을 표시하려고 시도하는 동안 Unicode 코드 페이지를 지원하지 않는 API를 사용하려는 것이 우리 문제의 근본 원인입니다.
 
 이제 우리는 백그라운드에서 무슨 일이 일어나는지 이해하기 시작합니다. 그러나 실제 솔루션을 살펴보기 전에 다른 가능한 어정쩡한 솔루션을 확인해 보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -211,7 +211,7 @@ New-ItemProperty -LiteralPath 'HKLM:\SYSTEM\CurrentControlSet\Control\Nls\CodePa
 - "베타: 전 세계 언어 지원을 위한 유니코드 UTF-8 사용"을 활성화합니다.
 
 ![이미지](/assets/img/2024-06-22-HowAngularv17AccidentallySolvedaPreviouslyUnsolvableProblem_4.png)
-```
+
 
 <div class="content-ad"></div>
 

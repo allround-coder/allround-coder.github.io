@@ -35,7 +35,7 @@ CSS의 `background-color` 속성을 사용하면 어떤 요소든 생동감 있�
 
 <div class="content-ad"></div>
 
-```Markdown
+
 .box {
   background-color: #567895;
 }
@@ -47,14 +47,14 @@ h2 {
 span {
   background-color: rgb(255 255 255 / 50%);
 }
-```
 
-```Markdown
+
+
 <div class="box">
   <h2>배경 색상</h2>
   <p>배경 <span>색상</span>을 변경해보세요.</p>
 </div>
-```
+
 
 ## CSS 배경 이미지로 이미지 추가하기
 
