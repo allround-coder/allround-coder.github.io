@@ -3,13 +3,12 @@ title: "Flutter 322와 함께 사용할 수 있는 5가지 추가 패키지(2024
 description: ""
 coverImage: "/assets/img/2024-05-18-5extrapackagestousewithFlutter322in2024_0.png"
 date: 2024-05-18 22:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-5extrapackagestousewithFlutter322in2024_0.png
 tag: Tech
 originalTitle: "5 extra packages to use with Flutter 3.22 in 2024"
 link: "https://medium.com/@kanellopoulos.leo/5-extra-packages-to-use-with-flutter-3-22-in-2024-81a0d8afc78b"
 ---
-
 
 흥미로운 뉴스! 구글 I/O 2024에서 Flutter 3.22이 발표되었고, 물론 이전에 제가 즐겨 사용하는 Flutter 앱 개발용 패키지에 관한 기사를 사랑해주셔서 감사합니다. 많은 앱에서 사용하는 추가 기능 몇 가지를 공유하기로 결정했습니다. 오늘은 코드를 깔끔하고 조직적으로 유지할 뿐만 아니라 훌륭한 앱을 만드는 데 도움이 되는 5가지 Flutter 패키지를 소개하려고 합니다.
 
@@ -21,7 +20,7 @@ UI에 여백을 추가해야 하는 경우가 많은데, Row나 Column에서 Pad
 
 <div class="content-ad"></div>
 
-```dart
+```js
 Column(
   children: [
     Container(color: Colors.red, height: 20),
@@ -33,7 +32,7 @@ Column(
 
 이전에 언급했듯이 코드를 깔끔하고 체계적으로 유지하는 걸 좋아합니다. 일반적으로 앱의 스타일에 사용될 Gaps를 모두 포함하는 styles.dart 파일을 만들어 그 안에 Gaps를 추가하곤 합니다. 예:
 
-```dart
+```js
 const kGap0 = Gap(0);
 const kGap5 = Gap(5);
 const kGap8 = Gap(8);
@@ -51,7 +50,6 @@ const kGap100 = Gap(100);
 
 이렇게 하면 UI 사양이 변경되면 앱 내의 공간을 빠르게 재정비할 수 있습니다.
 
-
 <div class="content-ad"></div>
 
 이 패키지를 확인할 수 있어요.
@@ -64,15 +62,13 @@ const kGap100 = Gap(100);
 
 <div class="content-ad"></div>
 
-
 ![image](https://miro.medium.com/v2/resize:fit:776/0*SxYiRxewtRIFNa4e.gif)
 
 You can check the package [here](link).
 
-*A simpler but now old alternative named Skeletons can be found here. This is an honorable mention as it was the first I used and still exists in at least 8 of my apps.
+\*A simpler but now old alternative named Skeletons can be found here. This is an honorable mention as it was the first I used and still exists in at least 8 of my apps.
 
 3. toastification
-
 
 <div class="content-ad"></div>
 

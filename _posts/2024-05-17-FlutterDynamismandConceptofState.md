@@ -3,14 +3,12 @@ title: "플러터 동적성과 상태 개념"
 description: ""
 coverImage: "/assets/img/2024-05-17-FlutterDynamismandConceptofState_0.png"
 date: 2024-05-17 21:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-FlutterDynamismandConceptofState_0.png
 tag: Tech
 originalTitle: "Flutter: Dynamism and Concept of State"
 link: "https://medium.com/devtechie/flutter-dynamism-and-concept-of-state-a6d8da4cdcd8"
 ---
-
-
 
 <img src="/assets/img/2024-05-17-FlutterDynamismandConceptofState_0.png" />
 
@@ -19,7 +17,6 @@ link: "https://medium.com/devtechie/flutter-dynamism-and-concept-of-state-a6d8da
 # 상태(State)
 
 기억해 보면, 객체 지향 프로그래밍 패러다임에서 객체는 상태를 가지고 있습니다. 객체의 상태는 응용 프로그램 실행 중 특정 시간에 해당 객체의 속성(속성, 즉, 변수) 값 집합입니다. 따라서 객체의 상태는 속성 값 중 하나가 변경될 때 변화합니다. 따라서 상태는 객체에 대한 정보를 전달하는 것입니다. 객체의 수명 동안 상태는 사용자 인터페이스를 통해 해당 객체와 상호 작용하거나 응용 프로그램의 다른 객체들과 상호 작용함으로 인해 변경될 수 있습니다.
-
 
 <div class="content-ad"></div>
 
@@ -76,11 +73,11 @@ Stateful 위젯은 상속된 위젯의 상태를 생성하기 위해 createState
 
 아래 프로그램은 상태를 생성하는 stateful 위젯을 보여주는 예제입니다.
 
-```dart
-import 'package:flutter/material.dart';
+```js
+import "package:flutter/material.dart";
 ```
 
-```dart
+```js
 void main() {
   runApp(const MyApp());
 }
@@ -134,12 +131,12 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
 <div class="content-ad"></div>
 
-위 앱에서는 내장 위젯 StatefulWidget을 확장하고 createState() 메서드를 오버라이드하여 MyStatefulWidget이라는 상태 보존 위젯이 생성됩니다. StatefulWidget 클래스의 createState() 메서드는 위젯 MyStatefulWidget의 가변 상태를 생성하는 역할을 합니다. 가변 상태를 생성하기 위해 createState() 메서드는 State 클래스로부터 파생된 다른 클래스의 객체를 필요로 합니다. 위 예제 프로그램에서는 _MyStatefulWidgetState를 createState() 메서드에 전달했습니다. 실제 상태 정보는 State 클래스인 _MyStatefulWidgetState에서 유지됩니다. 이것이 왜 변수 stateInfo가 _MyStatefulWidgetState에 선언되는지에 대한 이유입니다.
+위 앱에서는 내장 위젯 StatefulWidget을 확장하고 createState() 메서드를 오버라이드하여 MyStatefulWidget이라는 상태 보존 위젯이 생성됩니다. StatefulWidget 클래스의 createState() 메서드는 위젯 MyStatefulWidget의 가변 상태를 생성하는 역할을 합니다. 가변 상태를 생성하기 위해 createState() 메서드는 State 클래스로부터 파생된 다른 클래스의 객체를 필요로 합니다. 위 예제 프로그램에서는 \_MyStatefulWidgetState를 createState() 메서드에 전달했습니다. 실제 상태 정보는 State 클래스인 \_MyStatefulWidgetState에서 유지됩니다. 이것이 왜 변수 stateInfo가 \_MyStatefulWidgetState에 선언되는지에 대한 이유입니다.
 
-setState() 메서드 내에서 setInfo 변수(위젯의 상태)가 수정되지만 setInfo 변수(위젯의 상태)는 setState() 외부에서도 수정될 수 있습니다. 실제로 _MyStatefulWidgetState 내부 어디에서든지 수정할 수 있습니다. 아래 업데이트된 프로그램이 이 사실을 보여줍니다.
+setState() 메서드 내에서 setInfo 변수(위젯의 상태)가 수정되지만 setInfo 변수(위젯의 상태)는 setState() 외부에서도 수정될 수 있습니다. 실제로 \_MyStatefulWidgetState 내부 어디에서든지 수정할 수 있습니다. 아래 업데이트된 프로그램이 이 사실을 보여줍니다.
 
 ```js
-import 'package:flutter/material.dart';
+import "package:flutter/material.dart";
 ```
 
 <div class="content-ad"></div>
@@ -151,7 +148,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  
+
   // 이 위젯은 이 앱의 뿌리(위젯 트리)입니다.
   @override
   Widget build(BuildContext context) {
@@ -163,14 +160,14 @@ class MyApp extends StatelessWidget {
 
 class MyStatefulWidget extends StatefulWidget {
   const MyStatefulWidget({Key? key}) : super(key: key);
-  
+
   @override
   State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   String stateInfo = "Sleeping";
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -194,22 +191,20 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*g3h8jKupmu3SVn2XH2gSRw.gif)
 
-
 <div class="content-ad"></div>
 
-
-```dart
-import 'package:flutter/material.dart';
+```js
+import "package:flutter/material.dart";
 ```
 
-```dart
+```js
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  
+
   // 이 위젯이 앱의 루트(위젯 트리) 역할을 합니다.
   @override
   Widget build(BuildContext context) {
@@ -221,14 +216,14 @@ class MyApp extends StatelessWidget {
 
 class MyStatefulWidget extends StatefulWidget {
   const MyStatefulWidget({Key? key}) : super(key: key);
-  
+
   @override
   State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   String stateInfo = "Sleeping";
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -250,7 +245,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
 ![image](https://miro.medium.com/v2/resize:fit:1028/1*iaVpA4GAfn6J7Ej966TsLQ.gif)
 
-
 <div class="content-ad"></div>
 
 위의 이미지에서 알 수 있듯이, 수면 버튼을 여러 번 클릭해도 버튼의 캡션이 "깨어나"로 변경되지 않았습니다. 이 동작의 이유는 setState() 메서드가 호출되지 않았기 때문에 변수 stateInfo의 값은 업데이트되지만 위젯(MyApp)의 업데이트(다시 렌더링)가 트리거되지 않았기 때문입니다.
@@ -263,7 +257,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
 <div class="content-ad"></div>
 
-
 ![Flutter Dynamic and Concept of State](/assets/img/2024-05-17-FlutterDynamismandConceptofState_2.png)
 
 # 요약
@@ -271,4 +264,3 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 이 기사는 일시적 상태와 앱 상태의 차이점에 대해 이야기했습니다. 일시적 상태는 단일 위젯에 특정하며 해당 위젯을 StatefulWidget에서 상속하고 createState() 메서드를 재정의하여 관리합니다. createState() 메서드는 State 클래스로부터 파생된 클래스의 인스턴스를 가져오는데 사용됩니다. State 클래스로부터 파생된 클래스는 실제 상태 정보를 유지하고 업데이트하며 화면에 상태를 다시 렌더링하기 위해 setState() 메서드를 사용합니다. 따라서 위젯은 StatefulWidget로부터 상속받아야 하며 상태 정보를 나타내기 위해 Flutter의 State 클래스도 사용해야 합니다.
 
 앱 상태는 본 기사의 범위를 벗어나는 서드파티 패키지가 필요합니다.
-

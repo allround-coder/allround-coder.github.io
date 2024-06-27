@@ -3,13 +3,12 @@ title: "플러터에서 흔히 하는 로컬라이제이션 실수 방지하는 
 description: ""
 coverImage: "/assets/img/2024-05-27-AvoidingcommonlocalizationmistakesinFlutterbestpracticesandsolutions_0.png"
 date: 2024-05-27 19:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-AvoidingcommonlocalizationmistakesinFlutterbestpracticesandsolutions_0.png
 tag: Tech
 originalTitle: "Avoiding common localization mistakes in Flutter: best practices and solutions"
 link: "https://medium.com/@pomis172/avoiding-common-localization-mistakes-in-flutter-best-practices-and-solutions-eeba39fa91ac"
 ---
-
 
 완벽한 로컬라이제이션을 달성하려면 번역만으로는 충분하지 않습니다. 언어적 뉘앙스와 지역적 선호도를 신중히 고려해야 합니다. 이 글에서는 Flutter 앱 로컬라이제이션 중에 생길 수 있는 일반적인 오류들과 그것들을 극복하기 위한 효과적인 전략을 탐구해보겠습니다.
 
@@ -43,17 +42,14 @@ link: "https://medium.com/@pomis172/avoiding-common-localization-mistakes-in-flu
 
 솔루션: 태그된 로컬라이제이션 항목을 사용하세요. 예를 들어, styled_text 패키지를 사용하면 문자열에 사용자 정의 태그를 추가한 다음 코드에서 처리할 수 있습니다:
 
-"agreeWithTerms": "나는 `a action=`OPEN_TC``약관 및 조건`/a`, `a action=`OPEN_PP``개인정보 보호정책`/a`을 읽었으며 동의합니다"
+"agreeWithTerms": "나는 `a action=`OPEN_TC`` 약관 및 조건`/a`, `a action=`OPEN_PP ``개인정보 보호정책`/a`을 읽었으며 동의합니다"
 
 이 문제 때문에 맷테오게코의 이 라이브러리 포크를 사용하는 것을 권장합니다. 더 나은 해결책을 아시는 경우 댓글로 알려주세요.
 
 ```js
-dependencies:  
-  styled_text:
-    git:
-      ref: bd403bd6c7c7df422b8d13e14b995662818fd9a9
-      url: https://github.com/Maatteogekko/styled_text_package.git
-      path: styled_text
+dependencies: styled_text: git: ref: bd403bd6c7c7df422b8d13e14b995662818fd9a9;
+url: //github.com/Maatteogekko/styled_text_package.git
+https: path: styled_text;
 ```
 
 <div class="content-ad"></div>
@@ -153,7 +149,7 @@ Text(t.usersOnline(n: 3)),
 
 <div class="content-ad"></div>
 
-```dart
+```js
 final date = DateTime.now();
 format(String locale) => "$locale: ${DateFormat.yMMMEd(locale).format(date)}";
 print(format("en_US"));
@@ -166,7 +162,7 @@ print(TimeOfDay.now().format(context));
 
 The output:
 
-```dart
+```js
 flutter: en_US: Tue, May 21, 2024
 flutter: en_GB: Tue, 21 May 2024
 flutter: et_EE: T, 21. mai 2024
@@ -177,12 +173,11 @@ flutter: 13:24
 
 ## 4. Concatenating currency and price strings
 
-
 <div class="content-ad"></div>
 
 어떤 국가에서는 천 단위 구분으로 콤마를 사용하는 반면, 다른 국가에서는 점을 사용합니다. 이런 작은 변화가 앱에 영향을 줄 수도 있어요.
 
-```dart
+```js
 String formatCurrency(String currency, String amount) => currency + amount;
 ```
 

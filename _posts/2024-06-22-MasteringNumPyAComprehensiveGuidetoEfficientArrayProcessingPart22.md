@@ -412,7 +412,7 @@ print(np.rad2deg(S))
 
 <div class="content-ad"></div>
 
-```korean
+```js
 # 코드 블록 26
 T = np.deg2rad([0, 45, 60])
 

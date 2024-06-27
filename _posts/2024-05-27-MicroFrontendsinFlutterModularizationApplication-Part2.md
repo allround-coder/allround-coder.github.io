@@ -3,13 +3,12 @@ title: "플러터에서의 마이크로 프론트엔드 모듈화 응용 프로�
 description: ""
 coverImage: "/assets/img/2024-05-27-MicroFrontendsinFlutterModularizationApplication-Part2_0.png"
 date: 2024-05-27 19:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-MicroFrontendsinFlutterModularizationApplication-Part2_0.png
 tag: Tech
 originalTitle: "Micro Frontends in Flutter: Modularization Application -Part 2"
 link: "https://medium.com/@tungnd.dev/micro-frontends-in-flutter-modularization-application-part-2-e15c72ca2555"
 ---
-
 
 이전 부분에서는 장단점을 논의하고 구현해야 할 아이디어를 기록했습니다. 이 기사를 처음으로 본 독자들도 있을 것이므로, 우선 part 1을 읽어보세요. 물론, 다시 언급해야 할 부분이 있어요. 시작하기 전에 모두 완료해야 할 체크리스트가 있는지 확인하세요.
 
@@ -25,7 +24,7 @@ link: "https://medium.com/@tungnd.dev/micro-frontends-in-flutter-modularization-
 <img src="https://miro.medium.com/v2/resize:fit:960/1*xv3Fj652XewSzSdgdXmniw.gif" />
 
 1. 패키지 관리
-프로젝트 내의 모든 패키지를 관리하기 위해 패키지 관리가 필요합니다. 예를 들어, 각 모듈에서 한 번에 pub get, build_runner 또는 gen-l10n을 실행할 수 있습니다. 다행히도, invertase에서 개발한 melos를 알아내다.
+   프로젝트 내의 모든 패키지를 관리하기 위해 패키지 관리가 필요합니다. 예를 들어, 각 모듈에서 한 번에 pub get, build_runner 또는 gen-l10n을 실행할 수 있습니다. 다행히도, invertase에서 개발한 melos를 알아내다.
 
 ```js
 name: flutter-micro-frontend
@@ -45,7 +44,8 @@ scripts:
 <div class="content-ad"></div>
 
 2. UI 모듈
-* 참고: 패키지와 Dart 패키지의 생성에 대해 알아보고, 패키지와 Dart 패키지의 구조를 배우세요.
+
+- 참고: 패키지와 Dart 패키지의 생성에 대해 알아보고, 패키지와 Dart 패키지의 구조를 배우세요.
 
 ![이미지](/assets/img/2024-05-27-MicroFrontendsinFlutterModularizationApplication-Part2_1.png)
 
@@ -56,8 +56,7 @@ scripts:
 
 <div class="content-ad"></div>
 
-
-```dart
+```js
 export 'grid_view_load_more.dart';
 export 'list_view_load_more.dart';
 ```
@@ -68,7 +67,6 @@ export 'list_view_load_more.dart';
 이게 전부에요. 이 package에 대해 더 이상 논의할 주제는 없습니다.
 
 3. Core Module
-
 
 <div class="content-ad"></div>
 
@@ -86,12 +84,12 @@ export 'list_view_load_more.dart';
 <div class="content-ad"></div>
 
 4. 주요 애플리케이션
-주요 애플리케이션으로 돌아갑니다. UI 모듈에서 말했듯이, MaterialApp에 localizationsDelegates 및 테마를 추가해야 합니다. 이것이 앱 구성에 관한 전부입니다. 임시로 빈 Splash 화면과 홈 화면을 만듭니다. 기능 모듈을 몇 개 개발하고 그것에 추가할 것입니다.
+   주요 애플리케이션으로 돌아갑니다. UI 모듈에서 말했듯이, MaterialApp에 localizationsDelegates 및 테마를 추가해야 합니다. 이것이 앱 구성에 관한 전부입니다. 임시로 빈 Splash 화면과 홈 화면을 만듭니다. 기능 모듈을 몇 개 개발하고 그것에 추가할 것입니다.
 
 좋은 준비가 되었습니다. 이제 첫 번째 모듈을 구현하기 시작합니다. 대부분의 시스템이 필요로 하는 인증입니다.
 
 5. 인증 모듈
-의존성은 Auth.start(context)를 호출하면 됩니다. 그런 다음 다음 비즈니스를 위한 결과를 얻습니다. 로그인, 등록, 비밀번호 재설정, OTP 등과 같은 모든 로직 또는 UI 페이지는 이 모듈에서 구현될 것입니다. 이것이 놀랍군요. 주요 앱은 인증에 대한 어떤 로직도 알지 못했습니다.
+   의존성은 Auth.start(context)를 호출하면 됩니다. 그런 다음 다음 비즈니스를 위한 결과를 얻습니다. 로그인, 등록, 비밀번호 재설정, OTP 등과 같은 모든 로직 또는 UI 페이지는 이 모듈에서 구현될 것입니다. 이것이 놀랍군요. 주요 앱은 인증에 대한 어떤 로직도 알지 못했습니다.
 
 <div class="content-ad"></div>
 
@@ -148,10 +146,9 @@ void _goToHome() {
 너무 좋네요! 인증 프로세스가 완료되면 홈 화면이 열릴 거예요. 완벽해요!!!
 
 6. 제품 모듈
-이것은 데모하고 싶은 샘플 모듈뿐이에요. 거의 모든 일반 모듈이 동일한 개념을 가지고 있어요:
+   이것은 데모하고 싶은 샘플 모듈뿐이에요. 거의 모든 일반 모듈이 동일한 개념을 가지고 있어요:
 
 ![이미지](/assets/img/2024-05-27-MicroFrontendsinFlutterModularizationApplication-Part2_5.png)
-
 
 <div class="content-ad"></div>
 

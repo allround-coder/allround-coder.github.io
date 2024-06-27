@@ -3,13 +3,12 @@ title: "Flutter에서 복잡한 HTML 처리하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-HandlingcomplexHTMLinFlutter_0.png"
 date: 2024-06-22 15:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-HandlingcomplexHTMLinFlutter_0.png
 tag: Tech
 originalTitle: "Handling complex HTML in Flutter"
 link: "https://medium.com/@tkarmakar27112000/handling-complex-html-in-flutter-77aa3d348f51"
 ---
-
 
 ## 플러터에서 중첩된 테이블 뷰 표시
 
@@ -105,7 +104,7 @@ HTML을 표시하는 것은 가능했지만 특정 높이를 증명해야 했습
 
 <div class="content-ad"></div>
 
-```dart
+```js
 AnimatedContainer(
   duration: Duration(milliseconds: 500),
   height: height + (height == 0 ? 0 : 50),
@@ -133,7 +132,7 @@ AnimatedContainer(
 );
 ```
 
-```dart
+```js
 html = """
 <html lang="en">
   <meta name="viewport" content="width=device-width user-scalable=no zoom=1.1">
@@ -155,7 +154,6 @@ html = """
 이렇게하여 HTML이 로드될 때마다 올바른 높이를 얻고 부드러운 애니메이션을 함께 사용할 수 있었습니다.
 
 만세!!! 성공했습니다…….
-
 
 <div class="content-ad"></div>
 

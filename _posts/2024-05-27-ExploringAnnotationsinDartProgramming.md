@@ -3,14 +3,12 @@ title: "Dart에서 Annotations 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-ExploringAnnotationsinDartProgramming_0.png"
 date: 2024-05-27 19:20
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ExploringAnnotationsinDartProgramming_0.png
 tag: Tech
 originalTitle: "Exploring Annotations in Dart Programming"
 link: "https://medium.com/nonstopio/exploring-annotations-in-dart-programming-ae6a8e4b8624"
 ---
-
-
 
 ![Exploring Annotations in Dart Programming](/assets/img/2024-05-27-ExploringAnnotationsinDartProgramming_0.png)
 
@@ -19,7 +17,6 @@ Dart에서 주석은 개발자가 코드에 메타데이터를 추가할 수 있
 ## Annotations이란?
 
 Dart에서 주석은 클래스, 메서드, 필드 등과 같은 다양한 프로그램 요소에 첨부할 수 있는 메타데이터 형식입니다. 컴파일러 또는 런타임에서 처리될 수 있는 추가 정보를 제공합니다.
-
 
 <div class="content-ad"></div>
 
@@ -68,7 +65,7 @@ void main() {
 
 다음은 사용자 정의 어노테이션의 예시입니다:
 
-```dart
+```js
 // 사용자 정의 어노테이션 클래스
 class RequiresPermission {
   final String permission;

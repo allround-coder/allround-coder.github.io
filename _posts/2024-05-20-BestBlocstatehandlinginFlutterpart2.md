@@ -3,13 +3,12 @@ title: "플러터에서 최고의 Bloc 상태 관리 파트 2"
 description: ""
 coverImage: "/assets/img/2024-05-20-BestBlocstatehandlinginFlutterpart2_0.png"
 date: 2024-05-20 23:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-BestBlocstatehandlinginFlutterpart2_0.png
 tag: Tech
 originalTitle: "Best Bloc state handling in Flutter (part 2)"
 link: "https://medium.com/@moeinmoradi.dev/best-bloc-state-handling-in-flutter-part-2-a518b68dbc65"
 ---
-
 
 안녕하세요, 친구들,
 첫 번째 파트에 대한 좋은 피드백에 기쁩니다.
@@ -116,14 +115,13 @@ class StateStatusLayout<T> extends StatelessWidget {
 
 <div class="content-ad"></div>
 
-
 ![image](https://miro.medium.com/v2/resize:fit:700/1*I6k_gZJ0KRZYR4KU22Okig.gif)
 
 가끔 블록 쪽에서 데이터를 페이지네이션하거나 스트리밍해야 할 때, 위젯은 반드시 모든 상황에서 업데이트되어야 합니다. 그리고 위젯에서 오류가 발생하지 않도록하기 위해 이러한 가능한 상황을 고려하기 위해 StreamBuilder를 사용합니다.
 
 간단한 샘플 코드를 보여드리겠습니다. StateStatusLayout을 사용한 코드입니다:
 
-```dart
+```js
 import 'package:flutter/material.dart';
 
 class ShowLayout extends StatelessWidget {
@@ -175,7 +173,6 @@ class ShowLayout extends StatelessWidget {
 }
 ```
 
-
 <div class="content-ad"></div>
 
 이 샘플 코드에서는 Bloc이 emit() 함수로 갱신될 때 showsStatus 상태에 대한 onCompletedStatus 및 onLoadingStatus를 처리했습니다.
@@ -183,4 +180,5 @@ class ShowLayout extends StatelessWidget {
 ![이미지](https://miro.medium.com/v2/resize:fit:1280/1*XwwugAFY35KNciVoDHThEw.gif)
 
 ## 지금까지 함께 해주셔서 감사합니다
+
 나와 함께 계속 이야기를 공유해주시고 피드백을 기다리고 있습니다. 분들의 소중한 의견을 기다리고 있습니다. 🙏

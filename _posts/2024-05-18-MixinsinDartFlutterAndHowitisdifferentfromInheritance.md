@@ -3,13 +3,12 @@ title: "Dart Flutter에서의 믹스인 사용하기"
 description: ""
 coverImage: "/assets/img/2024-05-18-MixinsinDartFlutterAndHowitisdifferentfromInheritance_0.png"
 date: 2024-05-18 22:20
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MixinsinDartFlutterAndHowitisdifferentfromInheritance_0.png
 tag: Tech
 originalTitle: "Mixins in Dart (Flutter) — And How it is different from Inheritance ?"
 link: "https://medium.com/flutter-community/exploring-mixins-in-dart-flutter-43514cd9952b"
 ---
-
 
 <img src="/assets/img/2024-05-18-MixinsinDartFlutterAndHowitisdifferentfromInheritance_0.png" />
 
@@ -40,7 +39,6 @@ link: "https://medium.com/flutter-community/exploring-mixins-in-dart-flutter-435
 
 자세한 통찰력을 얻기 위해 다음 정의를 확인해보세요.
 
-
 <div class="content-ad"></div>
 
 is-a 관계: 두 클래스 간의 직접적인 관계로 정의될 수 있으며, 한 클래스(예: Class B)가 다른 클래스(예: Class A)의 하위 클래스인 경우입니다. 이를 상속이라고 합니다.
@@ -53,7 +51,7 @@ has-a 관계: 한 클래스(예: Class A)가 다른 클래스(예: Class B)의 �
 
 <div class="content-ad"></div>
 
-*주의: 코멘트에 집중해주세요.*
+_주의: 코멘트에 집중해주세요._
 
 ```js
 // 부모 클래스
@@ -100,10 +98,10 @@ class Samsung extends Mobile {
 
 1. 믹신 선언: 믹신은 믹신 키워드를 사용하여 선언하며 믹신의 이름이 뒤따릅니다. 믹신에는 메서드와 프로퍼티가 포함될 수 있어요.
 
-```dart
+```js
 mixin MixinLogger {
 
- void logMessage(String message) { 
+ void logMessage(String message) {
    print("MESSAGE: $message");
  }
 
@@ -115,16 +113,16 @@ mixin MixinLogger {
 <div class="content-ad"></div>
 
 ```js
-class APIService with MixinLogger { 
+class APIService with MixinLogger {
 
-  void getPosts() { 
-    try { 
-      final response = http.get('https://www.example.com/posts'); 
-     } catch (Exception e) { 
+  void getPosts() {
+    try {
+      final response = http.get('https://www.example.com/posts');
+     } catch (Exception e) {
         // mixin 메소드 호출
-        logMessage(e.toString()); 
-     } 
-    } 
+        logMessage(e.toString());
+     }
+    }
 
   }
 ```
@@ -168,7 +166,6 @@ void main(){
 
 <div class="content-ad"></div>
 
-
 ![image](https://miro.medium.com/v2/resize:fit:996/1*j5nDu39KHxe3669LfJKieg.gif)
 
 ## 3. mixin에 있는 기능:
@@ -177,15 +174,13 @@ mixin에서의 on 키워드:
 
 원하는 클래스의 하위 클래스에서만 사용되도록 mixin을 제한하려면 mixin 클래스를 on 키워드와 함께 선언해야 합니다.
 
-
 <div class="content-ad"></div>
 
 Markdown 형식에 맞게 표 태그를 변경해주세요.
 
-
 mixin `mixinname` on `class_name_on_which_mixin_should_restricted`
 
-*주의: 주석에 집중*
+_주의: 주석에 집중_
 
 ```js
 mixin MixinDiscount on Product{
@@ -204,9 +199,7 @@ class Product{
 
 여기서 Discount mixin은 제한되어서 Product 클래스 Type의 하위 클래스와 함께만 사용할 수 있습니다.
 
-
 <div class="content-ad"></div>
-
 
 ```js
 // 컴파일 시간에 오류가 발생하여 텔레비전이 Product를 구현해야 함을 지정
@@ -231,15 +224,14 @@ class Television extends Product with MixinDiscount {
 
 하나의 함수를 포함하는 MixinA 및 MixinB를 선언해봅시다.
 
-
 <div class="content-ad"></div>
 
-```dart
+```js
 mixin MixinA{
 
   void functionA(){
     print("function A");
-   }  
+   }
 
 }
 
@@ -252,7 +244,7 @@ mixin MixinB{
 }
 ```
 
-```dart
+```js
 class Consumer with MixinA, MixinB{
 
 }

@@ -3,14 +3,12 @@ title: "Go 언어로 WebSockets 완벽하게 마스터하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-MasteringWebSocketsWithGo_0.png"
 date: 2024-06-22 13:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-MasteringWebSocketsWithGo_0.png
 tag: Tech
 originalTitle: "Mastering WebSockets With Go"
 link: "https://medium.com/towards-data-science/mastering-websockets-with-go-c30d0ac48081"
 ---
-
-
 
 ![웹 소켓 사용 방법](/assets/img/2024-06-22-MasteringWebSocketsWithGo_0.png)
 
@@ -19,7 +17,6 @@ link: "https://medium.com/towards-data-science/mastering-websockets-with-go-c30d
 이는 목적지에 도착했는지를 물어보는 자리에서 운전자가 "우리가 이미 도착했어"라고 말해주는 대신 뒷자리에 앉은 아이가 계속 "도착했니?"라고 물어보는 것과 같습니다. 이것이 웹사이트를 디자인할 때 사용하기 시작한 방식입니다. 참 어리석죠?
 
 다행히도, 개발자들은 웹 소켓, WebRTC, gRPC, HTTP2 스트림, Server-Sent 이벤트 및 기타 양방향 통신과 같은 기술로 이를 해결했습니다.
-
 
 <div class="content-ad"></div>
 
@@ -311,7 +308,6 @@ EventHandler 시그니처는 이벤트와 해당 메시지의 수신한 클라�
 
 <div class="content-ad"></div>
 
-
 ![WebSocket Ping and Pong](/assets/img/2024-06-22-MasteringWebSocketsWithGo_8.png)
 
 웹소켓은 서버와 클라이언트 모두 Ping 프레임을 보낼 수 있습니다. Ping은 연결의 다른 부분이 여전히 살아 있는지 확인하는 데 사용됩니다.
@@ -319,7 +315,6 @@ EventHandler 시그니처는 이벤트와 해당 메시지의 수신한 클라�
 우리는 다른 연결이 살아 있는지 확인하는 것 뿐만 아니라 그것을 계속 유지하기도 합니다. 아무 것도 하지 않는 웹소켓은 오랫동안 유휴 상태로 있으면 닫힐 수 있습니다. Ping 및 Pong은 채널을 쉽게 유지하고, 저 트래픽의 장기간 연결이 예상치 못하게 닫히는 것을 피할 수 있게 해줍니다.
 
 Ping을 보내면 상대방은 Pong으로 응답해야 합니다. 응답이 없으면 상대방이 더 이상 살아 있지 않다고 가정할 수 있습니다.
-
 
 <div class="content-ad"></div>
 
@@ -397,7 +392,7 @@ Gorilla는 백엔드에서 구성할 때 SetReadLimit을 사용하여 허용된 
 
 Origin 확인을 다루기 위해 HTTP 요청을 수락하고 허용된 출처인지 간단한 문자열 체크를 통해 확인하는 함수를 작성할 수 있습니다.
 
-이 함수는 func(r *http.Request) bool 시그니처를 따라야 합니다. 왜냐하면 일반 HTTP 요청을 HTTP 연결로 업그레이드하는 업그레이더에는 해당 함수를 수락할 필드가 있기 때문입니다. 연결을 업그레이드하도록 허용하기 전에, 해당 요청에 대해 운영체제를 수행하여 출처를 확인합니다.
+이 함수는 func(r \*http.Request) bool 시그니처를 따라야 합니다. 왜냐하면 일반 HTTP 요청을 HTTP 연결로 업그레이드하는 업그레이더에는 해당 함수를 수락할 필드가 있기 때문입니다. 연결을 업그레이드하도록 허용하기 전에, 해당 요청에 대해 운영체제를 수행하여 출처를 확인합니다.
 
 테스트하고 싶다면, 스위치 문에서 8080 이외의 다른 포트로 변경하고 UI를 방문해보십시오. 그러면 출처가 허용되지 않음 메시지와 함께 출구할 것을 볼 수 있을 것입니다.
 
@@ -498,7 +493,7 @@ OpenSSL을 사용하여 자체 서명 인증서를 생성하는 작은 스크립
 
 <div class="content-ad"></div>
 
-```korean
+```js
 gencert.bash라는 파일을 만들어주세요. Windows를 사용하시는 경우에는 명령을 수동으로 실행할 수 있습니다.
 
 명령을 실행하거나 bash 스크립트를 실행하세요.
@@ -514,7 +509,7 @@ bash gencert.bash
 
 HTTPS 도메인을 허용하도록 originChecker를 업데이트하는 것을 잊지 마세요.
 
-go run *.go를 사용하여 서버를 다시 시작하고, 이번에는 https 사이트를 방문해보세요.
+go run \*.go를 사용하여 서버를 다시 시작하고, 이번에는 https 사이트를 방문해보세요.
 
 다음과 같이 에러 메시지가 표시될 수 있습니다.
 
@@ -529,7 +524,6 @@ go run *.go를 사용하여 서버를 다시 시작하고, 이번에는 https �
 실제 인증서를 사용하고 있다면 해당 오류를 보지 못할 것입니다.
 
 축하합니다. 이제 HTTPS를 사용하고 있으며 WebSocket은 WSS를 사용하고 있습니다.
-
 
 <div class="content-ad"></div>
 

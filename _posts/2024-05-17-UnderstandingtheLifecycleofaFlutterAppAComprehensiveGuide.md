@@ -3,14 +3,12 @@ title: "플러터 앱의 라이프사이클 이해하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-UnderstandingtheLifecycleofaFlutterAppAComprehensiveGuide_0.png"
 date: 2024-05-17 21:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-UnderstandingtheLifecycleofaFlutterAppAComprehensiveGuide_0.png
 tag: Tech
 originalTitle: "Understanding the Lifecycle of a Flutter App: A Comprehensive Guide"
 link: "https://medium.com/@wafamohameddd/understanding-the-lifecycle-of-a-flutter-app-a-comprehensive-guide-b58a5a94d776"
 ---
-
-
 
 ![image](/assets/img/2024-05-17-UnderstandingtheLifecycleofaFlutterAppAComprehensiveGuide_0.png)
 
@@ -19,7 +17,6 @@ link: "https://medium.com/@wafamohameddd/understanding-the-lifecycle-of-a-flutte
 모바일 앱 개발의 세계에서 앱 라이프사이클은 앱이 실행되는 동안 통과하는 다양한 상태를 의미합니다. 이러한 상태를 파악하는 것은 효율적이고 반응성이 뛰어나며 사용자 친화적인 플러터 애플리케이션을 구축하는 데 중요합니다.
 
 # 목차
-
 
 <div class="content-ad"></div>
 
@@ -87,7 +84,6 @@ link: "https://medium.com/@wafamohameddd/understanding-the-lifecycle-of-a-flutte
 
 ## Stateful 위젯:
 
-
 <div class="content-ad"></div>
 
 - AppLifeCycle 클래스는 여러분의 앱의 주요 위젯을 나타내는 StatefulWidget입니다.
@@ -108,7 +104,7 @@ class _AppLifeCycleState extends State<AppLifeCycle> with WidgetsBindingObserver
 - initState( )에서 라이프사이클 변경을 모니터링하는 옵저버 인스턴스를 추가하고 타이머를 시작합니다.
 - 현재 위젯(this)을 위젯 바인딩의 옵저버로 추가합니다.
 
-```dart
+```js
   타이머? timer;
   int count = 0;
   bool active = true;
