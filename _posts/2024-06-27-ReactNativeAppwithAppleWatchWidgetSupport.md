@@ -176,7 +176,7 @@ watchOS 앱에서 iOS 앱으로 메시지를 보내기 위해, 먼저 Connection
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![ReactNativeAppwithAppleWatchWidgetSupport image 2](/assets/img/2024-06-27-ReactNativeAppwithAppleWatchWidgetSupport_2.png)
 
 다음을 클릭한 후 위젯 대상의 제품 이름을 제공하십시오.
@@ -184,7 +184,7 @@ watchOS 앱에서 iOS 앱으로 메시지를 보내기 위해, 먼저 Connection
 ![ReactNativeAppwithAppleWatchWidgetSupport image 3](/assets/img/2024-06-27-ReactNativeAppwithAppleWatchWidgetSupport_3.png)
 
 위젯 확장 대상을 설정한 후 프로젝트에 새 폴더가 표시됩니다. 이 경우 CounterWidget이라는 이름의 폴더가 있습니다. 이 폴더에는 처음에 AppIntent 및 CounterWidget이라는 두 개의 Swift 파일이 포함되어 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -248,7 +248,7 @@ watchOS 타겟 폴더에 선언된 ConnectionHelper 클래스 내부에 appCount
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](https://miro.medium.com/v2/resize:fit:1196/1*u8y-X3CelS4YDm0JLFuIdg.gif)
 
 # 결론
@@ -256,7 +256,7 @@ watchOS 타겟 폴더에 선언된 ConnectionHelper 클래스 내부에 appCount
 React Native 앱을 watchOS와 연동하고 워치 페이스용 위젯을 지원하는 데 성공했습니다.
 
 이제 WatchKit과 WidgetKit을 사용하여 멋진 앱을 만들어보세요. 아이디어와 프로젝트를 아래 댓글에서 공유해주세요.
-```
+
 
 <div class="content-ad"></div>
 

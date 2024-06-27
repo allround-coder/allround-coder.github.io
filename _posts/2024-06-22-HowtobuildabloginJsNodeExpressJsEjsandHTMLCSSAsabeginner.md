@@ -279,7 +279,7 @@ app.get("/blogDetails/:id", (req, res) => {
 });
 ```
 
-```
+
 <%- include('../public/partials/header.ejs') %>
 <div class="container">
   <div class="viewBlog-header">
@@ -293,7 +293,7 @@ app.get("/blogDetails/:id", (req, res) => {
 </div>
 
 <%- include('../public/partials/footer.ejs') %>
-```
+
 
 <div class="content-ad"></div>
 

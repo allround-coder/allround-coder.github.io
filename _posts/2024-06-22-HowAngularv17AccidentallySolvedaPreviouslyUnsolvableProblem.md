@@ -196,9 +196,9 @@ cmd.exe 및 powershell.exe에서 텍스트는 현재 지정된 ANSI 코드 페�
 
 <div class="content-ad"></div>
 
-```
+
 New-ItemProperty -LiteralPath 'HKLM:\SYSTEM\CurrentControlSet\Control\Nls\CodePage' -Name 'ACP' -Value '65001' -PropertyType String -Force;
-```
+
 
 전 세계 언어 지원을 위해 유니코드 UTF-8 사용 베타 기능을 활성화함으로써 비슷한 결과를 얻을 수 있습니다.
 
