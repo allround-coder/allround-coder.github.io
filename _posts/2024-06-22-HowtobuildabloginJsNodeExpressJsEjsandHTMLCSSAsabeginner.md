@@ -3,13 +3,12 @@ title: "초보자를 위한 Nodejs, ExpressJs 및 Ejs를 사용한 블로그 만
 description: ""
 coverImage: "/assets/img/2024-06-22-HowtobuildabloginJsNodeExpressJsEjsandHTMLCSSAsabeginner_0.png"
 date: 2024-06-22 03:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-HowtobuildabloginJsNodeExpressJsEjsandHTMLCSSAsabeginner_0.png
 tag: Tech
 originalTitle: "How to build a blog in Js (Node + ExpressJs + Ejs) and (HTML + CSS ): As a beginner."
 link: "https://medium.com/@faizanmumtazwork/how-to-building-a-blog-in-js-node-ejs-and-html-css-as-a-beginner-d7b130d9f5c4"
 ---
-
 
 이 쉬운 가이드에서는 Express.js를 사용하여 간단하지만 강력한 블로그 애플리케이션을 구축하는 과정을 안내하겠습니다. Express.js는 Node.js를 위한 빠르고 유연하며 가벼운 웹 프레임워크입니다. 이 자습서를 마치면 자신만의 맞춤형 블로그 플랫폼을 만들 수 있는 모든 지식을 습득할 것입니다. 블로그 게시물을 쉽게 추가, 편집 및 삭제할 수 있을 것입니다.
 
@@ -78,7 +77,7 @@ app.listen(port, () => {
 다음으로, 메인 페이지용 index.ejs 파일을 생성하고 그 안에 HTML 코드를 작성할 것입니다. 또한 헤더, 푸터, styles.css와 같은 정적 파일을 위해 public 폴더를 생성할 것입니다. 이 폴더 안에 header.ejs, footer.ejs, 그리고 styles.css 파일을 만들 것입니다.
 
 ```js
-//index.ejs 
+//index.ejs
   <main>
     <%- include('public/partials/header.ejs') %>
 
@@ -123,12 +122,18 @@ app.listen(port, () => {
 //header.ejs
 <header class="site-header">
   <div class="site-identity">
-    <h1><a href="#">블로그 앱</a></h1>
+    <h1>
+      <a href="#">블로그 앱</a>
+    </h1>
   </div>
   <nav class="site-navigation">
     <ul class="nav">
-      <li><a href="/">블로그 만들기</a></li>
-      <li><a href="/home">모든 블로그 보기</a></li>
+      <li>
+        <a href="/">블로그 만들기</a>
+      </li>
+      <li>
+        <a href="/home">모든 블로그 보기</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -255,11 +260,9 @@ function generateID() {
 
 위 코드는 EJS 템플릿을 사용하여 블로그 애플리케이션의 프론트 엔드 구조를 나타냅니다. BlogList 페이지 (blogList.ejs), 헤더 (header.ejs), 푸터 (footer.ejs) 파일이 포함되어 있습니다. 이 페이지는 JavaScript의 반복 메커니즘을 활용하여 각 블로그 항목을 반복하고 표시합니다.
 
-
 <div class="content-ad"></div>
 
 아래는 Markdown 형식으로 변경한 표입니다.
-
 
 ![How to build a login in Js, Node, ExpressJs, Ejs and HTML/CSS As a beginner](/assets/img/2024-06-22-HowtobuildabloginJsNodeExpressJsEjsandHTMLCSSAsabeginner_2.png)
 
@@ -276,7 +279,7 @@ app.get("/blogDetails/:id", (req, res) => {
 });
 ```
 
-```ejs
+```
 <%- include('../public/partials/header.ejs') %>
 <div class="container">
   <div class="viewBlog-header">
@@ -291,7 +294,6 @@ app.get("/blogDetails/:id", (req, res) => {
 
 <%- include('../public/partials/footer.ejs') %>
 ```
-
 
 <div class="content-ad"></div>
 
@@ -333,9 +335,7 @@ app.post("/edit/:id", (req, res) => {
 app.post("/delete/:id", (req, res) => {
   const blogId = req.params.id;
   blogList = blogList.filter((blog) => blog.id !== parseInt(blogId));
-  res.send(
-    '<script>alert("Blog deleted successfully"); window.location="/home";</script>'
-  );
+  res.send('<script>alert("Blog deleted successfully"); window.location="/home";</script>');
   res.redirect("/home");
 });
 ```

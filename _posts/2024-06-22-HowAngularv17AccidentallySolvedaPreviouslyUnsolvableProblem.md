@@ -3,13 +3,12 @@ title: "Angular v17이 해결한 이전에는 해결 불가능했던 문제"
 description: ""
 coverImage: "/assets/img/2024-06-22-HowAngularv17AccidentallySolvedaPreviouslyUnsolvableProblem_0.png"
 date: 2024-06-22 05:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-HowAngularv17AccidentallySolvedaPreviouslyUnsolvableProblem_0.png
 tag: Tech
 originalTitle: "How Angular v17 Accidentally Solved a Previously Unsolvable Problem"
 link: "https://medium.com/javascript-in-plain-english/how-angular-v17-accidentally-solved-a-previously-unsolvable-problem-14777e78916d"
 ---
-
 
 ## 도커 빌드에 간단한 유니코드 문자가 문제를 일으킨 방법
 
@@ -115,7 +114,7 @@ Azure CLI 서버는 터미널에 색상이 있는 텍스트를 생성하기 위�
 
 ## Azure CLI 소스 코드 심층 분석
 
-Azure CLI에서 발생한 오류는 command_modules/acr/_stream_utils.py 파일의 143번째 줄에 있습니다.
+Azure CLI에서 발생한 오류는 command_modules/acr/\_stream_utils.py 파일의 143번째 줄에 있습니다.
 
 <div class="content-ad"></div>
 
@@ -134,7 +133,6 @@ print(flush.decode('utf-8', errors='ignore'))
 Colorama는 Win32 API 호출을 사용하여 터미널 상태를 수정하며, Win32 API는 기본적으로 Unicode-특정 문자를 지원하지 않는 ANSI 코드 페이지를 사용합니다. 이는 Unicode 문자열을 표시하려고 시도하는 동안 Unicode 코드 페이지를 지원하지 않는 API를 사용하려는 것이 우리 문제의 근본 원인입니다.
 
 이제 우리는 백그라운드에서 무슨 일이 일어나는지 이해하기 시작합니다. 그러나 실제 솔루션을 살펴보기 전에 다른 가능한 어정쩡한 솔루션을 확인해 보겠습니다.
-
 
 <div class="content-ad"></div>
 
@@ -174,7 +172,6 @@ Get-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Control\Nls\CodePage `
 
 <img src="/assets/img/2024-06-22-HowAngularv17AccidentallySolvedaPreviouslyUnsolvableProblem_3.png" />
 
-
 <div class="content-ad"></div>
 
 지역 설정에 따라이 값은 코드 페이지 식별자 목록에서 어느 것이든 취할 수 있습니다. 가장 일반적인 것은 다음과 같습니다:
@@ -199,7 +196,7 @@ cmd.exe 및 powershell.exe에서 텍스트는 현재 지정된 ANSI 코드 페�
 
 <div class="content-ad"></div>
 
-```powershell
+```
 New-ItemProperty -LiteralPath 'HKLM:\SYSTEM\CurrentControlSet\Control\Nls\CodePage' -Name 'ACP' -Value '65001' -PropertyType String -Force;
 ```
 
@@ -211,7 +208,6 @@ New-ItemProperty -LiteralPath 'HKLM:\SYSTEM\CurrentControlSet\Control\Nls\CodePa
 - "베타: 전 세계 언어 지원을 위한 유니코드 UTF-8 사용"을 활성화합니다.
 
 ![이미지](/assets/img/2024-06-22-HowAngularv17AccidentallySolvedaPreviouslyUnsolvableProblem_4.png)
-
 
 <div class="content-ad"></div>
 

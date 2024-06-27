@@ -3,13 +3,12 @@ title: "Vite, Nginx 및 런타임에서 정적 웹 사이트용 환경 변수 �
 description: ""
 coverImage: "/assets/img/2024-05-17-ViteNginxandenvironmentvariablesforastaticwebsiteatruntime_0.png"
 date: 2024-05-17 20:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-ViteNginxandenvironmentvariablesforastaticwebsiteatruntime_0.png
 tag: Tech
 originalTitle: "Vite, Nginx and environment variables for a static website at runtime"
 link: "https://medium.com/quadcode-life/vite-nginx-and-environment-variables-for-a-static-website-at-runtime-f3d0b2995fc7"
 ---
-
 
 <img src="/assets/img/2024-05-17-ViteNginxandenvironmentvariablesforastaticwebsiteatruntime_0.png" />
 
@@ -34,8 +33,8 @@ link: "https://medium.com/quadcode-life/vite-nginx-and-environment-variables-for
 먼저 React + Typescript용 Vite 빌더에서 제공하는 템플릿을 사용하여 프로젝트를 생성해보겠습니다.
 
 ```js
-npm create vite@latest vite-nginx-dynamic-env-variables-example -- 
---template react-ts && cd vite-nginx-dynamic-env-variables-example && npm 
+npm create vite@latest vite-nginx-dynamic-env-variables-example --
+--template react-ts && cd vite-nginx-dynamic-env-variables-example && npm
 instal
 ```
 
@@ -66,25 +65,25 @@ interface ImportMeta {
 <div class="content-ad"></div>
 
 ```js
-type ProjectEnvVariablesType = Pick<ImportMetaEnv, 'VITE_VERSION'>
-
+type ProjectEnvVariablesType = Pick<ImportMetaEnv, "VITE_VERSION">;
 
 // 환경 변수 템플릿 런타임에 대체되도록
 const projectEnvVariables: ProjectEnvVariablesType = {
-   VITE_VERSION: '${VITE_VERSION}',
-}
-
+  VITE_VERSION: "${VITE_VERSION}",
+};
 
 // 런타임에서 변수 값을 반환하거나 빌드 결과로 얻음
 export const getProjectEnvVariables = (): {
-   envVariables: ProjectEnvVariablesType
+  envVariables: ProjectEnvVariablesType,
 } => {
-   return {
-       envVariables: {
-           VITE_VERSION: !projectEnvVariables.VITE_VERSION.includes('VITE_') ? projectEnvVariables.VITE_VERSION : import.meta.env.VITE_VERSION,
-       }
-   }
-}
+  return {
+    envVariables: {
+      VITE_VERSION: !projectEnvVariables.VITE_VERSION.includes("VITE_")
+        ? projectEnvVariables.VITE_VERSION
+        : import.meta.env.VITE_VERSION,
+    },
+  };
+};
 ```
 
 그 다음, 위의 파일이 빌드 단계 후 예측 가능한 이름을 갖도록 빌드 구성을 vite.config.ts에 변경해야 합니다. 이를 위해 구성에 rollup을 위한 섹션을 추가해주세요.
@@ -117,7 +116,6 @@ export default defineConfig({
 
 manualChunks 섹션에서 사용자 정의 청크를 생성하고, 파일을 빌드한 후 이 파일을 환경 변수로 대체할 수 있도록 일부 이름을 저장합니다.
 
-
 <div class="content-ad"></div>
 
 src/App.tsx 파일을 수정하여 환경 변수의 값들을 확인해봅시다.
@@ -125,23 +123,23 @@ src/App.tsx 파일을 수정하여 환경 변수의 값들을 확인해봅시다
 ```js
 import { getProjectEnvVariables } from "./shared/projectEnvVariables.ts";
 
-const { envVariables } = getProjectEnvVariables()
+const { envVariables } = getProjectEnvVariables();
 
 function App() {
- return (
-     <>
-         <h1>VITE_VERSION</h1>
-         <div>{envVariables.VITE_VERSION}</div>
+  return (
+    <>
+      <h1>VITE_VERSION</h1>
+      <div>{envVariables.VITE_VERSION}</div>
 
-         <hr />
+      <hr />
 
-         <h2>import.meta.env.VITE_VERSION</h2>
-         <div>{import.meta.env.VITE_VERSION}</div>
-     </>
- )
+      <h2>import.meta.env.VITE_VERSION</h2>
+      <div>{import.meta.env.VITE_VERSION}</div>
+    </>
+  );
 }
 
-export default App
+export default App;
 ```
 
 다음으로, 빌드를 실행하여 빌드 단계 이후에 변수를 대체하는 데 필요한 청크를 얻었는지 확인해봅시다.
@@ -152,7 +150,7 @@ npm run build
 
 <div class="content-ad"></div>
 
-빌드가 완료되면 dist/assets 디렉토리로 이동하세요. 이전에 구성한 projectEnvVariables*이라는 청크가 존재하는 것을 확인할 수 있을 겁니다.
+빌드가 완료되면 dist/assets 디렉토리로 이동하세요. 이전에 구성한 projectEnvVariables\*이라는 청크가 존재하는 것을 확인할 수 있을 겁니다.
 
 ![이미지](/assets/img/2024-05-17-ViteNginxandenvironmentvariablesforastaticwebsiteatruntime_1.png)
 
@@ -165,7 +163,7 @@ npm run build
 첫 번째 실험을 위해 프로젝트 루트에 다음 내용을 포함한 .env 파일을 생성해주세요.
 
 ```js
-VITE_VERSION=dev
+VITE_VERSION = dev;
 ```
 
 프로젝트 빌드를 시작하고 빌드 결과를 확인하는 모드로 전환해봅시다.
@@ -212,7 +210,7 @@ rm ./projectEnvVariables_temp
 
 이후에, 프로젝트 루트에서 다음 내용을 가진 Dockerfile을 생성하세요. 이 Dockerfile은 애플리케이션을 빌드하고 정적 파일을 제공하기 위해 Nginx 웹 서버를 실행하는 내용을 설명합니다.
 
-```dockerfile
+```js
 FROM node:20-alpine as builder
 
 WORKDIR /app
@@ -250,7 +248,6 @@ COPY --from=builder /app/dist ./
 ```
 
 이제 컨테이너를 빌드해봅시다.
-  
 
 <div class="content-ad"></div>
 
@@ -265,6 +262,7 @@ vite-nginx-dynamic-env-variables-example .
 docker run -p 81:80 -e VITE_VERSION=FROM_NGINX
 vite-nginx-dynamic-env-variables-example
 ```
+
 http://127.0.0.1:81 으로 이동하여, 환경 변수가 현재 값으로 초기화되었음을 확인할 수 있습니다. 직접 읽은 환경 변수는 여전히 이전 값으로 남아 있습니다.
 
 <div class="content-ad"></div>

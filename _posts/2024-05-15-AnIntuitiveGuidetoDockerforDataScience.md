@@ -3,14 +3,12 @@ title: "데이터 과학을 위한 도커의 직관적인 안내"
 description: ""
 coverImage: "/assets/img/2024-05-15-AnIntuitiveGuidetoDockerforDataScience_0.png"
 date: 2024-05-15 02:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-15-AnIntuitiveGuidetoDockerforDataScience_0.png
 tag: Tech
 originalTitle: "An Intuitive Guide to Docker for Data Science"
 link: "https://medium.com/towards-data-science/an-intuitive-guide-to-docker-for-data-science-ba3f94e9052c"
 ---
-
-
 
 ![An Intuitive Guide to Docker for Data Science](/assets/img/2024-05-15-AnIntuitiveGuidetoDockerforDataScience_0.png)
 
@@ -19,9 +17,6 @@ link: "https://medium.com/towards-data-science/an-intuitive-guide-to-docker-for-
 이 고통을 피하기 위해 어떤 도구를 사용할 수 있을까요? Docker가 여러분의 문제를 해결해 줄 것입니다. Docker를 사용하면 데이터 과학 프로젝트를 위한 견고한 환경을 손쉽게 얻을 수 있습니다. 미치도록 미쳐버리지 않고요.
 
 이 글에서는 Docker의 주요 개념, 가장 일반적인 명령어, 그리고 Docker화된 머신러닝 애플리케이션의 빠른 예제에 대해 설명하겠습니다. 시작해 봅시다!
-
-
-
 
 목차:
 
@@ -37,8 +32,6 @@ link: "https://medium.com/towards-data-science/an-intuitive-guide-to-docker-for-
 
 Docker는 매우 인기 있는 가상화 기술로, 개발자가 몇 분 내에 머신러닝 애플리케이션을 신속하게 개발, 실행 및 배포할 수 있도록 합니다.
 
-
-
 표 태그를 Markdown 형식으로 변경할 수 있습니다.
 
 Containers를 통해 응용 프로그램을 빠르고 일관된 방식으로 실행할 수 있는 격리된 환경을 포함할 수 있습니다.
@@ -48,8 +41,6 @@ Containers를 통해 응용 프로그램을 빠르고 일관된 방식으로 실
 ## Docker의 기본 개념
 
 ![Docker 이미지](/assets/img/2024-05-15-AnIntuitiveGuidetoDockerforDataScience_1.png)
-
-
 
 더 진행하기 전에, Docker와 관련된 세 가지 개념을 잘 알고 가는 것이 중요합니다:
 
@@ -61,9 +52,6 @@ Containers를 통해 응용 프로그램을 빠르고 일관된 방식으로 실
 
 ## 가상 머신 대 컨테이너
 
-
-
-
 ![Docker Image](/assets/img/2024-05-15-AnIntuitiveGuidetoDockerforDataScience_2.png)
 
 가상 머신과 컨테이너는 물리적 인프라 내에서 여러 격리된 환경을 실행할 수 있게 해주는 가상화 기술입니다. 둘 다 리소스와 비용을 최적화하기 위해 고안되었지만, 중요한 차이점이 있습니다.
@@ -71,9 +59,6 @@ Containers를 통해 응용 프로그램을 빠르고 일관된 방식으로 실
 가상 머신 내에는 각각 다른 게스트 운영 체제가 실행됩니다. 그에 비해 컨테이너는 호스트 운영 체제를 공유하여 가상 머신보다 적은 리소스를 사용합니다.
 
 컨테이너는 애플리케이션과 해당 의존성만 캡슐화하기 때문에 매우 휴대성이 뛰어나며 배포 프로세스를 더 쉽고 빠르게 만들어줍니다.
-
-
-
 
 ## Docker 설정하기
 
@@ -83,8 +68,6 @@ Docker Desktop은 컨테이너화된 응용 프로그램을 빌드하고 공유�
 
 Docker Hub에 이미지를 만들고 푸시하려면 Docker Hub에 계정을 만들어야 합니다. Docker Hub는 Docker 이미지를 찾고 공유할 수 있는 중앙 저장소입니다.
 
-
-
 ## ML 애플리케이션 도커화하기
 
 도커의 개념을 익히셨다면, 이제 머신 러닝 애플리케이션을 도커화하는 예제를 보여드릴 시간입니다. 튜토리얼을 쉽게 따라가기 위해 Visual Studio Code를 코드 편집기로 사용하는 것을 권장합니다.
@@ -93,10 +76,8 @@ Docker Hub에 이미지를 만들고 푸시하려면 Docker Hub에 계정을 만
 
 튜토리얼을 더 잘 따라가기 위해 GitHub 저장소를 확인해보세요.
 
-
-
-
 고객 이탈 예측 데이터셋을 로드합니다.
+
 ```Python
 churn_df = pd.read_csv('Customertravel.csv')
 X = churn_df.drop(columns=['Target'],axis=1)
@@ -140,8 +121,6 @@ print(f'Val 재현율: {val_recall_score}')
 print(f'Test 재현율: {test_recall_score}')
 ```
 
-
-
 - requirements.txt 파일 생성
 
 저희 애플리케이션을 도커로 쉽게 사용하기 위해 모든 파이썬 의존성이 포함된 requirements.txt 파일이 필요합니다.
@@ -150,32 +129,26 @@ print(f'Test 재현율: {test_recall_score}')
 
 다음과 같은 파일을 얻어야 합니다:
 
-
-
-
 catboost==1.2.5
 pandas==2.2.2
 scikit-learn==1.4.2
-
 
 2. Create Dockerfile
 
 Along with requirements.txt, let's create a file called Dockerfile. This file consists of instructions for building the Docker Image.
 
-```Dockerfile
+```js
 FROM python:3.10
 
 WORKDIR /src
 
 # Copy the requirements file and install dependencies
 COPY train_churn_model.py requirements.txt Customertravel.csv /src/
-RUN pip install --no-cache-dir -r requirements.txt 
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Run the script
 CMD ["python","train_churn_model.py"]
 ```
-
-
 
 FROM 명령은 프로젝트에 사용되는 기본 환경을 지정합니다. 이 경우 Python 3.10이었습니다.
 
@@ -184,8 +157,6 @@ FROM 명령은 프로젝트에 사용되는 기본 환경을 지정합니다. �
 마지막으로 CMD 명령을 사용하여 스크립트를 실행하는 명령을 포함할 수 있습니다.
 
 3. 도커 이미지 빌드
-
-
 
 파일 requirements.txt와 Dockerfile을 생성했다면, 대부분의 작업이 끝났어요. Docker 이미지를 생성하기 위해서는 빌드 명령어를 사용하기만 하면 돼요:
 
@@ -199,8 +170,6 @@ docker build -t churn-pred-image .
 docker images
 ```
 
-
-
 다음은 명령어에서 얻은 이미지 목록입니다:
 
 ```js
@@ -212,8 +181,6 @@ churn-pred-image   latest    f2d735527110   About an hour ago   1.81GB
 
 4. Docker 컨테이너를 빌드하세요.
 
-
-
 드디어, Docker 컨테이너를 만들 준비가 되었습니다. 이미지를 빌드했으므로 이제 컨테이너를 실행하기만 하면 됩니다:
 
 ```js
@@ -223,8 +190,6 @@ docker run -d --name churn-pred-container churn-pred-image
 --name 태그에서는 Docker 컨테이너의 이름을 지정하고, 뒤에 이전에 빌드한 Docker 이미지의 이름을 적어주면 됩니다.
 
 이전처럼 flag -a를 사용하여 지금까지 생성된 모든 컨테이너를 표시하려면:
-
-
 
 ```js
 도커 ps -a
@@ -238,8 +203,6 @@ CONTAINER ID   IMAGE              COMMAND                  CREATED             S
 ```
 
 그게 다야! 머신러닝 애플리케이션을 도커화했어요!
-
-
 
 ## 도커 명령어 요약
 
@@ -255,8 +218,6 @@ CONTAINER ID   IMAGE              COMMAND                  CREATED             S
 
 다른 가상화 기술과 마찬가지로 도커에도 일부 제약이 있습니다. 이는 주요 단점으로서 다음과 같습니다:
 
-
-
 - 도커 파일을 작성하고 이미지를 빌드하며 컨테이너를 관리하는 방법을 처음 접하는 경우에는 시간이 필요할 수 있어요.
 - 컨테이너는 VM보다 가벼우며 더 적은 리소스가 필요하지만, 동일한 운영 체제로 인해 보안 문제가 발생할 수 있어요.
 - 도커는 GPU가 필요하지 않은 응용 프로그램을 위해 초기에 설계되었기 때문에 그래픽 사용자 인터페이스가 필요한 사용 사례에서 어려움을 겪을 수 있어요.
@@ -267,8 +228,6 @@ CONTAINER ID   IMAGE              COMMAND                  CREATED             S
 
 도커는 데이터 과학 프로젝트에 강력한 도구가 될 수 있어요. 특정 사용 사례에 도커가 적합한 선택인지 고려하기 위해서는 장단점을 고려하는 것이 중요해요.
 
-
-
 만약 주제를 더 자세히 알아보고 싶다면, 기사 끝에 나열된 자료들을 살펴보세요.
 
 기사가 유용했다면 좋겠습니다. 즐거운 하루 되세요!
@@ -276,8 +235,6 @@ CONTAINER ID   IMAGE              COMMAND                  CREATED             S
 면책 조항: 이 데이터셋은 CC0 1.0 Universal (CC0)로 라이센스가 부여되어 있습니다.
 
 유용한 자료:
-
-
 
 - 도커 가이드
 - 도커파일 참조
