@@ -1,0 +1,651 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>JS 초보자를 위한 가이드 Part 1  스코프, 클로저, 호이스팅, 모듈 이해하기 | allround-coder</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://allround-coder.github.io///post/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="JS 초보자를 위한 가이드 Part 1  스코프, 클로저, 호이스팅, 모듈 이해하기 | allround-coder" data-gatsby-head="true"/><meta property="og:title" content="JS 초보자를 위한 가이드 Part 1  스코프, 클로저, 호이스팅, 모듈 이해하기 | allround-coder" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://allround-coder.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://allround-coder.github.io///post/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules" data-gatsby-head="true"/><meta name="twitter:title" content="JS 초보자를 위한 가이드 Part 1  스코프, 클로저, 호이스팅, 모듈 이해하기 | allround-coder" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | allround-coder" data-gatsby-head="true"/><meta name="article:published_time" content="2024-06-27 18:16" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZFDEQ947R4"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+  
+            gtag('config', 'G-ZFDEQ947R4');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-ac4aa08aae62f90e.js" defer=""></script><script src="/_next/static/chunks/463-0429087d4c0b0335.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-b088bc509ff5c497.js" defer=""></script><script src="/_next/static/Rv-NbbtWUaja2joH5WkO_/_buildManifest.js" defer=""></script><script src="/_next/static/Rv-NbbtWUaja2joH5WkO_/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">Allround Coder</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">JS 초보자를 위한 가이드 Part 1  스코프, 클로저, 호이스팅, 모듈 이해하기</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="JS 초보자를 위한 가이드 Part 1  스코프, 클로저, 호이스팅, 모듈 이해하기" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">Allround Coder</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jun 27, 2024</span><span class="posts_reading_time__f7YPP">15<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<p><img src="/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_0.png" alt="이미지"></p>
+<ul>
+<li>Scope: 변수에 대한 접근 가능성을 정의하며, 코드 내에서 어디에서 접근할 수 있는지를 나타냅니다.</li>
+<li>Closure: 실행 범위 외부에서 실행되더라도 어휘적 범위를 기억하는 함수입니다.</li>
+<li>호이스팅은 JavaScript 메커니즘으로, 변수 및 함수 선언이 코드의 선언 위치와 관계없이 컴파일 단계 중에 해당 범위의 맨 위로 이동됩니다. 이는 변수 및 함수가 선언되기 전에 사용될 수 있다는 것을 의미합니다.</li>
+</ul>
+<p>명령형(어떻게, 무엇) 대 선언형(무엇)
+명령형 - 작동 방식을 알고 작동 방식을 알 수 있습니다.
+선언형 - 작동 방식을 알지 못한 채, 무엇이 동작하는지만 알 수 있습니다. JS 배열 맵 함수와 같은 예시</p>
+<p><img src="/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_1.png" alt="이미지"></p>
+<div class="content-ad"></div>
+<p>Scope 이전에 JS에서 변수를 선언하는 방법을 먼저 이해해야 합니다.
+let vs var vs const</p>
+<p><img src="/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_2.png" alt="이미지"></p>
+<p>Scope는 변수의 접근 가능성(가시성)을 결정합니다. JavaScript에는 3가지 유형의 scope가 있습니다: ES6(2015) 이전에는 JavaScript에서 전역 Scope 및 함수 Scope만 있었지만, 블록 Scope는 나중에 let과 const로 도입되었습니다.</p>
+<ul>
+<li>전역 Scope: 어떤 함수 내에서도 선언되지 않은 변수들은 전역 Scope를 갖습니다.
+프로그래밍 환경에서 전역 Scope는 모든 다른 Scope에서 볼 수 있는 Scope입니다. 이는 브라우저에서는 window 객체에 연결되고 Node.js에서는 전역(global)에 연결됩니다.</li>
+</ul>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-keyword">var</span> globalVar = <span class="hljs-number">10</span>;  
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">foo</span>(<span class="hljs-params"></span>) {     
+   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(globalVar); <span class="hljs-comment">// 사용 가능 </span>
+   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">window</span>.<span class="hljs-property">globalVar</span>); <span class="hljs-comment">// 사용 가능</span>
+}  
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(globalVar);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable language_">window</span>.<span class="hljs-property">globalVar</span>);
+<span class="hljs-title function_">foo</span>(); <span class="hljs-comment">// 출력: 10 10 10 10</span>
+</code></pre>
+<ol start="2">
+<li>지역 범위: 함수 내에서 선언된 변수는 지역 범위를 갖습니다.
+함수 내에서 선언된 변수를 지역 변수라고 하며 함수 범위에 속합니다. 지역 변수는 함수 내 어디에서든 접근할 수 있습니다 (기능 블록 내).</li>
+</ol>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">foo</span>(<span class="hljs-params"></span>) {     
+   <span class="hljs-keyword">var</span> localVar = <span class="hljs-number">20</span>;    
+   <span class="hljs-keyword">if</span>(<span class="hljs-literal">true</span>){
+   <span class="hljs-keyword">var</span> blocklocalVar = <span class="hljs-number">2</span>
+    } 
+   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(localVar); <span class="hljs-comment">// 사용 가능 </span>
+   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(blocklocalVar) <span class="hljs-comment">// var의 함수 범위 때문에 접근 가능</span>
+ }  
+<span class="hljs-title function_">foo</span>(); 
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(localVar);
+<span class="hljs-comment">// 출력: 20 2</span>
+<span class="hljs-comment">// 오류: localVar이(가) 정의되지 않았습니다</span>
+</code></pre>
+<ol start="3">
+<li>블록 범위: let과 const는 블록 범위 변수이며, if, for, while 등의 블록을 기준으로 합니다.</li>
+</ol>
+<div class="content-ad"></div>
+<p>ES6는 JavaScript에 let 및 const라는 두 가지 중요한 새로운 키워드를 소개했습니다. 이 두 키워드는 JavaScript에서 블록 범위를 제공합니다. ' ' 블록 내에서 선언된 변수는 블록 외부에서 액세스할 수 없습니다. 예: If else 블록, for 루프 블록 등</p>
+<p>예시 (let을 사용한 블록 스코프):</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">example</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">let</span> blockVar = <span class="hljs-string">'블록 내부에 있어요'</span>;
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(blockVar); <span class="hljs-comment">// 접근 가능</span>
+  }
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(blockVar); <span class="hljs-comment">// 오류: blockVar가 정의되지 않았습니다</span>
+}
+<span class="hljs-title function_">example</span>();
+</code></pre>
+<ul>
+<li>예시 (const를 사용한 블록 스코프):</li>
+</ul>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">example</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">PI</span> = <span class="hljs-number">3.14</span>;
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">const</span> blockConst = <span class="hljs-string">'I am inside a block'</span>;
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable constant_">PI</span>); <span class="hljs-comment">// Accessible</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(blockConst); <span class="hljs-comment">// Accessible</span>
+  }
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable constant_">PI</span>); <span class="hljs-comment">// Accessible</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(blockConst); <span class="hljs-comment">// Error: blockConst is not defined</span>
+}
+<span class="hljs-title function_">example</span>();
+</code></pre>
+<p>만약 var를 사용한다면 (함수 스코프)</p>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">example</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">PI</span> = <span class="hljs-number">3.14</span>;
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">var</span> blockConst = <span class="hljs-string">'I am inside a block'</span>;
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable constant_">PI</span>); <span class="hljs-comment">// Accessible</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(blockConst); <span class="hljs-comment">// Accessible</span>
+  }
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable constant_">PI</span>); <span class="hljs-comment">// Accessible</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(blockConst); <span class="hljs-comment">// Error: blockConst is not defined</span>
+}
+<span class="hljs-title function_">example</span>();
+<span class="hljs-number">3.14</span>
+I am inside a block
+<span class="hljs-number">3.14</span>
+<span class="hljs-literal">undefined</span>
+</code></pre>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">outer</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">var</span> outerVar = <span class="hljs-string">'I am outer'</span>;
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">inner</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(outerVar); <span class="hljs-comment">// Accessible</span>
+  }
+  <span class="hljs-title function_">inner</span>();
+}
+<span class="hljs-title function_">outer</span>(); <span class="hljs-comment">// 출력: I am outer</span>
+</code></pre>
+<div class="content-ad"></div>
+<p>범위의 예시</p>
+<ol>
+<li>(let을 사용한 루프 변수 범위): 블록</li>
+</ol>
+<pre><code class="hljs language-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &#x3C; <span class="hljs-number">3</span>; i++) {
+  <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(i), <span class="hljs-number">100</span>);
+}
+<span class="hljs-comment">// 결과: 0</span>
+<span class="hljs-comment">// 결과: 1</span>
+<span class="hljs-comment">// 결과: 2</span>
+</code></pre>
+<ol start="2">
+<li>var를 사용한 루프 변수 범위: 함수 또는 전역 범위</li>
+</ol>
+<pre><code class="hljs language-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &#x3C; <span class="hljs-number">3</span>; i++) {
+  <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =></span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(i), <span class="hljs-number">100</span>);
+}
+<span class="hljs-comment">// 결과: 3</span>
+<span class="hljs-comment">// 결과: 3</span>
+<span class="hljs-comment">// 결과: 3</span>
+</code></pre>
+<div class="content-ad"></div>
+<ol start="3">
+<li>중첩된 블록 내에서 let으로 재선언: 블록 스코프</li>
+</ol>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">example</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">let</span> x = <span class="hljs-number">10</span>;
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">let</span> x = <span class="hljs-number">20</span>;
+  }
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// 출력: 10</span>
+}
+<span class="hljs-title function_">example</span>();
+</code></pre>
+<ol start="4">
+<li>중첩된 블록 내에서 var로 재선언: 함수 또는 전역 스코프</li>
+</ol>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">example</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">20</span>;
+  }
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// 출력: 20</span>
+}
+<span class="hljs-title function_">example</span>();
+</code></pre>
+<div class="content-ad"></div>
+<ol start="5">
+<li>var 및 let을 사용한 호이스팅:</li>
+</ol>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// 결과: undefined</span>
+<span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+</code></pre>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// 오류: 초기화 전에 'x'에 액세스할 수 없음</span>
+<span class="hljs-keyword">let</span> x = <span class="hljs-number">10</span>;
+</code></pre>
+<ol start="6">
+<li>let 및 const를 사용한 블록 스코프:</li>
+</ol>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">example</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// 출력: 10</span>
+  }
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// 오류: x가 정의되지 않았습니다</span>
+}
+<span class="hljs-title function_">example</span>();
+</code></pre>
+<h2>2. 클로저:</h2>
+<ul>
+<li>정의: 클로저는 함수가 다른 곳에서 실행되더라도 주변 변수를 "기억"하는 것을 말합니다.</li>
+</ul>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">outer</span>(<span class="hljs-params"></span>) {     
+  <span class="hljs-keyword">var</span> outerVar = <span class="hljs-string">'I am outer'</span>;      
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">inner</span>(<span class="hljs-params"></span>) {         
+   <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(outerVar); <span class="hljs-comment">// outer 함수 외부에서도 호출될 때 접근 가능     </span>
+  }      
+ <span class="hljs-keyword">return</span> inner; <span class="hljs-comment">// inner 함수 반환 </span>
+}  
+<span class="hljs-keyword">var</span> closureFunc = <span class="hljs-title function_">outer</span>(); <span class="hljs-comment">// outer 실행, inner 반환 </span>
+<span class="hljs-title function_">closureFunc</span>(); <span class="hljs-comment">// 출력: I am outer</span>
+</code></pre>
+<ol start="2">
+<li>Loop &#x26; Closure: 클로저를 사용하는 루프에서 흔히 범하는 함정.</li>
+</ol>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createFuncArray</span>(<span class="hljs-params"></span>) {     
+<span class="hljs-keyword">var</span> funcArray = [];      
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &#x3C; <span class="hljs-number">5</span>; i++) {         
+  funcArray.<span class="hljs-title function_">push</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {            
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(i); <span class="hljs-comment">// 항상 5를 출력하며, 0, 1, 2, 3, 4가 아님        </span>
+ });    
+ }      
+<span class="hljs-keyword">return</span> funcArray; 
+}  
+<span class="hljs-keyword">var</span> myFuncArray = <span class="hljs-title function_">createFuncArray</span>(); 
+myFuncArray[<span class="hljs-number">0</span>](); <span class="hljs-comment">// 출력: 5</span>
+</code></pre>
+<p>루프 예제의 함정을 피하려면, IIFE(즉시 실행 함수 표현)를 사용하여 각 반복마다 클로저를 생성할 수 있습니다:</p>
+<div class="content-ad"></div>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">createFuncArray</span>(<span class="hljs-params"></span>) {
+   <span class="hljs-keyword">var</span> funcArray = [];
+   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &#x3C; <span class="hljs-number">5</span>; i++) {
+       (<span class="hljs-keyword">function</span>(<span class="hljs-params">num</span>) {
+           funcArray.<span class="hljs-title function_">push</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+               <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(num);
+           });
+       })(i);
+   }
+   <span class="hljs-keyword">return</span> funcArray;
+}
+<span class="hljs-keyword">var</span> myFuncArray = <span class="hljs-title function_">createFuncArray</span>();
+myFuncArray[<span class="hljs-number">0</span>](); <span class="hljs-comment">// 출력: 0</span>
+</code></pre>
+<p>자바스크립트를 마스터하기 위해서는 스코프와 클로저를 이해하는 것이 기본이 됩니다. 이러한 예제들은 좋은 시작점이 될 것입니다!</p>
+<ol start="3">
+<li></li>
+</ol>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">makeCounter</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+        <span class="hljs-keyword">return</span> ++count;
+    };
+}
+
+<span class="hljs-keyword">var</span> counter1 = <span class="hljs-title function_">makeCounter</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">counter1</span>()); <span class="hljs-comment">// 출력: 1</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">counter1</span>()); <span class="hljs-comment">// 출력: 2</span>
+
+<span class="hljs-keyword">var</span> counter2 = <span class="hljs-title function_">makeCounter</span>();
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">counter2</span>()); <span class="hljs-comment">// 출력: 1 (다시 1부터 시작)</span>
+</code></pre>
+<div class="content-ad"></div>
+<p>이 예제에서:</p>
+<ul>
+<li>makeCounter() 함수는 카운트 변수를 증가시키고 반환하는 내부 함수를 반환합니다.</li>
+<li>makeCounter()가 호출될 때마다, 자체 카운트 변수를 가진 새로운 렉시컬 환경이 생성되며, 이는 외부 스코프에서 숨겨져 있습니다.</li>
+<li>counter1과 counter2가 호출될 때, 각각 자체 독립적인 카운트 변수를 가지며, 각각 자체 상태를 독립적으로 유지합니다.</li>
+<li>클로저는 내부 함수가 makeCounter() 실행이 끝난 후에도 포함된 스코프의 카운트 변수에 접근할 수 있도록 형성됩니다.</li>
+</ul>
+<p>클로저 스코프 체인</p>
+<p>모든 클로저에는 세 가지 스코프가 있습니다:</p>
+<div class="content-ad"></div>
+<ul>
+<li>지역 스코프 (자체 스코프)</li>
+<li>포함 스코프 (블록, 함수 또는 모듈 스코프가 될 수 있음)</li>
+<li>전역 스코프</li>
+</ul>
+<pre><code class="hljs language-js"><span class="hljs-comment">// 전역 스코프</span>
+<span class="hljs-keyword">const</span> e = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">sum</span>(<span class="hljs-params">a</span>) {
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> (<span class="hljs-params">b</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> (<span class="hljs-params">c</span>) {
+      <span class="hljs-comment">// 외부 함수 스코프</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">function</span> (<span class="hljs-params">d</span>) {
+        <span class="hljs-comment">// 지역 스코프</span>
+        <span class="hljs-keyword">return</span> a + b + c + d + e;
+      };
+    };
+  };
+}
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">sum</span>(<span class="hljs-number">1</span>)(<span class="hljs-number">2</span>)(<span class="hljs-number">3</span>)(<span class="hljs-number">4</span>)); <span class="hljs-comment">// 20을 출력합니다.</span>
+</code></pre>
+<ul>
+<li>호이스팅
+호이스팅은 변수와 함수의 값을 초기화/할당하기 전에도 변수와 함수의 값을 추출할 수 있게 해주는 개념으로, 이는 실행 컨텍스트의 첫 번째 단계 (메모리 생성 단계 또는 생성 단계)로 인해 발생합니다.</li>
+<li>JavaScript에서 호이스팅은 기본 동작으로 모든 선언을 코드 실행 전에 해당 범위의 맨 위로 이동시키는 것입니다. 기본적으로 함수와 변수가 선언된 위치와 상관없이 해당 범위의 맨 위로 이동되기 때문에 전역이든 지역이든 상관없이 우리에게 이점을 제공합니다.</li>
+<li>참고: JavaScript는 선언을 호이스트하지만 초기화는 호이스트하지 않습니다.</li>
+<li>JavaScript는 프로그램에서 정의된 모든 변수와 함수에 대해 실행 전에 메모리를 할당합니다.</li>
+</ul>
+<ol>
+<li>var로 호이스팅:</li>
+</ol>
+<div class="content-ad"></div>
+<ul>
+<li>예제 1: 변수 선언 호이스팅</li>
+</ul>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// 결과: undefined</span>
+<span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+</code></pre>
+<ul>
+<li>예제 2: 함수 선언 호이스팅</li>
+</ul>
+<pre><code class="hljs language-js"><span class="hljs-title function_">hoistedFunction</span>(); <span class="hljs-comment">// 결과: "호이스팅된 함수"</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">hoistedFunction</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"호이스팅된 함수"</span>);
+}
+</code></pre>
+<div class="content-ad"></div>
+<ol start="2">
+<li>let으로 호이스팅:</li>
+</ol>
+<ul>
+<li>예제 3: 변수 선언 호이스팅</li>
+</ul>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// 오류: 초기화 전에 'x'에 액세스할 수 없음</span>
+<span class="hljs-keyword">let</span> x = <span class="hljs-number">10</span>;
+</code></pre>
+<ul>
+<li>예제 4: 함수 선언 호이스팅 없음</li>
+</ul>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-title function_">notHoistedFunction</span>(); <span class="hljs-comment">// 에러: notHoistedFunction이 정의되지 않았습니다.</span>
+<span class="hljs-keyword">let</span> notHoistedFunction = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"호이스팅되지 않은 함수"</span>);
+}
+</code></pre>
+<ol start="3">
+<li>const로 호이스팅:</li>
+</ol>
+<ul>
+<li>예제 5: 변수 선언 호이스팅</li>
+</ul>
+<pre><code class="hljs language-js"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x); <span class="hljs-comment">// 에러: 초기화 전에 'x'에 접근할 수 없음</span>
+<span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
+</code></pre>
+<div class="content-ad"></div>
+<ol start="4">
+<li>함수 스코프에서 호이스팅:</li>
+</ol>
+<ul>
+<li>예제 6: 함수 내부의 호이스팅</li>
+</ul>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">example</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(innerVar); <span class="hljs-comment">// 출력: undefined</span>
+  <span class="hljs-keyword">var</span> innerVar = <span class="hljs-string">'내부 변수'</span>;
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(innerVar); <span class="hljs-comment">// 출력: 내부 변수</span>
+}
+<span class="hljs-title function_">example</span>();
+</code></pre>
+<ul>
+<li>예제 7: 블록 내부의 호이스팅 (let 및 const로 호이스팅 없음)</li>
+</ul>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">example</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(innerLetVar); <span class="hljs-comment">// 오류: 초기화되기 전에 'innerLetVar'에 액세스할 수 없습니다</span>
+  <span class="hljs-keyword">let</span> innerLetVar = <span class="hljs-string">'내부 let 변수'</span>;
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(innerLetVar); <span class="hljs-comment">// 위의 오류로 이 줄은 실행되지 않습니다</span>
+}
+<span class="hljs-title function_">example</span>();
+
+<span class="hljs-number">5.</span> 중첩된 스코프에서 호이스팅:
+
+- 예제 <span class="hljs-number">8</span>: 중첩된 함수에서 호이스팅
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">outer</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(outerVar); <span class="hljs-comment">// 결과: 정의되지 않음</span>
+  <span class="hljs-keyword">var</span> outerVar = <span class="hljs-string">'바깥 변수'</span>;
+  <span class="hljs-title function_">inner</span>();
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">inner</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(outerVar); <span class="hljs-comment">// 결과: 바깥 변수</span>
+  }
+}
+<span class="hljs-title function_">outer</span>();
+
+<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-ad"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+
+<span class="hljs-number">6.</span> 함수 표현식을 이용한 호이스팅:
+
+- 예시 <span class="hljs-number">9</span>: 함수 표현식 호이스팅
+
+<span class="hljs-keyword">var</span> myFunc = <span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"함수 표현식"</span>);
+};
+<span class="hljs-title function_">myFunc</span>(); <span class="hljs-comment">// 출력: 함수 표현식</span>
+
+<span class="hljs-number">7.</span> 다른 스코프 유형에서의 호이스팅:
+
+<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-ad"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+
+- 예제 <span class="hljs-number">10</span>: 전역 범위에서 호이스팅
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(globalVar); <span class="hljs-comment">// 출력: undefined</span>
+<span class="hljs-keyword">var</span> globalVar = <span class="hljs-string">'전역 변수'</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(globalVar); <span class="hljs-comment">// 출력: 전역 변수</span>
+
+<span class="hljs-number">4.</span> <span class="hljs-title class_">ES6</span> 모듈
+모듈을 사용하면 코드를 별도의 파일로 캡슐화하고 그들 간에 기능을 <span class="hljs-keyword">import</span>/<span class="hljs-keyword">export</span>할 수 있습니다.
+
+기본 모듈 내보내기:
+
+<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-ad"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+
+<span class="hljs-comment">// moduleA.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Hello'</span>);
+}
+
+<span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> { greet } <span class="hljs-keyword">from</span> <span class="hljs-string">'./moduleA.js'</span>;
+<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// Output: Hello</span>
+
+<span class="hljs-number">2.</span> <span class="hljs-title class_">Default</span> <span class="hljs-title class_">Exports</span>:
+
+<span class="hljs-comment">// moduleB.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Hello'</span>);
+}
+
+&#x3C;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"content-ad"</span>>&#x3C;/div>
+
+<span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> greet <span class="hljs-keyword">from</span> <span class="hljs-string">'./moduleB.js'</span>;
+<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// 출력: Hello</span>
+
+<span class="hljs-number">3.</span> 별칭이 지정된 <span class="hljs-title class_">Named</span> <span class="hljs-title class_">Exports</span>:
+
+<span class="hljs-comment">// moduleC.js</span>
+<span class="hljs-keyword">export</span> { greet <span class="hljs-keyword">as</span> hello };
+
+<span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> { hello } <span class="hljs-keyword">from</span> <span class="hljs-string">'./moduleC.js'</span>;
+<span class="hljs-title function_">hello</span>(); <span class="hljs-comment">// 출력: Hello</span>
+
+<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-ad"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+
+<span class="hljs-number">4.</span> 여러 값을 내보내기:
+
+<span class="hljs-comment">// moduleD.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Hello'</span>);
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-variable constant_">PI</span> = <span class="hljs-number">3.14</span>;
+
+<span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> { greet, <span class="hljs-variable constant_">PI</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'./moduleD.js'</span>;
+<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// 결과: Hello</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-variable constant_">PI</span>); <span class="hljs-comment">// 결과: 3.14</span>
+
+<span class="xml"><span class="hljs-tag">&#x3C;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content-ad"</span>></span><span class="hljs-tag">&#x3C;/<span class="hljs-name">div</span>></span></span>
+
+</code></pre>
+<p>// moduleE.js
+export default function greet() {
+console.log('Hello');
+}
+export const PI = 3.14;</p>
+<p>// main.js
+import greet, { PI } from './moduleE.js';
+greet(); // Output: Hello
+console.log(PI); // Output: 3.14</p>
+<ol start="6">
+<li>Importing All Exports:</li>
+</ol>
+<p>// moduleF.js
+export function greet() {
+console.log('Hello');
+}
+export const PI = 3.14;</p>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> moduleF <span class="hljs-keyword">from</span> <span class="hljs-string">'./moduleF.js'</span>;
+moduleF.<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// 출력: Hello</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(moduleF.<span class="hljs-property">PI</span>); <span class="hljs-comment">// 출력: 3.14</span>
+</code></pre>
+<ol start="7">
+<li>부수 효과용 모듈 가져 오기:</li>
+</ol>
+<pre><code class="hljs language-js"><span class="hljs-comment">// moduleG.js</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Module G가 로드되었습니다'</span>);
+</code></pre>
+<pre><code class="hljs language-js"><span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'./moduleG.js'</span>; 
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Main.js 파일이 실행 중입니다"</span>)
+<span class="hljs-comment">// 출력: // 먼저 가져온 파일이 먼저 실행되어</span>
+<span class="hljs-title class_">Module</span> G가 로드되었습니다
+<span class="hljs-title class_">Main</span>.<span class="hljs-property">js</span> 파일이 실행 중입니다
+</code></pre>
+<div class="content-ad"></div>
+<ol start="8">
+<li>다이나믹 Imports:</li>
+</ol>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">const</span> moduleName = <span class="hljs-string">'./moduleA.js'</span>;
+<span class="hljs-keyword">import</span>(moduleName).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">module</span> =></span> {
+  <span class="hljs-variable language_">module</span>.<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// 출력: Hello</span>
+});
+</code></pre>
+<ol start="9">
+<li>모듈 재내보내기:</li>
+</ol>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// moduleH.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">'Hello'</span>);
+}
+</code></pre>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-comment">// moduleI.js</span>
+<span class="hljs-keyword">export</span> { greet } <span class="hljs-keyword">from</span> <span class="hljs-string">'./moduleH.js'</span>;
+<span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> { greet } <span class="hljs-keyword">from</span> <span class="hljs-string">'./moduleI.js'</span>;
+<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// Output: Hello</span>
+</code></pre>
+<ol start="10">
+<li>Conditional Module Loading:</li>
+</ol>
+<pre><code class="hljs language-js"><span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">if</span> (condition) {
+  <span class="hljs-keyword">import</span>(<span class="hljs-string">'./moduleA.js'</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">module</span> =></span> {
+    <span class="hljs-variable language_">module</span>.<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// Output: Hello</span>
+  });
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">import</span>(<span class="hljs-string">'./moduleB.js'</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">module</span> =></span> {
+    <span class="hljs-variable language_">module</span>.<span class="hljs-title function_">greet</span>(); <span class="hljs-comment">// Output: Hi</span>
+  });
+}
+</code></pre>
+<p><code>export default</code> 구문과 일반 <code>export</code> 구문은 JavaScript 모듈에서 값을 내보내는데 모두 사용됩니다. 그러나 다른 모듈에서 가져오고 사용하는 방법에는 차이가 있습니다.</p>
+<div class="content-ad"></div>
+<ol>
+<li>export default:</li>
+</ol>
+<ul>
+<li>export default을 사용하면 모듈에서 하나의 값을 내보낼 수 있습니다.</li>
+<li>기본 내보내기를 가져올 때는 가져온 값에 대해 원하는 이름을 사용할 수 있습니다.</li>
+<li>기본 내보내기를 가져올 때는 중괄호 '{}'가 필요하지 않습니다.</li>
+<li>모듈당 기본 내보내기는 하나만 가질 수 있습니다.</li>
+</ul>
+<p>예시:</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// ModuleA.js</span>
+<span class="hljs-keyword">const</span> value = <span class="hljs-string">'Hello'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> value;
+</code></pre>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-comment">// ModuleB.js</span>
+<span class="hljs-keyword">import</span> myValue <span class="hljs-keyword">from</span> <span class="hljs-string">'./ModuleA.js'</span>;
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myValue); <span class="hljs-comment">// 출력: Hello</span>
+</code></pre>
+<ol start="2">
+<li><code>export default</code> 없이 (이름 있는 수출):</li>
+</ol>
+<ul>
+<li>이름 있는 수출을 사용하면 모듈에서 여러 값을 내보낼 수 있습니다.</li>
+<li>이름 있는 수출을 가져올 때 내보낸 값과 동일한 이름을 사용해야 합니다.</li>
+<li>이름 있는 수출을 가져올 때 중괄호 <code>{}</code>를 사용해야 합니다.</li>
+<li>모듈 당 여러 이름 있는 수출을 가질 수 있습니다.</li>
+</ul>
+<p>예시:</p>
+<div class="content-ad"></div>
+<p>// ModuleA.js
+export const value1 = 'Hello';
+export const value2 = 'World';</p>
+<p>// ModuleB.js
+import { value1, value2 } from './ModuleA.js';
+console.log(value1); // Output: Hello
+console.log(value2); // Output: World</p>
+<p>요약하면, export default는 모듈에서 단일 값을 지정하지 않고 내보내는 데 사용되며, named exports는 여러 값을 내보내는 데 사용되며 가져올 때 동일한 이름을 지정해야 합니다. 특정 프로젝트 요구에 따라 유용하게 사용됩니다.</p>
+<p>CommonJS와 ES6 모듈을 예제와 함께 비교하여 그 차이를 설명해 보겠습니다:</p>
+<div class="content-ad"></div>
+<ol>
+<li>CommonJS:</li>
+</ol>
+<ul>
+<li>CommonJS는 주로 서버 측 개발을 위해 Node.js에서 사용되는 모듈 시스템입니다. 이는 동기적이며 블로킹 방식으로, 모듈은 런타임에서 동기적으로 로드됩니다.</li>
+</ul>
+<p>CommonJS 예제:</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// ModuleA.js</span>
+<span class="hljs-keyword">const</span> greeting = <span class="hljs-string">'Hello'</span>;
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(greeting);
+}
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = {
+  greeting,
+  sayHello
+};
+</code></pre>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-comment">// ModuleB.js</span>
+<span class="hljs-keyword">const</span> moduleA = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./ModuleA'</span>);
+moduleA.<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// Output: Hello</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(moduleA.<span class="hljs-property">greeting</span>); <span class="hljs-comment">// Output: Hello</span>
+</code></pre>
+<ol start="2">
+<li>ES6 Modules:</li>
+</ol>
+<ul>
+<li>ES6 modules are a newer module system introduced in ECMAScript 2015 (ES6). They are asynchronous and support both synchronous and asynchronous module loading.</li>
+</ul>
+<p>Example with ES6 Modules:</p>
+<div class="content-ad"></div>
+<pre><code class="hljs language-js"><span class="hljs-comment">// ModuleA.js</span>
+<span class="hljs-keyword">const</span> greeting = <span class="hljs-string">'Hello'</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(greeting);
+}
+<span class="hljs-keyword">export</span> { greeting };
+</code></pre>
+<pre><code class="hljs language-js"><span class="hljs-comment">// ModuleB.js</span>
+<span class="hljs-keyword">import</span> { sayHello, greeting } <span class="hljs-keyword">from</span> <span class="hljs-string">'./ModuleA.js'</span>;
+<span class="hljs-title function_">sayHello</span>(); <span class="hljs-comment">// 출력: Hello</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(greeting); <span class="hljs-comment">// 출력: Hello</span>
+</code></pre>
+<p>비교:</p>
+<p>동기 vs. 비동기:</p>
+<div class="content-ad"></div>
+<ul>
+<li>
+<p>CommonJS 모듈은 동기적이고 블로킹이며, 실행 시 동기적으로 로드됩니다. 이는 서버 측 프로그래밍과 잘 어울리며, 블로킹 I/O 작업이 일반적인 경우에 적합합니다.</p>
+</li>
+<li>
+<p>ES6 모듈은 구현에 따라 동기적이거나 비동기적일 수 있습니다. 더 유연하며 서버 측 및 클라이언트 측 환경에서 모두 사용할 수 있습니다.</p>
+</li>
+</ul>
+<p>사용 편의성:</p>
+<ul>
+<li>
+<p>CommonJS 모듈은 module.exports 및 require()를 사용하여 각각 기능을 내보내고 가져옵니다. 이 구문은 직관적이며 이해하기 쉽습니다.</p>
+</li>
+<li>
+<p>ES6 모듈은 export 및 import 문을 사용하여 기능을 내보내고 가져옵니다. 이 구문은 더 현대적이고 언어 명세와 일치하지만, 아직 ES6 모듈을 네이티브로 지원하지 않는 환경에서 변환을 위한 추가 도구가 필요할 수 있습니다.</p>
+</li>
+</ul>
+<p>브라우저 호환성:</p>
+<div class="content-ad"></div>
+<ul>
+<li>CommonJS 모듈은 브라우저에서 네이티브로 지원되지 않습니다. CommonJS 코드를 브라우저가 이해할 수 있는 형식으로 변환하기 위해 Browserify나 Webpack과 같은 번들러가 필요합니다.</li>
+<li>ES6 모듈은 최신 브라우저에서 지원되며 많은 경우 추가 도구 없이 네이티브로 사용할 수 있습니다. 그러나 오래된 브라우저에서 ES6 모듈을 지원하기 위해서는 Babel과 같은 도구를 사용하여 트랜스 파일링이 필요할 수 있습니다.</li>
+</ul>
+<p>서버 측 사용 사례:</p>
+<ul>
+<li>Node.js는 주로 서버 측 프로그래밍에 사용되며, 동기적인 성격과 쉬운 사용성 때문에 CommonJS 모듈이 잘 어울립니다. 런타임에서 모듈을 동기적으로 로드할 수 있으며, 서버는 모듈이 로드된 후에 실행을 계속할 수 있습니다.</li>
+<li>브라우저 환경에서는 JavaScript 코드가 클라이언트 측에서 실행되며, 응답성을 보장하고 UI 쓰레드를 차단하지 않기 위해 비동기 작업이 선호됩니다. 따라서 웹 개발에서는 비동기적 모듈 로딩을 지원하는 AMD (Asynchronous Module Definition) 또는 ES6 모듈과 같은 다른 모듈 시스템이 일반적으로 사용됩니다.</li>
+</ul>
+<p>성능 고려 사항:</p>
+<div class="content-ad"></div>
+<ul>
+<li>CommonJS 모듈은 동기적으로 로드되어 브라우저 환경에서 특히 많은 모듈이 있는 대규모 웹 애플리케이션의 성능에 영향을 미칠 수 있습니다. 동기적 모듈 로딩은 페이지 로드 시간이 더 느려지고 응답성이 감소할 수 있습니다.</li>
+<li>다른 모듈 시스템인 AMD나 ES6 모듈에서 지원하는 비동기 모듈 로딩은 모듈이 병렬로 로드되도록 허용하여 모듈 종속성을 로드하는 데 걸리는 시간을 줄여 성능을 향상시킵니다.</li>
+</ul>
+<p>요약하면, CommonJS 모듈은 동기적 특성과 사용 편의성으로 인해 Node.js에서 서버 측 개발에 적합합니다. ES6 모듈은 더 많은 다양성을 제공하며 남종적 및 클라이언트 측 개발에서 점점 더 채택되고 있으며 비동기 모듈 로딩 및 현대적 구문을 지원합니다.</p>
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"JS 초보자를 위한 가이드 Part 1  스코프, 클로저, 호이스팅, 모듈 이해하기","description":"","date":"2024-06-27 18:16","slug":"2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules","content":"\n\n![이미지](/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_0.png)\n\n- Scope: 변수에 대한 접근 가능성을 정의하며, 코드 내에서 어디에서 접근할 수 있는지를 나타냅니다.\n- Closure: 실행 범위 외부에서 실행되더라도 어휘적 범위를 기억하는 함수입니다.\n- 호이스팅은 JavaScript 메커니즘으로, 변수 및 함수 선언이 코드의 선언 위치와 관계없이 컴파일 단계 중에 해당 범위의 맨 위로 이동됩니다. 이는 변수 및 함수가 선언되기 전에 사용될 수 있다는 것을 의미합니다.\n\n명령형(어떻게, 무엇) 대 선언형(무엇)\n명령형 - 작동 방식을 알고 작동 방식을 알 수 있습니다.\n선언형 - 작동 방식을 알지 못한 채, 무엇이 동작하는지만 알 수 있습니다. JS 배열 맵 함수와 같은 예시\n\n![이미지](/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_1.png)\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\nScope 이전에 JS에서 변수를 선언하는 방법을 먼저 이해해야 합니다.\nlet vs var vs const\n\n![이미지](/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_2.png)\n\nScope는 변수의 접근 가능성(가시성)을 결정합니다. JavaScript에는 3가지 유형의 scope가 있습니다: ES6(2015) 이전에는 JavaScript에서 전역 Scope 및 함수 Scope만 있었지만, 블록 Scope는 나중에 let과 const로 도입되었습니다.\n\n- 전역 Scope: 어떤 함수 내에서도 선언되지 않은 변수들은 전역 Scope를 갖습니다.\n프로그래밍 환경에서 전역 Scope는 모든 다른 Scope에서 볼 수 있는 Scope입니다. 이는 브라우저에서는 window 객체에 연결되고 Node.js에서는 전역(global)에 연결됩니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\nvar globalVar = 10;  \nfunction foo() {     \n   console.log(globalVar); // 사용 가능 \n   console.log(window.globalVar); // 사용 가능\n}  \nconsole.log(globalVar);\nconsole.log(window.globalVar);\nfoo(); // 출력: 10 10 10 10\n```\n\n2. 지역 범위: 함수 내에서 선언된 변수는 지역 범위를 갖습니다.\n함수 내에서 선언된 변수를 지역 변수라고 하며 함수 범위에 속합니다. 지역 변수는 함수 내 어디에서든 접근할 수 있습니다 (기능 블록 내).\n\n```js\nfunction foo() {     \n   var localVar = 20;    \n   if(true){\n   var blocklocalVar = 2\n    } \n   console.log(localVar); // 사용 가능 \n   console.log(blocklocalVar) // var의 함수 범위 때문에 접근 가능\n }  \nfoo(); \n\nconsole.log(localVar);\n// 출력: 20 2\n// 오류: localVar이(가) 정의되지 않았습니다\n```\n\n3. 블록 범위: let과 const는 블록 범위 변수이며, if, for, while 등의 블록을 기준으로 합니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\nES6는 JavaScript에 let 및 const라는 두 가지 중요한 새로운 키워드를 소개했습니다. 이 두 키워드는 JavaScript에서 블록 범위를 제공합니다. ' ' 블록 내에서 선언된 변수는 블록 외부에서 액세스할 수 없습니다. 예: If else 블록, for 루프 블록 등\n\n예시 (let을 사용한 블록 스코프):\n\n```js\nfunction example() {\n  if (true) {\n    let blockVar = '블록 내부에 있어요';\n    console.log(blockVar); // 접근 가능\n  }\n  console.log(blockVar); // 오류: blockVar가 정의되지 않았습니다\n}\nexample();\n```\n\n- 예시 (const를 사용한 블록 스코프):\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\nfunction example() {\n  const PI = 3.14;\n  if (true) {\n    const blockConst = 'I am inside a block';\n    console.log(PI); // Accessible\n    console.log(blockConst); // Accessible\n  }\n  console.log(PI); // Accessible\n  console.log(blockConst); // Error: blockConst is not defined\n}\nexample();\n```\n\n만약 var를 사용한다면 (함수 스코프)\n\n```js\nfunction example() {\n  const PI = 3.14;\n  if (true) {\n    var blockConst = 'I am inside a block';\n    console.log(PI); // Accessible\n    console.log(blockConst); // Accessible\n  }\n  console.log(PI); // Accessible\n  console.log(blockConst); // Error: blockConst is not defined\n}\nexample();\n3.14\nI am inside a block\n3.14\nundefined\n```\n\n```js\nfunction outer() {\n  var outerVar = 'I am outer';\n  function inner() {\n    console.log(outerVar); // Accessible\n  }\n  inner();\n}\nouter(); // 출력: I am outer\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n범위의 예시\n\n1. (let을 사용한 루프 변수 범위): 블록\n\n```js\nfor (let i = 0; i \u003c 3; i++) {\n  setTimeout(() =\u003e console.log(i), 100);\n}\n// 결과: 0\n// 결과: 1\n// 결과: 2\n```\n\n2. var를 사용한 루프 변수 범위: 함수 또는 전역 범위\n\n```js\nfor (var i = 0; i \u003c 3; i++) {\n  setTimeout(() =\u003e console.log(i), 100);\n}\n// 결과: 3\n// 결과: 3\n// 결과: 3\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n3. 중첩된 블록 내에서 let으로 재선언: 블록 스코프\n\n```js\nfunction example() {\n  let x = 10;\n  if (true) {\n    let x = 20;\n  }\n  console.log(x); // 출력: 10\n}\nexample();\n```\n\n4. 중첩된 블록 내에서 var로 재선언: 함수 또는 전역 스코프\n\n```js\nfunction example() {\n  var x = 10;\n  if (true) {\n    var x = 20;\n  }\n  console.log(x); // 출력: 20\n}\nexample();\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n5. var 및 let을 사용한 호이스팅:\n\n```js\nconsole.log(x); // 결과: undefined\nvar x = 10;\n```\n\n```js\nconsole.log(x); // 오류: 초기화 전에 'x'에 액세스할 수 없음\nlet x = 10;\n```\n\n6. let 및 const를 사용한 블록 스코프:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\nfunction example() {\n  if (true) {\n    const x = 10;\n    console.log(x); // 출력: 10\n  }\n  console.log(x); // 오류: x가 정의되지 않았습니다\n}\nexample();\n```\n\n\n## 2. 클로저:\n\n- 정의: 클로저는 함수가 다른 곳에서 실행되더라도 주변 변수를 \"기억\"하는 것을 말합니다.\n\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\nfunction outer() {     \n  var outerVar = 'I am outer';      \n  function inner() {         \n   console.log(outerVar); // outer 함수 외부에서도 호출될 때 접근 가능     \n  }      \n return inner; // inner 함수 반환 \n}  \nvar closureFunc = outer(); // outer 실행, inner 반환 \nclosureFunc(); // 출력: I am outer\n```\n\n2. Loop \u0026 Closure: 클로저를 사용하는 루프에서 흔히 범하는 함정.\n\n```js\nfunction createFuncArray() {     \nvar funcArray = [];      \nfor (var i = 0; i \u003c 5; i++) {         \n  funcArray.push(function() {            \n  console.log(i); // 항상 5를 출력하며, 0, 1, 2, 3, 4가 아님        \n });    \n }      \nreturn funcArray; \n}  \nvar myFuncArray = createFuncArray(); \nmyFuncArray[0](); // 출력: 5\n```\n\n루프 예제의 함정을 피하려면, IIFE(즉시 실행 함수 표현)를 사용하여 각 반복마다 클로저를 생성할 수 있습니다:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```javascript\nfunction createFuncArray() {\n   var funcArray = [];\n   for (var i = 0; i \u003c 5; i++) {\n       (function(num) {\n           funcArray.push(function() {\n               console.log(num);\n           });\n       })(i);\n   }\n   return funcArray;\n}\nvar myFuncArray = createFuncArray();\nmyFuncArray[0](); // 출력: 0\n```\n\n자바스크립트를 마스터하기 위해서는 스코프와 클로저를 이해하는 것이 기본이 됩니다. 이러한 예제들은 좋은 시작점이 될 것입니다!\n\n3.\n\n```javascript\nfunction makeCounter() {\n    var count = 0;\n\n    return function() {\n        return ++count;\n    };\n}\n\nvar counter1 = makeCounter();\nconsole.log(counter1()); // 출력: 1\nconsole.log(counter1()); // 출력: 2\n\nvar counter2 = makeCounter();\nconsole.log(counter2()); // 출력: 1 (다시 1부터 시작)\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n이 예제에서:\n\n- makeCounter() 함수는 카운트 변수를 증가시키고 반환하는 내부 함수를 반환합니다.\n- makeCounter()가 호출될 때마다, 자체 카운트 변수를 가진 새로운 렉시컬 환경이 생성되며, 이는 외부 스코프에서 숨겨져 있습니다.\n- counter1과 counter2가 호출될 때, 각각 자체 독립적인 카운트 변수를 가지며, 각각 자체 상태를 독립적으로 유지합니다.\n- 클로저는 내부 함수가 makeCounter() 실행이 끝난 후에도 포함된 스코프의 카운트 변수에 접근할 수 있도록 형성됩니다.\n\n클로저 스코프 체인\n\n모든 클로저에는 세 가지 스코프가 있습니다:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 지역 스코프 (자체 스코프)\r\n- 포함 스코프 (블록, 함수 또는 모듈 스코프가 될 수 있음)\r\n- 전역 스코프\n\n```js\n// 전역 스코프\nconst e = 10;\nfunction sum(a) {\n  return function (b) {\n    return function (c) {\n      // 외부 함수 스코프\n      return function (d) {\n        // 지역 스코프\n        return a + b + c + d + e;\n      };\n    };\n  };\n}\nconsole.log(sum(1)(2)(3)(4)); // 20을 출력합니다.\n```\n\n- 호이스팅\n호이스팅은 변수와 함수의 값을 초기화/할당하기 전에도 변수와 함수의 값을 추출할 수 있게 해주는 개념으로, 이는 실행 컨텍스트의 첫 번째 단계 (메모리 생성 단계 또는 생성 단계)로 인해 발생합니다.\n- JavaScript에서 호이스팅은 기본 동작으로 모든 선언을 코드 실행 전에 해당 범위의 맨 위로 이동시키는 것입니다. 기본적으로 함수와 변수가 선언된 위치와 상관없이 해당 범위의 맨 위로 이동되기 때문에 전역이든 지역이든 상관없이 우리에게 이점을 제공합니다.\n- 참고: JavaScript는 선언을 호이스트하지만 초기화는 호이스트하지 않습니다.\n- JavaScript는 프로그램에서 정의된 모든 변수와 함수에 대해 실행 전에 메모리를 할당합니다.\n\n1. var로 호이스팅:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 예제 1: 변수 선언 호이스팅\n\n```js\nconsole.log(x); // 결과: undefined\nvar x = 10;\n```\n\n- 예제 2: 함수 선언 호이스팅\n\n```js\nhoistedFunction(); // 결과: \"호이스팅된 함수\"\nfunction hoistedFunction() {\n  console.log(\"호이스팅된 함수\");\n}\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n2. let으로 호이스팅:\n\n- 예제 3: 변수 선언 호이스팅\n\n```js\nconsole.log(x); // 오류: 초기화 전에 'x'에 액세스할 수 없음\nlet x = 10;\n```\n\n- 예제 4: 함수 선언 호이스팅 없음\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\nnotHoistedFunction(); // 에러: notHoistedFunction이 정의되지 않았습니다.\nlet notHoistedFunction = function() {\n  console.log(\"호이스팅되지 않은 함수\");\n}\n```\n\n3. const로 호이스팅:\n\n- 예제 5: 변수 선언 호이스팅\n\n```js\nconsole.log(x); // 에러: 초기화 전에 'x'에 접근할 수 없음\nconst x = 10;\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n4. 함수 스코프에서 호이스팅:\n\n- 예제 6: 함수 내부의 호이스팅\n\n```js\nfunction example() {\n  console.log(innerVar); // 출력: undefined\n  var innerVar = '내부 변수';\n  console.log(innerVar); // 출력: 내부 변수\n}\nexample();\n```\n\n- 예제 7: 블록 내부의 호이스팅 (let 및 const로 호이스팅 없음)\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\nfunction example() {\n  console.log(innerLetVar); // 오류: 초기화되기 전에 'innerLetVar'에 액세스할 수 없습니다\n  let innerLetVar = '내부 let 변수';\n  console.log(innerLetVar); // 위의 오류로 이 줄은 실행되지 않습니다\n}\nexample();\r\n\r\n5. 중첩된 스코프에서 호이스팅:\n\n- 예제 8: 중첩된 함수에서 호이스팅\n\nfunction outer() {\n  console.log(outerVar); // 결과: 정의되지 않음\n  var outerVar = '바깥 변수';\n  inner();\n  function inner() {\n    console.log(outerVar); // 결과: 바깥 변수\n  }\n}\nouter();\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n6. 함수 표현식을 이용한 호이스팅:\n\n- 예시 9: 함수 표현식 호이스팅\n\nvar myFunc = function() {\n  console.log(\"함수 표현식\");\n};\nmyFunc(); // 출력: 함수 표현식\n\n7. 다른 스코프 유형에서의 호이스팅:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 예제 10: 전역 범위에서 호이스팅\n\nconsole.log(globalVar); // 출력: undefined\nvar globalVar = '전역 변수';\nconsole.log(globalVar); // 출력: 전역 변수\n\n4. ES6 모듈\n모듈을 사용하면 코드를 별도의 파일로 캡슐화하고 그들 간에 기능을 import/export할 수 있습니다.\n\n기본 모듈 내보내기:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n// moduleA.js\nexport function greet() {\n  console.log('Hello');\n}\n\n// main.js\nimport { greet } from './moduleA.js';\ngreet(); // Output: Hello\n\n2. Default Exports:\n\n// moduleB.js\nexport default function greet() {\n  console.log('Hello');\n}\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n// main.js\nimport greet from './moduleB.js';\ngreet(); // 출력: Hello\n\n3. 별칭이 지정된 Named Exports:\n\n// moduleC.js\nexport { greet as hello };\n\n// main.js\nimport { hello } from './moduleC.js';\nhello(); // 출력: Hello\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n4. 여러 값을 내보내기:\n\n// moduleD.js\nexport function greet() {\n  console.log('Hello');\n}\nexport const PI = 3.14;\n\n// main.js\nimport { greet, PI } from './moduleD.js';\ngreet(); // 결과: Hello\nconsole.log(PI); // 결과: 3.14\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```\n// moduleE.js\nexport default function greet() {\n  console.log('Hello');\n}\nexport const PI = 3.14;\n\n\n\n// main.js\nimport greet, { PI } from './moduleE.js';\ngreet(); // Output: Hello\nconsole.log(PI); // Output: 3.14\n\n\n6. Importing All Exports:\n\n\n// moduleF.js\nexport function greet() {\n  console.log('Hello');\n}\nexport const PI = 3.14;\n\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\n// main.js\nimport * as moduleF from './moduleF.js';\nmoduleF.greet(); // 출력: Hello\nconsole.log(moduleF.PI); // 출력: 3.14\n```\n\n7. 부수 효과용 모듈 가져 오기:\n\n```js\n// moduleG.js\nconsole.log('Module G가 로드되었습니다');\n```\n\n```js\n// main.js\nimport './moduleG.js'; \nconsole.log(\"Main.js 파일이 실행 중입니다\")\n// 출력: // 먼저 가져온 파일이 먼저 실행되어\nModule G가 로드되었습니다\nMain.js 파일이 실행 중입니다\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n8. 다이나믹 Imports:\n\n```javascript\n// main.js\nconst moduleName = './moduleA.js';\nimport(moduleName).then(module =\u003e {\n  module.greet(); // 출력: Hello\n});\n```\n\n9. 모듈 재내보내기:\n\n```javascript\n// moduleH.js\nexport function greet() {\n  console.log('Hello');\n}\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\n// moduleI.js\nexport { greet } from './moduleH.js';\n// main.js\nimport { greet } from './moduleI.js';\ngreet(); // Output: Hello\n```\n\n10. Conditional Module Loading:\n\n```js\n// main.js\nif (condition) {\n  import('./moduleA.js').then(module =\u003e {\n    module.greet(); // Output: Hello\n  });\n} else {\n  import('./moduleB.js').then(module =\u003e {\n    module.greet(); // Output: Hi\n  });\n}\n```\n\n  `export default` 구문과 일반 `export` 구문은 JavaScript 모듈에서 값을 내보내는데 모두 사용됩니다. 그러나 다른 모듈에서 가져오고 사용하는 방법에는 차이가 있습니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n1. export default:\n\n- export default을 사용하면 모듈에서 하나의 값을 내보낼 수 있습니다.\n- 기본 내보내기를 가져올 때는 가져온 값에 대해 원하는 이름을 사용할 수 있습니다.\n- 기본 내보내기를 가져올 때는 중괄호 '{}'가 필요하지 않습니다.\n- 모듈당 기본 내보내기는 하나만 가질 수 있습니다.\n\n예시:\n\n```js\n// ModuleA.js\nconst value = 'Hello';\nexport default value;\n```  \n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\n// ModuleB.js\nimport myValue from './ModuleA.js';\nconsole.log(myValue); // 출력: Hello\n```\n\n2. `export default` 없이 (이름 있는 수출):\n\n- 이름 있는 수출을 사용하면 모듈에서 여러 값을 내보낼 수 있습니다.\n- 이름 있는 수출을 가져올 때 내보낸 값과 동일한 이름을 사용해야 합니다.\n- 이름 있는 수출을 가져올 때 중괄호 `{}`를 사용해야 합니다.\n- 모듈 당 여러 이름 있는 수출을 가질 수 있습니다.\n\n예시:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n\n// ModuleA.js\nexport const value1 = 'Hello';\nexport const value2 = 'World';\n\n\n\n// ModuleB.js\nimport { value1, value2 } from './ModuleA.js';\nconsole.log(value1); // Output: Hello\nconsole.log(value2); // Output: World\n\n\n요약하면, export default는 모듈에서 단일 값을 지정하지 않고 내보내는 데 사용되며, named exports는 여러 값을 내보내는 데 사용되며 가져올 때 동일한 이름을 지정해야 합니다. 특정 프로젝트 요구에 따라 유용하게 사용됩니다.\n\nCommonJS와 ES6 모듈을 예제와 함께 비교하여 그 차이를 설명해 보겠습니다:\n\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n1. CommonJS:\n\n- CommonJS는 주로 서버 측 개발을 위해 Node.js에서 사용되는 모듈 시스템입니다. 이는 동기적이며 블로킹 방식으로, 모듈은 런타임에서 동기적으로 로드됩니다.\n\nCommonJS 예제:\n\n```js\n// ModuleA.js\nconst greeting = 'Hello';\nfunction sayHello() {\n  console.log(greeting);\n}\nmodule.exports = {\n  greeting,\n  sayHello\n};\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\r\n// ModuleB.js\nconst moduleA = require('./ModuleA');\nmoduleA.sayHello(); // Output: Hello\nconsole.log(moduleA.greeting); // Output: Hello\r\n```\n\n2. ES6 Modules:\n\n- ES6 modules are a newer module system introduced in ECMAScript 2015 (ES6). They are asynchronous and support both synchronous and asynchronous module loading.\n\nExample with ES6 Modules:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```js\n// ModuleA.js\nconst greeting = 'Hello';\nexport function sayHello() {\n  console.log(greeting);\n}\nexport { greeting };\n```\n\n```js\n// ModuleB.js\nimport { sayHello, greeting } from './ModuleA.js';\nsayHello(); // 출력: Hello\nconsole.log(greeting); // 출력: Hello\n```\n\n비교:\n\n동기 vs. 비동기:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- CommonJS 모듈은 동기적이고 블로킹이며, 실행 시 동기적으로 로드됩니다. 이는 서버 측 프로그래밍과 잘 어울리며, 블로킹 I/O 작업이 일반적인 경우에 적합합니다.\n  \n- ES6 모듈은 구현에 따라 동기적이거나 비동기적일 수 있습니다. 더 유연하며 서버 측 및 클라이언트 측 환경에서 모두 사용할 수 있습니다.\n\n사용 편의성:\n\n- CommonJS 모듈은 module.exports 및 require()를 사용하여 각각 기능을 내보내고 가져옵니다. 이 구문은 직관적이며 이해하기 쉽습니다.\n  \n- ES6 모듈은 export 및 import 문을 사용하여 기능을 내보내고 가져옵니다. 이 구문은 더 현대적이고 언어 명세와 일치하지만, 아직 ES6 모듈을 네이티브로 지원하지 않는 환경에서 변환을 위한 추가 도구가 필요할 수 있습니다.\n\n브라우저 호환성:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- CommonJS 모듈은 브라우저에서 네이티브로 지원되지 않습니다. CommonJS 코드를 브라우저가 이해할 수 있는 형식으로 변환하기 위해 Browserify나 Webpack과 같은 번들러가 필요합니다.\n- ES6 모듈은 최신 브라우저에서 지원되며 많은 경우 추가 도구 없이 네이티브로 사용할 수 있습니다. 그러나 오래된 브라우저에서 ES6 모듈을 지원하기 위해서는 Babel과 같은 도구를 사용하여 트랜스 파일링이 필요할 수 있습니다.\n\n서버 측 사용 사례:\n\n- Node.js는 주로 서버 측 프로그래밍에 사용되며, 동기적인 성격과 쉬운 사용성 때문에 CommonJS 모듈이 잘 어울립니다. 런타임에서 모듈을 동기적으로 로드할 수 있으며, 서버는 모듈이 로드된 후에 실행을 계속할 수 있습니다.\n- 브라우저 환경에서는 JavaScript 코드가 클라이언트 측에서 실행되며, 응답성을 보장하고 UI 쓰레드를 차단하지 않기 위해 비동기 작업이 선호됩니다. 따라서 웹 개발에서는 비동기적 모듈 로딩을 지원하는 AMD (Asynchronous Module Definition) 또는 ES6 모듈과 같은 다른 모듈 시스템이 일반적으로 사용됩니다.\n\n성능 고려 사항:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- CommonJS 모듈은 동기적으로 로드되어 브라우저 환경에서 특히 많은 모듈이 있는 대규모 웹 애플리케이션의 성능에 영향을 미칠 수 있습니다. 동기적 모듈 로딩은 페이지 로드 시간이 더 느려지고 응답성이 감소할 수 있습니다.\n- 다른 모듈 시스템인 AMD나 ES6 모듈에서 지원하는 비동기 모듈 로딩은 모듈이 병렬로 로드되도록 허용하여 모듈 종속성을 로드하는 데 걸리는 시간을 줄여 성능을 향상시킵니다.\n\n요약하면, CommonJS 모듈은 동기적 특성과 사용 편의성으로 인해 Node.js에서 서버 측 개발에 적합합니다. ES6 모듈은 더 많은 다양성을 제공하며 남종적 및 클라이언트 측 개발에서 점점 더 채택되고 있으며 비동기 모듈 로딩 및 현대적 구문을 지원합니다.","ogImage":{"url":"/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_0.png"},"coverImage":"/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_0.png","tag":["Tech"],"readingTime":15},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_0.png\" alt=\"이미지\"\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eScope: 변수에 대한 접근 가능성을 정의하며, 코드 내에서 어디에서 접근할 수 있는지를 나타냅니다.\u003c/li\u003e\n\u003cli\u003eClosure: 실행 범위 외부에서 실행되더라도 어휘적 범위를 기억하는 함수입니다.\u003c/li\u003e\n\u003cli\u003e호이스팅은 JavaScript 메커니즘으로, 변수 및 함수 선언이 코드의 선언 위치와 관계없이 컴파일 단계 중에 해당 범위의 맨 위로 이동됩니다. 이는 변수 및 함수가 선언되기 전에 사용될 수 있다는 것을 의미합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e명령형(어떻게, 무엇) 대 선언형(무엇)\n명령형 - 작동 방식을 알고 작동 방식을 알 수 있습니다.\n선언형 - 작동 방식을 알지 못한 채, 무엇이 동작하는지만 알 수 있습니다. JS 배열 맵 함수와 같은 예시\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_1.png\" alt=\"이미지\"\u003e\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003eScope 이전에 JS에서 변수를 선언하는 방법을 먼저 이해해야 합니다.\nlet vs var vs const\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules_2.png\" alt=\"이미지\"\u003e\u003c/p\u003e\n\u003cp\u003eScope는 변수의 접근 가능성(가시성)을 결정합니다. JavaScript에는 3가지 유형의 scope가 있습니다: ES6(2015) 이전에는 JavaScript에서 전역 Scope 및 함수 Scope만 있었지만, 블록 Scope는 나중에 let과 const로 도입되었습니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e전역 Scope: 어떤 함수 내에서도 선언되지 않은 변수들은 전역 Scope를 갖습니다.\n프로그래밍 환경에서 전역 Scope는 모든 다른 Scope에서 볼 수 있는 Scope입니다. 이는 브라우저에서는 window 객체에 연결되고 Node.js에서는 전역(global)에 연결됩니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e globalVar = \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e;  \n\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003efoo\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {     \n   \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(globalVar); \u003cspan class=\"hljs-comment\"\u003e// 사용 가능 \u003c/span\u003e\n   \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-variable language_\"\u003ewindow\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003eglobalVar\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// 사용 가능\u003c/span\u003e\n}  \n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(globalVar);\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-variable language_\"\u003ewindow\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003eglobalVar\u003c/span\u003e);\n\u003cspan class=\"hljs-title function_\"\u003efoo\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 출력: 10 10 10 10\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"2\"\u003e\n\u003cli\u003e지역 범위: 함수 내에서 선언된 변수는 지역 범위를 갖습니다.\n함수 내에서 선언된 변수를 지역 변수라고 하며 함수 범위에 속합니다. 지역 변수는 함수 내 어디에서든 접근할 수 있습니다 (기능 블록 내).\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003efoo\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {     \n   \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e localVar = \u003cspan class=\"hljs-number\"\u003e20\u003c/span\u003e;    \n   \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e(\u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e){\n   \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e blocklocalVar = \u003cspan class=\"hljs-number\"\u003e2\u003c/span\u003e\n    } \n   \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(localVar); \u003cspan class=\"hljs-comment\"\u003e// 사용 가능 \u003c/span\u003e\n   \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(blocklocalVar) \u003cspan class=\"hljs-comment\"\u003e// var의 함수 범위 때문에 접근 가능\u003c/span\u003e\n }  \n\u003cspan class=\"hljs-title function_\"\u003efoo\u003c/span\u003e(); \n\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(localVar);\n\u003cspan class=\"hljs-comment\"\u003e// 출력: 20 2\u003c/span\u003e\n\u003cspan class=\"hljs-comment\"\u003e// 오류: localVar이(가) 정의되지 않았습니다\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"3\"\u003e\n\u003cli\u003e블록 범위: let과 const는 블록 범위 변수이며, if, for, while 등의 블록을 기준으로 합니다.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003eES6는 JavaScript에 let 및 const라는 두 가지 중요한 새로운 키워드를 소개했습니다. 이 두 키워드는 JavaScript에서 블록 범위를 제공합니다. ' ' 블록 내에서 선언된 변수는 블록 외부에서 액세스할 수 없습니다. 예: If else 블록, for 루프 블록 등\u003c/p\u003e\n\u003cp\u003e예시 (let을 사용한 블록 스코프):\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e (\u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e blockVar = \u003cspan class=\"hljs-string\"\u003e'블록 내부에 있어요'\u003c/span\u003e;\n    \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(blockVar); \u003cspan class=\"hljs-comment\"\u003e// 접근 가능\u003c/span\u003e\n  }\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(blockVar); \u003cspan class=\"hljs-comment\"\u003e// 오류: blockVar가 정의되지 않았습니다\u003c/span\u003e\n}\n\u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003e예시 (const를 사용한 블록 스코프):\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-variable constant_\"\u003ePI\u003c/span\u003e = \u003cspan class=\"hljs-number\"\u003e3.14\u003c/span\u003e;\n  \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e (\u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e blockConst = \u003cspan class=\"hljs-string\"\u003e'I am inside a block'\u003c/span\u003e;\n    \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-variable constant_\"\u003ePI\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// Accessible\u003c/span\u003e\n    \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(blockConst); \u003cspan class=\"hljs-comment\"\u003e// Accessible\u003c/span\u003e\n  }\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-variable constant_\"\u003ePI\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// Accessible\u003c/span\u003e\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(blockConst); \u003cspan class=\"hljs-comment\"\u003e// Error: blockConst is not defined\u003c/span\u003e\n}\n\u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e만약 var를 사용한다면 (함수 스코프)\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-variable constant_\"\u003ePI\u003c/span\u003e = \u003cspan class=\"hljs-number\"\u003e3.14\u003c/span\u003e;\n  \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e (\u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e blockConst = \u003cspan class=\"hljs-string\"\u003e'I am inside a block'\u003c/span\u003e;\n    \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-variable constant_\"\u003ePI\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// Accessible\u003c/span\u003e\n    \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(blockConst); \u003cspan class=\"hljs-comment\"\u003e// Accessible\u003c/span\u003e\n  }\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-variable constant_\"\u003ePI\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// Accessible\u003c/span\u003e\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(blockConst); \u003cspan class=\"hljs-comment\"\u003e// Error: blockConst is not defined\u003c/span\u003e\n}\n\u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e();\n\u003cspan class=\"hljs-number\"\u003e3.14\u003c/span\u003e\nI am inside a block\n\u003cspan class=\"hljs-number\"\u003e3.14\u003c/span\u003e\n\u003cspan class=\"hljs-literal\"\u003eundefined\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eouter\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e outerVar = \u003cspan class=\"hljs-string\"\u003e'I am outer'\u003c/span\u003e;\n  \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003einner\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n    \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(outerVar); \u003cspan class=\"hljs-comment\"\u003e// Accessible\u003c/span\u003e\n  }\n  \u003cspan class=\"hljs-title function_\"\u003einner\u003c/span\u003e();\n}\n\u003cspan class=\"hljs-title function_\"\u003eouter\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 출력: I am outer\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e범위의 예시\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e(let을 사용한 루프 변수 범위): 블록\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efor\u003c/span\u003e (\u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e i = \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e; i \u0026#x3C; \u003cspan class=\"hljs-number\"\u003e3\u003c/span\u003e; i++) {\n  \u003cspan class=\"hljs-built_in\"\u003esetTimeout\u003c/span\u003e(\u003cspan class=\"hljs-function\"\u003e() =\u003e\u003c/span\u003e \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(i), \u003cspan class=\"hljs-number\"\u003e100\u003c/span\u003e);\n}\n\u003cspan class=\"hljs-comment\"\u003e// 결과: 0\u003c/span\u003e\n\u003cspan class=\"hljs-comment\"\u003e// 결과: 1\u003c/span\u003e\n\u003cspan class=\"hljs-comment\"\u003e// 결과: 2\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"2\"\u003e\n\u003cli\u003evar를 사용한 루프 변수 범위: 함수 또는 전역 범위\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efor\u003c/span\u003e (\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e i = \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e; i \u0026#x3C; \u003cspan class=\"hljs-number\"\u003e3\u003c/span\u003e; i++) {\n  \u003cspan class=\"hljs-built_in\"\u003esetTimeout\u003c/span\u003e(\u003cspan class=\"hljs-function\"\u003e() =\u003e\u003c/span\u003e \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(i), \u003cspan class=\"hljs-number\"\u003e100\u003c/span\u003e);\n}\n\u003cspan class=\"hljs-comment\"\u003e// 결과: 3\u003c/span\u003e\n\u003cspan class=\"hljs-comment\"\u003e// 결과: 3\u003c/span\u003e\n\u003cspan class=\"hljs-comment\"\u003e// 결과: 3\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003col start=\"3\"\u003e\n\u003cli\u003e중첩된 블록 내에서 let으로 재선언: 블록 스코프\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e x = \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e;\n  \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e (\u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e x = \u003cspan class=\"hljs-number\"\u003e20\u003c/span\u003e;\n  }\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(x); \u003cspan class=\"hljs-comment\"\u003e// 출력: 10\u003c/span\u003e\n}\n\u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e();\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"4\"\u003e\n\u003cli\u003e중첩된 블록 내에서 var로 재선언: 함수 또는 전역 스코프\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e x = \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e;\n  \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e (\u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e x = \u003cspan class=\"hljs-number\"\u003e20\u003c/span\u003e;\n  }\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(x); \u003cspan class=\"hljs-comment\"\u003e// 출력: 20\u003c/span\u003e\n}\n\u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003col start=\"5\"\u003e\n\u003cli\u003evar 및 let을 사용한 호이스팅:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(x); \u003cspan class=\"hljs-comment\"\u003e// 결과: undefined\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e x = \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(x); \u003cspan class=\"hljs-comment\"\u003e// 오류: 초기화 전에 'x'에 액세스할 수 없음\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e x = \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e;\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"6\"\u003e\n\u003cli\u003elet 및 const를 사용한 블록 스코프:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e (\u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e x = \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e;\n    \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(x); \u003cspan class=\"hljs-comment\"\u003e// 출력: 10\u003c/span\u003e\n  }\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(x); \u003cspan class=\"hljs-comment\"\u003e// 오류: x가 정의되지 않았습니다\u003c/span\u003e\n}\n\u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e();\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003e2. 클로저:\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e정의: 클로저는 함수가 다른 곳에서 실행되더라도 주변 변수를 \"기억\"하는 것을 말합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eouter\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {     \n  \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e outerVar = \u003cspan class=\"hljs-string\"\u003e'I am outer'\u003c/span\u003e;      \n  \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003einner\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {         \n   \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(outerVar); \u003cspan class=\"hljs-comment\"\u003e// outer 함수 외부에서도 호출될 때 접근 가능     \u003c/span\u003e\n  }      \n \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e inner; \u003cspan class=\"hljs-comment\"\u003e// inner 함수 반환 \u003c/span\u003e\n}  \n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e closureFunc = \u003cspan class=\"hljs-title function_\"\u003eouter\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// outer 실행, inner 반환 \u003c/span\u003e\n\u003cspan class=\"hljs-title function_\"\u003eclosureFunc\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 출력: I am outer\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"2\"\u003e\n\u003cli\u003eLoop \u0026#x26; Closure: 클로저를 사용하는 루프에서 흔히 범하는 함정.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ecreateFuncArray\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {     \n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e funcArray = [];      \n\u003cspan class=\"hljs-keyword\"\u003efor\u003c/span\u003e (\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e i = \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e; i \u0026#x3C; \u003cspan class=\"hljs-number\"\u003e5\u003c/span\u003e; i++) {         \n  funcArray.\u003cspan class=\"hljs-title function_\"\u003epush\u003c/span\u003e(\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {            \n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(i); \u003cspan class=\"hljs-comment\"\u003e// 항상 5를 출력하며, 0, 1, 2, 3, 4가 아님        \u003c/span\u003e\n });    \n }      \n\u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e funcArray; \n}  \n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e myFuncArray = \u003cspan class=\"hljs-title function_\"\u003ecreateFuncArray\u003c/span\u003e(); \nmyFuncArray[\u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e](); \u003cspan class=\"hljs-comment\"\u003e// 출력: 5\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e루프 예제의 함정을 피하려면, IIFE(즉시 실행 함수 표현)를 사용하여 각 반복마다 클로저를 생성할 수 있습니다:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-javascript\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ecreateFuncArray\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n   \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e funcArray = [];\n   \u003cspan class=\"hljs-keyword\"\u003efor\u003c/span\u003e (\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e i = \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e; i \u0026#x3C; \u003cspan class=\"hljs-number\"\u003e5\u003c/span\u003e; i++) {\n       (\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003enum\u003c/span\u003e) {\n           funcArray.\u003cspan class=\"hljs-title function_\"\u003epush\u003c/span\u003e(\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n               \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(num);\n           });\n       })(i);\n   }\n   \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e funcArray;\n}\n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e myFuncArray = \u003cspan class=\"hljs-title function_\"\u003ecreateFuncArray\u003c/span\u003e();\nmyFuncArray[\u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e](); \u003cspan class=\"hljs-comment\"\u003e// 출력: 0\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e자바스크립트를 마스터하기 위해서는 스코프와 클로저를 이해하는 것이 기본이 됩니다. 이러한 예제들은 좋은 시작점이 될 것입니다!\u003c/p\u003e\n\u003col start=\"3\"\u003e\n\u003cli\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-javascript\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003emakeCounter\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e count = \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e;\n\n    \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n        \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e ++count;\n    };\n}\n\n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e counter1 = \u003cspan class=\"hljs-title function_\"\u003emakeCounter\u003c/span\u003e();\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-title function_\"\u003ecounter1\u003c/span\u003e()); \u003cspan class=\"hljs-comment\"\u003e// 출력: 1\u003c/span\u003e\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-title function_\"\u003ecounter1\u003c/span\u003e()); \u003cspan class=\"hljs-comment\"\u003e// 출력: 2\u003c/span\u003e\n\n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e counter2 = \u003cspan class=\"hljs-title function_\"\u003emakeCounter\u003c/span\u003e();\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-title function_\"\u003ecounter2\u003c/span\u003e()); \u003cspan class=\"hljs-comment\"\u003e// 출력: 1 (다시 1부터 시작)\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e이 예제에서:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003emakeCounter() 함수는 카운트 변수를 증가시키고 반환하는 내부 함수를 반환합니다.\u003c/li\u003e\n\u003cli\u003emakeCounter()가 호출될 때마다, 자체 카운트 변수를 가진 새로운 렉시컬 환경이 생성되며, 이는 외부 스코프에서 숨겨져 있습니다.\u003c/li\u003e\n\u003cli\u003ecounter1과 counter2가 호출될 때, 각각 자체 독립적인 카운트 변수를 가지며, 각각 자체 상태를 독립적으로 유지합니다.\u003c/li\u003e\n\u003cli\u003e클로저는 내부 함수가 makeCounter() 실행이 끝난 후에도 포함된 스코프의 카운트 변수에 접근할 수 있도록 형성됩니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e클로저 스코프 체인\u003c/p\u003e\n\u003cp\u003e모든 클로저에는 세 가지 스코프가 있습니다:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e지역 스코프 (자체 스코프)\u003c/li\u003e\n\u003cli\u003e포함 스코프 (블록, 함수 또는 모듈 스코프가 될 수 있음)\u003c/li\u003e\n\u003cli\u003e전역 스코프\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// 전역 스코프\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e e = \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e;\n\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003esum\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003ea\u003c/span\u003e) {\n  \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e (\u003cspan class=\"hljs-params\"\u003eb\u003c/span\u003e) {\n    \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e (\u003cspan class=\"hljs-params\"\u003ec\u003c/span\u003e) {\n      \u003cspan class=\"hljs-comment\"\u003e// 외부 함수 스코프\u003c/span\u003e\n      \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e (\u003cspan class=\"hljs-params\"\u003ed\u003c/span\u003e) {\n        \u003cspan class=\"hljs-comment\"\u003e// 지역 스코프\u003c/span\u003e\n        \u003cspan class=\"hljs-keyword\"\u003ereturn\u003c/span\u003e a + b + c + d + e;\n      };\n    };\n  };\n}\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-title function_\"\u003esum\u003c/span\u003e(\u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e)(\u003cspan class=\"hljs-number\"\u003e2\u003c/span\u003e)(\u003cspan class=\"hljs-number\"\u003e3\u003c/span\u003e)(\u003cspan class=\"hljs-number\"\u003e4\u003c/span\u003e)); \u003cspan class=\"hljs-comment\"\u003e// 20을 출력합니다.\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003e호이스팅\n호이스팅은 변수와 함수의 값을 초기화/할당하기 전에도 변수와 함수의 값을 추출할 수 있게 해주는 개념으로, 이는 실행 컨텍스트의 첫 번째 단계 (메모리 생성 단계 또는 생성 단계)로 인해 발생합니다.\u003c/li\u003e\n\u003cli\u003eJavaScript에서 호이스팅은 기본 동작으로 모든 선언을 코드 실행 전에 해당 범위의 맨 위로 이동시키는 것입니다. 기본적으로 함수와 변수가 선언된 위치와 상관없이 해당 범위의 맨 위로 이동되기 때문에 전역이든 지역이든 상관없이 우리에게 이점을 제공합니다.\u003c/li\u003e\n\u003cli\u003e참고: JavaScript는 선언을 호이스트하지만 초기화는 호이스트하지 않습니다.\u003c/li\u003e\n\u003cli\u003eJavaScript는 프로그램에서 정의된 모든 변수와 함수에 대해 실행 전에 메모리를 할당합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003col\u003e\n\u003cli\u003evar로 호이스팅:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e예제 1: 변수 선언 호이스팅\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(x); \u003cspan class=\"hljs-comment\"\u003e// 결과: undefined\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e x = \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003e예제 2: 함수 선언 호이스팅\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-title function_\"\u003ehoistedFunction\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 결과: \"호이스팅된 함수\"\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ehoistedFunction\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"호이스팅된 함수\"\u003c/span\u003e);\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003col start=\"2\"\u003e\n\u003cli\u003elet으로 호이스팅:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003e예제 3: 변수 선언 호이스팅\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(x); \u003cspan class=\"hljs-comment\"\u003e// 오류: 초기화 전에 'x'에 액세스할 수 없음\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e x = \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003e예제 4: 함수 선언 호이스팅 없음\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-title function_\"\u003enotHoistedFunction\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 에러: notHoistedFunction이 정의되지 않았습니다.\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e notHoistedFunction = \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"호이스팅되지 않은 함수\"\u003c/span\u003e);\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"3\"\u003e\n\u003cli\u003econst로 호이스팅:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003e예제 5: 변수 선언 호이스팅\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(x); \u003cspan class=\"hljs-comment\"\u003e// 에러: 초기화 전에 'x'에 접근할 수 없음\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e x = \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003col start=\"4\"\u003e\n\u003cli\u003e함수 스코프에서 호이스팅:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003e예제 6: 함수 내부의 호이스팅\u003c/li\u003e\n\u003c/ul\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(innerVar); \u003cspan class=\"hljs-comment\"\u003e// 출력: undefined\u003c/span\u003e\n  \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e innerVar = \u003cspan class=\"hljs-string\"\u003e'내부 변수'\u003c/span\u003e;\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(innerVar); \u003cspan class=\"hljs-comment\"\u003e// 출력: 내부 변수\u003c/span\u003e\n}\n\u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e();\n\u003c/code\u003e\u003c/pre\u003e\n\u003cul\u003e\n\u003cli\u003e예제 7: 블록 내부의 호이스팅 (let 및 const로 호이스팅 없음)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(innerLetVar); \u003cspan class=\"hljs-comment\"\u003e// 오류: 초기화되기 전에 'innerLetVar'에 액세스할 수 없습니다\u003c/span\u003e\n  \u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e innerLetVar = \u003cspan class=\"hljs-string\"\u003e'내부 let 변수'\u003c/span\u003e;\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(innerLetVar); \u003cspan class=\"hljs-comment\"\u003e// 위의 오류로 이 줄은 실행되지 않습니다\u003c/span\u003e\n}\n\u003cspan class=\"hljs-title function_\"\u003eexample\u003c/span\u003e();\r\n\r\n\u003cspan class=\"hljs-number\"\u003e5.\u003c/span\u003e 중첩된 스코프에서 호이스팅:\n\n- 예제 \u003cspan class=\"hljs-number\"\u003e8\u003c/span\u003e: 중첩된 함수에서 호이스팅\n\n\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003eouter\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(outerVar); \u003cspan class=\"hljs-comment\"\u003e// 결과: 정의되지 않음\u003c/span\u003e\n  \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e outerVar = \u003cspan class=\"hljs-string\"\u003e'바깥 변수'\u003c/span\u003e;\n  \u003cspan class=\"hljs-title function_\"\u003einner\u003c/span\u003e();\n  \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003einner\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n    \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(outerVar); \u003cspan class=\"hljs-comment\"\u003e// 결과: 바깥 변수\u003c/span\u003e\n  }\n}\n\u003cspan class=\"hljs-title function_\"\u003eouter\u003c/span\u003e();\n\n\u003cspan class=\"xml\"\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003eclass\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e\"content-ad\"\u003c/span\u003e\u003e\u003c/span\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;/\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e\u003e\u003c/span\u003e\u003c/span\u003e\n\n\u003cspan class=\"hljs-number\"\u003e6.\u003c/span\u003e 함수 표현식을 이용한 호이스팅:\n\n- 예시 \u003cspan class=\"hljs-number\"\u003e9\u003c/span\u003e: 함수 표현식 호이스팅\n\n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e myFunc = \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"함수 표현식\"\u003c/span\u003e);\n};\n\u003cspan class=\"hljs-title function_\"\u003emyFunc\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 출력: 함수 표현식\u003c/span\u003e\n\n\u003cspan class=\"hljs-number\"\u003e7.\u003c/span\u003e 다른 스코프 유형에서의 호이스팅:\n\n\u003cspan class=\"xml\"\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003eclass\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e\"content-ad\"\u003c/span\u003e\u003e\u003c/span\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;/\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e\u003e\u003c/span\u003e\u003c/span\u003e\n\n- 예제 \u003cspan class=\"hljs-number\"\u003e10\u003c/span\u003e: 전역 범위에서 호이스팅\n\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(globalVar); \u003cspan class=\"hljs-comment\"\u003e// 출력: undefined\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e globalVar = \u003cspan class=\"hljs-string\"\u003e'전역 변수'\u003c/span\u003e;\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(globalVar); \u003cspan class=\"hljs-comment\"\u003e// 출력: 전역 변수\u003c/span\u003e\n\n\u003cspan class=\"hljs-number\"\u003e4.\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eES6\u003c/span\u003e 모듈\n모듈을 사용하면 코드를 별도의 파일로 캡슐화하고 그들 간에 기능을 \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e/\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e할 수 있습니다.\n\n기본 모듈 내보내기:\n\n\u003cspan class=\"xml\"\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003eclass\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e\"content-ad\"\u003c/span\u003e\u003e\u003c/span\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;/\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e\u003e\u003c/span\u003e\u003c/span\u003e\n\n\u003cspan class=\"hljs-comment\"\u003e// moduleA.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'Hello'\u003c/span\u003e);\n}\n\n\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e { greet } \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./moduleA.js'\u003c/span\u003e;\n\u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// Output: Hello\u003c/span\u003e\n\n\u003cspan class=\"hljs-number\"\u003e2.\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eDefault\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eExports\u003c/span\u003e:\n\n\u003cspan class=\"hljs-comment\"\u003e// moduleB.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003edefault\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'Hello'\u003c/span\u003e);\n}\n\n\u0026#x3C;div \u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e\"content-ad\"\u003c/span\u003e\u003e\u0026#x3C;/div\u003e\n\n\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e greet \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./moduleB.js'\u003c/span\u003e;\n\u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 출력: Hello\u003c/span\u003e\n\n\u003cspan class=\"hljs-number\"\u003e3.\u003c/span\u003e 별칭이 지정된 \u003cspan class=\"hljs-title class_\"\u003eNamed\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eExports\u003c/span\u003e:\n\n\u003cspan class=\"hljs-comment\"\u003e// moduleC.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e { greet \u003cspan class=\"hljs-keyword\"\u003eas\u003c/span\u003e hello };\n\n\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e { hello } \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./moduleC.js'\u003c/span\u003e;\n\u003cspan class=\"hljs-title function_\"\u003ehello\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 출력: Hello\u003c/span\u003e\n\n\u003cspan class=\"xml\"\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003eclass\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e\"content-ad\"\u003c/span\u003e\u003e\u003c/span\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;/\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e\u003e\u003c/span\u003e\u003c/span\u003e\n\n\u003cspan class=\"hljs-number\"\u003e4.\u003c/span\u003e 여러 값을 내보내기:\n\n\u003cspan class=\"hljs-comment\"\u003e// moduleD.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'Hello'\u003c/span\u003e);\n}\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-variable constant_\"\u003ePI\u003c/span\u003e = \u003cspan class=\"hljs-number\"\u003e3.14\u003c/span\u003e;\n\n\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e { greet, \u003cspan class=\"hljs-variable constant_\"\u003ePI\u003c/span\u003e } \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./moduleD.js'\u003c/span\u003e;\n\u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 결과: Hello\u003c/span\u003e\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-variable constant_\"\u003ePI\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// 결과: 3.14\u003c/span\u003e\n\n\u003cspan class=\"xml\"\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003eclass\u003c/span\u003e=\u003cspan class=\"hljs-string\"\u003e\"content-ad\"\u003c/span\u003e\u003e\u003c/span\u003e\u003cspan class=\"hljs-tag\"\u003e\u0026#x3C;/\u003cspan class=\"hljs-name\"\u003ediv\u003c/span\u003e\u003e\u003c/span\u003e\u003c/span\u003e\n\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e// moduleE.js\nexport default function greet() {\nconsole.log('Hello');\n}\nexport const PI = 3.14;\u003c/p\u003e\n\u003cp\u003e// main.js\nimport greet, { PI } from './moduleE.js';\ngreet(); // Output: Hello\nconsole.log(PI); // Output: 3.14\u003c/p\u003e\n\u003col start=\"6\"\u003e\n\u003cli\u003eImporting All Exports:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e// moduleF.js\nexport function greet() {\nconsole.log('Hello');\n}\nexport const PI = 3.14;\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e * \u003cspan class=\"hljs-keyword\"\u003eas\u003c/span\u003e moduleF \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./moduleF.js'\u003c/span\u003e;\nmoduleF.\u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 출력: Hello\u003c/span\u003e\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(moduleF.\u003cspan class=\"hljs-property\"\u003ePI\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// 출력: 3.14\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"7\"\u003e\n\u003cli\u003e부수 효과용 모듈 가져 오기:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// moduleG.js\u003c/span\u003e\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'Module G가 로드되었습니다'\u003c/span\u003e);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./moduleG.js'\u003c/span\u003e; \n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Main.js 파일이 실행 중입니다\"\u003c/span\u003e)\n\u003cspan class=\"hljs-comment\"\u003e// 출력: // 먼저 가져온 파일이 먼저 실행되어\u003c/span\u003e\n\u003cspan class=\"hljs-title class_\"\u003eModule\u003c/span\u003e G가 로드되었습니다\n\u003cspan class=\"hljs-title class_\"\u003eMain\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003ejs\u003c/span\u003e 파일이 실행 중입니다\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003col start=\"8\"\u003e\n\u003cli\u003e다이나믹 Imports:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-javascript\"\u003e\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e moduleName = \u003cspan class=\"hljs-string\"\u003e'./moduleA.js'\u003c/span\u003e;\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e(moduleName).\u003cspan class=\"hljs-title function_\"\u003ethen\u003c/span\u003e(\u003cspan class=\"hljs-function\"\u003e\u003cspan class=\"hljs-params\"\u003emodule\u003c/span\u003e =\u003e\u003c/span\u003e {\n  \u003cspan class=\"hljs-variable language_\"\u003emodule\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 출력: Hello\u003c/span\u003e\n});\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"9\"\u003e\n\u003cli\u003e모듈 재내보내기:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-javascript\"\u003e\u003cspan class=\"hljs-comment\"\u003e// moduleH.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'Hello'\u003c/span\u003e);\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// moduleI.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e { greet } \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./moduleH.js'\u003c/span\u003e;\n\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e { greet } \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./moduleI.js'\u003c/span\u003e;\n\u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// Output: Hello\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"10\"\u003e\n\u003cli\u003eConditional Module Loading:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// main.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e (condition) {\n  \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'./moduleA.js'\u003c/span\u003e).\u003cspan class=\"hljs-title function_\"\u003ethen\u003c/span\u003e(\u003cspan class=\"hljs-function\"\u003e\u003cspan class=\"hljs-params\"\u003emodule\u003c/span\u003e =\u003e\u003c/span\u003e {\n    \u003cspan class=\"hljs-variable language_\"\u003emodule\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// Output: Hello\u003c/span\u003e\n  });\n} \u003cspan class=\"hljs-keyword\"\u003eelse\u003c/span\u003e {\n  \u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'./moduleB.js'\u003c/span\u003e).\u003cspan class=\"hljs-title function_\"\u003ethen\u003c/span\u003e(\u003cspan class=\"hljs-function\"\u003e\u003cspan class=\"hljs-params\"\u003emodule\u003c/span\u003e =\u003e\u003c/span\u003e {\n    \u003cspan class=\"hljs-variable language_\"\u003emodule\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003egreet\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// Output: Hi\u003c/span\u003e\n  });\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003ccode\u003eexport default\u003c/code\u003e 구문과 일반 \u003ccode\u003eexport\u003c/code\u003e 구문은 JavaScript 모듈에서 값을 내보내는데 모두 사용됩니다. 그러나 다른 모듈에서 가져오고 사용하는 방법에는 차이가 있습니다.\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003col\u003e\n\u003cli\u003eexport default:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003eexport default을 사용하면 모듈에서 하나의 값을 내보낼 수 있습니다.\u003c/li\u003e\n\u003cli\u003e기본 내보내기를 가져올 때는 가져온 값에 대해 원하는 이름을 사용할 수 있습니다.\u003c/li\u003e\n\u003cli\u003e기본 내보내기를 가져올 때는 중괄호 '{}'가 필요하지 않습니다.\u003c/li\u003e\n\u003cli\u003e모듈당 기본 내보내기는 하나만 가질 수 있습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e예시:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// ModuleA.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e value = \u003cspan class=\"hljs-string\"\u003e'Hello'\u003c/span\u003e;\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003edefault\u003c/span\u003e value;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// ModuleB.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e myValue \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./ModuleA.js'\u003c/span\u003e;\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(myValue); \u003cspan class=\"hljs-comment\"\u003e// 출력: Hello\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"2\"\u003e\n\u003cli\u003e\u003ccode\u003eexport default\u003c/code\u003e 없이 (이름 있는 수출):\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003e이름 있는 수출을 사용하면 모듈에서 여러 값을 내보낼 수 있습니다.\u003c/li\u003e\n\u003cli\u003e이름 있는 수출을 가져올 때 내보낸 값과 동일한 이름을 사용해야 합니다.\u003c/li\u003e\n\u003cli\u003e이름 있는 수출을 가져올 때 중괄호 \u003ccode\u003e{}\u003c/code\u003e를 사용해야 합니다.\u003c/li\u003e\n\u003cli\u003e모듈 당 여러 이름 있는 수출을 가질 수 있습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e예시:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e// ModuleA.js\nexport const value1 = 'Hello';\nexport const value2 = 'World';\u003c/p\u003e\n\u003cp\u003e// ModuleB.js\nimport { value1, value2 } from './ModuleA.js';\nconsole.log(value1); // Output: Hello\nconsole.log(value2); // Output: World\u003c/p\u003e\n\u003cp\u003e요약하면, export default는 모듈에서 단일 값을 지정하지 않고 내보내는 데 사용되며, named exports는 여러 값을 내보내는 데 사용되며 가져올 때 동일한 이름을 지정해야 합니다. 특정 프로젝트 요구에 따라 유용하게 사용됩니다.\u003c/p\u003e\n\u003cp\u003eCommonJS와 ES6 모듈을 예제와 함께 비교하여 그 차이를 설명해 보겠습니다:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003col\u003e\n\u003cli\u003eCommonJS:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003eCommonJS는 주로 서버 측 개발을 위해 Node.js에서 사용되는 모듈 시스템입니다. 이는 동기적이며 블로킹 방식으로, 모듈은 런타임에서 동기적으로 로드됩니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eCommonJS 예제:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// ModuleA.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e greeting = \u003cspan class=\"hljs-string\"\u003e'Hello'\u003c/span\u003e;\n\u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003esayHello\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(greeting);\n}\n\u003cspan class=\"hljs-variable language_\"\u003emodule\u003c/span\u003e.\u003cspan class=\"hljs-property\"\u003eexports\u003c/span\u003e = {\n  greeting,\n  sayHello\n};\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// ModuleB.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e moduleA = \u003cspan class=\"hljs-built_in\"\u003erequire\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'./ModuleA'\u003c/span\u003e);\nmoduleA.\u003cspan class=\"hljs-title function_\"\u003esayHello\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// Output: Hello\u003c/span\u003e\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(moduleA.\u003cspan class=\"hljs-property\"\u003egreeting\u003c/span\u003e); \u003cspan class=\"hljs-comment\"\u003e// Output: Hello\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003col start=\"2\"\u003e\n\u003cli\u003eES6 Modules:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003eES6 modules are a newer module system introduced in ECMAScript 2015 (ES6). They are asynchronous and support both synchronous and asynchronous module loading.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eExample with ES6 Modules:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// ModuleA.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e greeting = \u003cspan class=\"hljs-string\"\u003e'Hello'\u003c/span\u003e;\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003efunction\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003esayHello\u003c/span\u003e(\u003cspan class=\"hljs-params\"\u003e\u003c/span\u003e) {\n  \u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(greeting);\n}\n\u003cspan class=\"hljs-keyword\"\u003eexport\u003c/span\u003e { greeting };\n\u003c/code\u003e\u003c/pre\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// ModuleB.js\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e { sayHello, greeting } \u003cspan class=\"hljs-keyword\"\u003efrom\u003c/span\u003e \u003cspan class=\"hljs-string\"\u003e'./ModuleA.js'\u003c/span\u003e;\n\u003cspan class=\"hljs-title function_\"\u003esayHello\u003c/span\u003e(); \u003cspan class=\"hljs-comment\"\u003e// 출력: Hello\u003c/span\u003e\n\u003cspan class=\"hljs-variable language_\"\u003econsole\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003elog\u003c/span\u003e(greeting); \u003cspan class=\"hljs-comment\"\u003e// 출력: Hello\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e비교:\u003c/p\u003e\n\u003cp\u003e동기 vs. 비동기:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eCommonJS 모듈은 동기적이고 블로킹이며, 실행 시 동기적으로 로드됩니다. 이는 서버 측 프로그래밍과 잘 어울리며, 블로킹 I/O 작업이 일반적인 경우에 적합합니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eES6 모듈은 구현에 따라 동기적이거나 비동기적일 수 있습니다. 더 유연하며 서버 측 및 클라이언트 측 환경에서 모두 사용할 수 있습니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e사용 편의성:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eCommonJS 모듈은 module.exports 및 require()를 사용하여 각각 기능을 내보내고 가져옵니다. 이 구문은 직관적이며 이해하기 쉽습니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eES6 모듈은 export 및 import 문을 사용하여 기능을 내보내고 가져옵니다. 이 구문은 더 현대적이고 언어 명세와 일치하지만, 아직 ES6 모듈을 네이티브로 지원하지 않는 환경에서 변환을 위한 추가 도구가 필요할 수 있습니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e브라우저 호환성:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003eCommonJS 모듈은 브라우저에서 네이티브로 지원되지 않습니다. CommonJS 코드를 브라우저가 이해할 수 있는 형식으로 변환하기 위해 Browserify나 Webpack과 같은 번들러가 필요합니다.\u003c/li\u003e\n\u003cli\u003eES6 모듈은 최신 브라우저에서 지원되며 많은 경우 추가 도구 없이 네이티브로 사용할 수 있습니다. 그러나 오래된 브라우저에서 ES6 모듈을 지원하기 위해서는 Babel과 같은 도구를 사용하여 트랜스 파일링이 필요할 수 있습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e서버 측 사용 사례:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eNode.js는 주로 서버 측 프로그래밍에 사용되며, 동기적인 성격과 쉬운 사용성 때문에 CommonJS 모듈이 잘 어울립니다. 런타임에서 모듈을 동기적으로 로드할 수 있으며, 서버는 모듈이 로드된 후에 실행을 계속할 수 있습니다.\u003c/li\u003e\n\u003cli\u003e브라우저 환경에서는 JavaScript 코드가 클라이언트 측에서 실행되며, 응답성을 보장하고 UI 쓰레드를 차단하지 않기 위해 비동기 작업이 선호됩니다. 따라서 웹 개발에서는 비동기적 모듈 로딩을 지원하는 AMD (Asynchronous Module Definition) 또는 ES6 모듈과 같은 다른 모듈 시스템이 일반적으로 사용됩니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e성능 고려 사항:\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cul\u003e\n\u003cli\u003eCommonJS 모듈은 동기적으로 로드되어 브라우저 환경에서 특히 많은 모듈이 있는 대규모 웹 애플리케이션의 성능에 영향을 미칠 수 있습니다. 동기적 모듈 로딩은 페이지 로드 시간이 더 느려지고 응답성이 감소할 수 있습니다.\u003c/li\u003e\n\u003cli\u003e다른 모듈 시스템인 AMD나 ES6 모듈에서 지원하는 비동기 모듈 로딩은 모듈이 병렬로 로드되도록 허용하여 모듈 종속성을 로드하는 데 걸리는 시간을 줄여 성능을 향상시킵니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e요약하면, CommonJS 모듈은 동기적 특성과 사용 편의성으로 인해 Node.js에서 서버 측 개발에 적합합니다. ES6 모듈은 더 많은 다양성을 제공하며 남종적 및 클라이언트 측 개발에서 점점 더 채택되고 있으며 비동기 모듈 로딩 및 현대적 구문을 지원합니다.\u003c/p\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-06-27-YoudontknowJSPart1UnderstandingScopeClosureHoistingModules"},"buildId":"Rv-NbbtWUaja2joH5WkO_","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

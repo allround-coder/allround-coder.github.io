@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>CSS Position  Absolute와 Relative 비교 올바르게 사용하는 방법 | allround-coder</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://allround-coder.github.io///post/2024-06-30-CSSPositionAbsoluteRelative" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="CSS Position  Absolute와 Relative 비교 올바르게 사용하는 방법 | allround-coder" data-gatsby-head="true"/><meta property="og:title" content="CSS Position  Absolute와 Relative 비교 올바르게 사용하는 방법 | allround-coder" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-06-30-CSSPositionAbsoluteRelative_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://allround-coder.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://allround-coder.github.io///post/2024-06-30-CSSPositionAbsoluteRelative" data-gatsby-head="true"/><meta name="twitter:title" content="CSS Position  Absolute와 Relative 비교 올바르게 사용하는 방법 | allround-coder" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-06-30-CSSPositionAbsoluteRelative_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | allround-coder" data-gatsby-head="true"/><meta name="article:published_time" content="2024-06-30 18:37" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZFDEQ947R4"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+  
+            gtag('config', 'G-ZFDEQ947R4');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-ac4aa08aae62f90e.js" defer=""></script><script src="/_next/static/chunks/463-0429087d4c0b0335.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-b088bc509ff5c497.js" defer=""></script><script src="/_next/static/Rv-NbbtWUaja2joH5WkO_/_buildManifest.js" defer=""></script><script src="/_next/static/Rv-NbbtWUaja2joH5WkO_/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">Allround Coder</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">CSS Position  Absolute와 Relative 비교 올바르게 사용하는 방법</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="CSS Position  Absolute와 Relative 비교 올바르게 사용하는 방법" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">Allround Coder</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jun 30, 2024</span><span class="posts_reading_time__f7YPP">4<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-06-30-CSSPositionAbsoluteRelative&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<h1>위치: 상대적(relative);</h1>
+<p>요소가 상대적으로 위치할 때는 문서 흐름에서의 정상적인 위치를 기준으로 배치됩니다. 주변 요소에 영향을 미치지 않으며 문서 흐름 상에서의 위치를 유지합니다.</p>
+<pre><code class="hljs language-js">&#x3C;!<span class="hljs-variable constant_">DOCTYPE</span> html>
+&#x3C;html lang="en">
+&#x3C;head>
+    &#x3C;meta charset="UTF-8">
+    &#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &#x3C;title>상대적 위치 설정 예시&#x3C;/title>
+    &#x3C;style>
+        .relative-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+        .text {
+            background-color: lightgreen;
+        }
+    &#x3C;/style>
+&#x3C;/head>
+&#x3C;body>
+    &#x3C;div class="relative-box">
+        상대적으로 위치한 상자입니다.
+    &#x3C;/div>
+    &#x3C;div class="text">
+        상자 아래에 있는 일부 텍스트입니다.
+    &#x3C;/div>
+&#x3C;/body>
+&#x3C;/html>
+</code></pre>
+<h1>위치: 절대적(absolute);</h1>
+<div class="content-ad"></div>
+<p>절대 위치로 요소를 배치하면 이 요소는 가장 가까운 위치 지정된 조상에 대해 배치됩니다 (즉, 정적이 아닌 위치를 가진 가장 가까운 조상). 이러한 조상이 없는 경우 초기 포함 블록에 대해 배치됩니다 (일반적으로 뷰포트).</p>
+<pre><code class="hljs language-js">&#x3C;!<span class="hljs-variable constant_">DOCTYPE</span> html>
+&#x3C;html lang="en">
+&#x3C;head>
+    &#x3C;meta charset="UTF-8">
+    &#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &#x3C;title>절대 위치 지정 예시&#x3C;/title>
+    &#x3C;style>
+        .relative-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: lightgray;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            width: 100px;
+            height: 50px;
+            background-color: lightcoral;
+        }
+        .text {
+            background-color: lightgreen;
+        }
+    &#x3C;/style>
+&#x3C;/head>
+&#x3C;body>
+    &#x3C;div class="relative-container">
+        &#x3C;div class="absolute-box">
+            저는 절대 위치로 배치된 상자입니다.
+        &#x3C;/div>
+        컨테이너
+    &#x3C;/div>
+    &#x3C;div class="text">
+        컨테이너 아래의 텍스트입니다.
+    &#x3C;/div>
+&#x3C;/body>
+&#x3C;/html>
+</code></pre>
+<p>또는</p>
+<pre><code class="hljs language-js">&#x3C;!<span class="hljs-variable constant_">DOCTYPE</span> html>
+&#x3C;html lang="en">
+&#x3C;head>
+    &#x3C;meta charset="UTF-8">
+    &#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &#x3C;title>상대 및 절대 위치 지정 예시&#x3C;/title>
+    &#x3C;style>
+        .outer-container {
+            width: 400px;
+            height: 300px;
+            background-color: lightgray;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .inner-container {
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+            position: relative;
+            top: 20px;  /* inner-container의 위치에서 아래로 20px 이동 */
+            left: 20px; /* inner-container의 위치에서 오른쪽으로 20px 이동 */
+        }
+
+        .absolute-box {
+            width: 100px;
+            height: 50px;
+            background-color: lightcoral;
+            position: absolute;
+            bottom: 10px; /* 상자를 inner-container의 하단에서 10px로 배치 */
+            left: 10px;   /* 상자를 inner-container의 왼쪽에서 10px로 배치 */
+        }
+
+        .text {
+            background-color: lightgreen;
+        }
+    &#x3C;/style>
+&#x3C;/head>
+&#x3C;body>
+    &#x3C;div class="outer-container">
+        &#x3C;div class="inner-container">
+            &#x3C;div class="absolute-box">
+                저는 절대 위치로 배치된 상자입니다.
+            &#x3C;/div>
+            저는 상대적 위치로 배치된 내부 컨테이너입니다.
+        &#x3C;/div>
+        저는 상대적 위치로 배치된 외부 컨테이너입니다.
+    &#x3C;/div>
+    &#x3C;div class="text">
+        외부 컨테이너 아래의 텍스트입니다.
+    &#x3C;/div>
+&#x3C;/body>
+&#x3C;/html>
+</code></pre>
+<div class="content-ad"></div>
+<h1>읽어 주셔서 감사합니다</h1>
+<ul>
+<li>장기 멘토십을 위해 Preplaced.com에서 연락하세요,</li>
+</ul>
+<p>무료 체험 신청하세요! — <a href="https://www.preplaced.in/profile/sonika-maheshwari" rel="nofollow" target="_blank">https://www.preplaced.in/profile/sonika-maheshwari</a></p>
+<p>📰 코딩 및 디자인 라운드 인터뷰에 대한 더 많은 콘텐츠 보기 - <a href="https://sonikamaheshwari067.medium.com/" rel="nofollow" target="_blank">https://sonikamaheshwari067.medium.com/</a></p>
+<div class="content-ad"></div>
+<p>🔔 Follow me on LinkedIn! — <a href="https://www.linkedin.com/in/sonika-maheshwari-81542220/" rel="nofollow" target="_blank">https://www.linkedin.com/in/sonika-maheshwari-81542220/</a></p>
+<p>저는 항상 개선할 부분이 있을 것이라고 믿어요. 의견을 자유롭게 공유해주세요.</p>
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"CSS Position  Absolute와 Relative 비교 올바르게 사용하는 방법","description":"","date":"2024-06-30 18:37","slug":"2024-06-30-CSSPositionAbsoluteRelative","content":"\n\n# 위치: 상대적(relative);\n\n요소가 상대적으로 위치할 때는 문서 흐름에서의 정상적인 위치를 기준으로 배치됩니다. 주변 요소에 영향을 미치지 않으며 문서 흐름 상에서의 위치를 유지합니다.\n\n```js\n\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n    \u003cmeta charset=\"UTF-8\"\u003e\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n    \u003ctitle\u003e상대적 위치 설정 예시\u003c/title\u003e\n    \u003cstyle\u003e\n        .relative-box {\n            width: 200px;\n            height: 100px;\n            background-color: lightblue;\n            position: relative;\n            top: 20px;\n            left: 30px;\n        }\n        .text {\n            background-color: lightgreen;\n        }\n    \u003c/style\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n    \u003cdiv class=\"relative-box\"\u003e\n        상대적으로 위치한 상자입니다.\n    \u003c/div\u003e\n    \u003cdiv class=\"text\"\u003e\n        상자 아래에 있는 일부 텍스트입니다.\n    \u003c/div\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n```\n\n# 위치: 절대적(absolute);\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n절대 위치로 요소를 배치하면 이 요소는 가장 가까운 위치 지정된 조상에 대해 배치됩니다 (즉, 정적이 아닌 위치를 가진 가장 가까운 조상). 이러한 조상이 없는 경우 초기 포함 블록에 대해 배치됩니다 (일반적으로 뷰포트).\n\n```js\n\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n    \u003cmeta charset=\"UTF-8\"\u003e\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n    \u003ctitle\u003e절대 위치 지정 예시\u003c/title\u003e\n    \u003cstyle\u003e\n        .relative-container {\n            position: relative;\n            width: 300px;\n            height: 200px;\n            background-color: lightgray;\n        }\n        .absolute-box {\n            position: absolute;\n            top: 20px;\n            right: 30px;\n            width: 100px;\n            height: 50px;\n            background-color: lightcoral;\n        }\n        .text {\n            background-color: lightgreen;\n        }\n    \u003c/style\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n    \u003cdiv class=\"relative-container\"\u003e\n        \u003cdiv class=\"absolute-box\"\u003e\n            저는 절대 위치로 배치된 상자입니다.\n        \u003c/div\u003e\n        컨테이너\n    \u003c/div\u003e\n    \u003cdiv class=\"text\"\u003e\n        컨테이너 아래의 텍스트입니다.\n    \u003c/div\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n```\n\n또는\n\n```js\n\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n    \u003cmeta charset=\"UTF-8\"\u003e\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n    \u003ctitle\u003e상대 및 절대 위치 지정 예시\u003c/title\u003e\n    \u003cstyle\u003e\n        .outer-container {\n            width: 400px;\n            height: 300px;\n            background-color: lightgray;\n            position: relative;\n            margin-bottom: 20px;\n        }\n\n        .inner-container {\n            width: 300px;\n            height: 200px;\n            background-color: lightblue;\n            position: relative;\n            top: 20px;  /* inner-container의 위치에서 아래로 20px 이동 */\n            left: 20px; /* inner-container의 위치에서 오른쪽으로 20px 이동 */\n        }\n\n        .absolute-box {\n            width: 100px;\n            height: 50px;\n            background-color: lightcoral;\n            position: absolute;\n            bottom: 10px; /* 상자를 inner-container의 하단에서 10px로 배치 */\n            left: 10px;   /* 상자를 inner-container의 왼쪽에서 10px로 배치 */\n        }\n\n        .text {\n            background-color: lightgreen;\n        }\n    \u003c/style\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n    \u003cdiv class=\"outer-container\"\u003e\n        \u003cdiv class=\"inner-container\"\u003e\n            \u003cdiv class=\"absolute-box\"\u003e\n                저는 절대 위치로 배치된 상자입니다.\n            \u003c/div\u003e\n            저는 상대적 위치로 배치된 내부 컨테이너입니다.\n        \u003c/div\u003e\n        저는 상대적 위치로 배치된 외부 컨테이너입니다.\n    \u003c/div\u003e\n    \u003cdiv class=\"text\"\u003e\n        외부 컨테이너 아래의 텍스트입니다.\n    \u003c/div\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n# 읽어 주셔서 감사합니다\n\n- 장기 멘토십을 위해 Preplaced.com에서 연락하세요,\n\n무료 체험 신청하세요! — https://www.preplaced.in/profile/sonika-maheshwari\n\n📰 코딩 및 디자인 라운드 인터뷰에 대한 더 많은 콘텐츠 보기 - https://sonikamaheshwari067.medium.com/\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n🔔 Follow me on LinkedIn! — [https://www.linkedin.com/in/sonika-maheshwari-81542220/](https://www.linkedin.com/in/sonika-maheshwari-81542220/)\n\n저는 항상 개선할 부분이 있을 것이라고 믿어요. 의견을 자유롭게 공유해주세요.","ogImage":{"url":"/assets/img/2024-06-30-CSSPositionAbsoluteRelative_0.png"},"coverImage":"/assets/img/2024-06-30-CSSPositionAbsoluteRelative_0.png","tag":["Tech"],"readingTime":4},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003ch1\u003e위치: 상대적(relative);\u003c/h1\u003e\n\u003cp\u003e요소가 상대적으로 위치할 때는 문서 흐름에서의 정상적인 위치를 기준으로 배치됩니다. 주변 요소에 영향을 미치지 않으며 문서 흐름 상에서의 위치를 유지합니다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u0026#x3C;!\u003cspan class=\"hljs-variable constant_\"\u003eDOCTYPE\u003c/span\u003e html\u003e\n\u0026#x3C;html lang=\"en\"\u003e\n\u0026#x3C;head\u003e\n    \u0026#x3C;meta charset=\"UTF-8\"\u003e\n    \u0026#x3C;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n    \u0026#x3C;title\u003e상대적 위치 설정 예시\u0026#x3C;/title\u003e\n    \u0026#x3C;style\u003e\n        .relative-box {\n            width: 200px;\n            height: 100px;\n            background-color: lightblue;\n            position: relative;\n            top: 20px;\n            left: 30px;\n        }\n        .text {\n            background-color: lightgreen;\n        }\n    \u0026#x3C;/style\u003e\n\u0026#x3C;/head\u003e\n\u0026#x3C;body\u003e\n    \u0026#x3C;div class=\"relative-box\"\u003e\n        상대적으로 위치한 상자입니다.\n    \u0026#x3C;/div\u003e\n    \u0026#x3C;div class=\"text\"\u003e\n        상자 아래에 있는 일부 텍스트입니다.\n    \u0026#x3C;/div\u003e\n\u0026#x3C;/body\u003e\n\u0026#x3C;/html\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch1\u003e위치: 절대적(absolute);\u003c/h1\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e절대 위치로 요소를 배치하면 이 요소는 가장 가까운 위치 지정된 조상에 대해 배치됩니다 (즉, 정적이 아닌 위치를 가진 가장 가까운 조상). 이러한 조상이 없는 경우 초기 포함 블록에 대해 배치됩니다 (일반적으로 뷰포트).\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u0026#x3C;!\u003cspan class=\"hljs-variable constant_\"\u003eDOCTYPE\u003c/span\u003e html\u003e\n\u0026#x3C;html lang=\"en\"\u003e\n\u0026#x3C;head\u003e\n    \u0026#x3C;meta charset=\"UTF-8\"\u003e\n    \u0026#x3C;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n    \u0026#x3C;title\u003e절대 위치 지정 예시\u0026#x3C;/title\u003e\n    \u0026#x3C;style\u003e\n        .relative-container {\n            position: relative;\n            width: 300px;\n            height: 200px;\n            background-color: lightgray;\n        }\n        .absolute-box {\n            position: absolute;\n            top: 20px;\n            right: 30px;\n            width: 100px;\n            height: 50px;\n            background-color: lightcoral;\n        }\n        .text {\n            background-color: lightgreen;\n        }\n    \u0026#x3C;/style\u003e\n\u0026#x3C;/head\u003e\n\u0026#x3C;body\u003e\n    \u0026#x3C;div class=\"relative-container\"\u003e\n        \u0026#x3C;div class=\"absolute-box\"\u003e\n            저는 절대 위치로 배치된 상자입니다.\n        \u0026#x3C;/div\u003e\n        컨테이너\n    \u0026#x3C;/div\u003e\n    \u0026#x3C;div class=\"text\"\u003e\n        컨테이너 아래의 텍스트입니다.\n    \u0026#x3C;/div\u003e\n\u0026#x3C;/body\u003e\n\u0026#x3C;/html\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e또는\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u0026#x3C;!\u003cspan class=\"hljs-variable constant_\"\u003eDOCTYPE\u003c/span\u003e html\u003e\n\u0026#x3C;html lang=\"en\"\u003e\n\u0026#x3C;head\u003e\n    \u0026#x3C;meta charset=\"UTF-8\"\u003e\n    \u0026#x3C;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n    \u0026#x3C;title\u003e상대 및 절대 위치 지정 예시\u0026#x3C;/title\u003e\n    \u0026#x3C;style\u003e\n        .outer-container {\n            width: 400px;\n            height: 300px;\n            background-color: lightgray;\n            position: relative;\n            margin-bottom: 20px;\n        }\n\n        .inner-container {\n            width: 300px;\n            height: 200px;\n            background-color: lightblue;\n            position: relative;\n            top: 20px;  /* inner-container의 위치에서 아래로 20px 이동 */\n            left: 20px; /* inner-container의 위치에서 오른쪽으로 20px 이동 */\n        }\n\n        .absolute-box {\n            width: 100px;\n            height: 50px;\n            background-color: lightcoral;\n            position: absolute;\n            bottom: 10px; /* 상자를 inner-container의 하단에서 10px로 배치 */\n            left: 10px;   /* 상자를 inner-container의 왼쪽에서 10px로 배치 */\n        }\n\n        .text {\n            background-color: lightgreen;\n        }\n    \u0026#x3C;/style\u003e\n\u0026#x3C;/head\u003e\n\u0026#x3C;body\u003e\n    \u0026#x3C;div class=\"outer-container\"\u003e\n        \u0026#x3C;div class=\"inner-container\"\u003e\n            \u0026#x3C;div class=\"absolute-box\"\u003e\n                저는 절대 위치로 배치된 상자입니다.\n            \u0026#x3C;/div\u003e\n            저는 상대적 위치로 배치된 내부 컨테이너입니다.\n        \u0026#x3C;/div\u003e\n        저는 상대적 위치로 배치된 외부 컨테이너입니다.\n    \u0026#x3C;/div\u003e\n    \u0026#x3C;div class=\"text\"\u003e\n        외부 컨테이너 아래의 텍스트입니다.\n    \u0026#x3C;/div\u003e\n\u0026#x3C;/body\u003e\n\u0026#x3C;/html\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003ch1\u003e읽어 주셔서 감사합니다\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003e장기 멘토십을 위해 Preplaced.com에서 연락하세요,\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e무료 체험 신청하세요! — \u003ca href=\"https://www.preplaced.in/profile/sonika-maheshwari\" rel=\"nofollow\" target=\"_blank\"\u003ehttps://www.preplaced.in/profile/sonika-maheshwari\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e📰 코딩 및 디자인 라운드 인터뷰에 대한 더 많은 콘텐츠 보기 - \u003ca href=\"https://sonikamaheshwari067.medium.com/\" rel=\"nofollow\" target=\"_blank\"\u003ehttps://sonikamaheshwari067.medium.com/\u003c/a\u003e\u003c/p\u003e\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\u003cp\u003e🔔 Follow me on LinkedIn! — \u003ca href=\"https://www.linkedin.com/in/sonika-maheshwari-81542220/\" rel=\"nofollow\" target=\"_blank\"\u003ehttps://www.linkedin.com/in/sonika-maheshwari-81542220/\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e저는 항상 개선할 부분이 있을 것이라고 믿어요. 의견을 자유롭게 공유해주세요.\u003c/p\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-06-30-CSSPositionAbsoluteRelative"},"buildId":"Rv-NbbtWUaja2joH5WkO_","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
